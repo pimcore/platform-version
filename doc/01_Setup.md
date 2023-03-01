@@ -29,7 +29,7 @@ modules installed in the project.
 
 ### Install tracked Pimcore modules
 
-Use following command to install additional Pimcore modules to the project: `composer require pimcore/<MODULE>:*`.
+Use following command to install additional Pimcore modules to the project: `composer require pimcore/<MODULE>`.
 
 > `:*` is important that composer finds the matching version of the module. 
 
