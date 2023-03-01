@@ -43,6 +43,6 @@ Bugfix versions of Pimcore modules can be installed within a Platform Version vi
 
 #### Update to new Platform Version
 
-To update to a new Pimcore Platform version, use the command `composer update pimcore/platform-version:2023.1 pimcore/*`. 
-> `pimcore/*` necessary for composer, otherwise versions cannot be resolved properly. 
+To update to a new Pimcore Platform version, use the command `composer update pimcore/platform-version:v2023.1`. 
+> Eventually adding `pimcore/*` is necessary for composer to resolve pimcore repository versions properly. 
 
