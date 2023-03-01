@@ -6,7 +6,7 @@
   "conflict": {
     "pimcore/pimcore": "<10.5 || >10.5.99",
     "pimcore/data-hub": "<1.4 || > 1.4.99",
-    "pimcore/data-hub": "<2.2 || > 2.2.99",
+    "pimcore/portal-engine": "<2.2 || > 2.2.99",
     "pimcore/advanced-object-search": "<4.1 || > 4.1.99"
   }
 }
