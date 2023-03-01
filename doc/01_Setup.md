@@ -31,7 +31,7 @@ modules installed in the project.
 
 Use following command to install additional Pimcore modules to the project: `composer require pimcore/<MODULE>`.
 
-> `:*` is important that composer finds the matching version of the module. 
+> Eventually adding `:*` as version contraint helps if composer doesn't find a matching version of the module. 
 
 
 ### Update Pimcore modules
