@@ -16,4 +16,6 @@ docker compose exec -T \
 php vendor/bin/pimcore-install -n
 
 
+docker compose exec -T bin/console cache:clear
+
 sudo chown -R www-data .
