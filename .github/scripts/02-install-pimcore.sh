@@ -15,6 +15,35 @@ docker compose exec -T \
 -- \
 php vendor/bin/pimcore-install -n
 
+docker compose exec -T php bin/console cache:clear
+
+# todo remove that
+docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
+docker compose exec -T php bin/console pimcore:bundle:install ElementsProcessManagerBundle
+
+
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataImporterBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreAssetMetadataClassDefinitionsBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreStatisticsExplorerBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDirectEditBundle
+docker compose exec -T php bin/console doctrine:schema:update --force
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreOpenIdConnectBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcorePortalEngineBundle
+docker compose exec -T php bin/console pimcore:bundle:install AdvancedObjectSearchBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubFileExportBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubSimpleRestBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreTranslationsProviderInterfaceBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowDesignerBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubCiHubBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubProductsupBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreHeadlessDocumentsBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomerManagementFrameworkBundle
+docker compose exec -T php bin/console pimcore:bundle:install Web2PrintToolsBundle
+docker compose exec -T php bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
+
+cp ../repos/pimcore/platform-version/.github/files/config.yaml ./config/local
 
 docker compose exec -T php bin/console cache:clear
 
