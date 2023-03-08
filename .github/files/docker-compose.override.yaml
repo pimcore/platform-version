@@ -6,6 +6,10 @@ services:
     supervisord:
         user: uid:gid
 
+    nginx:
+        ports:
+            - "8088:80"
+
     mercure.local:
         image: dunglas/mercure
         restart: unless-stopped
@@ -18,7 +22,7 @@ services:
         # Uncomment the following line to enable the development mode
         # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
         ports:
-            - "8088:80"
+            - "8089:80"
         #    - "8443:443"
 
     elastic:
