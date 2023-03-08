@@ -16,7 +16,6 @@ cd test-project/
 cp ../repos/pimcore/platform-version/.github/files/docker-compose.override.yaml .
 cp ../repos/pimcore/platform-version/.github/files/.env.local .
 cp ../repos/pimcore/platform-version/.github/files/parameters.yaml ./config/local
-cp ../repos/pimcore/platform-version/.github/files/bundles.php ./config
 
 MY_UID=`id -u`
 MY_GID=`id -g`

@@ -1,8 +1,6 @@
 #!/bin/bash
 set -ex
 
-
-
 # Run pimcore installation.
 docker compose exec -T \
 -e PIMCORE_INSTALL_ADMIN_USERNAME=admin \
@@ -16,6 +14,9 @@ docker compose exec -T \
 php vendor/bin/pimcore-install -n
 
 docker compose exec -T php bin/console cache:clear
+
+cp ../repos/pimcore/platform-version/.github/files/bundles.php ./config
+
 
 # todo remove that
 docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
