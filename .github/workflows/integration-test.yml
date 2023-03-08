@@ -2,7 +2,7 @@ name: Run Pimcore Integraton Tests
 
 on:
     workflow_dispatch:
-    schedule:
+#    schedule:
 #        - cron: '0 3 * * 1,3,5'
 
 jobs:
