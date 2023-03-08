@@ -1,0 +1,36 @@
+name: Run Pimcore Integraton Tests
+
+on:
+    workflow_dispatch:
+    schedule:
+#        - cron: '0 3 * * 1,3,5'
+
+jobs:
+  run-integration-test:
+    runs-on: ubuntu-latest
+    steps:
+    # Check out the repo in a sub-dir to see if it can serve as
+    # teplate for `composer create-project`
+    # See: https://github.com/actions/checkout#usage
+    - name: "Checkout platform version"
+      uses: actions/checkout@v2
+      with:
+        path: './repos/pimcore/platform-version'
+
+    - name: "Checkout K6 Tests"
+      uses: "actions/checkout@v3"
+      with:
+          repository: "pimcore/saas-k6"
+          path: "./repos/pimcore/saas-k6"
+
+    - name: Setup environment
+      run: |
+          ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh
+
+    - name: Install Pimcore
+      run: |
+          ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
+
+    - name: Run Tests
+      run: |
+          ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
