@@ -43,28 +43,28 @@ docker compose exec -T -- php composer config repositories.pimcore_enterprise co
 
 docker compose exec -T -- php composer require pimcore/platform-version:@dev
 
-docker compose exec -T -- php composer require pimcore/workflow-designer --no-update
-docker compose exec -T -- php composer require pimcore/asset-metadata-class-definitions --no-update
-docker compose exec -T -- php composer require pimcore/data-hub-ci-hub --no-update
-docker compose exec -T -- php composer require pimcore/data-hub-file-export --no-update
-docker compose exec -T -- php composer require pimcore/data-hub-productsup --no-update
-docker compose exec -T -- php composer require pimcore/data-hub-simple-rest --no-update
-docker compose exec -T -- php composer require pimcore/direct-edit --no-update
-docker compose exec -T -- php composer require pimcore/headless-documents --no-update
-docker compose exec -T -- php composer require pimcore/openid-connect --no-update
-docker compose exec -T -- php composer require pimcore/portal-engine --no-update
-docker compose exec -T -- php composer require pimcore/statistics-explorer --no-update
-docker compose exec -T -- php composer require pimcore/translations-provider-interfaces --no-update
-docker compose exec -T -- php composer require pimcore/workflow-designer --no-update
-docker compose exec -T -- php composer require pimcore/data-importer --no-update
-docker compose exec -T -- php composer require pimcore/data-hub --no-update
-docker compose exec -T -- php composer require pimcore/customer-management-framework-bundle --no-update
-docker compose exec -T -- php composer require pimcore/web2print-tools-bundle --no-update
-docker compose exec -T -- php composer require pimcore/perspective-editor --no-update
-docker compose exec -T -- php composer require pimcore/output-data-config-toolkit-bundle --no-update
-docker compose exec -T -- php composer require pimcore/object-merger --no-update
-docker compose exec -T -- php composer require pimcore/frontend-permission-toolkit-bundle --no-update
-docker compose exec -T -- php composer require pimcore/advanced-object-search --no-update
+docker compose exec -T -- php composer require pimcore/workflow-designer --no-scripts
+docker compose exec -T -- php composer require pimcore/asset-metadata-class-definitions --no-scripts
+docker compose exec -T -- php composer require pimcore/data-hub-ci-hub --no-scripts
+docker compose exec -T -- php composer require pimcore/data-hub-file-export --no-scripts
+docker compose exec -T -- php composer require pimcore/data-hub-productsup --no-scripts
+docker compose exec -T -- php composer require pimcore/data-hub-simple-rest --no-scripts
+docker compose exec -T -- php composer require pimcore/direct-edit --no-scripts
+docker compose exec -T -- php composer require pimcore/headless-documents --no-scripts
+docker compose exec -T -- php composer require pimcore/openid-connect --no-scripts
+docker compose exec -T -- php composer require pimcore/portal-engine --no-scripts
+docker compose exec -T -- php composer require pimcore/statistics-explorer --no-scripts
+docker compose exec -T -- php composer require pimcore/translations-provider-interfaces --no-scripts
+docker compose exec -T -- php composer require pimcore/workflow-designer --no-scripts
+docker compose exec -T -- php composer require pimcore/data-importer --no-scripts
+docker compose exec -T -- php composer require pimcore/data-hub --no-scripts
+docker compose exec -T -- php composer require pimcore/customer-management-framework-bundle --no-scripts
+docker compose exec -T -- php composer require pimcore/web2print-tools-bundle --no-scripts
+docker compose exec -T -- php composer require pimcore/perspective-editor --no-scripts
+docker compose exec -T -- php composer require pimcore/output-data-config-toolkit-bundle --no-scripts
+docker compose exec -T -- php composer require pimcore/object-merger --no-scripts
+docker compose exec -T -- php composer require pimcore/frontend-permission-toolkit-bundle --no-scripts
+docker compose exec -T -- php composer require pimcore/advanced-object-search --no-scripts
 
 docker compose exec -T -- php composer update
 
