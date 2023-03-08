@@ -28,11 +28,19 @@ jobs:
           ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh
 
     - name: Install Pimcore
+      working-directory: "./test-project"
       run: |
           chmod 755 ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
           ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
 
     - name: Run Tests
+      working-directory: "./test-project"
       run: |
           chmod 755 ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
           ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
+
+    - name: Shutdown
+      working-directory: "./test-project"
+      run: |
+          chmod 755 ./repos/pimcore/platform-version/.github/scripts/04-shutdown.sh
+          ./repos/pimcore/platform-version/.github/scripts/04-shutdown.sh
