@@ -41,7 +41,7 @@ docker compose exec -T -- php composer config repositories.dev path "./repos/*/*
 docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token ee0a08e880e1de5b71c7c0915d2fbb92909f05e333cfecbd13b5318451ed226e
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
-docker compose exec -T -- php composer require pimcore/platform-version:@dev --no-update
+docker compose exec -T -- php composer require pimcore/platform-version:@dev
 
 docker compose exec -T -- php composer require pimcore/workflow-designer --no-update
 docker compose exec -T -- php composer require pimcore/asset-metadata-class-definitions --no-update
