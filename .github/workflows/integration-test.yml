@@ -9,9 +9,6 @@ jobs:
   run-integration-test:
     runs-on: ubuntu-latest
     steps:
-    # Check out the repo in a sub-dir to see if it can serve as
-    # teplate for `composer create-project`
-    # See: https://github.com/actions/checkout#usage
     - name: "Checkout platform version"
       uses: actions/checkout@v2
       with:
@@ -22,6 +19,7 @@ jobs:
       with:
           repository: "pimcore/saas-k6"
           path: "./repos/pimcore/saas-k6"
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Setup environment
       run: |
