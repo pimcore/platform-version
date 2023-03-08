@@ -18,7 +18,7 @@ services:
         # Uncomment the following line to enable the development mode
         # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
         ports:
-            - "8080:80"
+            - "8088:80"
         #    - "8443:443"
 
     elastic:
