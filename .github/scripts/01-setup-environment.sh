@@ -18,6 +18,10 @@ cp ../repos/pimcore/platform-version/.github/files/docker-compose.override.yaml 
 MY_UID=`id -u`
 MY_GID=`id -g`
 sed -i "s/uid:gid/$MY_UID:$MY_GID/g" docker-compose.override.yaml
+
+# overwrite port of nginx
+sed -i "s/80:80/8088:80/g" docker-compose.yaml
+
 cp -r ../repos .
 
 
