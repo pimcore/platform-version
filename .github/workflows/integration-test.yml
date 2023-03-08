@@ -24,12 +24,15 @@ jobs:
 
     - name: Setup environment
       run: |
+          chmod 755 ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh 
           ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh
 
     - name: Install Pimcore
       run: |
+          chmod 755 ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
           ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
 
     - name: Run Tests
       run: |
+          chmod 755 ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
           ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
