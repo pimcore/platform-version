@@ -1,0 +1,47 @@
+services: 
+
+    php:
+        user: uid:gid
+
+    supervisord:
+        user: uid:gid
+
+    mercure.local:
+        image: dunglas/mercure
+        restart: unless-stopped
+        environment:
+            # Uncomment the following line to disable HTTPS
+            SERVER_NAME: ':80'
+            MERCURE_PUBLISHER_JWT_KEY: 'THIS_IS_MY_SECRET_KEY'
+            MERCURE_SUBSCRIBER_JWT_KEY: 'THIS_IS_MY_SECRET_KEY'
+            MERCURE_EXTRA_DIRECTIVES: anonymous
+        # Uncomment the following line to enable the development mode
+        # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
+        ports:
+            - "8080:80"
+        #    - "8443:443"
+
+    elastic:
+        image: elasticsearch:8.5.3
+        environment:
+            - discovery.type=single-node
+            - ES_JAVA_OPTS=-Xms1g -Xmx1g
+            - xpack.security.enabled=true
+            - xpack.security.authc.anonymous.roles=superuser,kibana_admin,kibana_system,kibana_user
+            - ELASTIC_USERNAME=elastic
+            - ELASTIC_PASSWORD=somethingsecret
+       # volumes:
+       #     - pimcore-demo-elastic:/usr/share/elasticsearch/data
+        deploy:
+            resources:
+                limits:
+                    cpus: '1'
+                    memory: '2G'
+        
+networks:
+  default:
+    name: k6-test-network
+    external: true        
+
+#volumes:
+#  pimcore-demo-elastic:
