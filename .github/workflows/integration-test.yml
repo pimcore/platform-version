@@ -1,4 +1,4 @@
-name: Run Pimcore Integraton Tests
+name: Run Pimcore Integration Tests
 
 on:
     workflow_dispatch:
