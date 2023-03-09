@@ -17,4 +17,6 @@ source ../../platform-version/.github/scripts/02-install-pimcore.sh
 
 cd ../
 source ../platform-version/.github/scripts/03-run-tests.sh
+
+cd ./test-project
 source ../platform-version/.github/scripts/04-shutdown.sh

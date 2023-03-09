@@ -11,7 +11,6 @@ docker run \
   pimcore/pimcore:php8.2-latest \
   composer create-project pimcore/skeleton test-project
 
-chown -R www-data test-project
 cd test-project/
 
 cp ../../platform-version/.github/files/docker-compose.override.yaml .
@@ -36,6 +35,7 @@ cp -r ../../platform-version .
 docker compose down -v --remove-orphans
 docker network rm k6-test-network || true
 
+sudo chown -R www-data .
 #docker compose pull --quiet
 docker network create k6-test-network
 docker compose up -d
