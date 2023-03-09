@@ -41,6 +41,7 @@ jobs:
           ../platform-version/.github/scripts/03-run-tests.sh
 
     - name: Shutdown
+      if: always()
       working-directory: "./platform-version-working-dir/test-project"
       run: |
           chmod 755 ../../platform-version/.github/scripts/04-shutdown.sh

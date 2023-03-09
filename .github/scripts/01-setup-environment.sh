@@ -14,6 +14,7 @@ docker run \
 cd test-project/
 
 cp ../../platform-version/.github/files/docker-compose.override.yaml .
+cp ../../platform-version/.github/files/supervisor.d .docker/
 cp ../../platform-version/.github/files/.env.local .
 cp ../../platform-version/.github/files/parameters.yaml ./config/local
 
