@@ -17,11 +17,11 @@ cp ../../platform-version/.github/files/docker-compose.override.yaml .
 cp ../../platform-version/.github/files/.env.local .
 cp ../../platform-version/.github/files/parameters.yaml ./config/local
 
-MY_UID=`id -u`
-MY_GID=`id -g`
-
-echo "$MY_UID:$MY_GID"
-
+#MY_UID=`id -u`
+#MY_GID=`id -g`
+#
+#echo "$MY_UID:$MY_GID"
+#
 #sed -i "s/uid:gid/$MY_UID:$MY_GID/g" docker-compose.override.yaml
 
 # overwrite port of nginx
