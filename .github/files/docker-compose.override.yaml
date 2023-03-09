@@ -1,16 +1,16 @@
 services: 
 
-#    php:
+    php:
 #        volumes:
 #            - pimcore-private-var:/var/www/html/var
 #            - pimcore-public-var:/var/www/html/public/var
-#        user: uid:gid
+        user: www-data:0
 
-#    supervisord:
+    supervisord:
 #        volumes:
 #            - pimcore-private-var:/var/www/html/var
 #            - pimcore-public-var:/var/www/html/public/var
-#        user: uid:gid
+        user: www-data:0
 
 #    nginx:
 #        volumes:
