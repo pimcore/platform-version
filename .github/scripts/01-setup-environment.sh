@@ -3,7 +3,7 @@ set -ex
 
 docker pull docker.io/pimcore/pimcore:php8.2-latest
 
-rm -rf test-project/
+sudo rm -rf test-project/
 
 docker run \
   -u `id -u`:`id -g` --rm \
