@@ -13,9 +13,8 @@ docker compose exec -T \
 -- \
 php vendor/bin/pimcore-install -n
 
-docker compose exec -T php bin/console cache:clear
-
 cp ../repos/pimcore/platform-version/.github/files/bundles.php ./config
+docker compose exec -T php bin/console cache:clear
 
 
 # todo remove that
