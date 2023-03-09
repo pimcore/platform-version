@@ -6,6 +6,7 @@ docker pull docker.io/pimcore/pimcore:php8.2-latest
 sudo rm -rf test-project/
 
 docker run \
+  -u www-data:0 --rm \
   -v `pwd`:/var/www/html \
   pimcore/pimcore:php8.2-latest \
   composer create-project pimcore/skeleton test-project
