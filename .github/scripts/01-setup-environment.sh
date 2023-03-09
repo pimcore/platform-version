@@ -6,11 +6,12 @@ docker pull docker.io/pimcore/pimcore:php8.2-latest
 sudo rm -rf test-project/
 
 docker run \
-  -u www-data:0 --rm \
+  -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
   pimcore/pimcore:php8.2-latest \
   composer create-project pimcore/skeleton test-project
 
+chown -R www-data test-project
 cd test-project/
 
 cp ../../platform-version/.github/files/docker-compose.override.yaml .
