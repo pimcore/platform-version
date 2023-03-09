@@ -1,21 +1,21 @@
 services: 
 
-    php:
-        volumes:
-            - pimcore-private-var:/var/www/html/var
-            - pimcore-public-var:/var/www/html/public/var
+#    php:
+#        volumes:
+#            - pimcore-private-var:/var/www/html/var
+#            - pimcore-public-var:/var/www/html/public/var
 #        user: uid:gid
 
-    supervisord:
-        volumes:
-            - pimcore-private-var:/var/www/html/var
-            - pimcore-public-var:/var/www/html/public/var
+#    supervisord:
+#        volumes:
+#            - pimcore-private-var:/var/www/html/var
+#            - pimcore-public-var:/var/www/html/public/var
 #        user: uid:gid
 
-    nginx:
-        volumes:
-            - pimcore-private-var:/var/www/html/var
-            - pimcore-public-var:/var/www/html/public/var
+#    nginx:
+#        volumes:
+#            - pimcore-private-var:/var/www/html/var
+#            - pimcore-public-var:/var/www/html/public/var
 
     mercure.local:
         image: dunglas/mercure
@@ -54,7 +54,7 @@ networks:
     name: k6-test-network
     external: true        
 
-volumes:
-    pimcore-private-var:
-    pimcore-public-var:
+#volumes:
+#    pimcore-private-var:
+#    pimcore-public-var:
 
