@@ -8,6 +8,9 @@ mkdir platform-version-working-dir || true
 
 cd platform-version-working-dir
 git clone git@github.com:pimcore/saas-k6.git
+cd saas-k6
+git switch pimcore-10
+cd ../
 
 source ../platform-version/.github/scripts/01-setup-environment.sh
 source ../../platform-version/.github/scripts/02-install-pimcore.sh

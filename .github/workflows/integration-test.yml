@@ -23,6 +23,7 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Setup environment
+      working-directory: "./platform-version-working-dir"
       run: |
           chmod 755 ./platform-version/.github/scripts/01-setup-environment.sh 
           ./platform-version/.github/scripts/01-setup-environment.sh
