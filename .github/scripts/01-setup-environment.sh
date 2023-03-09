@@ -13,18 +13,18 @@ docker run \
 
 cd test-project/
 
-cp ../repos/pimcore/platform-version/.github/files/docker-compose.override.yaml .
-cp ../repos/pimcore/platform-version/.github/files/.env.local .
-cp ../repos/pimcore/platform-version/.github/files/parameters.yaml ./config/local
+cp ../../platform-version/.github/files/docker-compose.override.yaml .
+cp ../../platform-version/.github/files/.env.local .
+cp ../../platform-version/.github/files/parameters.yaml ./config/local
 
-MY_UID=`id -u`
-MY_GID=`id -g`
-sed -i "s/uid:gid/$MY_UID:$MY_GID/g" docker-compose.override.yaml
+#MY_UID=`id -u`
+#MY_GID=`id -g`
+#sed -i "s/uid:gid/$MY_UID:$MY_GID/g" docker-compose.override.yaml
 
 # overwrite port of nginx
 sed -i "s/80:80/8088:80/g" docker-compose.yaml
 
-cp -r ../repos .
+cp -r ../../platform-version .
 
 
 # Start containers
@@ -38,7 +38,7 @@ docker compose up -d
 
 
 # add platform version
-docker compose exec -T -- php composer config repositories.dev path "./repos/*/*"
+docker compose exec -T -- php composer config repositories.dev path "./platform-version"
 docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token ee0a08e880e1de5b71c7c0915d2fbb92909f05e333cfecbd13b5318451ed226e
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
@@ -77,3 +77,4 @@ docker compose exec -u root -T -- php bash -c '\
 
 # Wait for the database to set up.
 docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
+docker compose exec -T -- php dockerize -wait tcp://elastic:9200 -timeout 5m

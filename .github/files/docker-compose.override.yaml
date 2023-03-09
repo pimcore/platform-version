@@ -1,14 +1,10 @@
 services: 
 
-    php:
-        user: uid:gid
-
-    supervisord:
-        user: uid:gid
-
-    nginx:
-        ports:
-            - "8088:80"
+#    php:
+#        user: uid:gid
+#
+#    supervisord:
+#        user: uid:gid
 
     mercure.local:
         image: dunglas/mercure

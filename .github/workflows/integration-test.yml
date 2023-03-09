@@ -12,14 +12,14 @@ jobs:
     - name: "Checkout platform version"
       uses: actions/checkout@v2
       with:
-        path: './repos/pimcore/platform-version'
+        path: './platform-version'
 
     - name: "Checkout K6 Tests"
       uses: "actions/checkout@v3"
       with:
           repository: "pimcore/saas-k6"
           ref: "pimcore-10"
-          path: "./repos/pimcore/saas-k6"
+          path: "./platform-version-working-dir/saas-k6"
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Setup environment
