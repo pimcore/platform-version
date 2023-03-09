@@ -25,23 +25,23 @@ jobs:
     - name: Setup environment
       working-directory: "./platform-version-working-dir"
       run: |
-          chmod 755 ./platform-version/.github/scripts/01-setup-environment.sh 
-          ./platform-version/.github/scripts/01-setup-environment.sh
+          chmod 755 ../platform-version/.github/scripts/01-setup-environment.sh 
+          ../platform-version/.github/scripts/01-setup-environment.sh
 
     - name: Install Pimcore
       working-directory: "./platform-version-working-dir/test-project"
       run: |
-          chmod 755 ./platform-version/.github/scripts/02-install-pimcore.sh
-          ./platform-version/.github/scripts/02-install-pimcore.sh
+          chmod 755 ../../platform-version/.github/scripts/02-install-pimcore.sh
+          ../../platform-version/.github/scripts/02-install-pimcore.sh
 
     - name: Run Tests
       working-directory: "./platform-version-working-dir"
       run: |
-          chmod 755 ./platform-version/.github/scripts/03-run-tests.sh
-          ./platform-version/.github/scripts/03-run-tests.sh
+          chmod 755 ../platform-version/.github/scripts/03-run-tests.sh
+          ../platform-version/.github/scripts/03-run-tests.sh
 
     - name: Shutdown
       working-directory: "./platform-version-working-dir/test-project"
       run: |
-          chmod 755 ./platform-version/.github/scripts/04-shutdown.sh
-          ./platform-version/.github/scripts/04-shutdown.sh
+          chmod 755 ../../platform-version/.github/scripts/04-shutdown.sh
+          ../../platform-version/.github/scripts/04-shutdown.sh
