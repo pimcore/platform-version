@@ -15,7 +15,7 @@ return [
 //    \Pimcore\Bundle\XliffBundle\PimcoreXliffBundle::class => ['all' => true],
 
     \Pimcore\Bundle\ObjectMergerBundle\ObjectMergerBundle::class => ['all' => true],
-    \Pimcore\Bundle\EcommerceFrameworkBundle\PimcoreEcommerceFrameworkBundle::class => ['all' => true],
+//    \Pimcore\Bundle\EcommerceFrameworkBundle\PimcoreEcommerceFrameworkBundle::class => ['all' => true],
 
     \Pimcore\Bundle\DataHubBundle\PimcoreDataHubBundle::class => ['all' => true],
     \Pimcore\Bundle\DataHubSimpleRestBundle\PimcoreDataHubSimpleRestBundle::class => ['all' => true],
