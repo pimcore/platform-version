@@ -25,7 +25,7 @@ return [
     \Pimcore\Bundle\DataImporterBundle\PimcoreDataImporterBundle::class => ['all' => true],
 
     \Pimcore\Bundle\OpenIdConnectBundle\PimcoreOpenIdConnectBundle::class => ['all' => true],
-    \AdvancedObjectSearchBundle\AdvancedObjectSearchBundle::class => ['all' => false],
+    \AdvancedObjectSearchBundle\AdvancedObjectSearchBundle::class => ['all' => true],
 
     \Pimcore\Bundle\DirectEditBundle\PimcoreDirectEditBundle::class => ['all' => true],
 
