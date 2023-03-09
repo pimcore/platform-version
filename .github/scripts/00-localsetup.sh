@@ -13,6 +13,6 @@ source ../platform-version/.github/scripts/01-setup-environment.sh
 source ../../platform-version/.github/scripts/02-install-pimcore.sh
 source ../../platform-version/.github/scripts/03-run-tests.sh
 
-cd ..
+cd ../../
 
-source ../platform-version/.github/scripts/04-shutdown.sh
+source ./platform-version/.github/scripts/04-shutdown.sh

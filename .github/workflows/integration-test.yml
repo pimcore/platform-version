@@ -24,23 +24,23 @@ jobs:
 
     - name: Setup environment
       run: |
-          chmod 755 ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh 
-          ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh
+          chmod 755 ./platform-version/.github/scripts/01-setup-environment.sh 
+          ./platform-version/.github/scripts/01-setup-environment.sh
 
     - name: Install Pimcore
-      working-directory: "./test-project"
+      working-directory: "./platform-version-working-dir/test-project"
       run: |
-          chmod 755 ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
-          ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
+          chmod 755 ./platform-version/.github/scripts/02-install-pimcore.sh
+          ./platform-version/.github/scripts/02-install-pimcore.sh
 
     - name: Run Tests
-      working-directory: "./test-project"
+      working-directory: "./platform-version-working-dir"
       run: |
-          chmod 755 ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
-          ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
+          chmod 755 ./platform-version/.github/scripts/03-run-tests.sh
+          ./platform-version/.github/scripts/03-run-tests.sh
 
     - name: Shutdown
-      working-directory: "./test-project"
+      working-directory: "./platform-version-working-dir/test-project"
       run: |
-          chmod 755 ./repos/pimcore/platform-version/.github/scripts/04-shutdown.sh
-          ./repos/pimcore/platform-version/.github/scripts/04-shutdown.sh
+          chmod 755 ./platform-version/.github/scripts/04-shutdown.sh
+          ./platform-version/.github/scripts/04-shutdown.sh
