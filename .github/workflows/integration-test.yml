@@ -9,28 +9,40 @@ jobs:
   run-integration-test:
     runs-on: ubuntu-latest
     steps:
-    # Check out the repo in a sub-dir to see if it can serve as
-    # teplate for `composer create-project`
-    # See: https://github.com/actions/checkout#usage
     - name: "Checkout platform version"
       uses: actions/checkout@v2
       with:
-        path: './repos/pimcore/platform-version'
+        path: './platform-version'
 
     - name: "Checkout K6 Tests"
       uses: "actions/checkout@v3"
       with:
           repository: "pimcore/saas-k6"
-          path: "./repos/pimcore/saas-k6"
+          ref: "pimcore-10"
+          path: "./platform-version-working-dir/saas-k6"
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Setup environment
+      working-directory: "./platform-version-working-dir"
       run: |
-          ./repos/pimcore/platform-version/.github/scripts/01-setup-environment.sh
+          chmod 755 ../platform-version/.github/scripts/01-setup-environment.sh 
+          ../platform-version/.github/scripts/01-setup-environment.sh ${{ secrets.ENTERPRISE_REPOSITORY_TOKEN }}
 
     - name: Install Pimcore
+      working-directory: "./platform-version-working-dir/test-project"
       run: |
-          ./repos/pimcore/platform-version/.github/scripts/02-install-pimcore.sh
+          chmod 755 ../../platform-version/.github/scripts/02-install-pimcore.sh
+          ../../platform-version/.github/scripts/02-install-pimcore.sh
 
     - name: Run Tests
+      working-directory: "./platform-version-working-dir"
       run: |
-          ./repos/pimcore/platform-version/.github/scripts/03-run-tests.sh
+          chmod 755 ../platform-version/.github/scripts/03-run-tests.sh
+          ../platform-version/.github/scripts/03-run-tests.sh
+
+    - name: Shutdown
+      if: always()
+      working-directory: "./platform-version-working-dir/test-project"
+      run: |
+          chmod 755 ../../platform-version/.github/scripts/04-shutdown.sh
+          ../../platform-version/.github/scripts/04-shutdown.sh
