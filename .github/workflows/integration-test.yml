@@ -26,7 +26,7 @@ jobs:
       working-directory: "./platform-version-working-dir"
       run: |
           chmod 755 ../platform-version/.github/scripts/01-setup-environment.sh 
-          ../platform-version/.github/scripts/01-setup-environment.sh
+          ../platform-version/.github/scripts/01-setup-environment.sh ${{ secrets.ENTERPRISE_REPOSITORY_TOKEN }}
 
     - name: Install Pimcore
       working-directory: "./platform-version-working-dir/test-project"

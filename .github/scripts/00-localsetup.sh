@@ -1,6 +1,12 @@
 #!/bin/bash
 set -ex
 
+if [ -z "$1" ]
+  then
+    echo "No argument supplied. First and only argument is token for enterprise bundles."
+    exit;
+fi
+
 cd ../../..
 
 sudo rm -rf platform-version-working-dir || true
@@ -12,7 +18,7 @@ cd saas-k6
 git switch pimcore-10
 cd ../
 
-source ../platform-version/.github/scripts/01-setup-environment.sh
+source ../platform-version/.github/scripts/01-setup-environment.sh $1
 source ../../platform-version/.github/scripts/02-install-pimcore.sh
 
 cd ../

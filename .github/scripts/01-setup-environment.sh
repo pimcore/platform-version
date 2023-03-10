@@ -1,6 +1,12 @@
 #!/bin/bash
 set -ex
 
+if [ -z "$1" ]
+  then
+    echo "No argument supplied. First and only argument is token for enterprise bundles."
+    exit;
+fi
+
 docker pull docker.io/pimcore/pimcore:php8.2-latest
 
 sudo rm -rf test-project/
@@ -18,12 +24,6 @@ cp ../../platform-version/.github/files/supervisord.conf .docker/
 cp ../../platform-version/.github/files/.env.local .
 cp ../../platform-version/.github/files/parameters.yaml ./config/local
 
-#MY_UID=`id -u`
-#MY_GID=`id -g`
-#
-#echo "$MY_UID:$MY_GID"
-#
-#sed -i "s/uid:gid/$MY_UID:$MY_GID/g" docker-compose.override.yaml
 
 # overwrite port of nginx
 sed -i "s/80:80/8088:80/g" docker-compose.yaml
@@ -44,7 +44,7 @@ docker compose up -d
 
 # add platform version
 docker compose exec -T -- php composer config repositories.dev path "./platform-version"
-docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token ee0a08e880e1de5b71c7c0915d2fbb92909f05e333cfecbd13b5318451ed226e
+docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token $1
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
 docker compose exec -T -- php composer require pimcore/platform-version:@dev
