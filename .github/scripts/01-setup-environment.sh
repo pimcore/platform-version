@@ -14,7 +14,8 @@ sudo rm -rf test-project/
 docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
-  pimcore/pimcore:php8.2-latest \
+  pimcore/pimcore:php8.1-latest \
+  #pimcore/pimcore:php8.2-latest \
   composer create-project pimcore/skeleton test-project
 
 cd test-project/
