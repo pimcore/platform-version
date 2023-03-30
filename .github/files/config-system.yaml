@@ -1,0 +1,3 @@
+pimcore:
+    general:
+        valid_languages: 'en,de,fr'
