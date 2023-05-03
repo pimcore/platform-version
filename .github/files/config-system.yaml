@@ -41,8 +41,9 @@ pimcore_web_to_print:
 
 pimcore_static_routes:
     config_location:
-        write_target:
-            type: 'settings-store'
+        staticroutes:
+            write_target:
+                type: 'settings-store'
 
 pimcore_custom_reports:
     config_location:
