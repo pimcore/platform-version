@@ -1,6 +1,4 @@
 advanced_object_search:
     index_name_prefix: 'advanced_object_search_'
-    #es_hosts:
-    #    - 'elastic'
     messenger_queue_processing:
         activated: true
