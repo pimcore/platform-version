@@ -1,3 +1,11 @@
 pimcore:
     general:
         valid_languages: 'en,de,fr'
+
+pimcore_elasticsearch_client:
+    es_clients:
+        default:
+            hosts: [ 'elastic:9200' ]
+            username: 'elastic'
+            password: 'somethingsecret'
+            logger_channel: 'pimcore.elasicsearch'
