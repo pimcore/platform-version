@@ -25,11 +25,7 @@ docker compose exec -T php bin/console cache:clear
 #docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
 #docker compose exec -T php bin/console pimcore:bundle:install ElementsProcessManagerBundle
 
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomReportsBundle
-cp ../../platform-version/.github/files/config-custom-reports.yaml ./config/local
 
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreStaticRoutesBundle
-cp ../../platform-version/.github/files/config-static-routes.yaml ./config/local
 
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
@@ -39,6 +35,8 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubSimp
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubCiHubBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubProductsupBundle
 cp ../../platform-version/.github/files/config-datahub.yaml ./config/local
+cp ../../platform-version/.github/files/config-custom-reports.yaml ./config/local
+cp ../../platform-version/.github/files/config-static-routes.yaml ./config/local
 
 docker compose exec -T php bin/console pimcore:bundle:install AdvancedObjectSearchBundle
 cp ../../platform-version/.github/files/config-advanced-object-search.yaml ./config/local
