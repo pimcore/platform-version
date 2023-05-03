@@ -1,0 +1,5 @@
+pimcore_custom_reports:
+    config_location:
+        custom_reports:
+            write_target:
+                type: 'settings-store'

@@ -18,3 +18,10 @@ pimcore_data_hub_simple_rest:
         global_options:
             numeric_detection: false
             date_detection: false
+
+
+pimcore_data_hub:
+    config_location:
+        data_hub:
+            write_target:
+                type: 'settings-store'

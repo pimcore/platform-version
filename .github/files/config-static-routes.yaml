@@ -1,0 +1,4 @@
+pimcore_static_routes:
+    config_location:
+        write_target:
+            type: 'settings-store'

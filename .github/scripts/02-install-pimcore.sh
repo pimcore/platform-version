@@ -25,6 +25,12 @@ docker compose exec -T php bin/console cache:clear
 #docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
 #docker compose exec -T php bin/console pimcore:bundle:install ElementsProcessManagerBundle
 
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomReportsBundle
+cp ../../platform-version/.github/files/config-custom-reports.yaml ./config/local
+
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreStaticRoutesBundle
+cp ../../platform-version/.github/files/config-static-routes.yaml ./config/local
+
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataImporterBundle
@@ -51,6 +57,7 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowDes
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreHeadlessDocumentsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomerManagementFrameworkBundle
 docker compose exec -T php bin/console pimcore:bundle:install Web2PrintToolsBundle
+cp ../../platform-version/.github/files/config-web-to-print.yaml ./config/local
 docker compose exec -T php bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
 
