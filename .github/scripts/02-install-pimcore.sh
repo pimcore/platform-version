@@ -14,6 +14,7 @@ docker compose exec -T \
     php vendor/bin/pimcore-install -n
 
 sudo chown -R `id -g` ./config # necessary to allow copying of config files during install of Pimcore
+sudo chmod -R 777 ./config # necessary to allow copying of config files during install of Pimcore
 
 cp ../../platform-version/.github/files/bundles.php ./config
 cp ../../platform-version/.github/files/config-system.yaml ./config/local
