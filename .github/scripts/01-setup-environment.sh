@@ -67,6 +67,7 @@ docker compose exec -T -- php composer require -W \
     pimcore/data-hub \
     pimcore/customer-management-framework-bundle \
     pimcore/web2print-tools-bundle \
+    pimcore/web-to-print-bundle \
     pimcore/perspective-editor \
     pimcore/output-data-config-toolkit-bundle \
     pimcore/object-merger \

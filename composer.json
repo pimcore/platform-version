@@ -20,6 +20,7 @@
     "pimcore/data-hub":  "<1.6 || > 1.6.99",
     "pimcore/customer-management-framework-bundle":  "<4.0 || > 4.0.99",
     "pimcore/web2print-tools-bundle":  "<5.0 || > 5.0.99",
+    "pimcore/web-to-print-bundle":  "<1.0 || > 1.0.99",
     "pimcore/perspective-editor":  "<1.6 || > 1.6.99",
     "pimcore/output-data-config-toolkit-bundle":  "<5.0 || > 5.0.99",
     "pimcore/object-merger":  "<4.0 || > 4.0.99",
