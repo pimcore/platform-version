@@ -2,6 +2,8 @@ services:
 
     php:
         user: www-data:0
+        environment:
+            PIMCORE_ES_CLIENT_HOST: elastic:9200
 
     supervisord:
         user: www-data:0
@@ -30,6 +32,8 @@ services:
             - xpack.security.authc.anonymous.roles=superuser,kibana_admin,kibana_system,kibana_user
             - ELASTIC_USERNAME=elastic
             - ELASTIC_PASSWORD=somethingsecret
+        ports:
+            - "9200:9200"
         deploy:
             resources:
                 limits:

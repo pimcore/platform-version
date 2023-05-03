@@ -14,8 +14,8 @@ sudo rm -rf test-project/
 docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
-  pimcore/pimcore:php8.1-latest \
-  composer create-project pimcore/skeleton test-project
+  pimcore/pimcore:php8.2-latest \
+  composer create-project --prefer-dist --stability=dev pimcore/skeleton:11.x test-project
 
 cd test-project/
 
@@ -48,7 +48,9 @@ docker compose exec -T -- php composer config --global --auth http-basic.enterpr
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
 docker compose exec -T -- php composer require pimcore/platform-version:@dev
+docker compose exec -T -- php composer clearcache
 docker compose exec -T -- php composer require -W \
+    pimcore/admin-ui-classic-bundle \
     pimcore/asset-metadata-class-definitions \
     pimcore/data-hub-ci-hub \
     pimcore/data-hub-file-export \

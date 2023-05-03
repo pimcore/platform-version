@@ -21,8 +21,8 @@ docker compose exec -T php bin/console cache:clear
 
 
 # todo remove that
-docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
-docker compose exec -T php bin/console pimcore:bundle:install ElementsProcessManagerBundle
+#docker compose exec -T php bin/console pimcore:bundle:enable -p15 ElementsProcessManagerBundle
+#docker compose exec -T php bin/console pimcore:bundle:install ElementsProcessManagerBundle
 
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
