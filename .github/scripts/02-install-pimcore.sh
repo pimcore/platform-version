@@ -51,7 +51,6 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowDes
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreHeadlessDocumentsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomerManagementFrameworkBundle
 docker compose exec -T php bin/console pimcore:bundle:install Web2PrintToolsBundle
-cp ../../platform-version/.github/files/config-web-to-print.yaml ./config/local
 docker compose exec -T php bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
 

@@ -23,7 +23,7 @@ return [
     \Pimcore\Bundle\DataHubFileExportBundle\PimcoreDataHubFileExportBundle::class => ['all' => true],
     \Pimcore\Bundle\DataHubProductsupBundle\PimcoreDataHubProductsupBundle::class => ['all' => true],
     \Pimcore\Bundle\DataImporterBundle\PimcoreDataImporterBundle::class => ['all' => true],
-
+    \Pimcore\Bundle\CustomReportsBundle\PimcoreCustomReportsBundle::class => ['all' => true],
     \Pimcore\Bundle\OpenIdConnectBundle\PimcoreOpenIdConnectBundle::class => ['all' => true],
     \AdvancedObjectSearchBundle\AdvancedObjectSearchBundle::class => ['all' => true],
 
@@ -41,6 +41,8 @@ return [
     \Pimcore\Bundle\ObjectMergerBundle\ObjectMergerBundle::class => ['all' => true],
     \CustomerManagementFrameworkBundle\PimcoreCustomerManagementFrameworkBundle::class => ['all' => true],
     \OutputDataConfigToolkitBundle\OutputDataConfigToolkitBundle::class => ['all' => true],
+    \Pimcore\Bundle\WebToPrintBundle\PimcoreWebToPrintBundle::class => ['all' => true],
+    \Pimcore\Bundle\StaticRoutesBundle\PimcoreStaticRoutesBundle::class => ['all' => true],
     \Web2PrintToolsBundle\Web2PrintToolsBundle::class => ['all' => true],
 
     \Pimcore\Bundle\PerspectiveEditorBundle\PimcorePerspectiveEditorBundle::class => ['all' => true],
