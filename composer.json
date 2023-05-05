@@ -7,7 +7,7 @@
     "pimcore/asset-metadata-class-definitions":  "!=2.x-dev",
     "pimcore/data-hub-ci-hub":  "!=1.x-dev",
     "pimcore/data-hub-file-export":  "!=2.x-dev",
-    "pimcore/data-hub-productsup":  "!=2.x-dev",
+    "pimcore/data-hub-productsup":  "!=1.3.x-dev",
     "pimcore/data-hub-simple-rest":  "!=2.x-dev",
     "pimcore/direct-edit":  "!=2.x-dev",
     "pimcore/headless-documents":  "!=2.x-dev",
