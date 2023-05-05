@@ -4,3 +4,6 @@ parameters:
     es_client: 'elastic'
     pimcore_portal_engine.elasticsearch.host: 'elastic'
     pimcore_portal_engine.elasticsearch.index_prefix: 'portal_'
+    mercure:
+        hub:
+            jwt_key: 'some-key-test-test-test-test-test-test'

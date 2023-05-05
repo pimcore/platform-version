@@ -10,8 +10,6 @@ pimcore_data_hub_simple_rest:
     index_name_prefix:    datahub_restindex_
     # Limit of page size and offset when paging only works via page cursor (and not page numbers anymore). Limit 10000 comes from Elasticsearch.
     max_results_window:   10000
-    es_hosts:
-        - 'elastic'
     indexing_options:
         assets:
             enable_exif: false

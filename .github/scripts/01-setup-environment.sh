@@ -47,7 +47,10 @@ docker compose exec -T -- php composer config repositories.dev path "./platform-
 docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token $1
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
-docker compose exec -T -- php composer require pimcore/platform-version:@dev
+docker compose exec -T -- php composer config minimum-stability dev
+docker compose exec -T -- php composer config prefer-stable true
+
+docker compose exec -T -- php composer require pimcore/platform-version:@dev pimcore/pimcore -W
 docker compose exec -T -- php composer require -W \
     pimcore/asset-metadata-class-definitions \
     pimcore/data-hub-ci-hub \
