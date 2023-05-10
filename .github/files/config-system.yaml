@@ -2,54 +2,11 @@ pimcore:
     general:
         valid_languages: 'en,de,fr'
 
-    config_location:
-        image_thumbnails:
-            write_target:
-                type: 'settings-store'
-        video_thumbnails:
-            write_target:
-                type: 'settings-store'
-        document_types:
-            write_target:
-                type: 'settings-store'
-        predefined_properties:
-            write_target:
-                type: 'settings-store'
-        predefined_asset_metadata:
-            write_target:
-                type: 'settings-store'
-        perspectives:
-            write_target:
-                type: 'settings-store'
-        custom_views:
-            write_target:
-                type: 'settings-store'
-        object_custom_layouts:
-            write_target:
-                type: 'settings-store'
-pimcore_data_hub:
-    config_location:
-        data_hub:
-            write_target:
-                type: 'settings-store'
+    chromium:
+        uri: 'ws://chrome:3000/'
 
-pimcore_web_to_print:
-    config_location:
-        web_to_print:
-            write_target:
-                type: 'settings-store'
-
-pimcore_static_routes:
-    config_location:
-        staticroutes:
-            write_target:
-                type: 'settings-store'
-
-pimcore_custom_reports:
-    config_location:
-        custom_reports:
-            write_target:
-                type: 'settings-store'
+    gotenberg:
+        base_url: 'http://gotenberg:3000'
 
 pimcore_elasticsearch_client:
     es_clients:

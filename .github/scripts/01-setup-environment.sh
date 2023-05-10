@@ -47,9 +47,12 @@ docker compose exec -T -- php composer config repositories.dev path "./platform-
 docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token $1
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
-docker compose exec -T -- php composer require pimcore/platform-version:@dev
-docker compose exec -T -- php composer clearcache
+docker compose exec -T -- php composer config minimum-stability dev
+docker compose exec -T -- php composer config prefer-stable true
+
+docker compose exec -T -- php composer require pimcore/platform-version:@dev pimcore/pimcore pimcore/admin-ui-classic-bundle -W
 docker compose exec -T -- php composer require -W \
+    gotenberg/gotenberg-php:^1.1 \
     pimcore/admin-ui-classic-bundle \
     pimcore/asset-metadata-class-definitions \
     pimcore/data-hub-ci-hub \
@@ -72,7 +75,14 @@ docker compose exec -T -- php composer require -W \
     pimcore/output-data-config-toolkit-bundle \
     pimcore/object-merger \
     pimcore/frontend-permission-toolkit-bundle \
-    pimcore/advanced-object-search
+    pimcore/advanced-object-search \
+    pimcore/system-info-bundle \
+    pimcore/file-explorer-bundle \
+    pimcore/personalization-bundle \
+    pimcore/google-marketing-bundle \
+    pimcore/web-to-print-bundle \
+    pimcore/ecommerce-framework-bundle \
+    pimcore/newsletter-bundle
 
 docker compose exec -T -- php composer update
 

@@ -39,7 +39,13 @@ services:
                 limits:
                     cpus: '1'
                     memory: '2G'
-        
+
+    chrome:
+        image: browserless/chrome
+
+    gotenberg:
+        image: gotenberg/gotenberg:7
+
 networks:
   default:
     name: k6-test-network
