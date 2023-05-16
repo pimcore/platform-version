@@ -30,8 +30,6 @@ return [
     \Pimcore\Bundle\OpenIdConnectBundle\PimcoreOpenIdConnectBundle::class => ['all' => true],
     \AdvancedObjectSearchBundle\AdvancedObjectSearchBundle::class => ['all' => true],
 
-    \Pimcore\Bundle\DirectEditBundle\PimcoreDirectEditBundle::class => ['all' => true],
-
     \Pimcore\AssetMetadataClassDefinitionsBundle\PimcoreAssetMetadataClassDefinitionsBundle::class => ['all' => true],
     \FrontendPermissionToolkitBundle\FrontendPermissionToolkitBundle::class => ['all' => true],
     \Pimcore\Bundle\DirectEditBundle\PimcoreDirectEditBundle::class => ['all' => true],
