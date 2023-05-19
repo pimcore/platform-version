@@ -15,7 +15,7 @@ docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
   pimcore/pimcore:php8.2-latest \
-  composer create-project --prefer-dist --stability=dev pimcore/skeleton:11.x test-project
+  composer create-project pimcore/skeleton:~11.0.0 test-project
 
 cd test-project/
 
