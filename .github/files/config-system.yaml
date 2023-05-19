@@ -1,3 +1,17 @@
 pimcore:
     general:
         valid_languages: 'en,de,fr'
+
+    chromium:
+        uri: 'ws://chrome:3000/'
+
+    gotenberg:
+        base_url: 'http://gotenberg:3000'
+
+pimcore_elasticsearch_client:
+    es_clients:
+        default:
+            hosts: [ 'elastic:9200' ]
+            username: 'elastic'
+            password: 'somethingsecret'
+            logger_channel: 'pimcore.elasicsearch'

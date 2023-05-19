@@ -2,6 +2,8 @@ services:
 
     php:
         user: www-data:0
+        environment:
+            PIMCORE_ES_CLIENT_HOST: elastic:9200
 
     supervisord:
         user: www-data:0
@@ -30,12 +32,20 @@ services:
             - xpack.security.authc.anonymous.roles=superuser,kibana_admin,kibana_system,kibana_user
             - ELASTIC_USERNAME=elastic
             - ELASTIC_PASSWORD=somethingsecret
+        ports:
+            - "9200:9200"
         deploy:
             resources:
                 limits:
                     cpus: '1'
                     memory: '2G'
-        
+
+    chrome:
+        image: browserless/chrome
+
+    gotenberg:
+        image: gotenberg/gotenberg:7
+
 networks:
   default:
     name: k6-test-network
