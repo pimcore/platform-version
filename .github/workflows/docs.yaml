@@ -6,6 +6,7 @@ on:
         branches:
             - "[0-9]+.[0-9]+"
             - "[0-9]+.x"
+            - "main"
         paths:
             - 'doc/**'
             - '.github/workflows/docs.yaml'
@@ -14,6 +15,7 @@ on:
             - "[0-9]+.[0-9]+"
             - "[0-9]+.x"
             - "*_actions"
+            - "main"
         paths:
             - 'doc/**'
 
