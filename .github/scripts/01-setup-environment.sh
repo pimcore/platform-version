@@ -82,7 +82,10 @@ docker compose exec -T -- php composer require -W \
     pimcore/google-marketing-bundle \
     pimcore/web-to-print-bundle \
     pimcore/ecommerce-framework-bundle \
-    pimcore/newsletter-bundle
+    pimcore/newsletter-bundle \
+    pimcore/data-quality-management-bundle \
+    pimcore/data-hub-webhooks \
+    pimcore/backend-power-tools-bundle
 
 docker compose exec -T -- php composer update
 
