@@ -47,6 +47,10 @@ return [
     \Web2PrintToolsBundle\Web2PrintToolsBundle::class => ['all' => true],
 
     \Pimcore\Bundle\PerspectiveEditorBundle\PimcorePerspectiveEditorBundle::class => ['all' => true],
+
+    Pimcore\Bundle\BackendPowerToolsBundle\PimcoreBackendPowerToolsBundle::class => ['all' => true],
+    Pimcore\Bundle\DataHubWebhooksBundle\PimcoreDatahubWebhooksBundle::class => ['all' => true],
+    Pimcore\Bundle\DataQualityManagementBundle\PimcoreDataQualityManagementBundle::class => ['all' => true],
 ];
 
 
