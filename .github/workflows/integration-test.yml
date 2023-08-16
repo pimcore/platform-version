@@ -23,7 +23,7 @@ jobs:
       uses: "actions/checkout@v3"
       with:
           repository: "pimcore/saas-k6"
-          ref: ${{ inputs.test_branch || GITHUB_REF_NAME }}
+          ref: ${{ inputs.test_branch || github.ref_name }}
           path: "./platform-version-working-dir/saas-k6"
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
