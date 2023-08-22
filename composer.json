@@ -22,7 +22,7 @@
     "pimcore/web2print-tools-bundle":  "<4.0 || > 4.0.99",
     "pimcore/perspective-editor":  "<1.6 || > 1.6.99",
     "pimcore/output-data-config-toolkit-bundle":  "<4.1 || > 4.1.99",
-    "pimcore/object-merger":  "<4.0 || > 4.0.99",
+    "pimcore/object-merger":  "<3.0 || > 3.0.99",
     "pimcore/frontend-permission-toolkit-bundle":  "<1.5 || > 1.5.99",
     "pimcore/advanced-object-search":  "<5.0 || > 5.0.99",
     "pimcore/pimcore": "<10.6 || > 10.6.99"
