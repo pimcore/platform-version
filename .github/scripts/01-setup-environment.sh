@@ -15,7 +15,7 @@ docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
   pimcore/pimcore:php8.1-latest \
-  composer create-project pimcore/skeleton test-project
+  composer create-project pimcore/skeleton:^10 test-project
 
 cd test-project/
 
