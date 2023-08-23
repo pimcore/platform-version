@@ -35,7 +35,7 @@
     "pimcore/newsletter-bundle": "<1.0 || > 1.0.99",
     "pimcore/data-quality-management-bundle": "!=1.0.0-RC3",
     "pimcore/data-hub-webhooks": "!=1.0.0-RC3",
-    "pimcore/backend-power-tools-bundle": "!=1.0.0-RC2",
+    "pimcore/backend-power-tools-bundle": "!=1.0.0-RC3",
     "pimcore/static-resolver-bundle": "!=1.0.0-RC1",
     "pimcore/pimcore": "<11.0 || > 11.0.99"
   }
