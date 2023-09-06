@@ -43,9 +43,9 @@ docker compose up -d
 
 
 # add platform version
-docker compose exec -T -- php composer config repositories.dev path "./platform-version"
 docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token $1
 docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
+docker compose exec -T -- php composer config repositories.dev path "./platform-version"
 
 docker compose exec -T -- php composer config minimum-stability dev
 docker compose exec -T -- php composer config prefer-stable true
@@ -82,7 +82,10 @@ docker compose exec -T -- php composer require -W \
     pimcore/google-marketing-bundle \
     pimcore/web-to-print-bundle \
     pimcore/ecommerce-framework-bundle \
-    pimcore/newsletter-bundle
+    pimcore/newsletter-bundle \
+    pimcore/data-quality-management-bundle \
+    pimcore/data-hub-webhooks \
+    pimcore/backend-power-tools-bundle
 
 docker compose exec -T -- php composer update
 

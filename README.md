@@ -19,7 +19,7 @@ tested with each other and verified by Pimcore.
 The Pimcore Platform Version has its own version and is released every several months. Each release comes with combined 
 release notes of all modules. 
 
-Also the Pimcore documentations and our demos are based on the Pimcore Platform Version. 
+Also, the Pimcore documentations and our demos are based on the Pimcore Platform Version. 
 
 ## Benefits in a nutshell
 - Set of specific versions of all Pimcore modules which work together. 

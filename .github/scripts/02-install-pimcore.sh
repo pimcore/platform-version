@@ -64,6 +64,10 @@ docker compose exec -T php bin/console pimcore:bundle:install Web2PrintToolsBund
 docker compose exec -T php bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
 
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataQualityManagementBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubWebhooksBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreBackendPowerToolsBundle
+
 cp ../../platform-version/.github/files/config-config.yaml ./config/local
 
 docker compose exec -T php bin/console cache:clear
