@@ -25,7 +25,7 @@
     "pimcore/object-merger":  "<4.0 || > 4.0.99",
     "pimcore/frontend-permission-toolkit-bundle":  "<2.0 || > 2.0.99",
     "pimcore/advanced-object-search":  "<5.0 || > 5.0.99",
-    "pimcore/admin-ui-classic-bundle": "<1.1 || > 1.1.99",
+    "pimcore/admin-ui-classic-bundle": "<1.2 || > 1.2.99",
     "pimcore/system-info-bundle": "<1.0 || > 1.0.99",
     "pimcore/file-explorer-bundle": "<1.0 || > 1.0.99",
     "pimcore/personalization-bundle": "<1.0 || > 1.0.99",
@@ -37,6 +37,6 @@
     "pimcore/data-hub-webhooks": "<1.0 || > 1.0.99",
     "pimcore/backend-power-tools-bundle": "<1.0 || > 1.0.99",
     "pimcore/static-resolver-bundle": "<1.0 || > 1.0.99",
-    "pimcore/pimcore": "<11.0 || > 11.0.99"
+    "pimcore/pimcore": "<11.1 || > 11.1.99"
   }
 }
