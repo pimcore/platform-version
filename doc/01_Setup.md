@@ -7,25 +7,14 @@ On technical level, the Platform Version comes as a composer dependency and can 
 ### Setup with existing project
 
 Use following steps to setup Pimcore Platform Version in an existing project: 
-- Add Pimcore enterprise repository to project and setup authentication token (if not already done).
-- Install platform version via `composer require pimcore/platform-version`  and follow steps described
+- Install platform version via `composer require pimcore/platform-version` and follow steps described
   below to install further Pimcore modules.
 
 ### Setup with new project
 
 Use following steps to setup Pimcore Platform Version for a new project: 
-- Get skeleton via `composer create-project pimcore/skeleton my-project`.
-- Rename `composer.enterprise.json` to `composer.json` (overwrite existing).
-- Add/update your enterprise repository to the composer.json with `composer config repositories.enterprise composer https://repo.pimcore.com/<YOUR_REPOS>/`.
-- Add your enterprise token to composer with `composer config --global --auth http-basic.enterprise.repo.pimcore.com token <YOUR_TOKEN>`
-  (if not already done).
-- Run `composer update` to install necessary additional requirements for Pimcore Platform Version and follow steps described 
-  below to install further Pimcore modules. 
+- Get skeleton via `composer create-project pimcore/skeleton my-project`. Platform version is already a composer dependency there. 
 
-
-:::info
-`<YOUR_REPOS>` and `<YOUR_TOKEN>` you will get from your sales contact person at Pimcore. 
-:::
 
 ## Working with Platform Version
 
