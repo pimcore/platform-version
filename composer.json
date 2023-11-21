@@ -33,8 +33,10 @@
     "pimcore/web-to-print-bundle": "<1.0 || > 1.0.99",
     "pimcore/ecommerce-framework-bundle": "<1.0 || > 1.0.99",
     "pimcore/newsletter-bundle": "<1.0 || > 1.0.99",
-    "pimcore/data-quality-management-bundle": "<1.0 || > 1.0.99",
+    "pimcore/data-quality-management-bundle": "<1.1 || > 1.1.99",
     "pimcore/data-hub-webhooks": "<1.0 || > 1.0.99",
+    "pimcore/backend-power-tools-bundle": "<1.1 || > 1.1.99",
+    "pimcore/static-resolver-bundle": "<1.2 || > 1.2.99",
     "pimcore/pimcore": "<11.1 || > 11.1.99"
   }
 }
