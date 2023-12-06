@@ -46,4 +46,4 @@ The versioning schema follows semantic versioning and is Major.Minor (e.g. 2023.
 ## Further Reads
 
 - [Setup and working with Platform Versions](./doc/01_Setup.md)
-- [Release Notes](./doc/02_Release_Notes/README.md)
+- [Release Notes](doc/03_Release_Notes/README.md)
