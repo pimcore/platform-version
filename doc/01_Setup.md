@@ -8,12 +8,17 @@ On technical level, the Platform Version comes as a composer dependency and can 
 
 Use following steps to setup Pimcore Platform Version in an existing project: 
 - Install platform version via `composer require pimcore/platform-version` and follow steps described
-  below to install further Pimcore modules.
+  below to install further Pimcore modules. Eventually you need to adapt versions of other
+  pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
 
 ### Setup with new project
 
 Use following steps to setup Pimcore Platform Version for a new project: 
-- Get skeleton via `composer create-project pimcore/skeleton my-project`. Platform version is already a composer dependency there. 
+- Get skeleton via `composer create-project pimcore/skeleton my-project`.
+- Install platform version via `composer require pimcore/platform-version`. Eventually you need to adapt versions of other
+  pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
+- Run `composer update` to install necessary additional requirements for Pimcore Platform Version and follow steps described 
+  below to install further Pimcore modules. 
 
 
 ## Working with Platform Version
