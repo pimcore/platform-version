@@ -15,7 +15,7 @@ docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
   pimcore/pimcore:php8.1-latest \
-  composer create-project pimcore/skeleton test-project
+  composer create-project pimcore/skeleton:^10 test-project
 
 cd test-project/
 
@@ -43,9 +43,9 @@ docker compose up -d
 
 
 # add platform version
+docker compose exec -T -- php composer config --global --auth http-basic.pimcore.repo.packagist.com token $1
+docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://pimcore.repo.packagist.com/github-actions/
 docker compose exec -T -- php composer config repositories.dev path "./platform-version"
-docker compose exec -T -- php composer config --global --auth http-basic.enterprise.repo.pimcore.com token $1
-docker compose exec -T -- php composer config repositories.pimcore_enterprise composer https://enterprise.repo.pimcore.com/
 
 docker compose exec -T -- php composer config minimum-stability dev
 docker compose exec -T -- php composer config prefer-stable true
