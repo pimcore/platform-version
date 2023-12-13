@@ -67,6 +67,7 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspective
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataQualityManagementBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubWebhooksBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreBackendPowerToolsBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowAutomationIntegrationBundle
 
 cp ../../platform-version/.github/files/config-config.yaml ./config/local
 

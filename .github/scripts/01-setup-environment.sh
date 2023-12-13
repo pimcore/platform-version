@@ -85,7 +85,9 @@ docker compose exec -T -- php composer require -W \
     pimcore/newsletter-bundle \
     pimcore/data-quality-management-bundle \
     pimcore/data-hub-webhooks \
-    pimcore/backend-power-tools-bundle
+    pimcore/backend-power-tools-bundle \
+    pimcore/admin-ui-classic-light-theme-bundle \
+    pimcore/workflow-automation-integration-bundle
 
 docker compose exec -T -- php composer update
 
