@@ -12,7 +12,7 @@ select specific and compatible module versions and update each of them separatel
 As all the modules add up to significant number, it might become a challenge to keep track of every module, their releases
 and features, and to find the optimal combination of versions of all the needed modules. 
 
-This is, where the Pimcore Platform Version comes in. It is an additional enterprise service provided by Pimcore and 
+This is, where the Pimcore Platform Version comes in. It is an additional service provided by Pimcore and 
 provides a set of specific versions of all Pimcore modules which work together as they are compatible and explicitly 
 tested with each other and verified by Pimcore. 
 
@@ -46,4 +46,4 @@ The versioning schema follows semantic versioning and is Major.Minor (e.g. 2023.
 ## Further Reads
 
 - [Setup and working with Platform Versions](./doc/01_Setup.md)
-- [Release Notes](./doc/02_Release_Notes/README.md)
+- [Release Notes](doc/03_Release_Notes/README.md)
