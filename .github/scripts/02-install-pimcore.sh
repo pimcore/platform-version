@@ -18,6 +18,9 @@ sudo chmod -R 777 ./config # necessary to allow copying of config files during i
 
 cp ../../platform-version/.github/files/bundles.php ./config
 cp ../../platform-version/.github/files/config-system.yaml ./config/local
+
+sleep 2
+
 docker compose exec -T php bin/console cache:clear
 
 
