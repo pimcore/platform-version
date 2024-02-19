@@ -2,7 +2,7 @@
   "name": "pimcore/platform-version",
   "type": "library",
   "description": "Verified Pimcore Version",
-  "license": "PCL",
+  "license": "proprietary",
   "conflict": {
     "pimcore/asset-metadata-class-definitions":  "<2.0 || > 2.0.99",
     "pimcore/data-hub-ci-hub":  "<1.2 || > 1.2.99",
