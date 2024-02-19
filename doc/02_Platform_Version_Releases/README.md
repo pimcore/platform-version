@@ -1,4 +1,4 @@
-# Platform Version Releases
+# Platform Version Releases and Support
 
 Following platform version releases are available.  
 
