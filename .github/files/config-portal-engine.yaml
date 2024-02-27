@@ -1,6 +1,6 @@
 pimcore_portal_engine:
-    messenger_queue_processing:
-        activated: true
+
+
     custom_public_routes:
         - pimcore_saas_ping
         - pimcore_saas_monitoring

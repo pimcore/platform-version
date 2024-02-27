@@ -8,10 +8,10 @@ pimcore:
     gotenberg:
         base_url: 'http://gotenberg:3000'
 
-pimcore_elasticsearch_client:
-    es_clients:
+pimcore_open_search_client:
+    clients:
         default:
-            hosts: [ 'elastic:9200' ]
-            username: 'elastic'
-            password: 'somethingsecret'
-            logger_channel: 'pimcore.elasicsearch'
+            hosts: ['https://opensearch:9200']
+            password: 'XkxGSdN0sMdq9OS'
+            username: 'admin'
+            ssl_verification: false

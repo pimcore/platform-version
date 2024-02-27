@@ -1,4 +1,0 @@
-advanced_object_search:
-    index_name_prefix: 'advanced_object_search_'
-    messenger_queue_processing:
-        activated: true
