@@ -1,6 +1,7 @@
 pimcore:
     general:
         valid_languages: 'en,de,fr'
+        domain: 'foo.com'
 
     chromium:
         uri: 'ws://chrome:3000/'
