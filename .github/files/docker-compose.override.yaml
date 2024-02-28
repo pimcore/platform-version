@@ -2,8 +2,6 @@ services:
 
     php:
         user: www-data:0
-        environment:
-#            PIMCORE_ES_CLIENT_HOST: elastic:9200
 
     supervisord:
         user: www-data:0
