@@ -3,6 +3,9 @@
   "type": "library",
   "description": "Verified Pimcore Version",
   "license": "proprietary",
+  "require": {
+    "php": "~8.2.0"
+  },
   "conflict": {
     "pimcore/asset-metadata-class-definitions": "<2.0 || > 2.0.99",
     "pimcore/data-hub-file-export": "<2.x-dev",
