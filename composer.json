@@ -41,7 +41,7 @@
     "pimcore/static-resolver-bundle": "<1.4 || > 1.4.99",
     "pimcore/admin-ui-classic-light-theme-bundle": "<1.0 || > 1.0.99",
     "pimcore/copilot-bundle": "<1.x-dev",
-    "pimcore/generic-data-index-bundle": "!=dev-disable-index-queue",
+    "pimcore/generic-data-index-bundle": "!=dev-operation_time_index",
     "pimcore/pimcore": "<11.2 || > 11.2.99"
   }
 }
