@@ -1,6 +1,3 @@
 parameters:
     secret: 'some-secret-value'
     app_encryption_secret: 'some-more-secret'
-    es_client: 'elastic'
-    pimcore_portal_engine.elasticsearch.host: 'elastic'
-    pimcore_portal_engine.elasticsearch.index_prefix: 'portal_'
