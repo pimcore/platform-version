@@ -22,13 +22,11 @@ return [
 
     \Pimcore\Bundle\DataHubBundle\PimcoreDataHubBundle::class => ['all' => true],
     \Pimcore\Bundle\DataHubSimpleRestBundle\PimcoreDataHubSimpleRestBundle::class => ['all' => true],
-    \Pimcore\Bundle\DataHubCiHubBundle\PimcoreDataHubCiHubBundle::class => ['all' => true],
     \Pimcore\Bundle\DataHubFileExportBundle\PimcoreDataHubFileExportBundle::class => ['all' => true],
     \Pimcore\Bundle\DataHubProductsupBundle\PimcoreDataHubProductsupBundle::class => ['all' => true],
     \Pimcore\Bundle\DataImporterBundle\PimcoreDataImporterBundle::class => ['all' => true],
     \Pimcore\Bundle\CustomReportsBundle\PimcoreCustomReportsBundle::class => ['all' => true],
     \Pimcore\Bundle\OpenIdConnectBundle\PimcoreOpenIdConnectBundle::class => ['all' => true],
-    \AdvancedObjectSearchBundle\AdvancedObjectSearchBundle::class => ['all' => true],
 
     \Pimcore\AssetMetadataClassDefinitionsBundle\PimcoreAssetMetadataClassDefinitionsBundle::class => ['all' => true],
     \FrontendPermissionToolkitBundle\FrontendPermissionToolkitBundle::class => ['all' => true],
@@ -53,6 +51,8 @@ return [
     \Pimcore\Bundle\DataQualityManagementBundle\PimcoreDataQualityManagementBundle::class => ['all' => true],
     \Pimcore\Bundle\WorkflowAutomationIntegrationBundle\PimcoreWorkflowAutomationIntegrationBundle::class => ['all' => true],
     \Pimcore\Bundle\AdminUiClassicLightThemeBundle\PimcoreAdminUiClassicLightThemeBundle::class => ['all' => true],
+    \Pimcore\Bundle\GenericDataIndexBundle\PimcoreGenericDataIndexBundle::class => ['all' => true],
+    \Pimcore\Bundle\CopilotBundle\PimcoreCopilotBundle::class => ['all' => true],
 ];
 
 

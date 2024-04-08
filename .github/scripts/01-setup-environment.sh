@@ -19,6 +19,7 @@ docker run \
 
 cd test-project/
 
+cp ../../platform-version/.github/files/docker-compose.yaml .
 cp ../../platform-version/.github/files/docker-compose.override.yaml .
 cp ../../platform-version/.github/files/supervisord.conf .docker/
 cp ../../platform-version/.github/files/.env.local .
@@ -55,7 +56,6 @@ docker compose exec -T -- php composer require -W \
     gotenberg/gotenberg-php:^1.1 \
     pimcore/admin-ui-classic-bundle \
     pimcore/asset-metadata-class-definitions \
-    pimcore/data-hub-ci-hub \
     pimcore/data-hub-file-export \
     pimcore/data-hub-productsup \
     pimcore/data-hub-simple-rest \
@@ -75,7 +75,6 @@ docker compose exec -T -- php composer require -W \
     pimcore/output-data-config-toolkit-bundle \
     pimcore/object-merger \
     pimcore/frontend-permission-toolkit-bundle \
-    pimcore/advanced-object-search \
     pimcore/system-info-bundle \
     pimcore/file-explorer-bundle \
     pimcore/personalization-bundle \
@@ -87,6 +86,8 @@ docker compose exec -T -- php composer require -W \
     pimcore/data-hub-webhooks \
     pimcore/backend-power-tools-bundle \
     pimcore/admin-ui-classic-light-theme-bundle \
+    pimcore/copilot-bundle \
+    pimcore/generic-data-index-bundle \
     pimcore/workflow-automation-integration-bundle
 
 docker compose exec -T -- php composer update
@@ -100,4 +101,4 @@ docker compose exec -u root -T -- php bash -c '\
 
 # Wait for the database to set up.
 docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
-docker compose exec -T -- php dockerize -wait tcp://elastic:9200 -timeout 5m
+docker compose exec -T -- php dockerize -wait tcp://opensearch:9200 -timeout 5m
