@@ -43,18 +43,15 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBund
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataImporterBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubFileExportBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubSimpleRestBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubCiHubBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubProductsupBundle
 cp ../../platform-version/.github/files/config-datahub.yaml ./config/local
-
-docker compose exec -T php bin/console pimcore:bundle:install AdvancedObjectSearchBundle
-cp ../../platform-version/.github/files/config-advanced-object-search.yaml ./config/local
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreAssetMetadataClassDefinitionsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreStatisticsExplorerBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDirectEditBundle
 docker compose exec -T php bin/console doctrine:schema:update --force
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreOpenIdConnectBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreGenericDataIndexBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePortalEngineBundle
 cp ../../platform-version/.github/files/config-portal-engine.yaml ./config/local
 
@@ -71,6 +68,7 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataQuality
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubWebhooksBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreBackendPowerToolsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowAutomationIntegrationBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreCopilotBundle
 
 cp ../../platform-version/.github/files/config-config.yaml ./config/local
 
