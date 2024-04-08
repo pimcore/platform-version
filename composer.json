@@ -42,6 +42,6 @@
     "pimcore/admin-ui-classic-light-theme-bundle": "<1.0 || > 1.0.99",
     "pimcore/copilot-bundle": "<1.0 || > 1.0.99",
     "pimcore/generic-data-index-bundle": "<1.0.2 || > 1.0.99",
-    "pimcore/pimcore": "<11.2.1 || > 11.2.99"
+    "pimcore/pimcore": "<11.2.2 || > 11.2.99"
   }
 }
