@@ -14,7 +14,7 @@
     "pimcore/direct-edit": "<2.0.1 || > 2.0.99",
     "pimcore/headless-documents": "<2.1 || > 2.1.99",
     "pimcore/openid-connect": "<1.1 || > 1.1.99",
-    "pimcore/portal-engine": "<4.0.1 || > 4.0.99",
+    "pimcore/portal-engine": "<4.0.2 || > 4.0.99",
     "pimcore/statistics-explorer": "<2.1 || > 2.1.99",
     "pimcore/translations-provider-interfaces": "<3.0 || > 3.0.99",
     "pimcore/workflow-designer": "<1.2 || > 1.2.99",
@@ -40,8 +40,8 @@
     "pimcore/workflow-automation-integration-bundle": "<1.0 || > 1.0.99",
     "pimcore/static-resolver-bundle": "<1.4 || > 1.4.99",
     "pimcore/admin-ui-classic-light-theme-bundle": "<1.0 || > 1.0.99",
-    "pimcore/copilot-bundle": "<1.x-dev",
-    "pimcore/generic-data-index-bundle": "<1.0 || > 1.0.99",
+    "pimcore/copilot-bundle": "<1.0 || > 1.0.99",
+    "pimcore/generic-data-index-bundle": "<1.0.2 || > 1.0.99",
     "pimcore/pimcore": "<11.2.1 || > 11.2.99"
   }
 }
