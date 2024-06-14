@@ -6,14 +6,14 @@ On technical level, the Platform Version comes as a composer dependency and can 
 
 ### Setup with existing project
 
-Use following steps to setup Pimcore Platform Version in an existing project: 
+Use following steps to set up Pimcore Platform Version in an existing project: 
 - Install platform version via `composer require pimcore/platform-version` and follow steps described
   below to install further Pimcore modules. Eventually you need to adapt versions of other
   pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
 
 ### Setup with new project
 
-Use following steps to setup Pimcore Platform Version for a new project: 
+Use following steps to set up Pimcore Platform Version for a new project: 
 - Get skeleton via `composer create-project pimcore/skeleton my-project`.
 - Install platform version via `composer require pimcore/platform-version`. Eventually you need to adapt versions of other
   pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
@@ -30,7 +30,7 @@ modules installed in the project.
 
 Use following command to install additional Pimcore modules to the project: `composer require pimcore/<MODULE>`.
 
-> Eventually adding `:*` as version contraint helps if composer doesn't find a matching version of the module. 
+> Eventually adding `:*` as version constraint helps if composer doesn't find a matching version of the module. 
 
 
 ### Update Pimcore modules
@@ -42,6 +42,23 @@ Bugfix versions of Pimcore modules can be installed within a Platform Version vi
 
 #### Update to new Platform Version
 
-To update to a new Pimcore Platform version, use the command `composer update pimcore/platform-version:2023.1`. 
-> Eventually adding `pimcore/*` is necessary for composer to resolve pimcore repository versions properly. 
+- Carefully read our [Release Notes](./03_Release_Notes/README.md) before any update.
+- Update to a new Pimcore Platform version: 
+  - if you want to stick to a specific version, use the command `composer require pimcore/platform-version:2023.1`.
+  - if you want to update to the latest version (and the constraint in your `composer.json` allows further updates), 
+    use the command `composer update pimcore/platform-version`.
 
+:::tip
+
+Eventually adding `pimcore/*` is necessary for composer to resolve pimcore repository versions properly.
+
+:::
+
+:::warning
+
+It might be necessary to update a specific Pimcore module to a version that is not included in the Platform Version.
+In that case, you need to remove the `platform-version` dependency from your `composer.json` and update the module to
+the desired version.
+Be aware that this might lead to a theoretically compatible but untested combination of Pimcore modules.
+
+:::
