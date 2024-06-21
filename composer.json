@@ -2,7 +2,7 @@
   "name": "pimcore/platform-version",
   "type": "library",
   "description": "Verified Pimcore Version",
-  "license": "proprietary",
+  "license": "GPL-3.0-or-later",
   "require": {
     "php": "~8.2.0"
   },
