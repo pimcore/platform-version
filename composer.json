@@ -4,7 +4,7 @@
   "description": "Verified Pimcore Version",
   "license": "GPL-3.0-or-later",
   "require": {
-    "php": "~8.2.0"
+    "php": "~8.2.0 || ~8.3.0"
   },
   "conflict": {
     "pimcore/asset-metadata-class-definitions": "<2.1 || > 2.1.99",
