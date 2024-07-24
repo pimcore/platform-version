@@ -12,7 +12,7 @@ on:
 
 jobs:
   run-integration-test:  
-    runs-on: ubuntu-latest
+    runs-on: Platform-Version-Integration-Tests
     steps:
     - name: "Checkout platform version"
       uses: actions/checkout@v2
