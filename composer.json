@@ -42,6 +42,8 @@
     "pimcore/admin-ui-classic-light-theme-bundle": "<1.0 || > 1.0.99",
     "pimcore/copilot-bundle": "<1.1 || > 1.1.99",
     "pimcore/generic-data-index-bundle": "<1.1 || > 1.1.99",
-    "pimcore/pimcore": "<11.3 || > 11.3.99"
+    "pimcore/pimcore": "<11.3 || > 11.3.99",
+    "pimcore/studio-backend-bundle": "*",
+    "pimcore/studio-ui-bundle": "dev-nightly"
   }
 }
