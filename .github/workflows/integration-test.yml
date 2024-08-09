@@ -17,7 +17,7 @@ jobs:
     - name: "Setup git"
       run: |
         sudo apt update
-        sudo apt install git  
+        sudo apt install git -y
         git --version
      
     - name: "Checkout platform version"
