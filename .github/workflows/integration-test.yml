@@ -16,7 +16,9 @@ jobs:
     steps:
     - name: "Setup git"
       run: |
-          git --version
+        apt update
+        apt install git  
+        git --version
      
     - name: "Checkout platform version"
       uses: actions/checkout@v2
