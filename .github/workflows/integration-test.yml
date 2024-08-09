@@ -14,11 +14,11 @@ jobs:
   run-integration-test:  
     runs-on: arc-runner-set
     steps:
-    - name: "Setup git"
-      run: |
-          sudo add-apt-repository -y ppa:git-core/ppa
-          sudo apt update -y
-          sudo apt-get install -y --no-install-recommends git
+    # - name: "Setup git"
+    #   run: |
+    #       sudo add-apt-repository -y ppa:git-core/ppa
+    #       sudo apt update -y
+    #       sudo apt-get install -y --no-install-recommends git
           
     - name: "Verify Git version"
       run: |
