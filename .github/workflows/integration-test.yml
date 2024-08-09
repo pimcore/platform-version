@@ -12,7 +12,7 @@ on:
 
 jobs:
   run-integration-test:  
-    runs-on: Platform-Version-Integration-Tests
+    runs-on: arc-runner-set
     steps:
     - name: "Checkout platform version"
       uses: actions/checkout@v2
