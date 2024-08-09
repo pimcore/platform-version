@@ -16,9 +16,13 @@ jobs:
     steps:
     - name: "Setup git"
       run: |
-        sudo apt update
-        sudo apt install git -y
-        git --version
+          sudo add-apt-repository -y ppa:git-core/ppa
+          sudo apt update -y
+          sudo apt-get install -y --no-install-recommends git
+          
+    - name: "Verify Git version"
+      run: |
+           git --version
      
     - name: "Checkout platform version"
       uses: actions/checkout@v2
