@@ -34,14 +34,15 @@ jobs:
     - name: "Verify Docker"
       run: |
         sudo docker run hello-world
+        docker compose version
      
     - name: "Checkout platform version"
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: './platform-version'
 
     - name: "Checkout K6 Tests"
-      uses: "actions/checkout@v3"
+      uses: "actions/checkout@v4"
       with:
           repository: "pimcore/saas-k6"
           ref: ${{ inputs.test_branch || github.ref_name }}
