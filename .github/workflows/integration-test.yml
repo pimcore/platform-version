@@ -33,7 +33,7 @@ jobs:
 
     - name: "Verify Docker"
       run: |
-        sudo docker run hello-world
+        docker version
         docker compose version
      
     - name: "Checkout platform version"
