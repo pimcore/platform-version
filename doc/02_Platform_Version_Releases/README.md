@@ -10,6 +10,7 @@ Following platform version releases are available.
 | 2023.3  | [Release Notes](../03_Release_Notes/2023.3.md) | [Details](2023.3.md) |   ✅  | December 2025     |
 | 2024.1  | [Release Notes](../03_Release_Notes/2024.1.md) | [Details](2024.1.md) |   ❌  | ❌                 |
 | 2024.2  | [Release Notes](../03_Release_Notes/2024.2.md) | [Details](2024.2.md) |   ❌  | ❌                 |
+| 2024.3  | [Release Notes](../03_Release_Notes/2024.3.md) | [Details](2024.3.md) |   ❌  | ❌                 |
 
 Community support of a platform version ends after release of next platform version. LTS labeled platform versions and
 their corresponding module versions have extended LTS support. 
