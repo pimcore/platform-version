@@ -50,12 +50,6 @@ jobs:
             composer require "$package_name:*" --no-update
           done
 
-      - name: Upload SBOM as an artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: composer
-          path: composer_test.json
-
       - name: Allow SBOM Plugin
         run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
 
