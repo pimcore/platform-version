@@ -40,9 +40,15 @@ jobs:
           updated_content=$(echo "$updated_content" | jq 'del(.conflict)')
           
           # Overwrite composer.json with updated content
-          echo "$updated_content" | jq '.' > composer.json
+          echo "$updated_content" | jq '.' > composer_test.json
           
-          echo $(<composer.json)
+          echo $(<composer_test.json)
+
+      - name: Upload SBOM as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: composer
+          path: composer_test.json
 
       - name: Allow SBOM Plugin
         run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
