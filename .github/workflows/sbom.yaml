@@ -21,8 +21,26 @@ jobs:
       - name: Install snapd
         run: sudo apt install snapd
 
+      - name: Install jq
+        run: sudo apt-get install jq
+
       - name: Install OSV-Scanner
         run : sudo snap install osv-scanner
+
+      - name: Read and modify composer.json
+        id: update_composer
+        run: |
+          # Read current content of composer.json
+          original_content=$(<composer.json)
+          
+          # Extract conflicts and add them to require
+          updated_content=$(echo "$original_content" | jq '.require |= . + .conflict')
+          
+          # Remove conflict node from the updated content
+          updated_content=$(echo "$updated_content" | jq 'del(.conflict)')
+          
+          # Overwrite composer.json with updated content
+          echo "$updated_content" | jq '.' > composer.json
 
       - name: Allow SBOM Plugin
         run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
