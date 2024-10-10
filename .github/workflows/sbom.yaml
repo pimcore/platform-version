@@ -42,7 +42,7 @@ jobs:
 
             # Extract package name and version constraint
             package_name=$(_jq '.key')
-            composer require "package_name:*" --no-update
+            composer require "$package_name:*" --no-update
           done
 
       - name: Upload SBOM as an artifact
