@@ -1,0 +1,58 @@
+name: Generate SBOM and run OSV-Scanner
+
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+  workflow_dispatch:
+
+jobs:
+  sbom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Install snapd
+        run: sudo apt install snapd
+
+      - name: Install OSV-Scanner
+        run : sudo snap install osv-scanner
+
+      - name: Allow SBOM Plugin
+        run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
+
+      - name: Install SBOM Plugin
+        run: composer require cyclonedx/cyclonedx-php-composer
+
+      - name: CREATE SBOM
+        run: composer CycloneDX:make-sbom --output-file=sbom.json --output-format=json
+
+      - name: Upload SBOM as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.json
+
+      - name: Run OSV-Scanner
+        id: osvscanner
+        run: osv-scanner --sbom=sbom.json --output=osv-results.txt
+
+      - name: Create fail comment
+        uses: peter-evans/create-or-update-comment@v4
+        if: ${{ failure() && steps.osvscanner.conclusion == 'failure' }}
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-path: 'osv-results.txt'
+
+      - name: Upload SBOM as an artifact
+        if: ${{ failure() && steps.osvscanner.conclusion == 'failure' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: osv
+          path: osv-results.txt
