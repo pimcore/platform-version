@@ -39,7 +39,7 @@ jobs:
           # Remove conflict node from the updated content
           updated_content=$(echo "$updated_content" | jq 'del(.conflict)')
           
-          echo $(updated_content)
+          echo $($updated_content)
           
           # Overwrite composer.json with updated content
           echo "$updated_content" | jq '.' > composer_test.json
