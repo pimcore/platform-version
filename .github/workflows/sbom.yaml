@@ -41,6 +41,8 @@ jobs:
           
           # Overwrite composer.json with updated content
           echo "$updated_content" | jq '.' > composer.json
+          
+          echo $(<composer.json)
 
       - name: Allow SBOM Plugin
         run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
