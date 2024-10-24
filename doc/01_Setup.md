@@ -11,6 +11,7 @@ Use following steps to set up Pimcore Platform Version in an existing project:
   below to install further Pimcore modules. Eventually you need to adapt versions of other
   pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
 
+
 ### Setup with new project
 
 Use following steps to set up Pimcore Platform Version for a new project: 
@@ -51,6 +52,16 @@ Bugfix versions of Pimcore modules can be installed within a Platform Version vi
 :::tip
 
 Eventually adding `pimcore/*` is necessary for composer to resolve pimcore repository versions properly.
+
+:::
+
+:::caution
+
+Keep in mind that the `pimcore/platform-version` repository does not specify required packages.  
+It only specifies conflicting packages to ensure only compatible versions are installed.
+The command `composer require pimcore/platform-version --update-with-all-dependencies` will therefore not work.
+The command `composer require` will check against your `composer.lock` and may result in an error.
+You need to run `composer update` to update all packages to the latest version.
 
 :::
 
