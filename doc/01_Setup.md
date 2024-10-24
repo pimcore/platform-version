@@ -11,7 +11,6 @@ Use following steps to set up Pimcore Platform Version in an existing project:
   below to install further Pimcore modules. Eventually you need to adapt versions of other
   pimcore packages to apply to versions required by platform version. Please follow instructions of composer. 
 
-
 ### Setup with new project
 
 Use following steps to set up Pimcore Platform Version for a new project: 
