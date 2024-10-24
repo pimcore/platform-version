@@ -57,7 +57,7 @@ Eventually adding `pimcore/*` is necessary for composer to resolve pimcore repos
 :::caution
 
 Keep in mind that the `pimcore/platform-version` repository does not specify required packages.  
-It only specifies conflicting packages to ensure only compatible versions are installed.
+It only specifies conflicting packages to ensure compatible versions are installed.
 The command `composer require pimcore/platform-version --update-with-all-dependencies` will therefore not work.
 The command `composer require` will check against your `composer.lock` and may result in an error.
 You need to run `composer update` to update all packages to the latest version.
