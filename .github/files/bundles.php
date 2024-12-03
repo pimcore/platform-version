@@ -53,6 +53,8 @@ return [
     \Pimcore\Bundle\AdminUiClassicLightThemeBundle\PimcoreAdminUiClassicLightThemeBundle::class => ['all' => true],
     \Pimcore\Bundle\GenericDataIndexBundle\PimcoreGenericDataIndexBundle::class => ['all' => true],
     \Pimcore\Bundle\CopilotBundle\PimcoreCopilotBundle::class => ['all' => true],
+
+    \Pimcore\Bundle\QuillBundle\PimcoreQuillBundle::class => ['all' => true],
 ];
 
 
