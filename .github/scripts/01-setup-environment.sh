@@ -88,6 +88,7 @@ docker compose exec -T -- php composer require -W \
     pimcore/admin-ui-classic-light-theme-bundle \
     pimcore/copilot-bundle \
     pimcore/generic-data-index-bundle \
+    pimcore/quill-bundle \
     pimcore/workflow-automation-integration-bundle
 
 docker compose exec -T -- php composer update
