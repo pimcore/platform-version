@@ -21,4 +21,5 @@ jobs:
             branch: ${{ matrix.branch }}
             ignore-list: "public"
             platform-repo: true
+            private-repo: true
         secrets: inherit
