@@ -15,7 +15,7 @@ jobs:
             fail-fast: false
             matrix:
                 include:
-                    - { php-version: 8.1, platform-version: 2022.0 }
+                    - { php-version: 8.1, platform-version: '2022.0' }
         with:
             php-version: ${{ matrix.php-version }}
             platform-version: ${{ matrix.platform-version }}
