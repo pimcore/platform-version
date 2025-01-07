@@ -1,0 +1,40 @@
+name: "Composer outdated check"
+
+on:
+    workflow_dispatch:
+        inputs:
+            ignore-list:
+                description: 'Ignore configuration for composer outdated check'
+                required: true
+                default: 'none'
+                type: string
+            version-type:
+                description: 'Type of version to check M for major, m for minor, p for patch'
+                required: true
+                default: 'M'
+                type: choice
+                options:
+                    - M
+                    - m
+                    - p
+
+
+permissions:
+  contents: read
+
+jobs:
+    composer-checks:
+        uses: pimcore/workflows-collection-public/.github/workflows/reusable-composer-checks.yaml@main
+        strategy:
+            fail-fast: false
+            matrix:
+                include:
+                    - { php-version: 8.3, branch: 2025.x }
+        with:
+            php-version: ${{ matrix.php-version }}
+            branch: ${{ matrix.branch }}
+            ignore-list: ${{ inputs.ignore-list }}
+            platform-repo: true
+            private-repo: true
+            version-type: "-${{ inputs.version-type }}"
+        secrets: inherit
