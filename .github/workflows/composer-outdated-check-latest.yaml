@@ -24,7 +24,7 @@ permissions:
 
 jobs:
     composer-checks:
-        uses: pimcore/workflows-collection-public/.github/workflows/reusable-composer-checks.yaml@main
+        uses: pimcore/workflows-collection-public/.github/workflows/reusable-composer-recursive-checks.yaml@main
         strategy:
             fail-fast: false
             matrix:
