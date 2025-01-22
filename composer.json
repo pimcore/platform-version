@@ -33,7 +33,7 @@
     "pimcore/output-data-config-toolkit-bundle": "<5.2 || > 5.2.99",
     "pimcore/personalization-bundle": "<1.1 || > 1.1.99",
     "pimcore/perspective-editor": "<1.8 || > 1.8.99",
-    "pimcore/pimcore": "<12.x-dev",
+    "pimcore/pimcore": "<12.0",
     "pimcore/portal-engine": "<4.2 || > 4.2.99",
     "pimcore/quill-bundle": "<1.x-dev",
     "pimcore/static-resolver-bundle": "<1.4 || > 1.4.99",
