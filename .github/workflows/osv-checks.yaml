@@ -18,6 +18,7 @@ jobs:
                     - { php-version: 8.1, platform-version: '2022.0' }
                     - { php-version: 8.2, platform-version: '2023.3' }
                     - { php-version: 8.3, platform-version: '2024.4' }
+                    - { php-version: 8.4, platform-version: '2025.x' }
         with:
             php-version: ${{ matrix.php-version }}
             platform-version: ${{ matrix.platform-version }}

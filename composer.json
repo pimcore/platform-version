@@ -29,7 +29,7 @@
     "pimcore/headless-documents": "<2.3 || > 2.3.99",
     "pimcore/newsletter-bundle": "<1.2 || > 1.2.99",
     "pimcore/object-merger": "<4.1 || > 4.1.99",
-    "pimcore/openid-connect": "<1.2 || > 1.2.99",
+    "pimcore/openid-connect": "<1.x-dev",
     "pimcore/output-data-config-toolkit-bundle": "<5.2 || > 5.2.99",
     "pimcore/personalization-bundle": "<1.1 || > 1.1.99",
     "pimcore/perspective-editor": "<1.8 || > 1.8.99",
