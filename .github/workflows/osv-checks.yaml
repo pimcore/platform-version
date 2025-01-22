@@ -24,4 +24,5 @@ jobs:
         with:
             php-version: ${{ matrix.php-version }}
             platform-version: ${{ matrix.platform-version }}
+            composer-check-only: true
         secrets: inherit
