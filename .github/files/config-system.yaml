@@ -3,9 +3,6 @@ pimcore:
         valid_languages: 'en,de,fr'
         domain: 'foo.com'
 
-    chromium:
-        uri: 'ws://chrome:3000/'
-
     gotenberg:
         base_url: 'http://gotenberg:3000'
 

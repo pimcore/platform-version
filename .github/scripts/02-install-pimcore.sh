@@ -32,7 +32,6 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomRepor
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreGoogleMarketingBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreApplicationLoggerBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreWebToPrintBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreTinymceBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreStaticRoutesBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreNewsletterBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreWordExportBundle

@@ -10,7 +10,7 @@ return [
     \Pimcore\Bundle\GoogleMarketingBundle\PimcoreGoogleMarketingBundle::class => ['all' => true],
     \Pimcore\Bundle\ApplicationLoggerBundle\PimcoreApplicationLoggerBundle::class => ['all' => true],
     \Pimcore\Bundle\WebToPrintBundle\PimcoreWebToPrintBundle::class => ['all' => true],
-    \Pimcore\Bundle\TinymceBundle\PimcoreTinymceBundle::class => ['all' => true],
+//    \Pimcore\Bundle\TinymceBundle\PimcoreTinymceBundle::class => ['all' => true],
     \Pimcore\Bundle\StaticRoutesBundle\PimcoreStaticRoutesBundle::class => ['all' => true],
     \Pimcore\Bundle\NewsletterBundle\PimcoreNewsletterBundle::class => ['all' => true],
     \Pimcore\Bundle\WordExportBundle\PimcoreWordExportBundle::class => ['all' => true],

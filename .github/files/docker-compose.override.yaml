@@ -44,9 +44,6 @@ services:
         volumes:
             - pimcore-demo-opensearch:/usr/share/opensearch/data
 
-    chrome:
-        image: browserless/chrome
-
     gotenberg:
         image: gotenberg/gotenberg:7
 
