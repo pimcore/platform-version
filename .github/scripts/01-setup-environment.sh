@@ -53,7 +53,7 @@ docker compose exec -T -- php composer config prefer-stable true
 
 docker compose exec -T -- php composer require pimcore/platform-version:@dev pimcore/pimcore pimcore/admin-ui-classic-bundle -W
 docker compose exec -T -- php composer require -W \
-    gotenberg/gotenberg-php:^1.1 \
+    gotenberg/gotenberg-php:^2.2 \
     pimcore/admin-ui-classic-bundle \
     pimcore/asset-metadata-class-definitions \
     pimcore/data-hub-file-export \
