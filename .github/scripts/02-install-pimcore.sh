@@ -23,7 +23,7 @@ sleep 2
 
 docker compose exec -T php bin/console cache:clear
 
-#docker compose exec -T php bin/console pimcore:bundle:install PimcoreTranslationsProviderInterfaceBundle
+docker compose exec -T php bin/console pimcore:bundle:install PimcoreTranslationsProviderInterfaceBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePersonalizationBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreGlossaryBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreSeoBundle
@@ -48,7 +48,7 @@ cp ../../platform-version/.github/files/config-datahub.yaml ./config/local
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreAssetMetadataClassDefinitionsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreStatisticsExplorerBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDirectEditBundle
-#docker compose exec -T php bin/console doctrine:schema:update --force
+
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreOpenIdConnectBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreGenericDataIndexBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePortalEngineBundle
@@ -72,5 +72,7 @@ cp ../../platform-version/.github/files/config-config.yaml ./config/local
 
 docker compose exec -T php bin/console cache:clear
 docker compose exec -T php bin/console generic-data-index:update:index
+
+docker compose exec -T php bin/console doctrine:schema:update --force
 
 sudo chown -R www-data .
