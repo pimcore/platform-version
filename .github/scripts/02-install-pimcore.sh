@@ -74,7 +74,7 @@ cp ../../platform-version/.github/files/config-config.yaml ./config/local
 docker compose exec -T php bin/console cache:clear
 docker compose exec -T php bin/console doctrine:migrations:migrate --no-interaction
 docker compose exec -T php bin/console cache:clear
-docker compose exec -T php bin/console generic-data-index:update:index
+docker compose exec -T php bin/console generic-data-index:update:index -r
 
 
 sudo chown -R www-data .
