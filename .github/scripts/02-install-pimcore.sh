@@ -71,7 +71,8 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreCopilotBund
 cp ../../platform-version/.github/files/config-config.yaml ./config/local
 
 #docker compose exec -T php bin/console doctrine:schema:update --force
-
+docker compose exec -T php bin/console cache:clear
+docker compose exec -T php bin/console doctrine:migrations:migrate --no-interaction
 docker compose exec -T php bin/console cache:clear
 docker compose exec -T php bin/console generic-data-index:update:index
 
