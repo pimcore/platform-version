@@ -45,7 +45,7 @@ services:
             - pimcore-demo-opensearch:/usr/share/opensearch/data
 
     gotenberg:
-        image: gotenberg/gotenberg:7
+        image: gotenberg/gotenberg:8
 
 networks:
   default:
