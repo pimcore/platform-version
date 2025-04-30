@@ -2,7 +2,7 @@
   "name": "pimcore/platform-version",
   "type": "library",
   "description": "Verified Pimcore Version",
-  "license": "GPL-3.0-or-later",
+  "license": "proprietary",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "conflict": {
