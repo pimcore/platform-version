@@ -9,3 +9,4 @@ Following list includes all available Platform Version release notes:
 - [2024.2](./2024.2.md)
 - [2024.3](./2024.3.md)
 - [2024.4](./2024.4.md)
+- [2025.1](./2025.1.md)
