@@ -3,7 +3,7 @@
   "type": "library",
   "description": "Verified Pimcore Version",
   "license": "proprietary",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "conflict": {
     "pimcore/admin-ui-classic-bundle": "<2.0 || > 2.0.99",
