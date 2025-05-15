@@ -83,7 +83,7 @@
     "pimcore/portal-engine": "<5.0 || > 5.0.99",
     "pimcore/quill-bundle": "<2.0 || > 2.0.99",
     "pimcore/static-resolver-bundle": "<3.0 || > 3.0.99",
-    "pimcore/statistics-explorer": "<3.0 || > 3.0.99",
+    "pimcore/statistics-explorer": "<3.0.dev",
     "pimcore/system-info-bundle": "<2.0 || > 2.0.99",
     "pimcore/translations-provider-interfaces": "<4.x.dev",
     "pimcore/web-to-print-bundle": "<2.0 || > 2.0.99",
