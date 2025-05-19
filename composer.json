@@ -75,7 +75,6 @@
     "symfony/yaml": "<7.2",
     "symfony/stopwatch": "<7.2",
     "doctrine/orm" : "<3.3.3",
-    "symfony/form": "<7.2",
     "symfony/intl": "<7.2",
     "symfony/dotenv": "<7.2"
   }
