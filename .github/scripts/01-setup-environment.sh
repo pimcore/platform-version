@@ -91,8 +91,7 @@ docker compose exec -T -- php composer require -W \
     pimcore/quill-bundle \
     pimcore/workflow-automation-integration-bundle
 
-docker compose exec -T -- php composer install
-docker compose exec -T -- php composer update -W
+docker compose exec -T -- php composer update
 
 
 # Install dockerize into the php container. We need it to block until
