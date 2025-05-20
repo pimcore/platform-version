@@ -1,8 +1,6 @@
 #!/bin/bash
 set -ex
 
-docker compose exec -T -- php composer update
-
 # Run pimcore installation.
 docker compose exec -T \
     -e PIMCORE_INSTALL_ADMIN_USERNAME=admin \
