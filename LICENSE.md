@@ -1,5 +1,5 @@
 # License
-Copyright (C) Pimcore GmbH (http://www.pimcore.com)
+Copyright (C) Pimcore GmbH (https://www.pimcore.com)
 
 This software is available under the terms of the
 following Pimcore Open Core License (POCL)
@@ -7,15 +7,15 @@ following Pimcore Open Core License (POCL)
 
 **PIMCORE OPEN CORE LICENSE AGREEMENT (POCL)**
 
-**Last Update: April 2025**
+**Last Update: June 2025**
 
 This Open Core License Agreement ("**Agreement**" or “**POCL**”), effective as of the day of the first installation or use by Customer (the "**Effective Date**"), is by and between Pimcore GmbH, Söllheimer Straße 16, AT-5020 Salzburg, Republic of Austria (hereinafter "**Licensor**" or “**Pimcore**”) and the user of the Software, as defined herein, (hereinafter "**Licensee**" or "**Customer**"). Licensor and Licensee may be referred to herein collectively as the "**Parties**" or individually as a "**Party**."
 
 **WHEREAS** Licensor desires to license out certain Pimcore Software (“**Software**“).
 
 **WHEREAS** (a) Software for which the source code is publicly available but which is not licensed out as open source software is "**Open Core Software**" and
-(b) Software for which the source code is not publicly available is "**Proprietary Software**",
-both covered by this Agreement.
+    (b) Software for which the source code is not publicly available is "**Proprietary Software**",
+    both covered by this Agreement.
 
 **WHEREAS** the exact products that are available under this Agreement are defined in the additional contractual documents or by inclusion of, or referral to, this Agreement within the source code or within the source code repositories; if not provided for otherwise, a software element is Proprietary Software.
 
@@ -31,18 +31,18 @@ both covered by this Agreement.
 1.2 Pimcore grants the Customer a non-exclusive, non-transferable, non-sublicensable, geographically unlimited right, limited in time to the term of the Agreement, to use the Software and to customize, modify or adapt it for its own purposes. Unless if required by Pimcore for compliance with applicable laws or any order of a governmental authority, the Customer is not obliged to share these modifications, adaptations, and customizations (“**Derivatives**”) with Pimcore or anyone else.
 
 1.2.1 Solution Development and Production Use (Open Core Software)
-
+ 
 “**Production Use**” means the usage of a software for development of solutions and productions within a business operation.
 
 a) An organization with total global revenue not exceeding €5 million (€5M) or equivalent amount in other currency annually (“**Threshold**”) may qualify for a free license for Production Use of the Open Core Software, provided such organization is not a part, subsidiary, affiliate, or shell company to another organization, entity, or company group whose total combined revenue exceeds the Threshold. Eligibility must be self-certified by the Customer when starting the use of the Open Core Software and is subject to periodic review and audit by Pimcore. If at any time the Customer’s revenue exceeds the Threshold, a paid commercial license will be required for continued Production Use of the software. The Customer is obliged to inform Pimcore about relevant changes in revenues. Pimcore is entitled to charge license fees retroactively from the date on which Customer exceeded the Threshold.
 
-b) Non-profit and educational organizations are eligible for a free license for Production Use of the Open Core Software, subject to Pimcore’s non-profit criteria.
+b) Non-profit and educational organizations are eligible for a free license for Production Use of the Open Core Software, subject to Pimcore’s non-profit criteria. For this purpose, “non-profit” refers to entities that are legally recognized as non-profit or tax-exempt under applicable law and operate exclusively for charitable, educational, or scientific purposes without profit distribution. Government bodies, municipalities, political parties, and public institutions are excluded unless explicitly approved by Pimcore. 
 
 Pimcore shall decide at its own reasonable discretion whether (a) the Threshold is exceeded or (b) the requirements for non-profit or educational usage are met. Legal recourse is excluded with regard to such decision of Pimcore.
 
 1.2.2 Non-Production Use and Transition to Production Use (Open Core Software)
 
-For non-production purposes, such as demonstrations, designing of prototypes, proofs of concept, and sales presentations (such and comparable usages of a software “**Non-Production Use**”), the Pimcore Developer License (PDLA) must be purchased.
+For non-production purposes—such as demonstrations, prototype design, proofs of concept, and sales presentations (collectively referred to as “**Non-Production Use**”)—the use of POCL-based software is free of charge. However, to showcase or demonstrate the features of the Enterprise Edition of Pimcore for any Non-Production Use, a Pimcore Developer License Agreement (PDLA) must be purchased.
 
 If the Customer or a Partner or any other third person acting on the Customer’s behalf initiates development of a solution with the intention or foreseeable or actual effect of deploying it into production, such use from its beginning shall be deemed Production Use of the Open Core Software for which the Threshold applies from the outset. Individual transition periods to Production Use may be agreed between Pimcore and Customer in writing.
 
@@ -51,15 +51,15 @@ Pimcore reserves the right to audit, verify and enforce compliance with these te
 1.2.3 The use of Proprietary Software is never free of charge. Sect. 1.2.1 and 1.2.2 do not apply to Proprietary Software.
 
 1.3 Restrictions on Use
-
+    
 1.3.1 The Customer may not offer the Software as a hosted or managed service by granting third parties access to a significant part of its features or functions. Additionally, the Customer may not fork, modify, or redistribute the Software, or any Derivative, in a manner that results in a competing or functionally comparable product that is offered as a free or commercial alternative to Pimcore’s official offerings.
-
+    
 1.3.2 The Customer shall also refrain from incorporating the Software, or any Derivative, into a commercial product or service offering materially deriving its economic value from the Software, even if it is not directly exposed or obvious.
-
+    
 1.3.3 The Customer is also prohibited from representing, implying, or otherwise suggesting that its use, distribution, or customization of the Software is endorsed, certified, or supported by Pimcore, unless such authorization has been explicitly granted in writing.
-
+    
 1.3.4 The Customer may only use the Software for its own enterprise. The Customer may not use the Software simultaneously in more instances than Customer has acquired usage licences for. The Customer is only permitted to copy the Software to the extent that this is necessary for the intended use, including the correction of errors. The creation of a backup copy is permitted if it is necessary to secure the contractual use.
-
+    
 1.3.5 The Customer must not, at any time, (i) rent, lease, lend, sell, license, assign, distribute, publish, transfer, or otherwise make available the Software; (ii) reverse engineer, disassemble, decompile, decode, adapt, or otherwise attempt to derive or gain access to source code of the Proprietary Software, in whole or in part; (iii) use the Software in any manner or for any purpose that infringes, misappropriate, or otherwise wireless any intellectual property ride or other ride of any person, or that violates any applicable law.
 
 1.4 If the Customer violates any of the provisions Sect. 1.2 and 1.3, all rights of usage granted under the POCL shall immediately become invalid and shall automatically revert to Pimcore. In this case, the Customer must immediately and completely cease using the Software, delete all copies of the Software installed on its systems and delete any backup copies made or hand them over to Pimcore. In addition, Pimcore reserves the right to take all legal steps.
@@ -78,11 +78,11 @@ Pimcore reserves the right to audit, verify and enforce compliance with these te
 2.1 If the Customer wishes to contribute to the Software or to distribute a Derivative, both must be made in accordance with the Pimcore Contributors License Agreement (“PCLA”), available at <https://github.com/pimcore/pimcore/blob/12.x/CLA.md>. The PCLA stipulates the terms under which intellectual contributions are managed, ensuring that all parties' rights are protected. Acceptance of the PCLA is mandatory for all contributors and can be reviewed on the source-code repository. Contributions without adherence to the PCLA will not be accepted.
 
 2.2 Any contribution to the Software by a Derivative must be clearly documented, in order to maintain transparency and integrity of the source code.
-
+    
 2.3. Any Derivative distributed must prominently be specified as “Derivative”, comply with the terms of the POCL, include copyright notices, and be licensed as a whole under the terms of the POCL, with the proviso that the recipient (licensee) of the out-licensed Derivative gets the role of the “Customer” regarding rights and obligations. Upon distribution of any Derivative, recipient must be provided with a copy of this POCL.
 
 ### 3. COLLATERAL OBLIGATIONS OF THE CUSTOMER
-
+    
 3.1 The Customer shall not manipulate, in particular modify, move, remove, suppress, switch off or circumvent licence keys and technical protection mechanisms in the Software, e. g. directly, or through the use of intermediaries, white-labelling, or segmentation of services designed to avoid licensing obligations.
 
 3.2 The Customer shall not alter or obfuscate any of the Pimcore's licensing, copyright, or other proprietary notices within the Software. Any use of Pimcore’s trademarks must comply with applicable laws.
@@ -112,7 +112,7 @@ EXCEPT FOR THE LIMITED WARRANTY SET FORTH IN THIS SECTION 5, THE SOFTWARE AND DO
 6.2 Before reporting any defect or error, the Customer must carry out an analysis of the system environment as far as possible to ensure that the defect or error is not due to system components that are not covered by this Agreement.
 
 6.3 The Customer shall immediately install or carry out updates or other troubleshooting measures provided by Pimcore.
-
+    
 6.4 Violations of the obligations to co-operate may result in additional costs for Pimcore. The Customer must reimburse Pimcore for such costs, unless it is not responsible for them.
 
 ### 7. LIMITATION OF LIABILITY
@@ -134,15 +134,15 @@ Term and termination will be regulated separately. If Customer uses the Software
 The remuneration for the use of the software shall be agreed separately.
 
 ### 11. MISCELLANEOUS
-
+    
 11.1 The Software may automatically collect and transmit non-personal statistical data related to its installation and use, including but not limited to the number of records in the database, installed modules, system configuration, and usage metrics ("Usage Data"). Such data is collected solely for the purposes of product improvement, support, and analytics. Licensee agrees not to interfere with the collection and transmission of Usage Data.
 
 11.2 Licensee may not assign or transfer any of its rights or delegate any of its obligations hereunder, in each case whether voluntarily, involuntarily, by operation of law or otherwise, without the prior written consent of Licensor. Any purported assignment, transfer, or delegation in violation of this Section is null and void. No assignment, transfer, or delegation will relieve the assigning or delegating Party of any of its obligations hereunder. This Agreement is binding upon and inures to the benefit of the Parties hereto and their respective permitted successors and assigns.
-
+    
 11.3 Each Party acknowledges and agrees that a breach or threatened breach by such Party of any of its contractual obligations may cause the other Party irreparable harm for which monetary damages would not be an adequate remedy and agrees that, in the event of such breach or threatened breach, the other Party will be entitled to equitable relief, including a restraining order, an injunction, specific performance, and any other relief that may be available from any court, without any requirement to post a bond or other security, or to prove actual damages or that monetary damages are not an adequate remedy. Such remedies are not exclusive and are in addition to all other remedies that may be available at law, in equity, or otherwise.
-
+    
 11.4 No amendment to or modification of this Agreement is effective unless it is in writing and signed by an authorized representative of each Party. No waiver by any Party of any of the provisions hereof will be effective unless explicitly set forth in writing and signed by the Party so waiving. Except as otherwise set forth in this Agreement, (i) no failure to exercise, or delay in exercising, any rights, remedy, power, or privilege arising from this Agreement will operate or be construed as a waiver thereof, and (ii) no single or partial exercise of any right, remedy, power, or privilege hereunder will preclude any other or further exercise thereof or the exercise of any other right, remedy, power, or privilege.
-
+    
 11.5 If any provision of this Agreement is invalid, illegal, or unenforceable in any jurisdiction, such invalidity, illegality, or unenforceability will not affect any other term or provision of this Agreement or invalidate or render unenforceable such term or provision in any other jurisdiction. Upon such determination that any term or other provision is invalid, illegal, or unenforceable, the Parties hereto shall negotiate in good faith to modify this Agreement so as to effect the original intent of the Parties as closely as possible in a mutually acceptable manner in order that the transactions contemplated hereby be consummated as originally contemplated to the greatest extent possible.
 
 11.6 In all relevant respects that are not regulated by this Agreement, the following documents shall apply, as far as applicable:
@@ -151,7 +151,7 @@ The remuneration for the use of the software shall be agreed separately.
 - Pimcore Privacy Statement (PPS)
 - Pimcore Data Processing Agreement (PDPA)
 - Pimcore PaaS Terms & Conditions
-
+  
 11.7 Specifications originating from the Customer regarding the service content and legal elements, such as GTC or contractual clauses, do not apply.
-
+  
 11.8 Support, maintenance, and other services remain subject to separate agreements.
