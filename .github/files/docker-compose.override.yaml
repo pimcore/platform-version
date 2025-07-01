@@ -21,7 +21,7 @@ services:
             - "8089:80"
         #    - "8443:443"
     opensearch:
-        image: opensearchproject/opensearch:latest
+        image: opensearchproject/opensearch:2
         environment:
             - cluster.name=opensearch-cluster # Name the cluster
             - node.name=opensearch-node # Name the node that will run in this container
