@@ -2,10 +2,10 @@
     "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
     "bomFormat": "CycloneDX",
     "specVersion": "1.6",
-    "serialNumber": "urn:uuid:8a07b910-7428-4c03-8caa-00b3a23aa91d",
+    "serialNumber": "urn:uuid:263285da-38e2-42c6-8418-7ba92a0d64d0",
     "version": 1,
     "metadata": {
-        "timestamp": "2025-07-01T08:09:54Z",
+        "timestamp": "2025-07-01T08:55:51Z",
         "tools": [
             {
                 "name": "composer",
@@ -100,11 +100,11 @@
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "71ac3640081642dca339f1b7fe518a8aad7b9dcc"
+                    "value": "b9ba04339d04a02e587c6b036e5d649a39bab88c"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "71ac3640081642dca339f1b7fe518a8aad7b9dcc"
+                    "value": "b9ba04339d04a02e587c6b036e5d649a39bab88c"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -6507,10 +6507,10 @@
             ]
         },
         {
-            "bom-ref": "pimcore/asset-metadata-class-definitions-3.1.0.0",
+            "bom-ref": "pimcore/asset-metadata-class-definitions-3.1.1.0",
             "type": "library",
             "name": "asset-metadata-class-definitions",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "group": "pimcore",
             "description": "Adds Enterprise Metadata to Pimcore with data object like editor and additional data types for asset metadata.",
             "licenses": [
@@ -6521,21 +6521,21 @@
                     }
                 }
             ],
-            "purl": "pkg:composer/pimcore/asset-metadata-class-definitions@v3.1.0",
+            "purl": "pkg:composer/pimcore/asset-metadata-class-definitions@v3.1.1",
             "externalReferences": [
                 {
                     "type": "distribution",
-                    "url": "https://repo.pimcore.com/github-actions/dists/pimcore/asset-metadata-class-definitions/3.1.0.0/r57cec6ee5f15031ccf750b5a8d1c13db960f323b.zip",
-                    "comment": "dist reference: 57cec6ee5f15031ccf750b5a8d1c13db960f323b"
+                    "url": "https://repo.pimcore.com/github-actions/dists/pimcore/asset-metadata-class-definitions/3.1.1.0/r926398d4642354ccb7248bd9baf10209593a08c9.zip",
+                    "comment": "dist reference: 926398d4642354ccb7248bd9baf10209593a08c9"
                 },
                 {
                     "type": "distribution",
-                    "url": "https://api.github.com/repos/pimcore/asset-metadata-class-definitions/zipball/57cec6ee5f15031ccf750b5a8d1c13db960f323b",
-                    "comment": "dist reference: 57cec6ee5f15031ccf750b5a8d1c13db960f323b"
+                    "url": "https://api.github.com/repos/pimcore/asset-metadata-class-definitions/zipball/926398d4642354ccb7248bd9baf10209593a08c9",
+                    "comment": "dist reference: 926398d4642354ccb7248bd9baf10209593a08c9"
                 },
                 {
                     "type": "vcs",
-                    "url": "https://github.com/pimcore/asset-metadata-class-definitions/tree/v3.1.0",
+                    "url": "https://github.com/pimcore/asset-metadata-class-definitions/tree/v3.1.1",
                     "comment": "as detected from Composer manifest 'support.source'"
                 },
                 {
@@ -6547,11 +6547,11 @@
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "57cec6ee5f15031ccf750b5a8d1c13db960f323b"
+                    "value": "926398d4642354ccb7248bd9baf10209593a08c9"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "57cec6ee5f15031ccf750b5a8d1c13db960f323b"
+                    "value": "926398d4642354ccb7248bd9baf10209593a08c9"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -10546,10 +10546,10 @@
             ]
         },
         {
-            "bom-ref": "symfony/config-6.4.22.0",
+            "bom-ref": "symfony/config-7.3.0.0",
             "type": "library",
             "name": "config",
-            "version": "v6.4.22",
+            "version": "v7.3.0",
             "group": "symfony",
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "author": "Fabien Potencier, Symfony Community",
@@ -10561,17 +10561,17 @@
                     }
                 }
             ],
-            "purl": "pkg:composer/symfony/config@v6.4.22",
+            "purl": "pkg:composer/symfony/config@v7.3.0",
             "externalReferences": [
                 {
                     "type": "distribution",
-                    "url": "https://api.github.com/repos/symfony/config/zipball/af5917a3b1571f54689e56677a3f06440d2fe4c7",
-                    "comment": "dist reference: af5917a3b1571f54689e56677a3f06440d2fe4c7"
+                    "url": "https://api.github.com/repos/symfony/config/zipball/ba62ae565f1327c2f6366726312ed828c85853bc",
+                    "comment": "dist reference: ba62ae565f1327c2f6366726312ed828c85853bc"
                 },
                 {
                     "type": "vcs",
                     "url": "https://github.com/symfony/config.git",
-                    "comment": "source reference: af5917a3b1571f54689e56677a3f06440d2fe4c7"
+                    "comment": "source reference: ba62ae565f1327c2f6366726312ed828c85853bc"
                 },
                 {
                     "type": "website",
@@ -10580,18 +10580,18 @@
                 },
                 {
                     "type": "vcs",
-                    "url": "https://github.com/symfony/config/tree/v6.4.22",
+                    "url": "https://github.com/symfony/config/tree/v7.3.0",
                     "comment": "as detected from Composer manifest 'support.source'"
                 }
             ],
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "af5917a3b1571f54689e56677a3f06440d2fe4c7"
+                    "value": "ba62ae565f1327c2f6366726312ed828c85853bc"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "af5917a3b1571f54689e56677a3f06440d2fe4c7"
+                    "value": "ba62ae565f1327c2f6366726312ed828c85853bc"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -10762,10 +10762,10 @@
             ]
         },
         {
-            "bom-ref": "symfony/debug-bundle-7.2.0.0",
+            "bom-ref": "symfony/debug-bundle-7.3.0.0",
             "type": "library",
             "name": "debug-bundle",
-            "version": "v7.2.0",
+            "version": "v7.3.0",
             "group": "symfony",
             "description": "Provides a tight integration of the Symfony VarDumper component and the ServerLogCommand from MonologBridge into the Symfony full-stack framework",
             "author": "Fabien Potencier, Symfony Community",
@@ -10777,17 +10777,17 @@
                     }
                 }
             ],
-            "purl": "pkg:composer/symfony/debug-bundle@v7.2.0",
+            "purl": "pkg:composer/symfony/debug-bundle@v7.3.0",
             "externalReferences": [
                 {
                     "type": "distribution",
-                    "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/2dade0d1415c08b627379b5ec214ec8424cb2e32",
-                    "comment": "dist reference: 2dade0d1415c08b627379b5ec214ec8424cb2e32"
+                    "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/781acc90f31f5fe18915f9276890864ebbbe3da8",
+                    "comment": "dist reference: 781acc90f31f5fe18915f9276890864ebbbe3da8"
                 },
                 {
                     "type": "vcs",
                     "url": "https://github.com/symfony/debug-bundle.git",
-                    "comment": "source reference: 2dade0d1415c08b627379b5ec214ec8424cb2e32"
+                    "comment": "source reference: 781acc90f31f5fe18915f9276890864ebbbe3da8"
                 },
                 {
                     "type": "website",
@@ -10796,18 +10796,18 @@
                 },
                 {
                     "type": "vcs",
-                    "url": "https://github.com/symfony/debug-bundle/tree/v7.2.0",
+                    "url": "https://github.com/symfony/debug-bundle/tree/v7.3.0",
                     "comment": "as detected from Composer manifest 'support.source'"
                 }
             ],
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "2dade0d1415c08b627379b5ec214ec8424cb2e32"
+                    "value": "781acc90f31f5fe18915f9276890864ebbbe3da8"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "2dade0d1415c08b627379b5ec214ec8424cb2e32"
+                    "value": "781acc90f31f5fe18915f9276890864ebbbe3da8"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -11086,10 +11086,10 @@
             ]
         },
         {
-            "bom-ref": "symfony/event-dispatcher-6.4.13.0",
+            "bom-ref": "symfony/event-dispatcher-7.3.0.0",
             "type": "library",
             "name": "event-dispatcher",
-            "version": "v6.4.13",
+            "version": "v7.3.0",
             "group": "symfony",
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "author": "Fabien Potencier, Symfony Community",
@@ -11101,17 +11101,17 @@
                     }
                 }
             ],
-            "purl": "pkg:composer/symfony/event-dispatcher@v6.4.13",
+            "purl": "pkg:composer/symfony/event-dispatcher@v7.3.0",
             "externalReferences": [
                 {
                     "type": "distribution",
-                    "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e",
-                    "comment": "dist reference: 0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e"
+                    "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/497f73ac996a598c92409b44ac43b6690c4f666d",
+                    "comment": "dist reference: 497f73ac996a598c92409b44ac43b6690c4f666d"
                 },
                 {
                     "type": "vcs",
                     "url": "https://github.com/symfony/event-dispatcher.git",
-                    "comment": "source reference: 0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e"
+                    "comment": "source reference: 497f73ac996a598c92409b44ac43b6690c4f666d"
                 },
                 {
                     "type": "website",
@@ -11120,18 +11120,18 @@
                 },
                 {
                     "type": "vcs",
-                    "url": "https://github.com/symfony/event-dispatcher/tree/v6.4.13",
+                    "url": "https://github.com/symfony/event-dispatcher/tree/v7.3.0",
                     "comment": "as detected from Composer manifest 'support.source'"
                 }
             ],
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e"
+                    "value": "497f73ac996a598c92409b44ac43b6690c4f666d"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e"
+                    "value": "497f73ac996a598c92409b44ac43b6690c4f666d"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -14178,10 +14178,10 @@
             ]
         },
         {
-            "bom-ref": "symfony/web-profiler-bundle-7.2.4.0",
+            "bom-ref": "symfony/web-profiler-bundle-7.3.1.0",
             "type": "library",
             "name": "web-profiler-bundle",
-            "version": "v7.2.4",
+            "version": "v7.3.1",
             "group": "symfony",
             "description": "Provides a development tool that gives detailed information about the execution of any request",
             "author": "Fabien Potencier, Symfony Community",
@@ -14193,17 +14193,17 @@
                     }
                 }
             ],
-            "purl": "pkg:composer/symfony/web-profiler-bundle@v7.2.4",
+            "purl": "pkg:composer/symfony/web-profiler-bundle@v7.3.1",
             "externalReferences": [
                 {
                     "type": "distribution",
-                    "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/4ffde1c860a100533b02697d9aaf5f45759ec26a",
-                    "comment": "dist reference: 4ffde1c860a100533b02697d9aaf5f45759ec26a"
+                    "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/47c994d8f08817122ffb48bf2ea4fb97b7e00d51",
+                    "comment": "dist reference: 47c994d8f08817122ffb48bf2ea4fb97b7e00d51"
                 },
                 {
                     "type": "vcs",
                     "url": "https://github.com/symfony/web-profiler-bundle.git",
-                    "comment": "source reference: 4ffde1c860a100533b02697d9aaf5f45759ec26a"
+                    "comment": "source reference: 47c994d8f08817122ffb48bf2ea4fb97b7e00d51"
                 },
                 {
                     "type": "website",
@@ -14212,18 +14212,18 @@
                 },
                 {
                     "type": "vcs",
-                    "url": "https://github.com/symfony/web-profiler-bundle/tree/v7.2.4",
+                    "url": "https://github.com/symfony/web-profiler-bundle/tree/v7.3.1",
                     "comment": "as detected from Composer manifest 'support.source'"
                 }
             ],
             "properties": [
                 {
                     "name": "cdx:composer:package:distReference",
-                    "value": "4ffde1c860a100533b02697d9aaf5f45759ec26a"
+                    "value": "47c994d8f08817122ffb48bf2ea4fb97b7e00d51"
                 },
                 {
                     "name": "cdx:composer:package:sourceReference",
-                    "value": "4ffde1c860a100533b02697d9aaf5f45759ec26a"
+                    "value": "47c994d8f08817122ffb48bf2ea4fb97b7e00d51"
                 },
                 {
                     "name": "cdx:composer:package:type",
@@ -15211,7 +15211,7 @@
                 "doctrine/persistence-3.4.0.0",
                 "doctrine/sql-formatter-1.5.2.0",
                 "symfony/cache-7.3.1.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/console-6.4.23.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/doctrine-bridge-7.3.1.0",
@@ -15427,9 +15427,9 @@
             "ref": "knplabs/knp-paginator-bundle-6.8.1.0",
             "dependsOn": [
                 "knplabs/knp-components-5.2.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/http-foundation-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/routing-7.3.0.0",
@@ -15460,7 +15460,7 @@
             "ref": "league/flysystem-bundle-3.4.0.0",
             "dependsOn": [
                 "league/flysystem-3.30.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/options-resolver-7.3.0.0"
@@ -15742,16 +15742,12 @@
             ]
         },
         {
-            "ref": "pimcore/asset-metadata-class-definitions-3.1.0.0",
+            "ref": "pimcore/asset-metadata-class-definitions-3.1.1.0",
             "dependsOn": [
                 "nesbot/carbon-3.10.1.0",
                 "pimcore/enterprise-subscription-tools-1.5.0.0",
                 "pimcore/pimcore-12.1.0.0",
                 "pimcore/studio-backend-bundle-0.6.30.0",
-                "symfony/config-6.4.22.0",
-                "symfony/console-6.4.23.0",
-                "symfony/dependency-injection-6.4.23.0",
-                "symfony/event-dispatcher-6.4.13.0",
                 "zircote/swagger-php-4.11.1.0"
             ]
         },
@@ -16087,16 +16083,16 @@
                 "spatie/image-optimizer-1.8.0.0",
                 "symfony-cmf/routing-bundle-3.1.1.0",
                 "symfony/cache-7.3.1.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/console-6.4.23.0",
                 "symfony/contracts-3.6.0.0",
-                "symfony/debug-bundle-7.2.0.0",
+                "symfony/debug-bundle-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/doctrine-bridge-7.3.1.0",
                 "symfony/doctrine-messenger-7.2.5.0",
                 "symfony/dom-crawler-7.3.1.0",
                 "symfony/error-handler-7.3.1.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/expression-language-7.3.0.0",
                 "symfony/filesystem-7.3.0.0",
                 "symfony/finder-7.3.0.0",
@@ -16128,7 +16124,7 @@
                 "symfony/uid-7.3.1.0",
                 "symfony/validator-6.4.23.0",
                 "symfony/var-dumper-7.3.1.0",
-                "symfony/web-profiler-bundle-7.2.4.0",
+                "symfony/web-profiler-bundle-7.3.1.0",
                 "symfony/webpack-encore-bundle-2.2.0.0",
                 "symfony/workflow-7.3.0.0",
                 "symfony/yaml-7.3.1.0",
@@ -16147,7 +16143,7 @@
                 "knplabs/knp-paginator-bundle-6.8.1.0",
                 "myclabs/php-enum-1.8.5.0",
                 "nesbot/carbon-3.10.1.0",
-                "pimcore/asset-metadata-class-definitions-3.1.0.0",
+                "pimcore/asset-metadata-class-definitions-3.1.1.0",
                 "pimcore/enterprise-subscription-tools-1.5.0.0",
                 "pimcore/frontend-permission-toolkit-bundle-3.1.0.0",
                 "pimcore/generic-data-index-bundle-2.1.0.0",
@@ -16371,9 +16367,9 @@
         {
             "ref": "scheb/2fa-bundle-7.11.0.0",
             "dependsOn": [
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/framework-bundle-6.4.23.0",
                 "symfony/http-foundation-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
@@ -16443,7 +16439,7 @@
             ]
         },
         {
-            "ref": "symfony/config-6.4.22.0",
+            "ref": "symfony/config-7.3.0.0",
             "dependsOn": [
                 "symfony/filesystem-7.3.0.0",
                 "symfony/polyfill-ctype-1.32.0.0"
@@ -16468,8 +16464,9 @@
             "ref": "symfony/css-selector-7.3.0.0"
         },
         {
-            "ref": "symfony/debug-bundle-7.2.0.0",
+            "ref": "symfony/debug-bundle-7.3.0.0",
             "dependsOn": [
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/twig-bridge-6.4.22.0",
@@ -16515,7 +16512,7 @@
             ]
         },
         {
-            "ref": "symfony/event-dispatcher-6.4.13.0"
+            "ref": "symfony/event-dispatcher-7.3.0.0"
         },
         {
             "ref": "symfony/expression-language-7.3.0.0",
@@ -16536,7 +16533,7 @@
         {
             "ref": "symfony/form-7.3.1.0",
             "dependsOn": [
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/options-resolver-7.3.0.0",
                 "symfony/polyfill-ctype-1.32.0.0",
                 "symfony/polyfill-intl-icu-1.32.0.0",
@@ -16548,10 +16545,10 @@
             "ref": "symfony/framework-bundle-6.4.23.0",
             "dependsOn": [
                 "symfony/cache-7.3.1.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/error-handler-7.3.1.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/filesystem-7.3.0.0",
                 "symfony/finder-7.3.0.0",
                 "symfony/http-foundation-6.4.23.0",
@@ -16585,7 +16582,7 @@
             "dependsOn": [
                 "psr/log-3.0.2.0",
                 "symfony/error-handler-7.3.1.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/http-foundation-6.4.23.0",
                 "symfony/polyfill-ctype-1.32.0.0"
             ]
@@ -16605,7 +16602,7 @@
                 "egulias/email-validator-4.0.4.0",
                 "psr/event-dispatcher-1.0.0.0",
                 "psr/log-3.0.2.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/mime-7.3.0.0"
             ]
         },
@@ -16622,7 +16619,7 @@
             "ref": "symfony/mercure-bundle-0.3.9.0",
             "dependsOn": [
                 "lcobucci/jwt-5.5.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/mercure-0.6.5.0",
@@ -16654,7 +16651,7 @@
             "ref": "symfony/monolog-bundle-3.10.0.0",
             "dependsOn": [
                 "monolog/monolog-3.9.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/monolog-bridge-7.3.0.0"
@@ -16752,9 +16749,9 @@
             "ref": "symfony/security-bundle-6.4.23.0",
             "dependsOn": [
                 "symfony/clock-7.3.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
-                "symfony/event-dispatcher-6.4.13.0",
+                "symfony/event-dispatcher-7.3.0.0",
                 "symfony/http-foundation-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/password-hasher-7.3.0.0",
@@ -16824,7 +16821,7 @@
         {
             "ref": "symfony/twig-bundle-6.4.23.0",
             "dependsOn": [
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-foundation-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
@@ -16868,9 +16865,9 @@
             ]
         },
         {
-            "ref": "symfony/web-profiler-bundle-7.2.4.0",
+            "ref": "symfony/web-profiler-bundle-7.3.1.0",
             "dependsOn": [
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/framework-bundle-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0",
                 "symfony/routing-7.3.0.0",
@@ -16882,7 +16879,7 @@
             "ref": "symfony/webpack-encore-bundle-2.2.0.0",
             "dependsOn": [
                 "symfony/asset-7.3.0.0",
-                "symfony/config-6.4.22.0",
+                "symfony/config-7.3.0.0",
                 "symfony/dependency-injection-6.4.23.0",
                 "symfony/http-kernel-6.4.23.0"
             ]
@@ -16976,7 +16973,7 @@
             "dependsOn": [
                 "pimcore/admin-ui-classic-bundle-2.1.0.0",
                 "pimcore/admin-ui-classic-light-theme-bundle-2.0.0.0",
-                "pimcore/asset-metadata-class-definitions-3.1.0.0",
+                "pimcore/asset-metadata-class-definitions-3.1.1.0",
                 "pimcore/backend-power-tools-bundle-1.4.0.0",
                 "pimcore/copilot-bundle-2.1.0.0",
                 "pimcore/customer-management-framework-bundle-5.1.0.0",
