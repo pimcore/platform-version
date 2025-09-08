@@ -42,7 +42,8 @@
     "pimcore/web-to-print-bundle": "<2.x-dev",
     "pimcore/web2print-tools-bundle": "<6.x-dev",
     "pimcore/workflow-automation-integration-bundle": "<1.x-dev",
-    "pimcore/workflow-designer": "<1.x-dev"
+    "pimcore/workflow-designer": "<1.x-dev",
+    "pimcore/tinymce-bundle": "<1.x-dev"
   }
 }
 
