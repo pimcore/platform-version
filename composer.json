@@ -11,7 +11,7 @@
     "pimcore/asset-metadata-class-definitions": "<3.2 || > 3.2.99",
     "pimcore/backend-power-tools-bundle": "<1.5 || > 1.5.99",
     "pimcore/copilot-bundle": "<2.2 || > 2.2.99",
-    "pimcore/customer-management-framework-bundle": "<5.1 || > 5.1.99",
+    "pimcore/customer-management-framework-bundle": "<5.2",
     "pimcore/data-hub": "<2.3",
     "pimcore/data-hub-file-export": "<3.2 || > 3.2.99",
     "pimcore/data-hub-productsup": "<2.3 || > 2.3.99",
