@@ -33,7 +33,7 @@
     "pimcore/personalization-bundle": "<2.2 || > 2.2.99",
     "pimcore/perspective-editor": "<2.1 || > 2.1.99",
     "pimcore/pimcore": "<12.3",
-    "pimcore/portal-engine": "<5.1 || > 5.1.99",
+    "pimcore/portal-engine": "<5.2",
     "pimcore/quill-bundle": "<2.2 || > 2.2.99",
     "pimcore/static-resolver-bundle": "<3.2 || > 3.2.99",
     "pimcore/statistics-explorer": "<3.1 || > 3.1.99",
