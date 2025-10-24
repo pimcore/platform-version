@@ -15,7 +15,7 @@
     "pimcore/data-hub": "<2.3",
     "pimcore/data-hub-file-export": "<3.2 || > 3.2.99",
     "pimcore/data-hub-productsup": "<2.3 || > 2.3.99",
-    "pimcore/data-hub-simple-rest": "<3.3 || > 3.3.99",
+    "pimcore/data-hub-simple-rest": "<3.4",
     "pimcore/data-hub-webhooks": "<2.0 || > 2.0.99",
     "pimcore/data-importer": "<2.2 || > 2.2.99",
     "pimcore/data-quality-management-bundle": "<1.5 || > 1.5.99",
