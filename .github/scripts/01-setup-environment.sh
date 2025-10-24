@@ -7,7 +7,7 @@ if [ -z "$1" ]
     exit;
 fi
 
-docker pull docker.io/pimcore/pimcore:php8.3-latest
+docker pull ghcr.io/pimcore/pimcore:php8.3-latest
 
 sudo rm -rf test-project/
 
