@@ -25,7 +25,7 @@
     "pimcore/frontend-permission-toolkit-bundle": "<3.2 || > 3.2.99",
     "pimcore/generic-data-index-bundle": "<2.2 || > 2.2.99",
     "pimcore/google-marketing-bundle": "<2.0 || > 2.0.99",
-    "pimcore/headless-documents": "<2.5 || > 2.5.99",
+    "pimcore/headless-documents": "<2.6",
     "pimcore/newsletter-bundle": "<2.2 || > 2.2.99",
     "pimcore/object-merger": "<5.0 || > 5.0.99",
     "pimcore/openid-connect": "<1.4 || > 1.4.99",
