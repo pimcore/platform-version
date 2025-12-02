@@ -7,15 +7,15 @@ if [ -z "$1" ]
     exit;
 fi
 
-docker pull ghcr.io/pimcore/pimcore:php8.3-latest
+docker pull ghcr.io/pimcore/pimcore:php8.4-latest
 
 sudo rm -rf test-project/
 
 docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
-  pimcore/pimcore:php8.3-latest \
-  composer create-project pimcore/skeleton:@dev test-project
+  pimcore/pimcore:php8.4-latest \
+  composer create-project pimcore/skeleton:@prepare-2025.4 test-project
 
 cd test-project/
 
@@ -51,7 +51,7 @@ docker compose exec -T -- php composer config repositories.dev path "./platform-
 docker compose exec -T -- php composer config minimum-stability dev
 docker compose exec -T -- php composer config prefer-stable true
 
-docker compose exec -T -- php composer require pimcore/platform-version:@dev pimcore/pimcore pimcore/quill-bundle pimcore/admin-ui-classic-bundle -W
+docker compose exec -T -- php composer require pimcore/platform-version:@prepare-2025.4 pimcore/pimcore pimcore/quill-bundle pimcore/admin-ui-classic-bundle -W
 docker compose exec -T -- php composer require -W \
     gotenberg/gotenberg-php:^2.2 \
     pimcore/admin-ui-classic-bundle \
