@@ -23,7 +23,7 @@
     "pimcore/ecommerce-framework-bundle": "<2.2 || > 2.2.99",
     "pimcore/file-explorer-bundle": "<2.1.4",
     "pimcore/frontend-permission-toolkit-bundle": "<3.2 || > 3.2.99",
-    "pimcore/generic-data-index-bundle": "dev-upsert-bulk-op",
+    "pimcore/generic-data-index-bundle": "*",
     "pimcore/google-marketing-bundle": "<2.0 || > 2.0.99",
     "pimcore/headless-documents": "<2.6",
     "pimcore/newsletter-bundle": "<2.2 || > 2.2.99",
