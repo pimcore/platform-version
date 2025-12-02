@@ -87,7 +87,7 @@ docker compose exec -T -- php composer require -W \
     pimcore/backend-power-tools-bundle \
     pimcore/admin-ui-classic-light-theme-bundle \
     pimcore/copilot-bundle \
-    pimcore/generic-data-index-bundle \
+    pimcore/generic-data-index-bundle:dev-upsert-bulk-op \
     pimcore/quill-bundle \
     pimcore/tinymce-bundle \
     pimcore/workflow-automation-integration-bundle
