@@ -55,7 +55,7 @@ docker compose exec -T -- php composer require pimcore/platform-version:@dev pim
 docker compose exec -T -- php composer require -W \
     gotenberg/gotenberg-php:^2.2 \
     pimcore/admin-ui-classic-bundle \
-    pimcore/asset-metadata-class-definitions \
+    pimcore/asset-metadata-class-definitions:"dev-3.x as 3.3.1" \
     pimcore/data-hub-file-export \
     pimcore/data-hub-productsup \
     pimcore/data-hub-simple-rest \
