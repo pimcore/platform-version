@@ -8,7 +8,7 @@
   "conflict": {
     "pimcore/admin-ui-classic-bundle": "<2.3",
     "pimcore/admin-ui-classic-light-theme-bundle": "<2.0 || > 2.0.99",
-    "pimcore/asset-metadata-class-definitions": "<3.2 || > 3.2.99",
+    "pimcore/asset-metadata-class-definitions": "<3.3",
     "pimcore/backend-power-tools-bundle": "<1.5 || > 1.5.99",
     "pimcore/copilot-bundle": "<2.2 || > 2.2.99",
     "pimcore/customer-management-framework-bundle": "<5.2",
@@ -42,8 +42,7 @@
     "pimcore/web-to-print-bundle": "<2.1 || > 2.1.99",
     "pimcore/web2print-tools-bundle": "<6.0 || > 6.0.99",
     "pimcore/workflow-automation-integration-bundle": "<1.1 || >1.1.99",
-    "pimcore/workflow-designer": "<1.8",
-    "symfony/http-foundation": "<7.3"
+    "pimcore/workflow-designer": "<1.8"
   }
 }
 

@@ -7,14 +7,14 @@ if [ -z "$1" ]
     exit;
 fi
 
-docker pull ghcr.io/pimcore/pimcore:php8.3-latest
+docker pull ghcr.io/pimcore/pimcore:php8.4-latest
 
 sudo rm -rf test-project/
 
 docker run \
   -u `id -u`:`id -g` --rm \
   -v `pwd`:/var/www/html \
-  pimcore/pimcore:php8.3-latest \
+  pimcore/pimcore:php8.4-latest \
   composer create-project pimcore/skeleton:@dev test-project
 
 cd test-project/
