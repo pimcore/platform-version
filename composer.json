@@ -8,7 +8,7 @@
   "conflict": {
     "pimcore/admin-ui-classic-bundle": "<2.3 || >= 3",
     "pimcore/admin-ui-classic-light-theme-bundle": "<2.0 || >= 3",
-    "pimcore/asset-metadata-class-definitions": "<3.3 >= 4",
+    "pimcore/asset-metadata-class-definitions": "<3.3 || >= 4",
     "pimcore/backend-power-tools-bundle": "<1.6 || >= 2",
     "pimcore/copilot-bundle": "<2.2 || >= 3",
     "pimcore/customer-management-framework-bundle": "<5.2 || >= 6",
@@ -33,7 +33,7 @@
     "pimcore/personalization-bundle": "<2.2 || >= 3",
     "pimcore/perspective-editor": "<2.2 || >= 3",
     "pimcore/pimcore": "<12.3 || >= 13",
-    "pimcore/portal-engine": "<5.2  || >= 6",
+    "pimcore/portal-engine": "<5.2 || >= 6",
     "pimcore/quill-bundle": "<2.2 || >= 3",
     "pimcore/static-resolver-bundle": "<3.3 || >= 4",
     "pimcore/statistics-explorer": "<3.1 || >= 4",
