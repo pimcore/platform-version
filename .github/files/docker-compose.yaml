@@ -40,6 +40,7 @@ services:
         environment:
             COMPOSER_HOME: /var/www/html
             PHP_IDE_CONFIG: serverName=localhost
+            PHP_MEMORY_LIMIT: 512M
             # Feed installer configuration via ENV variables.
             # See: https://pimcore.com/docs/pimcore/current/Development_Documentation/Getting_Started/Advanced_Installation_Topics.html#page_Advanced-Installation-Topics
             PIMCORE_INSTALL_MYSQL_USERNAME: pimcore
@@ -56,6 +57,8 @@ services:
     supervisord:
         #user: '1000:1000' # set to your uid:gid
         image: ghcr.io/pimcore/pimcore:php8.3-supervisord-latest
+        environment:
+            PHP_MEMORY_LIMIT: 512M
         depends_on:
             db:
                 condition: service_healthy
