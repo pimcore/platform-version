@@ -17,5 +17,12 @@ Following platform version releases are available.
 | 2025.3  | [Release Notes](../03_Release_Notes/2025.3.md) | [Details](2025.3.md) |   ❌  | ❌                 |
 | 2025.4  | [Release Notes](../03_Release_Notes/2025.4.md) | [Details](2025.4.md) |   ✅  | December 2028     |
 
-Community support of a platform version ends after release of next platform version. LTS labeled platform versions and
-their corresponding module versions have extended LTS support. 
+Community support of a platform version ends after release of next platform version. 
+
+LTS labeled platform versions and their corresponding module versions have extended LTS support. 
+
+
+### Quick Links
+
+- Click [here](https://pimcore.com/en/products/services/long-term-support) to learn more about what LTS offers.
+- Click [here](https://pimcore.com/en/pricing) to check which license include LTS.
