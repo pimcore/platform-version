@@ -26,14 +26,14 @@
     "pimcore/openid-connect": "<2026.1 || >= 2026.2",
     "pimcore/personalization-bundle": "<2026.1 || >= 2026.2",
     "pimcore/pimcore": "<12.3 || >= 13",
-    "pimcore/portal-engine": "<5.2 || >= 6",
-    "pimcore/quill-bundle": "<2.2 || >= 3",
-    "pimcore/static-resolver-bundle": "<3.3 || >= 4",
-    "pimcore/statistics-explorer": "<3.2 || >= 4",
-    "pimcore/translations-provider-interfaces": "<4.2 || >= 5",
-    "pimcore/web-to-print-bundle": "<2.2 || >= 3",
-    "pimcore/workflow-automation-integration-bundle": "<1.2 || >= 2",
-    "pimcore/workflow-designer": "<1.8 || >= 2"
+    "pimcore/portal-engine": "<2026.1 || >= 2026.2",
+    "pimcore/quill-bundle": "<2026.1 || >= 2026.2",
+    "pimcore/static-resolver-bundle": "<2026.1 || >= 2026.2",
+    "pimcore/statistics-explorer": "<2026.1 || >= 2026.2",
+    "pimcore/translations-provider-interfaces": "<2026.1 || >= 2026.2",
+    "pimcore/web-to-print-bundle": "<2026.1 || >= 2026.2",
+    "pimcore/workflow-automation-integration-bundle": "<2026.1 || >= 2026.2",
+    "pimcore/workflow-designer": "<2026.1 || >= 2026.2"
   }
 }
 
