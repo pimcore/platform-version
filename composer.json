@@ -25,7 +25,7 @@
     "pimcore/object-merger": "<2026.1 || >= 2026.2",
     "pimcore/openid-connect": "<2026.1 || >= 2026.2",
     "pimcore/personalization-bundle": "<2026.1 || >= 2026.2",
-    "pimcore/pimcore": "<12.3 || >= 13",
+    "pimcore/pimcore": "<2026.1 || >= 2026.2",
     "pimcore/portal-engine": "<2026.1 || >= 2026.2",
     "pimcore/quill-bundle": "<2026.1 || >= 2026.2",
     "pimcore/static-resolver-bundle": "<2026.1 || >= 2026.2",
