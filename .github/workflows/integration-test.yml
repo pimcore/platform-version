@@ -22,6 +22,8 @@ jobs:
     - name: "Checkout platform version"
       uses: actions/checkout@v4
       with:
+        ref: 2026.x
+        fetch-depth: 0
         path: './platform-version'
 
     - name: "Checkout K6 Tests"
