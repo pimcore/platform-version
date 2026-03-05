@@ -70,19 +70,14 @@ docker compose exec -T -- php composer require -W \
     pimcore/data-hub \
     pimcore/customer-management-framework-bundle \
     pimcore/web-to-print-bundle \
-    pimcore/perspective-editor \
     pimcore/object-merger \
     pimcore/frontend-permission-toolkit-bundle \
-    pimcore/system-info-bundle \
-    pimcore/file-explorer-bundle \
     pimcore/personalization-bundle \
-    pimcore/google-marketing-bundle \
     pimcore/web-to-print-bundle \
     pimcore/ecommerce-framework-bundle \
     pimcore/data-quality-management-bundle \
     pimcore/data-hub-webhooks \
     pimcore/backend-power-tools-bundle \
-    pimcore/admin-ui-classic-light-theme-bundle \
     pimcore/copilot-bundle \
     pimcore/generic-data-index-bundle \
     pimcore/quill-bundle \
