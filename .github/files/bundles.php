@@ -43,6 +43,7 @@ return [
     \Pimcore\Bundle\CopilotBundle\PimcoreCopilotBundle::class => ['all' => true],
 
     \Pimcore\Bundle\QuillBundle\PimcoreQuillBundle::class => ['all' => true],
+    \Pimcore\Bundle\StudioBackendBundle\PimcoreStudioBackendBundle::class => ['all' => true],
 ];
 
 
