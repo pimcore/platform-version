@@ -29,7 +29,6 @@ docker compose exec -T php bin/console cache:clear
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreTranslationsProviderInterfaceBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePersonalizationBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreGlossaryBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreSeoBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreSimpleBackendSearchBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomReportsBundle
@@ -37,9 +36,6 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreGoogleMarke
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreApplicationLoggerBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreWebToPrintBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreStaticRoutesBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreNewsletterBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreWordExportBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreXliffBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreFileExplorerBundle
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
@@ -62,8 +58,6 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowDes
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreHeadlessDocumentsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomerManagementFrameworkBundle
-docker compose exec -T php bin/console pimcore:bundle:install Web2PrintToolsBundle
-docker compose exec -T php bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataQualityManagementBundle
