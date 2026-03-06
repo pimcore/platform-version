@@ -54,7 +54,6 @@ docker compose exec -T php bin/console pimcore:bundle:install PimcoreWorkflowDes
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreHeadlessDocumentsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomerManagementFrameworkBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcorePerspectiveEditorBundle
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataQualityManagementBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubWebhooksBundle
