@@ -29,11 +29,9 @@ docker compose exec -T php bin/console cache:clear
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreTranslationsProviderInterfaceBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcorePersonalizationBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreSeoBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreSimpleBackendSearchBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreCustomReportsBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreApplicationLoggerBundle
-docker compose exec -T php bin/console pimcore:bundle:install PimcoreWebToPrintBundle
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreStaticRoutesBundle
 
 docker compose exec -T php bin/console pimcore:bundle:install PimcoreDataHubBundle
