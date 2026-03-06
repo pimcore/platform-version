@@ -33,7 +33,10 @@
     "pimcore/translations-provider-interfaces": ">=2026.1-dev <2026.2-dev",
     "pimcore/web-to-print-bundle": ">=2026.1-dev <2026.2-dev",
     "pimcore/workflow-automation-integration-bundle": ">=2026.1-dev <2026.2-dev",
-    "pimcore/workflow-designer": ">=2026.1-dev <2026.2-dev"
+    "pimcore/workflow-designer": ">=2026.1-dev <2026.2-dev",
+    "pimcore/studio-backend-bundle": ">=2026.1-dev <2026.2-dev",
+    "pimcore/studio-ui-bundle": ">=2026.1-dev <2026.2-dev",
+    "pimcore/studio-dashboards-bundle": ">=2026.1-dev <2026.2-dev"
   }
 }
 
