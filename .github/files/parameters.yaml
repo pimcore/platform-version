@@ -1,3 +1,0 @@
-parameters:
-    secret: 'some-secret-value'
-    app_encryption_secret: 'some-more-secret'

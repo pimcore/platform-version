@@ -17,8 +17,6 @@ jobs:
             fail-fast: false
             matrix:
                 include:
-                    - { php-version: 8.1, platform-version: 'v2022.0' }
-                    - { php-version: 8.2, platform-version: 'v2023.3' }
                     - { php-version: 8.3, platform-version: 'v2024.4' }
                     - { php-version: 8.4, platform-version: 'v2025.4' }
                     - { php-version: 8.5, platform-version: '2026.x' }
