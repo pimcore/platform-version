@@ -133,7 +133,7 @@ Follow the complete setup instructions in the [Pimcore Studio Setup](./03_Advanc
 After completing the Studio setup, visit your Pimcore instance:
 
 - Frontend: [http://localhost](http://localhost)
-- Pimcore Studio: [http://localhost/admin](http://localhost/admin)
+- Pimcore Studio: [http://localhost/pimcore-studio](http://localhost/pimcore-studio)
 
 ## Demo Enterprise Installation
 
@@ -219,4 +219,4 @@ For any installation, configure a caching backend to improve performance. Redis 
 - [System Requirements](./01_System_Requirements.md) - Detailed requirements for PHP, database, and additional software.
 - [System Setup and Hosting](./02_System_Setup_and_Hosting/README.md) - Web server configuration, file storage, and database setup.
 - [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md) - Automated installation and bundle management.
-- [Platform Version](./03_Advanced_Installation_Topics/03_Platform_Version.md) - Version management and updating Pimcore.
+- [Platform Version](./03_Advanced_Installation_Topics/03_Platform_Version.md) - Version compatibility and installing additional modules.

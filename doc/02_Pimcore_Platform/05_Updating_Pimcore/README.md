@@ -21,6 +21,16 @@ Pimcore modules are distributed as Composer packages. Updates are managed throug
    COMPOSER_MEMORY_LIMIT=-1 composer update
    ```
 
+   :::tip
+
+   If Composer has trouble resolving Pimcore package versions, add `pimcore/*` to the update command:
+
+   ```bash
+   COMPOSER_MEMORY_LIMIT=-1 composer update pimcore/platform-version pimcore/*
+   ```
+
+   :::
+
 4. **Clear caches**:
    ```bash
    bin/console pimcore:cache:clear
@@ -39,6 +49,12 @@ Bugfix releases of individual modules can be installed without changing the Plat
 ## Updating Without Platform Version
 
 If you manage module versions individually rather than through the Platform Version, update each package's version constraint in `composer.json` separately. Be aware that this approach requires manual compatibility verification between modules.
+
+:::warning
+
+In rare cases, you may need to update a specific Pimcore module to a version outside the range defined by the platform version. To do this, remove `pimcore/platform-version` from your `composer.json` and update the module individually. Be aware that this results in a potentially untested combination of Pimcore modules.
+
+:::
 
 :::caution
 
