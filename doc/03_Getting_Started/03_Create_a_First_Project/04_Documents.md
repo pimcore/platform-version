@@ -1,6 +1,9 @@
 # Documents
 
-Documents are CMS pages in Pimcore. Each document is backed by a Symfony controller and a Twig template, and can contain editable regions that content editors fill through Pimcore Studio. In this tutorial, you will create a content page, then build a product page that displays data from the object you created earlier.
+Documents are CMS pages in Pimcore. Each document is backed by a Symfony controller and a Twig template,
+and can contain editable regions that content editors fill through Pimcore Studio.
+In this tutorial, you will create a content page, then build a product page that displays data
+from the object you created earlier.
 
 ## Create a Controller
 
@@ -25,7 +28,8 @@ class ContentController extends FrontendController
 }
 ```
 
-The `defaultAction` renders the template `content/default.html.twig`. For now, the action is empty since the template handles the editable content.
+The `defaultAction` renders the template `content/default.html.twig`.
+For now, the action is empty since the template handles the editable content.
 
 ## Create a Template
 
@@ -44,7 +48,9 @@ Create the file `/templates/content/default.html.twig`:
 {% endblock %}
 ```
 
-Pimcore uses the Symfony Twig engine and adds its own *editables* - placeholders like `pimcore_input`, `pimcore_block`, and `pimcore_wysiwyg` that become editable fields in Pimcore Studio. For the full list, see the Editables documentation in the Documents reference.
+Pimcore uses the Symfony Twig engine and adds its own *editables* - placeholders like `pimcore_input`,
+`pimcore_block`, and `pimcore_wysiwyg` that become editable fields in Pimcore Studio.
+For the full list, see the [Editables documentation](https://github.com/pimcore/pimcore/blob/2026.x/doc/01_Documents/01_Templates/03_Editables/README.md) in the Documents reference.
 
 ## Add a Layout
 
@@ -165,7 +171,8 @@ The `{{ block('content') }}` placeholder is where each page's content is inserte
 
 ## Connect Controller to a Document
 
-Now connect the controller action to a page in Pimcore Studio so the page knows which action (and template) to use.
+Now connect the controller action to a page in Pimcore Studio
+so the page knows which action (and template) to use.
 
 1. In the *Documents* panel, right-click on *Home* and select *Add Page > Empty Page*.
 
@@ -250,15 +257,22 @@ Create the file `/templates/content/product.html.twig`:
 
 Key concepts in this template:
 
-- `editmode` is a built-in variable that is `true` when the page is being edited in Pimcore Studio. This lets you show different content in edit mode vs. the frontend.
-- `pimcore_relation("product")` creates an editable placeholder for a 1-to-1 relation. In edit mode, it renders a drop zone where you can drag a data object. In frontend mode, `.element` gives you access to the linked object and all its attributes.
-- `product.picture.thumbnail("content").html` renders an `<img>` tag using the "content" thumbnail configuration (see below). The tag includes the correct image path and alt attributes based on asset metadata.
+- `editmode` is a built-in variable that is `true` when the page is being edited in Pimcore Studio.
+  This lets you show different content in edit mode vs. the frontend.
+- `pimcore_relation("product")` creates an editable placeholder for a 1-to-1 relation. In edit mode,
+  it renders a drop zone where you can drag a data object. In frontend mode, `.element` gives you access
+  to the linked object and all its attributes.
+- `product.picture.thumbnail("content").html` renders an `<img>` tag using the "content" thumbnail configuration
+  (see below). The tag includes the correct image path and alt attributes based on asset metadata.
 
 ### Configure a Thumbnail
 
-To display the product image, you need a thumbnail configuration. Thumbnail configurations let Pimcore automatically render optimized images for different output channels, including high-resolution @2x versions.
+To display the product image, you need a thumbnail configuration.
+Thumbnail configurations let Pimcore automatically render optimized images for different output channels,
+including high-resolution @2x versions.
 
-In Pimcore Studio, navigate to *Settings > Assets > Thumbnails > Image Thumbnails* and create a new thumbnail configuration named **content**. Set the width to 600 pixels and leave other fields at their defaults.
+In Pimcore Studio, navigate to *Settings > Assets > Thumbnails > Image Thumbnails* and create a new thumbnail
+configuration named **content**. Set the width to 600 pixels and leave other fields at their defaults.
 
 <div class="image-as-lightbox"></div>
 
@@ -267,9 +281,10 @@ In Pimcore Studio, navigate to *Settings > Assets > Thumbnails > Image Thumbnail
 ### Link the Product Object to a Document
 
 1. In the Documents panel, right-click on *Home*, then select *Add Page > Empty Page*.
-2. In the *Settings* tab, choose the `Content` controller and the `product` action. Click *Save*.
-3. In the *Edit* tab, drag the product object from the Objects panel onto the relation placeholder.
-4. Click *Save & Publish*.
+2. Set the document key to **tshirt** if you want the page to be reachable at `http://localhost/tshirt`. If you choose a different key, use that path instead.
+3. In the *Settings* tab, choose the `Content` controller and the `product` action. Click *Save*.
+4. In the *Edit* tab, drag the product object from the Objects panel onto the relation placeholder.
+5. Click *Save & Publish*.
 
 <div class="image-as-lightbox"></div>
 
@@ -287,4 +302,8 @@ The page displays the product name, description, and image using data from the l
 
 ## Next Steps
 
-Once you are comfortable with the basics covered in this tutorial, explore the detailed reference documentation for each element type in the Pimcore Core section: Documents (page types, editables, properties), Objects (class definitions, data types, inheritance), and Assets (thumbnails, metadata, versioning).
+Once you are comfortable with the basics covered in this tutorial,
+explore the detailed reference documentation for each element type in the Pimcore Core section:
+[Documents](https://github.com/pimcore/pimcore/blob/2026.x/doc/01_Documents/README.md) (page types, editables, properties),
+[Objects](https://github.com/pimcore/pimcore/blob/2026.x/doc/03_Objects/README.md) (class definitions, data types, inheritance),
+and [Assets](https://github.com/pimcore/pimcore/blob/2026.x/doc/02_Assets/README.md) (thumbnails, metadata, versioning).

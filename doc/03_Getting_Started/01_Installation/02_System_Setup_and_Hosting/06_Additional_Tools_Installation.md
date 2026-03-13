@@ -1,11 +1,16 @@
 # Additional Tools Installation
 
-Pimcore uses third-party applications for certain functionalities such as video transcoding (FFMPEG), image optimization, and PDF generation. For a full list, see [System Requirements](../01_System_Requirements.md).
+Pimcore uses third-party applications for certain functionalities such as video transcoding (FFMPEG),
+image optimization, and PDF generation.
+For a full list, see [System Requirements](../01_System_Requirements.md).
 
-The installation commands below work on Debian-based Linux distributions (Debian, Ubuntu, Mint, etc.). For other distributions, adapt the commands to your package manager.
+The installation commands below work on Debian-based Linux distributions (Debian, Ubuntu, Mint, etc.).
+For other distributions, adapt the commands to your package manager.
 
-> All tools (including `composer`) must be added to the `$PATH` environment variable so Pimcore can find the executables.
-> If you cannot control `$PATH`, you can also [manually configure the paths for each application](https://github.com/pimcore/skeleton/blob/2026.x/config/services.yaml).
+> All tools (including `composer`) must be added to the `$PATH` environment variable
+> so Pimcore can find the executables.
+> If you cannot control `$PATH`, you can also
+> [manually configure the paths for each application](https://github.com/pimcore/skeleton/blob/2026.x/config/services.yaml).
 
 
 ## Composer
@@ -13,7 +18,8 @@ See the official install guide: [https://getcomposer.org/](https://getcomposer.o
 
 ## FFMPEG
 
-Many Linux distributions ship FFMPEG only with free codecs, so they may not support commonly used video codecs such as MPEG-4.
+Many Linux distributions ship FFMPEG only with free codecs,
+so they may not support commonly used video codecs such as MPEG-4.
 
 ```bash
 sudo apt-get install ffmpeg
@@ -87,7 +93,8 @@ sudo apt-get install graphviz
 
 ## Checking Your Installation
 
-You can check system requirements via Pimcore Studio under `Tools` / `System Info & Tools` / `System-Requirements Check`.
+You can check system requirements via Pimcore Studio under
+`Tools` / `System Info & Tools` / `System-Requirements Check`.
 
 Or via the CLI:
 

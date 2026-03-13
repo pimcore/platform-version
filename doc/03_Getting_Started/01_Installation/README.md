@@ -1,6 +1,7 @@
 # Installation
 
-Pimcore 2026.x uses Docker for local development and installation. You do not need PHP or Composer installed on your host machine.
+Pimcore 2026.x uses Docker for local development and installation.
+You do not need PHP or Composer installed on your host machine.
 
 ## Prerequisites
 
@@ -20,7 +21,8 @@ Pimcore offers two installation packages:
 
 ## Skeleton Installation
 
-The skeleton package provides a minimal Pimcore setup. You install the core framework first, then add Pimcore Studio (the administration interface) and its dependencies.
+The skeleton package provides a minimal Pimcore setup.
+You install the core framework first, then add Pimcore Studio (the administration interface) and its dependencies.
 
 ### Step 1: Create the Project
 
@@ -38,10 +40,13 @@ cd my-project/
 
 ### Step 2: Configure Docker Services
 
-The skeleton includes a `docker-compose.yaml` with the base services (PHP, Nginx, MariaDB, Redis). Pimcore Studio requires two additional services: OpenSearch (or Elasticsearch) for search indexing, and Mercure for real-time updates.
+The skeleton includes a `docker-compose.yaml` with the base services (PHP, Nginx, MariaDB, Redis).
+Pimcore Studio requires two additional services:
+OpenSearch (or Elasticsearch) for search indexing, and Mercure for real-time updates.
 
 1. Run `` echo `id -u`:`id -g` `` to retrieve your local user and group ID.
-2. Open `docker-compose.yaml`, uncomment all `user: '1000:1000'` lines, and update the IDs if they differ from your local user.
+2. Open `docker-compose.yaml`, uncomment all `user: '1000:1000'` lines,
+   and update the IDs if they differ from your local user.
 3. Add the OpenSearch and Mercure services to your `docker-compose.yaml`:
 
 ```yaml
@@ -90,11 +95,14 @@ volumes:
 
 :::info
 
-The Mercure JWT key must be at least 256 bits (32 characters) long. Use the same key in both the Docker configuration and the Pimcore application configuration. Keep this key private.
+The Mercure JWT key must be at least 256 bits (32 characters) long.
+Use the same key in both the Docker configuration and the Pimcore application configuration.
+Keep this key private.
 
 :::
 
-4. Add a reverse proxy rule for Mercure in your Nginx configuration (e.g. `.docker/nginx.conf` in the skeleton) so the browser can reach the Mercure hub:
+4. Add a reverse proxy rule for Mercure in your Nginx configuration
+   (e.g. `.docker/nginx.conf` in the skeleton) so the browser can reach the Mercure hub:
 
 ```conf
 location /hub {
@@ -120,13 +128,22 @@ docker compose exec php vendor/bin/pimcore-install \
   --mysql-database=pimcore
 ```
 
-During installation, you will be prompted to register your Pimcore instance. The installer provides a link to the registration form. See [Product Registration](../02_Product_Registration.md) for details.
+During installation, you will be prompted to register your Pimcore instance.
+Product registration is mandatory, and installation cannot proceed without a valid product key.
+The installer provides a link to the registration form.
+See [Product Registration](../02_Product_Registration.md) for details.
 
 ### Step 4: Install and Configure Pimcore Studio
 
-Install the Studio bundles and their dependencies (GenericExecutionEngine, GenericDataIndex, StudioBackend, StudioUI), configure OpenSearch, Mercure, the security firewall, and messenger transports, then build the search index.
+This step is required before you can continue with the tutorial chapters that use Pimcore Studio.
 
-Follow the complete setup instructions in the [Pimcore Studio Setup](./03_Advanced_Installation_Topics/02_Pimcore_Studio_Setup.md) guide.
+Install the Studio bundles and their dependencies
+(GenericExecutionEngine, GenericDataIndex, StudioBackend, StudioUI),
+configure OpenSearch, Mercure, the security firewall, and messenger transports,
+then build the search index.
+
+Follow the complete setup instructions in the
+[Pimcore Studio Setup](./03_Advanced_Installation_Topics/02_Pimcore_Studio_Setup.md) guide.
 
 ### Step 5: Done
 
@@ -137,9 +154,12 @@ After completing the Studio setup, visit your Pimcore instance:
 
 ## Demo Enterprise Installation
 
-The demo enterprise package includes all enterprise extensions, Pimcore Studio, and pre-built blueprints. All Studio dependencies (OpenSearch, Mercure, messenger transports) are pre-configured. It requires credentials for the Pimcore enterprise repository.
+The demo enterprise package includes all enterprise extensions, Pimcore Studio, and pre-built blueprints.
+All Studio dependencies (OpenSearch, Mercure, messenger transports) are pre-configured.
+It requires credentials for the Pimcore enterprise repository.
 
-1. Configure enterprise repository credentials and create the project. Replace `<YOUR_USERNAME>` and `<YOUR_TOKEN>` with your Pimcore enterprise credentials:
+1. Configure enterprise repository credentials and create the project.
+   Replace `<YOUR_USERNAME>` and `<YOUR_TOKEN>` with your Pimcore enterprise credentials:
 
 ```bash
 docker run --rm -v `pwd`:/var/www/html -it pimcore/pimcore:php8.5-latest sh -c \
@@ -157,7 +177,8 @@ cd my-project/
 
 3. Configure and start Docker services:
    - Run `` echo `id -u`:`id -g` `` to retrieve your local user and group ID.
-   - Open `docker-compose.yaml`, uncomment all `user: '1000:1000'` lines, and update the IDs if they differ from your local user.
+   - Open `docker-compose.yaml`, uncomment all `user: '1000:1000'` lines,
+     and update the IDs if they differ from your local user.
    - Start the services:
 
 ```bash
@@ -180,6 +201,9 @@ docker compose exec php vendor/bin/pimcore-install \
   --mysql-database=pimcore
 ```
 
+Product registration is mandatory here as well.
+The installer requires a valid product key before installation can complete.
+
 This can take up to 20 minutes for the demo enterprise package.
 
 6. Clear caches and rebuild indexes:
@@ -201,17 +225,24 @@ docker compose exec php bin/console pimcore:maintenance
 
 ## Installing Additional Bundles
 
-After setting up your Pimcore instance, you can extend it with additional bundles. Each bundle has its own installation documentation. Some commonly used bundles include:
+After setting up your Pimcore instance, you can extend it with additional bundles.
+Each bundle has its own installation documentation. Some commonly used bundles include:
 
-- **[Data Hub](https://docs.pimcore.com/platform/Datahub/Installation/)** - GraphQL and REST API endpoints for external data access
-- **[Portal Engine](https://docs.pimcore.com/platform/Portal_Engine/Installation/)** - Web portals for sharing data with external stakeholders
-- **[Workflow Designer](https://docs.pimcore.com/platform/Workflow_Designer/Installation/)** - Visual workflow configuration for approval processes
+- **[Data Hub](https://github.com/pimcore/data-hub/blob/2026.x/doc/01_Installation_and_Upgrade/README.md)** -
+  GraphQL and REST API endpoints for external data access
+- **[Portal Engine](https://github.com/pimcore/portal-engine/blob/2026.x/doc/01_Installation/README.md)** -
+  Web portals for sharing data with external stakeholders
+- **[Workflow Designer](https://github.com/pimcore/workflow-designer/blob/2026.x/doc/01_Installation_and_Configuration.md)** -
+  Visual workflow configuration for approval processes
 
-See [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md) for automating bundle installation during the Pimcore setup process.
+See [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md) for automating bundle installation
+during the Pimcore setup process.
 
 ## Caching
 
-For any installation, configure a caching backend to improve performance. Redis is the recommended cache adapter. See the [Performance Guide](./02_System_Setup_and_Hosting/08_Performance_Guide.md) for configuration details.
+For any installation, configure a caching backend to improve performance.
+Redis is the recommended cache adapter.
+See the [Performance Guide](./02_System_Setup_and_Hosting/08_Performance_Guide.md) for configuration details.
 
 ## Next Steps
 

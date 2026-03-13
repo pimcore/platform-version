@@ -1,6 +1,8 @@
 # Backward Compatibility Promise
 
-Pimcore follows semantic versioning. Within a major version, backward compatibility is maintained for public APIs. Pimcore adopts the same backward compatibility promise as Symfony. For full details, see the [Symfony Backward Compatibility Promise](https://symfony.com/doc/current/contributing/code/bc.html).
+Pimcore follows semantic versioning. Within a major version, backward compatibility is maintained for public APIs.
+Pimcore adopts the same backward compatibility promise as Symfony.
+For full details, see the [Symfony Backward Compatibility Promise](https://symfony.com/doc/current/contributing/code/bc.html).
 
 ## Versioning Rules
 
@@ -14,4 +16,6 @@ Both individual module versions and Platform Versions follow semantic versioning
 
 ## Platform Version and Breaking Changes
 
-Within a Platform Version's minor releases (e.g., 2025.1 to 2025.4), only minor and bugfix module versions change. Major module version changes are reserved for major Platform Version releases (e.g., 2025.x to 2026.x).
+Within a Platform Version's minor releases (e.g., 2025.1 to 2025.4),
+only minor and bugfix module versions change.
+Major module version changes are reserved for major Platform Version releases (e.g., 2025.x to 2026.x).

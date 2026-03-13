@@ -1,10 +1,12 @@
 # Symfony Messenger
 
-Pimcore uses the Symfony Messenger for background processing of maintenance tasks, search indexing, and other asynchronous operations.
+Pimcore uses the Symfony Messenger for background processing of maintenance tasks,
+search indexing, and other asynchronous operations.
 
 ## Handle Failed Jobs
 
-If jobs fail during processing, they are discarded from their transport after a defined number of retries. You can redirect failed jobs to a dedicated transport instead of discarding them:
+If jobs fail during processing, they are discarded from their transport after a defined number of retries.
+You can redirect failed jobs to a dedicated transport instead of discarding them:
 
 ```yaml
 framework:
@@ -26,7 +28,8 @@ Failed jobs can be re-processed later after fixing the underlying issue:
 bin/console messenger:consume pimcore_failed_jobs
 ```
 
-See the [Symfony documentation](https://symfony.com/doc/current/messenger.html#saving-retrying-failed-messages) for more options on failed job processing.
+See the [Symfony documentation](https://symfony.com/doc/current/messenger.html#saving-retrying-failed-messages)
+for more options on failed job processing.
 
 [RabbitMQ](https://www.rabbitmq.com/#getstarted) is the recommended message queue for production use.
 

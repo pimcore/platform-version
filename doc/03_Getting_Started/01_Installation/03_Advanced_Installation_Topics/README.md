@@ -1,5 +1,9 @@
 # Advanced Installation Topics
 
+This section covers installation tasks that go beyond the default interactive setup. Use it when you want to automate 
+Pimcore installation, preconfigure installer values, control which bundles are installed, or prepare the environment 
+for production-oriented deployments.
+
 To fully automate the installation process, pass options as CLI parameters instead of entering them interactively.
 
 ```bash
@@ -15,7 +19,9 @@ The `--no-interaction` flag prevents any interactive prompts.
 
 :::
 
-To avoid passing sensitive data (e.g. database password) as a command line option, you can set each parameter as an environment variable. See `./vendor/bin/pimcore-install` for details:
+To avoid passing sensitive data (e.g. database password) as a command line option,
+you can set each parameter as an environment variable.
+See `./vendor/bin/pimcore-install` for details:
 
 ```bash
 PIMCORE_INSTALL_MYSQL_USERNAME=username PIMCORE_INSTALL_MYSQL_PASSWORD=password ./vendor/bin/pimcore-install \
@@ -30,9 +36,11 @@ PIMCORE_INSTALL_MYSQL_USERNAME=username PIMCORE_INSTALL_MYSQL_PASSWORD=password 
 
 During installation, you interact with two lists of bundles: **Recommended Bundles** and **Required Bundles**.
 
-- **Recommended Bundles**: Displayed to users during interactive mode. These are the bundles users can specify with the `--install-bundles=commaSeparatedBundleList` option.
+- **Recommended Bundles**: Displayed to users during interactive mode.
+  These are the bundles users can specify with the `--install-bundles=commaSeparatedBundleList` option.
 
-- **Required Bundles**: Automatically installed in interactive mode if the user chooses to install bundles. They are also installed whenever the `--install-bundles` option is set.
+- **Required Bundles**: Automatically installed in interactive mode if the user chooses to install bundles.
+  They are also installed whenever the `--install-bundles` option is set.
 
 ### Default Recommended Bundles
 
@@ -44,7 +52,8 @@ During installation, you interact with two lists of bundles: **Recommended Bundl
 
 ### Automating Bundle Installation
 
-To install specific bundles automatically, use the `--install-bundles[=bundleList]` flag. This installs and activates all required bundles and any specified bundles from the recommended list.
+To install specific bundles automatically, use the `--install-bundles[=bundleList]` flag.
+This installs and activates all required bundles and any specified bundles from the recommended list.
 
 The bundles are automatically added to `config/bundles.php`.
 
@@ -58,16 +67,19 @@ The bundles are automatically added to `config/bundles.php`.
 
 ### Modifying Required Bundles and Bundle Recommendations
 
-The `BundleSetupEvent` is triggered during installation to configure which bundles are installable (recommended) and which are automatically installed (required).
+The `BundleSetupEvent` is triggered during installation to configure which bundles are installable (recommended)
+and which are automatically installed (required).
 
-By subscribing to this event, you can add or remove bundles from either list. For a practical example, see the [Pimcore Skeleton](https://github.com/pimcore/skeleton), which shows how the Admin UI Classic Bundle is integrated.
+By subscribing to this event, you can add or remove bundles from either list. For a practical example, see 
+the [Pimcore Skeleton](https://github.com/pimcore/skeleton), which shows how additional bundles can be integrated 
+into the installer.
 
 ```php
 <?php
 
 namespace App\EventSubscriber;
 
-use Pimcore\Bundle\AdminBundle\PimcoreAdminBundle;
+use Pimcore\Bundle\QuillBundle\PimcoreQuillBundle;
 use Pimcore\Bundle\InstallBundle\Event\BundleSetupEvent;
 use Pimcore\Bundle\InstallBundle\Event\InstallEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -86,15 +98,16 @@ class BundleSetupSubscriber implements EventSubscriberInterface
     public function bundleSetup(BundleSetupEvent $event): void
     {
         // make bundle installable (using --install-bundles) and recommend it in interactive installation
-        $event->addInstallableBundle('PimcoreAdminBundle', PimcoreAdminBundle::class, true);
+        $event->addInstallableBundle('PimcoreQuillBundle', PimcoreQuillBundle::class, true);
 
         // add required bundle
-        $event->addRequiredBundle('PimcoreAdminBundle', PimcoreAdminBundle::class);
+        $event->addRequiredBundle('PimcoreQuillBundle', PimcoreQuillBundle::class);
     }
 }
 ```
 
-Register the subscriber in `config/installer.yaml` as described in [Preconfiguring the Installer](#preconfiguring-the-installer).
+Register the subscriber in `config/installer.yaml` as described in
+[Preconfiguring the Installer](#preconfiguring-the-installer).
 
 ```yaml
 services:
@@ -108,7 +121,9 @@ services:
 
 ## Preconfiguring the Installer
 
-You can preconfigure installer values by adding a config file that sets database credentials. This is useful when installing Pimcore on platforms where credentials are available via environment variables. Add a config file at `config/installer.yaml` (any Symfony-supported format works):
+You can preconfigure installer values by adding a config file that sets database credentials.
+This is useful when installing Pimcore on platforms where credentials are available via environment variables.
+Add a config file at `config/installer.yaml` (any Symfony-supported format works):
 
 ```yaml
 # config/installer.yaml
@@ -137,4 +152,6 @@ pimcore:
 
 ## Office Document Preview
 
-The document preview feature is optional. To use it, install either [Gotenberg](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#gotenberg) or [LibreOffice](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#libreoffice-pdftotext-inkscape).
+The document preview feature is optional. To use it, install either
+[Gotenberg](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#gotenberg) or
+[LibreOffice](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#libreoffice-pdftotext-inkscape).

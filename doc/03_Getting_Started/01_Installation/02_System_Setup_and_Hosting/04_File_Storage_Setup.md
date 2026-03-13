@@ -1,6 +1,7 @@
 # File Storage Setup
 
-Pimcore uses [Flysystem](https://github.com/thephpleague/flysystem), a flexible file storage library, for storing assets, thumbnails, versioning data, and more.
+Pimcore uses [Flysystem](https://github.com/thephpleague/flysystem), a flexible file storage library,
+for storing assets, thumbnails, versioning data, and more.
 
 To configure a custom file storage, override any of the default definitions with a specific adapter:
 
@@ -48,9 +49,11 @@ flysystem:
                 directory: '%kernel.project_dir%/var/admin'
 ```
 
-You can explore all [official adapters](https://flysystem.thephpleague.com/docs/adapter/local/) and [third-party adapters](https://packagist.org/?query=flysystem%20adapter) to use custom file storage.
+You can explore all [official adapters](https://flysystem.thephpleague.com/docs/adapter/local/) and
+[third-party adapters](https://packagist.org/?query=flysystem%20adapter) to use custom file storage.
 
-All storages need to be shared between all computing nodes in a clustered environment. The default `local` adapter only works on single-server setups.
+All storages need to be shared between all computing nodes in a clustered environment.
+The default `local` adapter only works on single-server setups.
 
 ## Frontend Prefixes
 
@@ -72,7 +75,8 @@ pimcore:
             # thumbnail_deferred: https://thumbnail-generator-node.example.com
 ```
 
-This adds the configured prefix to asset and thumbnail paths in the frontend context (e.g. your templates). For example, `/Sample/Tavi.jpg` becomes `https://tavi-12345678990.cloudfront.net/asset/Sample/Tavi.jpg`.
+This adds the configured prefix to asset and thumbnail paths in the frontend context (e.g. your templates).
+For example, `/Sample/Tavi.jpg` becomes `https://tavi-12345678990.cloudfront.net/asset/Sample/Tavi.jpg`.
 
 ## Example: AWS S3 Adapter for Assets
 
@@ -166,9 +170,11 @@ class AssetStreamController
 
 ## Storage Migration
 
-When switching to a different storage type, use Pimcore's built-in migration command to copy contents from the old storage to the new one.
+When switching to a different storage type,
+use Pimcore's built-in migration command to copy contents from the old storage to the new one.
 
-1. Create Flysystem configuration for source and target storages. The naming convention is: `pimcore.{storagetype}.storage.source` and `pimcore.{storagetype}.storage.target`:
+1. Create Flysystem configuration for source and target storages.
+   The naming convention is: `pimcore.{storagetype}.storage.source` and `pimcore.{storagetype}.storage.target`:
 
 | Migration Task | Source Node | Target Node |
 |----------------|-------------|-------------|

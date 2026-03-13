@@ -2,7 +2,8 @@
 
 Pimcore requires a MySQL or MariaDB database with `utf8mb4` as the character set.
 
-> You must create the database manually before running the Pimcore installer, which automatically creates the underlying schema.
+> You must create the database manually before running the Pimcore installer,
+> which automatically creates the underlying schema.
 
 ## Create a New Database
 
@@ -21,7 +22,8 @@ GRANT ALL ON `project_database`.* TO 'project_user'@'localhost';
 
 ## Database Server Configuration (Optional)
 
-You can enforce required settings by placing a `pimcore.cnf` file in the config directory (e.g. `/etc/mysql/conf.d/`). Refer to your server configuration manual for the exact location.
+You can enforce required settings by placing a `pimcore.cnf` file in the config directory
+(e.g. `/etc/mysql/conf.d/`). Refer to your server configuration manual for the exact location.
 
 ```ini
 # MySQL Server configuration for Pimcore.
@@ -43,13 +45,17 @@ init-connect='SET NAMES utf8mb4'
 # this is not required when consistently working on Linux or Docker
 ```
 
-Setting `lower_case_table_names=1` ensures that tables for Pimcore classes are created in lower case even though their class names contain capital letters.
+Setting `lower_case_table_names=1` ensures that tables for Pimcore classes are created in lower case
+even though their class names contain capital letters.
 
-Starting with MySQL 8, you can no longer change the `lower_case_table_names` option after the data directory has been initialized. If the directory was already initialized with a different setting, MySQL will fail to start.
+Starting with MySQL 8, you can no longer change the `lower_case_table_names` option
+after the data directory has been initialized.
+If the directory was already initialized with a different setting, MySQL will fail to start.
 
 :::warning
 
-To fix this, you must remove and reinitialize the MySQL data directory, which **deletes all databases**. Back up all existing databases with `mysqldump` before proceeding.
+To fix this, you must remove and reinitialize the MySQL data directory,
+which **deletes all databases**. Back up all existing databases with `mysqldump` before proceeding.
 
 :::
 

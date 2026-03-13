@@ -1,6 +1,7 @@
 # Apache Configuration
 
-Apache requires `mod_rewrite`, `mod_headers`, and `AllowOverride All` for the document root. For optional performance features, also enable `mod_deflate`, `mod_expires`, and `mod_filter`.
+Apache requires `mod_rewrite`, `mod_headers`, and `AllowOverride All` for the document root.
+For optional performance features, also enable `mod_deflate`, `mod_expires`, and `mod_filter`.
 
 ## .htaccess
 

@@ -1,6 +1,7 @@
 # Create a First Project
 
-This tutorial walks you through building a simple product page with Pimcore. You will upload assets, define a data model, and create CMS pages that combine both.
+This tutorial walks you through building a simple product page with Pimcore.
+You will upload assets, define a data model, and create CMS pages that combine both.
 
 **Prerequisites:** A working Pimcore installation from the [Installation](../01_Installation/README.md) chapter.
 

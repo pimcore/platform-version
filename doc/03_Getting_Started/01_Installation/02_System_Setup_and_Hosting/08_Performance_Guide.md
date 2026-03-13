@@ -1,6 +1,8 @@
 # Performance Guide
 
-This guide covers configuration changes and tools to optimize the performance of a Pimcore application. Each section includes benchmark results from [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html) for comparison.
+This guide covers configuration changes and tools to optimize the performance of a Pimcore application.
+Each section includes benchmark results from
+[ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html) for comparison.
 
 Before testing, set the following environment variables to replicate a production scenario:
 
@@ -12,7 +14,10 @@ PIMCORE_DEV_MODE=0
 
 ## PHP OPcache and JIT Compiler
 
-OPcache stores precompiled script bytecode in shared memory, removing the need for PHP to load and parse scripts on each request. PHP 8 added Just-In-Time Compilation (JIT), which can further improve performance. The JIT compiler requires OPcache to be enabled.
+OPcache stores precompiled script bytecode in shared memory,
+removing the need for PHP to load and parse scripts on each request.
+PHP 8 added Just-In-Time Compilation (JIT), which can further improve performance.
+The JIT compiler requires OPcache to be enabled.
 
 By default, JIT is disabled. Enable it in your `php.ini`:
 
@@ -30,7 +35,8 @@ opcache.jit_buffer_size=256M  # JIT buffer memory size. 0 disables JIT.
 
 ## Symfony Performance Best Practices
 
-Since Pimcore is built on Symfony, follow the [Symfony Performance Best Practices](https://symfony.com/doc/current/performance.html).
+Since Pimcore is built on Symfony, follow the
+[Symfony Performance Best Practices](https://symfony.com/doc/current/performance.html).
 
 #### Benchmarks
 `ab -n 100 -c 20 http://localhost/en`
@@ -63,18 +69,23 @@ You can control which classes are preloaded using Symfony service tags [containe
 
 ### Composite Indexes
 
-If you use Data Objects or custom database tables, configure composite indexes so the query optimizer can use them instead of scanning the full table. You can configure composite indexes in the class definition under `General Settings`.
+If you use Data Objects or custom database tables, configure composite indexes
+so the query optimizer can use them instead of scanning the full table.
+You can configure composite indexes in the class definition under `General Settings`.
 
 ### Buffer Pool
 
-The InnoDB buffer pool caches table and index data in memory. Set `innodb_buffer_pool_size` to 70-80% of total available memory on a dedicated database server.
+The InnoDB buffer pool caches table and index data in memory.
+Set `innodb_buffer_pool_size` to 70-80% of total available memory on a dedicated database server.
 
 ```ini
 [mysqld]
     innodb_buffer_pool_size=5G  # adjust according to your data
 ```
 
-See this [discussion](https://dba.stackexchange.com/questions/27328/how-large-should-be-mysql-innodb-buffer-pool-size) for guidance on choosing the right size. You can also use [MySQLTuner](https://github.com/rackerhacker/MySQLTuner-perl) for additional optimization suggestions.
+See this [discussion](https://dba.stackexchange.com/questions/27328/how-large-should-be-mysql-innodb-buffer-pool-size)
+for guidance on choosing the right size.
+You can also use [MySQLTuner](https://github.com/rackerhacker/MySQLTuner-perl) for additional optimization suggestions.
 
 #### Benchmarks
 `ab -n 100 -c 20 http://localhost/en/shop/Products/Cars/Economy-Cars~c547`
@@ -84,7 +95,10 @@ See this [discussion](https://dba.stackexchange.com/questions/27328/how-large-sh
 
 ## Pimcore Caching (Redis)
 
-Pimcore uses a primary object cache where every element (document, asset, data object) is cached as a serialized object. By default, this cache uses the Doctrine database adapter and writes to the `cache_items` table. For a significant performance boost, switch to the Redis adapter.
+Pimcore uses a primary object cache where every element (document, asset, data object)
+is cached as a serialized object.
+By default, this cache uses the Doctrine database adapter and writes to the `cache_items` table.
+For a significant performance boost, switch to the Redis adapter.
 
 Configure Redis for the Pimcore cache pool:
 
@@ -100,13 +114,15 @@ framework:
                 provider: 'redis://localhost'
 ```
 
-After clearing the cache (e.g. during a deployment), warm it up so users experience optimal performance even on first access:
+After clearing the cache (e.g. during a deployment), warm it up
+so users experience optimal performance even on first access:
 
 ```bash
 bin/console pimcore:cache:warming
 ```
 
-By default, `pimcore:cache:warming` caches 20 items per iteration and waits 2 seconds between iterations. Adjust with `--perIteration` and `--timeoutBetweenIteration`.
+By default, `pimcore:cache:warming` caches 20 items per iteration and waits 2 seconds between iterations.
+Adjust with `--perIteration` and `--timeoutBetweenIteration`.
 
 #### Benchmarks
 `ab -n 100 -c 20 http://localhost/en/shop/Products/Cars~c390`
@@ -116,7 +132,9 @@ By default, `pimcore:cache:warming` caches 20 items per iteration and waits 2 se
 
 ## Full Page Cache
 
-Pimcore's full page cache stores complete controller action responses. Subsequent requests for the same page are served directly from the cache without going through the MVC cycle.
+Pimcore's full page cache stores complete controller action responses.
+Subsequent requests for the same page are served directly from the cache
+without going through the MVC cycle.
 
 ```yaml
 pimcore:
@@ -127,7 +145,8 @@ pimcore:
         exclude_patterns: '@^/test/de@'
 ```
 
-> **Important:** Only use sessions when necessary. The Pimcore full-page cache detects session usage and disables itself if a session is active.
+> **Important:** Only use sessions when necessary.
+> The Pimcore full-page cache detects session usage and disables itself if a session is active.
 
 #### Benchmarks
 `ab -n 100 -c 20 http://localhost/en`
@@ -137,9 +156,13 @@ pimcore:
 
 ## Static Page Generator
 
-Pimcore can generate static HTML files from documents. These static files are served directly by Apache/Nginx without going through the PHP/MVC cycle. This is best suited for pages with content that does not change frequently (not recommended for dynamic pages like news listings or product pages).
+Pimcore can generate static HTML files from documents.
+These static files are served directly by Apache/Nginx without going through the PHP/MVC cycle.
+This is best suited for pages with content that does not change frequently
+(not recommended for dynamic pages like news listings or product pages).
 
-To enable: go to Document > Settings > Static Page Generator, check the enable checkbox, optionally define a lifetime, and save.
+To enable: go to Document > Settings > Static Page Generator,
+check the enable checkbox, optionally define a lifetime, and save.
 
 #### Benchmarks
 `ab -n 100 -c 20 http://localhost/en/Magazine`
@@ -149,7 +172,10 @@ To enable: go to Document > Settings > Static Page Generator, check the enable c
 
 ## In-Template Caching
 
-Pimcore provides the `pimcore_cache` Twig extension for caching parts of a template independently from the global cache. This is useful for template sections that involve heavy computation or load many objects, such as navigation menus.
+Pimcore provides the `pimcore_cache` Twig extension for caching parts of a template
+independently from the global cache.
+This is useful for template sections that involve heavy computation or load many objects,
+such as navigation menus.
 
 ```twig
 {% set cache = pimcore_cache("main_navigation_cache", 60) %}
@@ -187,14 +213,20 @@ Pimcore provides the `pimcore_cache` Twig extension for caching parts of a templ
 
 ## Varnish Cache
 
-Varnish is a caching reverse proxy placed in front of your web server. On the initial request, Varnish saves a copy of the response in memory. Subsequent requests are served directly from memory without reaching the application server.
+Varnish is a caching reverse proxy placed in front of your web server.
+On the initial request, Varnish saves a copy of the response in memory.
+Subsequent requests are served directly from memory without reaching the application server.
 
 > Pimcore sends the correct headers for Varnish when the full-page cache is enabled.
 
 ### Edge Side Includes (ESI)
 
-ESI is a markup standard for managing page fragments that can be cached individually and assembled into a single page. Fragments can have their own cache policies and be shared across multiple pages.
+ESI is a markup standard for managing page fragments that can be cached individually
+and assembled into a single page.
+Fragments can have their own cache policies and be shared across multiple pages.
 
-Symfony has built-in support for ESI. See the [Symfony ESI documentation](https://symfony.com/doc/current/http_cache/esi.html). Learn more about [Varnish](https://www.varnish-cache.org/).
+Symfony has built-in support for ESI.
+See the [Symfony ESI documentation](https://symfony.com/doc/current/http_cache/esi.html).
+Learn more about [Varnish](https://www.varnish-cache.org/).
 
 > ESI tags are not compatible with the Static Page Generator.

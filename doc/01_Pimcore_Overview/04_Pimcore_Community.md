@@ -1,17 +1,24 @@
 # Pimcore Community
 
-Pimcore is developed as an open-core project. The full source code of all modules is available on [GitHub](https://github.com/pimcore), licensed under the Pimcore Open Core License (POCL). Community contributions are an important part of the product's development.
+Pimcore is developed as an open-core project. The full source code of all modules is available on
+[GitHub](https://github.com/pimcore), licensed under the Pimcore Open Core License (POCL).
+Community contributions are an important part of the product's development.
 
 ## Contributing
 
-Pimcore actively reviews and accepts pull requests from the community. Contributions can range from bug fixes to feature improvements.
+Pimcore actively reviews and accepts pull requests from the community.
+Contributions can range from bug fixes to feature improvements.
 
-- **Bug fixes**: Fork the repository, fix the issue on the latest maintenance branch, and submit a pull request
-- **Features and improvements**: Submit PRs against the `main` branch. For larger changes, reach out before starting implementation
-- **Security issues**: Report via the [dedicated security form](https://github.com/pimcore/pimcore/security), not through public issues
+- **Bug fixes**: Fork the repository, fix the issue on the latest maintenance branch,
+  and submit a pull request
+- **Features and improvements**: Submit PRs against the `main` branch. For larger changes,
+  reach out before starting implementation
+- **Security issues**: Report via the
+  [dedicated security form](https://github.com/pimcore/pimcore/security), not through public issues
 - **Contributor License Agreement (CLA)**: Must be signed before a PR can be merged
 
-The coding standards are defined in `.php-cs-fixer.dist.php` and verified via PHPStan. See the full [Contributing Guidelines](https://github.com/pimcore/pimcore/blob/2026.x/CONTRIBUTING.md) for details.
+The coding standards are defined in `.php-cs-fixer.dist.php` and verified via PHPStan.
+See the full [Contributing Guidelines](https://github.com/pimcore/pimcore/blob/2026.x/CONTRIBUTING.md) for details.
 
 ## Ecosystem Resources
 

@@ -1,6 +1,7 @@
 # Pimcore Studio Setup
 
-Pimcore Studio is the administration interface for managing assets, data objects, documents, and system settings. It consists of four bundles that must be installed in order:
+Pimcore Studio is the administration interface for managing assets, data objects, documents, and system settings.
+It consists of four bundles that must be installed in order:
 
 1. **GenericExecutionEngineBundle** - Background job execution framework (ships with Pimcore core)
 2. **GenericDataIndexBundle** - Search indexing via OpenSearch or Elasticsearch
@@ -9,7 +10,8 @@ Pimcore Studio is the administration interface for managing assets, data objects
 
 :::info
 
-The demo enterprise package (`pimcore/demo-enterprise`) ships with all Studio bundles pre-installed and pre-configured. This page applies only to skeleton-based installations.
+The demo enterprise package (`pimcore/demo-enterprise`) ships with all Studio bundles pre-installed
+and pre-configured. This page applies only to skeleton-based installations.
 
 :::
 
@@ -24,7 +26,8 @@ See the [Installation guide](../README.md) for Docker service configuration.
 
 ## Install the Bundles
 
-Install the required packages via Composer. The GenericExecutionEngineBundle ships with Pimcore core and does not need a separate `composer require`.
+Install the required packages via Composer.
+The GenericExecutionEngineBundle ships with Pimcore core and does not need a separate `composer require`.
 
 ```bash
 docker compose exec php composer require pimcore/generic-data-index-bundle pimcore/studio-backend-bundle pimcore/studio-ui-bundle
@@ -47,7 +50,8 @@ return [
 ];
 ```
 
-The GenericExecutionEngineBundle is included in the Pimcore core package but still needs to be registered via `pimcore:bundle:install`. Register and install each bundle:
+The GenericExecutionEngineBundle is included in the Pimcore core package
+but still needs to be registered via `pimcore:bundle:install`. Register and install each bundle:
 
 ```bash
 docker compose exec php bin/console pimcore:bundle:install PimcoreGenericExecutionEngineBundle
@@ -74,13 +78,17 @@ pimcore_generic_data_index:
 
 :::tip
 
-If you use Elasticsearch instead of OpenSearch, see the [Generic Data Index configuration documentation](https://docs.pimcore.com/platform/Generic_Data_Index/Configuration/Elasticsearch/) for the equivalent setup.
+If you use Elasticsearch instead of OpenSearch, see the
+[Generic Data Index configuration documentation](https://github.com/pimcore/generic-data-index-bundle/blob/2026.x/doc/02_Configuration/05_Elasticsearch.md)
+for the equivalent setup.
 
 :::
 
 ## Configure Security Firewall
 
-Add the Studio Backend firewall settings to `config/packages/security.yaml`. Place the `pimcore_studio` firewall before the `main` firewall, since Symfony evaluates firewalls in order:
+Add the Studio Backend firewall settings to `config/packages/security.yaml`.
+Place the `pimcore_studio` firewall before the `main` firewall,
+since Symfony evaluates firewalls in order:
 
 ```yaml
 security:
@@ -93,7 +101,8 @@ security:
 
 ## Configure Mercure
 
-Mercure enables real-time updates in Pimcore Studio (progress tracking, live notifications). Configure it in your Symfony configuration (e.g. `config/config.yaml`):
+Mercure enables real-time updates in Pimcore Studio (progress tracking, live notifications).
+Configure it in your Symfony configuration (e.g. `config/config.yaml`):
 
 ```yaml
 pimcore_studio_backend:
@@ -125,7 +134,9 @@ pimcore_studio_backend:
 
 ### Verify Mercure is Running
 
-To check if Mercure is available, open the `hub_url_client` URL in a browser (e.g. `http://localhost/hub`). You should see either `Missing "topic" parameter.` or `Unauthorized`. Both confirm that Mercure is reachable.
+To check if Mercure is available, open the `hub_url_client` URL in a browser (e.g. `http://localhost/hub`).
+You should see either `Missing "topic" parameter.` or `Unauthorized`.
+Both confirm that Mercure is reachable.
 
 Also verify server-side connectivity:
 
@@ -133,11 +144,14 @@ Also verify server-side connectivity:
 docker compose exec php curl http://mercure/.well-known/mercure
 ```
 
-For advanced Mercure configuration (external URLs, CORS, Apache reverse proxy, development UI), see the [Studio Backend Mercure documentation](https://docs.pimcore.com/platform/Studio_Backend/Mercure_Setup/).
+For advanced Mercure configuration (external URLs, CORS, Apache reverse proxy, development UI), see the
+[Studio Backend Mercure documentation](https://github.com/pimcore/studio-backend-bundle/blob/1.x/doc/02_Installation_and_Configuration/01_Mercure_Setup.md).
 
 ## Configure Messenger Transports
 
-The Generic Execution Engine and Generic Data Index bundles each require a Symfony Messenger transport for background processing. The bundles auto-configure their message routing, but you need to define the transports.
+The Generic Execution Engine and Generic Data Index bundles each require a Symfony Messenger transport
+for background processing.
+The bundles auto-configure their message routing, but you need to define the transports.
 
 Add these to your messenger configuration (e.g. `config/packages/messenger.yaml`):
 
@@ -153,7 +167,8 @@ framework:
                 dsn: 'doctrine://default?queue_name=pimcore_generic_data_index_queue'
 ```
 
-For production, consider using RabbitMQ instead of the Doctrine transport. See [Symfony Messenger](./01_Symfony_Messenger.md) for details.
+For production, consider using RabbitMQ instead of the Doctrine transport.
+See [Symfony Messenger](./01_Symfony_Messenger.md) for details.
 
 ## Start Messenger Workers
 
@@ -165,7 +180,8 @@ For development, start workers manually:
 docker compose exec php bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue
 ```
 
-The Generic Data Index bundle also registers a `scheduler_generic_data_index` scheduler for periodic tasks. To include it:
+The Generic Data Index bundle also registers a `scheduler_generic_data_index` scheduler for periodic tasks.
+To include it:
 
 ```bash
 docker compose exec php bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue scheduler_generic_data_index
@@ -193,7 +209,9 @@ After installation, create the search indices and populate them with initial dat
 docker compose exec php bin/console generic-data-index:update:index -r
 ```
 
-The `-r` flag recreates the indices from scratch, which is required for initial setup. This command must be run at least once after installation. It creates the OpenSearch/Elasticsearch indices and queues all assets and data objects for indexing.
+The `-r` flag recreates the indices from scratch, which is required for initial setup.
+This command must be run at least once after installation.
+It creates the OpenSearch/Elasticsearch indices and queues all assets and data objects for indexing.
 
 ## Verify the Installation
 
@@ -203,6 +221,7 @@ Clear the cache and open Pimcore Studio:
 docker compose exec php bin/console cache:clear
 ```
 
-Navigate to [http://localhost/pimcore-studio](http://localhost/pimcore-studio). You should see the Pimcore Studio login screen.
+Navigate to [http://localhost/pimcore-studio](http://localhost/pimcore-studio).
+You should see the Pimcore Studio login screen.
 
 The Studio Backend also provides an OpenAPI documentation at `/pimcore-studio/api/docs` for exploring the REST API.

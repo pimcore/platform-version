@@ -1,12 +1,16 @@
 # Assets
 
-In Pimcore, assets are binary files: images, videos, PDFs, Office documents, and any other file type. You can organize them in directory structures and assign custom metadata. Once uploaded, an asset can be referenced from multiple places, including documents and data objects.
+In Pimcore, assets are binary files: images, videos, PDFs, Office documents, and any other file type.
+You can organize them in directory structures and assign custom metadata.
+Once uploaded, an asset can be referenced from multiple places, including documents and data objects.
 
-When uploading images or videos, always upload the highest quality version available. Pimcore generates optimized thumbnails for different output channels automatically using configurable thumbnail profiles.
+When uploading images or videos, always upload the highest quality version available.
+Pimcore generates optimized thumbnails for different output channels automatically using configurable thumbnail profiles.
 
 ## Upload an Image
 
-Log in to Pimcore Studio at [http://localhost/pimcore-studio](http://localhost/pimcore-studio) and open the **Assets** tree in the left panel. This is where all binary files are organized.
+Log in to Pimcore Studio at [http://localhost/pimcore-studio](http://localhost/pimcore-studio)
+and open the **Assets** tree in the left panel. This is where all binary files are organized.
 
 For this tutorial, upload at least one image that you will use as a product picture in the next steps.
 

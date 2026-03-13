@@ -1,6 +1,7 @@
 # System Setup and Hosting
 
-This section covers web server configuration, file storage, database setup, and performance optimization for hosting a Pimcore application.
+This section covers web server configuration, file storage, database setup,
+and performance optimization for hosting a Pimcore application.
 
 ## General Topics
 - [Apache Configuration](./01_Apache_Configuration.md)

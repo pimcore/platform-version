@@ -1,23 +1,29 @@
 # Nginx Configuration
 
-Nginx is a popular alternative to Apache for hosting Pimcore and generally delivers strong performance. This section provides working Nginx configurations for development and production environments.
+Nginx is a popular alternative to Apache for hosting Pimcore and generally delivers strong performance.
+This section provides working Nginx configurations for development and production environments.
 
 ## Configuration
 
-Below is the configuration for an Nginx server (the `server` block only; the `http` block can use defaults as long as `mime.types` are included).
+Below is the configuration for an Nginx server
+(the `server` block only; the `http` block can use defaults as long as `mime.types` are included).
 
 Assumptions - adjust these to match your environment:
 
 - Pimcore is installed at `/var/www/pimcore`; the document root is `/var/www/pimcore/public`.
 - Log files are written to `/var/log/nginx`. To co-locate them with Pimcore logs, use `/var/www/pimcore/var/log`.
-- PHP-FPM listens on the socket `/var/run/php/pimcore.sock`. Update the `server` directive in the `upstream` block if your setup differs.
-- Before changing the order of `location` blocks, read [Understanding Nginx Server and Location Block Selection Algorithms](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms).
+- PHP-FPM listens on the socket `/var/run/php/pimcore.sock`.
+  Update the `server` directive in the `upstream` block if your setup differs.
+- Before changing the order of `location` blocks, read
+  [Understanding Nginx Server and Location Block Selection Algorithms](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms).
 - Asset expiration is set to 14 days; adjust `expires` directives as needed.
-- Assets are stored locally, not on a remote storage like S3 or GCS. If they are remote, see the Assets section in the configuration below.
+- Assets are stored locally, not on a remote storage like S3 or GCS.
+  If they are remote, see the Assets section in the configuration below.
 
 ### Development Environment
 
-The following configuration is intended for development only. It is not appropriate for production and should not be exposed to public access.
+The following configuration is intended for development only.
+It is not appropriate for production and should not be exposed to public access.
 
 ```nginx
 # mime types are already covered in nginx.conf
@@ -429,9 +435,12 @@ server {
 
 ### Thumbnail Generation Overload Protection
 
-If your application has pages with many images processed by an image pipeline, on-demand thumbnail generation can overload the server due to too many parallel PHP processes, especially with large source images.
+If your application has pages with many images processed by an image pipeline,
+on-demand thumbnail generation can overload the server due to too many parallel PHP processes,
+especially with large source images.
 
-Extend the Nginx configuration above to use [Nginx rate-limiting](https://www.nginx.com/blog/rate-limiting-nginx/) for protection against this scenario.
+Extend the Nginx configuration above to use
+[Nginx rate-limiting](https://www.nginx.com/blog/rate-limiting-nginx/) for protection against this scenario.
 
 **Step 1: Create a Zone**
 
@@ -442,7 +451,9 @@ Add the following to the `http` section of your Nginx config:
 limit_req_zone $server_name zone=imggen:1M rate=5r/s;
 ```
 
-This defines a zone called `imggen` using the [$server_name](http://nginx.org/en/docs/http/ngx_http_core_module.html#var_server_name) as key and allows 5 requests per second. Adjust the rate to match your server's capacity.
+This defines a zone called `imggen` using the
+[$server_name](http://nginx.org/en/docs/http/ngx_http_core_module.html#var_server_name) as key
+and allows 5 requests per second. Adjust the rate to match your server's capacity.
 
 **Step 2: Replace the Thumbnail Location Block**
 
@@ -463,4 +474,5 @@ This defines a zone called `imggen` using the [$server_name](http://nginx.org/en
     }
 ```
 
-This configuration queues up to 15 requests before rejecting additional ones with HTTP 429. The queue is drained at the rate defined in step 1.
+This configuration queues up to 15 requests before rejecting additional ones with HTTP 429.
+The queue is drained at the rate defined in step 1.
