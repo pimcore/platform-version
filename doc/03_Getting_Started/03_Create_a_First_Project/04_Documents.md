@@ -50,7 +50,7 @@ Create the file `/templates/content/default.html.twig`:
 
 Pimcore uses the Symfony Twig engine and adds its own *editables* - placeholders like `pimcore_input`,
 `pimcore_block`, and `pimcore_wysiwyg` that become editable fields in Pimcore Studio.
-For the full list, see the [Editables documentation](https://github.com/pimcore/pimcore/blob/2026.x/doc/01_Documents/01_Templates/03_Editables/README.md) in the Documents reference.
+For the full list, see the [Editables documentation](https://github.com/pimcore/pimcore/blob/2026.x/doc/01_Documents/02_Templates/03_Editables/README.md) in the Documents reference.
 
 ## Add a Layout
 
