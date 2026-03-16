@@ -7,7 +7,7 @@ In this tutorial, you will create a simple product data model and then create a 
 
 ## Create the Class Model
 
-Go to *Settings > Object > Classes* and click *Add Class*.
+Go to *Data Management > Data Model Definitions > Classes* and click *New*.
 
 <div class="image-as-lightbox"></div>
 
@@ -44,21 +44,14 @@ Now create a product using the class you just defined:
 
 1. Open the Objects panel on the left and right-click on *Home*
    (you can also create directory structures for organizing objects).
-2. Choose *Add object > Product* and enter a name, for example: **tshirt**.
+2. Choose *New Object > Product* and enter a name, for example: **tshirt**.
 3. Fill in values for SKU, name, and description.
-4. For the picture attribute, either click the upload button
-   ![Upload image to an object](../img/Pimcore_Elements_upload_button.png) or drag an asset from the Assets panel.
+4. For the picture attribute, either click the upload button or drag an asset from the Assets panel.
 5. Click *Save & Publish*.
 
 <div class="image-as-lightbox"></div>
 
 ![New product](../img/Pimcore_Elements_new_product.png)
-
-The completed object with all attributes filled:
-
-<div class="image-as-lightbox"></div>
-
-![Complete object](../img/Pimcore_Elements_complete_object.png)
 
 For detailed information about data objects, classes, and data types,
 see the [Objects documentation](https://github.com/pimcore/pimcore/blob/2026.x/doc/03_Objects/README.md) in the Pimcore Core reference.
