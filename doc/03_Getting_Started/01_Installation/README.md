@@ -242,7 +242,7 @@ during the Pimcore setup process.
 
 For any installation, configure a caching backend to improve performance.
 Redis is the recommended cache adapter.
-See the [Performance Guide](./02_System_Setup_and_Hosting/08_Performance_Guide.md) for configuration details.
+See the [Performance Guide](./02_System_Setup_and_Hosting/09_Performance_Guide.md) for configuration details.
 
 ## Next Steps
 

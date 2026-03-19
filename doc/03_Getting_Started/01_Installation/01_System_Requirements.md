@@ -38,7 +38,7 @@ Both **mod_php** and **FCGI (FPM)** are supported.
 - [ext-openssl](https://www.php.net/openssl)
 - CLI SAPI (for cron jobs)
 - [Composer 2](https://getcomposer.org/) (added to `$PATH` - see also
-  [Additional Tools Installation](./02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md))
+  [Additional Tools Installation](./02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md))
 
 #### Recommended or Optional Modules and Extensions
 - [imagick](https://php.net/imagick)
@@ -149,7 +149,7 @@ A reboot may be required on some systems.
 - exiftool
 - [Graphviz](https://www.graphviz.org/)
 
-See [Additional Tools Installation](./02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md) for installation instructions.
+See [Additional Tools Installation](./02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md) for installation instructions.
 
 ## Browser Requirements
 Pimcore Studio supports the latest two versions of all four major desktop browsers at the time of a release:

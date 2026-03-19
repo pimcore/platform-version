@@ -153,5 +153,5 @@ pimcore:
 ## Office Document Preview
 
 The document preview feature is optional. To use it, install either
-[Gotenberg](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#gotenberg) or
-[LibreOffice](../02_System_Setup_and_Hosting/06_Additional_Tools_Installation.md#libreoffice-pdftotext-inkscape).
+[Gotenberg](../02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md#gotenberg) or
+[LibreOffice](../02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md#libreoffice-pdftotext-inkscape).
