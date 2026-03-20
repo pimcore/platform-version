@@ -4,6 +4,13 @@ Pimcore modules are distributed as Composer packages.
 Updates are managed through Composer's dependency resolution,
 with the Platform Version providing a tested set of compatible module versions.
 
+:::info
+
+For upgrades between major Platform Versions (e.g., 2025.x to 2026.x),
+follow the [Major Version Upgrades](./03_Major_Version_Upgrades.md) guide instead.
+
+:::
+
 ## Update Process
 
 1. **Read the release notes** for the target Platform Version.
