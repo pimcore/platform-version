@@ -34,7 +34,7 @@ Selected Platform Versions are designated as LTS releases. LTS provides **3 year
 - **Security fixes** for CVE-rated vulnerabilities with critical severity
 - **Critical bug fixes** limited to issues causing potential data loss or infrastructure destruction
 
-LTS is included in the Enterprise and Enterprise PaaS editions. For details, see [Long Term Support](https://pimcore.com/en/products/services/long-term-support). For pricing, see [pimcore.com/en/pricing](https://pimcore.com/en/pricing).
+LTS is included in the Enterprise and Enterprise PaaS editions only. For details, see [Long Term Support](https://pimcore.com/en/products/services/long-term-support). For pricing, see [pimcore.com/en/pricing](https://pimcore.com/en/pricing).
 
 ### Support Timeline
 
