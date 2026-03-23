@@ -17,9 +17,10 @@ Following platform version releases are available.
 | 2025.3  | [Release Notes](../03_Release_Notes/2025.3.md) | [Details](2025.3.md) |   ❌  | ❌                 |
 | 2025.4  | [Release Notes](../03_Release_Notes/2025.4.md) | [Details](2025.4.md) |   ✅  | December 2028     |
 
-Community support of a platform version ends after release of next platform version. 
+Community support of a platform version ends after the release of the next platform version.
 
-LTS labeled platform versions and their corresponding module versions have extended LTS support. 
+Versions labeled as LTS, including their corresponding modules, continue to receive extended support (e.g. security fixes and maintenance) 
+beyond this point via the LTS channel, which is available only as part of the Enterprise / PASS offering.
 
 
 ### Quick Links
