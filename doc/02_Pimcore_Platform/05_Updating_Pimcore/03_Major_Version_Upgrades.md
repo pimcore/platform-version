@@ -6,10 +6,10 @@ Major versions may remove previously deprecated features and introduce breaking 
 Follow these steps to minimize risk and downtime.
 Perform the upgrade on a staging or development environment first and verify before applying to production.
 
-## 1. Update to the Latest Release of Your Current Major Version
+## 1. Update to the Latest Release of the Previous Major Version
 
 Before upgrading to a new major version,
-make sure you are running the latest available release in your current major version.
+make sure you are running the latest available release in the previous major version.
 Check the [Release Notes](./02_Release_Notes/README.md) or Composer to find the highest available minor version.
 
 For example, when upgrading from 2025.x to 2026.1:
