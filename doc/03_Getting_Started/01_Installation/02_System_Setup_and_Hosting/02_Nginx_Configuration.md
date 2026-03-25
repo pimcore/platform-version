@@ -140,10 +140,8 @@ server {
         try_files $static_page_root$static_page_uri.html $uri /index.php$is_args$args;
     }
 
-    # Use this location when the installer has to be run
-    # location ~ /(index|install)\.php(/|$) {
-    #
-    # Use this after initial install is done:
+    # The web-based installer (install.php) has been removed.
+    # Use the CLI installer instead: vendor/bin/pimcore-install
     location ~ ^/index\.php(/|$) {
         send_timeout 1800;
         fastcgi_read_timeout 1800;
@@ -385,10 +383,8 @@ server {
         try_files $static_page_root$static_page_uri.html $uri /index.php$is_args$args;
     }
 
-    # Use this location when the installer has to be run
-    # location ~ /(index|install)\.php(/|$) {
-    #
-    # Use this after initial install is done:
+    # The web-based installer (install.php) has been removed.
+    # Use the CLI installer instead: vendor/bin/pimcore-install
     location ~ ^/index\.php(/|$) {
         send_timeout 1800;
         fastcgi_read_timeout 1800;

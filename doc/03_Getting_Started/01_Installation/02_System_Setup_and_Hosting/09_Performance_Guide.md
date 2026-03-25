@@ -111,7 +111,7 @@ framework:
                 public: true
                 default_lifetime: 31536000  # 1 year
                 adapter: cache.adapter.redis_tag_aware
-                provider: 'redis://localhost'
+                provider: '%env(REDIS_URL)%'
 ```
 
 After clearing the cache (e.g. during a deployment), warm it up

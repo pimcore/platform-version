@@ -1,144 +1,118 @@
 # Advanced Installation Topics
 
-This section covers installation tasks that go beyond the default interactive setup. Use it when you want to automate 
-Pimcore installation, preconfigure installer values, control which bundles are installed, or prepare the environment 
-for production-oriented deployments.
+This section covers automating the Pimcore installation, pre-configuring environment variables,
+and customizing the installer for project-specific needs.
 
-To fully automate the installation process, pass options as CLI parameters instead of entering them interactively.
+## Automated Installation
+
+To fully automate the installation process, set all required values as environment variables
+and pass the `--no-interaction` flag:
 
 ```bash
-docker compose exec php vendor/bin/pimcore-install --admin-username=admin --admin-password=admin \
-  --mysql-username=username --mysql-password=password --mysql-database=pimcore \
-  --mysql-host-socket=127.0.0.1 --mysql-port=3306 \
+DATABASE_URL='mysql://pimcore:pimcore@db:3306/pimcore' \
+PIMCORE_ADMIN_USER=admin \
+PIMCORE_ADMIN_PASSWORD='secure-password' \
+docker compose exec php vendor/bin/pimcore-install \
+  --install-profile='App\Installer\SkeletonProfile' \
   --no-interaction
 ```
 
-:::info
+The `--no-interaction` flag suppresses all interactive prompts.
+All required values must be provided via environment variables or CLI options.
 
-The `--no-interaction` flag prevents any interactive prompts.
+## Environment Variables
+
+The installer reads environment variables for all configuration values.
+Set these in your `.env`, `docker-compose.yaml`, or CI pipeline to avoid interactive prompts.
+
+### Core Variables (Always Required)
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `DATABASE_URL` | Doctrine DBAL connection URL | `mysql://user:pass@host:3306/dbname` |
+| `PIMCORE_ADMIN_USER` | Admin username | `admin` |
+| `PIMCORE_ADMIN_PASSWORD` | Admin password | `secure-password` |
+
+Product registration values are collected during installation.
+See [Product Registration](../../02_Product_Registration.md) for details on
+`PIMCORE_PRODUCT_KEY`, `PIMCORE_INSTANCE_IDENTIFIER`, and `PIMCORE_ENCRYPTION_SECRET`.
+
+### Optional Variables (Depending on Install Profile)
+
+The install profile determines which optional variables are available.
+If a variable is not set for an optional service, the installer skips that service.
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `PIMCORE_OPENSEARCH_DSN` | OpenSearch connection URL | `http://opensearch:9200` |
+| `PIMCORE_ELASTICSEARCH_DSN` | Elasticsearch connection URL | `http://elasticsearch:9200` |
+| `PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX` | Messenger transport DSN with trailing separator | `doctrine://default?queue_name=` |
+| `REDIS_URL` | Redis connection URL for cache | `redis://redis:6379` |
+| `MAILER_DSN` | Symfony Mailer DSN | `smtp://mail:1025` |
+| `GOTENBERG_BASE_URL` | Gotenberg service URL for document conversion | `http://gotenberg:3000` |
+| `MERCURE_URL` | Mercure hub URL (browser-side, public) | `http://localhost/hub` |
+| `MERCURE_SERVER_URL` | Mercure hub URL (server-side, internal) | `http://mercure/.well-known/mercure` |
+| `MERCURE_JWT_KEY` | Mercure JWT signing key (min 32 characters) | `YourMercureJwtKey...` |
+
+### Messenger Transport DSN
+
+`PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX` uses a trailing separator approach.
+The installer appends the queue name directly to the prefix to form the full DSN:
+
+| Transport | Prefix Value | Resulting DSN (for queue `pimcore_core`) |
+|-----------|-------------|------------------------------------------|
+| Doctrine  | `doctrine://default?queue_name=` | `doctrine://default?queue_name=pimcore_core` |
+| AMQP (RabbitMQ) | `amqp://guest:guest@rabbit:5672/%2f/` | `amqp://guest:guest@rabbit:5672/%2f/pimcore_core` |
+| Redis | `redis://redis:6379/` | `redis://redis:6379/pimcore_core` |
+
+See [Symfony Messenger](./01_Symfony_Messenger.md) for transport configuration details.
+
+## CLI Options Reference
+
+| Option | Description |
+|--------|-------------|
+| `--install-profile=FQCN` | **Required.** Fully qualified class name of the install profile. |
+| `--admin-username=NAME` | Admin username (alternative to `PIMCORE_ADMIN_USER` env var). |
+| `--admin-password=PASS` | Admin password (alternative to `PIMCORE_ADMIN_PASSWORD` env var). |
+| `--env-definition=FQCN` | Additional `EnvVarDefinitionInterface` implementations (repeatable). |
+| `--post-install-commands=FQCN` | Additional `PostInstallCommandsProviderInterface` implementations (repeatable). |
+| `--skip-validation` | Skip all connection/format validation checks. |
+| `--skip-validation=KEY` | Skip validation for a specific definition by key, class name, or FQCN (repeatable). |
+| `--no-interaction` | Suppress all interactive prompts (requires all values via env vars or options). |
+
+:::caution
+
+Using `--admin-username` and `--admin-password` on the command line exposes credentials in shell history
+and process listings. Prefer `PIMCORE_ADMIN_USER` and `PIMCORE_ADMIN_PASSWORD` environment variables instead.
 
 :::
 
-To avoid passing sensitive data (e.g. database password) as a command line option,
-you can set each parameter as an environment variable.
-See `./vendor/bin/pimcore-install` for details:
+## Install Profiles and Extension Points
+
+For details on what install profiles are, how to create custom profiles,
+and the available extension points for developers:
+
+- [Install Profiles](./04_Install_Profiles.md) -- overview, creating profiles, data sources, marker interfaces.
+- [Env Var Definitions](./05_Env_Var_Definitions.md) -- built-in definitions, creating custom definitions, `ConfigParameter`.
+- [Post-Install Commands](./06_Post_Install_Commands.md) -- automatic post-install commands, CLI injection, `PostInstallHookInterface`.
+
+## Skipping Validation
+
+By default, the installer validates all collected values (e.g., testing the database connection,
+pinging OpenSearch). To skip validation during development:
 
 ```bash
-PIMCORE_INSTALL_MYSQL_USERNAME=username PIMCORE_INSTALL_MYSQL_PASSWORD=password ./vendor/bin/pimcore-install \
-  --admin-username=admin --admin-password=admin \
-  --mysql-database=pimcore \
-  --no-interaction
+# Skip all validation
+vendor/bin/pimcore-install --install-profile='App\Installer\MyProfile' --skip-validation
+
+# Skip validation for specific definitions only
+vendor/bin/pimcore-install --install-profile='App\Installer\MyProfile' \
+  --skip-validation=database \
+  --skip-validation=opensearch
 ```
 
-## Installing Bundles
-
-### Bundle Lists Overview
-
-During installation, you interact with two lists of bundles: **Recommended Bundles** and **Required Bundles**.
-
-- **Recommended Bundles**: Displayed to users during interactive mode.
-  These are the bundles users can specify with the `--install-bundles=commaSeparatedBundleList` option.
-
-- **Required Bundles**: Automatically installed in interactive mode if the user chooses to install bundles.
-  They are also installed whenever the `--install-bundles` option is set.
-
-### Default Recommended Bundles
-
-- PimcoreApplicationLoggerBundle
-- PimcoreCustomReportsBundle
-- PimcoreSeoBundle (Robots.txt, Sitemaps, Redirects)
-- PimcoreQuillBundle (default WYSIWYG editor)
-- PimcoreUuidBundle
-
-### Automating Bundle Installation
-
-To install specific bundles automatically, use the `--install-bundles[=bundleList]` flag.
-This installs and activates all required bundles and any specified bundles from the recommended list.
-
-The bundles are automatically added to `config/bundles.php`.
-
-```bash
-./vendor/bin/pimcore-install --admin-username=admin --admin-password=admin \
-  --mysql-username=username --mysql-password=password --mysql-database=pimcore \
-  --mysql-host-socket=127.0.0.1 --mysql-port=3306 \
-  --install-bundles=PimcoreApplicationLoggerBundle,PimcoreCustomReportsBundle \
-  --no-interaction
-```
-
-### Modifying Required Bundles and Bundle Recommendations
-
-The `BundleSetupEvent` is triggered during installation to configure which bundles are installable (recommended)
-and which are automatically installed (required).
-
-By subscribing to this event, you can add or remove bundles from either list. For a practical example, see 
-the [Pimcore Skeleton](https://github.com/pimcore/skeleton), which shows how additional bundles can be integrated 
-into the installer.
-
-```php
-<?php
-
-namespace App\EventSubscriber;
-
-use Pimcore\Bundle\QuillBundle\PimcoreQuillBundle;
-use Pimcore\Bundle\InstallBundle\Event\BundleSetupEvent;
-use Pimcore\Bundle\InstallBundle\Event\InstallEvents;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-
-class BundleSetupSubscriber implements EventSubscriberInterface
-{
-    public static function getSubscribedEvents(): array
-    {
-        return [
-            InstallEvents::EVENT_BUNDLE_SETUP => [
-                ['bundleSetup'],
-            ],
-        ];
-    }
-
-    public function bundleSetup(BundleSetupEvent $event): void
-    {
-        // make bundle installable (using --install-bundles) and recommend it in interactive installation
-        $event->addInstallableBundle('PimcoreQuillBundle', PimcoreQuillBundle::class, true);
-
-        // add required bundle
-        $event->addRequiredBundle('PimcoreQuillBundle', PimcoreQuillBundle::class);
-    }
-}
-```
-
-Register the subscriber in `config/installer.yaml` as described in
-[Preconfiguring the Installer](#preconfiguring-the-installer).
-
-```yaml
-services:
-    _defaults:
-        autowire: true
-        autoconfigure: true
-        public: false
-
-    App\EventSubscriber\BundleSetupSubscriber: ~
-```
-
-## Preconfiguring the Installer
-
-You can preconfigure installer values by adding a config file that sets database credentials.
-This is useful when installing Pimcore on platforms where credentials are available via environment variables.
-Add a config file at `config/installer.yaml` (any Symfony-supported format works):
-
-```yaml
-# config/installer.yaml
-
-pimcore_install:
-    parameters:
-        database_credentials:
-            user:                 username
-            password:             password
-            dbname:               pimcore
-
-            # env variables can be read with the %env() syntax
-            host:                 "%env(DB_HOST)%"
-            port:                 "%env(DB_PORT)%"
-```
+The `--skip-validation` option accepts definition keys (e.g., `database`, `opensearch`),
+short class names (e.g., `DatabaseEnvVarDefinition`), or fully qualified class names.
 
 ## Set a Time Zone
 
