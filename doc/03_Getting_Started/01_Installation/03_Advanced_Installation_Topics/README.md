@@ -95,6 +95,7 @@ and the available extension points for developers:
 - [Install Profiles](./04_Install_Profiles.md) -- overview, creating profiles, data sources, marker interfaces.
 - [Env Var Definitions](./05_Env_Var_Definitions.md) -- built-in definitions, creating custom definitions, `ConfigParameter`.
 - [Post-Install Commands](./06_Post_Install_Commands.md) -- automatic post-install commands, CLI injection, `PostInstallHookInterface`.
+- [Install Step Filtering](./07_Install_Step_Filtering.md) -- skipping install steps for PaaS environments.
 
 ## Skipping Validation
 

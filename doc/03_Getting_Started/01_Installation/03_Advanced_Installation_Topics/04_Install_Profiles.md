@@ -102,3 +102,11 @@ Some env var definitions implement marker interfaces for discoverability by bund
 |-----------|---------|
 | `SearchEngineDefinitionInterface` | Marks OpenSearch/Elasticsearch definitions. Bundles that need search can check if a search engine was configured. |
 | `MessengerTransportDefinitionInterface` | Marks messenger transport definitions. Bundles that register messenger transports can detect the configured backend. |
+
+## Install Step Filtering
+
+Profiles can optionally control which installation steps execute by implementing
+`InstallStepFilterInterface`. This is useful for PaaS environments where certain
+steps (writing `.env.local`, installing assets) are handled by the deployment pipeline.
+
+See [Install Step Filtering](./07_Install_Step_Filtering.md) for details.
