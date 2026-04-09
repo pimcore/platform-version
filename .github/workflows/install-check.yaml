@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sbom:
+  Install-Check:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -51,8 +51,8 @@ jobs:
         if: failure()
         run: |
           echo "=== Packages added from conflict section ==="
-          jq -r '.conflict | keys[]' composer.json | while read package; do
+          jq -r '.conflict | to_entries[] | "\(.key) \(.value)"' composer.json | while read package version; do
             echo ""
-            echo "--- composer why-not $package ---"
-            composer why-not "$package" || true
+            echo "--- composer why-not $package $version ---"
+            composer why-not "$package" "$version" || true
           done
