@@ -30,13 +30,14 @@
     "pimcore/quill-bundle": "<2026.1 || >=2026.2",
     "pimcore/static-resolver-bundle": "<2026.1 || >=2026.2",
     "pimcore/statistics-explorer": "<2026.1 || >=2026.2",
+    "pimcore/studio-backend-bundle": "<2026.1 || >=2026.2",
+    "pimcore/studio-dashboards-bundle": "<2026.1 || >=2026.2",
+    "pimcore/studio-ui-bundle": "<2026.1 || >=2026.2",
+    "pimcore/tinymce-bundle": "<2026.1 || >=2026.2",
     "pimcore/translations-provider-interfaces": "<2026.1 || >=2026.2",
     "pimcore/web-to-print-bundle": "<2026.1 || >=2026.2",
     "pimcore/workflow-automation-integration-bundle": "<2026.1 || >=2026.2",
-    "pimcore/workflow-designer": "<2026.1 || >=2026.2",
-    "pimcore/studio-backend-bundle": "<2026.1 || >=2026.2",
-    "pimcore/studio-ui-bundle": "<2026.1 || >=2026.2",
-    "pimcore/studio-dashboards-bundle": "<2026.1 || >=2026.2"
+    "pimcore/workflow-designer": "<2026.1 || >=2026.2"
   }
 }
 
