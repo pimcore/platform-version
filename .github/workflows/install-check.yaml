@@ -47,36 +47,57 @@ jobs:
       - name: Check dependency resolution
         run: |
           output=$(composer update --dry-run 2>&1) && echo "$output" || {
-            echo "$output" | awk '
-              /^Your requirements could not be resolved/ { print; next }
-              /^$/ && in_problem { in_problem=0; print ""; next }
-              /Problem [0-9]+/ { in_problem=1; print; next }
-              in_problem && /is present at version/ { print; next }
-              in_problem && /Root composer\.json requires/ {
-                # Trim the long version list: keep up to the first "satisfiable by pkg[..." then add "]."
-                line = $0
-                if (match(line, /satisfiable by [^[]+\[/)) {
-                  print substr(line, 1, RSTART+RLENGTH-1) "...]."
-                } else {
-                  print
+            echo "$output" | php -r '
+            $input = file_get_contents("php://stdin");
+
+            // Split into problem blocks
+            preg_match_all("/Problem \d+.*?(?=Problem \d+|\z)/s", $input, $matches);
+
+            if (empty($matches[0])) {
+                echo $input;
+                exit;
+            }
+
+            echo "Dependency resolution failed:" . PHP_EOL . PHP_EOL;
+
+            foreach ($matches[0] as $block) {
+                // Extract the package name from "requires <package> *"
+                $package = "unknown";
+                if (preg_match("/requires\s+(\S+)\s+\*/", $block, $m)) {
+                    $package = $m[1];
                 }
-                next
-              }
-              in_problem && /conflicts with/ && !seen_conflict[in_problem] {
-                seen_conflict[in_problem]=1
-                print "    - " "pimcore/platform-version conflicts with all available versions of this package."
-                next
-              }
-              in_problem && /does not satisfy|does not match/ && !seen_php[in_problem] {
-                seen_php[in_problem]=1
-                print
-                next
-              }
-              in_problem && /require php/ && !seen_php[in_problem] {
-                seen_php[in_problem]=1
-                print
-                next
-              }
+
+                // Extract problem number
+                preg_match("/Problem (\d+)/", $block, $pNum);
+                $num = $pNum[1] ?? "?";
+
+                echo "Problem {$num}: {$package}" . PHP_EOL;
+
+                // Count conflict lines
+                $conflictCount = preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
+                if ($conflictCount > 0) {
+                    echo "  ✗ All {$conflictCount} available versions conflict with pimcore/platform-version" . PHP_EOL;
+                }
+
+                // PHP version requirements
+                preg_match_all("/require php\s+(.+?)\s*->\s*your php version \(([^)]+)\)/", $block, $phpReqs, PREG_SET_ORDER);
+                $seenPhp = [];
+                foreach ($phpReqs as $req) {
+                    $key = $req[1];
+                    if (!isset($seenPhp[$key])) {
+                        $seenPhp[$key] = true;
+                        echo "  ✗ Some versions require PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
+                    }
+                }
+
+                // Dependency constraint mismatches (e.g. requires studio-backend-bundle ^1.0 but no match)
+                preg_match_all("/(\S+)\s+requires\s+(\S+)\s+(\S+)\s*->.*but it does not match/", $block, $depReqs, PREG_SET_ORDER);
+                foreach ($depReqs as $req) {
+                    echo "  ✗ {$req[1]} requires {$req[2]} {$req[3]} — no matching version found" . PHP_EOL;
+                }
+
+                echo PHP_EOL;
+            }
             '
             exit 2
           }
