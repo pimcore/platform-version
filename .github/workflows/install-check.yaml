@@ -44,15 +44,14 @@ jobs:
             composer require "$package_name:*" --no-update
           done
 
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
+      - name: Check dependency resolution
+        run: composer update --dry-run 2>&1
 
-      - name: Debug failing packages
+      - name: Show available versions for conflict packages
         if: failure()
         run: |
-          echo "=== Packages added from conflict section ==="
-          jq -r '.conflict | to_entries[] | "\(.key) \(.value)"' composer.json | while read package version; do
+          jq -r '.conflict | keys[]' composer.json | while read package; do
             echo ""
-            echo "--- composer why-not $package $version ---"
-            composer why-not "$package" "$version" || true
+            echo "--- $package ---"
+            composer show -a "$package" 2>&1 | grep -E "^versions" || echo "  (not found or no versions available)"
           done
