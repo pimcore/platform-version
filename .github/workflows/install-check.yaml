@@ -45,13 +45,38 @@ jobs:
           done
 
       - name: Check dependency resolution
-        run: composer update --dry-run 2>&1
-
-      - name: Show available versions for conflict packages
-        if: failure()
         run: |
-          jq -r '.conflict | keys[]' composer.json | while read package; do
-            echo ""
-            echo "--- $package ---"
-            composer show -a "$package" 2>&1 | grep -E "^versions" || echo "  (not found or no versions available)"
-          done
+          output=$(composer update --dry-run 2>&1) && echo "$output" || {
+            echo "$output" | awk '
+              /^Your requirements could not be resolved/ { print; next }
+              /^$/ && in_problem { in_problem=0; print ""; next }
+              /Problem [0-9]+/ { in_problem=1; print; next }
+              in_problem && /is present at version/ { print; next }
+              in_problem && /Root composer\.json requires/ {
+                # Trim the long version list: keep up to the first "satisfiable by pkg[..." then add "]."
+                line = $0
+                if (match(line, /satisfiable by [^[]+\[/)) {
+                  print substr(line, 1, RSTART+RLENGTH-1) "...]."
+                } else {
+                  print
+                }
+                next
+              }
+              in_problem && /conflicts with/ && !seen_conflict[in_problem] {
+                seen_conflict[in_problem]=1
+                print "    - " "pimcore/platform-version conflicts with all available versions of this package."
+                next
+              }
+              in_problem && /does not satisfy|does not match/ && !seen_php[in_problem] {
+                seen_php[in_problem]=1
+                print
+                next
+              }
+              in_problem && /require php/ && !seen_php[in_problem] {
+                seen_php[in_problem]=1
+                print
+                next
+              }
+            '
+            exit 2
+          }
