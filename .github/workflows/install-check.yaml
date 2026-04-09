@@ -32,25 +32,113 @@ jobs:
           composer config repositories.private-packagist composer https://repo.pimcore.com/github-actions/
           composer config --global --auth http-basic.repo.pimcore.com github-actions ${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}
 
-      - name: Read and modify composer.json
-        id: update_composer
+      - name: Check dependency resolution for each conflict package
         run: |
-          original_content=$(<composer.json)
-          for conflict in $(echo "$original_content" | jq -r '.conflict | to_entries[] | @base64'); do
-            _jq() {
-              echo ${conflict} | base64 --decode | jq -r ${1}
+          cp composer.json composer.json.bak
+          has_failure=0
+          failed_packages=""
+          passed_packages=""
+
+          for package in $(jq -r '.conflict | keys[]' composer.json); do
+            # Reset composer.json to original state for each package
+            cp composer.json.bak composer.json
+            composer require "$package:*" --no-update 2>/dev/null
+
+            output=$(composer update --dry-run 2>/dev/null) || {
+              has_failure=1
+              failed_packages="$failed_packages $package"
+
+              echo "$output" | php -r '
+              $input = file_get_contents("php://stdin");
+              $package = $argv[1] ?? "unknown";
+
+              // Split into problem blocks
+              preg_match_all("/Problem \d+.*?(?=Problem \d+|\z)/s", $input, $matches);
+
+              if (empty($matches[0])) {
+                  echo "FAIL: {$package}" . PHP_EOL;
+                  echo "  (could not parse composer output)" . PHP_EOL . PHP_EOL;
+                  exit;
+              }
+
+              echo "FAIL: {$package}" . PHP_EOL;
+
+              foreach ($matches[0] as $block) {
+                  // Collect conflicted versions (trim trailing dots from composer output)
+                  preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
+                  if (!empty($conflictVersions[1])) {
+                      $versions = array_map(fn($v) => rtrim($v, "."), $conflictVersions[1]);
+                      echo "  Blocked by conflict rule (" . count($versions) . " versions):" . PHP_EOL;
+                      echo "    " . implode(", ", $versions) . PHP_EOL;
+                  }
+
+                  // PHP version requirements (versions NOT blocked by conflict)
+                  preg_match_all("/require php\s+(.+?)\s*->\s*your php version \(([^)]+)\)/", $block, $phpReqs, PREG_SET_ORDER);
+                  // Dependency constraint mismatches
+                  preg_match_all("/(\S+)\s+requires\s+(\S+)\s+(\S+)\s*->.*but it does not match/", $block, $depReqs, PREG_SET_ORDER);
+
+                  if (!empty($phpReqs) || !empty($depReqs)) {
+                      echo "  Remaining versions that fail for other reasons:" . PHP_EOL;
+                      $seenPhp = [];
+                      foreach ($phpReqs as $req) {
+                          $key = $req[1];
+                          if (!isset($seenPhp[$key])) {
+                              $seenPhp[$key] = true;
+                              echo "    - Requires PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
+                          }
+                      }
+                      foreach ($depReqs as $req) {
+                          echo "    - {$req[1]} requires {$req[2]} {$req[3]} (no matching version)" . PHP_EOL;
+                      }
+                  }
+              }
+
+              echo PHP_EOL;
+              ' -- "$package"
+
+              continue
             }
-            package_name=$(_jq '.key')
-            composer require "$package_name:*" --no-update
+
+            passed_packages="$passed_packages $package"
+            echo "OK: $package"
           done
 
-      - name: Check dependency resolution
-        run: |
-          output=$(composer update --dry-run 2>&1) && echo "$output" || {
+          # Restore original composer.json
+          mv composer.json.bak composer.json
+
+          echo ""
+          echo "========================================"
+          echo "Summary (individual checks)"
+          echo "========================================"
+          if [ -n "$passed_packages" ]; then
+            echo "PASSED:$(echo "$passed_packages" | tr ' ' '\n' | sort | sed 's/^/  /')"
+          fi
+          if [ -n "$failed_packages" ]; then
+            echo "FAILED:$(echo "$failed_packages" | tr ' ' '\n' | sort | sed 's/^/  /')"
+          fi
+          echo "========================================"
+
+          if [ "$has_failure" -eq 1 ]; then
+            exit 2
+          fi
+
+          # All packages passed individually — now check them all together
+          echo ""
+          echo "All packages passed individually, running combined check..."
+          echo ""
+
+          for package in $(jq -r '.conflict | keys[]' composer.json); do
+            composer require "$package:*" --no-update 2>/dev/null
+          done
+
+          output=$(composer update --dry-run 2>/dev/null) && {
+            echo "Combined check passed."
+          } || {
+            echo "Combined check FAILED — packages conflict with each other:"
+            echo ""
             echo "$output" | php -r '
             $input = file_get_contents("php://stdin");
 
-            // Split into problem blocks
             preg_match_all("/Problem \d+.*?(?=Problem \d+|\z)/s", $input, $matches);
 
             if (empty($matches[0])) {
@@ -58,42 +146,40 @@ jobs:
                 exit;
             }
 
-            echo "Dependency resolution failed:" . PHP_EOL . PHP_EOL;
-
             foreach ($matches[0] as $block) {
-                // Extract the package name from "requires <package> *"
                 $package = "unknown";
                 if (preg_match("/requires\s+(\S+)\s+\*/", $block, $m)) {
                     $package = $m[1];
                 }
 
-                // Extract problem number
                 preg_match("/Problem (\d+)/", $block, $pNum);
                 $num = $pNum[1] ?? "?";
 
                 echo "Problem {$num}: {$package}" . PHP_EOL;
 
-                // Count conflict lines
-                $conflictCount = preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
-                if ($conflictCount > 0) {
-                    echo "  ✗ All {$conflictCount} available versions conflict with pimcore/platform-version" . PHP_EOL;
+                preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
+                if (!empty($conflictVersions[1])) {
+                    $versions = array_map(fn($v) => rtrim($v, "."), $conflictVersions[1]);
+                    echo "  Blocked by conflict rule (" . count($versions) . " versions):" . PHP_EOL;
+                    echo "    " . implode(", ", $versions) . PHP_EOL;
                 }
 
-                // PHP version requirements
                 preg_match_all("/require php\s+(.+?)\s*->\s*your php version \(([^)]+)\)/", $block, $phpReqs, PREG_SET_ORDER);
-                $seenPhp = [];
-                foreach ($phpReqs as $req) {
-                    $key = $req[1];
-                    if (!isset($seenPhp[$key])) {
-                        $seenPhp[$key] = true;
-                        echo "  ✗ Some versions require PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
-                    }
-                }
-
-                // Dependency constraint mismatches (e.g. requires studio-backend-bundle ^1.0 but no match)
                 preg_match_all("/(\S+)\s+requires\s+(\S+)\s+(\S+)\s*->.*but it does not match/", $block, $depReqs, PREG_SET_ORDER);
-                foreach ($depReqs as $req) {
-                    echo "  ✗ {$req[1]} requires {$req[2]} {$req[3]} — no matching version found" . PHP_EOL;
+
+                if (!empty($phpReqs) || !empty($depReqs)) {
+                    echo "  Remaining versions that fail for other reasons:" . PHP_EOL;
+                    $seenPhp = [];
+                    foreach ($phpReqs as $req) {
+                        $key = $req[1];
+                        if (!isset($seenPhp[$key])) {
+                            $seenPhp[$key] = true;
+                            echo "    - Requires PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
+                        }
+                    }
+                    foreach ($depReqs as $req) {
+                        echo "    - {$req[1]} requires {$req[2]} {$req[3]} (no matching version)" . PHP_EOL;
+                    }
                 }
 
                 echo PHP_EOL;
