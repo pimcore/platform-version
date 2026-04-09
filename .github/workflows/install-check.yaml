@@ -42,7 +42,7 @@ jobs:
           for package in $(jq -r '.conflict | keys[]' composer.json); do
             # Reset composer.json to original state for each package
             cp composer.json.bak composer.json
-            composer require "$package:*" --no-update 2>/dev/null
+            composer require "$package:*@stable" --no-update 2>/dev/null
 
             output=$(composer update --dry-run 2>/dev/null) || {
               has_failure=1
@@ -128,7 +128,7 @@ jobs:
           echo ""
 
           for package in $(jq -r '.conflict | keys[]' composer.json); do
-            composer require "$package:*" --no-update 2>/dev/null
+            composer require "$package:*@stable" --no-update 2>/dev/null
           done
 
           output=$(composer update --dry-run 2>/dev/null) && {
