@@ -67,7 +67,7 @@ jobs:
                   // Collect conflicted versions (trim trailing dots from composer output)
                   preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
                   if (!empty($conflictVersions[1])) {
-                      $versions = array_map(fn($v) => rtrim($v, "."), $conflictVersions[1]);
+                      $versions = array_map(fn($v) => preg_replace("/[.%0A\\s]+$/", "", $v), $conflictVersions[1]);
                       echo "  Blocked by conflict rule (" . count($versions) . " versions):" . PHP_EOL;
                       echo "    " . implode(", ", $versions) . PHP_EOL;
                   }
@@ -81,14 +81,14 @@ jobs:
                       echo "  Remaining versions that fail for other reasons:" . PHP_EOL;
                       $seenPhp = [];
                       foreach ($phpReqs as $req) {
-                          $key = $req[1];
+                          $key = trim($req[1]);
                           if (!isset($seenPhp[$key])) {
                               $seenPhp[$key] = true;
-                              echo "    - Requires PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
+                              echo "    - Requires PHP {$key} (installed: " . trim($req[2]) . ")" . PHP_EOL;
                           }
                       }
                       foreach ($depReqs as $req) {
-                          echo "    - {$req[1]} requires {$req[2]} {$req[3]} (no matching version)" . PHP_EOL;
+                          echo "    - " . trim($req[1]) . " requires " . trim($req[2]) . " " . trim($req[3]) . " (no matching version)" . PHP_EOL;
                       }
                   }
               }
@@ -159,7 +159,7 @@ jobs:
 
                 preg_match_all("/conflicts with\s+\S+\s+(\S+)/", $block, $conflictVersions);
                 if (!empty($conflictVersions[1])) {
-                    $versions = array_map(fn($v) => rtrim($v, "."), $conflictVersions[1]);
+                    $versions = array_map(fn($v) => preg_replace("/[.%0A\\s]+$/", "", $v), $conflictVersions[1]);
                     echo "  Blocked by conflict rule (" . count($versions) . " versions):" . PHP_EOL;
                     echo "    " . implode(", ", $versions) . PHP_EOL;
                 }
@@ -171,14 +171,14 @@ jobs:
                     echo "  Remaining versions that fail for other reasons:" . PHP_EOL;
                     $seenPhp = [];
                     foreach ($phpReqs as $req) {
-                        $key = $req[1];
+                        $key = trim($req[1]);
                         if (!isset($seenPhp[$key])) {
                             $seenPhp[$key] = true;
-                            echo "    - Requires PHP {$req[1]} (installed: {$req[2]})" . PHP_EOL;
+                            echo "    - Requires PHP {$key} (installed: " . trim($req[2]) . ")" . PHP_EOL;
                         }
                     }
                     foreach ($depReqs as $req) {
-                        echo "    - {$req[1]} requires {$req[2]} {$req[3]} (no matching version)" . PHP_EOL;
+                        echo "    - " . trim($req[1]) . " requires " . trim($req[2]) . " " . trim($req[3]) . " (no matching version)" . PHP_EOL;
                     }
                 }
 
