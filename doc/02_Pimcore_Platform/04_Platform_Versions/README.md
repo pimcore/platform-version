@@ -46,7 +46,7 @@ import VersionTimeline from '@site/src/components/VersionTimeline';
 
 | Version | Release Notes | Module Details | LTS | LTS Support Until |
 |---------|--------------|----------------|:---:|-------------------|
-| 2026.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/01_2026.1/) | [Details](01_2026.1.md) | | |
+| 2026.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/01_2026.1/README.md) | [Details](01_2026.1.md) | | |
 | 2025.4  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/02_2025.4.md) | [Details](02_2025.4.md) | ✅ | December 2028 |
 | 2025.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/03_2025.3.md) | [Details](03_2025.3.md) | | |
 | 2025.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/04_2025.2.md) | [Details](04_2025.2.md) | | |
