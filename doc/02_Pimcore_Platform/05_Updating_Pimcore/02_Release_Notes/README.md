@@ -2,7 +2,7 @@
 
 Release notes for each Platform Version document new features, improvements, deprecations, and upgrade notes.
 
-- [2026.1](./01_2026.1.md)
+- [2026.1](./01_2026.1/README.md)
 - [2025.4](./02_2025.4.md)
 - [2025.3](./03_2025.3.md)
 - [2025.2](./04_2025.2.md)
