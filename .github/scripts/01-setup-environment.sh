@@ -70,15 +70,16 @@ fi
 PROJECT_PARENT="$(dirname "$PROJECT_PATH")"
 PROJECT_NAME="$(basename "$PROJECT_PATH")"
 
-mkdir -p "$PROJECT_PATH"
-
 docker run \
-    -u "${DOCKER_UID}:${DOCKER_GID}" --rm \
+    --rm \
     -v "${PROJECT_PARENT}:/var/www/html" \
     -e COMPOSER_HOME=/tmp/composer \
     "${PHP_IMAGE}" \
     composer create-project "pimcore/skeleton:${SKELETON_CONSTRAINT}" "$PROJECT_NAME" \
         --no-scripts --no-interaction
+
+echo "    [sudo] Fixing ownership after create-project (container ran as root)"
+sudo chown -R "$(id -u):$(id -g)" "$PROJECT_PATH"
 
 # ─── Copy config files ────────────────────────────────────────────────────────
 echo ">>> Copying configuration files..."
