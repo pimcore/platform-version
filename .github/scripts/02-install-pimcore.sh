@@ -63,7 +63,7 @@ export DOCKER_GID="${DOCKER_GID:-$(id -g)}"
 
 # ─── Configure composer ───────────────────────────────────────────────────────
 echo ">>> Configuring composer..."
-docker compose exec -T -- php composer config --global --auth http-basic.repo.pimcore.com token "$TOKEN"
+docker compose exec -T -- php composer config --auth http-basic.repo.pimcore.com token "$TOKEN"
 docker compose exec -T -- php composer config repositories.enterprise composer "$EFFECTIVE_REPO_URL"
 docker compose exec -T -- php composer config minimum-stability dev
 docker compose exec -T -- php composer config prefer-stable true
