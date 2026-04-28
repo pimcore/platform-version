@@ -1,0 +1,13 @@
+framework:
+    messenger:
+        transports:
+            pimcore_core:
+                dsn: '%env(PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX)%pimcore_core'
+            pimcore_maintenance:
+                dsn: '%env(PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX)%pimcore_maintenance'
+            pimcore_scheduled_tasks:
+                dsn: '%env(PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX)%pimcore_scheduled_tasks'
+            pimcore_image_optimize:
+                dsn: '%env(PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX)%pimcore_image_optimize'
+            pimcore_asset_update:
+                dsn: '%env(PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX)%pimcore_asset_update'

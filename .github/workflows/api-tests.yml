@@ -1,0 +1,55 @@
+name: API Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform_version:
+        description: 'Platform version (e.g. 2026.1 or 2026.x)'
+        default: '2026.1'
+        type: string
+  push:
+    branches: [api-test]
+  pull_request:
+    branches: [api-test]
+
+env:
+  PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
+  PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
+  PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Increase vm.max_map_count for OpenSearch
+        run: sudo sysctl -w vm.max_map_count=262144
+
+      - name: Setup environment (create-project, start containers)
+        run: bash .github/scripts/01-setup-environment.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ inputs.platform_version || '2026.1' }}" --ci
+
+      - name: Install Pimcore (composer require + installer)
+        run: bash .github/scripts/02-install-pimcore.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ inputs.platform_version || '2026.1' }}" --ci
+
+      - name: Verify Pimcore is responding
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:8088/pimcore-studio > /dev/null 2>&1; then
+              echo "Pimcore is up!"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "ERROR: Pimcore did not respond after 150s"
+          exit 1
+
+      - name: Run tests
+        run: bash .github/scripts/03-run-tests.sh
+
+      - name: Shutdown
+        if: always()
+        run: bash .github/scripts/04-shutdown.sh

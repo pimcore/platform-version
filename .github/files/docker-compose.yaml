@@ -1,0 +1,129 @@
+services:
+    redis:
+        image: redis:alpine
+        command: [redis-server, --maxmemory, 128mb, --maxmemory-policy, volatile-lru, --save, '""']
+
+    rabbitmq:
+        image: rabbitmq:alpine
+
+    db:
+        image: mariadb:10.11
+        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_520_ci, --innodb-file-per-table=1]
+        volumes:
+            - pimcore-it-database:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-ROOT}
+            MYSQL_DATABASE: ${MYSQL_DATABASE:-pimcore}
+            MYSQL_USER: ${MYSQL_USER:-pimcore}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD:-pimcore}
+        ports:
+            - "${DB_PORT:-3307}:3306"
+        healthcheck:
+            test: ["CMD-SHELL", "mysql -h db -u$${MYSQL_USER} -p$${MYSQL_PASSWORD} $${MYSQL_DATABASE} -e 'SELECT 1;'"]
+            interval: 5s
+            retries: 10
+            start_period: 30s
+            timeout: 3s
+
+    nginx:
+        image: nginx:stable-alpine
+        ports:
+            - "${NGINX_PORT:-8088}:80"
+        volumes:
+            - .:/var/www/html:ro
+            - ./.docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+        depends_on:
+            - php
+
+    php:
+        image: ${PHP_IMAGE:-pimcore/pimcore:php8.5-max-5.x}
+        user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+        environment:
+            PHP_MEMORY_LIMIT: "2048M"
+            COMPOSER_HOME: /var/www/html
+            PHP_IDE_CONFIG: serverName=localhost
+        depends_on:
+            db:
+                condition: service_healthy
+        volumes:
+            - .:/var/www/html
+            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
+
+    supervisord:
+        image: ${PHP_SUPERVISORD_IMAGE:-pimcore/pimcore:php8.5-supervisord-5.x}
+        user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+        depends_on:
+            rabbitmq:
+                condition: service_started
+            db:
+                condition: service_healthy
+        volumes:
+            - .:/var/www/html
+            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
+            - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
+
+    gotenberg:
+        image: gotenberg/gotenberg:8
+
+    mercure:
+        image: dunglas/mercure
+        restart: unless-stopped
+        environment:
+            SERVER_NAME: ':80'
+            MERCURE_PUBLISHER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
+            MERCURE_SUBSCRIBER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
+            MERCURE_EXTRA_DIRECTIVES: anonymous
+        ports:
+            - "${MERCURE_PORT:-8080}:80"
+
+    opensearch:
+        image: opensearchproject/opensearch:2
+        environment:
+            - cluster.name=opensearch-cluster
+            - node.name=opensearch-node
+            - discovery.seed_hosts=opensearch-node
+            - cluster.routing.allocation.disk.threshold_enabled=false
+            - bootstrap.memory_lock=true
+            - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+            - discovery.type=single-node
+            - action.auto_create_index=false
+            - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_INITIAL_ADMIN_PASSWORD:-gBsVe!Dut723}
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+            nofile:
+                soft: 65536
+                hard: 65536
+        volumes:
+            - pimcore-it-opensearch:/usr/share/opensearch/data
+        healthcheck:
+            test: ["CMD-SHELL", "curl -sk https://localhost:9200 -u admin:$${OPENSEARCH_INITIAL_ADMIN_PASSWORD} | grep -q cluster_name"]
+            interval: 10s
+            retries: 12
+            start_period: 60s
+            timeout: 5s
+
+    opensearch-dashboards:
+        image: opensearchproject/opensearch-dashboards:2
+        ports:
+            - "${OPENSEARCH_DASHBOARDS_PORT:-5601}:5601"
+        environment:
+            OPENSEARCH_HOSTS: '["https://opensearch:9200"]'
+        depends_on:
+            opensearch:
+                condition: service_healthy
+
+    mailpit:
+        image: axllent/mailpit
+        restart: unless-stopped
+        ports:
+            - "${MAILPIT_PORT:-8025}:8025"
+        environment:
+            MP_MAX_MESSAGES: 5000
+            MP_SMTP_AUTH_ACCEPT_ANY: 1
+            MP_SMTP_AUTH_ALLOW_INSECURE: 1
+
+volumes:
+    pimcore-it-database:
+    pimcore-it-opensearch:
