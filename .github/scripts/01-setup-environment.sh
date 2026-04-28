@@ -94,9 +94,6 @@ cp "${FILES_DIR}/nginx.conf"      "${PROJECT_PATH}/.docker/nginx.conf"
 cp "${FILES_DIR}/supervisord.conf" "${PROJECT_PATH}/.docker/supervisord.conf"
 cp "${FILES_DIR}/messenger.yaml"   "${PROJECT_PATH}/config/packages/messenger.yaml"
 
-echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
-sudo chown -R www-data "$PROJECT_PATH"
-
 # Write project .env.local
 cat > "${PROJECT_PATH}/.env.local" <<ENVEOF
 APP_ENV=${APP_ENV:-dev}
@@ -133,6 +130,9 @@ export NGINX_PORT OPENSEARCH_DASHBOARDS_PORT MAILPIT_PORT MERCURE_PORT DB_PORT
 export PHP_IMAGE PHP_SUPERVISORD_IMAGE
 export MYSQL_ROOT_PASSWORD MYSQL_DATABASE MYSQL_USER MYSQL_PASSWORD
 export OPENSEARCH_INITIAL_ADMIN_PASSWORD
+
+echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
+sudo chown -R www-data "$PROJECT_PATH"
 
 docker compose down -v --remove-orphans 2>/dev/null || true
 docker compose up -d
