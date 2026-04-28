@@ -70,6 +70,8 @@ fi
 PROJECT_PARENT="$(dirname "$PROJECT_PATH")"
 PROJECT_NAME="$(basename "$PROJECT_PATH")"
 
+mkdir -p "$PROJECT_PATH"
+
 docker run \
     -u "${DOCKER_UID}:${DOCKER_GID}" --rm \
     -v "${PROJECT_PARENT}:/var/www/html" \
