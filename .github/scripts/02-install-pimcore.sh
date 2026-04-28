@@ -63,7 +63,7 @@ export DOCKER_GID="${DOCKER_GID:-$(id -g)}"
 
 # ─── Configure composer ───────────────────────────────────────────────────────
 echo ">>> Configuring composer..."
-docker compose exec -T -- php composer config --auth http-basic.repo.pimcore.com token "$TOKEN"
+docker compose exec -T -- php composer config --global --auth http-basic.repo.pimcore.com token "$TOKEN"
 docker compose exec -T -- php composer config repositories.enterprise composer "$EFFECTIVE_REPO_URL"
 docker compose exec -T -- php composer config minimum-stability dev
 docker compose exec -T -- php composer config prefer-stable true
@@ -129,8 +129,8 @@ docker compose exec -T php bin/console cache:clear
 docker compose exec -T php bin/console doctrine:migrations:migrate --no-interaction 2>/dev/null || true
 docker compose exec -T php bin/console generic-data-index:update:index -r 2>/dev/null || true
 
-echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
-sudo chown -R www-data .
+echo "    [sudo] Setting ownership to match container user (DOCKER_UID:DOCKER_GID)"
+sudo chown -R "${DOCKER_UID}:${DOCKER_GID}" .
 
 echo ""
 echo ">>> Installation complete."

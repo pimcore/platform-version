@@ -131,8 +131,8 @@ export PHP_IMAGE PHP_SUPERVISORD_IMAGE
 export MYSQL_ROOT_PASSWORD MYSQL_DATABASE MYSQL_USER MYSQL_PASSWORD
 export OPENSEARCH_INITIAL_ADMIN_PASSWORD
 
-echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
-sudo chown -R www-data "$PROJECT_PATH"
+echo "    [sudo] Setting ownership to match container user (DOCKER_UID:DOCKER_GID)"
+sudo chown -R "${DOCKER_UID}:${DOCKER_GID}" "$PROJECT_PATH"
 
 docker compose down -v --remove-orphans 2>/dev/null || true
 docker compose up -d
