@@ -129,8 +129,8 @@ docker compose exec -T php bin/console cache:clear
 docker compose exec -T php bin/console doctrine:migrations:migrate --no-interaction 2>/dev/null || true
 docker compose exec -T php bin/console generic-data-index:update:index -r 2>/dev/null || true
 
-echo "    [sudo] Fixing file ownership..."
-sudo chown -R "$(id -u):$(id -g)" .
+echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
+sudo chown -R www-data .
 
 echo ""
 echo ">>> Installation complete."

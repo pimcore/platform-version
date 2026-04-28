@@ -71,15 +71,12 @@ PROJECT_PARENT="$(dirname "$PROJECT_PATH")"
 PROJECT_NAME="$(basename "$PROJECT_PATH")"
 
 docker run \
-    --rm \
+    -u "$(id -u):$(id -g)" --rm \
     -v "${PROJECT_PARENT}:/var/www/html" \
     -e COMPOSER_HOME=/tmp/composer \
     "${PHP_IMAGE}" \
     composer create-project "pimcore/skeleton:${SKELETON_CONSTRAINT}" "$PROJECT_NAME" \
         --no-scripts --no-interaction
-
-echo "    [sudo] Fixing ownership after create-project (container ran as root)"
-sudo chown -R "$(id -u):$(id -g)" "$PROJECT_PATH"
 
 # ─── Copy config files ────────────────────────────────────────────────────────
 echo ">>> Copying configuration files..."
@@ -96,6 +93,9 @@ mkdir -p "${PROJECT_PATH}/.docker"
 cp "${FILES_DIR}/nginx.conf"      "${PROJECT_PATH}/.docker/nginx.conf"
 cp "${FILES_DIR}/supervisord.conf" "${PROJECT_PATH}/.docker/supervisord.conf"
 cp "${FILES_DIR}/messenger.yaml"   "${PROJECT_PATH}/config/packages/messenger.yaml"
+
+echo "    [sudo] Setting ownership to www-data so the PHP container can write files"
+sudo chown -R www-data "$PROJECT_PATH"
 
 # Write project .env.local
 cat > "${PROJECT_PATH}/.env.local" <<ENVEOF
