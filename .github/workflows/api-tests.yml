@@ -26,6 +26,43 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Resolve studio-tests branch
+        id: resolve-tests-branch
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: |
+          VERSION="${{ inputs.platform_version || '2026.1' }}"
+          REPO="pimcore/studio-tests"
+
+          echo ">>> Resolving studio-tests branch for platform version: ${VERSION}"
+
+          # Try exact version branch (e.g. 2026.1)
+          if git ls-remote --exit-code --heads "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" "$VERSION" >/dev/null 2>&1; then
+            echo "    Found branch: ${VERSION}"
+            echo "ref=$VERSION" >> "$GITHUB_OUTPUT"
+          # Try .x branch (e.g. 2026.x) if input was a specific version like 2026.1
+          elif [[ "$VERSION" != *.x ]]; then
+            MAJOR_BRANCH="${VERSION%.*}.x"
+            if git ls-remote --exit-code --heads "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" "$MAJOR_BRANCH" >/dev/null 2>&1; then
+              echo "    Found branch: ${MAJOR_BRANCH}"
+              echo "ref=$MAJOR_BRANCH" >> "$GITHUB_OUTPUT"
+            else
+              echo "    No matching branch found, falling back to main"
+              echo "ref=main" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "    No matching branch found, falling back to main"
+            echo "ref=main" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout Studio Tests
+        uses: actions/checkout@v4
+        with:
+          repository: pimcore/studio-tests
+          ref: ${{ steps.resolve-tests-branch.outputs.ref }}
+          path: ./studio-tests
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
       - name: Increase vm.max_map_count for OpenSearch
         run: sudo sysctl -w vm.max_map_count=262144
 
@@ -47,8 +84,43 @@ jobs:
           echo "ERROR: Pimcore did not respond after 150s"
           exit 1
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: studio-tests/package-lock.json
+
+      - name: Install Playwright
+        working-directory: ./studio-tests
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
       - name: Run tests
-        run: bash .github/scripts/03-run-tests.sh
+        working-directory: ./studio-tests
+        env:
+          PIMCORE_BASE_URL: http://localhost:8088
+          PIMCORE_USERNAME: admin
+          PIMCORE_PASSWORD: admin
+          CI: 'true'
+        run: npx playwright test
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: studio-tests/playwright-report/
+          retention-days: 30
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: studio-tests/test-results/
+          retention-days: 30
 
       - name: Shutdown
         if: always()
