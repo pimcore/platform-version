@@ -26,40 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Resolve studio-tests branch
-        id: resolve-tests-branch
-        env:
-          GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        run: |
-          VERSION="${{ inputs.platform_version || '2026.1' }}"
-          REPO="pimcore/studio-tests"
-
-          echo ">>> Resolving studio-tests branch for platform version: ${VERSION}"
-
-          # Try exact version branch (e.g. 2026.1)
-          if git ls-remote --exit-code --heads "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" "$VERSION" >/dev/null 2>&1; then
-            echo "    Found branch: ${VERSION}"
-            echo "ref=$VERSION" >> "$GITHUB_OUTPUT"
-          # Try .x branch (e.g. 2026.x) if input was a specific version like 2026.1
-          elif [[ "$VERSION" != *.x ]]; then
-            MAJOR_BRANCH="${VERSION%.*}.x"
-            if git ls-remote --exit-code --heads "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" "$MAJOR_BRANCH" >/dev/null 2>&1; then
-              echo "    Found branch: ${MAJOR_BRANCH}"
-              echo "ref=$MAJOR_BRANCH" >> "$GITHUB_OUTPUT"
-            else
-              echo "    No matching branch found, falling back to main"
-              echo "ref=main" >> "$GITHUB_OUTPUT"
-            fi
-          else
-            echo "    No matching branch found, falling back to main"
-            echo "ref=main" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Checkout Studio Tests
         uses: actions/checkout@v4
         with:
           repository: pimcore/studio-tests
-          ref: ${{ steps.resolve-tests-branch.outputs.ref }}
+          ref: main
           path: ./studio-tests
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
