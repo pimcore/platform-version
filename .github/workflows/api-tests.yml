@@ -33,6 +33,7 @@ jobs:
           ref: main
           path: ./studio-tests
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          persist-credentials: false
 
       - name: Increase vm.max_map_count for OpenSearch
         run: sudo sysctl -w vm.max_map_count=262144
