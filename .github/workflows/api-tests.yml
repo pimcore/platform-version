@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: pimcore/studio-tests
-          ref: main
+          ref: ${{ inputs.platform_version || '2026.1' }}
           path: ./studio-tests
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           persist-credentials: false

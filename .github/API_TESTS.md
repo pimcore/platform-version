@@ -76,3 +76,13 @@ Admin credentials: `admin` / `admin`
 .github/scripts/05-reset.sh      # fast DB reset, keeps containers
 .github/scripts/06-teardown.sh   # full shutdown
 ```
+
+## New Platform Version Release
+
+When releasing a new platform version (e.g. `2026.2`), update the following:
+
+1. **`.github/workflows/api-tests.yml`** — change the default fallback version
+   `'2026.1'` to the new version in:
+   - `inputs.platform_version.default` (line 8)
+   - The `|| '2026.1'` fallbacks in the setup, install, and studio-tests checkout steps
+2. **`pimcore/studio-tests`** — ensure a matching branch exists (e.g. `2026.2`)
