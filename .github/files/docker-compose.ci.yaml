@@ -18,12 +18,12 @@ services:
             - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_INITIAL_ADMIN_PASSWORD:-gBsVe!Dut723}
 
     opensearch-dashboards:
-        deploy:
-            replicas: 0
+        profiles:
+            - debug
 
     mailpit:
-        deploy:
-            replicas: 0
+        profiles:
+            - debug
 
     mercure:
         ports:

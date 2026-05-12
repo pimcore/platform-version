@@ -52,7 +52,7 @@ and run `npx playwright test` against `http://localhost:8088`.
 The `api-tests.yml` workflow:
 
 1. Checks out `platform-version`
-2. Resolves the matching `studio-tests` branch (`2026.1` -> `2026.x` -> `main`)
+2. Checks out `pimcore/studio-tests` at the exact `platform_version` input (default: `2026.1`)
 3. Sets up the Pimcore environment (Docker containers, composer install)
 4. Installs Node.js 22 and Playwright
 5. Runs `npx playwright test` against `http://localhost:8088`
