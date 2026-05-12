@@ -111,6 +111,8 @@ final class CustomDataMigration implements PostInstallHookInterface
 Use `--post-install-commands` to inject additional `PostInstallCommandsProviderInterface`
 implementations without modifying the profile:
 
+> When running via Docker, prepend `docker compose exec php` to the commands below.
+
 ```bash
 vendor/bin/pimcore-install \
   --install-profile='App\Installer\SkeletonProfile' \

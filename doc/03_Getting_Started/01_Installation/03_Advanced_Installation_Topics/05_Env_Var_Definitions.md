@@ -180,6 +180,8 @@ final readonly class SolrEnvVarDefinition implements EnvVarDefinitionInterface
 Use `--env-definition` to inject additional definitions alongside those defined in the profile,
 without modifying the profile itself:
 
+> When running via Docker, prepend `docker compose exec php` to the command below.
+
 ```bash
 vendor/bin/pimcore-install \
   --install-profile='App\Installer\SkeletonProfile' \
