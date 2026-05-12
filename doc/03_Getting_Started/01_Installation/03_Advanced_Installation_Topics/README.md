@@ -9,13 +9,24 @@ To fully automate the installation process, set all required values as environme
 and pass the `--no-interaction` flag:
 
 ```bash
-DATABASE_URL='mysql://pimcore:pimcore@db:3306/pimcore' \
-PIMCORE_ADMIN_USER=admin \
-PIMCORE_ADMIN_PASSWORD='secure-password' \
-docker compose exec php vendor/bin/pimcore-install \
-  --install-profile='App\Installer\SkeletonProfile' \
-  --no-interaction
+docker compose exec \
+  -e DATABASE_URL='mysql://pimcore:pimcore@db:3306/pimcore' \
+  -e PIMCORE_ADMIN_USER=admin \
+  -e PIMCORE_ADMIN_PASSWORD='secure-password' \
+  php vendor/bin/pimcore-install \
+    --install-profile='App\Installer\SkeletonProfile' \
+    --no-interaction
 ```
+
+:::info
+
+`docker compose exec` does not forward host-shell environment variables into the
+container automatically. Pass each variable explicitly with `-e VAR=value` (or
+`-e VAR` to forward a variable already exported in the host shell), or set the
+values in your `.env` / `docker-compose.yaml` so they are available to the `php`
+service at runtime.
+
+:::
 
 The `--no-interaction` flag suppresses all interactive prompts.
 All required values must be provided via environment variables or CLI options.
@@ -101,6 +112,8 @@ and the available extension points for developers:
 
 By default, the installer validates all collected values (e.g., testing the database connection,
 pinging OpenSearch). To skip validation during development:
+
+> When running via Docker, prepend `docker compose exec php` to the commands below.
 
 ```bash
 # Skip all validation
