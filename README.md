@@ -47,3 +47,9 @@ The versioning schema follows semantic versioning and is Major.Minor (e.g. 2023.
 
 - [Setup and working with Platform Versions](./doc/01_Setup.md)
 - [Release Notes](./doc/02_Pimcore_Platform/05_Updating_Pimcore/02_Release_Notes/README.md)
+
+## API tests
+
+End-to-end Docker-based install and boot tests live in `.github/`. See
+[.github/API_TESTS.md](.github/API_TESTS.md) for local setup,
+daily commands, and CI configuration.

@@ -9,7 +9,7 @@ GenericDataIndex, StudioBackend, StudioUI, DataHub), so you do not need to insta
 Create the project using the Pimcore Docker image:
 
 ```bash
-docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.5-latest composer create-project pimcore/skeleton my-project
+docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.5-latest composer create-project pimcore/skeleton --no-scripts my-project
 ```
 
 Switch to the project directory:
