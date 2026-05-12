@@ -7,10 +7,6 @@ on:
         description: 'Platform version (e.g. 2026.1 or 2026.x)'
         default: '2026.1'
         type: string
-  push:
-    branches: [api-test]
-  pull_request:
-    branches: [api-test]
 
 env:
   PLATFORM_VERSION: ${{ inputs.platform_version || '2026.1' }}
