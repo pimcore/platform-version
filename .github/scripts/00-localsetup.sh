@@ -1,0 +1,225 @@
+#!/usr/bin/env bash
+#
+# 00-localsetup.sh — Local orchestrator for the Pimcore API test environment
+#
+# Usage:
+#   ./.github/scripts/00-localsetup.sh --token=<ENTERPRISE_REPO_TOKEN> [--platform-version=2026.1]
+#
+# First-time flow (no credentials yet):
+#   1. Run: ./.github/scripts/00-localsetup.sh --token=<TOKEN>
+#      → Creates project, generates credentials, prints registration URL, waits
+#   2. Complete registration in browser, add PIMCORE_PRODUCT_KEY to
+#      .github/scripts/.env.local, then press ENTER
+#   3. Setup continues automatically
+#
+set -euo pipefail
+
+START_TIME=$(date +%s)
+
+SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+FILES_DIR="${SCRIPTS_DIR}/../files"
+ENV_LOCAL="${SCRIPTS_DIR}/.env.local"
+
+source "${FILES_DIR}/.env"
+[[ -f "$ENV_LOCAL" ]] && source "$ENV_LOCAL"
+
+TOKEN="${COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN:-}"
+PLATFORM_VERSION="${PLATFORM_VERSION:-2026.1}"
+
+# ─── Parse arguments ─────────────────────────────────────────────────────────
+for arg in "$@"; do
+    case $arg in
+        --token=*)            TOKEN="${arg#*=}" ;;
+        --platform-version=*) PLATFORM_VERSION="${arg#*=}" ;;
+        --help|-h)
+            echo "Usage: $0 --token=<ENTERPRISE_REPO_TOKEN> [--platform-version=<VER>]"
+            echo ""
+            echo "Options:"
+            echo "  --token=TOKEN            Enterprise packagist token (required)"
+            echo "  --platform-version=VER   Platform/skeleton version to install (default: 2026.1)"
+            echo "                           Examples: 2026.1 (stable), 2026.x (dev branch)"
+            echo ""
+            echo "Other scripts:"
+            echo "  05-reset.sh              Fast DB reset — re-runs installer without composer steps"
+            echo "  06-teardown.sh           Stop containers; use --clean to also remove test-project"
+            exit 0
+            ;;
+        *) echo "Unknown argument: $arg"; exit 1 ;;
+    esac
+done
+
+if [[ -z "$TOKEN" ]]; then
+    echo "ERROR: Enterprise repo token is required."
+    echo "  Pass --token=<TOKEN> or set COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN in .github/scripts/.env.local"
+    exit 1
+fi
+
+# ─── Derive version constraints ──────────────────────────────────────────────
+if [[ "$PLATFORM_VERSION" == *.x ]]; then
+    PLATFORM_CONSTRAINT="${PLATFORM_VERSION}-dev"
+    SKELETON_CONSTRAINT="dev-${PLATFORM_VERSION}"
+else
+    PLATFORM_CONSTRAINT="^${PLATFORM_VERSION}"
+    SKELETON_CONSTRAINT="^${PLATFORM_VERSION}"
+fi
+
+export DOCKER_UID="$(id -u)"
+export DOCKER_GID="$(id -g)"
+
+echo "╔══════════════════════════════════════════════════════════════╗"
+echo "║  Pimcore API Test Environment Setup                         ║"
+echo "╠══════════════════════════════════════════════════════════════╣"
+echo "║  Platform:   ${PLATFORM_VERSION} (${PLATFORM_CONSTRAINT})"
+echo "║  PHP image:  ${PHP_IMAGE}"
+echo "║  Nginx port: ${NGINX_PORT:-8088}"
+echo "╚══════════════════════════════════════════════════════════════╝"
+echo ""
+
+# ─── Step 1: Setup environment (create-project, containers) ──────────────────
+bash "${SCRIPTS_DIR}/01-setup-environment.sh" "$TOKEN" "$PLATFORM_VERSION"
+
+# ─── Step 1b: Product registration credentials ───────────────────────────────
+# Re-source after project creation (vendor/bin/generate-defuse-key now available)
+[[ -f "$ENV_LOCAL" ]] && source "$ENV_LOCAL"
+
+if [[ -z "${PIMCORE_ENCRYPTION_SECRET:-}" || -z "${PIMCORE_INSTANCE_IDENTIFIER:-}" ]]; then
+    echo ""
+    echo ">>> Generating product registration credentials..."
+
+    REPO_ROOT="$(cd "${SCRIPTS_DIR}/../.." && pwd)"
+    PROJECT_PATH="${REPO_ROOT}/../test-project"
+
+    GEN_ENCRYPTION_SECRET=$(docker run --rm \
+        -v "${PROJECT_PATH}:/app" -w /app \
+        "${PHP_IMAGE}" \
+        vendor/bin/generate-defuse-key 2>&1)
+
+    if [[ -z "$GEN_ENCRYPTION_SECRET" || "$GEN_ENCRYPTION_SECRET" == *"rror"* ]]; then
+        echo "ERROR: Failed to generate encryption secret."
+        echo "  Output: ${GEN_ENCRYPTION_SECRET}"
+        exit 1
+    fi
+
+    GEN_INSTANCE_ID=$(docker run --rm "${PHP_IMAGE}" php -r '
+        $bytes = random_bytes(16);
+        $alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+        $base = strlen($alphabet);
+        $hex = bin2hex($bytes);
+        $num = "0";
+        for ($i = 0; $i < strlen($hex); $i++) {
+            $num = bcmul($num, "16");
+            $num = bcadd($num, (string)hexdec($hex[$i]));
+        }
+        $encoded = "";
+        while (bccomp($num, "0") > 0) {
+            $remainder = bcmod($num, (string)$base);
+            $num = bcdiv($num, (string)$base, 0);
+            $encoded = $alphabet[(int)$remainder] . $encoded;
+        }
+        echo $encoded;
+    ' 2>&1)
+
+    if [[ -z "$GEN_INSTANCE_ID" || "$GEN_INSTANCE_ID" == *"rror"* ]]; then
+        echo "ERROR: Failed to generate instance identifier."
+        exit 1
+    fi
+
+    {
+        echo ""
+        echo "# Generated by 00-localsetup.sh — $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+        echo "PIMCORE_ENCRYPTION_SECRET=\"${GEN_ENCRYPTION_SECRET}\""
+        echo "PIMCORE_INSTANCE_IDENTIFIER=\"${GEN_INSTANCE_ID}\""
+        echo "#PIMCORE_PRODUCT_KEY=<paste-your-product-key-here>"
+    } >> "$ENV_LOCAL"
+
+    PIMCORE_ENCRYPTION_SECRET="$GEN_ENCRYPTION_SECRET"
+    PIMCORE_INSTANCE_IDENTIFIER="$GEN_INSTANCE_ID"
+
+    echo "    Credentials written to .github/scripts/.env.local"
+fi
+
+# Compute registration URL
+REG_INSTANCE_HASH=$(docker run --rm "${PHP_IMAGE}" php -r '
+    echo hash_hmac("sha256", "'"${PIMCORE_INSTANCE_IDENTIFIER}"'", "'"${PIMCORE_ENCRYPTION_SECRET}"'");
+' 2>&1)
+REG_URL="https://license.pimcore.com/register?instance_identifier=${PIMCORE_INSTANCE_IDENTIFIER}&instance_hash=${REG_INSTANCE_HASH}"
+
+# Wait for product key if not set
+if [[ -z "${PIMCORE_PRODUCT_KEY:-}" ]]; then
+    echo ""
+    echo "╔══════════════════════════════════════════════════════════════╗"
+    echo "║  Product Registration Required                              ║"
+    echo "╠══════════════════════════════════════════════════════════════╣"
+    echo "║                                                              ║"
+    echo "║  1. Open this URL in your browser:                          ║"
+    echo "║                                                              ║"
+    echo "     ${REG_URL}"
+    echo "║                                                              ║"
+    echo "║  2. Complete the registration and copy the product key.     ║"
+    echo "║                                                              ║"
+    echo "║  3. Add it to .github/scripts/.env.local:                   ║"
+    echo "║       PIMCORE_PRODUCT_KEY=\"<your-product-key>\"              ║"
+    echo "║                                                              ║"
+    echo "╚══════════════════════════════════════════════════════════════╝"
+    echo ""
+
+    while true; do
+        read -rp "  Press ENTER when PIMCORE_PRODUCT_KEY has been added to .env.local..."
+        [[ -f "$ENV_LOCAL" ]] && source "$ENV_LOCAL"
+        if [[ -n "${PIMCORE_PRODUCT_KEY:-}" ]]; then
+            echo "    PIMCORE_PRODUCT_KEY found — continuing setup."
+            break
+        fi
+        echo "    PIMCORE_PRODUCT_KEY still not found — please add it and press ENTER again."
+    done
+fi
+
+# Update project .env.local with registration credentials
+REPO_ROOT="$(cd "${SCRIPTS_DIR}/../.." && pwd)"
+PROJECT_PATH="${REPO_ROOT}/../test-project"
+sed -i "s|PIMCORE_ENCRYPTION_SECRET=.*|PIMCORE_ENCRYPTION_SECRET=\"${PIMCORE_ENCRYPTION_SECRET}\"|" "${PROJECT_PATH}/.env.local"
+sed -i "s|PIMCORE_INSTANCE_IDENTIFIER=.*|PIMCORE_INSTANCE_IDENTIFIER=\"${PIMCORE_INSTANCE_IDENTIFIER}\"|" "${PROJECT_PATH}/.env.local"
+sed -i "s|PIMCORE_PRODUCT_KEY=.*|PIMCORE_PRODUCT_KEY=\"${PIMCORE_PRODUCT_KEY}\"|" "${PROJECT_PATH}/.env.local"
+
+# ─── Step 2: Install Pimcore ─────────────────────────────────────────────────
+bash "${SCRIPTS_DIR}/02-install-pimcore.sh" "$TOKEN" "$PLATFORM_VERSION"
+
+# ─── Step 3: Run tests ───────────────────────────────────────────────────────
+STUDIO_TESTS_DIR="${REPO_ROOT}/../studio-tests"
+if [[ ! -d "$STUDIO_TESTS_DIR" ]]; then
+    echo ""
+    echo "╔══════════════════════════════════════════════════════════════╗"
+    echo "║  Studio Tests Not Found — Skipping Tests                    ║"
+    echo "╠══════════════════════════════════════════════════════════════╣"
+    echo "║                                                              ║"
+    echo "║  Clone studio-tests to run API tests:                       ║"
+    echo "║    git clone git@github.com:pimcore/studio-tests.git \\      ║"
+    echo "║      ${STUDIO_TESTS_DIR}"
+    echo "║                                                              ║"
+    echo "║  Then install dependencies:                                  ║"
+    echo "║    cd ${STUDIO_TESTS_DIR} && npm ci \\                       ║"
+    echo "║      && npx playwright install chromium                      ║"
+    echo "║                                                              ║"
+    echo "╚══════════════════════════════════════════════════════════════╝"
+else
+    export PLATFORM_VERSION
+    bash "${SCRIPTS_DIR}/03-run-tests.sh"
+fi
+
+echo ""
+END_TIME=$(date +%s)
+ELAPSED=$((END_TIME - START_TIME))
+echo "╔══════════════════════════════════════════════════════════════╗"
+printf "║  Setup complete in %-4s seconds!                             ║\n" "$ELAPSED"
+echo "╠══════════════════════════════════════════════════════════════╣"
+echo "║  Pimcore UI:            http://localhost:${NGINX_PORT:-8088}/pimcore-studio"
+echo "║  Pimcore API docs:      http://localhost:${NGINX_PORT:-8088}/pimcore-studio/api/docs"
+echo "║  OpenSearch Dashboards: http://localhost:${OPENSEARCH_DASHBOARDS_PORT:-5601}"
+echo "║  Mailpit:               http://localhost:${MAILPIT_PORT:-8025}"
+echo "║  Mercure:               http://localhost:${MERCURE_PORT:-8080}"
+echo "║                                                              ║"
+echo "║  Admin credentials:     ${PIMCORE_ADMIN_USER} / ${PIMCORE_ADMIN_PASSWORD}"
+echo "║                                                              ║"
+echo "║  Reset:                 .github/scripts/05-reset.sh         ║"
+echo "║  Shutdown:              .github/scripts/06-teardown.sh      ║"
+echo "╚══════════════════════════════════════════════════════════════╝"
