@@ -13,6 +13,7 @@ on:
     branches: [api-test]
 
 env:
+  PLATFORM_VERSION: ${{ inputs.platform_version || '2026.1' }}
   PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
   PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
   PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
@@ -30,7 +31,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: pimcore/studio-tests
-          ref: ${{ inputs.platform_version || '2026.1' }}
+          ref: ${{ env.PLATFORM_VERSION }}
           path: ./studio-tests
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           persist-credentials: false
@@ -39,10 +40,10 @@ jobs:
         run: sudo sysctl -w vm.max_map_count=262144
 
       - name: Setup environment (create-project, start containers)
-        run: bash .github/scripts/01-setup-environment.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ inputs.platform_version || '2026.1' }}" --ci
+        run: bash .github/scripts/01-setup-environment.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ env.PLATFORM_VERSION }}" --ci
 
       - name: Install Pimcore (composer require + installer)
-        run: bash .github/scripts/02-install-pimcore.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ inputs.platform_version || '2026.1' }}" --ci
+        run: bash .github/scripts/02-install-pimcore.sh "${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}" "${{ env.PLATFORM_VERSION }}" --ci
 
       - name: Verify Pimcore is responding
         run: |
