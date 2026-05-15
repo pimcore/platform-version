@@ -1,6 +1,9 @@
 name: API Tests
 
 on:
+  push:
+    branches:
+      - add-class-definition
   workflow_dispatch:
     inputs:
       platform_version:

@@ -123,6 +123,38 @@ docker compose exec -T \
     --install-profile='App\Installer\ApiTestProfile' \
     -n
 
+# ─── Import test class definitions ────────────────────────────────────────────
+echo ">>> Importing test class definitions..."
+CLASS_DEF_SRC="${FILES_DIR}/class-definitions"
+CLASS_DEF_DEST="${PROJECT_PATH}/class-definitions"
+
+cp -r "$CLASS_DEF_SRC" "$CLASS_DEF_DEST"
+
+docker compose exec -T php bin/console pimcore:definition:import:fieldcollection \
+    /var/www/html/class-definitions/fieldcollection_AutomaticTestFull_export.json
+
+docker compose exec -T php bin/console pimcore:definition:import:class \
+    /var/www/html/class-definitions/class_automaticTestSimple_export.json
+
+# Create classification store for FullAutomaticTest (hardcoded ID 1 — always first on fresh install)
+docker compose exec -T db mysql -uroot -p"${MYSQL_ROOT_PASSWORD}" "${MYSQL_DATABASE}" -e \
+    "INSERT INTO classificationstore_stores (id, name) VALUES (1, 'AutomaticTestStore');"
+
+docker compose exec -T php bin/console pimcore:definition:import:class \
+    /var/www/html/class-definitions/class_automaticTestFull_export.json
+
+docker compose exec -T php bin/console pimcore:definition:import:objectbrick \
+    /var/www/html/class-definitions/objectbrick_AutomaticTestFull_export.json
+docker compose exec -T php bin/console pimcore:definition:import:customlayout \
+    --class-name=automaticTestFull \
+    /var/www/html/class-definitions/custom_definition_test_ATF_CL_export.json
+docker compose exec -T php bin/console pimcore:definition:import:customlayout \
+    --class-name=automaticTestFull \
+    /var/www/html/class-definitions/custom_definition_brick_export.json
+
+rm -rf "$CLASS_DEF_DEST"
+echo "    Class definitions imported successfully."
+
 # ─── Post-install ─────────────────────────────────────────────────────────────
 echo ">>> Post-install tasks..."
 docker compose exec -T php bin/console cache:clear
