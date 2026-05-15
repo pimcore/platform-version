@@ -152,7 +152,7 @@ docker compose exec -T php bin/console pimcore:definition:import:customlayout \
     --class-name=automaticTestFull \
     /var/www/html/class-definitions/custom_definition_brick_export.json
 
-rm -rf "$CLASS_DEF_DEST"
+rm -rf "$CLASS_DEF_DEST" || sudo rm -rf "$CLASS_DEF_DEST"
 echo "    Class definitions imported successfully."
 
 # ─── Post-install ─────────────────────────────────────────────────────────────
