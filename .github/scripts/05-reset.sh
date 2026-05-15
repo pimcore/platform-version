@@ -82,7 +82,7 @@ echo "    [5/6] Importing test class definitions..."
 CLASS_DEF_SRC="${FILES_DIR}/class-definitions"
 CLASS_DEF_DEST="${PROJECT_PATH}/class-definitions"
 
-cp -r "$CLASS_DEF_SRC" "$CLASS_DEF_DEST"
+cp -r "$CLASS_DEF_SRC" "$CLASS_DEF_DEST" || sudo cp -r "$CLASS_DEF_SRC" "$CLASS_DEF_DEST"
 
 docker compose exec -T php bin/console pimcore:definition:import:fieldcollection \
     /var/www/html/class-definitions/fieldcollection_AutomaticTestFull_export.json
