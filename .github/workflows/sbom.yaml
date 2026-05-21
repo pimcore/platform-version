@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   sbom:
-    uses: pimcore/workflows-centralized/.github/workflows/reusable-sbom.yaml@master
+    uses: pimcore/workflows-collection-public/.github/workflows/reusable-sbom.yaml@main
     with:
       promote-conflicts: true
       private-packagist: true
