@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   sbom:
-    uses: pimcore/workflows-collection-public/.github/workflows/reusable-sbom.yaml@main
+    uses: pimcore/workflows-collection-public/.github/workflows/reusable-sbom.yaml@fix/sbom-merge-cli-flag
     with:
       promote-conflicts: true
       private-packagist: true
