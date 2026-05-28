@@ -1,0 +1,43 @@
+name: Notify Jira on New Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify-jira:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send webhook to Jira
+        env:
+          JIRA_WEBHOOK_URL: ${{ secrets.JIRA_WEBHOOK_URL }}
+          JIRA_WEBHOOK_SECRET: ${{ secrets.JIRA_WEBHOOK_SECRET }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_CREATED_AT: ${{ github.event.issue.created_at }}
+        run: |
+          PAYLOAD=$(jq -n \
+            --arg title "$ISSUE_TITLE" \
+            --arg body "$ISSUE_BODY" \
+            --arg url "$ISSUE_URL" \
+            --arg user "$ISSUE_USER" \
+            --argjson id "$ISSUE_NUMBER" \
+            --arg created_at "$ISSUE_CREATED_AT" \
+            '{
+              issue: {
+                id: $id,
+                title: $title,
+                body: $body,
+                url: $url,
+                user: $user,
+                created_at: $created_at
+              }
+            }')
+
+          curl -X POST "$JIRA_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Automation-Webhook-Token: $JIRA_WEBHOOK_SECRET" \
+            -d "$PAYLOAD"
