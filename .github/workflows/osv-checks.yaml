@@ -17,11 +17,10 @@ jobs:
             fail-fast: false
             matrix:
                 include:
-                    - { php-version: 8.3, platform-version: 'v2024.4', exclude-packages: 'pimcore/workflow-designer,pimcore/web-to-print-bundle,pimcore/studio-backend-bundle' }
+              
                     - { php-version: 8.4, platform-version: 'v2025.4' }
                     - { php-version: 8.5, platform-version: '2026.x' }
         with:
             php-version: ${{ matrix.php-version }}
             platform-version: ${{ matrix.platform-version }}
-            exclude-packages: ${{ matrix.exclude-packages }}
         secrets: inherit
