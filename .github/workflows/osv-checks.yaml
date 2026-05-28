@@ -23,4 +23,5 @@ jobs:
         with:
             php-version: ${{ matrix.php-version }}
             platform-version: ${{ matrix.platform-version }}
+            exclude-packages: ${{ matrix.exclude-packages }}
         secrets: inherit
