@@ -23,7 +23,6 @@ body:
       id: platformversion
       attributes:
           label: Affected Version
-          multiple: true
           options:
               - 2026.1
               - 2025.4 - LTS
@@ -38,7 +37,6 @@ body:
       id: capability
       attributes:
           label: Affected capability
-          multiple: true
           options:
               - Assets
               - Documents
