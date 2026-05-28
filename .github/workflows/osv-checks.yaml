@@ -12,12 +12,12 @@ permissions:
 
 jobs:
     composer-checks:
-        uses: pimcore/workflows-collection-public/.github/workflows/reusable-osv-checks.yaml@osv-check-fix
+        uses: pimcore/workflows-collection-public/.github/workflows/reusable-osv-checks.yaml@osv-check
         strategy:
             fail-fast: false
             matrix:
                 include:
-              
+                    - { php-version: 8.3, platform-version: 'v2024.4' }
                     - { php-version: 8.4, platform-version: 'v2025.4' }
                     - { php-version: 8.5, platform-version: '2026.x' }
         with:
