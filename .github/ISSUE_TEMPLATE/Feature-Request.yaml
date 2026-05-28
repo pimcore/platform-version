@@ -27,6 +27,7 @@ body:
               - Assets
               - Documents
               - Data Objects
+              - Core
               - User/Permission/Role
               - DataHub
               - Portal-Engine
