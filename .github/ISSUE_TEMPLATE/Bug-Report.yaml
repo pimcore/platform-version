@@ -22,32 +22,32 @@ body:
     - type: dropdown
       id: platformversion
       attributes:
-      label: Affected Version
-      options:
-          - 2026.1
-          - 2025.4 - LTS
-          - 2025.3
-          - 2025.2
-          - 2025.1
-          - 2024.4 - LTS
-          - Other
+          label: Affected Version
+          options:
+              - 2026.1
+              - 2025.4 - LTS
+              - 2025.3
+              - 2025.2
+              - 2025.1
+              - 2024.4 - LTS
+              - Other
       validations:
-      required: true
+          required: true
     - type: dropdown
       id: capability
       attributes:
-      label: Affected capability
-      options:
-          - Assets
-          - Documents
-          - Data Objects
-          - User/Permission/Role
-          - DataHub
-          - Portal-Engine
-          - Copilot
-          - Other
+          label: Affected capability
+          options:
+              - Assets
+              - Documents
+              - Data Objects
+              - User/Permission/Role
+              - DataHub
+              - Portal-Engine
+              - Copilot
+              - Other
       validations:
-      required: true
+          required: true
     - type: textarea
       attributes:
           label: Steps to reproduce
