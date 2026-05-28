@@ -12,7 +12,7 @@ permissions:
 
 jobs:
     composer-checks:
-        uses: pimcore/workflows-collection-public/.github/workflows/reusable-osv-checks.yaml@main
+        uses: pimcore/workflows-collection-public/.github/workflows/reusable-osv-checks.yaml@osv-check-fix
         strategy:
             fail-fast: false
             matrix:
