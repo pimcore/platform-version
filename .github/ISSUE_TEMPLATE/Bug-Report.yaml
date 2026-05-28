@@ -1,7 +1,6 @@
 name: Bug Report
 description: File a bug report
 type: Bug
-Platform Version: 2026.1
 body:
     - type: markdown
       attributes:
