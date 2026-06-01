@@ -21,8 +21,8 @@ jobs:
       API_URL: ${{ github.api_url }}
       OWNER: ${{ github.repository_owner }}
       REPOSITORY: ${{ github.repository }}
-      CAPABILITY_FIELD_ID_FALLBACK: ${{ vars.ISSUE_FIELD_ID_AFFECTED_CAPABILITY }}
-      VERSION_FIELD_ID_FALLBACK: ${{ vars.ISSUE_FIELD_ID_PLATFORM_VERSION }}
+      CAPABILITY_FIELD_ID_STATIC: ${{ vars.ISSUE_FIELD_ID_AFFECTED_CAPABILITY }}
+      VERSION_FIELD_ID_STATIC: ${{ vars.ISSUE_FIELD_ID_PLATFORM_VERSION }}
     steps:
       - name: Resolve issue data
         id: resolve-issue
@@ -142,59 +142,19 @@ jobs:
           echo "Parsed platform version: $PLATFORM_VERSION"
           echo "Parsed capability: $CAPABILITY"
 
-      - name: Resolve issue field IDs and validate options
+      - name: Resolve static issue field IDs
         if: steps.gate.outputs.is_bug == 'true'
         id: resolve
         shell: bash
-        env:
-          PLATFORM_VERSION: ${{ steps.extract.outputs.platform_version }}
-          CAPABILITY: ${{ steps.extract.outputs.capability }}
         run: |
           set -euo pipefail
 
-          FIELD_RESPONSE_FILE="$(mktemp)"
-          HTTP_CODE="$(curl -sS -o "$FIELD_RESPONSE_FILE" -w "%{http_code}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "X-GitHub-Api-Version: 2026-03-10" \
-            "$API_URL/orgs/$OWNER/issue-fields")"
+          CAPABILITY_FIELD_ID="$CAPABILITY_FIELD_ID_STATIC"
+          VERSION_FIELD_ID="$VERSION_FIELD_ID_STATIC"
 
-          if [[ "$HTTP_CODE" == "200" ]]; then
-            CAPABILITY_FIELD_ID="$(jq -r '.[] | select(.name == "Affected capability" and .data_type == "single_select") | .id' "$FIELD_RESPONSE_FILE" | head -n1)"
-            VERSION_FIELD_ID="$(jq -r '.[] | select(.name == "Platform Version" and .data_type == "single_select") | .id' "$FIELD_RESPONSE_FILE" | head -n1)"
-
-            if [[ -z "$CAPABILITY_FIELD_ID" || -z "$VERSION_FIELD_ID" || "$CAPABILITY_FIELD_ID" == "null" || "$VERSION_FIELD_ID" == "null" ]]; then
-              echo "Required single-select issue fields not found: 'Affected capability' and/or 'Platform Version'."
-              exit 1
-            fi
-
-            jq -e --arg value "$CAPABILITY" '
-              any(.[]; .name == "Affected capability" and any(.options[]?; .name == $value))
-            ' "$FIELD_RESPONSE_FILE" > /dev/null || {
-              echo "Capability option '$CAPABILITY' does not exist in issue field 'Affected capability'."
-              exit 1
-            }
-
-            jq -e --arg value "$PLATFORM_VERSION" '
-              any(.[]; .name == "Platform Version" and any(.options[]?; .name == $value))
-            ' "$FIELD_RESPONSE_FILE" > /dev/null || {
-              echo "Platform version option '$PLATFORM_VERSION' does not exist in issue field 'Platform Version'."
-              exit 1
-            }
-          elif [[ "$HTTP_CODE" == "403" ]]; then
-            echo "Org issue field lookup denied (HTTP 403). Falling back to repository variables."
-
-            CAPABILITY_FIELD_ID="$CAPABILITY_FIELD_ID_FALLBACK"
-            VERSION_FIELD_ID="$VERSION_FIELD_ID_FALLBACK"
-
-            if ! [[ "$CAPABILITY_FIELD_ID" =~ ^[0-9]+$ && "$VERSION_FIELD_ID" =~ ^[0-9]+$ ]]; then
-              echo "Fallback field IDs missing or invalid."
-              echo "Set repository variables: ISSUE_FIELD_ID_AFFECTED_CAPABILITY and ISSUE_FIELD_ID_PLATFORM_VERSION"
-              exit 1
-            fi
-          else
-            echo "Failed to list org issue fields (HTTP $HTTP_CODE)."
-            cat "$FIELD_RESPONSE_FILE"
+          if ! [[ "$CAPABILITY_FIELD_ID" =~ ^[0-9]+$ && "$VERSION_FIELD_ID" =~ ^[0-9]+$ ]]; then
+            echo "Static field IDs missing or invalid."
+            echo "Set repository variables: ISSUE_FIELD_ID_AFFECTED_CAPABILITY and ISSUE_FIELD_ID_PLATFORM_VERSION"
             exit 1
           fi
 
