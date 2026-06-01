@@ -1,0 +1,232 @@
+name: Sync Issue Fields for Bug Reports
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Issue number to process (for manual test runs)"
+        required: true
+        type: string
+
+permissions:
+  issues: write
+
+jobs:
+  sync-issue-fields:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      API_URL: ${{ github.api_url }}
+      OWNER: ${{ github.repository_owner }}
+      REPOSITORY: ${{ github.repository }}
+    steps:
+      - name: Resolve issue data
+        id: resolve-issue
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          REPO_NAME="${REPOSITORY#*/}"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            ISSUE_NUMBER="${{ inputs.issue_number }}"
+          else
+            ISSUE_NUMBER="${{ github.event.issue.number }}"
+          fi
+
+          if ! [[ "$ISSUE_NUMBER" =~ ^[0-9]+$ ]]; then
+            echo "Invalid issue number: '$ISSUE_NUMBER'."
+            exit 1
+          fi
+
+          ISSUE_RESPONSE_FILE="$(mktemp)"
+          HTTP_CODE="$(curl -sS -o "$ISSUE_RESPONSE_FILE" -w "%{http_code}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "$API_URL/repos/$OWNER/$REPO_NAME/issues/$ISSUE_NUMBER")"
+
+          if [[ "$HTTP_CODE" != "200" ]]; then
+            echo "Failed to load issue #$ISSUE_NUMBER (HTTP $HTTP_CODE)."
+            cat "$ISSUE_RESPONSE_FILE"
+            exit 1
+          fi
+
+          if jq -e '.pull_request != null' "$ISSUE_RESPONSE_FILE" > /dev/null; then
+            echo "Input #$ISSUE_NUMBER is a pull request, not an issue."
+            exit 1
+          fi
+
+          ISSUE_BODY="$(jq -r '.body // ""' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_TYPE_NAME="$(jq -r '.type.name // .issue_type.name // .issue_type // empty' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_BODY_B64="$(printf '%s' "$ISSUE_BODY" | base64 | tr -d '\n')"
+
+          echo "repo_name=$REPO_NAME" >> "$GITHUB_OUTPUT"
+          echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "issue_type_name=$ISSUE_TYPE_NAME" >> "$GITHUB_OUTPUT"
+          echo "issue_body_b64=$ISSUE_BODY_B64" >> "$GITHUB_OUTPUT"
+
+      - name: Gate for Bug issues
+        id: gate
+        shell: bash
+        env:
+          ISSUE_TYPE_NAME: ${{ steps.resolve-issue.outputs.issue_type_name }}
+          ISSUE_BODY_B64: ${{ steps.resolve-issue.outputs.issue_body_b64 }}
+        run: |
+          set -euo pipefail
+
+          ISSUE_TYPE_LOWER="$(printf '%s' "$ISSUE_TYPE_NAME" | tr '[:upper:]' '[:lower:]')"
+          ISSUE_BODY="$(printf '%s' "$ISSUE_BODY_B64" | base64 --decode)"
+
+          if [[ "$ISSUE_TYPE_LOWER" == "bug" ]]; then
+            echo "is_bug=true" >> "$GITHUB_OUTPUT"
+            echo "Issue type is Bug."
+            exit 0
+          fi
+
+          # Fallback for repositories where issue type is not present in the event payload.
+          if printf '%s\n' "$ISSUE_BODY" | grep -q '^### Affected Version$' && \
+             printf '%s\n' "$ISSUE_BODY" | grep -q '^### Affected capability$'; then
+            echo "is_bug=true" >> "$GITHUB_OUTPUT"
+            echo "Issue matches Bug Report form markers."
+            exit 0
+          fi
+
+          echo "is_bug=false" >> "$GITHUB_OUTPUT"
+          echo "Issue is not a Bug report. Skipping field sync."
+
+      - name: Extract Bug form values
+        if: steps.gate.outputs.is_bug == 'true'
+        id: extract
+        shell: bash
+        env:
+          ISSUE_BODY_B64: ${{ steps.resolve-issue.outputs.issue_body_b64 }}
+        run: |
+          set -euo pipefail
+
+          BODY="$(printf '%s' "$ISSUE_BODY_B64" | base64 --decode | tr -d '\r')"
+
+          extract_field_value() {
+            local heading="$1"
+            printf '%s\n' "$BODY" | awk -v h="$heading" '
+              $0 == "### " h { in_section=1; next }
+              in_section && $0 ~ /^### / { exit }
+              in_section {
+                line=$0
+                gsub(/^[[:space:]]+|[[:space:]]+$/, "", line)
+                if (line != "") {
+                  print line
+                  exit
+                }
+              }
+            '
+          }
+
+          PLATFORM_VERSION="$(extract_field_value "Affected Version")"
+          CAPABILITY="$(extract_field_value "Affected capability")"
+
+          if [[ -z "$PLATFORM_VERSION" || -z "$CAPABILITY" ]]; then
+            echo "Could not parse required values from bug form."
+            echo "Parsed platform version: '$PLATFORM_VERSION'"
+            echo "Parsed capability: '$CAPABILITY'"
+            exit 1
+          fi
+
+          echo "platform_version=$PLATFORM_VERSION" >> "$GITHUB_OUTPUT"
+          echo "capability=$CAPABILITY" >> "$GITHUB_OUTPUT"
+
+          echo "Parsed platform version: $PLATFORM_VERSION"
+          echo "Parsed capability: $CAPABILITY"
+
+      - name: Resolve issue field IDs and validate options
+        if: steps.gate.outputs.is_bug == 'true'
+        id: resolve
+        shell: bash
+        env:
+          PLATFORM_VERSION: ${{ steps.extract.outputs.platform_version }}
+          CAPABILITY: ${{ steps.extract.outputs.capability }}
+        run: |
+          set -euo pipefail
+
+          FIELD_RESPONSE_FILE="$(mktemp)"
+          HTTP_CODE="$(curl -sS -o "$FIELD_RESPONSE_FILE" -w "%{http_code}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "$API_URL/orgs/$OWNER/issue-fields")"
+
+          if [[ "$HTTP_CODE" != "200" ]]; then
+            echo "Failed to list org issue fields (HTTP $HTTP_CODE)."
+            cat "$FIELD_RESPONSE_FILE"
+            exit 1
+          fi
+
+          CAPABILITY_FIELD_ID="$(jq -r '.[] | select(.name == "Affected capability" and .data_type == "single_select") | .id' "$FIELD_RESPONSE_FILE" | head -n1)"
+          VERSION_FIELD_ID="$(jq -r '.[] | select(.name == "Platform Version" and .data_type == "single_select") | .id' "$FIELD_RESPONSE_FILE" | head -n1)"
+
+          if [[ -z "$CAPABILITY_FIELD_ID" || -z "$VERSION_FIELD_ID" || "$CAPABILITY_FIELD_ID" == "null" || "$VERSION_FIELD_ID" == "null" ]]; then
+            echo "Required single-select issue fields not found: 'Affected capability' and/or 'Platform Version'."
+            exit 1
+          fi
+
+          jq -e --arg value "$CAPABILITY" '
+            any(.[]; .name == "Affected capability" and any(.options[]?; .name == $value))
+          ' "$FIELD_RESPONSE_FILE" > /dev/null || {
+            echo "Capability option '$CAPABILITY' does not exist in issue field 'Affected capability'."
+            exit 1
+          }
+
+          jq -e --arg value "$PLATFORM_VERSION" '
+            any(.[]; .name == "Platform Version" and any(.options[]?; .name == $value))
+          ' "$FIELD_RESPONSE_FILE" > /dev/null || {
+            echo "Platform version option '$PLATFORM_VERSION' does not exist in issue field 'Platform Version'."
+            exit 1
+          }
+
+          echo "capability_field_id=$CAPABILITY_FIELD_ID" >> "$GITHUB_OUTPUT"
+          echo "version_field_id=$VERSION_FIELD_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Set issue field values
+        if: steps.gate.outputs.is_bug == 'true'
+        id: set-values
+        shell: bash
+        env:
+          REPO_NAME: ${{ steps.resolve-issue.outputs.repo_name }}
+          ISSUE_NUMBER: ${{ steps.resolve-issue.outputs.issue_number }}
+          PLATFORM_VERSION: ${{ steps.extract.outputs.platform_version }}
+          CAPABILITY: ${{ steps.extract.outputs.capability }}
+          CAPABILITY_FIELD_ID: ${{ steps.resolve.outputs.capability_field_id }}
+          VERSION_FIELD_ID: ${{ steps.resolve.outputs.version_field_id }}
+        run: |
+          set -euo pipefail
+
+          PAYLOAD="$(jq -n \
+            --argjson capability_field_id "$CAPABILITY_FIELD_ID" \
+            --arg capability "$CAPABILITY" \
+            --argjson version_field_id "$VERSION_FIELD_ID" \
+            --arg platform_version "$PLATFORM_VERSION" \
+            '{
+              issue_field_values: [
+                { field_id: $capability_field_id, value: $capability },
+                { field_id: $version_field_id, value: $platform_version }
+              ]
+            }')"
+
+          RESPONSE_FILE="$(mktemp)"
+          HTTP_CODE="$(curl -sS -o "$RESPONSE_FILE" -w "%{http_code}" \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "$API_URL/repos/$OWNER/$REPO_NAME/issues/$ISSUE_NUMBER/issue-field-values" \
+            -d "$PAYLOAD")"
+
+          if [[ "$HTTP_CODE" != "200" ]]; then
+            echo "Failed to set issue field values (HTTP $HTTP_CODE)."
+            cat "$RESPONSE_FILE"
+            exit 1
+          fi
+
+          echo "Issue field sync completed successfully."
