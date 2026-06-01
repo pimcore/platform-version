@@ -5,11 +5,11 @@ on:
     inputs:
       platform_version:
         description: 'Platform version (e.g. 2026.1 or 2026.x)'
-        default: '2026.1'
+        default: '2026.x'
         type: string
 
 env:
-  PLATFORM_VERSION: ${{ inputs.platform_version || '2026.1' }}
+  PLATFORM_VERSION: ${{ inputs.platform_version || '2026.x' }}
   PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
   PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
   PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
