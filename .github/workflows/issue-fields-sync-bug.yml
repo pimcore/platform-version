@@ -62,13 +62,25 @@ jobs:
           fi
 
           ISSUE_BODY="$(jq -r '.body // ""' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_TITLE="$(jq -r '.title // ""' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_URL="$(jq -r '.html_url // ""' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_USER="$(jq -r '.user.login // ""' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_CREATED_AT="$(jq -r '.created_at // ""' "$ISSUE_RESPONSE_FILE")"
           ISSUE_TYPE_NAME="$(jq -r '.type.name // .issue_type.name // .issue_type // empty' "$ISSUE_RESPONSE_FILE")"
+          ISSUE_TITLE_B64="$(printf '%s' "$ISSUE_TITLE" | base64 | tr -d '\n')"
           ISSUE_BODY_B64="$(printf '%s' "$ISSUE_BODY" | base64 | tr -d '\n')"
+          ISSUE_URL_B64="$(printf '%s' "$ISSUE_URL" | base64 | tr -d '\n')"
+          ISSUE_USER_B64="$(printf '%s' "$ISSUE_USER" | base64 | tr -d '\n')"
+          ISSUE_CREATED_AT_B64="$(printf '%s' "$ISSUE_CREATED_AT" | base64 | tr -d '\n')"
 
           echo "repo_name=$REPO_NAME" >> "$GITHUB_OUTPUT"
           echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
           echo "issue_type_name=$ISSUE_TYPE_NAME" >> "$GITHUB_OUTPUT"
+          echo "issue_title_b64=$ISSUE_TITLE_B64" >> "$GITHUB_OUTPUT"
           echo "issue_body_b64=$ISSUE_BODY_B64" >> "$GITHUB_OUTPUT"
+          echo "issue_url_b64=$ISSUE_URL_B64" >> "$GITHUB_OUTPUT"
+          echo "issue_user_b64=$ISSUE_USER_B64" >> "$GITHUB_OUTPUT"
+          echo "issue_created_at_b64=$ISSUE_CREATED_AT_B64" >> "$GITHUB_OUTPUT"
 
       - name: Gate for Bug issues
         id: gate
@@ -208,13 +220,21 @@ jobs:
         env:
           JIRA_WEBHOOK_URL: ${{ secrets.JIRA_WEBHOOK_URL }}
           JIRA_WEBHOOK_SECRET: ${{ secrets.JIRA_WEBHOOK_SECRET }}
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          ISSUE_URL: ${{ github.event.issue.html_url }}
-          ISSUE_USER: ${{ github.event.issue.user.login }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          ISSUE_CREATED_AT: ${{ github.event.issue.created_at }}
+          ISSUE_NUMBER: ${{ steps.resolve-issue.outputs.issue_number }}
+          ISSUE_TITLE_B64: ${{ steps.resolve-issue.outputs.issue_title_b64 }}
+          ISSUE_BODY_B64: ${{ steps.resolve-issue.outputs.issue_body_b64 }}
+          ISSUE_URL_B64: ${{ steps.resolve-issue.outputs.issue_url_b64 }}
+          ISSUE_USER_B64: ${{ steps.resolve-issue.outputs.issue_user_b64 }}
+          ISSUE_CREATED_AT_B64: ${{ steps.resolve-issue.outputs.issue_created_at_b64 }}
         run: |
+          set -euo pipefail
+
+          ISSUE_TITLE="$(printf '%s' "$ISSUE_TITLE_B64" | base64 --decode)"
+          ISSUE_BODY="$(printf '%s' "$ISSUE_BODY_B64" | base64 --decode)"
+          ISSUE_URL="$(printf '%s' "$ISSUE_URL_B64" | base64 --decode)"
+          ISSUE_USER="$(printf '%s' "$ISSUE_USER_B64" | base64 --decode)"
+          ISSUE_CREATED_AT="$(printf '%s' "$ISSUE_CREATED_AT_B64" | base64 --decode)"
+
           PAYLOAD=$(jq -n \
             --arg title "$ISSUE_TITLE" \
             --arg body "$ISSUE_BODY" \
