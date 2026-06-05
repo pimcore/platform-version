@@ -1,4 +1,5 @@
 {
+    "id": "test_ATF",
     "title": "",
     "description": "",
     "modificationDate": 1673453021,
@@ -906,7 +907,7 @@
                                 "visibleSearch": false,
                                 "classes": [
                                     {
-                                        "classes": "test_ATS"
+                                        "classes": "automaticTestSimple"
                                     }
                                 ],
                                 "displayMode": "grid",
@@ -977,7 +978,7 @@
                                 "visibleSearch": false,
                                 "classes": [
                                     {
-                                        "classes": "test_ATS"
+                                        "classes": "automaticTestFull"
                                     }
                                 ],
                                 "displayMode": "grid",
@@ -991,7 +992,7 @@
                                 "visibleFieldDefinitions": [],
                                 "width": "",
                                 "height": "",
-                                "allowedClassId": "test_ATF",
+                                "allowedClassId": "automaticTestFull",
                                 "columns": [],
                                 "columnKeys": [],
                                 "enableBatchEdit": false,
@@ -2739,7 +2740,7 @@
                                                         "visibleFieldDefinitions": [],
                                                         "width": "",
                                                         "height": "",
-                                                        "allowedClassId": "test_ATF",
+                                                        "allowedClassId": "automaticTestFull",
                                                         "columns": [],
                                                         "columnKeys": [],
                                                         "enableBatchEdit": false,
