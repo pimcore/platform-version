@@ -1,0 +1,31 @@
+[[IgnoredVulns]]
+id = "GHSA-7q22-x757-cmgc"
+reason = "Low impact."
+
+[[IgnoredVulns]]
+id = "GHSA-h4ph-crvj-9h92"
+reason = "No fix available for pimcore/admin-ui-classic-bundle in the v1.7.x range required by v2024.4. Fixed in v2.3.6+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-3234-gxc3-pq6f"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.6+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-332x-r494-54fq"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.7+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-36fc-7wjg-mfvj"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.7+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-jwcc-gv4m-93x6"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.6+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-r2f4-ff2p-xc64"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.7+ which is outside the supported version range."
+
+[[IgnoredVulns]]
+id = "GHSA-wc7j-g8wx-m2qx"
+reason = "No fix available for pimcore/pimcore in the v11.5.x range required by v2024.4. Fixed in v12.3.7+ which is outside the supported version range."

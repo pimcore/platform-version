@@ -12,7 +12,9 @@ permissions:
 
 jobs:
     composer-checks:
-        uses: pimcore/workflows-collection-public/.github/workflows/reusable-osv-checks.yaml@main
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
         strategy:
             fail-fast: false
             matrix:
@@ -20,7 +22,121 @@ jobs:
                     - { php-version: 8.3, platform-version: 'v2024.4' }
                     - { php-version: 8.4, platform-version: 'v2025.4' }
                     - { php-version: 8.5, platform-version: '2026.x' }
-        with:
-            php-version: ${{ matrix.php-version }}
-            platform-version: ${{ matrix.platform-version }}
-        secrets: inherit
+        name: osv (${{ matrix.php-version }}, ${{ matrix.platform-version }})
+        steps:
+          - name: Checkout OSV configuration
+            uses: actions/checkout@v5
+            with:
+              sparse-checkout: |
+                tools/osv
+              sparse-checkout-cone-mode: false
+
+          - name: Checkout the platform version code
+            uses: actions/checkout@v5
+            with:
+              ref: ${{ matrix.platform-version }}
+              path: platform
+
+          - name: Set up PHP
+            uses: shivammathur/setup-php@v2
+            with:
+              php-version: ${{ matrix.php-version }}
+
+          - name: Install jq
+            run: sudo apt-get install jq
+
+          - name: Install OSV-Scanner
+            run: sudo snap install osv-scanner
+
+          - name: Install SSH Key # this is necessary for Composer to be able to clone source from pimcore/ee-pimcore
+            uses: shimataro/ssh-key-action@v2.8.0
+            with:
+              key: ${{ secrets.SSH_PRIVATE_KEY_PIMCORE_DEPLOYMENTS_USER }}
+              known_hosts: ".... we add this in the next step ;-)"
+
+          - name: Add authentication for private pimcore packages
+            working-directory: platform
+            run: |
+              composer config repositories.private-packagist composer https://repo.pimcore.com/github-actions/
+              composer config --global --auth http-basic.repo.pimcore.com github-actions ${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}
+
+          - name: Set Composer stability
+            working-directory: platform
+            run: |
+              composer config minimum-stability dev
+              composer config prefer-stable true
+              # Disable Composer's audit-based pool filter so that package
+              # versions with open security advisories are not silently removed
+              # from the solver pool. OSV-Scanner (run later in this workflow)
+              # remains the source of truth for vulnerability reporting; allowing
+              # Composer to still resolve them is required so the SBOM reflects
+              # the actual installable set. Without this, a single advisory with
+              # a wide "affectedVersions" range (e.g. <=12.3.x catching 11.5.x)
+              # makes dependency resolution fail before the SBOM can be built.
+              composer config audit.abandoned ignore
+              composer config audit.block-insecure false
+
+          - name: Read and modify composer.json
+            id: update_composer
+            working-directory: platform
+            run: |
+              original_content=$(cat composer.json)
+              for conflict in $(echo "$original_content" | jq -r '.conflict | to_entries[] | @base64'); do
+                _jq() {
+                  echo ${conflict} | base64 --decode | jq -r ${1}
+                }
+                package_name=$(_jq '.key')
+                composer require "$package_name:*" --no-update
+              done
+
+          - name: Allow SBOM Plugin
+            working-directory: platform
+            run: composer config --no-plugins allow-plugins.cyclonedx/cyclonedx-php-composer true
+
+          - name: Install SBOM Plugin
+            working-directory: platform
+            run: composer require cyclonedx/cyclonedx-php-composer
+
+          - name: CREATE SBOM
+            working-directory: platform
+            run: composer CycloneDX:make-sbom --output-file=../sbom.json --output-format=json
+
+          - name: Run OSV-Scanner
+            id: osvscanner
+            run: |
+              osv-scanner --sbom=sbom.json --output=osv-results.txt --config=tools/osv/${{ matrix.platform-version }}.toml
+
+          - name: Upload SBOM as an artifact on failure
+            if: ${{ failure() && steps.osvscanner.conclusion == 'failure' }}
+            uses: actions/upload-artifact@v6
+            with:
+              name: osv-${{ matrix.platform-version }}
+              path: osv-results.txt
+
+          - name: Get new vulnerabilities
+            if: ${{ failure() && steps.osvscanner.conclusion == 'failure' }}
+            id: get_vulnerabilities
+            run: |
+              VULNERABILITIES_ENV=$(grep '^| ' osv-results.txt | cut -d'|' -f2,5,6)
+              echo "VULNERABILITIES_ENV<<EOF" >> $GITHUB_ENV
+              echo "$VULNERABILITIES_ENV" >> $GITHUB_ENV
+              echo "EOF" >> $GITHUB_ENV
+
+          - name: Send results of checks to Microsoft Teams
+            if: ${{ failure() && steps.osvscanner.conclusion == 'failure' }}
+            uses: aliencube/microsoft-teams-actions@v0.8.0
+            with:
+              webhook_uri: ${{ secrets.TEAMS_COMPOSER_VULNERABILITY_URI }}
+              title: ${{ github.repository }} - ${{ matrix.platform-version }} vulnerabilities report
+              summary: ${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}
+              text: |
+                Please check the following link for details:
+                ${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}
+
+                **Vulnerabilities found:**
+                ```
+
+                ${{ env.VULNERABILITIES_ENV }}
+
+                ```
+                #If the list is too long, please refer to the link above.

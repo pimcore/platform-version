@@ -1,0 +1,4 @@
+[[IgnoredVulns]]
+id = "GHSA-7q22-x757-cmgc"
+# ignoreUntil = 2022-11-09 # Optional exception expiry date
+reason = "Low impact."
