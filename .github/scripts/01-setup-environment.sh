@@ -34,7 +34,7 @@ source "${FILES_DIR}/.env"
 
 # ─── Version constraints ─────────────────────────────────────────────────────
 if [[ "$PLATFORM_VERSION" == *.x ]]; then
-    SKELETON_CONSTRAINT="dev-${PLATFORM_VERSION}"
+    SKELETON_CONSTRAINT="${PLATFORM_VERSION}-dev"
 else
     SKELETON_CONSTRAINT="^${PLATFORM_VERSION}"
 fi

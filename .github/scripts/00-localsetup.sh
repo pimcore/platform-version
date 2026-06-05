@@ -57,7 +57,7 @@ fi
 # ─── Derive version constraints ──────────────────────────────────────────────
 if [[ "$PLATFORM_VERSION" == *.x ]]; then
     PLATFORM_CONSTRAINT="${PLATFORM_VERSION}-dev"
-    SKELETON_CONSTRAINT="dev-${PLATFORM_VERSION}"
+    SKELETON_CONSTRAINT="${PLATFORM_VERSION}-dev"
 else
     PLATFORM_CONSTRAINT="^${PLATFORM_VERSION}"
     SKELETON_CONSTRAINT="^${PLATFORM_VERSION}"
