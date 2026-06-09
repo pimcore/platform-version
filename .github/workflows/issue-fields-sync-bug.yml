@@ -221,6 +221,7 @@ jobs:
           JIRA_WEBHOOK_URL: ${{ secrets.JIRA_WEBHOOK_URL }}
           JIRA_WEBHOOK_SECRET: ${{ secrets.JIRA_WEBHOOK_SECRET }}
           ISSUE_NUMBER: ${{ steps.resolve-issue.outputs.issue_number }}
+          ISSUE_TYPE_NAME: ${{ steps.resolve-issue.outputs.issue_type_name }}
           ISSUE_TITLE_B64: ${{ steps.resolve-issue.outputs.issue_title_b64 }}
           ISSUE_BODY_B64: ${{ steps.resolve-issue.outputs.issue_body_b64 }}
           ISSUE_URL_B64: ${{ steps.resolve-issue.outputs.issue_url_b64 }}
@@ -242,6 +243,7 @@ jobs:
             --arg user "$ISSUE_USER" \
             --argjson id "$ISSUE_NUMBER" \
             --arg created_at "$ISSUE_CREATED_AT" \
+            --arg type "$ISSUE_TYPE_NAME" \
             '{
               issue: {
                 id: $id,
@@ -249,7 +251,8 @@ jobs:
                 body: $body,
                 url: $url,
                 user: $user,
-                created_at: $created_at
+                created_at: $created_at,
+                type: $type
               }
             }')
 
