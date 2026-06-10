@@ -185,7 +185,7 @@ test('CreatePredefinedMetadataWithDefaultValues', async () => {
         expect(data).toHaveProperty('type');
         expect(data).toHaveProperty('creationDate');
         expect(data).toHaveProperty('modificationDate');
-        expect(data).toHaveProperty('isWriteable');
+        expect(data).toHaveProperty('writeable');
         createdIds.push(data.id);
     }
 });

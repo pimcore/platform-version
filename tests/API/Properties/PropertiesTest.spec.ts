@@ -6,16 +6,45 @@ const createdPropertyIds: string[] = [];
 
 test.beforeAll(async ({ playwright }) => {
     authenticatedRequest = await AuthHelper.createAuthenticatedRequest(playwright);
+    // Remove stale "New Property" items left by previous runs (POST returns 404 so IDs are
+    // never captured, causing duplicate key: new_key entries that break PUT silently)
+    try {
+        const listResponse = await authenticatedRequest.get('/pimcore-studio/api/properties');
+        if (listResponse.status() === 200) {
+            const listData = await listResponse.json();
+            const staleProps = listData.items.filter((item: any) => item.name === 'New Property');
+            for (const prop of staleProps) {
+                try {
+                    await authenticatedRequest.delete(`/pimcore-studio/api/properties/${prop.id}`);
+                } catch (_) {}
+            }
+        }
+    } catch (_) {}
 });
 
 test.afterAll(async () => {
+    // Delete explicitly tracked properties
     for (const id of createdPropertyIds) {
         try {
             await authenticatedRequest.delete(`/pimcore-studio/api/properties/${id}`);
-        } catch (_) {
-            // ignore cleanup errors
-        }
+        } catch (_) {}
     }
+    // Clean up stale "New Property" items that accumulate when POST returns 404
+    // (those are never tracked since POST doesn't return the ID on 404)
+    try {
+        const listResponse = await authenticatedRequest.get('/pimcore-studio/api/properties');
+        if (listResponse.status() === 200) {
+            const listData = await listResponse.json();
+            const staleProps = listData.items.filter(
+                (item: any) => item.name === 'New Property' && !createdPropertyIds.includes(item.id)
+            );
+            for (const prop of staleProps) {
+                try {
+                    await authenticatedRequest.delete(`/pimcore-studio/api/properties/${prop.id}`);
+                } catch (_) {}
+            }
+        }
+    } catch (_) {}
     await AuthHelper.disposeAuthenticatedRequest(authenticatedRequest);
 });
 
@@ -56,33 +85,39 @@ test('CreatePredefinedProperty', async () => {
 });
 
 test('UpdatePredefinedProperty', async () => {
-    // Create a property — despite returning 404, the property is created internally
-    const createResponse = await authenticatedRequest.post('/pimcore-studio/api/property', {
-        data: {},
-    });
+    // Pimcore stores predefined properties keyed by their UUID in a LocationAwareConfigRepository.
+    // Having multiple entries with the same key: "new_key" (the POST default) causes the
+    // settings-store write to not be reflected on the next read, making PUT appear to no-op.
+    // So we ensure there are no pre-existing "New Property" entries before this test creates one.
+    const listForCleanup = await authenticatedRequest.get('/pimcore-studio/api/properties');
+    if (listForCleanup.status() === 200) {
+        const existingNewProps = (await listForCleanup.json()).items.filter(
+            (item: any) => item.name === 'New Property'
+        );
+        for (const prop of existingNewProps) {
+            try {
+                await authenticatedRequest.delete(`/pimcore-studio/api/properties/${prop.id}`);
+            } catch (_) {}
+        }
+    }
 
-    // Find the newly created property from the list (it has default name "New Property")
-    const listResponse = await authenticatedRequest.get('/pimcore-studio/api/properties');
-    expect(listResponse.status()).toBe(200);
-    const listData = await listResponse.json();
+    // POST creates with default values; known issue: returns 404 but property IS created
+    await authenticatedRequest.post('/pimcore-studio/api/property');
 
-    // Get a property to update — prefer one named "New Property" (freshly created)
-    const newProps = listData.items.filter((item: any) => item.name === 'New Property');
-    let propertyId: string;
+    // Find the newly created property (only one "New Property" should exist now)
+    const listAfterCreate = await authenticatedRequest.get('/pimcore-studio/api/properties');
+    expect(listAfterCreate.status()).toBe(200);
+    const newItem = (await listAfterCreate.json()).items.find((item: any) => item.name === 'New Property');
 
-    if (newProps.length > 0) {
-        propertyId = newProps[0].id;
-        createdPropertyIds.push(propertyId);
-    } else if (listData.items.length > 0) {
-        propertyId = listData.items[0].id;
-    } else {
-        test.skip(true, 'No property available to update');
+    if (!newItem) {
+        test.skip(true, 'POST did not create a new property');
         return;
     }
+    createdPropertyIds.push(newItem.id);
 
     const uniqueName = `TestProp_${Date.now()}`;
     const uniqueKey = `test_key_${Date.now()}`;
-    const updateResponse = await authenticatedRequest.put(`/pimcore-studio/api/properties/${propertyId}`, {
+    const updateResponse = await authenticatedRequest.put(`/pimcore-studio/api/properties/${newItem.id}`, {
         data: {
             name: uniqueName,
             key: uniqueKey,
@@ -96,10 +131,11 @@ test('UpdatePredefinedProperty', async () => {
     });
     expect(updateResponse.status()).toBe(200);
 
-    // Re-fetch to verify update was applied
+    // Note: the PUT response body returns stale data due to a known backend cache issue —
+    // verify the update was applied by re-fetching from the list endpoint instead.
     const listAfter = await authenticatedRequest.get('/pimcore-studio/api/properties');
     const afterData = await listAfter.json();
-    const updatedProp = afterData.items.find((item: any) => item.id === propertyId);
+    const updatedProp = afterData.items.find((item: any) => item.id === newItem.id);
     expect(updatedProp).toBeDefined();
     expect(updatedProp.name).toBe(uniqueName);
     expect(updatedProp.key).toBe(uniqueKey);
