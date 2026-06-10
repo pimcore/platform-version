@@ -7,9 +7,9 @@ API endpoint testing coverage for the Pimcore Studio Backend API v2026.1.
 - **Total Endpoints**: 754 endpoints across 61 API tags
 - **Core Endpoints** (non-bundle): 394
 - **Bundle Endpoints**: 360
-- **Currently Tested**: 454 endpoints
-- **Overall Coverage**: 60.2% (454/754)
-- **Core Coverage**: 86.9% (338/389)
+- **Currently Tested**: 455 endpoints
+- **Overall Coverage**: 60.3% (455/754)
+- **Core Coverage**: 86.0% (339/394)
 - **Bundle Coverage**: 32.2% (116/360)
 
 ---
@@ -107,7 +107,16 @@ API endpoint testing coverage for the Pimcore Studio Backend API v2026.1.
 
 ---
 
-### Class Definition (67 endpoints) | Tested: 65 | Coverage: 97.0%
+### Cache (3 endpoints) | Tested: 0 | Coverage: 0.0%
+
+#### Untested Endpoints
+- `DELETE /pimcore-studio/api/cache` - Clear application cache
+- `DELETE /pimcore-studio/api/cache/output` - Clear output cache
+- `DELETE /pimcore-studio/api/cache/temporary-files` - Clear temporary files
+
+---
+
+### Class Definition (68 endpoints) | Tested: 65 | Coverage: 95.6%
 
 #### Tested Endpoints
 - `GET /pimcore-studio/api/class/definition/available-visible-fields` - Get available visible fields
@@ -173,6 +182,7 @@ API endpoint testing coverage for the Pimcore Studio Backend API v2026.1.
 - `GET /pimcore-studio/api/class/object-brick/{objectId}/object/layout` - Get object brick layouts for object ✅ (ClassDefinitionImportTest.spec.ts)
 
 #### Untested Endpoints
+- `GET /pimcore-studio/api/class/definition/configuration-view/detail/{id}/brick-fields` - Get object brick fields for the class definition
 - `GET /pimcore-studio/api/class/object-brick/{key}/custom-layout/{customLayoutId}` - Get object brick custom layout
 - `PUT /pimcore-studio/api/class/object-brick/{key}/custom-layout/{customLayoutId}` - Update object brick custom layout
 - `DELETE /pimcore-studio/api/class/object-brick/{key}/custom-layout/{customLayoutId}` - Delete object brick custom layout
@@ -1140,34 +1150,3 @@ API endpoint testing coverage for the Pimcore Studio Backend API v2026.1.
 - `GET /pimcore-studio/api/bundle/workflow-designer/workflows/{name}/export` - Export Workflow
 
 ---
-
-## Priority Recommendations
-
-### High Priority (Core Features with 0% coverage)
-1. **E-Mails** (0/12) - Email log management
-2. **GDPR Data Extractor** (0/3) - Data privacy compliance
-3. **Mercure** (0/1) - Real-time event streaming
-4. **Asset Thumbnails** (0/12) - Thumbnail configuration management
-
-### Medium Priority (Partially covered)
-1. **User Management** (21/23 - 91.3%) - Add upload-image and active-perspective endpoints
-2. **Data Object Grid** (9/12 - 75.0%) - Add preview, relation columns, and PHP transformers
-3. **Tags for Element** (3/4 - 75.0%) - Add batch assign/replace tags endpoint
-4. **Assets** (25/38 - 65.8%) - Add document/video streaming and batch-delete endpoints
-5. **Authorization** (2/3 - 66.7%) - Add token-based login
-6. **Class Definition** (65/67 - 97.0%) - Add object-brick custom layout and import endpoints
-7. **Dependencies** (0/1) - Add element dependencies endpoint
-
-### Low Priority (Advanced/Bundle Features)
-1. **Bundle CMF** (0/53) - Customer Management Framework
-2. **Bundle Copilot** (0/37) - AI automation
-3. **Bundle Portal Engine** (0/25) - Portal management
-4. **Bundle Ecommerce** (0/26) - E-Commerce framework
-5. **Bundle Headless Documents** (0/17) - Headless document management
-6. **Bundle Studio Dashboards** (0/18) - Dashboard management
-
----
-
-*Report generated: 2026-06-09*
-*API Version: 2026.1*
-*Source: http://localhost:8088/pimcore-studio/api/docs/json*
