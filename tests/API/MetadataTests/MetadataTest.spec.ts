@@ -10,11 +10,17 @@ test.beforeAll(async ({ playwright }) => {
 });
 
 test.afterAll(async () => {
-    for (const id of createdIds.reverse()) {
-        try {
-            await authenticatedRequest.delete(`/pimcore-studio/api/metadata/predefined/${id}`);
-        } catch (_) {}
-    }
+    // Give cleanup room beyond the default 30s hook timeout in case the API is slow.
+    test.setTimeout(120000);
+    // Delete in parallel with a per-request timeout so one slow/hung request
+    // can't consume the whole hook budget.
+    await Promise.allSettled(
+        createdIds.map((id) =>
+            authenticatedRequest.delete(`/pimcore-studio/api/metadata/predefined/${id}`, {
+                timeout: 10000,
+            })
+        )
+    );
     await AuthHelper.disposeAuthenticatedRequest(authenticatedRequest);
 });
 

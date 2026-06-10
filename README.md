@@ -50,6 +50,6 @@ The versioning schema follows semantic versioning and is Major.Minor (e.g. 2023.
 
 ## API tests
 
-End-to-end Docker-based install and boot tests live in `.github/`. See
-[.github/API_TESTS.md](.github/API_TESTS.md) for local setup,
+End-to-end Docker-based install and boot tests. See
+[API Testing](./doc/API_TESTS.md) for local setup,
 daily commands, and CI configuration.
