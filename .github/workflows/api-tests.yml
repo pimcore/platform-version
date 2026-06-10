@@ -28,8 +28,6 @@ jobs:
   api-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    # Temporary: only run the PR trigger for PRs from the add-tests branch.
-    if: github.event_name != 'pull_request' || github.head_ref == 'add-tests'
 
     strategy:
       fail-fast: false
