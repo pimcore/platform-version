@@ -16,6 +16,8 @@ let bulkImportFileId: string;
 let testBrickKey: string;
 let testFcKey: string;
 let testBrickCustomLayoutId: string;
+// Base (class-level) custom layout that the brick custom layout is derived from.
+let baseCustomLayoutId: string;
 
 test.beforeAll(async ({ playwright }) => {
     authenticatedRequest = await AuthHelper.createAuthenticatedRequest(playwright);
@@ -56,20 +58,28 @@ test.beforeAll(async ({ playwright }) => {
         testFcKey = existingFcKey;
     }
 
-    // Create a custom layout on the temp brick for further testing
+    // Create a custom layout on the temp brick for further testing.
+    //
+    // There is no dedicated "create" endpoint for object-brick custom layouts
+    // (the route only exposes GET/PUT/DELETE). A brick custom layout is derived
+    // from an existing class-level custom layout: PUT to the brick route
+    // auto-creates the composite layout ("{baseId}.brick.{brickKey}") on the
+    // fly, but only when the base class custom layout already exists.
     if (testBrickKey) {
-        const customLayoutId = `obc_${ts}`;
-        const createClRes = await authenticatedRequest.post(
-            `/pimcore-studio/api/class/object-brick/${testBrickKey}/custom-layout/${customLayoutId}`,
-            {
-                data: {
-                    name: `TestOBCL_${ts}`,
-                    brickKey: testBrickKey
-                }
-            }
+        const baseId = `obcbase_${ts}`;
+        const createBaseRes = await authenticatedRequest.post(
+            `/pimcore-studio/api/class/custom-layout/${baseId}`,
+            { data: { name: `TestOBCLBase_${ts}`, classId: SIMPLE_CLASS_ID } }
         );
-        if (createClRes.status() === 200) {
-            testBrickCustomLayoutId = customLayoutId;
+        if (createBaseRes.status() === 200) {
+            baseCustomLayoutId = baseId;
+            const createClRes = await authenticatedRequest.put(
+                `/pimcore-studio/api/class/object-brick/${testBrickKey}/custom-layout/${baseId}`,
+                { data: { configuration: {}, values: {} } }
+            );
+            if (createClRes.status() === 200) {
+                testBrickCustomLayoutId = baseId;
+            }
         }
     }
 });
@@ -80,6 +90,14 @@ test.afterAll(async () => {
         try {
             await authenticatedRequest.delete(
                 `/pimcore-studio/api/class/object-brick/${testBrickKey}/custom-layout/${testBrickCustomLayoutId}`
+            );
+        } catch (_) {}
+    }
+    // Delete the base class custom layout the brick layout was derived from
+    if (baseCustomLayoutId) {
+        try {
+            await authenticatedRequest.delete(
+                `/pimcore-studio/api/class/custom-layout/${baseCustomLayoutId}`
             );
         } catch (_) {}
     }
@@ -288,26 +306,41 @@ test('GetCustomLayoutEditorCollectionInvalidObjectId', async () => {
 // ---------------------------------------------------------------------------
 
 test('ImportCustomLayoutFromJson', async () => {
-    // Need an existing custom layout to export first, then import
+    // Prefer the base custom layout seeded in beforeAll (known to be exportable).
+    // Fall back to scanning the collection for the first layout that exports
+    // successfully — picking items[0] blindly is flaky since not every layout
+    // in the collection can be exported.
+    const candidateIds: string[] = [];
+    if (baseCustomLayoutId) {
+        candidateIds.push(baseCustomLayoutId);
+    }
     const collectionRes = await authenticatedRequest.get('/pimcore-studio/api/class/custom-layout/collection');
-    if (collectionRes.status() !== 200) {
-        test.skip();
-        return;
+    if (collectionRes.status() === 200) {
+        const collectionData = await collectionRes.json();
+        if (Array.isArray(collectionData.items)) {
+            for (const item of collectionData.items) {
+                if (item.id && !candidateIds.includes(item.id)) {
+                    candidateIds.push(item.id);
+                }
+            }
+        }
     }
-    const collectionData = await collectionRes.json();
-    if (!Array.isArray(collectionData.items) || collectionData.items.length === 0) {
-        test.skip();
-        return;
-    }
-    const layoutId = collectionData.items[0].id;
 
-    // Export the layout
-    const exportRes = await authenticatedRequest.get(`/pimcore-studio/api/class/custom-layout/export/${layoutId}`);
-    if (exportRes.status() !== 200) {
+    let layoutId: string | undefined;
+    let exportedBytes: Buffer | undefined;
+    for (const id of candidateIds) {
+        const exportRes = await authenticatedRequest.get(`/pimcore-studio/api/class/custom-layout/export/${id}`);
+        if (exportRes.status() === 200) {
+            layoutId = id;
+            exportedBytes = await exportRes.body();
+            break;
+        }
+    }
+
+    if (!layoutId || !exportedBytes) {
         test.skip();
         return;
     }
-    const exportedBytes = await exportRes.body();
 
     // Import it back
     const response = await authenticatedRequest.post(`/pimcore-studio/api/class/custom-layout/import/${layoutId}`, {

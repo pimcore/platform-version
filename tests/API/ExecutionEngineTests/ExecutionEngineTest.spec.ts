@@ -1,7 +1,10 @@
 import { test, expect, APIRequestContext } from '@playwright/test';
 import { AuthHelper } from '../../utils/auth';
+import { FolderHelper } from '../../utils/folder';
 
 let authenticatedRequest: APIRequestContext;
+let testFolderId: number;
+let exportObjectId: number;
 const ts = Date['now']();
 
 /**
@@ -23,9 +26,28 @@ async function waitForJobCompletion(ctx: APIRequestContext, jobRunId: number): P
 
 test.beforeAll(async ({ playwright }) => {
     authenticatedRequest = await AuthHelper.createAuthenticatedRequest(playwright);
+
+    // Create a data object to feed real CSV export jobs. The export endpoint
+    // rejects an empty element list with 422 ("No elements provided"), so a
+    // concrete element is required to produce an abortable/hideable job.
+    testFolderId = await FolderHelper.createFolderAndGetId(
+        authenticatedRequest,
+        `execengine-test-${ts}`,
+        1,
+        'data-object'
+    );
+
+    const objRes = await authenticatedRequest.post(`/pimcore-studio/api/data-objects/add/${testFolderId}`, {
+        data: { key: `execengine-obj-${ts}`, classId: 'test_ATS', type: 'object' }
+    });
+    expect(objRes.status()).toBe(200);
+    exportObjectId = (await objRes.json()).id;
 });
 
 test.afterAll(async () => {
+    try {
+        await FolderHelper.deleteFolder(authenticatedRequest, testFolderId, 'data-object');
+    } catch (_) {}
     await AuthHelper.disposeAuthenticatedRequest(authenticatedRequest);
 });
 
@@ -84,7 +106,7 @@ test('AbortRunningJobSucceeds', async () => {
     // Start a CSV export to get a real jobRunId
     const exportResponse = await authenticatedRequest.post('/pimcore-studio/api/export/csv', {
         data: {
-            elements: [],
+            elements: [exportObjectId],
             columns: [{ key: 'id', type: 'system.id' }],
             config: { header: 'title', delimiter: ';' },
             elementType: 'data-object',
@@ -92,11 +114,7 @@ test('AbortRunningJobSucceeds', async () => {
         }
     });
 
-    if (![200, 201].includes(exportResponse.status())) {
-        // Export feature may not be available — skip abort-with-real-job test
-        test.skip();
-        return;
-    }
+    expect([200, 201]).toContain(exportResponse.status());
 
     const exportData = await exportResponse.json();
     const jobRunId: number = exportData.jobRunId;
@@ -148,7 +166,7 @@ test('HideCompletedJobSucceeds', async () => {
         // Start a quick export to produce a job, wait for it to finish, then hide it
         const exportResponse = await authenticatedRequest.post('/pimcore-studio/api/export/csv', {
             data: {
-                elements: [],
+                elements: [exportObjectId],
                 columns: [{ key: 'id', type: 'system.id' }],
                 config: { header: 'title', delimiter: ';' },
                 elementType: 'data-object',
@@ -156,15 +174,7 @@ test('HideCompletedJobSucceeds', async () => {
             }
         });
 
-        if (![200, 201].includes(exportResponse.status())) {
-            // Export not available; hide an empty list and accept 200 or 422
-            const fallbackResponse = await authenticatedRequest.post(
-                '/pimcore-studio/api/execution-engine/hide',
-                { data: { jobRunIds: [] } }
-            );
-            expect([200, 201, 422]).toContain(fallbackResponse.status());
-            return;
-        }
+        expect([200, 201]).toContain(exportResponse.status());
 
         const { jobRunId } = await exportResponse.json();
         await waitForJobCompletion(authenticatedRequest, jobRunId);
