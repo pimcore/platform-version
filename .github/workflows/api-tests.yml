@@ -3,7 +3,6 @@ name: API Tests
 on:
   schedule:
     - cron: '0 3 * * 1,2,3,4,5'
-  pull_request:
   workflow_dispatch:
     inputs:
       branch:
@@ -32,7 +31,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.1", "2026.x"]') || (github.event_name == 'workflow_dispatch' && fromJSON(format('["{0}"]', inputs.branch)) || fromJSON('["add-tests"]')) }}
+        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.1", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
 
     steps:
       - name: Checkout
