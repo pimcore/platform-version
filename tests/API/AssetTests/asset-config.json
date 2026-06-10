@@ -1,0 +1,60 @@
+{
+  "assets": [
+    {
+      "filename": "Aston_Martin_Logo_2018.png",
+      "type": "image"
+    },
+    {
+      "filename": "OUR MOST POPULAR BRANDS.docx",
+      "type": "document"
+    },
+    {
+      "filename": "Our Most Popular Brands.pptx",
+      "type": "document"
+    },
+    {
+      "filename": "Volkswagen-Van.mp4",
+      "type": "video"
+    },
+    {
+      "filename": "car fronts.tif",
+      "type": "image"
+    },
+    {
+      "filename": "car-data.xlsx",
+      "type": "document"
+    },
+    {
+      "filename": "car-export.csv",
+      "type": "document"
+    },
+    {
+      "filename": "car-export.json",
+      "type": "document"
+    },
+    {
+      "filename": "coding-challenge.docx",
+      "type": "document"
+    },
+    {
+      "filename": "logo.svg",
+      "type": "image"
+    },
+    {
+      "filename": "pdf-clipping-path.psd",
+      "type": "image"
+    },
+    {
+      "filename": "sample.psd",
+      "type": "image"
+    },
+    {
+      "filename": "sample.tiff",
+      "type": "image"
+    },
+    {
+      "filename": "test_1.jpg",
+      "type": "image"
+    }
+  ]
+}
