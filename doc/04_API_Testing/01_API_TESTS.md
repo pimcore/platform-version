@@ -11,17 +11,12 @@ Playwright API tests from [pimcore/studio-tests](https://github.com/pimcore/stud
 
 ## Run locally
 
-### 1. Clone studio-tests
-
-Clone the test suite as a sibling directory:
+### 1. Install Playwright dependencies
 
 ```bash
-git clone git@github.com:pimcore/studio-tests.git ../studio-tests
-cd ../studio-tests
+cd tests
 npm install
 ```
-
-Use the branch matching your platform version (e.g. `2026.1`, `2026.x`, or `main`).
 
 ### 2. Full setup + tests
 
@@ -35,8 +30,6 @@ instance, then add the resulting `PIMCORE_PRODUCT_KEY` to
 
 The test project is created at `../test-project/` (sibling of `platform-version/`).
 
-If `../studio-tests` is not found, tests are skipped with a message showing
-clone instructions.
 
 ### 3. Run tests only (Pimcore already running)
 
@@ -44,19 +37,21 @@ clone instructions.
 .github/scripts/03-run-tests.sh
 ```
 
-This will auto-detect `../studio-tests`, install npm dependencies if needed,
+This will auto-detect `/tests`, install npm dependencies if needed,
 and run `npx playwright test` against `http://localhost:8088`.
+
+### 4. Run tests in PHPStorm
+See [PHPStorm Setup Guide](02_PHPSTORM_SETUP.md) for more details.YX
 
 ## CI (GitHub Actions)
 
 The `api-tests.yml` workflow:
 
 1. Checks out `platform-version`
-2. Checks out `pimcore/studio-tests` at the exact `platform_version` input (default: `2026.1`)
-3. Sets up the Pimcore environment (Docker containers, composer install)
-4. Installs Node.js 22 and Playwright
-5. Runs `npx playwright test` against `http://localhost:8088`
-6. Uploads `playwright-report/` and `test-results/` as artifacts (30-day retention)
+2. Sets up the Pimcore environment (Docker containers, composer install)
+3. Installs Node.js 22 and Playwright
+4. Runs `npx playwright test` against `http://localhost:8088`
+5. Uploads `playwright-report/` and `test-results/` as artifacts (30-day retention)
 
 ## Services
 

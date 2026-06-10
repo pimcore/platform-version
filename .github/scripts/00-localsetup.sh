@@ -185,26 +185,8 @@ sed -i "s|PIMCORE_PRODUCT_KEY=.*|PIMCORE_PRODUCT_KEY=\"${PIMCORE_PRODUCT_KEY}\"|
 bash "${SCRIPTS_DIR}/02-install-pimcore.sh" "$TOKEN" "$PLATFORM_VERSION"
 
 # ─── Step 3: Run tests ───────────────────────────────────────────────────────
-STUDIO_TESTS_DIR="${REPO_ROOT}/../studio-tests"
-if [[ ! -d "$STUDIO_TESTS_DIR" ]]; then
-    echo ""
-    echo "╔══════════════════════════════════════════════════════════════╗"
-    echo "║  Studio Tests Not Found — Skipping Tests                    ║"
-    echo "╠══════════════════════════════════════════════════════════════╣"
-    echo "║                                                              ║"
-    echo "║  Clone studio-tests to run API tests:                       ║"
-    echo "║    git clone git@github.com:pimcore/studio-tests.git \\      ║"
-    echo "║      ${STUDIO_TESTS_DIR}"
-    echo "║                                                              ║"
-    echo "║  Then install dependencies:                                  ║"
-    echo "║    cd ${STUDIO_TESTS_DIR} && npm ci \\                       ║"
-    echo "║      && npx playwright install chromium                      ║"
-    echo "║                                                              ║"
-    echo "╚══════════════════════════════════════════════════════════════╝"
-else
-    export PLATFORM_VERSION
-    bash "${SCRIPTS_DIR}/03-run-tests.sh"
-fi
+export PLATFORM_VERSION
+bash "${SCRIPTS_DIR}/03-run-tests.sh"
 
 echo ""
 END_TIME=$(date +%s)

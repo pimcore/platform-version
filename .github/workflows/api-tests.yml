@@ -1,11 +1,20 @@
 name: API Tests
 
 on:
+  schedule:
+    - cron: '0 3 * * 1,2,3,4,5'
   workflow_dispatch:
     inputs:
+      branch:
+        description: 'Branch to test'
+        default: '2026.x'
+        type: choice
+        options:
+          - '2026.1'
+          - '2026.x'
       platform_version:
         description: 'Platform version (e.g. 2026.1 or 2026.x)'
-        default: '2026.1'
+        default: '2026.x'
         type: string
 
 env:
@@ -19,18 +28,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
 
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.1", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
-      - name: Checkout Studio Tests
-        uses: actions/checkout@v6
         with:
-          repository: pimcore/studio-tests
-          ref: ${{ env.PLATFORM_VERSION }}
-          path: ./studio-tests
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          persist-credentials: false
+          ref: ${{ matrix.branch }}
 
       - name: Increase vm.max_map_count for OpenSearch
         run: sudo sysctl -w vm.max_map_count=262144
@@ -58,16 +65,16 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-          cache-dependency-path: studio-tests/package-lock.json
+          cache-dependency-path: tests/package-lock.json
 
       - name: Install Playwright
-        working-directory: ./studio-tests
+        working-directory: ./tests
         run: |
           npm ci
           npx playwright install --with-deps chromium
 
       - name: Run tests
-        working-directory: ./studio-tests
+        working-directory: ./tests
         env:
           PIMCORE_BASE_URL: http://localhost:8088
           PIMCORE_USERNAME: admin
@@ -79,16 +86,16 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: playwright-report
-          path: studio-tests/playwright-report/
+          name: playwright-report-${{ matrix.branch }}
+          path: tests/playwright-report/
           retention-days: 30
 
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v7
         with:
-          name: test-results
-          path: studio-tests/test-results/
+          name: test-results-${{ matrix.branch }}
+          path: tests/test-results/
           retention-days: 30
 
       - name: Shutdown
