@@ -19,7 +19,7 @@ jobs:
                 include:
                     - { php-version: 8.3, platform-version: 'v2024.4' }
                     - { php-version: 8.4, platform-version: 'v2025.4' }
-                    - { php-version: 8.5, platform-version: 'v2026.1' }
+                    - { php-version: 8.5, platform-version: 'v2026.1.0' }
                     - { php-version: 8.5, platform-version: '2026.x' }
         with:
             php-version: ${{ matrix.php-version }}
