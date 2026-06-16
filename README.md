@@ -37,19 +37,40 @@ Pimcore ships with rich out-of-the-box functionality and is designed to be fully
 your own data models, build your own templates or consume the APIs, integrate with any IT infrastructure, and tailor
 the platform to exact project requirements — from a single standalone implementation to a complex multi-system architecture.
 
+## Pimcore Studio
+
+![pimcore-general.png](doc/img/pimcore-general.png)
+
+Pimcore Studio is the unified administration interface for the entire platform, available at
+`{your-domain}/pimcore-studio`. It consists of the **Studio Backend** (a fully OpenAPI-documented Symfony REST API for
+all Pimcore operations) and the **Studio UI** (a React SPA built with TypeScript, Ant Design, Redux, RTK Query, and
+Rsbuild). Anything Studio can do is equally accessible via API from custom applications or agents.
+
+For developers, Studio provides a formal plugin architecture and SDK: TypeScript definitions, a Rsbuild plugin for
+structured UI extensions, and a Storybook component library. The
+[Studio Example Bundle](https://github.com/pimcore/studio-example-bundle) provides working reference implementations.
+
+[Studio UI Docs](https://docs.pimcore.com/platform/Studio_UI/) · [Studio Backend Docs](https://docs.pimcore.com/platform/Studio_Backend/)
+
 ## Features
 
 All data in Pimcore is organized into three core element types that can be linked and related to each other:
 
 - **Data Objects** — manage any structured data based on a class-editor-defined model, either manually or via API.
   Covers products (PIM/MDM), categories, customers (CDP), orders (Digital Commerce), and articles (DXP/CMS).
-  Delivers consistent data to multiple output channels from a single source. 
+  Delivers consistent data to multiple output channels from a single source.
+  ![pimcore-objects.png](doc/img/pimcore-objects.png)
   [Docs](https://docs.pimcore.com/platform/Pimcore/Objects)
+
 - **Assets (DAM)** — store and manage any file type. Preview 200+ formats directly in Pimcore, auto-generate
   channel-specific output formats, and enrich files with metadata and versioning.
+  ![pimcore-assets.png](doc/img/pimcore-assets.png)
   [Docs](https://docs.pimcore.com/platform/Pimcore/Assets)
+
 - **Documents (DXP/CMS)** — build pages with Twig templates and inline editables, with full multilingual and multi-site 
-  support, plus emails, newsletters, and web-to-print. [Docs](https://docs.pimcore.com/platform/Pimcore/Documents)
+  support, plus emails, newsletters, and web-to-print. 
+  ![pimcore-documents.png](doc/img/pimcore-documents.png)
+  [Docs](https://docs.pimcore.com/platform/Pimcore/Documents)
 
 ### The Pimcore Platform
 
@@ -73,19 +94,6 @@ Pimcore is modular. Its modules ship as separate Composer packages (Core Modules
 See [Pimcore Modules](https://docs.pimcore.com/platform/Pimcore_Platform/Pimcore_Modules/) for the full list and 
 [Pimcore Editions](https://docs.pimcore.com/platform/Pimcore_Platform/Pimcore_Editions/) for module availability per 
 edition (Community, Professional, Enterprise, PaaS).
-
-## Pimcore Studio
-
-Pimcore Studio is the unified administration interface for the entire platform, available at 
-`{your-domain}/pimcore-studio`. It consists of the **Studio Backend** (a fully OpenAPI-documented Symfony REST API for 
-all Pimcore operations) and the **Studio UI** (a React SPA built with TypeScript, Ant Design, Redux, RTK Query, and 
-Rsbuild). Anything Studio can do is equally accessible via API from custom applications or agents.
-
-For developers, Studio provides a formal plugin architecture and SDK: TypeScript definitions, a Rsbuild plugin for 
-structured UI extensions, and a Storybook component library. The 
-[Studio Example Bundle](https://github.com/pimcore/studio-example-bundle) provides working reference implementations.
-
-[Studio UI Docs](https://docs.pimcore.com/platform/Studio_UI/) · [Studio Backend Docs](https://docs.pimcore.com/platform/Studio_Backend/)
 
 ## Architecture
 
