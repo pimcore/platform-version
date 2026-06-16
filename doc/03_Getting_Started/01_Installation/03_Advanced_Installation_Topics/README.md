@@ -13,6 +13,9 @@ docker compose exec \
   -e DATABASE_URL='mysql://pimcore:pimcore@db:3306/pimcore' \
   -e PIMCORE_ADMIN_USER=admin \
   -e PIMCORE_ADMIN_PASSWORD='secure-password' \
+  -e PIMCORE_PRODUCT_KEY='PK-3f9a8c1b2d4e5f60...' \
+  -e PIMCORE_INSTANCE_IDENTIFIER='9f1c2e7a-3b4d-4f8a-9c1e-2d3f4a5b6c7d' \
+  -e PIMCORE_ENCRYPTION_SECRET='def00000a1b2c3d4...' \
   php vendor/bin/pimcore-install \
     --install-profile='App\Installer\SkeletonProfile' \
     --no-interaction
@@ -43,10 +46,12 @@ Set these in your `.env`, `docker-compose.yaml`, or CI pipeline to avoid interac
 | `DATABASE_URL` | Doctrine DBAL connection URL | `mysql://user:pass@host:3306/dbname` |
 | `PIMCORE_ADMIN_USER` | Admin username | `admin` |
 | `PIMCORE_ADMIN_PASSWORD` | Admin password | `secure-password` |
+| `PIMCORE_PRODUCT_KEY` | Product key from the Pimcore [registration form](https://license.pimcore.com/register); validates the instance against Pimcore licensing | `PK-3f9a8c1b2d4e5f60...` |
+| `PIMCORE_INSTANCE_IDENTIFIER` | Unique instance identifier; must be unique across all Pimcore installations and match the key | `9f1c2e7a-3b4d-4f8a-9c1e-2d3f4a5b6c7d` |
+| `PIMCORE_ENCRYPTION_SECRET` | Defuse encryption secret (generate with `vendor/bin/generate-defuse-key`); combined with the instance identifier to derive the registration hash | `def00000a1b2c3d4...` |
 
-Product registration values are collected during installation.
-See [Product Registration](../../02_Product_Registration.md) for details on
-`PIMCORE_PRODUCT_KEY`, `PIMCORE_INSTANCE_IDENTIFIER`, and `PIMCORE_ENCRYPTION_SECRET`.
+These three product registration values must match each other.
+See [Product Registration](../../02_Product_Registration.md) for how they are generated and validated.
 
 ### Optional Variables (Depending on Install Profile)
 

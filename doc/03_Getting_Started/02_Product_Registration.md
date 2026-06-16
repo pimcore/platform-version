@@ -42,11 +42,16 @@ When installing manually, the prompt provides a deep link to the registration fo
 When using parameters or environment variables,
 make sure the encryption secret, instance ID, and product key match each other.
 
-After installation, the encryption secret, instance ID, and product key are stored in
-`config/local/product_registration.yaml`. For multi-stage deployments, it is recommended to use environment variables instead:
+After installation, the encryption secret, instance ID, and product key are written to `.env.local`
+as environment variables:
 
-- `PIMCORE_PRODUCT_REGISTRATION_KEY` - the product key
+- `PIMCORE_PRODUCT_KEY` - the product key
+- `PIMCORE_INSTANCE_IDENTIFIER` - the instance identifier
 - `PIMCORE_ENCRYPTION_SECRET` - the encryption secret
+
+At runtime these are read into `pimcore.encryption.secret`, `pimcore.product_registration.instance_identifier`,
+and `pimcore.product_registration.product_key`. For multi-stage deployments, you can provide them through your
+environment or `docker-compose.yaml` instead of committing `.env.local`.
 
 ### During Upgrade or Manual Registration
 
@@ -90,8 +95,9 @@ and apply it to the configuration.
 
 ### Where is the product key stored?
 
-In `config/local/product_registration.yaml`.
-For multi-stage deployments, it is recommended to use environment variables instead.
+In `.env.local`, as the `PIMCORE_PRODUCT_KEY` environment variable (alongside `PIMCORE_INSTANCE_IDENTIFIER`
+and `PIMCORE_ENCRYPTION_SECRET`), which the runtime reads into `pimcore.product_registration.product_key`.
+For multi-stage deployments, you can provide these values through your environment or `docker-compose.yaml` instead.
 
 ### How do I generate an encryption secret manually?
 
