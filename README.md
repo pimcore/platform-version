@@ -137,11 +137,12 @@ https://pimcore.com/en/demo-request
 
 ## Contributing
 
-Code lives in this and the other Pimcore repositories, and pull requests work as they always have.
+We apprechiate all sorts of contributions to the Pimcore Platform.
 
-- **Bug fixes** — open a pull request including step-by-step instructions to reproduce the problem.
+- **Bug fixes** — open a pull request including step-by-step instructions to reproduce the problem in the respective 
+  repository.
 - **New features** — open a discussion with the core team before you start developing.
-- **Security vulnerabilities** — see our [security policy](https://github.com/pimcore/pimcore/security/policy).
+- **Security vulnerabilities** — see our [security policy](https://github.com/pimcore/platform-version/security/policy).
 
 Read the [contributing guide](https://github.com/pimcore/pimcore/blob/2026.x/CONTRIBUTING.md) before submitting a pull
 request. Contributions require accepting the [CLA](https://github.com/pimcore/pimcore/blob/2026.x/CLA.md).
