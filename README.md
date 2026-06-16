@@ -11,7 +11,6 @@
   <a href="https://packagist.org/packages/pimcore/pimcore"><img src="https://img.shields.io/packagist/v/pimcore/pimcore.svg" alt="Packagist Version"></a>
   <a href="https://github.com/pimcore/pimcore/blob/2026.x/LICENSE.md"><img src="https://img.shields.io/badge/license-POCL-brightgreen.svg" alt="License: POCL"></a>
   <a href="https://packagist.org/packages/pimcore/pimcore"><img src="https://img.shields.io/packagist/php-v/pimcore/pimcore.svg" alt="PHP Version"></a>
-  <a href="https://github.com/pimcore/pimcore/stargazers"><img src="https://img.shields.io/github/stars/pimcore/pimcore.svg?style=social" alt="Stars"></a>
 </p>
 
 <p align="center">
