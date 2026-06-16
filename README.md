@@ -116,7 +116,9 @@ version such as `2026.1`. Major Platform Versions ship once per year; the docume
 Versions. Starting with 2026.1, every module carries the same version number as the platform. New projects depend 
 on `pimcore/platform-version` by default.
 
-## Quick start
+## How to get started
+
+### Local installation
 
 Pimcore 2026.x uses Docker for local development. No local PHP or Composer installation is required.
 
