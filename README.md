@@ -138,54 +138,8 @@ Pimcore 2026.x uses Docker for local development. No local PHP or Composer insta
 **Prerequisites:** Docker and Docker Compose installed, and your user must be allowed to run Docker commands and change
 file permissions.
 
-### Skeleton (empty project for experienced developers)
-
-```bash
-# 1. Create the project
-docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html \
-  pimcore/pimcore:php8.5-latest \
-  composer create-project pimcore/skeleton --no-scripts my-project
-
-# 2. Switch to the project directory
-cd my-project/
-
-# 3. Set your user ID in docker-compose.yaml, then start services
-#    The skeleton includes PHP, Nginx, MariaDB, and Redis.
-#    Add OpenSearch and Mercure manually (required by Pimcore Studio).
-docker compose up -d
-
-# 4. Run the installer
-docker compose exec php vendor/bin/pimcore-install \
-  --install-profile='App\Installer\SkeletonProfile'
-```
-
-Open Pimcore Studio at `http://localhost/pimcore-studio`.
-
-### Demo Enterprise (all extensions, pre-built blueprints, requires enterprise credentials)
-
-```bash
-# 1. Create the project (replace <YOUR_USERNAME> and <YOUR_TOKEN>)
-docker run --rm -v `pwd`:/var/www/html -it pimcore/pimcore:php8.5-latest sh -c \
-  'composer --global config repositories.pimcore composer https://repo.pimcore.com/<YOUR_USERNAME>/ ; \
-   composer create-project --no-scripts pimcore/demo-enterprise my-project \
-   --repository="{\"url\": \"https://token:<YOUR_TOKEN>@repo.pimcore.com/<YOUR_USERNAME>/\", \"type\": \"composer\"}" \
-   -n --ignore-platform-req=php --no-scripts'
-
-# 2. Switch to the project directory
-cd my-project/
-
-# 3. Start services (all required services are pre-configured in docker-compose.yaml)
-docker compose up -d
-
-# 4. Run the installer (requires a valid product key — see Product Registration)
-docker compose exec php vendor/bin/pimcore-install \
-  --install-profile='App\Installer\DemoEnterpriseProfile'
-```
-
-Open the frontend at `http://localhost` and Pimcore Studio at `http://localhost/pimcore-studio`.
-
-See the full [Installation guide](https://docs.pimcore.com/platform/Getting_Started/Installation/) for service
-configuration details, non-interactive installs, and production setup.
+See the full [Installation guide](https://docs.pimcore.com/platform/Getting_Started/Installation/) for necessary 
+installation steps.
 
 ### Try the live demo
 
