@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://pimcore.com/"><img src="doc/img/logo-readme.svg" alt="Pimcore" width="350"></a>
+  <a href="https://pimcore.com/"><img src="doc/img/logo.svg" alt="Pimcore" width="350"></a>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 <p align="center">
   <a href="https://pimcore.com/">Website</a> ·
   <a href="https://docs.pimcore.com/platform/">Documentation</a> ·
-  <a href="https://demo.pimcore.com/">Live Demo</a> ·
+  <a href="https://pimcore.com/en/demo-request">Live Demo</a> ·
   <a href="https://www.youtube.com/watch?v=JC8q_6Mu7g0&list=PLrlLr70ddFwLjIkVO8k4vk2rHZ82LwhvF">Pimcore Inside</a> ·
   <a href="https://github.com/orgs/pimcore/discussions">Discussions</a> ·
   <a href="https://github.com/pimcore/platform-version/issues">Report an issue</a>
@@ -130,9 +130,8 @@ installation steps.
 
 A hosted Enterprise Edition demo is available without any local setup:
 
-- URL: https://demo.pimcore.com/
-- Username: `superuser`
-- Password: `enterprisedemo`
+https://pimcore.com/en/demo-request
+
 
 ## Contributing
 
