@@ -30,10 +30,10 @@ Pimcore is an open core platform for Product Experience Management (PXM). It pro
 managing digital data and customer experience, combining a Core Framework with a modular set of Core Extensions covering
 PIM, MDM, DAM, CDP, DXP/CMS, and Digital Commerce — all licensed under the Pimcore Open Core License (POCL). Data is
 stored independently of the channel and delivered to any output: websites, commerce systems, mobile apps, print,
-digital signage, or headless consumers via REST and GraphQL. [Pimcore Studio](#pimcore-studio) provides the unified
+digital signage, or headless consumers via REST and GraphQL. Pimcore Studio provides the unified
 administration interface for the entire platform.
 
-![pimcore-general.png](doc/img/pimcore-general.png)
+![Pimcore platform overview](doc/img/pimcore-general.png)
 
 Pimcore ships with rich out-of-the-box functionality and is designed to be fully customizable and extensible. You define
 your own data models, build your own templates or consume the APIs, integrate with any IT infrastructure, and tailor
@@ -47,15 +47,15 @@ All data in Pimcore is organized into three core element types that can be linke
 - **Data Objects** — manage any structured data based on a class-editor-defined model, either manually or via API.
   Covers products (PIM/MDM), categories, customers (CDP), orders (Digital Commerce), and articles (DXP/CMS).
   Delivers consistent data to multiple output channels from a single source.
-  ![pimcore-objects.png](doc/img/pimcore-objects.png)
+  ![Data objects management screenshot](doc/img/pimcore-objects.png)
 
 - **Assets (DAM)** — store and manage any file type. Preview 200+ formats directly in Pimcore, auto-generate
   channel-specific output formats, and enrich files with metadata and versioning.
-  ![pimcore-assets.png](doc/img/pimcore-assets.png)
+  ![Digital asset management (DAM) screenshot](doc/img/pimcore-assets.png)
 
 - **Documents (DXP/CMS)** — build pages with Twig templates and inline editables, with full multilingual and multi-site 
   support, plus emails, newsletters, and web-to-print. 
-  ![pimcore-documents.png](doc/img/pimcore-documents.png)
+  ![Document and page management (DXP/CMS) screenshot](doc/img/pimcore-documents.png)
 
 ### The Pimcore Platform
 
@@ -87,7 +87,7 @@ server-rendered websites, and headless API consumers — all operate on the same
 
 **Technology stack:**
 
-- **Backend** — PHP 8.5+, Symfony (MVC, DI, Messenger, Routing, Security)
+- **Backend** — PHP 8.4 / 8.5, Symfony (MVC, DI, Messenger, Routing, Security)
 - **Studio UI** — React, TypeScript, Ant Design, Redux, RTK Query, Mercure, Rsbuild
 - **Persistence** — MySQL/MariaDB via Doctrine DBAL for structured data; Flysystem for file storage
   (local, S3, and other adapters)
@@ -137,7 +137,7 @@ https://pimcore.com/en/demo-request
 
 ## Contributing
 
-We apprechiate all sorts of contributions to the Pimcore Platform.
+We appreciate all sorts of contributions to the Pimcore Platform.
 
 - **Bug fixes** — open a pull request including step-by-step instructions to reproduce the problem in the respective 
   repository.
