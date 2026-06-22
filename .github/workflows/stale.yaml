@@ -1,0 +1,13 @@
+name: 'Close stale issues'
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '37 7 * * *'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  call-stale-workflow:
+    uses: pimcore/workflows-collection-public/.github/workflows/stale.yml@main
