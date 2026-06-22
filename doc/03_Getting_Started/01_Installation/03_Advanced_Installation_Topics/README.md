@@ -60,8 +60,8 @@ If a variable is not set for an optional service, the installer skips that servi
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `PIMCORE_OPENSEARCH_DSN` | OpenSearch connection URL | `http://opensearch:9200` |
-| `PIMCORE_ELASTICSEARCH_DSN` | Elasticsearch connection URL | `http://elasticsearch:9200` |
+| `PIMCORE_OPENSEARCH_DSN` | OpenSearch connection DSN (scheme `opensearch://`) | `opensearch://admin:pass@opensearch:9200?ssl=true&ssl_verify=false` |
+| `PIMCORE_ELASTICSEARCH_DSN` | Elasticsearch connection DSN (scheme `elasticsearch://`) | `elasticsearch://elastic:pass@elasticsearch:9200?ssl=true&ssl_verify=true` |
 | `PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX` | Messenger transport DSN with trailing separator | `doctrine://default?queue_name=` |
 | `REDIS_URL` | Redis connection URL for cache | `redis://redis:6379` |
 | `MAILER_DSN` | Symfony Mailer DSN | `smtp://mail:1025` |

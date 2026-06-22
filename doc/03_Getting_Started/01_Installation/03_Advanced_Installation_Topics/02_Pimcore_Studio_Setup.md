@@ -10,43 +10,57 @@ It consists of four bundles:
 
 :::info
 
-The demo enterprise package (`pimcore/demo-enterprise`) ships with all Studio bundles pre-installed
-and pre-configured. This page applies only to skeleton-based installations.
+The `pimcore/skeleton` and `pimcore/demo-enterprise` packages already ship Pimcore Studio
+**pre-configured** — the bundles are registered, the OpenSearch client, security firewall,
+Mercure wiring, and messenger transports are all set up in the committed `config/` and `.docker/`
+files, and the Docker environment includes every required service. For a standard skeleton
+install you do not need to change any of the configuration on this page.
+
+This page documents what the skeleton ships and where, so you can understand or customize it.
+It is also a reference for adding Studio to a project that was **not** based on the skeleton.
 
 :::
 
 ## Prerequisites
 
-Before running the installer, your Docker environment must include:
+Pimcore Studio needs the following services. The skeleton's `docker-compose.yaml` already provides them:
 
 - **OpenSearch >= 2.7** (or Elasticsearch >= 8.0.0) for search indexing
 - **Mercure** for real-time updates in the Studio interface
 
-See the [Skeleton Installation](../00_Skeleton_Installation.md) guide for Docker service configuration.
+See the [Skeleton Installation](../00_Skeleton_Installation.md) guide for the Docker setup.
 
 ## Bundle Installation
 
-The Skeleton install profile includes all four Studio bundles. When you run the installer
-with `--install-profile='App\Installer\SkeletonProfile'`, it automatically:
+The Skeleton install profile (`App\Installer\SkeletonProfile`) lists all Studio bundles. When you run
+the installer, it automatically:
 
-- Installs the required Composer packages
-- Registers all bundles in `config/bundles.php`
+- Registers the bundles in `config/bundles.php`
 - Runs `pimcore:bundle:install` for each bundle
-- Writes connection details (OpenSearch, Mercure, messenger transport) to `.env.local`
-- Builds the search index
+- Installs bundle assets
 
-No manual `composer require`, `bundles.php` editing, or `pimcore:bundle:install` commands are needed.
+The connection details (OpenSearch, Mercure, messenger transport) come from environment variables
+that are already set in the skeleton's committed `.env` and validated by the installer. No manual
+`composer require`, `bundles.php` editing, or `pimcore:bundle:install` commands are needed.
 
 ## OpenSearch Configuration
 
-The OpenSearch client bundle ships with a default configuration that reads the connection
-URL from the `PIMCORE_OPENSEARCH_DSN` environment variable (written by the installer).
-The GenericDataIndex bundle defaults to using the `default` client with OpenSearch.
+The GenericDataIndex bundle reads the OpenSearch connection from the `PIMCORE_OPENSEARCH_DSN`
+environment variable and defaults to the `default` client with OpenSearch. The skeleton sets this
+in `.env`, pointing at the bundled OpenSearch service:
 
-**In most cases, no manual YAML configuration is needed.**
+```dotenv
+PIMCORE_OPENSEARCH_DSN=opensearch://admin:gBsVe!Dut723@opensearch:9200?ssl=true&ssl_verify=false
+```
 
-If you need to customize the OpenSearch connection (e.g., multiple clients, authentication,
-or a different client name), override the defaults in `config/config.yaml`:
+The bundled OpenSearch runs with the security plugin enabled, so the DSN uses the `opensearch://`
+scheme, includes the admin credentials, and enables TLS (`ssl=true`). `ssl_verify=false` accepts the
+service's self-signed certificate in local development.
+
+**No manual YAML configuration is needed for the skeleton.**
+
+If you need to customize the OpenSearch connection (for example multiple clients, different
+credentials, or a different client name), override the defaults in `config/config.yaml`:
 
 ```yaml
 pimcore_open_search_client:
@@ -62,34 +76,39 @@ pimcore_generic_data_index:
 
 :::tip
 
-If you use Elasticsearch instead of OpenSearch, see the
+If you use Elasticsearch instead of OpenSearch, set `PIMCORE_ELASTICSEARCH_DSN`
+(scheme `elasticsearch://`) and see the
 [Generic Data Index configuration documentation](https://github.com/pimcore/generic-data-index-bundle/blob/2026.x/doc/02_Configuration/05_Elasticsearch.md)
 for the equivalent setup.
 
 :::
 
-## Configure Security Firewall
+## Security Firewall
 
-Add the Studio Backend firewall settings to `config/packages/security.yaml`.
-Place the `pimcore_studio` firewall before the `main` firewall,
-since Symfony evaluates firewalls in order:
+The skeleton already ships the Studio Backend firewall in `config/packages/security.yaml`.
+The `pimcore_studio` firewall is placed before the `main` firewall, since Symfony evaluates
+firewalls in order. The committed configuration looks like this:
 
 ```yaml
 security:
     firewalls:
-        pimcore_studio: '%pimcore_studio_backend.firewall_settings%'
+        pimcore_studio: "%pimcore_studio_backend.firewall_settings%"
+
     access_control:
-        - { path: ^/pimcore-studio/api/(docs|docs/json|translations|user/reset-password)$, roles: PUBLIC_ACCESS }
+        - {
+            path: ^/pimcore-studio/api/(docs|docs/json|translations|user/reset-password|setting/admin/thumbnail)$,
+            roles: PUBLIC_ACCESS,
+        }
         - { path: ^/pimcore-studio/api, roles: ROLE_PIMCORE_USER }
 ```
+
+If you are adding Studio to a non-skeleton project, add the same firewall and access-control rules.
 
 ## Mercure Configuration
 
 Mercure enables real-time updates in Pimcore Studio (progress tracking, live notifications).
-The installer writes `MERCURE_JWT_KEY`, `MERCURE_URL`, and `MERCURE_SERVER_URL` to `.env.local`.
-
-Wire these environment variables to the Studio Backend configuration
-in `config/config.yaml`:
+The skeleton sets `MERCURE_JWT_KEY`, `MERCURE_URL`, and `MERCURE_SERVER_URL` in `.env`, and
+already wires them to the Studio Backend in `config/config.yaml`:
 
 ```yaml
 pimcore_studio_backend:
@@ -102,11 +121,25 @@ pimcore_studio_backend:
 | Setting | Env Var | Description |
 |---------|---------|-------------|
 | `jwt_key` | `MERCURE_JWT_KEY` | Must match the key configured in the Mercure Docker service. Minimum 256 bits (32 characters). |
-| `hub_url_client` | `MERCURE_URL` | The URL the browser uses to connect to Mercure (through the Nginx reverse proxy). |
-| `hub_url_server` | `MERCURE_SERVER_URL` | The internal Docker URL used by the PHP application to publish messages. |
+| `hub_url_client` | `MERCURE_URL` | The URL the browser uses to connect to Mercure (through the Nginx reverse proxy, e.g. `http://localhost/hub`). |
+| `hub_url_server` | `MERCURE_SERVER_URL` | The internal Docker URL the PHP application uses to publish messages (e.g. `http://mercure/.well-known/mercure`). |
 
-If `hub_url_client` and `hub_url_server` are not configured, URLs are generated based
-on the current Pimcore host and default paths.
+:::info
+
+The Mercure JWT key must be at least 256 bits (32 characters) long. The same key must be used in
+both the Mercure Docker service and `MERCURE_JWT_KEY`. The skeleton ships a placeholder key
+(`CHANGE_ME_...`); replace it with your own private key before any non-local deployment.
+
+:::
+
+The skeleton's `.docker/nginx.conf` already exposes the Mercure hub under `/hub` (same-origin,
+no CORS needed):
+
+```conf
+location /hub {
+    proxy_pass http://mercure/.well-known/mercure;
+}
+```
 
 ### Optional Mercure Settings
 
@@ -137,11 +170,8 @@ For advanced Mercure configuration (external URLs, CORS, Apache reverse proxy, d
 
 ## Messenger Transports
 
-Pimcore core and the Studio bundles auto-configure all required messenger transports using the
-`PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX` environment variable (written by the installer).
-
-**No manual transport YAML configuration is needed.** The following transports are
-registered automatically by the bundles:
+Pimcore core and the Studio bundles auto-configure the required messenger transports. The
+following transports are registered automatically by the bundles:
 
 | Transport | Registered By |
 |-----------|---------------|
@@ -153,36 +183,45 @@ registered automatically by the bundles:
 | `pimcore_generic_execution_engine` | GenericExecutionEngineBundle |
 | `pimcore_generic_data_index_queue` | GenericDataIndexBundle |
 
-All transports use `%pimcore.messenger.transport_dsn_prefix%` which resolves from the
-`PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX` env var. For example, with the default Doctrine
-transport, the prefix `doctrine://default?queue_name=` produces DSNs like
-`doctrine://default?queue_name=pimcore_core`.
+The skeleton uses **RabbitMQ (AMQP)** as the transport backend. The DSN prefix is set in `.env`:
+
+```dotenv
+PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX=amqp://guest:guest@rabbitmq:5672/%2f/
+```
+
+Each transport's full DSN is formed by appending the queue name to this prefix, for example
+`amqp://guest:guest@rabbitmq:5672/%2f/pimcore_core`. The skeleton additionally pins the core
+transports to RabbitMQ in `.docker/messenger.yaml` (mounted over `config/packages/messenger.yaml`).
 
 See [Symfony Messenger](./01_Symfony_Messenger.md) for details on switching transport
 backends (Doctrine, AMQP, Redis).
 
-## Start Messenger Workers
+## Messenger Workers
 
-The messenger transports require active workers to process background jobs (search indexing, execution engine tasks).
+The messenger transports require active workers to process background jobs (search indexing,
+execution engine tasks).
 
-For development, start workers manually:
+**In the skeleton, workers run automatically.** The `supervisord` service in `docker-compose.yaml`
+starts the consumers for you (see `.docker/supervisord.conf`), consuming all queues:
 
-```bash
-docker compose exec php bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue
+```
+pimcore_generic_data_index_queue scheduler_generic_data_index pimcore_core pimcore_maintenance
+pimcore_scheduled_tasks pimcore_image_optimize pimcore_asset_update pimcore_generic_execution_engine
 ```
 
-The Generic Data Index bundle also registers a `scheduler_generic_data_index` scheduler for periodic tasks.
-To include it:
+If you run Pimcore **without** the bundled Supervisord service, start the workers manually instead:
 
 ```bash
-docker compose exec php bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue scheduler_generic_data_index
+docker compose exec php bin/console messenger:consume \
+  pimcore_generic_execution_engine pimcore_generic_data_index_queue scheduler_generic_data_index \
+  pimcore_core pimcore_maintenance pimcore_scheduled_tasks pimcore_image_optimize pimcore_asset_update
 ```
 
-For production, use Supervisord to run messenger workers as daemons. Example supervisor configuration:
+For production, run the workers as daemons under Supervisord. Example program definition:
 
 ```ini
 [program:pimcore-messenger]
-command=php /var/www/html/bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue scheduler_generic_data_index --memory-limit=250M --time-limit=3600
+command=php /var/www/html/bin/console messenger:consume pimcore_generic_execution_engine pimcore_generic_data_index_queue scheduler_generic_data_index pimcore_core pimcore_maintenance pimcore_scheduled_tasks pimcore_image_optimize pimcore_asset_update --memory-limit=250M --time-limit=3600
 numprocs=1
 startsecs=0
 autostart=true
@@ -190,25 +229,37 @@ autorestart=true
 process_name=%(program_name)s_%(process_num)02d
 ```
 
+:::caution
+
+Only consume queues that actually exist. Passing an unregistered queue name (for example the
+removed `pimcore_index_queues`) makes `messenger:consume` fail with
+*"The receiver ... does not exist"* and the worker restarts in a loop. The valid queue names are
+the ones listed in the table above plus the `scheduler_generic_data_index` scheduler.
+
+:::
+
 See the [Symfony Messenger deployment documentation](https://symfony.com/doc/current/messenger.html#deploying-to-production) for more options.
 
 ## Build the Search Index
 
-The installer automatically builds the search index during installation via
-the `generic-data-index:update:index -r` post-install command.
+The GenericDataIndex bundle registers `generic-data-index:update:index -r` as a post-install
+command, so the installer builds the search index automatically during installation. No manual
+step is needed for a fresh install.
 
-If you need to rebuild the index later (e.g. after configuration changes), run:
+To rebuild the index later (for example after changing the index configuration), run:
 
 ```bash
 docker compose exec php bin/console generic-data-index:update:index -r
 ```
 
-The `-r` flag recreates the indices from scratch.
-This command creates the OpenSearch/Elasticsearch indices and queues all assets and data objects for indexing.
+The `-r` flag recreates the indices from scratch. This command creates the OpenSearch/Elasticsearch
+indices and queues all assets and data objects for indexing; the messenger workers then process the
+queue. Until the indices exist, Studio may show empty trees or return errors.
 
 ## Verify the Installation
 
 Navigate to [http://localhost/pimcore-studio](http://localhost/pimcore-studio).
-You should see the Pimcore Studio login screen.
+You should see the Pimcore Studio login screen, and you can log in with the admin credentials from
+`.env` (default `admin` / `admin`).
 
-The Studio Backend also provides an OpenAPI documentation at `/pimcore-studio/api/docs` for exploring the REST API.
+The Studio Backend also provides OpenAPI documentation at `/pimcore-studio/api/docs` for exploring the REST API.

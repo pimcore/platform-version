@@ -19,10 +19,11 @@ Pimcore offers two installation packages:
 | **`pimcore/skeleton`** | Empty project for building from scratch. Best for starting a new implementation. | [Skeleton Installation](./00_Skeleton_Installation.md) |
 | **`pimcore/demo-enterprise`** | Pre-built project with enterprise blueprints showcasing advanced features. Requires Pimcore enterprise repository credentials. | [Demo Enterprise Installation](./01_Demo_Enterprise_Installation.md) |
 
-Both packages use the same profile-based installer. The installer interactively collects all
-required configuration (database, search engine, Mercure, product registration),
-writes environment variables to `.env.local`, installs bundles, and runs all necessary
-post-installation commands automatically.
+Both packages use the same profile-based installer and ship a pre-configured Docker environment
+together with a pre-filled `.env`. The installer reads those values, prompts only for what is not
+yet provided (typically product registration), writes the resolved configuration to `.env.local`,
+installs and registers bundles, and runs post-install commands (including building the search
+index), so the instance is usable right away.
 
 For automated (CI) installations, see [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md).
 
