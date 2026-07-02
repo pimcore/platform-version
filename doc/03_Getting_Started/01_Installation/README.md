@@ -52,6 +52,6 @@ See the [Performance Guide](./02_System_Setup_and_Hosting/09_Performance_Guide.m
 
 - [Product Registration](../02_Product_Registration.md) - Register your instance and obtain a product key.
 - [System Requirements](./01_System_Requirements.md) - Detailed requirements for PHP, database, and additional software.
-- [System Setup and Hosting](./02_System_Setup_and_Hosting/README.md) - Web server configuration, file storage, and database setup.
+- [System Setup and Hosting](./02_System_Setup_and_Hosting/README.md) - File storage, database replication, and performance optimization.
 - [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md) - Automated installation, environment variables, and install profiles.
 - [Platform Version](./03_Advanced_Installation_Topics/03_Platform_Version.md) - Version compatibility and installing additional modules.

@@ -145,6 +145,31 @@ pimcore:
 
 ## Office Document Preview
 
-The document preview feature is optional. To use it, install either
-[Gotenberg](../02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md#gotenberg) or
-[LibreOffice](../02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md#libreoffice-pdftotext-inkscape).
+The document preview feature is optional. To use it, either run Gotenberg
+(a Docker-powered API) or install LibreOffice on the server.
+
+### Gotenberg
+
+Add Gotenberg to your Docker Compose services stack as described in the
+[Gotenberg installation guide](https://gotenberg.dev/docs/getting-started/installation#docker-compose).
+
+Configure the Docker services:
+
+- `pimcore.gotenberg.base_url` (defaults to `http://gotenberg:3000`)
+- `pimcore.documents.preview_url_prefix` (e.g. `http://nginx:80`)
+
+Install the required PHP library:
+
+```bash
+composer require gotenberg/gotenberg-php ^2.0
+```
+
+### LibreOffice
+
+LibreOffice and the related tools (pdftotext, Ghostscript) are pre-installed in the official
+[Pimcore Docker images](https://hub.docker.com/r/pimcore/pimcore).
+For custom setups on Debian-based Linux distributions, install them with:
+
+```bash
+sudo apt-get install libreoffice libreoffice-script-provider-python libreoffice-math xfonts-75dpi poppler-utils ghostscript
+```
