@@ -13,7 +13,7 @@ For production, a *nix based system is highly recommended.
 - Apache >= 2.4
   - mod_rewrite
   - .htaccess support (`AllowOverride All`)
-- Nginx (see [Nginx Configuration](./02_System_Setup_and_Hosting/02_Nginx_Configuration.md) for a sample config)
+- Nginx (see the skeleton [nginx.conf](https://github.com/pimcore/skeleton/blob/2026.x/.docker/nginx.conf) for a working sample config)
 
 
 ### PHP 8.5+
@@ -37,8 +37,7 @@ Both **mod_php** and **FCGI (FPM)** are supported.
 - [curl](https://php.net/curl)
 - [ext-openssl](https://www.php.net/openssl)
 - CLI SAPI (for cron jobs)
-- [Composer 2](https://getcomposer.org/) (added to `$PATH` - see also
-  [Additional Tools Installation](./02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md))
+- [Composer 2](https://getcomposer.org/) (added to `$PATH`)
 
 #### Recommended or Optional Modules and Extensions
 - [imagick](https://php.net/imagick)
@@ -149,7 +148,10 @@ A reboot may be required on some systems.
 - exiftool
 - [Graphviz](https://www.graphviz.org/)
 
-See [Additional Tools Installation](./02_System_Setup_and_Hosting/07_Additional_Tools_Installation.md) for installation instructions.
+All of these tools are pre-installed in the official [Pimcore Docker images](https://hub.docker.com/r/pimcore/pimcore).
+For custom setups, install them with your distribution's package manager and make sure they are
+added to `$PATH` so Pimcore can find the executables — alternatively, you can
+[manually configure the path for each application](https://github.com/pimcore/skeleton/blob/2026.x/config/services.yaml).
 
 ## Browser Requirements
 Pimcore Studio supports the latest two versions of all four major desktop browsers at the time of a release:
