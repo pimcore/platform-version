@@ -7,7 +7,7 @@ but we enjoy to work together to solve issues or improve the product.
 We gladly accept community pull requests. This is the preferred way to contribute to Pimcore. 
 There are a few necessary steps before we can accept a pull request:
 
-> **Note:** Before opening a PR, also see our [Pull Request Guidelines](.github/PULL_REQUEST_GUIDELINES.md) for the automated checks your PR must pass.
+> **Note:** Before opening a PR, also see our [Pull Request Guidelines](https://github.com/orgs/pimcore/discussions/19239) for the automated checks your PR must pass.
 
 * [Fork us!](https://help.github.com/articles/fork-a-repo/)
 * Select the right branch. `main`(`2026.x`) for features and improvements or latest maintenance branch for bug fixes (`2026.1`)
