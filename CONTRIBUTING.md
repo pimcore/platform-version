@@ -22,7 +22,7 @@ If you've created a pull request, it's not necessary anymore to create an issue 
 
 * Only file an issue if you're not able to fix the bug and provide the patch as a pull request.
 * Please keep in mind that the Pimcore team will only work on system critical and security bugs. 
-* [Open an issue](https://github.com/pimcore/platform-versionttps:/issues) here on GitHub.
+* [Open an issue](https://github.com/pimcore/platform-version/issues) here on GitHub.
 * Report security issues only by using [security advisories](https://github.com/pimcore/platform-version/security/advisories). 
 * Please be patient as not all items will be tested immediately - remember, pimcore is open core and free of charge. 
 * Occasionally we'll close issues if they appear stale or are too vague - please don't take this personally! 
