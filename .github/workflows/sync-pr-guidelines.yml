@@ -1,10 +1,13 @@
-name: Sync PR Guidelines to all Pimcore repos
+name: Sync CONTRIBUTING.md to all Pimcore repos
 
 on:
   push:
     paths:
-      - ".github/PULL_REQUEST_GUIDELINES.md"
+      - "CONTRIBUTING.md"
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   sync:
@@ -17,15 +20,18 @@ jobs:
       - name: Generate target repo list
         env:
           GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
+        shell: bash
         run: |
+          set -euo pipefail
+
           repos=$(gh repo list pimcore --no-archived --source --limit 1000 --json nameWithOwner \
             --jq '.[].nameWithOwner' | grep -v '^pimcore/platform-version$')
 
           {
             echo "group:"
             echo "  - files:"
-            echo "      - source: .github/PULL_REQUEST_GUIDELINES.md"
-            echo "        dest: .github/PULL_REQUEST_GUIDELINES.md"
+            echo "      - source: CONTRIBUTING.md"
+            echo "        dest: CONTRIBUTING.md"
             echo "    repos: |"
             echo "$repos" | sed 's/^/      /'
           } > sync-config.generated.yaml
