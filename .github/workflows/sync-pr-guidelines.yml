@@ -1,0 +1,49 @@
+name: Sync CONTRIBUTING.md to all Pimcore repos
+
+on:
+  push:
+    paths:
+      - "CONTRIBUTING.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate target repo list
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          repos=$(gh repo list pimcore --no-archived --source --limit 1000 --json nameWithOwner \
+            --jq '.[].nameWithOwner' | grep -v '^pimcore/platform-version$')
+
+          {
+            echo "group:"
+            echo "  - files:"
+            echo "      - source: CONTRIBUTING.md"
+            echo "        dest: CONTRIBUTING.md"
+            echo "    repos: |"
+            echo "$repos" | sed 's/^/      /'
+          } > sync-config.generated.yaml
+
+      - name: Sync file to target repos
+        uses: BetaHuhn/repo-file-sync-action@8b92be3375cf1d1b0cd579af488a9255572e4619 # v1.21.1
+        with:
+          GH_PAT: ${{ secrets.SYNC_TOKEN }}
+          CONFIG_PATH: sync-config.generated.yaml
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          GIT_USERNAME: ${{ secrets.GIT_NAME }}
+          PR_LABELS: 'automated-sync'
+          ORIGINAL_MESSAGE: true
+          COMMIT_AS_PR_TITLE: true
+          COMMIT_EACH_FILE: false
