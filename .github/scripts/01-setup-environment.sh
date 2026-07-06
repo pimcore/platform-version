@@ -92,7 +92,6 @@ fi
 mkdir -p "${PROJECT_PATH}/.docker"
 cp "${FILES_DIR}/nginx.conf"      "${PROJECT_PATH}/.docker/nginx.conf"
 cp "${FILES_DIR}/supervisord.conf" "${PROJECT_PATH}/.docker/supervisord.conf"
-cp "${FILES_DIR}/messenger.yaml"   "${PROJECT_PATH}/.docker/messenger.yaml"
 
 # Write project .env.local
 cat > "${PROJECT_PATH}/.env.local" <<ENVEOF
