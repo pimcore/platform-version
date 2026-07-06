@@ -25,7 +25,7 @@ jobs:
           set -euo pipefail
 
           repos=$(gh repo list pimcore --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef \
-            --jq '.[] | select(.defaultBranchRef.name != "") | .nameWithOwner' | grep -vE '^pimcore/(platform-version|poca|k8s-bases)$')
+            --jq '.[] | select(.defaultBranchRef.name != "") | .nameWithOwner' | grep -vE '^pimcore/(platform-version|poca|k8s-bases|saas-cypress|pimcore\.github\.io)$')
 
           {
             echo "group:"
