@@ -47,7 +47,6 @@ services:
                 condition: service_healthy
         volumes:
             - .:/var/www/html
-            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
 
     supervisord:
         image: ${PHP_SUPERVISORD_IMAGE:-pimcore/pimcore:php8.5-supervisord-5.x}
@@ -59,7 +58,6 @@ services:
                 condition: service_healthy
         volumes:
             - .:/var/www/html
-            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
     gotenberg:

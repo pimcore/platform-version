@@ -92,7 +92,6 @@ fi
 mkdir -p "${PROJECT_PATH}/.docker"
 cp "${FILES_DIR}/nginx.conf"      "${PROJECT_PATH}/.docker/nginx.conf"
 cp "${FILES_DIR}/supervisord.conf" "${PROJECT_PATH}/.docker/supervisord.conf"
-cp "${FILES_DIR}/messenger.yaml"   "${PROJECT_PATH}/config/packages/messenger.yaml"
 
 # Write project .env.local
 cat > "${PROJECT_PATH}/.env.local" <<ENVEOF
@@ -104,7 +103,6 @@ DATABASE_URL=mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3306/${MYSQL_DATABASE}
 PIMCORE_ADMIN_USER=${PIMCORE_ADMIN_USER}
 PIMCORE_ADMIN_PASSWORD=${PIMCORE_ADMIN_PASSWORD}
 PIMCORE_OPENSEARCH_DSN=opensearch://admin:${OPENSEARCH_INITIAL_ADMIN_PASSWORD}@opensearch:9200?ssl=true&ssl_verify=false
-PIMCORE_MESSENGER_TRANSPORT_DSN_PREFIX=amqp://guest:guest@rabbitmq:5672/%2f/
 MERCURE_JWT_KEY=CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION
 MERCURE_URL=http://localhost:${NGINX_PORT}/hub
 MERCURE_SERVER_URL=http://mercure/.well-known/mercure
