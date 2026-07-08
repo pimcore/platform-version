@@ -10,10 +10,10 @@ on:
         default: '2026.x'
         type: choice
         options:
-          - '2026.1'
+          - '2026.2'
           - '2026.x'
       platform_version:
-        description: 'Platform version (e.g. 2026.1 or 2026.x)'
+        description: 'Platform version (e.g. 2026.2 or 2026.x)'
         default: '2026.x'
         type: string
 
@@ -31,7 +31,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.1", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
+        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.2", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
 
     steps:
       - name: Checkout
