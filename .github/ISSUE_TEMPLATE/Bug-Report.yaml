@@ -24,6 +24,7 @@ body:
       attributes:
           label: Affected Version
           options:
+              - 2026.2
               - 2026.1
               - 2025.4 - LTS
               - 2025.3
