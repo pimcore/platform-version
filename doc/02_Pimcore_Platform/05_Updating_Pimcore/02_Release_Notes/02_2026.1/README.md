@@ -136,7 +136,7 @@ Before updating, review the upgrade notes for each component you use:
 - [Datahub Productsup](https://github.com/pimcore/data-hub-productsup/blob/2026.1/doc/01_Installation/02_Upgrade.md#upgrade-to-202610)
 - [Datahub Simple REST](https://github.com/pimcore/data-hub-simple-rest/blob/2026.1/doc/01_Installation/01_Upgrade_Notes.md#upgrade-to-202610)
 - [Datahub Webhooks](https://github.com/pimcore/data-hub-webhooks/blob/2026.1/doc/01_Installation/02_Upgrade_notes.md#upgrade-to-202610)
-- [Data Importer](https://github.com/pimcore/data-importer/blob/2026.1/doc/09_Upgrade.md#upgrade-to-202610)
+- [Data Importer](https://github.com/pimcore/data-importer/blob/2026.1/doc/01_Installation/01_Upgrade.md#upgrade-to-202610)
 - [Data Quality Management](https://github.com/pimcore/data-quality-management-bundle/blob/2026.1/doc/01_Installation/02_Upgrade.md#upgrade-to-202610)
 - [Direct Edit](https://github.com/pimcore/direct-edit/blob/2026.1/doc/01_Installation/05_Upgrade_notes.md#upgrade-to-202610)
 - [E-Commerce Framework](https://github.com/pimcore/ee-ecommerce-framework-bundle/blob/2026.1/doc/19_Upgrade_Notes/README.md#version-202610)
