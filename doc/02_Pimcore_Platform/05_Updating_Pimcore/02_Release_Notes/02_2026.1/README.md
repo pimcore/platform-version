@@ -151,4 +151,4 @@ Before updating, review the upgrade notes for each component you use:
 - [Translation Provider Interfaces](https://github.com/pimcore/translations-provider-interfaces/blob/2026.1/doc/01_Installation_and_Configuration/03_Upgrade.md#update-to-202610)
 - [Web-to-Print Bundle](https://github.com/pimcore/ee-web-to-print-bundle/blob/2026.1/doc/01_Installation/02_Upgrade.md#upgrade-to-202610)
 - [Workflow Automation Integration](https://github.com/pimcore/workflow-automation-integration-bundle/blob/2026.1/doc/03_Upgrade.md#upgrade-to-202610)
-- [Workflow Designer](https://github.com/pimcore/workflow-designer/blob/2026.1/doc/03_Upgrade.md#upgrade-to-202610)
+- [Workflow Designer](https://github.com/pimcore/workflow-designer/blob/2026.1/doc/01_Installation_and_Configuration/01_Upgrade.md#upgrade-to-202610)
