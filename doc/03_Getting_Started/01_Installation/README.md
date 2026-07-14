@@ -36,7 +36,7 @@ Each bundle has its own installation documentation. Some commonly used bundles i
   GraphQL and REST API endpoints for external data access
 - **[Portal Engine](https://github.com/pimcore/portal-engine/blob/2026.x/doc/01_Installation/README.md)** -
   Web portals for sharing data with external stakeholders
-- **[Workflow Designer](https://github.com/pimcore/workflow-designer/blob/2026.x/doc/01_Installation_and_Configuration.md)** -
+- **[Workflow Designer](https://github.com/pimcore/workflow-designer/blob/2026.x/doc/01_Installation_and_Configuration/README.md)** -
   Visual workflow configuration for approval processes
 
 See [Advanced Installation Topics](./03_Advanced_Installation_Topics/README.md) for automating bundle installation
