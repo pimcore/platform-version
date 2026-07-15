@@ -18,7 +18,6 @@ on:
         type: string
 
 env:
-  PLATFORM_VERSION: ${{ inputs.platform_version || '2026.x' }}
   PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
   PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
   PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
@@ -27,6 +26,9 @@ jobs:
   api-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+
+    env:
+      PLATFORM_VERSION: ${{ inputs.platform_version || matrix.branch }}
 
     strategy:
       fail-fast: false
