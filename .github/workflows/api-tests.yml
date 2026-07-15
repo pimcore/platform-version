@@ -10,15 +10,14 @@ on:
         default: '2026.x'
         type: choice
         options:
-          - '2026.1'
+          - '2026.2'
           - '2026.x'
       platform_version:
-        description: 'Platform version (e.g. 2026.1 or 2026.x)'
+        description: 'Platform version (e.g. 2026.2 or 2026.x)'
         default: '2026.x'
         type: string
 
 env:
-  PLATFORM_VERSION: ${{ inputs.platform_version || '2026.x' }}
   PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
   PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
   PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
@@ -28,10 +27,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
 
+    env:
+      PLATFORM_VERSION: ${{ inputs.platform_version || matrix.branch }}
+
     strategy:
       fail-fast: false
       matrix:
-        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.1", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
+        branch: ${{ github.event_name == 'schedule' && fromJSON('["2026.2", "2026.x"]') || fromJSON(format('["{0}"]', inputs.branch)) }}
 
     steps:
       - name: Checkout
