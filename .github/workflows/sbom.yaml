@@ -10,8 +10,62 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
+  # Scheduled runs only ever fire on the default branch, so on the nightly run
+  # we fan out a workflow_dispatch to every other branch that still needs an
+  # SBOM. Two groups are targeted:
+  #   1. The current dev line: YYYY.x and its minors, where the year is derived
+  #      from the default branch (e.g. 2026.x -> 2026). This self-adjusts when
+  #      the line rolls over (2027.x -> 2027) with no edit.
+  #   2. Maintained LTS branches from older lines (LTS_BRANCHES below). When the
+  #      dev line rolls to 2027.x, the old dev branch 2026.x is no longer
+  #      maintained and drops off automatically, but a designated LTS minor such
+  #      as 2026.4 keeps getting SBOMs because it is listed here.
+  # Each dispatched run executes that branch's own copy of this workflow, checks
+  # it out and commits the SBOM back to it. The anchored regex only matches real
+  # release branches (YYYY.x / YYYY.N), never bot-created SBOM PR branches.
+  # Tag pushes and manual/dispatched runs skip this and go straight to `sbom`.
+  dispatch-branches:
+    if: ${{ github.event_name == 'schedule' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch SBOM for other release branches
+        env:
+          GH_TOKEN: ${{ github.token }}
+          # Maintained LTS branches from past dev lines, space-separated. Add a
+          # branch when it is designated LTS; remove it at end-of-life. Entries
+          # that no longer exist are skipped. Example: "2026.4 2026.5".
+          LTS_BRANCHES: ""
+        run: |
+          year="${GITHUB_REF_NAME%%.*}"
+          echo "Current dev line: ${year} (from ${GITHUB_REF_NAME})"
+
+          all_branches="$(gh api "repos/${{ github.repository }}/branches" --paginate -q '.[].name')"
+
+          # Group 1: current dev year (YYYY.x and its minors)
+          targets="$(printf '%s\n' "${all_branches}" | grep -E "^${year}\.(x|[0-9]+)$" || true)"
+
+          # Group 2: explicitly-listed LTS branches that still exist
+          for lts in ${LTS_BRANCHES}; do
+            if printf '%s\n' "${all_branches}" | grep -qx "${lts}"; then
+              targets="${targets}"$'\n'"${lts}"
+            else
+              echo "LTS branch '${lts}' not found, skipping"
+            fi
+          done
+
+          # Dispatch each unique target except the branch we are already on
+          printf '%s\n' "${targets}" \
+            | grep -vx "${GITHUB_REF_NAME}" \
+            | sort -u \
+            | while IFS= read -r branch; do
+                [ -z "${branch}" ] && continue
+                echo "Dispatching SBOM generation for ${branch}"
+                gh workflow run sbom.yaml --ref "${branch}"
+              done
+
   sbom:
     uses: pimcore/workflows-collection-public/.github/workflows/reusable-sbom.yml@main
     with:
