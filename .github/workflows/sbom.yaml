@@ -63,7 +63,9 @@ jobs:
             | while IFS= read -r branch; do
                 [ -z "${branch}" ] && continue
                 echo "Dispatching SBOM generation for ${branch}"
-                gh workflow run sbom.yaml --ref "${branch}"
+                # --repo is required: this job has no checkout, so gh cannot
+                # infer the repository from a local git context.
+                gh workflow run sbom.yaml --repo "${GITHUB_REPOSITORY}" --ref "${branch}"
               done
 
   sbom:
