@@ -1058,7 +1058,7 @@
                                 "visibleFieldDefinitions": [],
                                 "width": "",
                                 "height": "",
-                                "ownerClassName": "FullAutomaticTest",
+                                "ownerClassName": "automaticTestFull",
                                 "ownerClassId": null,
                                 "ownerFieldName": "manyToOneField",
                                 "lazyLoading": true
