@@ -46,17 +46,17 @@ import VersionTimeline from '@site/src/components/VersionTimeline';
 
 | Version | Release Notes | Module Details | LTS | LTS Support Until |
 |---------|--------------|----------------|:---:|-------------------|
-| 2026.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/01_2026.2.md) | [Details](01_2026.2.md) | | |
-| 2026.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/02_2026.1/README.md) | [Details](02_2026.1.md) | | |
-| 2025.4  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/03_2025.4.md) | [Details](03_2025.4.md) | ✅ | December 2028 |
-| 2025.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/04_2025.3.md) | [Details](04_2025.3.md) | | |
-| 2025.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/05_2025.2.md) | [Details](05_2025.2.md) | | |
-| 2025.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/06_2025.1.md) | [Details](06_2025.1.md) | | |
-| 2024.4  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/07_2024.4.md) | [Details](07_2024.4.md) | ✅ | December 2026 |
-| 2024.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/08_2024.3.md) | [Details](08_2024.3.md) | | |
-| 2024.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/09_2024.2.md) | [Details](09_2024.2.md) | | |
-| 2024.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/10_2024.1.md) | [Details](10_2024.1.md) | | |
-| 2023.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/11_2023.3.md) | [Details](11_2023.3.md) | ✅ | December 2025 |
-| 2023.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/12_2023.2.md) | [Details](12_2023.2.md) | | |
-| 2023.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/13_2023.1.md) | [Details](13_2023.1.md) | | |
+| 2026.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/02_2026.2.md) | [Details](01_2026.2.md) | | |
+| 2026.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/03_2026.1/README.md) | [Details](02_2026.1.md) | | |
+| 2025.4  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/04_2025.4.md) | [Details](03_2025.4.md) | ✅ | December 2028 |
+| 2025.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/05_2025.3.md) | [Details](04_2025.3.md) | | |
+| 2025.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/06_2025.2.md) | [Details](05_2025.2.md) | | |
+| 2025.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/07_2025.1.md) | [Details](06_2025.1.md) | | |
+| 2024.4  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/08_2024.4.md) | [Details](07_2024.4.md) | ✅ | December 2026 |
+| 2024.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/09_2024.3.md) | [Details](08_2024.3.md) | | |
+| 2024.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/10_2024.2.md) | [Details](09_2024.2.md) | | |
+| 2024.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/11_2024.1.md) | [Details](10_2024.1.md) | | |
+| 2023.3  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/12_2023.3.md) | [Details](11_2023.3.md) | ✅ | December 2025 |
+| 2023.2  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/13_2023.2.md) | [Details](12_2023.2.md) | | |
+| 2023.1  | [Release Notes](../05_Updating_Pimcore/02_Release_Notes/14_2023.1.md) | [Details](13_2023.1.md) | | |
 | 2022.0  | - | [Details](14_2022.0.md) | ✅ | August 2025 |
