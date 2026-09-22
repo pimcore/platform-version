@@ -95,9 +95,14 @@ When releasing a new platform version (e.g. `2026.3`), update the following:
    usage examples. CI always passes the version explicitly, so these defaults
    only affect local runs.
 3. **`.github/workflows/osv-checks.yaml`** — add a leg for the new release tag
-   (e.g. `v2026.3.0`). Add it only *after* the tag exists, otherwise the version
-   cannot be resolved and the scan fails. Drop legs of lines that reached
-   end-of-life; keep the LTS lines.
+   (e.g. `v2026.3.0`). Two preconditions, otherwise the leg fails:
+   - the tag must exist (the reusable workflow checks it out), and
+   - a matching ignore config `osv/<platform-version>.toml` must exist in
+     `pimcore/workflows-collection-public` — the scanner is called with
+     `--config=tools/osv/<platform-version>.toml` and exits 127 when it is
+     missing.
+
+   Drop legs of lines that reached end-of-life; keep the LTS lines.
 4. **`.github/ISSUE_TEMPLATE/Bug-Report.yaml`** — prepend the new version to the
    *Affected Version* dropdown (the list accumulates). The same option must also
    be added to the repository-level issue field referenced by
