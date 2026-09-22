@@ -10,10 +10,10 @@ on:
         default: '2026.x'
         type: choice
         options:
-          - '2026.2'
+          - '2026.3'
           - '2026.x'
       platform_version:
-        description: 'Platform version (e.g. 2026.2, 2026.2.x or 2026.x)'
+        description: 'Platform version (e.g. 2026.3, 2026.3.x or 2026.x)'
         default: '2026.x'
         type: string
 
@@ -35,8 +35,8 @@ jobs:
       fail-fast: false
       matrix:
         # ref = git branch checked out (test code); platform = version installed
-        # schedule legs: 2026.2 release (^2026.2), 2026.2 dev branch (2026.2.x-dev), 2026.x dev branch (2026.x-dev)
-        include: ${{ github.event_name == 'schedule' && fromJSON('[{"ref":"2026.2","platform":"2026.2"},{"ref":"2026.2","platform":"2026.2.x"},{"ref":"2026.x","platform":"2026.x"}]') || fromJSON(format('[{{"ref":"{0}","platform":"{1}"}}]', inputs.branch, inputs.platform_version || inputs.branch)) }}
+        # schedule legs: 2026.3 release (^2026.3), 2026.3 dev branch (2026.3.x-dev), 2026.x dev branch (2026.x-dev)
+        include: ${{ github.event_name == 'schedule' && fromJSON('[{"ref":"2026.3","platform":"2026.3"},{"ref":"2026.3","platform":"2026.3.x"},{"ref":"2026.x","platform":"2026.x"}]') || fromJSON(format('[{{"ref":"{0}","platform":"{1}"}}]', inputs.branch, inputs.platform_version || inputs.branch)) }}
 
     steps:
       - name: Checkout

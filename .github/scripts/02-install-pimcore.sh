@@ -6,13 +6,13 @@
 #   ./02-install-pimcore.sh <TOKEN> <PLATFORM_VERSION> [--ci]
 #
 #   TOKEN            Enterprise packagist token
-#   PLATFORM_VERSION e.g. 2026.1 (stable) or 2026.x (dev branch)
+#   PLATFORM_VERSION e.g. 2026.3 (stable) or 2026.x (dev branch)
 #   --ci             CI mode: use github-actions repo URL
 #
 set -euo pipefail
 
 TOKEN="${1:-}"
-PLATFORM_VERSION="${2:-2026.1}"
+PLATFORM_VERSION="${2:-2026.3}"
 CI_MODE=false
 for arg in "$@"; do [[ "$arg" == "--ci" ]] && CI_MODE=true; done
 

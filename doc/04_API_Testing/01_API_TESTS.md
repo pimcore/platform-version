@@ -21,7 +21,7 @@ npm install
 ### 2. Full setup + tests
 
 ```bash
-.github/scripts/00-localsetup.sh --token=<enterprisetoken> --platform-version=2026.1
+.github/scripts/00-localsetup.sh --token=<enterprisetoken> --platform-version=2026.3
 ```
 
 On the first run the script pauses and prints a registration URL. Register the
@@ -74,10 +74,33 @@ Admin credentials: `admin` / `admin`
 
 ## New Platform Version Release
 
-When releasing a new platform version (e.g. `2026.2`), update the following:
+When releasing a new platform version (e.g. `2026.3`), update the following:
 
-1. **`.github/workflows/api-tests.yml`** — change the default fallback version
-   `'2026.1'` to the new version in:
-   - `inputs.platform_version.default` (line 8)
-   - The `|| '2026.1'` fallbacks in the setup, install, and studio-tests checkout steps
-2. **`pimcore/studio-tests`** — ensure a matching branch exists (e.g. `2026.2`)
+1. **`.github/workflows/api-tests.yml`** — the scheduled run tests the newest
+   stable line plus the dev line, so the old stable version is *replaced*, not
+   appended:
+   - `inputs.branch.options` — replace the previous stable entry (e.g. `'2026.2'`)
+     with the new one (`'2026.3'`); `'2026.x'` stays
+   - `inputs.platform_version.description` — update the examples
+   - `strategy.matrix.include` — the three scheduled legs are
+     `{ref: <new>, platform: <new>}` (installs `^2026.3`),
+     `{ref: <new>, platform: <new>.x}` (installs `2026.3.x-dev` from the release
+     branch) and `{ref: 2026.x, platform: 2026.x}` (installs `2026.x-dev`).
+     Replace both `<new>` legs; update the comment above them as well.
+   - The release branch (e.g. `2026.3`) must exist, otherwise the checkout of the
+     stable legs fails. Note that `schedule:` only ever fires on the default
+     branch, so this edit is only effective once it reaches `2026.x`.
+2. **`.github/scripts/00-localsetup.sh`, `01-setup-environment.sh`,
+   `02-install-pimcore.sh`** — bump the `PLATFORM_VERSION` defaults and the
+   usage examples. CI always passes the version explicitly, so these defaults
+   only affect local runs.
+3. **`.github/workflows/osv-checks.yaml`** — add a leg for the new release tag
+   (e.g. `v2026.3.0`). Add it only *after* the tag exists, otherwise the version
+   cannot be resolved and the scan fails. Drop legs of lines that reached
+   end-of-life; keep the LTS lines.
+4. **`.github/ISSUE_TEMPLATE/Bug-Report.yaml`** — prepend the new version to the
+   *Affected Version* dropdown (the list accumulates). The same option must also
+   be added to the repository-level issue field referenced by
+   `ISSUE_FIELD_ID_PLATFORM_VERSION`, otherwise `issue-fields-sync-bug.yml`
+   fails on every new bug report. Issue templates are read from the default
+   branch only.
