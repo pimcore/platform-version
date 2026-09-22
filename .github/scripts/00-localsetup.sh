@@ -3,7 +3,7 @@
 # 00-localsetup.sh — Local orchestrator for the Pimcore API test environment
 #
 # Usage:
-#   ./.github/scripts/00-localsetup.sh --token=<ENTERPRISE_REPO_TOKEN> [--platform-version=2026.1]
+#   ./.github/scripts/00-localsetup.sh --token=<ENTERPRISE_REPO_TOKEN> [--platform-version=2026.3]
 #
 # First-time flow (no credentials yet):
 #   1. Run: ./.github/scripts/00-localsetup.sh --token=<TOKEN>
@@ -24,7 +24,7 @@ source "${FILES_DIR}/.env"
 [[ -f "$ENV_LOCAL" ]] && source "$ENV_LOCAL"
 
 TOKEN="${COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN:-}"
-PLATFORM_VERSION="${PLATFORM_VERSION:-2026.1}"
+PLATFORM_VERSION="${PLATFORM_VERSION:-2026.3}"
 
 # ─── Parse arguments ─────────────────────────────────────────────────────────
 for arg in "$@"; do
@@ -36,8 +36,8 @@ for arg in "$@"; do
             echo ""
             echo "Options:"
             echo "  --token=TOKEN            Enterprise packagist token (required)"
-            echo "  --platform-version=VER   Platform/skeleton version to install (default: 2026.1)"
-            echo "                           Examples: 2026.1 (stable), 2026.x (dev branch)"
+            echo "  --platform-version=VER   Platform/skeleton version to install (default: 2026.3)"
+            echo "                           Examples: 2026.3 (stable), 2026.x (dev branch)"
             echo ""
             echo "Other scripts:"
             echo "  05-reset.sh              Fast DB reset — re-runs installer without composer steps"
