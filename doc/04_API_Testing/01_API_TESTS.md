@@ -109,3 +109,5 @@ When releasing a new platform version (e.g. `2026.3`), update the following:
    `ISSUE_FIELD_ID_PLATFORM_VERSION`, otherwise `issue-fields-sync-bug.yml`
    fails on every new bug report. Issue templates are read from the default
    branch only.
+5. **`CONTRIBUTING.md`** — update the latest maintenance branch named for bug
+   fixes.
