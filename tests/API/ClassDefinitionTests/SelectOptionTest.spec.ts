@@ -3,7 +3,9 @@ import { AuthHelper } from '../../utils/auth';
 
 let authenticatedRequest: APIRequestContext;
 const timestamp = Date.now();
-const testSelectOptionId = `TestSO_${timestamp}`;
+// Select option ids are validated against /^[A-Z][a-zA-Z0-9]+\z/, so the id has to stay
+// strictly alphanumeric — an underscore makes the create endpoint answer 422.
+const testSelectOptionId = `TestSO${timestamp}`;
 let createdSelectOptionId: string;
 
 test.beforeAll(async ({ playwright }) => {
