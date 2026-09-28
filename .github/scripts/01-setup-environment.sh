@@ -70,13 +70,22 @@ fi
 PROJECT_PARENT="$(dirname "$PROJECT_PATH")"
 PROJECT_NAME="$(basename "$PROJECT_PATH")"
 
-docker run \
+if ! docker run \
     -u "$(id -u):$(id -g)" --rm \
     -v "${PROJECT_PARENT}:/var/www/html" \
     -e COMPOSER_HOME=/tmp/composer \
     "${PHP_IMAGE}" \
     composer create-project "pimcore/skeleton:${SKELETON_CONSTRAINT}" "$PROJECT_NAME" \
         --no-scripts --no-interaction
+then
+    if [[ "$SKELETON_CONSTRAINT" == ^* ]]; then
+        echo ""
+        echo "HINT: '${PLATFORM_VERSION}' became the stable constraint '${SKELETON_CONSTRAINT}',"
+        echo "      which only resolves once the line is tagged. Pass '${PLATFORM_VERSION}.x'"
+        echo "      to install the release branch (${PLATFORM_VERSION}.x-dev) instead."
+    fi
+    exit 1
+fi
 
 # ─── Copy config files ────────────────────────────────────────────────────────
 echo ">>> Copying configuration files..."

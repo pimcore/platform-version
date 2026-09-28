@@ -92,8 +92,8 @@ each script:
   *does* resolve — to `2026.x-dev`, which normalizes to `2026.9999999.9999999`
   and outranks `2026.3.x-dev`. That is a green run against the wrong line.
 
-So the scheduled `{ref: 2026.3, platform: 2026.3}` leg is only added once the tag
-exists; until then the release branch is covered by the `2026.3.x` leg. Unlike
+So `2026.3` is neither a schedule leg nor a selectable `platform_version` until the
+tag exists; until then the release branch is covered by the `2026.3.x` leg. Unlike
 `2026.x`, that leg does exercise the release branch's pinned `conflict` bounds
 (`<2026.3 || >=2026.4`), which is what will actually ship.
 
@@ -106,6 +106,7 @@ When releasing a new platform version (e.g. `2026.3`), update the following:
    appended:
    - `inputs.branch.options` — replace the previous stable entry (e.g. `'2026.2'`)
      with the new one (`'2026.3'`); `'2026.x'` stays
+   - `inputs.platform_version.options` — add the now-tagged `'2026.3'`
    - `inputs.platform_version.description` — update the examples
    - `strategy.matrix.include` — do this step **at tagging time, not before**
      (see the section above). The three scheduled legs are

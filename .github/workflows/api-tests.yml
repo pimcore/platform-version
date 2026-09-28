@@ -6,16 +6,21 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to test'
+        description: 'Branch to check out (test code)'
         default: '2026.x'
         type: choice
         options:
           - '2026.3'
           - '2026.x'
       platform_version:
-        description: 'Platform version (2026.3.x until v2026.3.0 is tagged, then 2026.3; or 2026.x)'
+        description: 'Platform version to install'
         default: '2026.x'
-        type: string
+        type: choice
+        # '2026.3' is added here once v2026.3.0 is tagged; `^2026.3` cannot
+        # resolve before that, so it must not be selectable.
+        options:
+          - '2026.3.x'
+          - '2026.x'
 
 env:
   PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
