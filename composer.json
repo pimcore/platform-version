@@ -27,6 +27,7 @@
     "pimcore/personalization-bundle": "<2026.4",
     "pimcore/pimcore": "<2026.4",
     "pimcore/portal-engine": "<2026.4",
+    "pimcore/portal-ui-kit": "<2026.4",
     "pimcore/quill-bundle": "<2026.4",
     "pimcore/static-resolver-bundle": "<2026.4",
     "pimcore/statistics-explorer": "<2026.4",
@@ -40,4 +41,3 @@
     "pimcore/workflow-designer": "<2026.4"
   }
 }
-

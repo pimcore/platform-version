@@ -6,13 +6,13 @@
 #   ./01-setup-environment.sh <TOKEN> <PLATFORM_VERSION> [--ci]
 #
 #   TOKEN            Enterprise packagist token
-#   PLATFORM_VERSION e.g. 2026.1 (stable) or 2026.x (dev branch)
+#   PLATFORM_VERSION e.g. 2026.3.x (release branch) or 2026.x (dev branch)
 #   --ci             CI mode: use github-actions repo URL
 #
 set -euo pipefail
 
 TOKEN="${1:-}"
-PLATFORM_VERSION="${2:-2026.1}"
+PLATFORM_VERSION="${2:-2026.3.x}"
 CI_MODE=false
 for arg in "$@"; do [[ "$arg" == "--ci" ]] && CI_MODE=true; done
 
@@ -70,13 +70,22 @@ fi
 PROJECT_PARENT="$(dirname "$PROJECT_PATH")"
 PROJECT_NAME="$(basename "$PROJECT_PATH")"
 
-docker run \
+if ! docker run \
     -u "$(id -u):$(id -g)" --rm \
     -v "${PROJECT_PARENT}:/var/www/html" \
     -e COMPOSER_HOME=/tmp/composer \
     "${PHP_IMAGE}" \
     composer create-project "pimcore/skeleton:${SKELETON_CONSTRAINT}" "$PROJECT_NAME" \
         --no-scripts --no-interaction
+then
+    if [[ "$SKELETON_CONSTRAINT" == ^* ]]; then
+        echo ""
+        echo "HINT: '${PLATFORM_VERSION}' became the stable constraint '${SKELETON_CONSTRAINT}',"
+        echo "      which only resolves once the line is tagged. Pass '${PLATFORM_VERSION}.x'"
+        echo "      to install the release branch (${PLATFORM_VERSION}.x-dev) instead."
+    fi
+    exit 1
+fi
 
 # ─── Copy config files ────────────────────────────────────────────────────────
 echo ">>> Copying configuration files..."
