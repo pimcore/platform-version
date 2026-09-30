@@ -64,7 +64,7 @@ services:
         image: gotenberg/gotenberg:8
 
     mercure:
-        image: dunglas/mercure
+        image: dunglas/mercure:v0.24
         restart: unless-stopped
         environment:
             SERVER_NAME: ':80'
