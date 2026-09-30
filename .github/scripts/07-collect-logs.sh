@@ -50,6 +50,15 @@ for secret_var in PIMCORE_PRODUCT_KEY PIMCORE_ENCRYPTION_SECRET PIMCORE_INSTANCE
     [[ -z "$secret" ]] && continue
     SECRET="$secret" find "$LOGS_DIR" -type f -exec \
         perl -pi -e 's/\Q$ENV{SECRET}\E/[REDACTED]/g' {} +
+    # perl -i only warns and still exits 0 when it cannot open a file, so verify the result
+    # instead: grep exits 1 only if every file was read and none still holds the secret.
+    grep_status=0
+    grep -rqF -- "$secret" "$LOGS_DIR" || grep_status=$?
+    if [[ "$grep_status" -ne 1 ]]; then
+        echo ">>> ${secret_var} could not be redacted from every file, refusing to keep the logs." >&2
+        rm -rf "$LOGS_DIR"
+        exit 1
+    fi
 done
 
 echo ">>> Log collection complete."
