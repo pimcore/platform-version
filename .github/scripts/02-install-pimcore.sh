@@ -164,6 +164,12 @@ docker compose exec -T php bin/console generic-data-index:update:index -r 2>/dev
 echo "    [sudo] Setting ownership to match container user (DOCKER_UID:DOCKER_GID)"
 sudo chown -R "${DOCKER_UID}:${DOCKER_GID}" .
 
+# The supervisord container was started in step 1, before Pimcore was installed. Its long-running
+# messenger:consume worker would otherwise keep whatever state it booted with (no schema, stale
+# container cache), so restart it now that installation, cache:clear and chown are done.
+echo ">>> Restarting supervisord so the messenger worker boots against the installed app..."
+docker compose restart supervisord
+
 echo ""
 echo ">>> Installation complete."
 echo "    Pimcore UI:  http://localhost:${NGINX_PORT}/pimcore-studio"
