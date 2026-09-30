@@ -64,7 +64,11 @@ services:
         image: gotenberg/gotenberg:8
 
     mercure:
-        image: dunglas/mercure
+        # Pinned to the 0.x protocol: Mercure 1.0 (2026-09-16) only accepts OAuth 2.0 access tokens
+        # (typ at+jwt, iss, aud, authorization_details) and rejects the legacy `mercure`-claim JWT
+        # Pimcore publishes with ("invalid JWT: untrusted issuer"), which leaves every
+        # execution-engine job stuck in "running".
+        image: dunglas/mercure:v0.24
         restart: unless-stopped
         environment:
             SERVER_NAME: ':80'
