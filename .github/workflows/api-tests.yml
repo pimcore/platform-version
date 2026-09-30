@@ -111,6 +111,22 @@ jobs:
           path: tests/test-results/
           retention-days: 30
 
+      - name: Collect container logs
+        id: collect-logs
+        if: failure()
+        env:
+          COMPOSER_TOKEN: ${{ secrets.COMPOSER_PIMCORE_REPO_PACKAGIST_TOKEN }}
+        run: bash .github/scripts/07-collect-logs.sh
+
+      - name: Upload container logs
+        # The artifact is public: only upload once the collector has finished redacting.
+        if: failure() && steps.collect-logs.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: container-logs-${{ matrix.platform }}
+          path: container-logs/
+          retention-days: 30
+
       - name: Shutdown
         if: always()
         run: bash .github/scripts/04-shutdown.sh
