@@ -18,6 +18,3 @@ Thumbs.db
 /tests/playwright-report
 /tests/test-results
 /tests/.env
-
-# API test log dumps (.github/scripts/07-collect-logs.sh)
-/container-logs/
