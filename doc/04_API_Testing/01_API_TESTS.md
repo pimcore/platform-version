@@ -68,9 +68,8 @@ Admin credentials: `admin` / `admin`
 ## Reset / shutdown
 
 ```bash
-.github/scripts/05-reset.sh         # fast DB reset, keeps containers
-.github/scripts/06-teardown.sh      # full shutdown
-.github/scripts/07-collect-logs.sh  # dump container logs + var/log to container-logs/
+.github/scripts/05-reset.sh      # fast DB reset, keeps containers
+.github/scripts/06-teardown.sh   # full shutdown
 ```
 
 ## Testing a Platform Version Before Its Release
