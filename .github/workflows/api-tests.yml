@@ -12,6 +12,7 @@ on:
         options:
           - '2026.3'
           - '2026.x'
+          - 'validate/api-tests-supervisord'
       platform_version:
         description: 'Platform version to install'
         default: '2026.x'
