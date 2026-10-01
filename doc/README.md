@@ -41,6 +41,7 @@ The versioning schema follows semantic versioning and is Major.Minor (e.g. 2023.
   - Bugfix versions can be updated implicitly within a Platform Minor Version via a `composer update`.
   - For example: within `2023.1` it can install `pimcore/pimcore:11.0.1` and `pimcore/pimcore:11.0.2` as soon as it is 
     released, but not `pimcore/pimcore:11.1.0`. 
+  - Bugfix Versions can contain gaps in the bundles version history (see https://github.com/orgs/pimcore/discussions/19510 for more details).
 
 
 ## Further Reads
