@@ -70,7 +70,7 @@ docker compose exec -T -- php composer config prefer-stable true
 
 # ─── Require enterprise bundles ───────────────────────────────────────────────
 echo ">>> Installing enterprise bundles via composer..."
-docker compose exec -T -- php composer require --no-interaction -W \
+docker compose exec -T -- php composer require -W --no-interaction \
     pimcore/platform-version:${PLATFORM_CONSTRAINT} \
     pimcore/pimcore:${PLATFORM_CONSTRAINT} \
     pimcore/quill-bundle \
