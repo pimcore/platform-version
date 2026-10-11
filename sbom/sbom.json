@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:8e35c651-928d-4a3f-9895-d4f64c0657d8",
+  "serialNumber": "urn:uuid:13db4547-a5f7-4db3-b292-65d0a920b8ac",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-10T00:06:32Z",
+    "timestamp": "2026-10-11T00:07:17Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 811014a",
+      "version": "2026.x-dev ed22b3f",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20811014a",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ed22b3f",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "811014a330a12c3afae33b4d9a5f4784dbbf8b28"
+          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "811014a330a12c3afae33b4d9a5f4784dbbf8b28"
+          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2538,11 +2538,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "lcobucci/jwt-5.6.0.0",
+      "bom-ref": "lcobucci/jwt-5.6.1.0",
       "author": "Lu\u00EDs Cobucci",
       "group": "lcobucci",
       "name": "jwt",
-      "version": "5.6.0",
+      "version": "5.6.1",
       "description": "A simple library to work with JSON Web Token and JSON Web Signature",
       "licenses": [
         {
@@ -2552,17 +2552,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/lcobucci/jwt@5.6.0",
+      "purl": "pkg:composer/lcobucci/jwt@5.6.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/lcobucci/jwt/zipball/bb3e9f21e4196e8afc41def81ef649c164bca25e",
+          "url": "https://api.github.com/repos/lcobucci/jwt/zipball/482760068e5a55a9045feddb3e2fc3f878cbd577",
           "type": "distribution",
-          "comment": "dist reference: bb3e9f21e4196e8afc41def81ef649c164bca25e"
+          "comment": "dist reference: 482760068e5a55a9045feddb3e2fc3f878cbd577"
         },
         {
           "url": "https://github.com/lcobucci/jwt.git",
           "type": "vcs",
-          "comment": "source reference: bb3e9f21e4196e8afc41def81ef649c164bca25e"
+          "comment": "source reference: 482760068e5a55a9045feddb3e2fc3f878cbd577"
         },
         {
           "url": "https://github.com/lcobucci/jwt/issues",
@@ -2570,7 +2570,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/lcobucci/jwt/tree/5.6.0",
+          "url": "https://github.com/lcobucci/jwt/tree/5.6.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2578,11 +2578,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "bb3e9f21e4196e8afc41def81ef649c164bca25e"
+          "value": "482760068e5a55a9045feddb3e2fc3f878cbd577"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "bb3e9f21e4196e8afc41def81ef649c164bca25e"
+          "value": "482760068e5a55a9045feddb3e2fc3f878cbd577"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2921,11 +2921,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "league/html-to-markdown-5.1.3.0",
+      "bom-ref": "league/html-to-markdown-5.1.4.0",
       "author": "Colin O\u0027Dell, Nick Cernis",
       "group": "league",
       "name": "html-to-markdown",
-      "version": "5.1.3",
+      "version": "5.1.4",
       "description": "An HTML-to-markdown conversion helper for PHP",
       "licenses": [
         {
@@ -2935,17 +2935,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/league/html-to-markdown@5.1.3",
+      "purl": "pkg:composer/league/html-to-markdown@5.1.4",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/5411b9650dd468be52267a6f4a2a26c31d2581be",
+          "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0be46a17d8e42ff5522d935b1b182a283bf7378d",
           "type": "distribution",
-          "comment": "dist reference: 5411b9650dd468be52267a6f4a2a26c31d2581be"
+          "comment": "dist reference: 0be46a17d8e42ff5522d935b1b182a283bf7378d"
         },
         {
           "url": "https://github.com/thephpleague/html-to-markdown.git",
           "type": "vcs",
-          "comment": "source reference: 5411b9650dd468be52267a6f4a2a26c31d2581be"
+          "comment": "source reference: 0be46a17d8e42ff5522d935b1b182a283bf7378d"
         },
         {
           "url": "https://github.com/thephpleague/html-to-markdown",
@@ -2958,7 +2958,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/thephpleague/html-to-markdown/tree/5.1.3",
+          "url": "https://github.com/thephpleague/html-to-markdown/tree/5.1.4",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2966,11 +2966,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "5411b9650dd468be52267a6f4a2a26c31d2581be"
+          "value": "0be46a17d8e42ff5522d935b1b182a283bf7378d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "5411b9650dd468be52267a6f4a2a26c31d2581be"
+          "value": "0be46a17d8e42ff5522d935b1b182a283bf7378d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14881,7 +14881,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 811014a",
+      "version": "2026.x-dev ed22b3f",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14891,15 +14891,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20811014a",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ed22b3f",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "811014a330a12c3afae33b4d9a5f4784dbbf8b28"
+          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "811014a330a12c3afae33b4d9a5f4784dbbf8b28"
+          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562628,7 +562628,7 @@
       "ref": "laminas/laminas-code-4.17.0.0"
     },
     {
-      "ref": "lcobucci/jwt-5.6.0.0",
+      "ref": "lcobucci/jwt-5.6.1.0",
       "dependsOn": [
         "psr/clock-1.0.0.0"
       ]
@@ -562675,7 +562675,7 @@
       ]
     },
     {
-      "ref": "league/html-to-markdown-5.1.3.0"
+      "ref": "league/html-to-markdown-5.1.4.0"
     },
     {
       "ref": "league/mime-type-detection-1.17.0.0"
@@ -562691,7 +562691,7 @@
       "ref": "league/oauth2-server-9.4.1.0",
       "dependsOn": [
         "defuse/php-encryption-2.4.0.0",
-        "lcobucci/jwt-5.6.0.0",
+        "lcobucci/jwt-5.6.1.0",
         "league/event-3.0.3.0",
         "league/uri-7.8.1.0",
         "psr/clock-1.0.0.0",
@@ -563114,7 +563114,7 @@
       "ref": "pimcore/direct-edit-2026.9999999.9999999.9999999-dev",
       "dependsOn": [
         "doctrine/orm-3.7.5.0",
-        "lcobucci/jwt-5.6.0.0",
+        "lcobucci/jwt-5.6.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
@@ -563231,7 +563231,7 @@
       "dependsOn": [
         "colinmollenhour/credis-1.17.1.0",
         "geoip2/geoip2-3.4.0.0",
-        "lcobucci/jwt-5.6.0.0",
+        "lcobucci/jwt-5.6.1.0",
         "matomo/device-detector-6.5.2.0",
         "mjaschen/phpgeo-6.0.4.0",
         "pimcore/generic-data-index-bundle-2026.9999999.9999999.9999999-dev",
@@ -563262,7 +563262,7 @@
         "league/csv-9.28.0.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-bundle-3.7.1.0",
-        "league/html-to-markdown-5.1.3.0",
+        "league/html-to-markdown-5.1.4.0",
         "matthiasmullie/minify-1.3.75.0",
         "monolog/monolog-3.12.1.0",
         "mpratt/embera-2.0.42.0",
@@ -563405,7 +563405,7 @@
     {
       "ref": "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
       "dependsOn": [
-        "lcobucci/jwt-5.6.0.0",
+        "lcobucci/jwt-5.6.1.0",
         "league/csv-9.28.0.0",
         "league/oauth2-server-9.4.1.0",
         "nesbot/carbon-3.14.2.0",
@@ -563876,7 +563876,7 @@
     {
       "ref": "symfony/mercure-bundle-0.3.9.0",
       "dependsOn": [
-        "lcobucci/jwt-5.6.0.0",
+        "lcobucci/jwt-5.6.1.0",
         "symfony/config-7.4.17.0",
         "symfony/dependency-injection-7.4.20.0",
         "symfony/http-kernel-7.4.20.0",
