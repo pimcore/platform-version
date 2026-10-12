@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:13db4547-a5f7-4db3-b292-65d0a920b8ac",
+  "serialNumber": "urn:uuid:6593e228-c729-4bf5-9079-b630ec7f2bf2",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-11T00:07:17Z",
+    "timestamp": "2026-10-12T00:07:04Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev ed22b3f",
+      "version": "2026.x-dev b5573b7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ed22b3f",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20b5573b7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
+          "value": "b5573b7cbb97b3c99ea352e822eb636aa671b787"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
+          "value": "b5573b7cbb97b3c99ea352e822eb636aa671b787"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14819,11 +14819,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "zircote/swagger-php-6.12.0.0",
+      "bom-ref": "zircote/swagger-php-6.13.0.0",
       "author": "Robert Allen, Bob Fanger, Martin Rademacher",
       "group": "zircote",
       "name": "swagger-php",
-      "version": "6.12.0",
+      "version": "6.13.0",
       "description": "Generate interactive documentation for your RESTful API using PHP attributes (preferred) or PHPDoc annotations",
       "licenses": [
         {
@@ -14833,17 +14833,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/zircote/swagger-php@6.12.0",
+      "purl": "pkg:composer/zircote/swagger-php@6.13.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/f7c0fc65cb9cdb84bdf0e4e21460d348888b41a2",
+          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/6cbca4b611f03ae9ee58a5f2d341a0bc685c4903",
           "type": "distribution",
-          "comment": "dist reference: f7c0fc65cb9cdb84bdf0e4e21460d348888b41a2"
+          "comment": "dist reference: 6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
         },
         {
           "url": "https://github.com/zircote/swagger-php.git",
           "type": "vcs",
-          "comment": "source reference: f7c0fc65cb9cdb84bdf0e4e21460d348888b41a2"
+          "comment": "source reference: 6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
         },
         {
           "url": "https://github.com/zircote/swagger-php",
@@ -14856,7 +14856,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/zircote/swagger-php/tree/6.12.0",
+          "url": "https://github.com/zircote/swagger-php/tree/6.13.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14864,11 +14864,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "f7c0fc65cb9cdb84bdf0e4e21460d348888b41a2"
+          "value": "6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "f7c0fc65cb9cdb84bdf0e4e21460d348888b41a2"
+          "value": "6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14881,7 +14881,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev ed22b3f",
+      "version": "2026.x-dev b5573b7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14891,15 +14891,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ed22b3f",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20b5573b7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
+          "value": "b5573b7cbb97b3c99ea352e822eb636aa671b787"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ed22b3f7f7aae98c500d70b048cf870dedc027e7"
+          "value": "b5573b7cbb97b3c99ea352e822eb636aa671b787"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562957,7 +562957,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "zircote/swagger-php-6.12.0.0"
+        "zircote/swagger-php-6.13.0.0"
       ]
     },
     {
@@ -563067,7 +563067,7 @@
         "symfony/psr-http-message-bridge-7.4.8.0",
         "symfony/rate-limiter-7.4.18.0",
         "webmozarts/console-parallelization-2.3.0.0",
-        "zircote/swagger-php-6.12.0.0"
+        "zircote/swagger-php-6.13.0.0"
       ]
     },
     {
@@ -563423,7 +563423,7 @@
         "symfony/psr-http-message-bridge-7.4.8.0",
         "twig/intl-extra-3.30.0.0",
         "twig/string-extra-3.24.0.0",
-        "zircote/swagger-php-6.12.0.0"
+        "zircote/swagger-php-6.13.0.0"
       ]
     },
     {
@@ -564238,7 +564238,7 @@
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
     },
     {
-      "ref": "zircote/swagger-php-6.12.0.0",
+      "ref": "zircote/swagger-php-6.13.0.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
         "phpstan/phpdoc-parser-2.3.6.0",
