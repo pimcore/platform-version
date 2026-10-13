@@ -38,6 +38,11 @@ docker compose up -d
 The demo enterprise `docker-compose.yaml` already includes all required services
 (MariaDB, Redis, OpenSearch, Mercure, Gotenberg, Supervisord for messenger workers).
 
+Note that the Redis-compatible service (`valkey`, already referenced by `REDIS_URL` in `.env`) is
+started but not used by Pimcore's object cache by default; enable it as described in
+[Enabling the Redis cache](./00_Skeleton_Installation.md#enabling-the-redis-cache), reusing the
+existing `REDIS_URL`.
+
 ## Step 3: Run the Installer
 
 Run the Pimcore installer with the demo enterprise profile:
