@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a3456c9d-5f2d-4fa0-b22f-5fa53de58dce",
+  "serialNumber": "urn:uuid:b8799117-5d29-46a6-baae-07f16cfc977d",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-12T00:07:05Z",
+    "timestamp": "2026-10-13T00:06:46Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev faeb1cf",
+      "version": "2026.3.x-dev 352c6e8",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20faeb1cf",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20352c6e8",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "faeb1cf99c350ffab202561ac293ac1e5a1bb736"
+          "value": "352c6e8ae60543487aae475cff2de0f18e36af53"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "faeb1cf99c350ffab202561ac293ac1e5a1bb736"
+          "value": "352c6e8ae60543487aae475cff2de0f18e36af53"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14648,10 +14648,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "webonyx/graphql-php-15.38.0.0",
+      "bom-ref": "webonyx/graphql-php-15.38.1.0",
       "group": "webonyx",
       "name": "graphql-php",
-      "version": "v15.38.0",
+      "version": "v15.38.1",
       "description": "A PHP port of GraphQL reference implementation",
       "licenses": [
         {
@@ -14661,17 +14661,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/webonyx/graphql-php@v15.38.0",
+      "purl": "pkg:composer/webonyx/graphql-php@v15.38.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/47e6ba3f27d6e0e9da4c6ae4b6c8875921409e10",
+          "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/32edc67af119b709d020f93447729afd503fe56a",
           "type": "distribution",
-          "comment": "dist reference: 47e6ba3f27d6e0e9da4c6ae4b6c8875921409e10"
+          "comment": "dist reference: 32edc67af119b709d020f93447729afd503fe56a"
         },
         {
           "url": "https://github.com/webonyx/graphql-php.git",
           "type": "vcs",
-          "comment": "source reference: 47e6ba3f27d6e0e9da4c6ae4b6c8875921409e10"
+          "comment": "source reference: 32edc67af119b709d020f93447729afd503fe56a"
         },
         {
           "url": "https://github.com/webonyx/graphql-php",
@@ -14684,7 +14684,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/webonyx/graphql-php/tree/v15.38.0",
+          "url": "https://github.com/webonyx/graphql-php/tree/v15.38.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14692,11 +14692,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "47e6ba3f27d6e0e9da4c6ae4b6c8875921409e10"
+          "value": "32edc67af119b709d020f93447729afd503fe56a"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "47e6ba3f27d6e0e9da4c6ae4b6c8875921409e10"
+          "value": "32edc67af119b709d020f93447729afd503fe56a"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14822,7 +14822,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev faeb1cf",
+      "version": "2026.3.x-dev 352c6e8",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14832,15 +14832,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20faeb1cf",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20352c6e8",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "faeb1cf99c350ffab202561ac293ac1e5a1bb736"
+          "value": "352c6e8ae60543487aae475cff2de0f18e36af53"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "faeb1cf99c350ffab202561ac293ac1e5a1bb736"
+          "value": "352c6e8ae60543487aae475cff2de0f18e36af53"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562961,7 +562961,7 @@
         "pimcore/pimcore-2026.3.1.0",
         "pimcore/studio-backend-bundle-2026.3.1.0",
         "pimcore/studio-ui-bundle-2026.3.1.0",
-        "webonyx/graphql-php-15.38.0.0"
+        "webonyx/graphql-php-15.38.1.0"
       ]
     },
     {
@@ -564166,7 +564166,7 @@
       ]
     },
     {
-      "ref": "webonyx/graphql-php-15.38.0.0"
+      "ref": "webonyx/graphql-php-15.38.1.0"
     },
     {
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
