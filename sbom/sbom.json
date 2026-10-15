@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:287b5ea5-2efa-4a05-90e2-c34c62f31d38",
+  "serialNumber": "urn:uuid:4af85475-a087-466c-b72b-a0bd3358bb9f",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-14T00:06:36Z",
+    "timestamp": "2026-10-15T00:06:50Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev c7bea37",
+      "version": "2026.x-dev 3d1d543",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20c7bea37",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%203d1d543",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c7bea37046d587064d8c309355392f6015ffdb46"
+          "value": "3d1d54320a4112a15bf060306dc6690c4ec0969e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c7bea37046d587064d8c309355392f6015ffdb46"
+          "value": "3d1d54320a4112a15bf060306dc6690c4ec0969e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6151,7 +6151,7 @@
       "bom-ref": "pimcore/backend-power-tools-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "backend-power-tools-bundle",
-      "version": "2026.x-dev 40b4e85",
+      "version": "2026.x-dev a59d73c",
       "description": "Pimcore Backend Power Tools",
       "licenses": [
         {
@@ -6161,17 +6161,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%2040b4e85",
+      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%20a59d73c",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/r40b4e85c6e3eb15017e759fb4b5ac94e08416672.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/ra59d73cf481e0e6b78abcea7736236d624a69577.zip",
           "type": "distribution",
-          "comment": "dist reference: 40b4e85c6e3eb15017e759fb4b5ac94e08416672"
+          "comment": "dist reference: a59d73cf481e0e6b78abcea7736236d624a69577"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/40b4e85c6e3eb15017e759fb4b5ac94e08416672",
+          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/a59d73cf481e0e6b78abcea7736236d624a69577",
           "type": "distribution",
-          "comment": "dist reference: 40b4e85c6e3eb15017e759fb4b5ac94e08416672"
+          "comment": "dist reference: a59d73cf481e0e6b78abcea7736236d624a69577"
         },
         {
           "url": "https://github.com/pimcore/backend-power-tools-bundle/tree/2026.x",
@@ -6187,11 +6187,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "40b4e85c6e3eb15017e759fb4b5ac94e08416672"
+          "value": "a59d73cf481e0e6b78abcea7736236d624a69577"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "40b4e85c6e3eb15017e759fb4b5ac94e08416672"
+          "value": "a59d73cf481e0e6b78abcea7736236d624a69577"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6204,7 +6204,7 @@
       "bom-ref": "pimcore/copilot-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "copilot-bundle",
-      "version": "2026.x-dev 8f6fa5d",
+      "version": "2026.x-dev 4709768",
       "description": "Pimcore Copilot Bundle",
       "licenses": [
         {
@@ -6214,17 +6214,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/copilot-bundle@2026.x-dev%208f6fa5d",
+      "purl": "pkg:composer/pimcore/copilot-bundle@2026.x-dev%204709768",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/copilot-bundle/2026.9999999.9999999.9999999-dev/r8f6fa5dccbb9903037f6e66706c426d16292e2b1.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/copilot-bundle/2026.9999999.9999999.9999999-dev/r47097689fcc6d93cba083c215406c453b60538ce.zip",
           "type": "distribution",
-          "comment": "dist reference: 8f6fa5dccbb9903037f6e66706c426d16292e2b1"
+          "comment": "dist reference: 47097689fcc6d93cba083c215406c453b60538ce"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/copilot-bundle/zipball/8f6fa5dccbb9903037f6e66706c426d16292e2b1",
+          "url": "https://api.github.com/repos/pimcore/copilot-bundle/zipball/47097689fcc6d93cba083c215406c453b60538ce",
           "type": "distribution",
-          "comment": "dist reference: 8f6fa5dccbb9903037f6e66706c426d16292e2b1"
+          "comment": "dist reference: 47097689fcc6d93cba083c215406c453b60538ce"
         },
         {
           "url": "https://github.com/pimcore/copilot-bundle/tree/2026.x",
@@ -6240,11 +6240,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "8f6fa5dccbb9903037f6e66706c426d16292e2b1"
+          "value": "47097689fcc6d93cba083c215406c453b60538ce"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "8f6fa5dccbb9903037f6e66706c426d16292e2b1"
+          "value": "47097689fcc6d93cba083c215406c453b60538ce"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6571,7 +6571,7 @@
       "bom-ref": "pimcore/data-importer-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-importer",
-      "version": "2026.x-dev 91c828d",
+      "version": "2026.x-dev 5bead44",
       "description": "Adds a comprehensive import functionality to Pimcore Datahub",
       "licenses": [
         {
@@ -6581,17 +6581,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%2091c828d",
+      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%205bead44",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/91c828d97f3758f1ec6ec678484c0f9f6b77b72b",
+          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/5bead44bc64634c3cbced5abb24afef1830c3b47",
           "type": "distribution",
-          "comment": "dist reference: 91c828d97f3758f1ec6ec678484c0f9f6b77b72b"
+          "comment": "dist reference: 5bead44bc64634c3cbced5abb24afef1830c3b47"
         },
         {
           "url": "https://github.com/pimcore/data-importer.git",
           "type": "vcs",
-          "comment": "source reference: 91c828d97f3758f1ec6ec678484c0f9f6b77b72b"
+          "comment": "source reference: 5bead44bc64634c3cbced5abb24afef1830c3b47"
         },
         {
           "url": "https://github.com/pimcore/data-importer/issues",
@@ -6607,11 +6607,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "91c828d97f3758f1ec6ec678484c0f9f6b77b72b"
+          "value": "5bead44bc64634c3cbced5abb24afef1830c3b47"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "91c828d97f3758f1ec6ec678484c0f9f6b77b72b"
+          "value": "5bead44bc64634c3cbced5abb24afef1830c3b47"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6729,7 +6729,7 @@
       "bom-ref": "pimcore/ecommerce-framework-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "ecommerce-framework-bundle",
-      "version": "2026.x-dev a229c31",
+      "version": "2026.x-dev 34507f7",
       "description": "Pimcore Ecommerce Bundle",
       "licenses": [
         {
@@ -6739,17 +6739,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/ecommerce-framework-bundle@2026.x-dev%20a229c31",
+      "purl": "pkg:composer/pimcore/ecommerce-framework-bundle@2026.x-dev%2034507f7",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/ecommerce-framework-bundle/2026.9999999.9999999.9999999-dev/ra229c3137358c9265e5cf3cd7f93ab2a87030511.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/ecommerce-framework-bundle/2026.9999999.9999999.9999999-dev/r34507f70bc708e6b668c87daffc370e45a57563c.zip",
           "type": "distribution",
-          "comment": "dist reference: a229c3137358c9265e5cf3cd7f93ab2a87030511"
+          "comment": "dist reference: 34507f70bc708e6b668c87daffc370e45a57563c"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-ecommerce-framework-bundle/zipball/a229c3137358c9265e5cf3cd7f93ab2a87030511",
+          "url": "https://api.github.com/repos/pimcore/ee-ecommerce-framework-bundle/zipball/34507f70bc708e6b668c87daffc370e45a57563c",
           "type": "distribution",
-          "comment": "dist reference: a229c3137358c9265e5cf3cd7f93ab2a87030511"
+          "comment": "dist reference: 34507f70bc708e6b668c87daffc370e45a57563c"
         },
         {
           "url": "https://github.com/pimcore/ee-ecommerce-framework-bundle/tree/2026.x",
@@ -6765,11 +6765,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a229c3137358c9265e5cf3cd7f93ab2a87030511"
+          "value": "34507f70bc708e6b668c87daffc370e45a57563c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a229c3137358c9265e5cf3cd7f93ab2a87030511"
+          "value": "34507f70bc708e6b668c87daffc370e45a57563c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7308,7 +7308,7 @@
       "author": "pimcore Team",
       "group": "pimcore",
       "name": "pimcore",
-      "version": "2026.x-dev 8465288",
+      "version": "2026.x-dev 6185805",
       "description": "Content \u0026 Product Management Framework (CMS/PIM/E-Commerce)",
       "licenses": [
         {
@@ -7318,17 +7318,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%208465288",
+      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%206185805",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/r8465288bb36c21c39bfe3a3bfed68a0724e4f301.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/r618580558236c6d2be979ddd1c9c4757188dcac6.zip",
           "type": "distribution",
-          "comment": "dist reference: 8465288bb36c21c39bfe3a3bfed68a0724e4f301"
+          "comment": "dist reference: 618580558236c6d2be979ddd1c9c4757188dcac6"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/8465288bb36c21c39bfe3a3bfed68a0724e4f301",
+          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/618580558236c6d2be979ddd1c9c4757188dcac6",
           "type": "distribution",
-          "comment": "dist reference: 8465288bb36c21c39bfe3a3bfed68a0724e4f301"
+          "comment": "dist reference: 618580558236c6d2be979ddd1c9c4757188dcac6"
         },
         {
           "url": "https://www.pimcore.com/",
@@ -7364,11 +7364,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "8465288bb36c21c39bfe3a3bfed68a0724e4f301"
+          "value": "618580558236c6d2be979ddd1c9c4757188dcac6"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "8465288bb36c21c39bfe3a3bfed68a0724e4f301"
+          "value": "618580558236c6d2be979ddd1c9c4757188dcac6"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7381,7 +7381,7 @@
       "bom-ref": "pimcore/portal-engine-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "portal-engine",
-      "version": "2026.x-dev b750834",
+      "version": "2026.x-dev 040600f",
       "description": "Pimcore Portal Engine",
       "licenses": [
         {
@@ -7391,17 +7391,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20b750834",
+      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20040600f",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/rb7508349e8fe77c181685d656372cdc3f7fa657e.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/r040600f721501bf3de833715f618688bbb6c0546.zip",
           "type": "distribution",
-          "comment": "dist reference: b7508349e8fe77c181685d656372cdc3f7fa657e"
+          "comment": "dist reference: 040600f721501bf3de833715f618688bbb6c0546"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/b7508349e8fe77c181685d656372cdc3f7fa657e",
+          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/040600f721501bf3de833715f618688bbb6c0546",
           "type": "distribution",
-          "comment": "dist reference: b7508349e8fe77c181685d656372cdc3f7fa657e"
+          "comment": "dist reference: 040600f721501bf3de833715f618688bbb6c0546"
         },
         {
           "url": "https://github.com/pimcore/portal-engine/tree/2026.x",
@@ -7417,11 +7417,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b7508349e8fe77c181685d656372cdc3f7fa657e"
+          "value": "040600f721501bf3de833715f618688bbb6c0546"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b7508349e8fe77c181685d656372cdc3f7fa657e"
+          "value": "040600f721501bf3de833715f618688bbb6c0546"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7434,7 +7434,7 @@
       "bom-ref": "pimcore/portal-ui-kit-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "portal-ui-kit",
-      "version": "2026.x-dev d96ee39",
+      "version": "2026.x-dev 3290cdc",
       "description": "Portal UI Kit \u2014 the reusable Studio-stack host framework for building standalone Portal Engine (and other) frontends. Ships the @pimcore/portal-ui-kit facade package under frontend/. This package contains no PHP: it exists purely to distribute that frontend to consumers, the same way pimcore/studio-ui-bundle distributes its own assets/ tree.",
       "licenses": [
         {
@@ -7444,17 +7444,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/portal-ui-kit@2026.x-dev%20d96ee39",
+      "purl": "pkg:composer/pimcore/portal-ui-kit@2026.x-dev%203290cdc",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-ui-kit/2026.9999999.9999999.9999999-dev/rd96ee39da4284f4b27da04277a11844c95b5b1a2.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-ui-kit/2026.9999999.9999999.9999999-dev/r3290cdc8d7c557805d2faf5451e7a388e3595ee1.zip",
           "type": "distribution",
-          "comment": "dist reference: d96ee39da4284f4b27da04277a11844c95b5b1a2"
+          "comment": "dist reference: 3290cdc8d7c557805d2faf5451e7a388e3595ee1"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/portal-ui-kit/zipball/d96ee39da4284f4b27da04277a11844c95b5b1a2",
+          "url": "https://api.github.com/repos/pimcore/portal-ui-kit/zipball/3290cdc8d7c557805d2faf5451e7a388e3595ee1",
           "type": "distribution",
-          "comment": "dist reference: d96ee39da4284f4b27da04277a11844c95b5b1a2"
+          "comment": "dist reference: 3290cdc8d7c557805d2faf5451e7a388e3595ee1"
         },
         {
           "url": "https://github.com/pimcore/portal-ui-kit/tree/2026.x",
@@ -7470,11 +7470,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d96ee39da4284f4b27da04277a11844c95b5b1a2"
+          "value": "3290cdc8d7c557805d2faf5451e7a388e3595ee1"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d96ee39da4284f4b27da04277a11844c95b5b1a2"
+          "value": "3290cdc8d7c557805d2faf5451e7a388e3595ee1"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7698,7 +7698,7 @@
       "bom-ref": "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-backend-bundle",
-      "version": "2026.x-dev c990808",
+      "version": "2026.x-dev 1e9e05f",
       "description": "Pimcore Studio Backend Bundle",
       "licenses": [
         {
@@ -7708,17 +7708,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%20c990808",
+      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%201e9e05f",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c990808c1b5ae60078b5a4af2d5ecee38f64e905",
+          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/1e9e05fde1bf225da116b0ff799971dc4882e095",
           "type": "distribution",
-          "comment": "dist reference: c990808c1b5ae60078b5a4af2d5ecee38f64e905"
+          "comment": "dist reference: 1e9e05fde1bf225da116b0ff799971dc4882e095"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle.git",
           "type": "vcs",
-          "comment": "source reference: c990808c1b5ae60078b5a4af2d5ecee38f64e905"
+          "comment": "source reference: 1e9e05fde1bf225da116b0ff799971dc4882e095"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle/issues",
@@ -7734,11 +7734,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c990808c1b5ae60078b5a4af2d5ecee38f64e905"
+          "value": "1e9e05fde1bf225da116b0ff799971dc4882e095"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c990808c1b5ae60078b5a4af2d5ecee38f64e905"
+          "value": "1e9e05fde1bf225da116b0ff799971dc4882e095"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7804,7 +7804,7 @@
       "bom-ref": "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-ui-bundle",
-      "version": "2026.x-dev fd3096d",
+      "version": "2026.x-dev ed8fa9a",
       "description": "Pimcore Studio Ui Bundle",
       "licenses": [
         {
@@ -7814,17 +7814,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%20fd3096d",
+      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%20ed8fa9a",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/fd3096db6af8edc2923c9ae495c78364c647d29d",
+          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/ed8fa9ad6c86fb7a65512ebf46ca857033a8929d",
           "type": "distribution",
-          "comment": "dist reference: fd3096db6af8edc2923c9ae495c78364c647d29d"
+          "comment": "dist reference: ed8fa9ad6c86fb7a65512ebf46ca857033a8929d"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle.git",
           "type": "vcs",
-          "comment": "source reference: fd3096db6af8edc2923c9ae495c78364c647d29d"
+          "comment": "source reference: ed8fa9ad6c86fb7a65512ebf46ca857033a8929d"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle/issues",
@@ -7840,11 +7840,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "fd3096db6af8edc2923c9ae495c78364c647d29d"
+          "value": "ed8fa9ad6c86fb7a65512ebf46ca857033a8929d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "fd3096db6af8edc2923c9ae495c78364c647d29d"
+          "value": "ed8fa9ad6c86fb7a65512ebf46ca857033a8929d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -8808,11 +8808,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "radebatz/type-info-extras-1.0.9.0",
+      "bom-ref": "radebatz/type-info-extras-1.0.10.0",
       "author": "Martin Rademacher",
       "group": "radebatz",
       "name": "type-info-extras",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "description": "Extras for symfony/type-info",
       "licenses": [
         {
@@ -8822,17 +8822,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/radebatz/type-info-extras@1.0.9",
+      "purl": "pkg:composer/radebatz/type-info-extras@1.0.10",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/2d9f01d60d642f890d9f170c0d8fde1f75ab17fb",
+          "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/1e71149dee7bf45f5cf208eb3c6c74d45a13d395",
           "type": "distribution",
-          "comment": "dist reference: 2d9f01d60d642f890d9f170c0d8fde1f75ab17fb"
+          "comment": "dist reference: 1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
         },
         {
           "url": "https://github.com/DerManoMann/type-info-extras.git",
           "type": "vcs",
-          "comment": "source reference: 2d9f01d60d642f890d9f170c0d8fde1f75ab17fb"
+          "comment": "source reference: 1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
         },
         {
           "url": "http://radebatz.net/mano/",
@@ -8845,7 +8845,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/DerManoMann/type-info-extras/tree/1.0.9",
+          "url": "https://github.com/DerManoMann/type-info-extras/tree/1.0.10",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -8853,11 +8853,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2d9f01d60d642f890d9f170c0d8fde1f75ab17fb"
+          "value": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2d9f01d60d642f890d9f170c0d8fde1f75ab17fb"
+          "value": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9977,11 +9977,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/cache-7.4.20.0",
+      "bom-ref": "symfony/cache-7.4.21.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "cache",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides extended PSR-6, PSR-16 (and tags) implementations",
       "licenses": [
         {
@@ -9991,17 +9991,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/cache@v7.4.20",
+      "purl": "pkg:composer/symfony/cache@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/cache/zipball/e7e604eab58639503495a46f5c194cc69a9c80a8",
+          "url": "https://api.github.com/repos/symfony/cache/zipball/314a079754e9eef4c6ffe2a3b12b0ea7c6c7381a",
           "type": "distribution",
-          "comment": "dist reference: e7e604eab58639503495a46f5c194cc69a9c80a8"
+          "comment": "dist reference: 314a079754e9eef4c6ffe2a3b12b0ea7c6c7381a"
         },
         {
           "url": "https://github.com/symfony/cache.git",
           "type": "vcs",
-          "comment": "source reference: e7e604eab58639503495a46f5c194cc69a9c80a8"
+          "comment": "source reference: 314a079754e9eef4c6ffe2a3b12b0ea7c6c7381a"
         },
         {
           "url": "https://symfony.com",
@@ -10009,7 +10009,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/cache/tree/v7.4.20",
+          "url": "https://github.com/symfony/cache/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10017,11 +10017,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e7e604eab58639503495a46f5c194cc69a9c80a8"
+          "value": "314a079754e9eef4c6ffe2a3b12b0ea7c6c7381a"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e7e604eab58639503495a46f5c194cc69a9c80a8"
+          "value": "314a079754e9eef4c6ffe2a3b12b0ea7c6c7381a"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10031,11 +10031,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/clock-7.4.8.0",
+      "bom-ref": "symfony/clock-7.4.21.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "clock",
-      "version": "v7.4.8",
+      "version": "v7.4.21",
       "description": "Decouples applications from the system clock",
       "licenses": [
         {
@@ -10045,17 +10045,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/clock@v7.4.8",
+      "purl": "pkg:composer/symfony/clock@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/clock/zipball/674fa3b98e21531dd040e613479f5f6fa8f32111",
+          "url": "https://api.github.com/repos/symfony/clock/zipball/07437f612dca89c1894c1db04491002b1e798f03",
           "type": "distribution",
-          "comment": "dist reference: 674fa3b98e21531dd040e613479f5f6fa8f32111"
+          "comment": "dist reference: 07437f612dca89c1894c1db04491002b1e798f03"
         },
         {
           "url": "https://github.com/symfony/clock.git",
           "type": "vcs",
-          "comment": "source reference: 674fa3b98e21531dd040e613479f5f6fa8f32111"
+          "comment": "source reference: 07437f612dca89c1894c1db04491002b1e798f03"
         },
         {
           "url": "https://symfony.com",
@@ -10063,7 +10063,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/clock/tree/v7.4.8",
+          "url": "https://github.com/symfony/clock/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10071,11 +10071,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "674fa3b98e21531dd040e613479f5f6fa8f32111"
+          "value": "07437f612dca89c1894c1db04491002b1e798f03"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "674fa3b98e21531dd040e613479f5f6fa8f32111"
+          "value": "07437f612dca89c1894c1db04491002b1e798f03"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10139,11 +10139,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/console-7.4.20.0",
+      "bom-ref": "symfony/console-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "console",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Eases the creation of beautiful and testable command line interfaces",
       "licenses": [
         {
@@ -10153,17 +10153,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/console@v7.4.20",
+      "purl": "pkg:composer/symfony/console@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/console/zipball/d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d",
+          "url": "https://api.github.com/repos/symfony/console/zipball/21f1bc2296f7ff6043241a8dcbc09559b3732820",
           "type": "distribution",
-          "comment": "dist reference: d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d"
+          "comment": "dist reference: 21f1bc2296f7ff6043241a8dcbc09559b3732820"
         },
         {
           "url": "https://github.com/symfony/console.git",
           "type": "vcs",
-          "comment": "source reference: d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d"
+          "comment": "source reference: 21f1bc2296f7ff6043241a8dcbc09559b3732820"
         },
         {
           "url": "https://symfony.com",
@@ -10171,7 +10171,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/console/tree/v7.4.20",
+          "url": "https://github.com/symfony/console/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10179,11 +10179,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d"
+          "value": "21f1bc2296f7ff6043241a8dcbc09559b3732820"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d"
+          "value": "21f1bc2296f7ff6043241a8dcbc09559b3732820"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10355,11 +10355,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/dependency-injection-7.4.20.0",
+      "bom-ref": "symfony/dependency-injection-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "dependency-injection",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Allows you to standardize and centralize the way objects are constructed in your application",
       "licenses": [
         {
@@ -10369,17 +10369,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/dependency-injection@v7.4.20",
+      "purl": "pkg:composer/symfony/dependency-injection@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/a7faee783a87b55f27460fc571f8c639bf9d93a2",
+          "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/059334a6ef0eedfcabfec52fd0a71576d610a70c",
           "type": "distribution",
-          "comment": "dist reference: a7faee783a87b55f27460fc571f8c639bf9d93a2"
+          "comment": "dist reference: 059334a6ef0eedfcabfec52fd0a71576d610a70c"
         },
         {
           "url": "https://github.com/symfony/dependency-injection.git",
           "type": "vcs",
-          "comment": "source reference: a7faee783a87b55f27460fc571f8c639bf9d93a2"
+          "comment": "source reference: 059334a6ef0eedfcabfec52fd0a71576d610a70c"
         },
         {
           "url": "https://symfony.com",
@@ -10387,7 +10387,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/dependency-injection/tree/v7.4.20",
+          "url": "https://github.com/symfony/dependency-injection/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10395,11 +10395,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a7faee783a87b55f27460fc571f8c639bf9d93a2"
+          "value": "059334a6ef0eedfcabfec52fd0a71576d610a70c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a7faee783a87b55f27460fc571f8c639bf9d93a2"
+          "value": "059334a6ef0eedfcabfec52fd0a71576d610a70c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10409,11 +10409,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/doctrine-bridge-7.4.20.0",
+      "bom-ref": "symfony/doctrine-bridge-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "doctrine-bridge",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides integration for Doctrine with various Symfony components",
       "licenses": [
         {
@@ -10423,17 +10423,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/doctrine-bridge@v7.4.20",
+      "purl": "pkg:composer/symfony/doctrine-bridge@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/doctrine-bridge/zipball/03d285cfe0f633a856e7acb68cecf5964f8494a7",
+          "url": "https://api.github.com/repos/symfony/doctrine-bridge/zipball/deebdaec91dc1070a14db582629fec03ae5bf7b3",
           "type": "distribution",
-          "comment": "dist reference: 03d285cfe0f633a856e7acb68cecf5964f8494a7"
+          "comment": "dist reference: deebdaec91dc1070a14db582629fec03ae5bf7b3"
         },
         {
           "url": "https://github.com/symfony/doctrine-bridge.git",
           "type": "vcs",
-          "comment": "source reference: 03d285cfe0f633a856e7acb68cecf5964f8494a7"
+          "comment": "source reference: deebdaec91dc1070a14db582629fec03ae5bf7b3"
         },
         {
           "url": "https://symfony.com",
@@ -10441,7 +10441,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/doctrine-bridge/tree/v7.4.20",
+          "url": "https://github.com/symfony/doctrine-bridge/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10449,11 +10449,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "03d285cfe0f633a856e7acb68cecf5964f8494a7"
+          "value": "deebdaec91dc1070a14db582629fec03ae5bf7b3"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "03d285cfe0f633a856e7acb68cecf5964f8494a7"
+          "value": "deebdaec91dc1070a14db582629fec03ae5bf7b3"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10463,11 +10463,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/doctrine-messenger-7.4.20.0",
+      "bom-ref": "symfony/doctrine-messenger-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "doctrine-messenger",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Symfony Doctrine Messenger Bridge",
       "licenses": [
         {
@@ -10477,17 +10477,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/doctrine-messenger@v7.4.20",
+      "purl": "pkg:composer/symfony/doctrine-messenger@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/a34e55dce43e1229bb47555b57ba3c95910988c7",
+          "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/512464b6905ae0b9ed5a67f01d0f15fe40615a13",
           "type": "distribution",
-          "comment": "dist reference: a34e55dce43e1229bb47555b57ba3c95910988c7"
+          "comment": "dist reference: 512464b6905ae0b9ed5a67f01d0f15fe40615a13"
         },
         {
           "url": "https://github.com/symfony/doctrine-messenger.git",
           "type": "vcs",
-          "comment": "source reference: a34e55dce43e1229bb47555b57ba3c95910988c7"
+          "comment": "source reference: 512464b6905ae0b9ed5a67f01d0f15fe40615a13"
         },
         {
           "url": "https://symfony.com",
@@ -10495,7 +10495,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/doctrine-messenger/tree/v7.4.20",
+          "url": "https://github.com/symfony/doctrine-messenger/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10503,11 +10503,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a34e55dce43e1229bb47555b57ba3c95910988c7"
+          "value": "512464b6905ae0b9ed5a67f01d0f15fe40615a13"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a34e55dce43e1229bb47555b57ba3c95910988c7"
+          "value": "512464b6905ae0b9ed5a67f01d0f15fe40615a13"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10679,11 +10679,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/expression-language-7.4.18.0",
+      "bom-ref": "symfony/expression-language-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "expression-language",
-      "version": "v7.4.18",
+      "version": "v7.4.21",
       "description": "Provides an engine that can compile and evaluate expressions",
       "licenses": [
         {
@@ -10693,17 +10693,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/expression-language@v7.4.18",
+      "purl": "pkg:composer/symfony/expression-language@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/expression-language/zipball/b73866506ff02800836a40fa1f95614a71064f35",
+          "url": "https://api.github.com/repos/symfony/expression-language/zipball/51c52817a02119ecd46a3369a2b38fc7f24dbf5e",
           "type": "distribution",
-          "comment": "dist reference: b73866506ff02800836a40fa1f95614a71064f35"
+          "comment": "dist reference: 51c52817a02119ecd46a3369a2b38fc7f24dbf5e"
         },
         {
           "url": "https://github.com/symfony/expression-language.git",
           "type": "vcs",
-          "comment": "source reference: b73866506ff02800836a40fa1f95614a71064f35"
+          "comment": "source reference: 51c52817a02119ecd46a3369a2b38fc7f24dbf5e"
         },
         {
           "url": "https://symfony.com",
@@ -10711,7 +10711,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/expression-language/tree/v7.4.18",
+          "url": "https://github.com/symfony/expression-language/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10719,11 +10719,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b73866506ff02800836a40fa1f95614a71064f35"
+          "value": "51c52817a02119ecd46a3369a2b38fc7f24dbf5e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b73866506ff02800836a40fa1f95614a71064f35"
+          "value": "51c52817a02119ecd46a3369a2b38fc7f24dbf5e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10733,11 +10733,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/filesystem-7.4.18.0",
+      "bom-ref": "symfony/filesystem-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "filesystem",
-      "version": "v7.4.18",
+      "version": "v7.4.21",
       "description": "Provides basic utilities for the filesystem",
       "licenses": [
         {
@@ -10747,17 +10747,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/filesystem@v7.4.18",
+      "purl": "pkg:composer/symfony/filesystem@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/filesystem/zipball/90d412aa5277c6819db39e7605aa46b1019e3232",
+          "url": "https://api.github.com/repos/symfony/filesystem/zipball/fd0e3462be6d32a0d130e8423e4940a7688162d8",
           "type": "distribution",
-          "comment": "dist reference: 90d412aa5277c6819db39e7605aa46b1019e3232"
+          "comment": "dist reference: fd0e3462be6d32a0d130e8423e4940a7688162d8"
         },
         {
           "url": "https://github.com/symfony/filesystem.git",
           "type": "vcs",
-          "comment": "source reference: 90d412aa5277c6819db39e7605aa46b1019e3232"
+          "comment": "source reference: fd0e3462be6d32a0d130e8423e4940a7688162d8"
         },
         {
           "url": "https://symfony.com",
@@ -10765,7 +10765,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/filesystem/tree/v7.4.18",
+          "url": "https://github.com/symfony/filesystem/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10773,11 +10773,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "90d412aa5277c6819db39e7605aa46b1019e3232"
+          "value": "fd0e3462be6d32a0d130e8423e4940a7688162d8"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "90d412aa5277c6819db39e7605aa46b1019e3232"
+          "value": "fd0e3462be6d32a0d130e8423e4940a7688162d8"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10841,11 +10841,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/form-7.4.20.0",
+      "bom-ref": "symfony/form-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "form",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Allows to easily create, process and reuse HTML forms",
       "licenses": [
         {
@@ -10855,17 +10855,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/form@v7.4.20",
+      "purl": "pkg:composer/symfony/form@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/form/zipball/a36c175f54bbe0320e096a857d67780053a28f44",
+          "url": "https://api.github.com/repos/symfony/form/zipball/2e6d6eb0ec53461535f9e98c7f740c8d5f8dedcc",
           "type": "distribution",
-          "comment": "dist reference: a36c175f54bbe0320e096a857d67780053a28f44"
+          "comment": "dist reference: 2e6d6eb0ec53461535f9e98c7f740c8d5f8dedcc"
         },
         {
           "url": "https://github.com/symfony/form.git",
           "type": "vcs",
-          "comment": "source reference: a36c175f54bbe0320e096a857d67780053a28f44"
+          "comment": "source reference: 2e6d6eb0ec53461535f9e98c7f740c8d5f8dedcc"
         },
         {
           "url": "https://symfony.com",
@@ -10873,7 +10873,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/form/tree/v7.4.20",
+          "url": "https://github.com/symfony/form/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10881,11 +10881,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a36c175f54bbe0320e096a857d67780053a28f44"
+          "value": "2e6d6eb0ec53461535f9e98c7f740c8d5f8dedcc"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a36c175f54bbe0320e096a857d67780053a28f44"
+          "value": "2e6d6eb0ec53461535f9e98c7f740c8d5f8dedcc"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10895,11 +10895,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/framework-bundle-7.4.20.0",
+      "bom-ref": "symfony/framework-bundle-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "framework-bundle",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides a tight integration between Symfony components and the Symfony full-stack framework",
       "licenses": [
         {
@@ -10909,17 +10909,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/framework-bundle@v7.4.20",
+      "purl": "pkg:composer/symfony/framework-bundle@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/99786f9338c24770ce4de6a95d049675aa75b129",
+          "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/62b38e9cb02c944e01030898b3d2b4f31722e47f",
           "type": "distribution",
-          "comment": "dist reference: 99786f9338c24770ce4de6a95d049675aa75b129"
+          "comment": "dist reference: 62b38e9cb02c944e01030898b3d2b4f31722e47f"
         },
         {
           "url": "https://github.com/symfony/framework-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 99786f9338c24770ce4de6a95d049675aa75b129"
+          "comment": "source reference: 62b38e9cb02c944e01030898b3d2b4f31722e47f"
         },
         {
           "url": "https://symfony.com",
@@ -10927,7 +10927,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/framework-bundle/tree/v7.4.20",
+          "url": "https://github.com/symfony/framework-bundle/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10935,11 +10935,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "99786f9338c24770ce4de6a95d049675aa75b129"
+          "value": "62b38e9cb02c944e01030898b3d2b4f31722e47f"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "99786f9338c24770ce4de6a95d049675aa75b129"
+          "value": "62b38e9cb02c944e01030898b3d2b4f31722e47f"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11003,11 +11003,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-client-7.4.20.0",
+      "bom-ref": "symfony/http-client-7.4.21.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "http-client",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
       "licenses": [
         {
@@ -11017,17 +11017,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-client@v7.4.20",
+      "purl": "pkg:composer/symfony/http-client@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-client/zipball/750a420b8dd0af3d6e1c6c1412802abf2cdd2b6c",
+          "url": "https://api.github.com/repos/symfony/http-client/zipball/121bf3a973bfd852db85ec32d0d64e9fbed4449b",
           "type": "distribution",
-          "comment": "dist reference: 750a420b8dd0af3d6e1c6c1412802abf2cdd2b6c"
+          "comment": "dist reference: 121bf3a973bfd852db85ec32d0d64e9fbed4449b"
         },
         {
           "url": "https://github.com/symfony/http-client.git",
           "type": "vcs",
-          "comment": "source reference: 750a420b8dd0af3d6e1c6c1412802abf2cdd2b6c"
+          "comment": "source reference: 121bf3a973bfd852db85ec32d0d64e9fbed4449b"
         },
         {
           "url": "https://symfony.com",
@@ -11035,7 +11035,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-client/tree/v7.4.20",
+          "url": "https://github.com/symfony/http-client/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11043,11 +11043,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "750a420b8dd0af3d6e1c6c1412802abf2cdd2b6c"
+          "value": "121bf3a973bfd852db85ec32d0d64e9fbed4449b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "750a420b8dd0af3d6e1c6c1412802abf2cdd2b6c"
+          "value": "121bf3a973bfd852db85ec32d0d64e9fbed4449b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11057,11 +11057,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-foundation-7.4.20.0",
+      "bom-ref": "symfony/http-foundation-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "http-foundation",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Defines an object-oriented layer for the HTTP specification",
       "licenses": [
         {
@@ -11071,17 +11071,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-foundation@v7.4.20",
+      "purl": "pkg:composer/symfony/http-foundation@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-foundation/zipball/9d0761c0da6bd5b801b401666834901a9a1ffc33",
+          "url": "https://api.github.com/repos/symfony/http-foundation/zipball/58c89144c7a36dd89c3d01917e9fa3a72d8aaf31",
           "type": "distribution",
-          "comment": "dist reference: 9d0761c0da6bd5b801b401666834901a9a1ffc33"
+          "comment": "dist reference: 58c89144c7a36dd89c3d01917e9fa3a72d8aaf31"
         },
         {
           "url": "https://github.com/symfony/http-foundation.git",
           "type": "vcs",
-          "comment": "source reference: 9d0761c0da6bd5b801b401666834901a9a1ffc33"
+          "comment": "source reference: 58c89144c7a36dd89c3d01917e9fa3a72d8aaf31"
         },
         {
           "url": "https://symfony.com",
@@ -11089,7 +11089,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-foundation/tree/v7.4.20",
+          "url": "https://github.com/symfony/http-foundation/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11097,11 +11097,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9d0761c0da6bd5b801b401666834901a9a1ffc33"
+          "value": "58c89144c7a36dd89c3d01917e9fa3a72d8aaf31"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9d0761c0da6bd5b801b401666834901a9a1ffc33"
+          "value": "58c89144c7a36dd89c3d01917e9fa3a72d8aaf31"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11111,11 +11111,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-kernel-7.4.20.0",
+      "bom-ref": "symfony/http-kernel-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "http-kernel",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides a structured process for converting a Request into a Response",
       "licenses": [
         {
@@ -11125,17 +11125,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-kernel@v7.4.20",
+      "purl": "pkg:composer/symfony/http-kernel@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-kernel/zipball/392784b5d7b959b8d872542a2530c50c540a788f",
+          "url": "https://api.github.com/repos/symfony/http-kernel/zipball/4779fce7dedacb8801b2b61c703ef99159502331",
           "type": "distribution",
-          "comment": "dist reference: 392784b5d7b959b8d872542a2530c50c540a788f"
+          "comment": "dist reference: 4779fce7dedacb8801b2b61c703ef99159502331"
         },
         {
           "url": "https://github.com/symfony/http-kernel.git",
           "type": "vcs",
-          "comment": "source reference: 392784b5d7b959b8d872542a2530c50c540a788f"
+          "comment": "source reference: 4779fce7dedacb8801b2b61c703ef99159502331"
         },
         {
           "url": "https://symfony.com",
@@ -11143,7 +11143,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-kernel/tree/v7.4.20",
+          "url": "https://github.com/symfony/http-kernel/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11151,11 +11151,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "392784b5d7b959b8d872542a2530c50c540a788f"
+          "value": "4779fce7dedacb8801b2b61c703ef99159502331"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "392784b5d7b959b8d872542a2530c50c540a788f"
+          "value": "4779fce7dedacb8801b2b61c703ef99159502331"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11219,11 +11219,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/lock-7.4.20.0",
+      "bom-ref": "symfony/lock-7.4.21.0",
       "author": "J\u00E9r\u00E9my Deruss\u00E9, Symfony Community",
       "group": "symfony",
       "name": "lock",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Creates and manages locks, a mechanism to provide exclusive access to a shared resource",
       "licenses": [
         {
@@ -11233,17 +11233,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/lock@v7.4.20",
+      "purl": "pkg:composer/symfony/lock@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/lock/zipball/80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0",
+          "url": "https://api.github.com/repos/symfony/lock/zipball/a349566fa790ecad53f8445e1812c39ebf741801",
           "type": "distribution",
-          "comment": "dist reference: 80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0"
+          "comment": "dist reference: a349566fa790ecad53f8445e1812c39ebf741801"
         },
         {
           "url": "https://github.com/symfony/lock.git",
           "type": "vcs",
-          "comment": "source reference: 80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0"
+          "comment": "source reference: a349566fa790ecad53f8445e1812c39ebf741801"
         },
         {
           "url": "https://symfony.com",
@@ -11251,7 +11251,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/lock/tree/v7.4.20",
+          "url": "https://github.com/symfony/lock/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11259,11 +11259,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0"
+          "value": "a349566fa790ecad53f8445e1812c39ebf741801"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0"
+          "value": "a349566fa790ecad53f8445e1812c39ebf741801"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11445,11 +11445,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/messenger-7.4.20.0",
+      "bom-ref": "symfony/messenger-7.4.21.0",
       "author": "Samuel Roze, Symfony Community",
       "group": "symfony",
       "name": "messenger",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Helps applications send and receive messages to/from other applications or via message queues",
       "licenses": [
         {
@@ -11459,17 +11459,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/messenger@v7.4.20",
+      "purl": "pkg:composer/symfony/messenger@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/messenger/zipball/4cf94f12c9e899a87e6b6bf800dffcb709585410",
+          "url": "https://api.github.com/repos/symfony/messenger/zipball/9eac56eb4973fe13c89dce80a3fc08f0db5574cb",
           "type": "distribution",
-          "comment": "dist reference: 4cf94f12c9e899a87e6b6bf800dffcb709585410"
+          "comment": "dist reference: 9eac56eb4973fe13c89dce80a3fc08f0db5574cb"
         },
         {
           "url": "https://github.com/symfony/messenger.git",
           "type": "vcs",
-          "comment": "source reference: 4cf94f12c9e899a87e6b6bf800dffcb709585410"
+          "comment": "source reference: 9eac56eb4973fe13c89dce80a3fc08f0db5574cb"
         },
         {
           "url": "https://symfony.com",
@@ -11477,7 +11477,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/messenger/tree/v7.4.20",
+          "url": "https://github.com/symfony/messenger/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11485,11 +11485,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "4cf94f12c9e899a87e6b6bf800dffcb709585410"
+          "value": "9eac56eb4973fe13c89dce80a3fc08f0db5574cb"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "4cf94f12c9e899a87e6b6bf800dffcb709585410"
+          "value": "9eac56eb4973fe13c89dce80a3fc08f0db5574cb"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12529,11 +12529,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/process-7.4.19.0",
+      "bom-ref": "symfony/process-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "process",
-      "version": "v7.4.19",
+      "version": "v7.4.21",
       "description": "Executes commands in sub-processes",
       "licenses": [
         {
@@ -12543,17 +12543,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/process@v7.4.19",
+      "purl": "pkg:composer/symfony/process@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/process/zipball/ed0ae095b86994d370d5791612e55984f15aa30e",
+          "url": "https://api.github.com/repos/symfony/process/zipball/e5247f4a5e0797d232ad8e8e6803aeb341843c83",
           "type": "distribution",
-          "comment": "dist reference: ed0ae095b86994d370d5791612e55984f15aa30e"
+          "comment": "dist reference: e5247f4a5e0797d232ad8e8e6803aeb341843c83"
         },
         {
           "url": "https://github.com/symfony/process.git",
           "type": "vcs",
-          "comment": "source reference: ed0ae095b86994d370d5791612e55984f15aa30e"
+          "comment": "source reference: e5247f4a5e0797d232ad8e8e6803aeb341843c83"
         },
         {
           "url": "https://symfony.com",
@@ -12561,7 +12561,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/process/tree/v7.4.19",
+          "url": "https://github.com/symfony/process/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12569,11 +12569,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ed0ae095b86994d370d5791612e55984f15aa30e"
+          "value": "e5247f4a5e0797d232ad8e8e6803aeb341843c83"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ed0ae095b86994d370d5791612e55984f15aa30e"
+          "value": "e5247f4a5e0797d232ad8e8e6803aeb341843c83"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12691,11 +12691,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/psr-http-message-bridge-7.4.8.0",
+      "bom-ref": "symfony/psr-http-message-bridge-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "psr-http-message-bridge",
-      "version": "v7.4.8",
+      "version": "v7.4.21",
       "description": "PSR HTTP message bridge",
       "licenses": [
         {
@@ -12705,17 +12705,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/psr-http-message-bridge@v7.4.8",
+      "purl": "pkg:composer/symfony/psr-http-message-bridge@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/76f1a57719a4a04c0ea18678a6c9305b5dcb9da8",
+          "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/b05964aa9d788bc8ffcc31c59d5c4573e3d4d1fc",
           "type": "distribution",
-          "comment": "dist reference: 76f1a57719a4a04c0ea18678a6c9305b5dcb9da8"
+          "comment": "dist reference: b05964aa9d788bc8ffcc31c59d5c4573e3d4d1fc"
         },
         {
           "url": "https://github.com/symfony/psr-http-message-bridge.git",
           "type": "vcs",
-          "comment": "source reference: 76f1a57719a4a04c0ea18678a6c9305b5dcb9da8"
+          "comment": "source reference: b05964aa9d788bc8ffcc31c59d5c4573e3d4d1fc"
         },
         {
           "url": "https://symfony.com",
@@ -12723,7 +12723,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/psr-http-message-bridge/tree/v7.4.8",
+          "url": "https://github.com/symfony/psr-http-message-bridge/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12731,11 +12731,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "76f1a57719a4a04c0ea18678a6c9305b5dcb9da8"
+          "value": "b05964aa9d788bc8ffcc31c59d5c4573e3d4d1fc"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "76f1a57719a4a04c0ea18678a6c9305b5dcb9da8"
+          "value": "b05964aa9d788bc8ffcc31c59d5c4573e3d4d1fc"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12799,11 +12799,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/routing-7.4.20.0",
+      "bom-ref": "symfony/routing-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "routing",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Maps an HTTP request to a set of configuration variables",
       "licenses": [
         {
@@ -12813,17 +12813,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/routing@v7.4.20",
+      "purl": "pkg:composer/symfony/routing@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/routing/zipball/2bacb72be5eadeaf9874d5accb75bfb33d21c74b",
+          "url": "https://api.github.com/repos/symfony/routing/zipball/7a344cf871532d081875bfdd18f3dff8dca36c5b",
           "type": "distribution",
-          "comment": "dist reference: 2bacb72be5eadeaf9874d5accb75bfb33d21c74b"
+          "comment": "dist reference: 7a344cf871532d081875bfdd18f3dff8dca36c5b"
         },
         {
           "url": "https://github.com/symfony/routing.git",
           "type": "vcs",
-          "comment": "source reference: 2bacb72be5eadeaf9874d5accb75bfb33d21c74b"
+          "comment": "source reference: 7a344cf871532d081875bfdd18f3dff8dca36c5b"
         },
         {
           "url": "https://symfony.com",
@@ -12831,7 +12831,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/routing/tree/v7.4.20",
+          "url": "https://github.com/symfony/routing/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12839,11 +12839,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2bacb72be5eadeaf9874d5accb75bfb33d21c74b"
+          "value": "7a344cf871532d081875bfdd18f3dff8dca36c5b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2bacb72be5eadeaf9874d5accb75bfb33d21c74b"
+          "value": "7a344cf871532d081875bfdd18f3dff8dca36c5b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12853,11 +12853,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/scheduler-7.4.20.0",
+      "bom-ref": "symfony/scheduler-7.4.21.0",
       "author": "Sergey Rabochiy, Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "scheduler",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides scheduling through Symfony Messenger",
       "licenses": [
         {
@@ -12867,17 +12867,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/scheduler@v7.4.20",
+      "purl": "pkg:composer/symfony/scheduler@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/scheduler/zipball/eda92b395d3cc8e175f73fa27eb24d878a044e25",
+          "url": "https://api.github.com/repos/symfony/scheduler/zipball/09ab980627cc5b0fa66a3b6ae653af5b1aa754ac",
           "type": "distribution",
-          "comment": "dist reference: eda92b395d3cc8e175f73fa27eb24d878a044e25"
+          "comment": "dist reference: 09ab980627cc5b0fa66a3b6ae653af5b1aa754ac"
         },
         {
           "url": "https://github.com/symfony/scheduler.git",
           "type": "vcs",
-          "comment": "source reference: eda92b395d3cc8e175f73fa27eb24d878a044e25"
+          "comment": "source reference: 09ab980627cc5b0fa66a3b6ae653af5b1aa754ac"
         },
         {
           "url": "https://symfony.com",
@@ -12885,7 +12885,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/scheduler/tree/v7.4.20",
+          "url": "https://github.com/symfony/scheduler/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12893,11 +12893,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "eda92b395d3cc8e175f73fa27eb24d878a044e25"
+          "value": "09ab980627cc5b0fa66a3b6ae653af5b1aa754ac"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "eda92b395d3cc8e175f73fa27eb24d878a044e25"
+          "value": "09ab980627cc5b0fa66a3b6ae653af5b1aa754ac"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12907,11 +12907,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/security-bundle-7.4.20.0",
+      "bom-ref": "symfony/security-bundle-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "security-bundle",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides a tight integration of the Security component into the Symfony full-stack framework",
       "licenses": [
         {
@@ -12921,17 +12921,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/security-bundle@v7.4.20",
+      "purl": "pkg:composer/symfony/security-bundle@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/security-bundle/zipball/a2a8dc7ab9d5d90d5937963a4ef1b9c8e3e7258c",
+          "url": "https://api.github.com/repos/symfony/security-bundle/zipball/8d1f753d3569a49280adc052ec9ffa10a7ece859",
           "type": "distribution",
-          "comment": "dist reference: a2a8dc7ab9d5d90d5937963a4ef1b9c8e3e7258c"
+          "comment": "dist reference: 8d1f753d3569a49280adc052ec9ffa10a7ece859"
         },
         {
           "url": "https://github.com/symfony/security-bundle.git",
           "type": "vcs",
-          "comment": "source reference: a2a8dc7ab9d5d90d5937963a4ef1b9c8e3e7258c"
+          "comment": "source reference: 8d1f753d3569a49280adc052ec9ffa10a7ece859"
         },
         {
           "url": "https://symfony.com",
@@ -12939,7 +12939,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/security-bundle/tree/v7.4.20",
+          "url": "https://github.com/symfony/security-bundle/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12947,11 +12947,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a2a8dc7ab9d5d90d5937963a4ef1b9c8e3e7258c"
+          "value": "8d1f753d3569a49280adc052ec9ffa10a7ece859"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a2a8dc7ab9d5d90d5937963a4ef1b9c8e3e7258c"
+          "value": "8d1f753d3569a49280adc052ec9ffa10a7ece859"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12961,11 +12961,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/security-core-7.4.20.0",
+      "bom-ref": "symfony/security-core-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "security-core",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Symfony Security Component - Core Library",
       "licenses": [
         {
@@ -12975,17 +12975,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/security-core@v7.4.20",
+      "purl": "pkg:composer/symfony/security-core@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/security-core/zipball/4e5c01656aa79e6d463fde45117041ebccbaf829",
+          "url": "https://api.github.com/repos/symfony/security-core/zipball/02ef0f2d923f903725fabc15b480aafd030b6a12",
           "type": "distribution",
-          "comment": "dist reference: 4e5c01656aa79e6d463fde45117041ebccbaf829"
+          "comment": "dist reference: 02ef0f2d923f903725fabc15b480aafd030b6a12"
         },
         {
           "url": "https://github.com/symfony/security-core.git",
           "type": "vcs",
-          "comment": "source reference: 4e5c01656aa79e6d463fde45117041ebccbaf829"
+          "comment": "source reference: 02ef0f2d923f903725fabc15b480aafd030b6a12"
         },
         {
           "url": "https://symfony.com",
@@ -12993,7 +12993,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/security-core/tree/v7.4.20",
+          "url": "https://github.com/symfony/security-core/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13001,11 +13001,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "4e5c01656aa79e6d463fde45117041ebccbaf829"
+          "value": "02ef0f2d923f903725fabc15b480aafd030b6a12"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "4e5c01656aa79e6d463fde45117041ebccbaf829"
+          "value": "02ef0f2d923f903725fabc15b480aafd030b6a12"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13069,11 +13069,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/security-http-7.4.20.0",
+      "bom-ref": "symfony/security-http-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "security-http",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Symfony Security Component - HTTP Integration",
       "licenses": [
         {
@@ -13083,17 +13083,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/security-http@v7.4.20",
+      "purl": "pkg:composer/symfony/security-http@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/security-http/zipball/5fa566b8bfbb398cded6988f059c3d97506ed692",
+          "url": "https://api.github.com/repos/symfony/security-http/zipball/07fcd6b1428a8f0c84f5cb98da6428abb8b89199",
           "type": "distribution",
-          "comment": "dist reference: 5fa566b8bfbb398cded6988f059c3d97506ed692"
+          "comment": "dist reference: 07fcd6b1428a8f0c84f5cb98da6428abb8b89199"
         },
         {
           "url": "https://github.com/symfony/security-http.git",
           "type": "vcs",
-          "comment": "source reference: 5fa566b8bfbb398cded6988f059c3d97506ed692"
+          "comment": "source reference: 07fcd6b1428a8f0c84f5cb98da6428abb8b89199"
         },
         {
           "url": "https://symfony.com",
@@ -13101,7 +13101,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/security-http/tree/v7.4.20",
+          "url": "https://github.com/symfony/security-http/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13109,11 +13109,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "5fa566b8bfbb398cded6988f059c3d97506ed692"
+          "value": "07fcd6b1428a8f0c84f5cb98da6428abb8b89199"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "5fa566b8bfbb398cded6988f059c3d97506ed692"
+          "value": "07fcd6b1428a8f0c84f5cb98da6428abb8b89199"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13123,11 +13123,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/serializer-7.4.20.0",
+      "bom-ref": "symfony/serializer-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "serializer",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
       "licenses": [
         {
@@ -13137,17 +13137,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/serializer@v7.4.20",
+      "purl": "pkg:composer/symfony/serializer@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/serializer/zipball/67c5b0b2ef39863835f43b9c34dcb3af80b892cf",
+          "url": "https://api.github.com/repos/symfony/serializer/zipball/2966bc53636dde874e63f8727da3aa306f479f4d",
           "type": "distribution",
-          "comment": "dist reference: 67c5b0b2ef39863835f43b9c34dcb3af80b892cf"
+          "comment": "dist reference: 2966bc53636dde874e63f8727da3aa306f479f4d"
         },
         {
           "url": "https://github.com/symfony/serializer.git",
           "type": "vcs",
-          "comment": "source reference: 67c5b0b2ef39863835f43b9c34dcb3af80b892cf"
+          "comment": "source reference: 2966bc53636dde874e63f8727da3aa306f479f4d"
         },
         {
           "url": "https://symfony.com",
@@ -13155,7 +13155,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/serializer/tree/v7.4.20",
+          "url": "https://github.com/symfony/serializer/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13163,11 +13163,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "67c5b0b2ef39863835f43b9c34dcb3af80b892cf"
+          "value": "2966bc53636dde874e63f8727da3aa306f479f4d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "67c5b0b2ef39863835f43b9c34dcb3af80b892cf"
+          "value": "2966bc53636dde874e63f8727da3aa306f479f4d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13231,11 +13231,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/string-7.4.19.0",
+      "bom-ref": "symfony/string-7.4.21.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "string",
-      "version": "v7.4.19",
+      "version": "v7.4.21",
       "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
       "licenses": [
         {
@@ -13245,17 +13245,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/string@v7.4.19",
+      "purl": "pkg:composer/symfony/string@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/string/zipball/02731ce2bd26514bec9efc0baef2cd0b0cf67f46",
+          "url": "https://api.github.com/repos/symfony/string/zipball/9bc35d074ad16a58c21cd52b18c5cacc4f4c3981",
           "type": "distribution",
-          "comment": "dist reference: 02731ce2bd26514bec9efc0baef2cd0b0cf67f46"
+          "comment": "dist reference: 9bc35d074ad16a58c21cd52b18c5cacc4f4c3981"
         },
         {
           "url": "https://github.com/symfony/string.git",
           "type": "vcs",
-          "comment": "source reference: 02731ce2bd26514bec9efc0baef2cd0b0cf67f46"
+          "comment": "source reference: 9bc35d074ad16a58c21cd52b18c5cacc4f4c3981"
         },
         {
           "url": "https://symfony.com",
@@ -13263,7 +13263,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/string/tree/v7.4.19",
+          "url": "https://github.com/symfony/string/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13271,11 +13271,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "02731ce2bd26514bec9efc0baef2cd0b0cf67f46"
+          "value": "9bc35d074ad16a58c21cd52b18c5cacc4f4c3981"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "02731ce2bd26514bec9efc0baef2cd0b0cf67f46"
+          "value": "9bc35d074ad16a58c21cd52b18c5cacc4f4c3981"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13447,11 +13447,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/twig-bundle-7.4.19.0",
+      "bom-ref": "symfony/twig-bundle-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "twig-bundle",
-      "version": "v7.4.19",
+      "version": "v7.4.21",
       "description": "Provides a tight integration of Twig into the Symfony full-stack framework",
       "licenses": [
         {
@@ -13461,17 +13461,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/twig-bundle@v7.4.19",
+      "purl": "pkg:composer/symfony/twig-bundle@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/231c0b37dada053458d47281261a3af0270a634d",
+          "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/991586116d99e549621c70eeafe496dfcceeb1ce",
           "type": "distribution",
-          "comment": "dist reference: 231c0b37dada053458d47281261a3af0270a634d"
+          "comment": "dist reference: 991586116d99e549621c70eeafe496dfcceeb1ce"
         },
         {
           "url": "https://github.com/symfony/twig-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 231c0b37dada053458d47281261a3af0270a634d"
+          "comment": "source reference: 991586116d99e549621c70eeafe496dfcceeb1ce"
         },
         {
           "url": "https://symfony.com",
@@ -13479,7 +13479,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/twig-bundle/tree/v7.4.19",
+          "url": "https://github.com/symfony/twig-bundle/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13487,11 +13487,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "231c0b37dada053458d47281261a3af0270a634d"
+          "value": "991586116d99e549621c70eeafe496dfcceeb1ce"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "231c0b37dada053458d47281261a3af0270a634d"
+          "value": "991586116d99e549621c70eeafe496dfcceeb1ce"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13555,11 +13555,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/uid-7.4.20.0",
+      "bom-ref": "symfony/uid-7.4.21.0",
       "author": "Gr\u00E9goire Pineau, Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "uid",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides an object-oriented API to generate and represent UIDs",
       "licenses": [
         {
@@ -13569,17 +13569,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/uid@v7.4.20",
+      "purl": "pkg:composer/symfony/uid@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/uid/zipball/a96bbdb02a04ff3b5592cee6741b03edc78b56aa",
+          "url": "https://api.github.com/repos/symfony/uid/zipball/3e706a245b5343ea93be9cafe84525bfb54e60fc",
           "type": "distribution",
-          "comment": "dist reference: a96bbdb02a04ff3b5592cee6741b03edc78b56aa"
+          "comment": "dist reference: 3e706a245b5343ea93be9cafe84525bfb54e60fc"
         },
         {
           "url": "https://github.com/symfony/uid.git",
           "type": "vcs",
-          "comment": "source reference: a96bbdb02a04ff3b5592cee6741b03edc78b56aa"
+          "comment": "source reference: 3e706a245b5343ea93be9cafe84525bfb54e60fc"
         },
         {
           "url": "https://symfony.com",
@@ -13587,7 +13587,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/uid/tree/v7.4.20",
+          "url": "https://github.com/symfony/uid/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13595,11 +13595,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a96bbdb02a04ff3b5592cee6741b03edc78b56aa"
+          "value": "3e706a245b5343ea93be9cafe84525bfb54e60fc"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a96bbdb02a04ff3b5592cee6741b03edc78b56aa"
+          "value": "3e706a245b5343ea93be9cafe84525bfb54e60fc"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13609,11 +13609,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/validator-7.4.20.0",
+      "bom-ref": "symfony/validator-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "validator",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides tools to validate values",
       "licenses": [
         {
@@ -13623,17 +13623,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/validator@v7.4.20",
+      "purl": "pkg:composer/symfony/validator@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/validator/zipball/75a30e116016554477f662e106fd8e337f0c4dac",
+          "url": "https://api.github.com/repos/symfony/validator/zipball/6c9b169bf3a1e46b2f2edc1c47be36c3b879d793",
           "type": "distribution",
-          "comment": "dist reference: 75a30e116016554477f662e106fd8e337f0c4dac"
+          "comment": "dist reference: 6c9b169bf3a1e46b2f2edc1c47be36c3b879d793"
         },
         {
           "url": "https://github.com/symfony/validator.git",
           "type": "vcs",
-          "comment": "source reference: 75a30e116016554477f662e106fd8e337f0c4dac"
+          "comment": "source reference: 6c9b169bf3a1e46b2f2edc1c47be36c3b879d793"
         },
         {
           "url": "https://symfony.com",
@@ -13641,7 +13641,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/validator/tree/v7.4.20",
+          "url": "https://github.com/symfony/validator/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13649,11 +13649,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "75a30e116016554477f662e106fd8e337f0c4dac"
+          "value": "6c9b169bf3a1e46b2f2edc1c47be36c3b879d793"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "75a30e116016554477f662e106fd8e337f0c4dac"
+          "value": "6c9b169bf3a1e46b2f2edc1c47be36c3b879d793"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13663,11 +13663,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/var-dumper-7.4.18.0",
+      "bom-ref": "symfony/var-dumper-7.4.21.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "var-dumper",
-      "version": "v7.4.18",
+      "version": "v7.4.21",
       "description": "Provides mechanisms for walking through any arbitrary PHP variable",
       "licenses": [
         {
@@ -13677,17 +13677,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/var-dumper@v7.4.18",
+      "purl": "pkg:composer/symfony/var-dumper@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e088da50b813f32473a76871616cbb8fa54653a8",
+          "url": "https://api.github.com/repos/symfony/var-dumper/zipball/55d06b02f49eca9bff61828548988e6f8763e8a6",
           "type": "distribution",
-          "comment": "dist reference: e088da50b813f32473a76871616cbb8fa54653a8"
+          "comment": "dist reference: 55d06b02f49eca9bff61828548988e6f8763e8a6"
         },
         {
           "url": "https://github.com/symfony/var-dumper.git",
           "type": "vcs",
-          "comment": "source reference: e088da50b813f32473a76871616cbb8fa54653a8"
+          "comment": "source reference: 55d06b02f49eca9bff61828548988e6f8763e8a6"
         },
         {
           "url": "https://symfony.com",
@@ -13695,7 +13695,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/var-dumper/tree/v7.4.18",
+          "url": "https://github.com/symfony/var-dumper/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13703,11 +13703,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e088da50b813f32473a76871616cbb8fa54653a8"
+          "value": "55d06b02f49eca9bff61828548988e6f8763e8a6"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e088da50b813f32473a76871616cbb8fa54653a8"
+          "value": "55d06b02f49eca9bff61828548988e6f8763e8a6"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13825,11 +13825,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/web-profiler-bundle-7.4.20.0",
+      "bom-ref": "symfony/web-profiler-bundle-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "web-profiler-bundle",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Provides a development tool that gives detailed information about the execution of any request",
       "licenses": [
         {
@@ -13839,17 +13839,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/web-profiler-bundle@v7.4.20",
+      "purl": "pkg:composer/symfony/web-profiler-bundle@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/916c2a4edf51270a5173a57d8d3936c02a4543a1",
+          "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/ab1977d0d3e43f8f748a5fe4bea8c79959cd835e",
           "type": "distribution",
-          "comment": "dist reference: 916c2a4edf51270a5173a57d8d3936c02a4543a1"
+          "comment": "dist reference: ab1977d0d3e43f8f748a5fe4bea8c79959cd835e"
         },
         {
           "url": "https://github.com/symfony/web-profiler-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 916c2a4edf51270a5173a57d8d3936c02a4543a1"
+          "comment": "source reference: ab1977d0d3e43f8f748a5fe4bea8c79959cd835e"
         },
         {
           "url": "https://symfony.com",
@@ -13857,7 +13857,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/web-profiler-bundle/tree/v7.4.20",
+          "url": "https://github.com/symfony/web-profiler-bundle/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13865,11 +13865,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "916c2a4edf51270a5173a57d8d3936c02a4543a1"
+          "value": "ab1977d0d3e43f8f748a5fe4bea8c79959cd835e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "916c2a4edf51270a5173a57d8d3936c02a4543a1"
+          "value": "ab1977d0d3e43f8f748a5fe4bea8c79959cd835e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13987,11 +13987,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/yaml-7.4.20.0",
+      "bom-ref": "symfony/yaml-7.4.21.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "yaml",
-      "version": "v7.4.20",
+      "version": "v7.4.21",
       "description": "Loads and dumps YAML files",
       "licenses": [
         {
@@ -14001,17 +14001,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/yaml@v7.4.20",
+      "purl": "pkg:composer/symfony/yaml@v7.4.21",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/yaml/zipball/0222bf4dfaa1e3ceb8fff579635d655f2950d5a7",
+          "url": "https://api.github.com/repos/symfony/yaml/zipball/044907929c7999814378be22da34722c7a86bad4",
           "type": "distribution",
-          "comment": "dist reference: 0222bf4dfaa1e3ceb8fff579635d655f2950d5a7"
+          "comment": "dist reference: 044907929c7999814378be22da34722c7a86bad4"
         },
         {
           "url": "https://github.com/symfony/yaml.git",
           "type": "vcs",
-          "comment": "source reference: 0222bf4dfaa1e3ceb8fff579635d655f2950d5a7"
+          "comment": "source reference: 044907929c7999814378be22da34722c7a86bad4"
         },
         {
           "url": "https://symfony.com",
@@ -14019,7 +14019,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/yaml/tree/v7.4.20",
+          "url": "https://github.com/symfony/yaml/tree/v7.4.21",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14027,11 +14027,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "0222bf4dfaa1e3ceb8fff579635d655f2950d5a7"
+          "value": "044907929c7999814378be22da34722c7a86bad4"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "0222bf4dfaa1e3ceb8fff579635d655f2950d5a7"
+          "value": "044907929c7999814378be22da34722c7a86bad4"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14153,10 +14153,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "tinymce/tinymce-8.9.3.0",
+      "bom-ref": "tinymce/tinymce-8.10.0.0",
       "group": "tinymce",
       "name": "tinymce",
-      "version": "8.9.3",
+      "version": "8.10.0",
       "description": "Web based JavaScript HTML WYSIWYG editor control.",
       "licenses": [
         {
@@ -14166,17 +14166,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/tinymce/tinymce@8.9.3",
+      "purl": "pkg:composer/tinymce/tinymce@8.10.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/a85d8cad504d6bbf6affa63e98615e8f0a42ad28",
+          "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/99bc848f4eb53902cc210ea5f8a191abaeeeb716",
           "type": "distribution",
-          "comment": "dist reference: a85d8cad504d6bbf6affa63e98615e8f0a42ad28"
+          "comment": "dist reference: 99bc848f4eb53902cc210ea5f8a191abaeeeb716"
         },
         {
           "url": "https://github.com/tinymce/tinymce-dist.git",
           "type": "vcs",
-          "comment": "source reference: a85d8cad504d6bbf6affa63e98615e8f0a42ad28"
+          "comment": "source reference: 99bc848f4eb53902cc210ea5f8a191abaeeeb716"
         },
         {
           "url": "https://www.tiny.cloud/",
@@ -14184,7 +14184,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/tinymce/tinymce-dist/tree/8.9.3",
+          "url": "https://github.com/tinymce/tinymce-dist/tree/8.10.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14192,11 +14192,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a85d8cad504d6bbf6affa63e98615e8f0a42ad28"
+          "value": "99bc848f4eb53902cc210ea5f8a191abaeeeb716"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a85d8cad504d6bbf6affa63e98615e8f0a42ad28"
+          "value": "99bc848f4eb53902cc210ea5f8a191abaeeeb716"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14819,11 +14819,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "zircote/swagger-php-6.13.0.0",
+      "bom-ref": "zircote/swagger-php-6.14.0.0",
       "author": "Robert Allen, Bob Fanger, Martin Rademacher",
       "group": "zircote",
       "name": "swagger-php",
-      "version": "6.13.0",
+      "version": "6.14.0",
       "description": "Generate interactive documentation for your RESTful API using PHP attributes (preferred) or PHPDoc annotations",
       "licenses": [
         {
@@ -14833,17 +14833,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/zircote/swagger-php@6.13.0",
+      "purl": "pkg:composer/zircote/swagger-php@6.14.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/6cbca4b611f03ae9ee58a5f2d341a0bc685c4903",
+          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/c5361c2a43391fa3a4ca887cd0209d60ce32e7fa",
           "type": "distribution",
-          "comment": "dist reference: 6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
+          "comment": "dist reference: c5361c2a43391fa3a4ca887cd0209d60ce32e7fa"
         },
         {
           "url": "https://github.com/zircote/swagger-php.git",
           "type": "vcs",
-          "comment": "source reference: 6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
+          "comment": "source reference: c5361c2a43391fa3a4ca887cd0209d60ce32e7fa"
         },
         {
           "url": "https://github.com/zircote/swagger-php",
@@ -14856,7 +14856,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/zircote/swagger-php/tree/6.13.0",
+          "url": "https://github.com/zircote/swagger-php/tree/6.14.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14864,11 +14864,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
+          "value": "c5361c2a43391fa3a4ca887cd0209d60ce32e7fa"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "6cbca4b611f03ae9ee58a5f2d341a0bc685c4903"
+          "value": "c5361c2a43391fa3a4ca887cd0209d60ce32e7fa"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14881,7 +14881,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev c7bea37",
+      "version": "2026.x-dev 3d1d543",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14891,15 +14891,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20c7bea37",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%203d1d543",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c7bea37046d587064d8c309355392f6015ffdb46"
+          "value": "3d1d54320a4112a15bf060306dc6690c4ec0969e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c7bea37046d587064d8c309355392f6015ffdb46"
+          "value": "3d1d54320a4112a15bf060306dc6690c4ec0969e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562427,12 +562427,12 @@
         "doctrine/deprecations-1.1.6.0",
         "doctrine/persistence-3.4.5.0",
         "doctrine/sql-formatter-1.5.4.0",
-        "symfony/cache-7.4.20.0",
+        "symfony/cache-7.4.21.0",
         "symfony/config-7.4.17.0",
-        "symfony/console-7.4.20.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/doctrine-bridge-7.4.20.0",
-        "symfony/framework-bundle-7.4.20.0"
+        "symfony/console-7.4.21.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/doctrine-bridge-7.4.21.0",
+        "symfony/framework-bundle-7.4.21.0"
       ]
     },
     {
@@ -562443,11 +562443,11 @@
         "doctrine/migrations-3.9.8.0",
         "psr/log-3.0.2.0",
         "symfony/config-7.4.17.0",
-        "symfony/console-7.4.20.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/framework-bundle-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0"
+        "symfony/console-7.4.21.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/framework-bundle-7.4.21.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0"
       ]
     },
     {
@@ -562469,7 +562469,7 @@
         "doctrine/deprecations-1.1.6.0",
         "doctrine/event-manager-2.1.1.0",
         "psr/log-3.0.2.0",
-        "symfony/console-7.4.20.0",
+        "symfony/console-7.4.21.0",
         "symfony/stopwatch-7.4.8.0",
         "symfony/var-exporter-7.4.18.0"
       ]
@@ -562486,7 +562486,7 @@
         "doctrine/lexer-3.0.3.0",
         "doctrine/persistence-3.4.5.0",
         "psr/cache-3.0.0.0",
-        "symfony/console-7.4.20.0",
+        "symfony/console-7.4.21.0",
         "symfony/polyfill-php86-1.43.0.0",
         "symfony/var-exporter-7.4.18.0"
       ]
@@ -562553,15 +562553,15 @@
       "ref": "friendsofphp/proxy-manager-lts-1.0.19.0",
       "dependsOn": [
         "laminas/laminas-code-4.17.0.0",
-        "symfony/filesystem-7.4.18.0"
+        "symfony/filesystem-7.4.21.0"
       ]
     },
     {
       "ref": "friendsofsymfony/jsrouting-bundle-3.6.1.0",
       "dependsOn": [
-        "symfony/console-7.4.20.0",
-        "symfony/framework-bundle-7.4.20.0",
-        "symfony/serializer-7.4.20.0",
+        "symfony/console-7.4.21.0",
+        "symfony/framework-bundle-7.4.21.0",
+        "symfony/serializer-7.4.21.0",
         "willdurand/jsonp-callback-validator-2.0.0.0"
       ]
     },
@@ -562617,11 +562617,11 @@
       "dependsOn": [
         "knplabs/knp-components-5.3.0.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
-        "symfony/routing-7.4.20.0"
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
+        "symfony/routing-7.4.21.0"
       ]
     },
     {
@@ -562654,8 +562654,8 @@
       "dependsOn": [
         "league/flysystem-3.36.0.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/options-resolver-7.4.8.0"
       ]
     },
@@ -562766,7 +562766,7 @@
         "psr/http-server-handler-1.0.2.0",
         "psr/http-server-middleware-1.0.2.0",
         "psr/log-3.0.2.0",
-        "symfony/uid-7.4.20.0"
+        "symfony/uid-7.4.21.0"
       ]
     },
     {
@@ -562804,7 +562804,7 @@
       "dependsOn": [
         "carbonphp/carbon-doctrine-types-3.2.1.0",
         "psr/clock-1.0.0.0",
-        "symfony/clock-7.4.8.0",
+        "symfony/clock-7.4.21.0",
         "symfony/polyfill-mbstring-1.43.0.0",
         "symfony/translation-7.4.17.0"
       ]
@@ -562840,7 +562840,7 @@
       "dependsOn": [
         "ezimuel/ringphp-1.4.1.0",
         "psr/log-3.0.2.0",
-        "symfony/yaml-7.4.20.0"
+        "symfony/yaml-7.4.21.0"
       ]
     },
     {
@@ -562957,7 +562957,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "zircote/swagger-php-6.13.0.0"
+        "zircote/swagger-php-6.14.0.0"
       ]
     },
     {
@@ -563064,10 +563064,10 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/psr-http-message-bridge-7.4.8.0",
+        "symfony/psr-http-message-bridge-7.4.21.0",
         "symfony/rate-limiter-7.4.18.0",
         "webmozarts/console-parallelization-2.3.0.0",
-        "zircote/swagger-php-6.13.0.0"
+        "zircote/swagger-php-6.14.0.0"
       ]
     },
     {
@@ -563080,7 +563080,7 @@
         "pimcore/static-resolver-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.20.0"
+        "symfony/http-client-7.4.21.0"
       ]
     },
     {
@@ -563135,7 +563135,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/form-7.4.20.0",
+        "symfony/form-7.4.21.0",
         "symfony/webpack-encore-bundle-2.4.2.0"
       ]
     },
@@ -563176,9 +563176,9 @@
         "pimcore/opensearch-client-2026.3.0.0",
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/static-resolver-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/lock-7.4.20.0",
-        "symfony/process-7.4.19.0",
-        "symfony/scheduler-7.4.20.0"
+        "symfony/lock-7.4.21.0",
+        "symfony/process-7.4.21.0",
+        "symfony/scheduler-7.4.21.0"
       ]
     },
     {
@@ -563214,7 +563214,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/clock-7.4.8.0",
+        "symfony/clock-7.4.21.0",
         "web-token/jwt-library-4.2.3.0"
       ]
     },
@@ -563238,7 +563238,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/form-7.4.20.0",
+        "symfony/form-7.4.21.0",
         "symfony/stopwatch-7.4.8.0"
       ]
     },
@@ -563279,53 +563279,53 @@
         "scheb/2fa-google-authenticator-8.6.1.0",
         "spatie/image-optimizer-1.10.0.0",
         "symfony-cmf/routing-bundle-3.2.0.0",
-        "symfony/cache-7.4.20.0",
+        "symfony/cache-7.4.21.0",
         "symfony/config-7.4.17.0",
-        "symfony/console-7.4.20.0",
+        "symfony/console-7.4.21.0",
         "symfony/contracts-3.7.3.0",
         "symfony/debug-bundle-7.4.8.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/doctrine-bridge-7.4.20.0",
-        "symfony/doctrine-messenger-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/doctrine-bridge-7.4.21.0",
+        "symfony/doctrine-messenger-7.4.21.0",
         "symfony/dom-crawler-7.4.17.0",
         "symfony/error-handler-7.4.20.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/expression-language-7.4.18.0",
-        "symfony/filesystem-7.4.18.0",
+        "symfony/expression-language-7.4.21.0",
+        "symfony/filesystem-7.4.21.0",
         "symfony/finder-7.4.20.0",
-        "symfony/framework-bundle-7.4.20.0",
+        "symfony/framework-bundle-7.4.21.0",
         "symfony/html-sanitizer-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
-        "symfony/lock-7.4.20.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
+        "symfony/lock-7.4.21.0",
         "symfony/mailer-7.4.19.0",
-        "symfony/messenger-7.4.20.0",
+        "symfony/messenger-7.4.21.0",
         "symfony/mime-7.4.19.0",
         "symfony/monolog-bundle-3.11.2.0",
         "symfony/options-resolver-7.4.8.0",
         "symfony/password-hasher-7.4.8.0",
-        "symfony/process-7.4.19.0",
+        "symfony/process-7.4.21.0",
         "symfony/property-access-7.4.16.0",
         "symfony/property-info-7.4.20.0",
         "symfony/rate-limiter-7.4.18.0",
-        "symfony/routing-7.4.20.0",
-        "symfony/security-bundle-7.4.20.0",
-        "symfony/security-core-7.4.20.0",
-        "symfony/security-http-7.4.20.0",
-        "symfony/serializer-7.4.20.0",
-        "symfony/string-7.4.19.0",
+        "symfony/routing-7.4.21.0",
+        "symfony/security-bundle-7.4.21.0",
+        "symfony/security-core-7.4.21.0",
+        "symfony/security-http-7.4.21.0",
+        "symfony/serializer-7.4.21.0",
+        "symfony/string-7.4.21.0",
         "symfony/templating-6.4.24.0",
         "symfony/translation-7.4.17.0",
         "symfony/twig-bridge-7.4.19.0",
-        "symfony/twig-bundle-7.4.19.0",
-        "symfony/uid-7.4.20.0",
-        "symfony/validator-7.4.20.0",
-        "symfony/var-dumper-7.4.18.0",
+        "symfony/twig-bundle-7.4.21.0",
+        "symfony/uid-7.4.21.0",
+        "symfony/validator-7.4.21.0",
+        "symfony/var-dumper-7.4.21.0",
         "symfony/var-exporter-7.4.18.0",
-        "symfony/web-profiler-bundle-7.4.20.0",
+        "symfony/web-profiler-bundle-7.4.21.0",
         "symfony/webpack-encore-bundle-2.4.2.0",
         "symfony/workflow-7.4.20.0",
-        "symfony/yaml-7.4.20.0",
+        "symfony/yaml-7.4.21.0",
         "tijsverkoyen/css-to-inline-styles-2.4.0.0",
         "twig/extra-bundle-3.29.0.0",
         "twig/string-extra-3.24.0.0",
@@ -563351,10 +563351,10 @@
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
         "symfony/asset-7.4.8.0",
-        "symfony/form-7.4.20.0",
+        "symfony/form-7.4.21.0",
         "symfony/intl-7.4.17.0",
-        "symfony/security-bundle-7.4.20.0",
-        "symfony/validator-7.4.20.0",
+        "symfony/security-bundle-7.4.21.0",
+        "symfony/validator-7.4.21.0",
         "symfony/webpack-encore-bundle-2.4.2.0"
       ]
     },
@@ -563399,7 +563399,7 @@
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
         "ramsey/uuid-4.9.4.0",
         "ramsey/uuid-doctrine-2.1.0.0",
-        "symfony/scheduler-7.4.20.0"
+        "symfony/scheduler-7.4.21.0"
       ]
     },
     {
@@ -563408,6 +563408,7 @@
         "lcobucci/jwt-5.6.1.0",
         "league/csv-9.28.0.0",
         "league/oauth2-server-9.4.1.0",
+        "mcp/sdk-0.7.1.0",
         "nesbot/carbon-3.14.2.0",
         "php-http/discovery-1.20.0.0",
         "phpdocumentor/reflection-docblock-6.0.3.0",
@@ -563416,14 +563417,14 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/static-resolver-bundle-2026.9999999.9999999.9999999-dev",
         "psr/http-factory-1.1.0.0",
-        "symfony/http-client-7.4.20.0",
-        "symfony/lock-7.4.20.0",
+        "symfony/http-client-7.4.21.0",
+        "symfony/lock-7.4.21.0",
         "symfony/mercure-0.6.5.0",
         "symfony/mercure-bundle-0.3.9.0",
-        "symfony/psr-http-message-bridge-7.4.8.0",
+        "symfony/psr-http-message-bridge-7.4.21.0",
         "twig/intl-extra-3.30.0.0",
         "twig/string-extra-3.24.0.0",
-        "zircote/swagger-php-6.13.0.0"
+        "zircote/swagger-php-6.14.0.0"
       ]
     },
     {
@@ -563450,7 +563451,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "tinymce/tinymce-8.9.3.0"
+        "tinymce/tinymce-8.10.0.0"
       ]
     },
     {
@@ -563463,7 +563464,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.20.0",
+        "symfony/http-client-7.4.21.0",
         "translations-com/globallink-connect-api-php-4.18.6.0"
       ]
     },
@@ -563474,7 +563475,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.20.0"
+        "symfony/http-client-7.4.21.0"
       ]
     },
     {
@@ -563501,8 +563502,8 @@
     {
       "ref": "presta/sitemap-bundle-4.3.1.0",
       "dependsOn": [
-        "symfony/console-7.4.20.0",
-        "symfony/framework-bundle-7.4.20.0"
+        "symfony/console-7.4.21.0",
+        "symfony/framework-bundle-7.4.21.0"
       ]
     },
     {
@@ -563555,7 +563556,7 @@
       "ref": "psr/simple-cache-3.0.0.0"
     },
     {
-      "ref": "radebatz/type-info-extras-1.0.9.0",
+      "ref": "radebatz/type-info-extras-1.0.10.0",
       "dependsOn": [
         "phpstan/phpdoc-parser-2.3.6.0",
         "symfony/type-info-8.1.8.0"
@@ -563624,14 +563625,14 @@
       "ref": "scheb/2fa-bundle-8.6.1.0",
       "dependsOn": [
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/framework-bundle-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/framework-bundle-7.4.21.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/property-access-7.4.16.0",
-        "symfony/security-bundle-7.4.20.0",
-        "symfony/twig-bundle-7.4.19.0"
+        "symfony/security-bundle-7.4.21.0",
+        "symfony/twig-bundle-7.4.21.0"
       ]
     },
     {
@@ -563645,7 +563646,7 @@
       "ref": "spatie/image-optimizer-1.10.0.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
-        "symfony/process-7.4.19.0"
+        "symfony/process-7.4.21.0"
       ]
     },
     {
@@ -563665,22 +563666,22 @@
       "ref": "symfony-cmf/routing-3.0.5.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
-        "symfony/http-kernel-7.4.20.0",
-        "symfony/routing-7.4.20.0"
+        "symfony/http-kernel-7.4.21.0",
+        "symfony/routing-7.4.21.0"
       ]
     },
     {
       "ref": "symfony-cmf/routing-bundle-3.2.0.0",
       "dependsOn": [
         "symfony-cmf/routing-3.0.5.0",
-        "symfony/framework-bundle-7.4.20.0"
+        "symfony/framework-bundle-7.4.21.0"
       ]
     },
     {
       "ref": "symfony/asset-7.4.8.0"
     },
     {
-      "ref": "symfony/cache-7.4.20.0",
+      "ref": "symfony/cache-7.4.21.0",
       "dependsOn": [
         "psr/cache-3.0.0.0",
         "psr/log-3.0.2.0",
@@ -563688,7 +563689,7 @@
       ]
     },
     {
-      "ref": "symfony/clock-7.4.8.0",
+      "ref": "symfony/clock-7.4.21.0",
       "dependsOn": [
         "psr/clock-1.0.0.0",
         "symfony/polyfill-php83-1.43.0.0"
@@ -563697,15 +563698,15 @@
     {
       "ref": "symfony/config-7.4.17.0",
       "dependsOn": [
-        "symfony/filesystem-7.4.18.0",
+        "symfony/filesystem-7.4.21.0",
         "symfony/polyfill-ctype-1.37.0.0"
       ]
     },
     {
-      "ref": "symfony/console-7.4.20.0",
+      "ref": "symfony/console-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.0.0",
-        "symfony/string-7.4.19.0"
+        "symfony/string-7.4.21.0"
       ]
     },
     {
@@ -563723,21 +563724,21 @@
       "ref": "symfony/debug-bundle-7.4.8.0",
       "dependsOn": [
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/twig-bridge-7.4.19.0",
-        "symfony/var-dumper-7.4.18.0"
+        "symfony/var-dumper-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/dependency-injection-7.4.20.0",
+      "ref": "symfony/dependency-injection-7.4.21.0",
       "dependsOn": [
         "psr/container-2.0.2.0",
         "symfony/var-exporter-7.4.18.0"
       ]
     },
     {
-      "ref": "symfony/doctrine-bridge-7.4.20.0",
+      "ref": "symfony/doctrine-bridge-7.4.21.0",
       "dependsOn": [
         "doctrine/event-manager-2.1.1.0",
         "doctrine/persistence-3.4.5.0",
@@ -563746,10 +563747,10 @@
       ]
     },
     {
-      "ref": "symfony/doctrine-messenger-7.4.20.0",
+      "ref": "symfony/doctrine-messenger-7.4.21.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
-        "symfony/messenger-7.4.20.0"
+        "symfony/messenger-7.4.21.0"
       ]
     },
     {
@@ -563765,20 +563766,20 @@
       "dependsOn": [
         "psr/log-3.0.2.0",
         "symfony/polyfill-php85-1.43.0.0",
-        "symfony/var-dumper-7.4.18.0"
+        "symfony/var-dumper-7.4.21.0"
       ]
     },
     {
       "ref": "symfony/event-dispatcher-7.4.17.0"
     },
     {
-      "ref": "symfony/expression-language-7.4.18.0",
+      "ref": "symfony/expression-language-7.4.21.0",
       "dependsOn": [
-        "symfony/cache-7.4.20.0"
+        "symfony/cache-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/filesystem-7.4.18.0",
+      "ref": "symfony/filesystem-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-mbstring-1.43.0.0"
@@ -563788,7 +563789,7 @@
       "ref": "symfony/finder-7.4.20.0"
     },
     {
-      "ref": "symfony/form-7.4.20.0",
+      "ref": "symfony/form-7.4.21.0",
       "dependsOn": [
         "symfony/event-dispatcher-7.4.17.0",
         "symfony/options-resolver-7.4.8.0",
@@ -563799,20 +563800,20 @@
       ]
     },
     {
-      "ref": "symfony/framework-bundle-7.4.20.0",
+      "ref": "symfony/framework-bundle-7.4.21.0",
       "dependsOn": [
-        "symfony/cache-7.4.20.0",
+        "symfony/cache-7.4.21.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
         "symfony/error-handler-7.4.20.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/filesystem-7.4.18.0",
+        "symfony/filesystem-7.4.21.0",
         "symfony/finder-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/polyfill-mbstring-1.43.0.0",
         "symfony/polyfill-php85-1.43.0.0",
-        "symfony/routing-7.4.20.0"
+        "symfony/routing-7.4.21.0"
       ]
     },
     {
@@ -563823,25 +563824,25 @@
       ]
     },
     {
-      "ref": "symfony/http-client-7.4.20.0",
+      "ref": "symfony/http-client-7.4.21.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
         "symfony/polyfill-php83-1.43.0.0"
       ]
     },
     {
-      "ref": "symfony/http-foundation-7.4.20.0",
+      "ref": "symfony/http-foundation-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.0.0"
       ]
     },
     {
-      "ref": "symfony/http-kernel-7.4.20.0",
+      "ref": "symfony/http-kernel-7.4.21.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
         "symfony/error-handler-7.4.20.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.20.0",
+        "symfony/http-foundation-7.4.21.0",
         "symfony/polyfill-ctype-1.37.0.0"
       ]
     },
@@ -563849,7 +563850,7 @@
       "ref": "symfony/intl-7.4.17.0"
     },
     {
-      "ref": "symfony/lock-7.4.20.0",
+      "ref": "symfony/lock-7.4.21.0",
       "dependsOn": [
         "psr/log-3.0.2.0"
       ]
@@ -563867,8 +563868,8 @@
     {
       "ref": "symfony/mercure-0.6.5.0",
       "dependsOn": [
-        "symfony/http-client-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
+        "symfony/http-client-7.4.21.0",
+        "symfony/http-foundation-7.4.21.0",
         "symfony/polyfill-php80-1.43.0.0",
         "symfony/web-link-7.4.8.0"
       ]
@@ -563878,17 +563879,17 @@
       "dependsOn": [
         "lcobucci/jwt-5.6.1.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/mercure-0.6.5.0",
         "symfony/web-link-7.4.8.0"
       ]
     },
     {
-      "ref": "symfony/messenger-7.4.20.0",
+      "ref": "symfony/messenger-7.4.21.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
-        "symfony/clock-7.4.8.0"
+        "symfony/clock-7.4.21.0"
       ]
     },
     {
@@ -563902,7 +563903,7 @@
       "ref": "symfony/monolog-bridge-7.4.18.0",
       "dependsOn": [
         "monolog/monolog-3.12.1.0",
-        "symfony/http-kernel-7.4.20.0"
+        "symfony/http-kernel-7.4.21.0"
       ]
     },
     {
@@ -563910,8 +563911,8 @@
       "dependsOn": [
         "monolog/monolog-3.12.1.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/monolog-bridge-7.4.18.0",
         "symfony/polyfill-php84-1.43.0.0"
       ]
@@ -563973,7 +563974,7 @@
       "ref": "symfony/polyfill-uuid-1.43.0.0"
     },
     {
-      "ref": "symfony/process-7.4.19.0"
+      "ref": "symfony/process-7.4.21.0"
     },
     {
       "ref": "symfony/property-access-7.4.16.0",
@@ -563984,15 +563985,15 @@
     {
       "ref": "symfony/property-info-7.4.20.0",
       "dependsOn": [
-        "symfony/string-7.4.19.0",
+        "symfony/string-7.4.21.0",
         "symfony/type-info-8.1.8.0"
       ]
     },
     {
-      "ref": "symfony/psr-http-message-bridge-7.4.8.0",
+      "ref": "symfony/psr-http-message-bridge-7.4.21.0",
       "dependsOn": [
         "psr/http-message-2.0.0.0",
-        "symfony/http-foundation-7.4.20.0"
+        "symfony/http-foundation-7.4.21.0"
       ]
     },
     {
@@ -564002,31 +564003,31 @@
       ]
     },
     {
-      "ref": "symfony/routing-7.4.20.0"
+      "ref": "symfony/routing-7.4.21.0"
     },
     {
-      "ref": "symfony/scheduler-7.4.20.0",
+      "ref": "symfony/scheduler-7.4.21.0",
       "dependsOn": [
-        "symfony/clock-7.4.8.0"
+        "symfony/clock-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/security-bundle-7.4.20.0",
+      "ref": "symfony/security-bundle-7.4.21.0",
       "dependsOn": [
-        "symfony/clock-7.4.8.0",
+        "symfony/clock-7.4.21.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/password-hasher-7.4.8.0",
-        "symfony/security-core-7.4.20.0",
+        "symfony/security-core-7.4.21.0",
         "symfony/security-csrf-7.4.8.0",
-        "symfony/security-http-7.4.20.0"
+        "symfony/security-http-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/security-core-7.4.20.0",
+      "ref": "symfony/security-core-7.4.21.0",
       "dependsOn": [
         "symfony/password-hasher-7.4.8.0"
       ]
@@ -564034,22 +564035,22 @@
     {
       "ref": "symfony/security-csrf-7.4.8.0",
       "dependsOn": [
-        "symfony/security-core-7.4.20.0"
+        "symfony/security-core-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/security-http-7.4.20.0",
+      "ref": "symfony/security-http-7.4.21.0",
       "dependsOn": [
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/polyfill-mbstring-1.43.0.0",
         "symfony/property-access-7.4.16.0",
-        "symfony/security-core-7.4.20.0"
+        "symfony/security-core-7.4.21.0"
       ]
     },
     {
-      "ref": "symfony/serializer-7.4.20.0",
+      "ref": "symfony/serializer-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-php84-1.43.0.0"
@@ -564059,7 +564060,7 @@
       "ref": "symfony/stopwatch-7.4.8.0"
     },
     {
-      "ref": "symfony/string-7.4.19.0",
+      "ref": "symfony/string-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-intl-grapheme-1.43.0.0",
@@ -564086,12 +564087,12 @@
       ]
     },
     {
-      "ref": "symfony/twig-bundle-7.4.19.0",
+      "ref": "symfony/twig-bundle-7.4.21.0",
       "dependsOn": [
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-foundation-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-foundation-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
         "symfony/twig-bridge-7.4.19.0",
         "twig/twig-3.30.0.0"
       ]
@@ -564103,13 +564104,13 @@
       ]
     },
     {
-      "ref": "symfony/uid-7.4.20.0",
+      "ref": "symfony/uid-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-uuid-1.43.0.0"
       ]
     },
     {
-      "ref": "symfony/validator-7.4.20.0",
+      "ref": "symfony/validator-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-mbstring-1.43.0.0",
@@ -564117,7 +564118,7 @@
       ]
     },
     {
-      "ref": "symfony/var-dumper-7.4.18.0",
+      "ref": "symfony/var-dumper-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.0.0"
       ]
@@ -564132,13 +564133,13 @@
       ]
     },
     {
-      "ref": "symfony/web-profiler-bundle-7.4.20.0",
+      "ref": "symfony/web-profiler-bundle-7.4.21.0",
       "dependsOn": [
         "symfony/config-7.4.17.0",
-        "symfony/framework-bundle-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0",
-        "symfony/routing-7.4.20.0",
-        "symfony/twig-bundle-7.4.19.0",
+        "symfony/framework-bundle-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0",
+        "symfony/routing-7.4.21.0",
+        "symfony/twig-bundle-7.4.21.0",
         "twig/twig-3.30.0.0"
       ]
     },
@@ -564147,15 +564148,15 @@
       "dependsOn": [
         "symfony/asset-7.4.8.0",
         "symfony/config-7.4.17.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/http-kernel-7.4.20.0"
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/http-kernel-7.4.21.0"
       ]
     },
     {
       "ref": "symfony/workflow-7.4.20.0"
     },
     {
-      "ref": "symfony/yaml-7.4.20.0",
+      "ref": "symfony/yaml-7.4.21.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0"
       ]
@@ -564170,7 +564171,7 @@
       ]
     },
     {
-      "ref": "tinymce/tinymce-8.9.3.0"
+      "ref": "tinymce/tinymce-8.10.0.0"
     },
     {
       "ref": "translations-com/globallink-connect-api-php-4.18.6.0"
@@ -564178,8 +564179,8 @@
     {
       "ref": "twig/extra-bundle-3.29.0.0",
       "dependsOn": [
-        "symfony/framework-bundle-7.4.20.0",
-        "symfony/twig-bundle-7.4.19.0",
+        "symfony/framework-bundle-7.4.21.0",
+        "symfony/twig-bundle-7.4.21.0",
         "twig/twig-3.30.0.0"
       ]
     },
@@ -564193,7 +564194,7 @@
     {
       "ref": "twig/string-extra-3.24.0.0",
       "dependsOn": [
-        "symfony/string-7.4.19.0",
+        "symfony/string-7.4.21.0",
         "twig/twig-3.30.0.0"
       ]
     },
@@ -564224,9 +564225,9 @@
         "fidry/cpu-core-counter-1.4.1.0",
         "nikic/iter-2.4.1.0",
         "psr/log-3.0.2.0",
-        "symfony/console-7.4.20.0",
-        "symfony/dependency-injection-7.4.20.0",
-        "symfony/process-7.4.19.0",
+        "symfony/console-7.4.21.0",
+        "symfony/dependency-injection-7.4.21.0",
+        "symfony/process-7.4.21.0",
         "thecodingmachine/safe-3.4.0.0",
         "webmozart/assert-1.12.1.0"
       ]
@@ -564238,15 +564239,15 @@
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
     },
     {
-      "ref": "zircote/swagger-php-6.13.0.0",
+      "ref": "zircote/swagger-php-6.14.0.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
         "phpstan/phpdoc-parser-2.3.6.0",
         "psr/log-3.0.2.0",
-        "radebatz/type-info-extras-1.0.9.0",
-        "symfony/console-7.4.20.0",
+        "radebatz/type-info-extras-1.0.10.0",
+        "symfony/console-7.4.21.0",
         "symfony/finder-7.4.20.0",
-        "symfony/yaml-7.4.20.0"
+        "symfony/yaml-7.4.21.0"
       ]
     },
     {
