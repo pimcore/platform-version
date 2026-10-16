@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:903c5960-a1c8-4a63-9be3-3e8af3c857d3",
+  "serialNumber": "urn:uuid:64bad841-0f5a-493d-baa1-36d030f941ee",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-15T00:07:04Z",
+    "timestamp": "2026-10-16T00:06:09Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 1783f3f",
+      "version": "2026.3.x-dev e53081b",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%201783f3f",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20e53081b",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1783f3fceac6f089edf12263afc88efe7342a7b8"
+          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1783f3fceac6f089edf12263afc88efe7342a7b8"
+          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2067,11 +2067,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "gotenberg/gotenberg-php-2.25.0.0",
+      "bom-ref": "gotenberg/gotenberg-php-2.26.0.0",
       "author": "Julien Neuhart",
       "group": "gotenberg",
       "name": "gotenberg-php",
-      "version": "v2.25.0",
+      "version": "v2.26.0",
       "description": "A PHP client for interacting with Gotenberg, a developer-friendly API for converting numerous document formats into PDF files, and more!",
       "licenses": [
         {
@@ -2081,17 +2081,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/gotenberg/gotenberg-php@v2.25.0",
+      "purl": "pkg:composer/gotenberg/gotenberg-php@v2.26.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/gotenberg/gotenberg-php/zipball/690480b428102141c0e1933cd89092aa2ae13844",
+          "url": "https://api.github.com/repos/gotenberg/gotenberg-php/zipball/b093562ec726010e588b397ffd5f927246ec048f",
           "type": "distribution",
-          "comment": "dist reference: 690480b428102141c0e1933cd89092aa2ae13844"
+          "comment": "dist reference: b093562ec726010e588b397ffd5f927246ec048f"
         },
         {
           "url": "https://github.com/gotenberg/gotenberg-php.git",
           "type": "vcs",
-          "comment": "source reference: 690480b428102141c0e1933cd89092aa2ae13844"
+          "comment": "source reference: b093562ec726010e588b397ffd5f927246ec048f"
         },
         {
           "url": "https://github.com/gotenberg/gotenberg-php",
@@ -2104,7 +2104,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/gotenberg/gotenberg-php/tree/v2.25.0",
+          "url": "https://github.com/gotenberg/gotenberg-php/tree/v2.26.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2112,11 +2112,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "690480b428102141c0e1933cd89092aa2ae13844"
+          "value": "b093562ec726010e588b397ffd5f927246ec048f"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "690480b428102141c0e1933cd89092aa2ae13844"
+          "value": "b093562ec726010e588b397ffd5f927246ec048f"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14822,7 +14822,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 1783f3f",
+      "version": "2026.3.x-dev e53081b",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14832,15 +14832,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%201783f3f",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20e53081b",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1783f3fceac6f089edf12263afc88efe7342a7b8"
+          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1783f3fceac6f089edf12263afc88efe7342a7b8"
+          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562514,7 +562514,7 @@
       ]
     },
     {
-      "ref": "gotenberg/gotenberg-php-2.25.0.0",
+      "ref": "gotenberg/gotenberg-php-2.26.0.0",
       "dependsOn": [
         "guzzlehttp/psr7-2.13.1.0",
         "php-http/discovery-1.20.0.0",
@@ -563196,7 +563196,7 @@
         "doctrine/persistence-3.4.5.0",
         "egulias/email-validator-4.0.4.0",
         "friendsofsymfony/jsrouting-bundle-3.6.1.0",
-        "gotenberg/gotenberg-php-2.25.0.0",
+        "gotenberg/gotenberg-php-2.26.0.0",
         "guzzlehttp/guzzle-7.15.5.0",
         "http-interop/http-factory-guzzle-1.2.1.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
