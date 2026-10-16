@@ -102,6 +102,46 @@ docker compose exec php bin/console generic-data-index:update:index -r
 The `-r` flag recreates the indices from scratch; the Supervisord service keeps them up to date as
 you create and edit elements.
 
+### Enabling the Redis cache
+
+`docker compose up` starts a `redis` service, but the skeleton does not use it yet: Pimcore's object
+cache defaults to the database adapter (`cache_items` table). To switch to Redis, add the DSN to
+`.env.local` and point the cache pool at it in `config/packages/cache.yaml`:
+
+```dotenv
+# .env.local
+REDIS_URL=redis://redis:6379
+```
+
+```yaml
+# config/packages/cache.yaml
+framework:
+    cache:
+        pools:
+            pimcore.cache.pool:
+                public: true
+                default_lifetime: 31536000  # 1 year
+                adapter: cache.adapter.redis_tag_aware
+                provider: '%env(REDIS_URL)%'
+```
+
+Then clear and warm the cache:
+
+```bash
+docker compose exec php bin/console cache:clear
+docker compose exec php bin/console pimcore:cache:warming
+```
+
+:::info
+
+Inside Docker the Redis host is the Compose service name (`redis`), not `localhost`. The commented
+example in `config/config.yaml` uses `redis://localhost`, which only applies to a non-Docker setup.
+
+:::
+
+See the [Performance Guide](./02_System_Setup_and_Hosting/09_Performance_Guide.md#pimcore-caching-redis)
+for further caching options.
+
 ### Production hardening
 
 The skeleton is configured for local development. Before deploying anywhere shared or public,

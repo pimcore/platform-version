@@ -46,7 +46,13 @@ during the Pimcore setup process.
 
 For any installation, configure a caching backend to improve performance.
 Redis is the recommended cache adapter.
-See the [Performance Guide](./02_System_Setup_and_Hosting/09_Performance_Guide.md) for configuration details.
+
+The Docker environments of both packages already start a Redis-compatible service, but Pimcore's
+object cache is **not** wired to it by default: a fresh install uses the database adapter
+(`cache_items` table) until you enable the Redis pool. See
+[Enabling the Redis cache](./00_Skeleton_Installation.md#enabling-the-redis-cache) for the Docker
+setup and the [Performance Guide](./02_System_Setup_and_Hosting/09_Performance_Guide.md) for
+configuration details.
 
 ## Next Steps
 
