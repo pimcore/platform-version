@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:64bad841-0f5a-493d-baa1-36d030f941ee",
+  "serialNumber": "urn:uuid:457c2c42-2727-4f76-a5ff-eaf15358f101",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-16T00:06:09Z",
+    "timestamp": "2026-10-17T00:06:38Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev e53081b",
+      "version": "2026.3.x-dev d478585",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20e53081b",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20d478585",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
+          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
+          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
         },
         {
           "name": "cdx:composer:package:type",
@@ -3147,11 +3147,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "league/uri-7.8.1.0",
+      "bom-ref": "league/uri-7.9.0.0",
       "author": "Ignace Nyamagana Butera",
       "group": "league",
       "name": "uri",
-      "version": "7.8.1",
+      "version": "7.9.0",
       "description": "URI manipulation library",
       "licenses": [
         {
@@ -3161,17 +3161,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/league/uri@7.8.1",
+      "purl": "pkg:composer/league/uri@7.9.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/thephpleague/uri/zipball/08cf38e3924d4f56238125547b5720496fac8fd4",
+          "url": "https://api.github.com/repos/thephpleague/uri/zipball/fcc872a3d872aa13f935e0cd1887b9abb06da07f",
           "type": "distribution",
-          "comment": "dist reference: 08cf38e3924d4f56238125547b5720496fac8fd4"
+          "comment": "dist reference: fcc872a3d872aa13f935e0cd1887b9abb06da07f"
         },
         {
           "url": "https://github.com/thephpleague/uri.git",
           "type": "vcs",
-          "comment": "source reference: 08cf38e3924d4f56238125547b5720496fac8fd4"
+          "comment": "source reference: fcc872a3d872aa13f935e0cd1887b9abb06da07f"
         },
         {
           "url": "https://uri.thephpleague.com",
@@ -3194,7 +3194,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/thephpleague/uri/tree/7.8.1",
+          "url": "https://github.com/thephpleague/uri/tree/7.9.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -3202,11 +3202,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "08cf38e3924d4f56238125547b5720496fac8fd4"
+          "value": "fcc872a3d872aa13f935e0cd1887b9abb06da07f"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "08cf38e3924d4f56238125547b5720496fac8fd4"
+          "value": "fcc872a3d872aa13f935e0cd1887b9abb06da07f"
         },
         {
           "name": "cdx:composer:package:type",
@@ -3216,11 +3216,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "league/uri-interfaces-7.8.1.0",
+      "bom-ref": "league/uri-interfaces-7.9.0.0",
       "author": "Ignace Nyamagana Butera",
       "group": "league",
       "name": "uri-interfaces",
-      "version": "7.8.1",
+      "version": "7.9.0",
       "description": "Common tools for parsing and resolving RFC3987/RFC3986 URI",
       "licenses": [
         {
@@ -3230,17 +3230,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/league/uri-interfaces@7.8.1",
+      "purl": "pkg:composer/league/uri-interfaces@7.9.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/85d5c77c5d6d3af6c54db4a78246364908f3c928",
+          "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58",
           "type": "distribution",
-          "comment": "dist reference: 85d5c77c5d6d3af6c54db4a78246364908f3c928"
+          "comment": "dist reference: eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58"
         },
         {
           "url": "https://github.com/thephpleague/uri-interfaces.git",
           "type": "vcs",
-          "comment": "source reference: 85d5c77c5d6d3af6c54db4a78246364908f3c928"
+          "comment": "source reference: eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58"
         },
         {
           "url": "https://uri.thephpleague.com",
@@ -3263,7 +3263,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/thephpleague/uri-interfaces/tree/7.8.1",
+          "url": "https://github.com/thephpleague/uri-interfaces/tree/7.9.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -3271,11 +3271,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "85d5c77c5d6d3af6c54db4a78246364908f3c928"
+          "value": "eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "85d5c77c5d6d3af6c54db4a78246364908f3c928"
+          "value": "eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14822,7 +14822,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev e53081b",
+      "version": "2026.3.x-dev d478585",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14832,15 +14832,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20e53081b",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20d478585",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
+          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e53081b732d51c5b8653132a624aae2d435c5b8c"
+          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562634,21 +562634,21 @@
         "defuse/php-encryption-2.4.0.0",
         "lcobucci/jwt-5.6.1.0",
         "league/event-3.0.3.0",
-        "league/uri-7.8.1.0",
+        "league/uri-7.9.0.0",
         "psr/clock-1.0.0.0",
         "psr/http-message-2.0.0.0",
         "psr/http-server-middleware-1.0.2.0"
       ]
     },
     {
-      "ref": "league/uri-7.8.1.0",
+      "ref": "league/uri-7.9.0.0",
       "dependsOn": [
-        "league/uri-interfaces-7.8.1.0",
+        "league/uri-interfaces-7.9.0.0",
         "psr/http-factory-1.1.0.0"
       ]
     },
     {
-      "ref": "league/uri-interfaces-7.8.1.0",
+      "ref": "league/uri-interfaces-7.9.0.0",
       "dependsOn": [
         "psr/http-message-2.0.0.0"
       ]
@@ -563752,7 +563752,7 @@
     {
       "ref": "symfony/html-sanitizer-7.4.20.0",
       "dependsOn": [
-        "league/uri-7.8.1.0",
+        "league/uri-7.9.0.0",
         "masterminds/html5-2.11.0.0"
       ]
     },
