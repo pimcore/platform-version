@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:457c2c42-2727-4f76-a5ff-eaf15358f101",
+  "serialNumber": "urn:uuid:8a2800b4-bba9-4904-af94-57a5dbb0b1c0",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-17T00:06:38Z",
+    "timestamp": "2026-10-18T00:06:27Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev d478585",
+      "version": "2026.3.x-dev c484925",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20d478585",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c484925",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
+          "value": "c48492517ca571dc8e7444810b736cfec3508c60"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
+          "value": "c48492517ca571dc8e7444810b736cfec3508c60"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2234,11 +2234,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "guzzlehttp/psr7-2.13.1.0",
+      "bom-ref": "guzzlehttp/psr7-2.13.2.0",
       "author": "Graham Campbell, Michael Dowling, George Mponos, Tobias Nyholm, M\u00E1rk S\u00E1gi-Kaz\u00E1r, Tobias Schultze, M\u00E1rk S\u00E1gi-Kaz\u00E1r",
       "group": "guzzlehttp",
       "name": "psr7",
-      "version": "2.13.1",
+      "version": "2.13.2",
       "description": "PSR-7 message implementation that also provides common utility methods",
       "licenses": [
         {
@@ -2248,17 +2248,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/guzzlehttp/psr7@2.13.1",
+      "purl": "pkg:composer/guzzlehttp/psr7@2.13.2",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/guzzle/psr7/zipball/95e7828100de18b4e269fb1703be530082d5166d",
+          "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
           "type": "distribution",
-          "comment": "dist reference: 95e7828100de18b4e269fb1703be530082d5166d"
+          "comment": "dist reference: adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "url": "https://github.com/guzzle/psr7.git",
           "type": "vcs",
-          "comment": "source reference: 95e7828100de18b4e269fb1703be530082d5166d"
+          "comment": "source reference: adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "url": "https://github.com/guzzle/psr7/issues",
@@ -2266,7 +2266,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/guzzle/psr7/tree/2.13.1",
+          "url": "https://github.com/guzzle/psr7/tree/2.13.2",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2274,11 +2274,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "95e7828100de18b4e269fb1703be530082d5166d"
+          "value": "adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "95e7828100de18b4e269fb1703be530082d5166d"
+          "value": "adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14822,7 +14822,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev d478585",
+      "version": "2026.3.x-dev c484925",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14832,15 +14832,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20d478585",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c484925",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
+          "value": "c48492517ca571dc8e7444810b736cfec3508c60"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d478585ae73faaf1c180cebdcd7c5705961a0818"
+          "value": "c48492517ca571dc8e7444810b736cfec3508c60"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562516,7 +562516,7 @@
     {
       "ref": "gotenberg/gotenberg-php-2.26.0.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "php-http/discovery-1.20.0.0",
         "psr/http-client-1.0.3.0",
         "psr/http-message-2.0.0.0"
@@ -562526,7 +562526,7 @@
       "ref": "guzzlehttp/guzzle-7.15.5.0",
       "dependsOn": [
         "guzzlehttp/promises-2.5.3.0",
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "psr/http-client-1.0.3.0",
         "symfony/polyfill-php80-1.43.0.0"
       ]
@@ -562535,7 +562535,7 @@
       "ref": "guzzlehttp/promises-2.5.3.0"
     },
     {
-      "ref": "guzzlehttp/psr7-2.13.1.0",
+      "ref": "guzzlehttp/psr7-2.13.2.0",
       "dependsOn": [
         "psr/http-factory-1.1.0.0",
         "psr/http-message-2.0.0.0",
@@ -562546,7 +562546,7 @@
     {
       "ref": "http-interop/http-factory-guzzle-1.2.1.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "psr/http-factory-1.1.0.0"
       ]
     },
@@ -562625,7 +562625,7 @@
       "ref": "league/oauth2-client-2.9.1.0",
       "dependsOn": [
         "guzzlehttp/guzzle-7.15.5.0",
-        "guzzlehttp/psr7-2.13.1.0"
+        "guzzlehttp/psr7-2.13.2.0"
       ]
     },
     {
