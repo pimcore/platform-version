@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:90a66dbf-387d-4018-b5cb-478dd9be97c0",
+  "serialNumber": "urn:uuid:6ce263b8-3ac6-4f2f-8921-d6930b857b47",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-17T00:06:24Z",
+    "timestamp": "2026-10-18T00:06:42Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 4bab374",
+      "version": "2026.x-dev 91aa463",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%204bab374",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2091aa463",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "4bab3740597eeddf254b1e379862029be62863dc"
+          "value": "91aa4635ca616a479f90941a95f1b0242d9e0295"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "4bab3740597eeddf254b1e379862029be62863dc"
+          "value": "91aa4635ca616a479f90941a95f1b0242d9e0295"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2234,11 +2234,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "guzzlehttp/psr7-2.13.1.0",
+      "bom-ref": "guzzlehttp/psr7-2.13.2.0",
       "author": "Graham Campbell, Michael Dowling, George Mponos, Tobias Nyholm, M\u00E1rk S\u00E1gi-Kaz\u00E1r, Tobias Schultze, M\u00E1rk S\u00E1gi-Kaz\u00E1r",
       "group": "guzzlehttp",
       "name": "psr7",
-      "version": "2.13.1",
+      "version": "2.13.2",
       "description": "PSR-7 message implementation that also provides common utility methods",
       "licenses": [
         {
@@ -2248,17 +2248,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/guzzlehttp/psr7@2.13.1",
+      "purl": "pkg:composer/guzzlehttp/psr7@2.13.2",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/guzzle/psr7/zipball/95e7828100de18b4e269fb1703be530082d5166d",
+          "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
           "type": "distribution",
-          "comment": "dist reference: 95e7828100de18b4e269fb1703be530082d5166d"
+          "comment": "dist reference: adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "url": "https://github.com/guzzle/psr7.git",
           "type": "vcs",
-          "comment": "source reference: 95e7828100de18b4e269fb1703be530082d5166d"
+          "comment": "source reference: adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "url": "https://github.com/guzzle/psr7/issues",
@@ -2266,7 +2266,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/guzzle/psr7/tree/2.13.1",
+          "url": "https://github.com/guzzle/psr7/tree/2.13.2",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2274,11 +2274,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "95e7828100de18b4e269fb1703be530082d5166d"
+          "value": "adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "95e7828100de18b4e269fb1703be530082d5166d"
+          "value": "adee536f95101929f262b8c59e8a61472f347d58"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14819,11 +14819,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "zircote/swagger-php-6.15.0.0",
+      "bom-ref": "zircote/swagger-php-6.16.0.0",
       "author": "Robert Allen, Bob Fanger, Martin Rademacher",
       "group": "zircote",
       "name": "swagger-php",
-      "version": "6.15.0",
+      "version": "6.16.0",
       "description": "Generate interactive documentation for your RESTful API using PHP attributes (preferred) or PHPDoc annotations",
       "licenses": [
         {
@@ -14833,17 +14833,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/zircote/swagger-php@6.15.0",
+      "purl": "pkg:composer/zircote/swagger-php@6.16.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/892dc2ccda5fe7d1d86c765fa9877e246c5032c6",
+          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/6c6c03110bfaf02a46e9906b3f0058851f3df2c8",
           "type": "distribution",
-          "comment": "dist reference: 892dc2ccda5fe7d1d86c765fa9877e246c5032c6"
+          "comment": "dist reference: 6c6c03110bfaf02a46e9906b3f0058851f3df2c8"
         },
         {
           "url": "https://github.com/zircote/swagger-php.git",
           "type": "vcs",
-          "comment": "source reference: 892dc2ccda5fe7d1d86c765fa9877e246c5032c6"
+          "comment": "source reference: 6c6c03110bfaf02a46e9906b3f0058851f3df2c8"
         },
         {
           "url": "https://github.com/zircote/swagger-php",
@@ -14856,7 +14856,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/zircote/swagger-php/tree/6.15.0",
+          "url": "https://github.com/zircote/swagger-php/tree/6.16.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14864,11 +14864,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "892dc2ccda5fe7d1d86c765fa9877e246c5032c6"
+          "value": "6c6c03110bfaf02a46e9906b3f0058851f3df2c8"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "892dc2ccda5fe7d1d86c765fa9877e246c5032c6"
+          "value": "6c6c03110bfaf02a46e9906b3f0058851f3df2c8"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14881,7 +14881,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 4bab374",
+      "version": "2026.x-dev 91aa463",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14891,15 +14891,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%204bab374",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2091aa463",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "4bab3740597eeddf254b1e379862029be62863dc"
+          "value": "91aa4635ca616a479f90941a95f1b0242d9e0295"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "4bab3740597eeddf254b1e379862029be62863dc"
+          "value": "91aa4635ca616a479f90941a95f1b0242d9e0295"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562575,7 +562575,7 @@
     {
       "ref": "gotenberg/gotenberg-php-2.26.0.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "php-http/discovery-1.20.0.0",
         "psr/http-client-1.0.3.0",
         "psr/http-message-2.0.0.0"
@@ -562585,7 +562585,7 @@
       "ref": "guzzlehttp/guzzle-7.15.5.0",
       "dependsOn": [
         "guzzlehttp/promises-2.5.3.0",
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "psr/http-client-1.0.3.0",
         "symfony/polyfill-php80-1.43.0.0"
       ]
@@ -562594,7 +562594,7 @@
       "ref": "guzzlehttp/promises-2.5.3.0"
     },
     {
-      "ref": "guzzlehttp/psr7-2.13.1.0",
+      "ref": "guzzlehttp/psr7-2.13.2.0",
       "dependsOn": [
         "psr/http-factory-1.1.0.0",
         "psr/http-message-2.0.0.0",
@@ -562605,7 +562605,7 @@
     {
       "ref": "http-interop/http-factory-guzzle-1.2.1.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.1.0",
+        "guzzlehttp/psr7-2.13.2.0",
         "psr/http-factory-1.1.0.0"
       ]
     },
@@ -562684,7 +562684,7 @@
       "ref": "league/oauth2-client-2.9.1.0",
       "dependsOn": [
         "guzzlehttp/guzzle-7.15.5.0",
-        "guzzlehttp/psr7-2.13.1.0"
+        "guzzlehttp/psr7-2.13.2.0"
       ]
     },
     {
@@ -562957,7 +562957,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "zircote/swagger-php-6.15.0.0"
+        "zircote/swagger-php-6.16.0.0"
       ]
     },
     {
@@ -563067,7 +563067,7 @@
         "symfony/psr-http-message-bridge-7.4.21.0",
         "symfony/rate-limiter-7.4.18.0",
         "webmozarts/console-parallelization-2.3.0.0",
-        "zircote/swagger-php-6.15.0.0"
+        "zircote/swagger-php-6.16.0.0"
       ]
     },
     {
@@ -563424,7 +563424,7 @@
         "symfony/psr-http-message-bridge-7.4.21.0",
         "twig/intl-extra-3.30.0.0",
         "twig/string-extra-3.24.0.0",
-        "zircote/swagger-php-6.15.0.0"
+        "zircote/swagger-php-6.16.0.0"
       ]
     },
     {
@@ -564239,7 +564239,7 @@
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
     },
     {
-      "ref": "zircote/swagger-php-6.15.0.0",
+      "ref": "zircote/swagger-php-6.16.0.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
         "phpstan/phpdoc-parser-2.3.6.0",
