@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:fd123302-c20e-4eaf-8cea-2dcb0d041ff4",
+  "serialNumber": "urn:uuid:73c7a81b-08f3-4b38-891d-7930363b75a1",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-20T00:06:04Z",
+    "timestamp": "2026-10-21T00:06:44Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 842506c",
+      "version": "2026.x-dev ccdd29a",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20842506c",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ccdd29a",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "842506c9ee20599da4703c066dc207326d3bf6ca"
+          "value": "ccdd29a458adb3a9b06e2287217d745511fbb5a7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "842506c9ee20599da4703c066dc207326d3bf6ca"
+          "value": "ccdd29a458adb3a9b06e2287217d745511fbb5a7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -281,11 +281,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "composer/ca-bundle-1.5.14.0",
+      "bom-ref": "composer/ca-bundle-1.6.0.0",
       "author": "Jordi Boggiano",
       "group": "composer",
       "name": "ca-bundle",
-      "version": "1.5.14",
+      "version": "1.6.0",
       "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
       "licenses": [
         {
@@ -295,17 +295,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/composer/ca-bundle@1.5.14",
+      "purl": "pkg:composer/composer/ca-bundle@1.6.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/composer/ca-bundle/zipball/0c8abba0634f637bd78c4e451981da368d403463",
+          "url": "https://api.github.com/repos/composer/ca-bundle/zipball/2c99cf2e92516985dea4914812b93d9daf01cdd6",
           "type": "distribution",
-          "comment": "dist reference: 0c8abba0634f637bd78c4e451981da368d403463"
+          "comment": "dist reference: 2c99cf2e92516985dea4914812b93d9daf01cdd6"
         },
         {
           "url": "https://github.com/composer/ca-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 0c8abba0634f637bd78c4e451981da368d403463"
+          "comment": "source reference: 2c99cf2e92516985dea4914812b93d9daf01cdd6"
         },
         {
           "url": "irc://irc.freenode.org/composer",
@@ -318,7 +318,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/composer/ca-bundle/tree/1.5.14",
+          "url": "https://github.com/composer/ca-bundle/tree/1.6.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -326,11 +326,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "0c8abba0634f637bd78c4e451981da368d403463"
+          "value": "2c99cf2e92516985dea4914812b93d9daf01cdd6"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "0c8abba0634f637bd78c4e451981da368d403463"
+          "value": "2c99cf2e92516985dea4914812b93d9daf01cdd6"
         },
         {
           "name": "cdx:composer:package:type",
@@ -4694,11 +4694,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "open-telemetry/api-1.10.0.0",
+      "bom-ref": "open-telemetry/api-1.10.1.0",
       "author": "opentelemetry-php contributors",
       "group": "open-telemetry",
       "name": "api",
-      "version": "1.10.0",
+      "version": "1.10.1",
       "description": "API for OpenTelemetry PHP.",
       "licenses": [
         {
@@ -4708,17 +4708,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/open-telemetry/api@1.10.0",
+      "purl": "pkg:composer/open-telemetry/api@1.10.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/7c029c4a6fd457094a20569bf98f93d95e9a7559",
+          "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/b2bc26bf8bd6b2b6447b3626b2a1b5733873aa0b",
           "type": "distribution",
-          "comment": "dist reference: 7c029c4a6fd457094a20569bf98f93d95e9a7559"
+          "comment": "dist reference: b2bc26bf8bd6b2b6447b3626b2a1b5733873aa0b"
         },
         {
           "url": "https://github.com/opentelemetry-php/api.git",
           "type": "vcs",
-          "comment": "source reference: 7c029c4a6fd457094a20569bf98f93d95e9a7559"
+          "comment": "source reference: b2bc26bf8bd6b2b6447b3626b2a1b5733873aa0b"
         },
         {
           "url": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
@@ -4744,11 +4744,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "7c029c4a6fd457094a20569bf98f93d95e9a7559"
+          "value": "b2bc26bf8bd6b2b6447b3626b2a1b5733873aa0b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "7c029c4a6fd457094a20569bf98f93d95e9a7559"
+          "value": "b2bc26bf8bd6b2b6447b3626b2a1b5733873aa0b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6151,7 +6151,7 @@
       "bom-ref": "pimcore/backend-power-tools-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "backend-power-tools-bundle",
-      "version": "2026.x-dev cddf6b8",
+      "version": "2026.x-dev aea4ce6",
       "description": "Pimcore Backend Power Tools",
       "licenses": [
         {
@@ -6161,17 +6161,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%20cddf6b8",
+      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%20aea4ce6",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/rcddf6b8acb9533c9f00d78a6b2ba67cb190a5970.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/raea4ce67b1df27aea87bdd6409b39e75732aa512.zip",
           "type": "distribution",
-          "comment": "dist reference: cddf6b8acb9533c9f00d78a6b2ba67cb190a5970"
+          "comment": "dist reference: aea4ce67b1df27aea87bdd6409b39e75732aa512"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/cddf6b8acb9533c9f00d78a6b2ba67cb190a5970",
+          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/aea4ce67b1df27aea87bdd6409b39e75732aa512",
           "type": "distribution",
-          "comment": "dist reference: cddf6b8acb9533c9f00d78a6b2ba67cb190a5970"
+          "comment": "dist reference: aea4ce67b1df27aea87bdd6409b39e75732aa512"
         },
         {
           "url": "https://github.com/pimcore/backend-power-tools-bundle/tree/2026.x",
@@ -6187,11 +6187,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "cddf6b8acb9533c9f00d78a6b2ba67cb190a5970"
+          "value": "aea4ce67b1df27aea87bdd6409b39e75732aa512"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "cddf6b8acb9533c9f00d78a6b2ba67cb190a5970"
+          "value": "aea4ce67b1df27aea87bdd6409b39e75732aa512"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6571,7 +6571,7 @@
       "bom-ref": "pimcore/data-importer-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-importer",
-      "version": "2026.x-dev e6798fa",
+      "version": "2026.x-dev 3d43f44",
       "description": "Adds a comprehensive import functionality to Pimcore Datahub",
       "licenses": [
         {
@@ -6581,17 +6581,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%20e6798fa",
+      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%203d43f44",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/e6798fa9375573e4a4d52ebdd3deeecb2d1f8f6a",
+          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/3d43f44369c312e7d648ae246ada06cf93c867f7",
           "type": "distribution",
-          "comment": "dist reference: e6798fa9375573e4a4d52ebdd3deeecb2d1f8f6a"
+          "comment": "dist reference: 3d43f44369c312e7d648ae246ada06cf93c867f7"
         },
         {
           "url": "https://github.com/pimcore/data-importer.git",
           "type": "vcs",
-          "comment": "source reference: e6798fa9375573e4a4d52ebdd3deeecb2d1f8f6a"
+          "comment": "source reference: 3d43f44369c312e7d648ae246ada06cf93c867f7"
         },
         {
           "url": "https://github.com/pimcore/data-importer/issues",
@@ -6607,11 +6607,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e6798fa9375573e4a4d52ebdd3deeecb2d1f8f6a"
+          "value": "3d43f44369c312e7d648ae246ada06cf93c867f7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e6798fa9375573e4a4d52ebdd3deeecb2d1f8f6a"
+          "value": "3d43f44369c312e7d648ae246ada06cf93c867f7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6729,7 +6729,7 @@
       "bom-ref": "pimcore/ecommerce-framework-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "ecommerce-framework-bundle",
-      "version": "2026.x-dev df57003",
+      "version": "2026.x-dev 1e7da08",
       "description": "Pimcore Ecommerce Bundle",
       "licenses": [
         {
@@ -6739,17 +6739,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/ecommerce-framework-bundle@2026.x-dev%20df57003",
+      "purl": "pkg:composer/pimcore/ecommerce-framework-bundle@2026.x-dev%201e7da08",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/ecommerce-framework-bundle/2026.9999999.9999999.9999999-dev/rdf57003db68dfb8d0931a872aa7125d39f4b1fcc.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/ecommerce-framework-bundle/2026.9999999.9999999.9999999-dev/r1e7da083f82d3af7386115f0402cd0541d6ad784.zip",
           "type": "distribution",
-          "comment": "dist reference: df57003db68dfb8d0931a872aa7125d39f4b1fcc"
+          "comment": "dist reference: 1e7da083f82d3af7386115f0402cd0541d6ad784"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-ecommerce-framework-bundle/zipball/df57003db68dfb8d0931a872aa7125d39f4b1fcc",
+          "url": "https://api.github.com/repos/pimcore/ee-ecommerce-framework-bundle/zipball/1e7da083f82d3af7386115f0402cd0541d6ad784",
           "type": "distribution",
-          "comment": "dist reference: df57003db68dfb8d0931a872aa7125d39f4b1fcc"
+          "comment": "dist reference: 1e7da083f82d3af7386115f0402cd0541d6ad784"
         },
         {
           "url": "https://github.com/pimcore/ee-ecommerce-framework-bundle/tree/2026.x",
@@ -6765,11 +6765,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "df57003db68dfb8d0931a872aa7125d39f4b1fcc"
+          "value": "1e7da083f82d3af7386115f0402cd0541d6ad784"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "df57003db68dfb8d0931a872aa7125d39f4b1fcc"
+          "value": "1e7da083f82d3af7386115f0402cd0541d6ad784"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6939,7 +6939,7 @@
       "bom-ref": "pimcore/generic-data-index-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "generic-data-index-bundle",
-      "version": "2026.x-dev 2ffd3d0",
+      "version": "2026.x-dev 7a00d46",
       "description": "Pimcore Generic data index Bundle",
       "licenses": [
         {
@@ -6949,17 +6949,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/generic-data-index-bundle@2026.x-dev%202ffd3d0",
+      "purl": "pkg:composer/pimcore/generic-data-index-bundle@2026.x-dev%207a00d46",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/2ffd3d029ed02e73a52d3657ac94f91d6af20a67",
+          "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/7a00d468fbc3faa21a42a7552ea3a3ec54054b52",
           "type": "distribution",
-          "comment": "dist reference: 2ffd3d029ed02e73a52d3657ac94f91d6af20a67"
+          "comment": "dist reference: 7a00d468fbc3faa21a42a7552ea3a3ec54054b52"
         },
         {
           "url": "https://github.com/pimcore/generic-data-index-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 2ffd3d029ed02e73a52d3657ac94f91d6af20a67"
+          "comment": "source reference: 7a00d468fbc3faa21a42a7552ea3a3ec54054b52"
         },
         {
           "url": "https://github.com/pimcore/generic-data-index-bundle/issues",
@@ -6975,11 +6975,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2ffd3d029ed02e73a52d3657ac94f91d6af20a67"
+          "value": "7a00d468fbc3faa21a42a7552ea3a3ec54054b52"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2ffd3d029ed02e73a52d3657ac94f91d6af20a67"
+          "value": "7a00d468fbc3faa21a42a7552ea3a3ec54054b52"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7308,7 +7308,7 @@
       "author": "pimcore Team",
       "group": "pimcore",
       "name": "pimcore",
-      "version": "2026.x-dev 8dcd685",
+      "version": "2026.x-dev 737c8b3",
       "description": "Content \u0026 Product Management Framework (CMS/PIM/E-Commerce)",
       "licenses": [
         {
@@ -7318,17 +7318,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%208dcd685",
+      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%20737c8b3",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/r8dcd68521a7d14bccecef4e33c519c70e35d0d1e.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/r737c8b3cfe39958865e983f7db80bbcce61aba95.zip",
           "type": "distribution",
-          "comment": "dist reference: 8dcd68521a7d14bccecef4e33c519c70e35d0d1e"
+          "comment": "dist reference: 737c8b3cfe39958865e983f7db80bbcce61aba95"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/8dcd68521a7d14bccecef4e33c519c70e35d0d1e",
+          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/737c8b3cfe39958865e983f7db80bbcce61aba95",
           "type": "distribution",
-          "comment": "dist reference: 8dcd68521a7d14bccecef4e33c519c70e35d0d1e"
+          "comment": "dist reference: 737c8b3cfe39958865e983f7db80bbcce61aba95"
         },
         {
           "url": "https://www.pimcore.com/",
@@ -7364,11 +7364,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "8dcd68521a7d14bccecef4e33c519c70e35d0d1e"
+          "value": "737c8b3cfe39958865e983f7db80bbcce61aba95"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "8dcd68521a7d14bccecef4e33c519c70e35d0d1e"
+          "value": "737c8b3cfe39958865e983f7db80bbcce61aba95"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7381,7 +7381,7 @@
       "bom-ref": "pimcore/portal-engine-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "portal-engine",
-      "version": "2026.x-dev 794d1a1",
+      "version": "2026.x-dev 683fba8",
       "description": "Pimcore Portal Engine",
       "licenses": [
         {
@@ -7391,17 +7391,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20794d1a1",
+      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20683fba8",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/r794d1a162787246c3f2a022240258d129623bccc.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/r683fba8e0b4d8aa6a1aa66cdc900b5b435672237.zip",
           "type": "distribution",
-          "comment": "dist reference: 794d1a162787246c3f2a022240258d129623bccc"
+          "comment": "dist reference: 683fba8e0b4d8aa6a1aa66cdc900b5b435672237"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/794d1a162787246c3f2a022240258d129623bccc",
+          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/683fba8e0b4d8aa6a1aa66cdc900b5b435672237",
           "type": "distribution",
-          "comment": "dist reference: 794d1a162787246c3f2a022240258d129623bccc"
+          "comment": "dist reference: 683fba8e0b4d8aa6a1aa66cdc900b5b435672237"
         },
         {
           "url": "https://github.com/pimcore/portal-engine/tree/2026.x",
@@ -7417,11 +7417,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "794d1a162787246c3f2a022240258d129623bccc"
+          "value": "683fba8e0b4d8aa6a1aa66cdc900b5b435672237"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "794d1a162787246c3f2a022240258d129623bccc"
+          "value": "683fba8e0b4d8aa6a1aa66cdc900b5b435672237"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7698,7 +7698,7 @@
       "bom-ref": "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-backend-bundle",
-      "version": "2026.x-dev 64c4ed9",
+      "version": "2026.x-dev 41d58ce",
       "description": "Pimcore Studio Backend Bundle",
       "licenses": [
         {
@@ -7708,17 +7708,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%2064c4ed9",
+      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%2041d58ce",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/64c4ed9d782ea4dd2f7da50fa3d8135b3d71bf6f",
+          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/41d58cebd6f1668019ab3081a62720ce204fa65d",
           "type": "distribution",
-          "comment": "dist reference: 64c4ed9d782ea4dd2f7da50fa3d8135b3d71bf6f"
+          "comment": "dist reference: 41d58cebd6f1668019ab3081a62720ce204fa65d"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 64c4ed9d782ea4dd2f7da50fa3d8135b3d71bf6f"
+          "comment": "source reference: 41d58cebd6f1668019ab3081a62720ce204fa65d"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle/issues",
@@ -7734,11 +7734,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "64c4ed9d782ea4dd2f7da50fa3d8135b3d71bf6f"
+          "value": "41d58cebd6f1668019ab3081a62720ce204fa65d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "64c4ed9d782ea4dd2f7da50fa3d8135b3d71bf6f"
+          "value": "41d58cebd6f1668019ab3081a62720ce204fa65d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7804,7 +7804,7 @@
       "bom-ref": "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-ui-bundle",
-      "version": "2026.x-dev baf2224",
+      "version": "2026.x-dev 1aaeb0a",
       "description": "Pimcore Studio Ui Bundle",
       "licenses": [
         {
@@ -7814,17 +7814,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%20baf2224",
+      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%201aaeb0a",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/baf2224c778a3920d646b4ec63913d114239779a",
+          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/1aaeb0a98a48ea268ec4a8ff34e6010e91bf964b",
           "type": "distribution",
-          "comment": "dist reference: baf2224c778a3920d646b4ec63913d114239779a"
+          "comment": "dist reference: 1aaeb0a98a48ea268ec4a8ff34e6010e91bf964b"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle.git",
           "type": "vcs",
-          "comment": "source reference: baf2224c778a3920d646b4ec63913d114239779a"
+          "comment": "source reference: 1aaeb0a98a48ea268ec4a8ff34e6010e91bf964b"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle/issues",
@@ -7840,11 +7840,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "baf2224c778a3920d646b4ec63913d114239779a"
+          "value": "1aaeb0a98a48ea268ec4a8ff34e6010e91bf964b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "baf2224c778a3920d646b4ec63913d114239779a"
+          "value": "1aaeb0a98a48ea268ec4a8ff34e6010e91bf964b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7961,7 +7961,7 @@
       "bom-ref": "pimcore/web-to-print-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "web-to-print-bundle",
-      "version": "2026.x-dev fc27e48",
+      "version": "2026.x-dev 98af88b",
       "description": "Pimcore WebToPrint Bundle",
       "licenses": [
         {
@@ -7971,17 +7971,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/web-to-print-bundle@2026.x-dev%20fc27e48",
+      "purl": "pkg:composer/pimcore/web-to-print-bundle@2026.x-dev%2098af88b",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/web-to-print-bundle/2026.9999999.9999999.9999999-dev/rfc27e484bc815ea1a1225471e402d8a397bba05f.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/web-to-print-bundle/2026.9999999.9999999.9999999-dev/r98af88bb4f28472dbbdb4cf42e0f10b2b1df605e.zip",
           "type": "distribution",
-          "comment": "dist reference: fc27e484bc815ea1a1225471e402d8a397bba05f"
+          "comment": "dist reference: 98af88bb4f28472dbbdb4cf42e0f10b2b1df605e"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-web-to-print-bundle/zipball/fc27e484bc815ea1a1225471e402d8a397bba05f",
+          "url": "https://api.github.com/repos/pimcore/ee-web-to-print-bundle/zipball/98af88bb4f28472dbbdb4cf42e0f10b2b1df605e",
           "type": "distribution",
-          "comment": "dist reference: fc27e484bc815ea1a1225471e402d8a397bba05f"
+          "comment": "dist reference: 98af88bb4f28472dbbdb4cf42e0f10b2b1df605e"
         },
         {
           "url": "https://github.com/pimcore/ee-web-to-print-bundle/tree/2026.x",
@@ -7997,11 +7997,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "fc27e484bc815ea1a1225471e402d8a397bba05f"
+          "value": "98af88bb4f28472dbbdb4cf42e0f10b2b1df605e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "fc27e484bc815ea1a1225471e402d8a397bba05f"
+          "value": "98af88bb4f28472dbbdb4cf42e0f10b2b1df605e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14873,11 +14873,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "zircote/swagger-php-6.17.1.0",
+      "bom-ref": "zircote/swagger-php-6.18.0.0",
       "author": "Robert Allen, Bob Fanger, Martin Rademacher",
       "group": "zircote",
       "name": "swagger-php",
-      "version": "6.17.1",
+      "version": "6.18.0",
       "description": "Generate interactive documentation for your RESTful API using PHP attributes (preferred) or PHPDoc annotations",
       "licenses": [
         {
@@ -14887,17 +14887,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/zircote/swagger-php@6.17.1",
+      "purl": "pkg:composer/zircote/swagger-php@6.18.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/1c179b500667e70f998d6a4ef0af96386af3d032",
+          "url": "https://api.github.com/repos/zircote/swagger-php/zipball/c93b7430193dc461602a2a3f4f6a0791a3a0608a",
           "type": "distribution",
-          "comment": "dist reference: 1c179b500667e70f998d6a4ef0af96386af3d032"
+          "comment": "dist reference: c93b7430193dc461602a2a3f4f6a0791a3a0608a"
         },
         {
           "url": "https://github.com/zircote/swagger-php.git",
           "type": "vcs",
-          "comment": "source reference: 1c179b500667e70f998d6a4ef0af96386af3d032"
+          "comment": "source reference: c93b7430193dc461602a2a3f4f6a0791a3a0608a"
         },
         {
           "url": "https://github.com/zircote/swagger-php",
@@ -14910,7 +14910,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/zircote/swagger-php/tree/6.17.1",
+          "url": "https://github.com/zircote/swagger-php/tree/6.18.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14918,11 +14918,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1c179b500667e70f998d6a4ef0af96386af3d032"
+          "value": "c93b7430193dc461602a2a3f4f6a0791a3a0608a"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1c179b500667e70f998d6a4ef0af96386af3d032"
+          "value": "c93b7430193dc461602a2a3f4f6a0791a3a0608a"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14935,7 +14935,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 842506c",
+      "version": "2026.x-dev ccdd29a",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14945,15 +14945,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20842506c",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20ccdd29a",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "842506c9ee20599da4703c066dc207326d3bf6ca"
+          "value": "ccdd29a458adb3a9b06e2287217d745511fbb5a7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "842506c9ee20599da4703c066dc207326d3bf6ca"
+          "value": "ccdd29a458adb3a9b06e2287217d745511fbb5a7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562453,7 +562453,7 @@
       "ref": "colinmollenhour/credis-1.17.1.0"
     },
     {
-      "ref": "composer/ca-bundle-1.5.14.0"
+      "ref": "composer/ca-bundle-1.6.0.0"
     },
     {
       "ref": "composer/pcre-3.4.0.0"
@@ -562604,7 +562604,7 @@
     {
       "ref": "elastic/transport-8.11.0.0",
       "dependsOn": [
-        "open-telemetry/api-1.10.0.0",
+        "open-telemetry/api-1.10.1.0",
         "php-http/discovery-1.20.0.0",
         "php-http/httplug-2.4.1.0",
         "psr/http-client-1.0.3.0",
@@ -562835,7 +562835,7 @@
     {
       "ref": "maxmind/web-service-common-0.11.1.0",
       "dependsOn": [
-        "composer/ca-bundle-1.5.14.0"
+        "composer/ca-bundle-1.6.0.0"
       ]
     },
     {
@@ -562910,7 +562910,7 @@
       "ref": "onnov/detect-encoding-2.0.0.0"
     },
     {
-      "ref": "open-telemetry/api-1.10.0.0",
+      "ref": "open-telemetry/api-1.10.1.0",
       "dependsOn": [
         "open-telemetry/context-1.5.0.0",
         "psr/log-3.0.2.0",
@@ -563045,7 +563045,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "zircote/swagger-php-6.17.1.0"
+        "zircote/swagger-php-6.18.0.0"
       ]
     },
     {
@@ -563155,7 +563155,7 @@
         "symfony/psr-http-message-bridge-7.4.21.0",
         "symfony/rate-limiter-7.4.18.0",
         "webmozarts/console-parallelization-2.3.0.0",
-        "zircote/swagger-php-6.17.1.0"
+        "zircote/swagger-php-6.18.0.0"
       ]
     },
     {
@@ -563333,7 +563333,7 @@
     {
       "ref": "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
       "dependsOn": [
-        "composer/ca-bundle-1.5.14.0",
+        "composer/ca-bundle-1.6.0.0",
         "defuse/php-encryption-2.4.0.0",
         "doctrine/dbal-4.5.0.0",
         "doctrine/doctrine-bundle-2.19.1.0",
@@ -563512,7 +563512,7 @@
         "symfony/psr-http-message-bridge-7.4.21.0",
         "twig/intl-extra-3.30.0.0",
         "twig/string-extra-3.24.0.0",
-        "zircote/swagger-php-6.17.1.0"
+        "zircote/swagger-php-6.18.0.0"
       ]
     },
     {
@@ -564330,7 +564330,7 @@
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
     },
     {
-      "ref": "zircote/swagger-php-6.17.1.0",
+      "ref": "zircote/swagger-php-6.18.0.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
         "phpstan/phpdoc-parser-2.3.6.0",
