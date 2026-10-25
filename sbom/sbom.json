@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:af5644d7-54c6-441f-9120-c4a1b6791ab9",
+  "serialNumber": "urn:uuid:46147c18-4eaf-4d05-a425-367ce764a712",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-24T00:05:28Z",
+    "timestamp": "2026-10-25T00:06:09Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev fd5f78e",
+      "version": "2026.3.x-dev c5e30ec",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20fd5f78e",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c5e30ec",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "fd5f78e234f494b18f2d73b19f069f17f1e826eb"
+          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "fd5f78e234f494b18f2d73b19f069f17f1e826eb"
+          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
         },
         {
           "name": "cdx:composer:package:type",
@@ -865,11 +865,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/doctrine-bundle-2.19.1.0",
+      "bom-ref": "doctrine/doctrine-bundle-2.19.2.0",
       "author": "Fabien Potencier, Benjamin Eberlei, Symfony Community, Doctrine Project",
       "group": "doctrine",
       "name": "doctrine-bundle",
-      "version": "2.19.1",
+      "version": "2.19.2",
       "description": "Symfony DoctrineBundle",
       "licenses": [
         {
@@ -879,17 +879,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.1",
+      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.2",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/72b53688c30451a7c65addd50b2167d31459724a",
+          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/d12ccf37ef6590d3d92a79c8ef550cab20db2754",
           "type": "distribution",
-          "comment": "dist reference: 72b53688c30451a7c65addd50b2167d31459724a"
+          "comment": "dist reference: d12ccf37ef6590d3d92a79c8ef550cab20db2754"
         },
         {
           "url": "https://github.com/doctrine/DoctrineBundle.git",
           "type": "vcs",
-          "comment": "source reference: 72b53688c30451a7c65addd50b2167d31459724a"
+          "comment": "source reference: d12ccf37ef6590d3d92a79c8ef550cab20db2754"
         },
         {
           "url": "https://www.doctrine-project.org",
@@ -902,7 +902,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.1",
+          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.2",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -910,11 +910,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "72b53688c30451a7c65addd50b2167d31459724a"
+          "value": "d12ccf37ef6590d3d92a79c8ef550cab20db2754"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "72b53688c30451a7c65addd50b2167d31459724a"
+          "value": "d12ccf37ef6590d3d92a79c8ef550cab20db2754"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev fd5f78e",
+      "version": "2026.3.x-dev c5e30ec",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20fd5f78e",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c5e30ec",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "fd5f78e234f494b18f2d73b19f069f17f1e826eb"
+          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "fd5f78e234f494b18f2d73b19f069f17f1e826eb"
+          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562449,7 +562449,7 @@
       "ref": "doctrine/deprecations-1.1.6.0"
     },
     {
-      "ref": "doctrine/doctrine-bundle-2.19.1.0",
+      "ref": "doctrine/doctrine-bundle-2.19.2.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
         "doctrine/deprecations-1.1.6.0",
@@ -562467,7 +562467,7 @@
       "ref": "doctrine/doctrine-migrations-bundle-3.7.1.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
-        "doctrine/doctrine-bundle-2.19.1.0",
+        "doctrine/doctrine-bundle-2.19.2.0",
         "doctrine/migrations-3.9.8.0",
         "psr/log-3.0.2.0",
         "symfony/config-7.4.17.0",
@@ -563277,7 +563277,7 @@
         "composer/ca-bundle-1.6.0.0",
         "defuse/php-encryption-2.4.0.0",
         "doctrine/dbal-4.5.0.0",
-        "doctrine/doctrine-bundle-2.19.1.0",
+        "doctrine/doctrine-bundle-2.19.2.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/inflector-2.1.0.0",
         "doctrine/orm-3.7.5.0",
@@ -563944,7 +563944,7 @@
     {
       "ref": "symfony/orm-pack-2.7.0.0",
       "dependsOn": [
-        "doctrine/doctrine-bundle-2.19.1.0",
+        "doctrine/doctrine-bundle-2.19.2.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/orm-3.7.5.0"
       ]
