@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:46147c18-4eaf-4d05-a425-367ce764a712",
+  "serialNumber": "urn:uuid:01401a25-5a2c-4df2-974a-efdf153d4653",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-25T00:06:09Z",
+    "timestamp": "2026-10-26T00:06:38Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev c5e30ec",
+      "version": "2026.3.x-dev dc3e0b5",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c5e30ec",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20dc3e0b5",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
+          "value": "dc3e0b5704f7d80f1ecceaefe419a14e8186c958"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
+          "value": "dc3e0b5704f7d80f1ecceaefe419a14e8186c958"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2126,11 +2126,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "guzzlehttp/guzzle-7.16.0.0",
+      "bom-ref": "guzzlehttp/guzzle-7.16.1.0",
       "author": "Graham Campbell, Michael Dowling, Jeremy Lindblom, George Mponos, Tobias Nyholm, M\u00E1rk S\u00E1gi-Kaz\u00E1r, Tobias Schultze",
       "group": "guzzlehttp",
       "name": "guzzle",
-      "version": "7.16.0",
+      "version": "7.16.1",
       "description": "Guzzle is a PHP HTTP client library",
       "licenses": [
         {
@@ -2140,17 +2140,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/guzzlehttp/guzzle@7.16.0",
+      "purl": "pkg:composer/guzzlehttp/guzzle@7.16.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ffb62ec787050ae4fa9449cdd6b80335db69bda2",
+          "url": "https://api.github.com/repos/guzzle/guzzle/zipball/81755d989b3007ca7f88a069857553cd08e7dc2e",
           "type": "distribution",
-          "comment": "dist reference: ffb62ec787050ae4fa9449cdd6b80335db69bda2"
+          "comment": "dist reference: 81755d989b3007ca7f88a069857553cd08e7dc2e"
         },
         {
           "url": "https://github.com/guzzle/guzzle.git",
           "type": "vcs",
-          "comment": "source reference: ffb62ec787050ae4fa9449cdd6b80335db69bda2"
+          "comment": "source reference: 81755d989b3007ca7f88a069857553cd08e7dc2e"
         },
         {
           "url": "https://github.com/guzzle/guzzle/issues",
@@ -2158,7 +2158,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/guzzle/guzzle/tree/7.16.0",
+          "url": "https://github.com/guzzle/guzzle/tree/7.16.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2166,11 +2166,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ffb62ec787050ae4fa9449cdd6b80335db69bda2"
+          "value": "81755d989b3007ca7f88a069857553cd08e7dc2e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ffb62ec787050ae4fa9449cdd6b80335db69bda2"
+          "value": "81755d989b3007ca7f88a069857553cd08e7dc2e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -3520,11 +3520,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "masterminds/html5-2.11.0.0",
+      "bom-ref": "masterminds/html5-2.12.0.0",
       "author": "Matt Butcher, Matt Farina, Asmir Mustafic",
       "group": "masterminds",
       "name": "html5",
-      "version": "2.11.0",
+      "version": "2.12.0",
       "description": "An HTML5 parser and serializer.",
       "licenses": [
         {
@@ -3534,17 +3534,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/masterminds/html5@2.11.0",
+      "purl": "pkg:composer/masterminds/html5@2.12.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/a1e7a2f88ee13635d86fc61cfbdf2306a76ddfc7",
+          "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/15e16663bd6f512352209d0e3a789c0a691c0d9b",
           "type": "distribution",
-          "comment": "dist reference: a1e7a2f88ee13635d86fc61cfbdf2306a76ddfc7"
+          "comment": "dist reference: 15e16663bd6f512352209d0e3a789c0a691c0d9b"
         },
         {
           "url": "https://github.com/Masterminds/html5-php.git",
           "type": "vcs",
-          "comment": "source reference: a1e7a2f88ee13635d86fc61cfbdf2306a76ddfc7"
+          "comment": "source reference: 15e16663bd6f512352209d0e3a789c0a691c0d9b"
         },
         {
           "url": "http://masterminds.github.io/html5-php",
@@ -3557,7 +3557,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/Masterminds/html5-php/tree/2.11.0",
+          "url": "https://github.com/Masterminds/html5-php/tree/2.12.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -3565,11 +3565,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a1e7a2f88ee13635d86fc61cfbdf2306a76ddfc7"
+          "value": "15e16663bd6f512352209d0e3a789c0a691c0d9b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a1e7a2f88ee13635d86fc61cfbdf2306a76ddfc7"
+          "value": "15e16663bd6f512352209d0e3a789c0a691c0d9b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -4409,11 +4409,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "nesbot/carbon-3.15.0.0",
+      "bom-ref": "nesbot/carbon-3.15.1.0",
       "author": "Brian Nesbitt, kylekatarnls",
       "group": "nesbot",
       "name": "carbon",
-      "version": "3.15.0",
+      "version": "3.15.1",
       "description": "An API extension for DateTime that supports 281 different languages.",
       "licenses": [
         {
@@ -4423,17 +4423,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/nesbot/carbon@3.15.0",
+      "purl": "pkg:composer/nesbot/carbon@3.15.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/217d38553209bdb44e01590d9e9a2e4df8354cce",
+          "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/ce0e5636fae7d1e99856eb70cae4c719a284aa08",
           "type": "distribution",
-          "comment": "dist reference: 217d38553209bdb44e01590d9e9a2e4df8354cce"
+          "comment": "dist reference: ce0e5636fae7d1e99856eb70cae4c719a284aa08"
         },
         {
           "url": "https://github.com/CarbonPHP/carbon.git",
           "type": "vcs",
-          "comment": "source reference: 217d38553209bdb44e01590d9e9a2e4df8354cce"
+          "comment": "source reference: ce0e5636fae7d1e99856eb70cae4c719a284aa08"
         },
         {
           "url": "https://carbonphp.github.io/carbon/",
@@ -4459,11 +4459,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "217d38553209bdb44e01590d9e9a2e4df8354cce"
+          "value": "ce0e5636fae7d1e99856eb70cae4c719a284aa08"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "217d38553209bdb44e01590d9e9a2e4df8354cce"
+          "value": "ce0e5636fae7d1e99856eb70cae4c719a284aa08"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14702,10 +14702,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "webonyx/graphql-php-15.38.1.0",
+      "bom-ref": "webonyx/graphql-php-15.39.0.0",
       "group": "webonyx",
       "name": "graphql-php",
-      "version": "v15.38.1",
+      "version": "v15.39.0",
       "description": "A PHP port of GraphQL reference implementation",
       "licenses": [
         {
@@ -14715,17 +14715,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/webonyx/graphql-php@v15.38.1",
+      "purl": "pkg:composer/webonyx/graphql-php@v15.39.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/32edc67af119b709d020f93447729afd503fe56a",
+          "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/efa6b239d48f9ebe37ac0407d04a091b3685a869",
           "type": "distribution",
-          "comment": "dist reference: 32edc67af119b709d020f93447729afd503fe56a"
+          "comment": "dist reference: efa6b239d48f9ebe37ac0407d04a091b3685a869"
         },
         {
           "url": "https://github.com/webonyx/graphql-php.git",
           "type": "vcs",
-          "comment": "source reference: 32edc67af119b709d020f93447729afd503fe56a"
+          "comment": "source reference: efa6b239d48f9ebe37ac0407d04a091b3685a869"
         },
         {
           "url": "https://github.com/webonyx/graphql-php",
@@ -14738,7 +14738,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/webonyx/graphql-php/tree/v15.38.1",
+          "url": "https://github.com/webonyx/graphql-php/tree/v15.39.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14746,11 +14746,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "32edc67af119b709d020f93447729afd503fe56a"
+          "value": "efa6b239d48f9ebe37ac0407d04a091b3685a869"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "32edc67af119b709d020f93447729afd503fe56a"
+          "value": "efa6b239d48f9ebe37ac0407d04a091b3685a869"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev c5e30ec",
+      "version": "2026.3.x-dev dc3e0b5",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c5e30ec",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20dc3e0b5",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
+          "value": "dc3e0b5704f7d80f1ecceaefe419a14e8186c958"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c5e30ecf92e81bc77952181e7df40c834b746ed4"
+          "value": "dc3e0b5704f7d80f1ecceaefe419a14e8186c958"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562558,7 +562558,7 @@
       "ref": "elasticsearch/elasticsearch-8.19.0.0",
       "dependsOn": [
         "elastic/transport-8.11.1.0",
-        "guzzlehttp/guzzle-7.16.0.0",
+        "guzzlehttp/guzzle-7.16.1.0",
         "psr/http-client-1.0.3.0",
         "psr/http-message-2.0.0.0",
         "psr/log-3.0.2.0"
@@ -562610,7 +562610,7 @@
       ]
     },
     {
-      "ref": "guzzlehttp/guzzle-7.16.0.0",
+      "ref": "guzzlehttp/guzzle-7.16.1.0",
       "dependsOn": [
         "guzzlehttp/promises-2.6.0.0",
         "guzzlehttp/psr7-2.13.2.0",
@@ -562711,7 +562711,7 @@
     {
       "ref": "league/oauth2-client-2.9.1.0",
       "dependsOn": [
-        "guzzlehttp/guzzle-7.16.0.0",
+        "guzzlehttp/guzzle-7.16.1.0",
         "guzzlehttp/psr7-2.13.2.0"
       ]
     },
@@ -562753,7 +562753,7 @@
       "ref": "mashape/unirest-php-3.0.4.0"
     },
     {
-      "ref": "masterminds/html5-2.11.0.0"
+      "ref": "masterminds/html5-2.12.0.0"
     },
     {
       "ref": "matomo/device-detector-6.5.2.0",
@@ -562828,7 +562828,7 @@
       "ref": "neitanod/forceutf8-2.0.4.0"
     },
     {
-      "ref": "nesbot/carbon-3.15.0.0",
+      "ref": "nesbot/carbon-3.15.1.0",
       "dependsOn": [
         "carbonphp/carbon-doctrine-types-3.2.1.0",
         "psr/clock-1.0.0.0",
@@ -562980,7 +562980,7 @@
     {
       "ref": "pimcore/asset-metadata-class-definitions-2026.3.2.0",
       "dependsOn": [
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/generic-data-index-bundle-2026.3.3.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -562994,7 +562994,7 @@
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
         "doctrine/orm-3.7.5.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "phpoffice/phpspreadsheet-5.10.0.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/generic-data-index-bundle-2026.3.3.0",
@@ -563025,10 +563025,10 @@
         "doctrine/migrations-3.9.8.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "drewm/mailchimp-api-2.5.4.0",
-        "guzzlehttp/guzzle-7.16.0.0",
+        "guzzlehttp/guzzle-7.16.1.0",
         "knplabs/knp-components-5.3.0.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "openspout/openspout-4.32.0.0",
         "pear/archive_tar-1.6.1.0",
         "pimcore/number-sequence-generator-2026.3.0.0",
@@ -563045,11 +563045,11 @@
     {
       "ref": "pimcore/data-hub-2026.3.3.0",
       "dependsOn": [
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/pimcore-2026.3.3.1",
         "pimcore/studio-backend-bundle-2026.3.3.0",
         "pimcore/studio-ui-bundle-2026.3.3.0",
-        "webonyx/graphql-php-15.38.1.0"
+        "webonyx/graphql-php-15.39.0.0"
       ]
     },
     {
@@ -563058,7 +563058,7 @@
         "dragonmantank/cron-expression-3.6.1.0",
         "league/flysystem-bundle-3.7.1.0",
         "league/flysystem-sftp-v3-3.36.0.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/data-hub-2026.3.3.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563069,7 +563069,7 @@
     {
       "ref": "pimcore/data-hub-productsup-2026.3.0.0",
       "dependsOn": [
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/data-hub-2026.3.3.0",
         "pimcore/data-hub-file-export-2026.3.2.0",
         "pimcore/ecommerce-framework-bundle-2026.3.3.0",
@@ -563085,7 +563085,7 @@
       "dependsOn": [
         "doctrine/annotations-2.0.2.0",
         "mcp/sdk-0.7.1.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/data-hub-2026.3.3.0",
         "pimcore/elasticsearch-client-2026.3.0.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
@@ -563102,7 +563102,7 @@
     {
       "ref": "pimcore/data-hub-webhooks-2026.3.0.0",
       "dependsOn": [
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/data-hub-2026.3.3.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563119,7 +563119,7 @@
         "dragonmantank/cron-expression-3.6.1.0",
         "league/flysystem-sftp-v3-3.36.0.0",
         "mtdowling/jmespath.php-2.9.2.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "phpoffice/phpspreadsheet-5.10.0.0",
         "pimcore/data-hub-2026.3.3.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563158,7 +563158,7 @@
       "dependsOn": [
         "knplabs/knp-components-5.3.0.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/generic-data-index-bundle-2026.3.3.0",
         "pimcore/personalization-bundle-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563200,7 +563200,7 @@
         "doctrine/orm-3.7.5.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-local-3.35.3.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/elasticsearch-client-2026.3.0.0",
         "pimcore/opensearch-client-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563285,7 +563285,7 @@
         "egulias/email-validator-4.0.4.0",
         "friendsofsymfony/jsrouting-bundle-3.6.1.0",
         "gotenberg/gotenberg-php-2.26.0.0",
-        "guzzlehttp/guzzle-7.16.0.0",
+        "guzzlehttp/guzzle-7.16.1.0",
         "http-interop/http-factory-guzzle-1.2.1.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
         "league/csv-9.28.0.0",
@@ -563297,7 +563297,7 @@
         "mpratt/embera-2.0.42.0",
         "myclabs/deep-copy-1.14.0.0",
         "neitanod/forceutf8-2.0.4.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "onnov/detect-encoding-2.0.0.0",
         "pear/net_url2-2.2.3.0",
         "php-http/discovery-1.20.0.0",
@@ -563369,7 +563369,7 @@
         "knplabs/knp-components-5.3.0.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
         "myclabs/php-enum-1.8.5.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/asset-metadata-class-definitions-2026.3.2.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/frontend-permission-toolkit-bundle-2026.3.0.0",
@@ -563437,7 +563437,7 @@
         "lcobucci/jwt-5.6.1.0",
         "league/csv-9.28.0.0",
         "league/oauth2-server-9.4.1.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "php-http/discovery-1.20.0.0",
         "phpdocumentor/reflection-docblock-6.0.3.0",
         "phpoffice/phpspreadsheet-5.10.0.0",
@@ -563487,7 +563487,7 @@
       "dependsOn": [
         "doctrine/orm-3.7.5.0",
         "mashape/unirest-php-3.0.4.0",
-        "nesbot/carbon-3.15.0.0",
+        "nesbot/carbon-3.15.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
         "pimcore/studio-backend-bundle-2026.3.3.0",
@@ -563777,7 +563777,7 @@
     {
       "ref": "symfony/dom-crawler-7.4.17.0",
       "dependsOn": [
-        "masterminds/html5-2.11.0.0",
+        "masterminds/html5-2.12.0.0",
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-mbstring-1.43.0.0"
       ]
@@ -563841,7 +563841,7 @@
       "ref": "symfony/html-sanitizer-7.4.20.0",
       "dependsOn": [
         "league/uri-7.9.0.0",
-        "masterminds/html5-2.11.0.0"
+        "masterminds/html5-2.12.0.0"
       ]
     },
     {
@@ -564257,7 +564257,7 @@
       ]
     },
     {
-      "ref": "webonyx/graphql-php-15.38.1.0"
+      "ref": "webonyx/graphql-php-15.39.0.0"
     },
     {
       "ref": "willdurand/jsonp-callback-validator-2.0.0.0"
