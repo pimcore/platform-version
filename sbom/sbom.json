@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:1596c0aa-683f-4acb-8ecd-f8e5cd9eadba",
+  "serialNumber": "urn:uuid:9b54052f-8c8a-4bd2-8c38-6427c5d94185",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-26T00:06:30Z",
+    "timestamp": "2026-10-27T00:06:20Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev dd489f4",
+      "version": "2026.x-dev e87a5a3",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20dd489f4",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20e87a5a3",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "dd489f43a6ccb01ee87dfd0ee1278f6c8536a96b"
+          "value": "e87a5a3494d2cb318beaf090348cba61b1e5144b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "dd489f43a6ccb01ee87dfd0ee1278f6c8536a96b"
+          "value": "e87a5a3494d2cb318beaf090348cba61b1e5144b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -1042,11 +1042,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/inflector-2.1.0.0",
+      "bom-ref": "doctrine/inflector-2.1.1.0",
       "author": "Guilherme Blanco, Roman Borschel, Benjamin Eberlei, Jonathan Wage, Johannes Schmitt",
       "group": "doctrine",
       "name": "inflector",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "description": "PHP Doctrine Inflector is a small library that can perform string manipulations with regard to upper/lowercase and singular/plural forms of words.",
       "licenses": [
         {
@@ -1056,17 +1056,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/inflector@2.1.0",
+      "purl": "pkg:composer/doctrine/inflector@2.1.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/inflector/zipball/6d6c96277ea252fc1304627204c3d5e6e15faa3b",
+          "url": "https://api.github.com/repos/doctrine/inflector/zipball/46351b6812b7b6d52b82c3efa5dfb786a198ec88",
           "type": "distribution",
-          "comment": "dist reference: 6d6c96277ea252fc1304627204c3d5e6e15faa3b"
+          "comment": "dist reference: 46351b6812b7b6d52b82c3efa5dfb786a198ec88"
         },
         {
           "url": "https://github.com/doctrine/inflector.git",
           "type": "vcs",
-          "comment": "source reference: 6d6c96277ea252fc1304627204c3d5e6e15faa3b"
+          "comment": "source reference: 46351b6812b7b6d52b82c3efa5dfb786a198ec88"
         },
         {
           "url": "https://www.doctrine-project.org/projects/inflector.html",
@@ -1079,7 +1079,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/inflector/tree/2.1.0",
+          "url": "https://github.com/doctrine/inflector/tree/2.1.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -1087,11 +1087,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "6d6c96277ea252fc1304627204c3d5e6e15faa3b"
+          "value": "46351b6812b7b6d52b82c3efa5dfb786a198ec88"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "6d6c96277ea252fc1304627204c3d5e6e15faa3b"
+          "value": "46351b6812b7b6d52b82c3efa5dfb786a198ec88"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2460,10 +2460,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "laminas/laminas-code-4.17.0.0",
+      "bom-ref": "laminas/laminas-code-4.18.0.0",
       "group": "laminas",
       "name": "laminas-code",
-      "version": "4.17.0",
+      "version": "4.18.0",
       "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
       "licenses": [
         {
@@ -2473,17 +2473,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/laminas/laminas-code@4.17.0",
+      "purl": "pkg:composer/laminas/laminas-code@4.18.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/laminas/laminas-code/zipball/40d61e2899ec17c5d08bbc0a2d586b3ca17ab9bd",
+          "url": "https://api.github.com/repos/laminas/laminas-code/zipball/d1ec5de6a87971446cfcc2acbc340c65ca56cee3",
           "type": "distribution",
-          "comment": "dist reference: 40d61e2899ec17c5d08bbc0a2d586b3ca17ab9bd"
+          "comment": "dist reference: d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
         },
         {
           "url": "https://github.com/laminas/laminas-code.git",
           "type": "vcs",
-          "comment": "source reference: 40d61e2899ec17c5d08bbc0a2d586b3ca17ab9bd"
+          "comment": "source reference: d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
         },
         {
           "url": "https://laminas.dev",
@@ -2524,11 +2524,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "40d61e2899ec17c5d08bbc0a2d586b3ca17ab9bd"
+          "value": "d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "40d61e2899ec17c5d08bbc0a2d586b3ca17ab9bd"
+          "value": "d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6042,10 +6042,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "phpstan/phpdoc-parser-2.3.6.0",
+      "bom-ref": "phpstan/phpdoc-parser-2.3.8.0",
       "group": "phpstan",
       "name": "phpdoc-parser",
-      "version": "2.3.6",
+      "version": "2.3.8",
       "description": "PHPDoc parser with support for nullable, intersection and generic types",
       "licenses": [
         {
@@ -6055,17 +6055,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/phpstan/phpdoc-parser@2.3.6",
+      "purl": "pkg:composer/phpstan/phpdoc-parser@2.3.8",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/1427af4647235b4a73b13940b1f1258d3584f36e",
+          "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/ec4293f7caf9936acce286b589ccb84faf1aa88d",
           "type": "distribution",
-          "comment": "dist reference: 1427af4647235b4a73b13940b1f1258d3584f36e"
+          "comment": "dist reference: ec4293f7caf9936acce286b589ccb84faf1aa88d"
         },
         {
           "url": "https://github.com/phpstan/phpdoc-parser.git",
           "type": "vcs",
-          "comment": "source reference: 1427af4647235b4a73b13940b1f1258d3584f36e"
+          "comment": "source reference: ec4293f7caf9936acce286b589ccb84faf1aa88d"
         },
         {
           "url": "https://github.com/phpstan/phpdoc-parser/issues",
@@ -6073,7 +6073,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/phpstan/phpdoc-parser/tree/2.3.6",
+          "url": "https://github.com/phpstan/phpdoc-parser/tree/2.3.8",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -6081,11 +6081,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1427af4647235b4a73b13940b1f1258d3584f36e"
+          "value": "ec4293f7caf9936acce286b589ccb84faf1aa88d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1427af4647235b4a73b13940b1f1258d3584f36e"
+          "value": "ec4293f7caf9936acce286b589ccb84faf1aa88d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7434,7 +7434,7 @@
       "bom-ref": "pimcore/portal-ui-kit-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "portal-ui-kit",
-      "version": "2026.x-dev 1735ca5",
+      "version": "2026.x-dev ae2ed64",
       "description": "Portal UI Kit \u2014 the reusable Studio-stack host framework for building standalone Portal Engine (and other) frontends. Ships the @pimcore/portal-ui-kit facade package under frontend/. This package contains no PHP: it exists purely to distribute that frontend to consumers, the same way pimcore/studio-ui-bundle distributes its own assets/ tree.",
       "licenses": [
         {
@@ -7444,17 +7444,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/portal-ui-kit@2026.x-dev%201735ca5",
+      "purl": "pkg:composer/pimcore/portal-ui-kit@2026.x-dev%20ae2ed64",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-ui-kit/2026.9999999.9999999.9999999-dev/r1735ca5f12679340304c384121bec50ec5d16d1f.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-ui-kit/2026.9999999.9999999.9999999-dev/rae2ed6451de7b285d120c674256a6dc8847a46fe.zip",
           "type": "distribution",
-          "comment": "dist reference: 1735ca5f12679340304c384121bec50ec5d16d1f"
+          "comment": "dist reference: ae2ed6451de7b285d120c674256a6dc8847a46fe"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/portal-ui-kit/zipball/1735ca5f12679340304c384121bec50ec5d16d1f",
+          "url": "https://api.github.com/repos/pimcore/portal-ui-kit/zipball/ae2ed6451de7b285d120c674256a6dc8847a46fe",
           "type": "distribution",
-          "comment": "dist reference: 1735ca5f12679340304c384121bec50ec5d16d1f"
+          "comment": "dist reference: ae2ed6451de7b285d120c674256a6dc8847a46fe"
         },
         {
           "url": "https://github.com/pimcore/portal-ui-kit/tree/2026.x",
@@ -7470,11 +7470,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1735ca5f12679340304c384121bec50ec5d16d1f"
+          "value": "ae2ed6451de7b285d120c674256a6dc8847a46fe"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1735ca5f12679340304c384121bec50ec5d16d1f"
+          "value": "ae2ed6451de7b285d120c674256a6dc8847a46fe"
         },
         {
           "name": "cdx:composer:package:type",
@@ -8808,11 +8808,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "radebatz/type-info-extras-1.0.10.0",
+      "bom-ref": "radebatz/type-info-extras-1.0.11.0",
       "author": "Martin Rademacher",
       "group": "radebatz",
       "name": "type-info-extras",
-      "version": "1.0.10",
+      "version": "1.0.11",
       "description": "Extras for symfony/type-info",
       "licenses": [
         {
@@ -8822,17 +8822,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/radebatz/type-info-extras@1.0.10",
+      "purl": "pkg:composer/radebatz/type-info-extras@1.0.11",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/1e71149dee7bf45f5cf208eb3c6c74d45a13d395",
+          "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/1436aa4c9aec0af093a27c2287900a3008535f32",
           "type": "distribution",
-          "comment": "dist reference: 1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
+          "comment": "dist reference: 1436aa4c9aec0af093a27c2287900a3008535f32"
         },
         {
           "url": "https://github.com/DerManoMann/type-info-extras.git",
           "type": "vcs",
-          "comment": "source reference: 1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
+          "comment": "source reference: 1436aa4c9aec0af093a27c2287900a3008535f32"
         },
         {
           "url": "http://radebatz.net/mano/",
@@ -8845,7 +8845,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/DerManoMann/type-info-extras/tree/1.0.10",
+          "url": "https://github.com/DerManoMann/type-info-extras/tree/1.0.11",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -8853,11 +8853,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
+          "value": "1436aa4c9aec0af093a27c2287900a3008535f32"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
+          "value": "1436aa4c9aec0af093a27c2287900a3008535f32"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14935,7 +14935,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev dd489f4",
+      "version": "2026.x-dev e87a5a3",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14945,15 +14945,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20dd489f4",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20e87a5a3",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "dd489f43a6ccb01ee87dfd0ee1278f6c8536a96b"
+          "value": "e87a5a3494d2cb318beaf090348cba61b1e5144b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "dd489f43a6ccb01ee87dfd0ee1278f6c8536a96b"
+          "value": "e87a5a3494d2cb318beaf090348cba61b1e5144b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562574,7 +562574,7 @@
       "ref": "doctrine/event-manager-2.1.1.0"
     },
     {
-      "ref": "doctrine/inflector-2.1.0.0"
+      "ref": "doctrine/inflector-2.1.1.0"
     },
     {
       "ref": "doctrine/instantiator-2.1.0.0"
@@ -562601,7 +562601,7 @@
         "doctrine/dbal-4.5.0.0",
         "doctrine/deprecations-1.1.6.0",
         "doctrine/event-manager-2.1.1.0",
-        "doctrine/inflector-2.1.0.0",
+        "doctrine/inflector-2.1.1.0",
         "doctrine/instantiator-2.1.0.0",
         "doctrine/lexer-3.0.3.0",
         "doctrine/persistence-4.2.1.0",
@@ -562673,7 +562673,7 @@
     {
       "ref": "friendsofphp/proxy-manager-lts-1.0.19.0",
       "dependsOn": [
-        "laminas/laminas-code-4.17.0.0",
+        "laminas/laminas-code-4.18.0.0",
         "symfony/filesystem-7.4.21.0"
       ]
     },
@@ -562746,7 +562746,7 @@
       ]
     },
     {
-      "ref": "laminas/laminas-code-4.17.0.0"
+      "ref": "laminas/laminas-code-4.18.0.0"
     },
     {
       "ref": "lcobucci/jwt-5.6.1.0",
@@ -563038,7 +563038,7 @@
         "doctrine/deprecations-1.1.6.0",
         "phpdocumentor/reflection-common-2.2.1.0",
         "phpdocumentor/type-resolver-2.1.0.0",
-        "phpstan/phpdoc-parser-2.3.6.0",
+        "phpstan/phpdoc-parser-2.3.8.0",
         "webmozart/assert-1.12.1.0"
       ]
     },
@@ -563047,7 +563047,7 @@
       "dependsOn": [
         "doctrine/deprecations-1.1.6.0",
         "phpdocumentor/reflection-common-2.2.1.0",
-        "phpstan/phpdoc-parser-2.3.6.0"
+        "phpstan/phpdoc-parser-2.3.8.0"
       ]
     },
     {
@@ -563068,7 +563068,7 @@
       ]
     },
     {
-      "ref": "phpstan/phpdoc-parser-2.3.6.0"
+      "ref": "phpstan/phpdoc-parser-2.3.8.0"
     },
     {
       "ref": "pimcore/asset-metadata-class-definitions-2026.9999999.9999999.9999999-dev",
@@ -563372,7 +563372,7 @@
         "doctrine/dbal-4.5.0.0",
         "doctrine/doctrine-bundle-3.3.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
-        "doctrine/inflector-2.1.0.0",
+        "doctrine/inflector-2.1.1.0",
         "doctrine/orm-3.7.5.0",
         "doctrine/persistence-4.2.1.0",
         "egulias/email-validator-4.0.4.0",
@@ -563678,9 +563678,9 @@
       "ref": "psr/simple-cache-3.0.0.0"
     },
     {
-      "ref": "radebatz/type-info-extras-1.0.10.0",
+      "ref": "radebatz/type-info-extras-1.0.11.0",
       "dependsOn": [
-        "phpstan/phpdoc-parser-2.3.6.0",
+        "phpstan/phpdoc-parser-2.3.8.0",
         "symfony/type-info-8.1.8.0"
       ]
     },
@@ -564367,9 +564367,9 @@
       "ref": "zircote/swagger-php-6.18.0.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
-        "phpstan/phpdoc-parser-2.3.6.0",
+        "phpstan/phpdoc-parser-2.3.8.0",
         "psr/log-3.0.2.0",
-        "radebatz/type-info-extras-1.0.10.0",
+        "radebatz/type-info-extras-1.0.11.0",
         "symfony/console-7.4.21.0",
         "symfony/finder-7.4.20.0",
         "symfony/yaml-7.4.21.0"
