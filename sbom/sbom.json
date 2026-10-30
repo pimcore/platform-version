@@ -1,14 +1,14 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:9483312b-ebf1-4c1c-9093-c504b36eacb7",
+  "serialNumber": "urn:uuid:97deb222-7236-45d2-adcc-b39d1811fd17",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-29T00:05:43Z",
+    "timestamp": "2026-10-30T00:05:57Z",
     "tools": [
       {
         "name": "composer",
-        "version": "2.10.3"
+        "version": "2.11.0"
       },
       {
         "vendor": "cyclonedx",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev daac507",
+      "version": "2026.3.x-dev 170ebb2",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20daac507",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20170ebb2",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "daac507875d93e69b2f6e848ed1545c07da03d18"
+          "value": "170ebb2ff324292931f675a0787113ed990a0968"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "daac507875d93e69b2f6e848ed1545c07da03d18"
+          "value": "170ebb2ff324292931f675a0787113ed990a0968"
         },
         {
           "name": "cdx:composer:package:type",
@@ -281,11 +281,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "composer/ca-bundle-1.6.0.0",
+      "bom-ref": "composer/ca-bundle-1.6.1.0",
       "author": "Jordi Boggiano",
       "group": "composer",
       "name": "ca-bundle",
-      "version": "1.6.0",
+      "version": "1.6.1",
       "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
       "licenses": [
         {
@@ -295,17 +295,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/composer/ca-bundle@1.6.0",
+      "purl": "pkg:composer/composer/ca-bundle@1.6.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/composer/ca-bundle/zipball/2c99cf2e92516985dea4914812b93d9daf01cdd6",
+          "url": "https://api.github.com/repos/composer/ca-bundle/zipball/0c64479fae6952ba4cf021a72c0ac530394c91d4",
           "type": "distribution",
-          "comment": "dist reference: 2c99cf2e92516985dea4914812b93d9daf01cdd6"
+          "comment": "dist reference: 0c64479fae6952ba4cf021a72c0ac530394c91d4"
         },
         {
           "url": "https://github.com/composer/ca-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 2c99cf2e92516985dea4914812b93d9daf01cdd6"
+          "comment": "source reference: 0c64479fae6952ba4cf021a72c0ac530394c91d4"
         },
         {
           "url": "irc://irc.freenode.org/composer",
@@ -318,7 +318,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/composer/ca-bundle/tree/1.6.0",
+          "url": "https://github.com/composer/ca-bundle/tree/1.6.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -326,11 +326,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2c99cf2e92516985dea4914812b93d9daf01cdd6"
+          "value": "0c64479fae6952ba4cf021a72c0ac530394c91d4"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2c99cf2e92516985dea4914812b93d9daf01cdd6"
+          "value": "0c64479fae6952ba4cf021a72c0ac530394c91d4"
         },
         {
           "name": "cdx:composer:package:type",
@@ -865,11 +865,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/doctrine-bundle-2.19.2.0",
+      "bom-ref": "doctrine/doctrine-bundle-2.19.3.0",
       "author": "Fabien Potencier, Benjamin Eberlei, Symfony Community, Doctrine Project",
       "group": "doctrine",
       "name": "doctrine-bundle",
-      "version": "2.19.2",
+      "version": "2.19.3",
       "description": "Symfony DoctrineBundle",
       "licenses": [
         {
@@ -879,17 +879,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.2",
+      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.3",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/d12ccf37ef6590d3d92a79c8ef550cab20db2754",
+          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/1038b1e17af048b31a4e444c5848b8cf20309e46",
           "type": "distribution",
-          "comment": "dist reference: d12ccf37ef6590d3d92a79c8ef550cab20db2754"
+          "comment": "dist reference: 1038b1e17af048b31a4e444c5848b8cf20309e46"
         },
         {
           "url": "https://github.com/doctrine/DoctrineBundle.git",
           "type": "vcs",
-          "comment": "source reference: d12ccf37ef6590d3d92a79c8ef550cab20db2754"
+          "comment": "source reference: 1038b1e17af048b31a4e444c5848b8cf20309e46"
         },
         {
           "url": "https://www.doctrine-project.org",
@@ -902,7 +902,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.2",
+          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.3",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -910,11 +910,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d12ccf37ef6590d3d92a79c8ef550cab20db2754"
+          "value": "1038b1e17af048b31a4e444c5848b8cf20309e46"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d12ccf37ef6590d3d92a79c8ef550cab20db2754"
+          "value": "1038b1e17af048b31a4e444c5848b8cf20309e46"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev daac507",
+      "version": "2026.3.x-dev 170ebb2",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20daac507",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20170ebb2",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "daac507875d93e69b2f6e848ed1545c07da03d18"
+          "value": "170ebb2ff324292931f675a0787113ed990a0968"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "daac507875d93e69b2f6e848ed1545c07da03d18"
+          "value": "170ebb2ff324292931f675a0787113ed990a0968"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562394,7 +562394,7 @@
       "ref": "colinmollenhour/credis-1.17.1.0"
     },
     {
-      "ref": "composer/ca-bundle-1.6.0.0"
+      "ref": "composer/ca-bundle-1.6.1.0"
     },
     {
       "ref": "composer/pcre-3.4.0.0"
@@ -562449,7 +562449,7 @@
       "ref": "doctrine/deprecations-1.1.6.0"
     },
     {
-      "ref": "doctrine/doctrine-bundle-2.19.2.0",
+      "ref": "doctrine/doctrine-bundle-2.19.3.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
         "doctrine/deprecations-1.1.6.0",
@@ -562467,7 +562467,7 @@
       "ref": "doctrine/doctrine-migrations-bundle-3.7.1.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
-        "doctrine/doctrine-bundle-2.19.2.0",
+        "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/migrations-3.9.8.0",
         "psr/log-3.0.2.0",
         "symfony/config-7.4.22.0",
@@ -562776,7 +562776,7 @@
     {
       "ref": "maxmind/web-service-common-0.11.1.0",
       "dependsOn": [
-        "composer/ca-bundle-1.6.0.0"
+        "composer/ca-bundle-1.6.1.0"
       ]
     },
     {
@@ -563274,10 +563274,10 @@
     {
       "ref": "pimcore/pimcore-2026.3.3.1",
       "dependsOn": [
-        "composer/ca-bundle-1.6.0.0",
+        "composer/ca-bundle-1.6.1.0",
         "defuse/php-encryption-2.4.0.0",
         "doctrine/dbal-4.5.0.0",
-        "doctrine/doctrine-bundle-2.19.2.0",
+        "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/inflector-2.1.1.0",
         "doctrine/orm-3.7.5.0",
@@ -563944,7 +563944,7 @@
     {
       "ref": "symfony/orm-pack-2.7.0.0",
       "dependsOn": [
-        "doctrine/doctrine-bundle-2.19.2.0",
+        "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/orm-3.7.5.0"
       ]
