@@ -1,14 +1,14 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:97deb222-7236-45d2-adcc-b39d1811fd17",
+  "serialNumber": "urn:uuid:fa6ef2ba-4b36-4a1c-bb14-ff4ef28ae470",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-30T00:05:57Z",
+    "timestamp": "2026-10-31T00:05:05Z",
     "tools": [
       {
         "name": "composer",
-        "version": "2.11.0"
+        "version": "2.11.1"
       },
       {
         "vendor": "cyclonedx",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 170ebb2",
+      "version": "2026.3.x-dev bf103da",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20170ebb2",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20bf103da",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "170ebb2ff324292931f675a0787113ed990a0968"
+          "value": "bf103daeb03dd560f57fa0f0d3afb02ea6bbaae0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "170ebb2ff324292931f675a0787113ed990a0968"
+          "value": "bf103daeb03dd560f57fa0f0d3afb02ea6bbaae0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -1278,11 +1278,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/orm-3.7.5.0",
+      "bom-ref": "doctrine/orm-3.7.6.0",
       "author": "Guilherme Blanco, Roman Borschel, Benjamin Eberlei, Jonathan Wage, Marco Pivetta",
       "group": "doctrine",
       "name": "orm",
-      "version": "3.7.5",
+      "version": "3.7.6",
       "description": "Object-Relational-Mapper for PHP",
       "licenses": [
         {
@@ -1292,17 +1292,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/orm@3.7.5",
+      "purl": "pkg:composer/doctrine/orm@3.7.6",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/orm/zipball/00c2fd70da291cca1ec75f4dae5344fe3df588fa",
+          "url": "https://api.github.com/repos/doctrine/orm/zipball/4487f850401c0e1f27891cce5897fa90b3055c2a",
           "type": "distribution",
-          "comment": "dist reference: 00c2fd70da291cca1ec75f4dae5344fe3df588fa"
+          "comment": "dist reference: 4487f850401c0e1f27891cce5897fa90b3055c2a"
         },
         {
           "url": "https://github.com/doctrine/orm.git",
           "type": "vcs",
-          "comment": "source reference: 00c2fd70da291cca1ec75f4dae5344fe3df588fa"
+          "comment": "source reference: 4487f850401c0e1f27891cce5897fa90b3055c2a"
         },
         {
           "url": "https://www.doctrine-project.org/projects/orm.html",
@@ -1315,7 +1315,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/orm/tree/3.7.5",
+          "url": "https://github.com/doctrine/orm/tree/3.7.6",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -1323,11 +1323,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "00c2fd70da291cca1ec75f4dae5344fe3df588fa"
+          "value": "4487f850401c0e1f27891cce5897fa90b3055c2a"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "00c2fd70da291cca1ec75f4dae5344fe3df588fa"
+          "value": "4487f850401c0e1f27891cce5897fa90b3055c2a"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6042,10 +6042,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "phpstan/phpdoc-parser-2.4.0.0",
+      "bom-ref": "phpstan/phpdoc-parser-2.4.1.0",
       "group": "phpstan",
       "name": "phpdoc-parser",
-      "version": "2.4.0",
+      "version": "2.4.1",
       "description": "PHPDoc parser with support for nullable, intersection and generic types",
       "licenses": [
         {
@@ -6055,17 +6055,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/phpstan/phpdoc-parser@2.4.0",
+      "purl": "pkg:composer/phpstan/phpdoc-parser@2.4.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/e3647094ed8f0f1f67393d812b793a5143e25af3",
+          "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/af8e840551031d254cfdb3a18a62c3470a309c10",
           "type": "distribution",
-          "comment": "dist reference: e3647094ed8f0f1f67393d812b793a5143e25af3"
+          "comment": "dist reference: af8e840551031d254cfdb3a18a62c3470a309c10"
         },
         {
           "url": "https://github.com/phpstan/phpdoc-parser.git",
           "type": "vcs",
-          "comment": "source reference: e3647094ed8f0f1f67393d812b793a5143e25af3"
+          "comment": "source reference: af8e840551031d254cfdb3a18a62c3470a309c10"
         },
         {
           "url": "https://github.com/phpstan/phpdoc-parser/issues",
@@ -6073,7 +6073,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/phpstan/phpdoc-parser/tree/2.4.0",
+          "url": "https://github.com/phpstan/phpdoc-parser/tree/2.4.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -6081,11 +6081,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e3647094ed8f0f1f67393d812b793a5143e25af3"
+          "value": "af8e840551031d254cfdb3a18a62c3470a309c10"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e3647094ed8f0f1f67393d812b793a5143e25af3"
+          "value": "af8e840551031d254cfdb3a18a62c3470a309c10"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9461,11 +9461,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "scheb/2fa-bundle-8.6.1.0",
+      "bom-ref": "scheb/2fa-bundle-8.7.0.0",
       "author": "Christian Scheb",
       "group": "scheb",
       "name": "2fa-bundle",
-      "version": "v8.6.1",
+      "version": "v8.7.0",
       "description": "A generic interface to implement two-factor authentication in Symfony applications",
       "licenses": [
         {
@@ -9475,17 +9475,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/scheb/2fa-bundle@v8.6.1",
+      "purl": "pkg:composer/scheb/2fa-bundle@v8.7.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/5427e46c4e3236af31ad25ba7deae63de197637f",
+          "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/3a01b7bf07389b0f4db2b5747333c9ee2ea6370b",
           "type": "distribution",
-          "comment": "dist reference: 5427e46c4e3236af31ad25ba7deae63de197637f"
+          "comment": "dist reference: 3a01b7bf07389b0f4db2b5747333c9ee2ea6370b"
         },
         {
           "url": "https://github.com/scheb/2fa-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 5427e46c4e3236af31ad25ba7deae63de197637f"
+          "comment": "source reference: 3a01b7bf07389b0f4db2b5747333c9ee2ea6370b"
         },
         {
           "url": "https://github.com/scheb/2fa",
@@ -9493,7 +9493,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/scheb/2fa-bundle/tree/v8.6.1",
+          "url": "https://github.com/scheb/2fa-bundle/tree/v8.7.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -9501,11 +9501,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "5427e46c4e3236af31ad25ba7deae63de197637f"
+          "value": "3a01b7bf07389b0f4db2b5747333c9ee2ea6370b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "5427e46c4e3236af31ad25ba7deae63de197637f"
+          "value": "3a01b7bf07389b0f4db2b5747333c9ee2ea6370b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9515,11 +9515,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "scheb/2fa-google-authenticator-8.6.1.0",
+      "bom-ref": "scheb/2fa-google-authenticator-8.7.0.0",
       "author": "Christian Scheb",
       "group": "scheb",
       "name": "2fa-google-authenticator",
-      "version": "v8.6.1",
+      "version": "v8.7.0",
       "description": "Extends scheb/2fa-bundle with two-factor authentication using Google Authenticator",
       "licenses": [
         {
@@ -9529,7 +9529,7 @@
           }
         }
       ],
-      "purl": "pkg:composer/scheb/2fa-google-authenticator@v8.6.1",
+      "purl": "pkg:composer/scheb/2fa-google-authenticator@v8.7.0",
       "externalReferences": [
         {
           "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/b7b173fa2cb437cb16d5a42af487e7e73a5f3ba1",
@@ -9547,7 +9547,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/scheb/2fa-google-authenticator/tree/v8.6.1",
+          "url": "https://github.com/scheb/2fa-google-authenticator/tree/v8.7.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14535,11 +14535,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "web-token/jwt-library-4.2.3.0",
+      "bom-ref": "web-token/jwt-library-4.2.4.0",
       "author": "Florent Morselli, All contributors",
       "group": "web-token",
       "name": "jwt-library",
-      "version": "4.2.3",
+      "version": "4.2.4",
       "description": "JWT library",
       "licenses": [
         {
@@ -14549,17 +14549,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/web-token/jwt-library@4.2.3",
+      "purl": "pkg:composer/web-token/jwt-library@4.2.4",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/web-token/jwt-library/zipball/db962c3ad8bc91c531a49dd373f0a641fc507bfd",
+          "url": "https://api.github.com/repos/web-token/jwt-library/zipball/21631c1db4f534aaf571716c41a2c67278cdbd49",
           "type": "distribution",
-          "comment": "dist reference: db962c3ad8bc91c531a49dd373f0a641fc507bfd"
+          "comment": "dist reference: 21631c1db4f534aaf571716c41a2c67278cdbd49"
         },
         {
           "url": "https://github.com/web-token/jwt-library.git",
           "type": "vcs",
-          "comment": "source reference: db962c3ad8bc91c531a49dd373f0a641fc507bfd"
+          "comment": "source reference: 21631c1db4f534aaf571716c41a2c67278cdbd49"
         },
         {
           "url": "https://github.com/web-token",
@@ -14567,12 +14567,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/web-token/jwt-library/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from Composer manifest \u0027support.issues\u0027"
-        },
-        {
-          "url": "https://github.com/web-token/jwt-library/tree/4.2.3",
+          "url": "https://github.com/web-token/jwt-library/tree/4.2.4",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14580,11 +14575,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "db962c3ad8bc91c531a49dd373f0a641fc507bfd"
+          "value": "21631c1db4f534aaf571716c41a2c67278cdbd49"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "db962c3ad8bc91c531a49dd373f0a641fc507bfd"
+          "value": "21631c1db4f534aaf571716c41a2c67278cdbd49"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14871,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 170ebb2",
+      "version": "2026.3.x-dev bf103da",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14881,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20170ebb2",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20bf103da",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "170ebb2ff324292931f675a0787113ed990a0968"
+          "value": "bf103daeb03dd560f57fa0f0d3afb02ea6bbaae0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "170ebb2ff324292931f675a0787113ed990a0968"
+          "value": "bf103daeb03dd560f57fa0f0d3afb02ea6bbaae0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562503,7 +562498,7 @@
       ]
     },
     {
-      "ref": "doctrine/orm-3.7.5.0",
+      "ref": "doctrine/orm-3.7.6.0",
       "dependsOn": [
         "doctrine/collections-3.1.0.0",
         "doctrine/dbal-4.5.0.0",
@@ -562945,7 +562940,7 @@
         "doctrine/deprecations-1.1.6.0",
         "phpdocumentor/reflection-common-2.2.1.0",
         "phpdocumentor/type-resolver-2.1.0.0",
-        "phpstan/phpdoc-parser-2.4.0.0",
+        "phpstan/phpdoc-parser-2.4.1.0",
         "webmozart/assert-1.12.1.0"
       ]
     },
@@ -562954,7 +562949,7 @@
       "dependsOn": [
         "doctrine/deprecations-1.1.6.0",
         "phpdocumentor/reflection-common-2.2.1.0",
-        "phpstan/phpdoc-parser-2.4.0.0"
+        "phpstan/phpdoc-parser-2.4.1.0"
       ]
     },
     {
@@ -562975,7 +562970,7 @@
       ]
     },
     {
-      "ref": "phpstan/phpdoc-parser-2.4.0.0"
+      "ref": "phpstan/phpdoc-parser-2.4.1.0"
     },
     {
       "ref": "pimcore/asset-metadata-class-definitions-2026.3.2.0",
@@ -562993,7 +562988,7 @@
       "ref": "pimcore/backend-power-tools-bundle-2026.3.3.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "nesbot/carbon-3.15.1.0",
         "phpoffice/phpspreadsheet-5.10.0.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
@@ -563008,7 +563003,7 @@
     {
       "ref": "pimcore/copilot-bundle-2026.3.3.0",
       "dependsOn": [
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/generic-data-index-bundle-2026.3.3.0",
@@ -563142,7 +563137,7 @@
     {
       "ref": "pimcore/direct-edit-2026.3.0.0",
       "dependsOn": [
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "lcobucci/jwt-5.6.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
         "pimcore/pimcore-2026.3.3.1",
@@ -563197,7 +563192,7 @@
       "ref": "pimcore/generic-data-index-bundle-2026.3.3.0",
       "dependsOn": [
         "doctrine/dbal-4.5.0.0",
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-local-3.35.3.0",
         "nesbot/carbon-3.15.1.0",
@@ -563244,7 +563239,7 @@
         "pimcore/studio-backend-bundle-2026.3.3.0",
         "pimcore/studio-ui-bundle-2026.3.3.0",
         "symfony/clock-7.4.21.0",
-        "web-token/jwt-library-4.2.3.0"
+        "web-token/jwt-library-4.2.4.0"
       ]
     },
     {
@@ -563280,7 +563275,7 @@
         "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/inflector-2.1.1.0",
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "doctrine/persistence-3.4.5.0",
         "egulias/email-validator-4.0.4.0",
         "friendsofsymfony/jsrouting-bundle-3.6.1.0",
@@ -563304,8 +563299,8 @@
         "phpdocumentor/reflection-docblock-6.0.3.0",
         "presta/sitemap-bundle-4.3.1.0",
         "sabre/dav-4.7.1.0",
-        "scheb/2fa-bundle-8.6.1.0",
-        "scheb/2fa-google-authenticator-8.6.1.0",
+        "scheb/2fa-bundle-8.7.0.0",
+        "scheb/2fa-google-authenticator-8.7.0.0",
         "spatie/image-optimizer-1.10.0.0",
         "symfony-cmf/routing-bundle-3.2.0.0",
         "symfony/cache-7.4.22.0",
@@ -563365,7 +563360,7 @@
     {
       "ref": "pimcore/portal-engine-2026.3.3.0",
       "dependsOn": [
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "knplabs/knp-components-5.3.0.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
         "myclabs/php-enum-1.8.5.0",
@@ -563417,7 +563412,7 @@
     {
       "ref": "pimcore/statistics-explorer-2026.3.3.0",
       "dependsOn": [
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "elasticsearch/elasticsearch-8.19.0.0",
         "opensearch-project/opensearch-php-2.3.1.0",
         "pimcore/elasticsearch-client-2026.3.0.0",
@@ -563485,7 +563480,7 @@
     {
       "ref": "pimcore/translations-provider-interfaces-2026.3.1.0",
       "dependsOn": [
-        "doctrine/orm-3.7.5.0",
+        "doctrine/orm-3.7.6.0",
         "mashape/unirest-php-3.0.4.0",
         "nesbot/carbon-3.15.1.0",
         "pimcore/enterprise-subscription-tools-2026.3.0.0",
@@ -563643,7 +563638,7 @@
       ]
     },
     {
-      "ref": "scheb/2fa-bundle-8.6.1.0",
+      "ref": "scheb/2fa-bundle-8.7.0.0",
       "dependsOn": [
         "symfony/config-7.4.22.0",
         "symfony/dependency-injection-7.4.22.0",
@@ -563657,9 +563652,9 @@
       ]
     },
     {
-      "ref": "scheb/2fa-google-authenticator-8.6.1.0",
+      "ref": "scheb/2fa-google-authenticator-8.7.0.0",
       "dependsOn": [
-        "scheb/2fa-bundle-8.6.1.0",
+        "scheb/2fa-bundle-8.7.0.0",
         "spomky-labs/otphp-11.5.0.0"
       ]
     },
@@ -563946,7 +563941,7 @@
       "dependsOn": [
         "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
-        "doctrine/orm-3.7.5.0"
+        "doctrine/orm-3.7.6.0"
       ]
     },
     {
@@ -564233,7 +564228,7 @@
       "ref": "umpirsky/country-list-2.0.6.0"
     },
     {
-      "ref": "web-token/jwt-library-4.2.3.0",
+      "ref": "web-token/jwt-library-4.2.4.0",
       "dependsOn": [
         "brick/math-1.0.0.0",
         "psr/clock-1.0.0.0",
@@ -564266,7 +564261,7 @@
       "ref": "zircote/swagger-php-5.5.2.0",
       "dependsOn": [
         "nikic/php-parser-5.9.0.0",
-        "phpstan/phpdoc-parser-2.4.0.0",
+        "phpstan/phpdoc-parser-2.4.1.0",
         "psr/log-3.0.2.0",
         "symfony/finder-7.4.22.0",
         "symfony/yaml-7.4.22.0"
