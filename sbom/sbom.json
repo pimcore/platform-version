@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:89da299d-d86e-4fe8-8b52-8db3284f6496",
+  "serialNumber": "urn:uuid:15e8bbe9-71a3-49ca-820e-aa414643567e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-02T00:05:05Z",
+    "timestamp": "2026-11-03T00:05:02Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 9f54b69",
+      "version": "2026.3.x-dev 94639d7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209f54b69",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2094639d7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9f54b69ffcd1e679c5dbca71100798d3e7eec523"
+          "value": "94639d73323adda33e984d60dfa03e700b180136"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9f54b69ffcd1e679c5dbca71100798d3e7eec523"
+          "value": "94639d73323adda33e984d60dfa03e700b180136"
         },
         {
           "name": "cdx:composer:package:type",
@@ -5983,11 +5983,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "phpseclib/phpseclib-3.0.57.0",
+      "bom-ref": "phpseclib/phpseclib-3.0.58.0",
       "author": "Jim Wigginton, Patrick Monnerat, Andreas Fischer, Hans-J\u00FCrgen Petrich, Graham Campbell",
       "group": "phpseclib",
       "name": "phpseclib",
-      "version": "3.0.57",
+      "version": "3.0.58",
       "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
       "licenses": [
         {
@@ -5997,17 +5997,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/phpseclib/phpseclib@3.0.57",
+      "purl": "pkg:composer/phpseclib/phpseclib@3.0.58",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4",
+          "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/91f3a6436bb84040ac0cf49e761977f17d16a39b",
           "type": "distribution",
-          "comment": "dist reference: d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4"
+          "comment": "dist reference: 91f3a6436bb84040ac0cf49e761977f17d16a39b"
         },
         {
           "url": "https://github.com/phpseclib/phpseclib.git",
           "type": "vcs",
-          "comment": "source reference: d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4"
+          "comment": "source reference: 91f3a6436bb84040ac0cf49e761977f17d16a39b"
         },
         {
           "url": "http://phpseclib.sourceforge.net",
@@ -6020,7 +6020,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/phpseclib/phpseclib/tree/3.0.57",
+          "url": "https://github.com/phpseclib/phpseclib/tree/3.0.58",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -6028,11 +6028,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4"
+          "value": "91f3a6436bb84040ac0cf49e761977f17d16a39b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4"
+          "value": "91f3a6436bb84040ac0cf49e761977f17d16a39b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14871,7 +14871,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 9f54b69",
+      "version": "2026.3.x-dev 94639d7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14881,15 +14881,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209f54b69",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2094639d7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9f54b69ffcd1e679c5dbca71100798d3e7eec523"
+          "value": "94639d73323adda33e984d60dfa03e700b180136"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9f54b69ffcd1e679c5dbca71100798d3e7eec523"
+          "value": "94639d73323adda33e984d60dfa03e700b180136"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562694,7 +562694,7 @@
       "dependsOn": [
         "league/flysystem-3.36.0.0",
         "league/mime-type-detection-1.17.0.0",
-        "phpseclib/phpseclib-3.0.57.0"
+        "phpseclib/phpseclib-3.0.58.0"
       ]
     },
     {
@@ -562963,7 +562963,7 @@
       ]
     },
     {
-      "ref": "phpseclib/phpseclib-3.0.57.0",
+      "ref": "phpseclib/phpseclib-3.0.58.0",
       "dependsOn": [
         "paragonie/constant_time_encoding-3.1.3.0",
         "paragonie/random_compat-9.99.100.0"
