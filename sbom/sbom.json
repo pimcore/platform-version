@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:e0cb4e00-0e96-41ca-b5b8-e12afde1cc5e",
+  "serialNumber": "urn:uuid:377bd805-248a-448c-b53a-814df16e932e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-07T00:04:40Z",
+    "timestamp": "2026-11-08T00:05:20Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev a259cee",
+      "version": "2026.x-dev 064c665",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20a259cee",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20064c665",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a259ceea0ff53e70889b5f0afea6cf57c4574471"
+          "value": "064c6659fb3a199f08d5253cf65ce266e932c075"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a259ceea0ff53e70889b5f0afea6cf57c4574471"
+          "value": "064c6659fb3a199f08d5253cf65ce266e932c075"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6571,7 +6571,7 @@
       "bom-ref": "pimcore/data-importer-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-importer",
-      "version": "2026.x-dev 5851630",
+      "version": "2026.x-dev fad0f64",
       "description": "Adds a comprehensive import functionality to Pimcore Datahub",
       "licenses": [
         {
@@ -6581,17 +6581,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%205851630",
+      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%20fad0f64",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/5851630d9e99586493c417fa1bd5c0453c7c8ede",
+          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/fad0f6461309a673f3341841216c2ebfe039c575",
           "type": "distribution",
-          "comment": "dist reference: 5851630d9e99586493c417fa1bd5c0453c7c8ede"
+          "comment": "dist reference: fad0f6461309a673f3341841216c2ebfe039c575"
         },
         {
           "url": "https://github.com/pimcore/data-importer.git",
           "type": "vcs",
-          "comment": "source reference: 5851630d9e99586493c417fa1bd5c0453c7c8ede"
+          "comment": "source reference: fad0f6461309a673f3341841216c2ebfe039c575"
         },
         {
           "url": "https://github.com/pimcore/data-importer/issues",
@@ -6607,11 +6607,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "5851630d9e99586493c417fa1bd5c0453c7c8ede"
+          "value": "fad0f6461309a673f3341841216c2ebfe039c575"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "5851630d9e99586493c417fa1bd5c0453c7c8ede"
+          "value": "fad0f6461309a673f3341841216c2ebfe039c575"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7308,7 +7308,7 @@
       "author": "pimcore Team",
       "group": "pimcore",
       "name": "pimcore",
-      "version": "2026.x-dev a61b9d7",
+      "version": "2026.x-dev 319f2b2",
       "description": "Content \u0026 Product Management Framework (CMS/PIM/E-Commerce)",
       "licenses": [
         {
@@ -7318,17 +7318,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%20a61b9d7",
+      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%20319f2b2",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/ra61b9d7397b0bdd76bc2a476c29e381e59536db5.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/r319f2b29c123b5f85f09ab7140e1a9c4c6c6954c.zip",
           "type": "distribution",
-          "comment": "dist reference: a61b9d7397b0bdd76bc2a476c29e381e59536db5"
+          "comment": "dist reference: 319f2b29c123b5f85f09ab7140e1a9c4c6c6954c"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/a61b9d7397b0bdd76bc2a476c29e381e59536db5",
+          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/319f2b29c123b5f85f09ab7140e1a9c4c6c6954c",
           "type": "distribution",
-          "comment": "dist reference: a61b9d7397b0bdd76bc2a476c29e381e59536db5"
+          "comment": "dist reference: 319f2b29c123b5f85f09ab7140e1a9c4c6c6954c"
         },
         {
           "url": "https://www.pimcore.com/",
@@ -7364,11 +7364,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a61b9d7397b0bdd76bc2a476c29e381e59536db5"
+          "value": "319f2b29c123b5f85f09ab7140e1a9c4c6c6954c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a61b9d7397b0bdd76bc2a476c29e381e59536db5"
+          "value": "319f2b29c123b5f85f09ab7140e1a9c4c6c6954c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7804,7 +7804,7 @@
       "bom-ref": "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-ui-bundle",
-      "version": "2026.x-dev 94da021",
+      "version": "2026.x-dev 9d004d2",
       "description": "Pimcore Studio Ui Bundle",
       "licenses": [
         {
@@ -7814,17 +7814,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%2094da021",
+      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%209d004d2",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/94da0212cc41934310e7164ab795212cf874bea8",
+          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/9d004d2b37d28e89d43db5b93febccf65f301820",
           "type": "distribution",
-          "comment": "dist reference: 94da0212cc41934310e7164ab795212cf874bea8"
+          "comment": "dist reference: 9d004d2b37d28e89d43db5b93febccf65f301820"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 94da0212cc41934310e7164ab795212cf874bea8"
+          "comment": "source reference: 9d004d2b37d28e89d43db5b93febccf65f301820"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle/issues",
@@ -7840,11 +7840,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "94da0212cc41934310e7164ab795212cf874bea8"
+          "value": "9d004d2b37d28e89d43db5b93febccf65f301820"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "94da0212cc41934310e7164ab795212cf874bea8"
+          "value": "9d004d2b37d28e89d43db5b93febccf65f301820"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9687,11 +9687,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "spomky-labs/otphp-11.5.0.0",
+      "bom-ref": "spomky-labs/otphp-11.5.1.0",
       "author": "Florent Morselli, All contributors",
       "group": "spomky-labs",
       "name": "otphp",
-      "version": "11.5.0",
+      "version": "11.5.1",
       "description": "A PHP library for generating one time passwords according to RFC 4226 (HOTP Algorithm) and the RFC 6238 (TOTP Algorithm) and compatible with Google Authenticator",
       "licenses": [
         {
@@ -9701,17 +9701,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/spomky-labs/otphp@11.5.0",
+      "purl": "pkg:composer/spomky-labs/otphp@11.5.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/877683d6352b80cdc7020fd43a725629c2524435",
+          "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/16866d2206d6f0c0421294357da23a28b78852f7",
           "type": "distribution",
-          "comment": "dist reference: 877683d6352b80cdc7020fd43a725629c2524435"
+          "comment": "dist reference: 16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "url": "https://github.com/Spomky-Labs/otphp.git",
           "type": "vcs",
-          "comment": "source reference: 877683d6352b80cdc7020fd43a725629c2524435"
+          "comment": "source reference: 16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "url": "https://github.com/Spomky-Labs/otphp",
@@ -9724,7 +9724,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/Spomky-Labs/otphp/tree/11.5.0",
+          "url": "https://github.com/Spomky-Labs/otphp/tree/11.5.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -9732,11 +9732,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "877683d6352b80cdc7020fd43a725629c2524435"
+          "value": "16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "877683d6352b80cdc7020fd43a725629c2524435"
+          "value": "16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev a259cee",
+      "version": "2026.x-dev 064c665",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20a259cee",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%20064c665",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a259ceea0ff53e70889b5f0afea6cf57c4574471"
+          "value": "064c6659fb3a199f08d5253cf65ce266e932c075"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a259ceea0ff53e70889b5f0afea6cf57c4574471"
+          "value": "064c6659fb3a199f08d5253cf65ce266e932c075"
         },
         {
           "name": "cdx:composer:package:type",
@@ -563900,7 +563900,7 @@
       "ref": "scheb/2fa-google-authenticator-8.7.0.0",
       "dependsOn": [
         "scheb/2fa-bundle-8.7.0.0",
-        "spomky-labs/otphp-11.5.0.0"
+        "spomky-labs/otphp-11.5.1.0"
       ]
     },
     {
@@ -563911,7 +563911,7 @@
       ]
     },
     {
-      "ref": "spomky-labs/otphp-11.5.0.0",
+      "ref": "spomky-labs/otphp-11.5.1.0",
       "dependsOn": [
         "paragonie/constant_time_encoding-3.1.4.0",
         "psr/clock-1.0.0.0"
