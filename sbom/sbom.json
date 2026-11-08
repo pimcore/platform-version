@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:78936f7c-3c3c-46b0-b1d0-51b99e1b308c",
+  "serialNumber": "urn:uuid:b8d75281-f748-417e-9086-61f852cd2c66",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-07T00:04:40Z",
+    "timestamp": "2026-11-08T00:05:37Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 2d9fb66",
+      "version": "2026.3.x-dev a65c61c",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%202d9fb66",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a65c61c",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2d9fb660aa62c7cc0d7176e0a8ef1971020bab9a"
+          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2d9fb660aa62c7cc0d7176e0a8ef1971020bab9a"
+          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9628,11 +9628,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "spomky-labs/otphp-11.5.0.0",
+      "bom-ref": "spomky-labs/otphp-11.5.1.0",
       "author": "Florent Morselli, All contributors",
       "group": "spomky-labs",
       "name": "otphp",
-      "version": "11.5.0",
+      "version": "11.5.1",
       "description": "A PHP library for generating one time passwords according to RFC 4226 (HOTP Algorithm) and the RFC 6238 (TOTP Algorithm) and compatible with Google Authenticator",
       "licenses": [
         {
@@ -9642,17 +9642,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/spomky-labs/otphp@11.5.0",
+      "purl": "pkg:composer/spomky-labs/otphp@11.5.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/877683d6352b80cdc7020fd43a725629c2524435",
+          "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/16866d2206d6f0c0421294357da23a28b78852f7",
           "type": "distribution",
-          "comment": "dist reference: 877683d6352b80cdc7020fd43a725629c2524435"
+          "comment": "dist reference: 16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "url": "https://github.com/Spomky-Labs/otphp.git",
           "type": "vcs",
-          "comment": "source reference: 877683d6352b80cdc7020fd43a725629c2524435"
+          "comment": "source reference: 16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "url": "https://github.com/Spomky-Labs/otphp",
@@ -9665,7 +9665,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/Spomky-Labs/otphp/tree/11.5.0",
+          "url": "https://github.com/Spomky-Labs/otphp/tree/11.5.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -9673,11 +9673,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "877683d6352b80cdc7020fd43a725629c2524435"
+          "value": "16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "877683d6352b80cdc7020fd43a725629c2524435"
+          "value": "16866d2206d6f0c0421294357da23a28b78852f7"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14817,7 +14817,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 2d9fb66",
+      "version": "2026.3.x-dev a65c61c",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14827,15 +14827,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%202d9fb66",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a65c61c",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2d9fb660aa62c7cc0d7176e0a8ef1971020bab9a"
+          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2d9fb660aa62c7cc0d7176e0a8ef1971020bab9a"
+          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
         },
         {
           "name": "cdx:composer:package:type",
@@ -563630,7 +563630,7 @@
       "ref": "scheb/2fa-google-authenticator-8.7.0.0",
       "dependsOn": [
         "scheb/2fa-bundle-8.7.0.0",
-        "spomky-labs/otphp-11.5.0.0"
+        "spomky-labs/otphp-11.5.1.0"
       ]
     },
     {
@@ -563641,7 +563641,7 @@
       ]
     },
     {
-      "ref": "spomky-labs/otphp-11.5.0.0",
+      "ref": "spomky-labs/otphp-11.5.1.0",
       "dependsOn": [
         "paragonie/constant_time_encoding-3.1.4.0",
         "psr/clock-1.0.0.0"
