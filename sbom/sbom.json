@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:b8d75281-f748-417e-9086-61f852cd2c66",
+  "serialNumber": "urn:uuid:b33147a5-1360-4101-9a4a-617c2c58f31a",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-08T00:05:37Z",
+    "timestamp": "2026-11-09T00:05:53Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev a65c61c",
+      "version": "2026.3.x-dev 28ad1dd",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a65c61c",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ad1dd",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
+          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
+          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
         },
         {
           "name": "cdx:composer:package:type",
@@ -5924,11 +5924,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "phpoffice/phpspreadsheet-5.10.0.0",
+      "bom-ref": "phpoffice/phpspreadsheet-5.11.0.0",
       "author": "Maarten Balliauw, Mark Baker, Franck Lefevre, Erik Tilt, Adrien Crivelli, Owen Leibman",
       "group": "phpoffice",
       "name": "phpspreadsheet",
-      "version": "5.10.0",
+      "version": "5.11.0",
       "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
       "licenses": [
         {
@@ -5938,17 +5938,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/phpoffice/phpspreadsheet@5.10.0",
+      "purl": "pkg:composer/phpoffice/phpspreadsheet@5.11.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/eb18727acf6b1f4cc67145a52ab04f9fd4c28d53",
+          "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3aa1f0d0f3c658b803c18050ac49244d07d96907",
           "type": "distribution",
-          "comment": "dist reference: eb18727acf6b1f4cc67145a52ab04f9fd4c28d53"
+          "comment": "dist reference: 3aa1f0d0f3c658b803c18050ac49244d07d96907"
         },
         {
           "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
           "type": "vcs",
-          "comment": "source reference: eb18727acf6b1f4cc67145a52ab04f9fd4c28d53"
+          "comment": "source reference: 3aa1f0d0f3c658b803c18050ac49244d07d96907"
         },
         {
           "url": "https://github.com/PHPOffice/PhpSpreadsheet",
@@ -5961,7 +5961,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.10.0",
+          "url": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.11.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -5969,11 +5969,70 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "eb18727acf6b1f4cc67145a52ab04f9fd4c28d53"
+          "value": "3aa1f0d0f3c658b803c18050ac49244d07d96907"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "eb18727acf6b1f4cc67145a52ab04f9fd4c28d53"
+          "value": "3aa1f0d0f3c658b803c18050ac49244d07d96907"
+        },
+        {
+          "name": "cdx:composer:package:type",
+          "value": "library"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "phpoffice/wmf-0.2.1.0",
+      "author": "Progi1984",
+      "group": "phpoffice",
+      "name": "wmf",
+      "version": "0.2.1",
+      "description": "WMF - Manipulate WMF Images",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:composer/phpoffice/wmf@0.2.1",
+      "externalReferences": [
+        {
+          "url": "https://api.github.com/repos/PHPOffice/WMF/zipball/d1eafbab74509ee2adfcdda3888737cd8d349820",
+          "type": "distribution",
+          "comment": "dist reference: d1eafbab74509ee2adfcdda3888737cd8d349820"
+        },
+        {
+          "url": "https://github.com/PHPOffice/WMF.git",
+          "type": "vcs",
+          "comment": "source reference: d1eafbab74509ee2adfcdda3888737cd8d349820"
+        },
+        {
+          "url": "https://phpoffice.github.io/WMF/",
+          "type": "website",
+          "comment": "as detected from Composer manifest \u0027homepage\u0027"
+        },
+        {
+          "url": "https://github.com/PHPOffice/WMF/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from Composer manifest \u0027support.issues\u0027"
+        },
+        {
+          "url": "https://github.com/PHPOffice/WMF/tree/0.2.1",
+          "type": "vcs",
+          "comment": "as detected from Composer manifest \u0027support.source\u0027"
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:composer:package:distReference",
+          "value": "d1eafbab74509ee2adfcdda3888737cd8d349820"
+        },
+        {
+          "name": "cdx:composer:package:sourceReference",
+          "value": "d1eafbab74509ee2adfcdda3888737cd8d349820"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13820,11 +13879,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/webpack-encore-bundle-2.4.2.0",
+      "bom-ref": "symfony/webpack-encore-bundle-2.4.3.0",
       "author": "Symfony Community",
       "group": "symfony",
       "name": "webpack-encore-bundle",
-      "version": "2.4.2",
+      "version": "v2.4.3",
       "description": "Integration of your Symfony app with Webpack Encore",
       "licenses": [
         {
@@ -13834,17 +13893,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/webpack-encore-bundle@2.4.2",
+      "purl": "pkg:composer/symfony/webpack-encore-bundle@v2.4.3",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/0cbc3485f127cd9f85e395f8177607ef00535634",
+          "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/1ee41bc5bf67fd89215aedebc66a6f151098c288",
           "type": "distribution",
-          "comment": "dist reference: 0cbc3485f127cd9f85e395f8177607ef00535634"
+          "comment": "dist reference: 1ee41bc5bf67fd89215aedebc66a6f151098c288"
         },
         {
           "url": "https://github.com/symfony/webpack-encore-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 0cbc3485f127cd9f85e395f8177607ef00535634"
+          "comment": "source reference: 1ee41bc5bf67fd89215aedebc66a6f151098c288"
         },
         {
           "url": "https://github.com/symfony/webpack-encore-bundle/issues",
@@ -13852,7 +13911,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/symfony/webpack-encore-bundle/tree/2.4.2",
+          "url": "https://github.com/symfony/webpack-encore-bundle/tree/v2.4.3",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13860,11 +13919,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "0cbc3485f127cd9f85e395f8177607ef00535634"
+          "value": "1ee41bc5bf67fd89215aedebc66a6f151098c288"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "0cbc3485f127cd9f85e395f8177607ef00535634"
+          "value": "1ee41bc5bf67fd89215aedebc66a6f151098c288"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14481,11 +14540,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "web-token/jwt-library-4.2.5.0",
+      "bom-ref": "web-token/jwt-library-4.2.7.0",
       "author": "Florent Morselli, All contributors",
       "group": "web-token",
       "name": "jwt-library",
-      "version": "4.2.5",
+      "version": "4.2.7",
       "description": "JWT library",
       "licenses": [
         {
@@ -14495,17 +14554,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/web-token/jwt-library@4.2.5",
+      "purl": "pkg:composer/web-token/jwt-library@4.2.7",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/web-token/jwt-library/zipball/2ff6e4bac74e8921e07bd1336ebae82a1c5478c6",
+          "url": "https://api.github.com/repos/web-token/jwt-library/zipball/62643a2f31274c546a7d158ceab6dd5c052db911",
           "type": "distribution",
-          "comment": "dist reference: 2ff6e4bac74e8921e07bd1336ebae82a1c5478c6"
+          "comment": "dist reference: 62643a2f31274c546a7d158ceab6dd5c052db911"
         },
         {
           "url": "https://github.com/web-token/jwt-library.git",
           "type": "vcs",
-          "comment": "source reference: 2ff6e4bac74e8921e07bd1336ebae82a1c5478c6"
+          "comment": "source reference: 62643a2f31274c546a7d158ceab6dd5c052db911"
         },
         {
           "url": "https://github.com/web-token",
@@ -14513,7 +14572,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/web-token/jwt-library/tree/4.2.5",
+          "url": "https://github.com/web-token/jwt-library/tree/4.2.7",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14521,11 +14580,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2ff6e4bac74e8921e07bd1336ebae82a1c5478c6"
+          "value": "62643a2f31274c546a7d158ceab6dd5c052db911"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2ff6e4bac74e8921e07bd1336ebae82a1c5478c6"
+          "value": "62643a2f31274c546a7d158ceab6dd5c052db911"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14817,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev a65c61c",
+      "version": "2026.3.x-dev 28ad1dd",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14827,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a65c61c",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ad1dd",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
+          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a65c61c33ab91819df80e12960c0872e30243f91"
+          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562928,14 +562987,18 @@
       ]
     },
     {
-      "ref": "phpoffice/phpspreadsheet-5.10.0.0",
+      "ref": "phpoffice/phpspreadsheet-5.11.0.0",
       "dependsOn": [
         "composer/pcre-3.4.0.0",
         "maennchen/zipstream-php-3.2.2.0",
         "markbaker/complex-3.0.2.0",
         "markbaker/matrix-3.0.1.0",
+        "phpoffice/wmf-0.2.1.0",
         "psr/simple-cache-3.0.0.0"
       ]
+    },
+    {
+      "ref": "phpoffice/wmf-0.2.1.0"
     },
     {
       "ref": "phpseclib/phpseclib-3.0.58.0",
@@ -562965,7 +563028,7 @@
         "doctrine/dbal-4.5.0.0",
         "doctrine/orm-3.7.6.0",
         "nesbot/carbon-3.15.1.0",
-        "phpoffice/phpspreadsheet-5.10.0.0",
+        "phpoffice/phpspreadsheet-5.11.0.0",
         "pimcore/enterprise-subscription-tools-2026.3.4.0",
         "pimcore/generic-data-index-bundle-2026.3.4.0",
         "pimcore/object-merger-2026.3.1.0",
@@ -563090,7 +563153,7 @@
         "league/flysystem-sftp-v3-3.36.0.0",
         "mtdowling/jmespath.php-2.9.2.0",
         "nesbot/carbon-3.15.1.0",
-        "phpoffice/phpspreadsheet-5.10.0.0",
+        "phpoffice/phpspreadsheet-5.11.0.0",
         "pimcore/data-hub-2026.3.4.0",
         "pimcore/pimcore-2026.3.4.0",
         "pimcore/studio-backend-bundle-2026.3.4.0",
@@ -563135,7 +563198,7 @@
         "pimcore/studio-backend-bundle-2026.3.4.0",
         "pimcore/studio-ui-bundle-2026.3.4.0",
         "symfony/form-7.4.23.0",
-        "symfony/webpack-encore-bundle-2.4.2.0"
+        "symfony/webpack-encore-bundle-2.4.3.0"
       ]
     },
     {
@@ -563214,7 +563277,7 @@
         "pimcore/studio-backend-bundle-2026.3.4.0",
         "pimcore/studio-ui-bundle-2026.3.4.0",
         "symfony/clock-7.4.21.0",
-        "web-token/jwt-library-4.2.5.0"
+        "web-token/jwt-library-4.2.7.0"
       ]
     },
     {
@@ -563322,7 +563385,7 @@
         "symfony/var-dumper-7.4.22.0",
         "symfony/var-exporter-7.4.22.0",
         "symfony/web-profiler-bundle-7.4.23.0",
-        "symfony/webpack-encore-bundle-2.4.2.0",
+        "symfony/webpack-encore-bundle-2.4.3.0",
         "symfony/workflow-7.4.20.0",
         "symfony/yaml-7.4.23.0",
         "tijsverkoyen/css-to-inline-styles-2.4.0.0",
@@ -563354,7 +563417,7 @@
         "symfony/intl-7.4.22.0",
         "symfony/security-bundle-7.4.23.0",
         "symfony/validator-7.4.23.0",
-        "symfony/webpack-encore-bundle-2.4.2.0"
+        "symfony/webpack-encore-bundle-2.4.3.0"
       ]
     },
     {
@@ -563410,7 +563473,7 @@
         "nesbot/carbon-3.15.1.0",
         "php-http/discovery-1.20.0.0",
         "phpdocumentor/reflection-docblock-6.0.3.0",
-        "phpoffice/phpspreadsheet-5.10.0.0",
+        "phpoffice/phpspreadsheet-5.11.0.0",
         "pimcore/generic-data-index-bundle-2026.3.4.0",
         "pimcore/pimcore-2026.3.4.0",
         "pimcore/static-resolver-bundle-2026.3.4.0",
@@ -563494,7 +563557,7 @@
         "pimcore/pimcore-2026.3.4.0",
         "pimcore/studio-backend-bundle-2026.3.4.0",
         "pimcore/studio-ui-bundle-2026.3.4.0",
-        "symfony/webpack-encore-bundle-2.4.2.0"
+        "symfony/webpack-encore-bundle-2.4.3.0"
       ]
     },
     {
@@ -564135,7 +564198,7 @@
       ]
     },
     {
-      "ref": "symfony/webpack-encore-bundle-2.4.2.0",
+      "ref": "symfony/webpack-encore-bundle-2.4.3.0",
       "dependsOn": [
         "symfony/asset-7.4.8.0",
         "symfony/config-7.4.23.0",
@@ -564200,7 +564263,7 @@
       "ref": "umpirsky/country-list-2.0.6.0"
     },
     {
-      "ref": "web-token/jwt-library-4.2.5.0",
+      "ref": "web-token/jwt-library-4.2.7.0",
       "dependsOn": [
         "brick/math-1.0.0.0",
         "psr/clock-1.0.0.0",
