@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:b33147a5-1360-4101-9a4a-617c2c58f31a",
+  "serialNumber": "urn:uuid:8ca66d74-b3c2-42cb-87e6-30b21a023f0a",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-09T00:05:53Z",
+    "timestamp": "2026-11-10T00:04:11Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 28ad1dd",
+      "version": "2026.3.x-dev f66fb47",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ad1dd",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20f66fb47",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
+          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
+          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2460,10 +2460,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "laminas/laminas-code-4.18.0.0",
+      "bom-ref": "laminas/laminas-code-4.19.0.0",
       "group": "laminas",
       "name": "laminas-code",
-      "version": "4.18.0",
+      "version": "4.19.0",
       "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
       "licenses": [
         {
@@ -2473,17 +2473,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/laminas/laminas-code@4.18.0",
+      "purl": "pkg:composer/laminas/laminas-code@4.19.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/laminas/laminas-code/zipball/d1ec5de6a87971446cfcc2acbc340c65ca56cee3",
+          "url": "https://api.github.com/repos/laminas/laminas-code/zipball/e8a9f7ccb07319e59f329dc77e3c70b256ae3a87",
           "type": "distribution",
-          "comment": "dist reference: d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
+          "comment": "dist reference: e8a9f7ccb07319e59f329dc77e3c70b256ae3a87"
         },
         {
           "url": "https://github.com/laminas/laminas-code.git",
           "type": "vcs",
-          "comment": "source reference: d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
+          "comment": "source reference: e8a9f7ccb07319e59f329dc77e3c70b256ae3a87"
         },
         {
           "url": "https://laminas.dev",
@@ -2524,11 +2524,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
+          "value": "e8a9f7ccb07319e59f329dc77e3c70b256ae3a87"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d1ec5de6a87971446cfcc2acbc340c65ca56cee3"
+          "value": "e8a9f7ccb07319e59f329dc77e3c70b256ae3a87"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 28ad1dd",
+      "version": "2026.3.x-dev f66fb47",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ad1dd",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20f66fb47",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
+          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "28ad1dda81d2e3f0c202822d96b8b4cea19d80e1"
+          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562613,7 +562613,7 @@
     {
       "ref": "friendsofphp/proxy-manager-lts-1.0.19.0",
       "dependsOn": [
-        "laminas/laminas-code-4.18.0.0",
+        "laminas/laminas-code-4.19.0.0",
         "symfony/filesystem-7.4.23.0"
       ]
     },
@@ -562686,7 +562686,7 @@
       ]
     },
     {
-      "ref": "laminas/laminas-code-4.18.0.0"
+      "ref": "laminas/laminas-code-4.19.0.0"
     },
     {
       "ref": "lcobucci/jwt-5.6.1.0",
