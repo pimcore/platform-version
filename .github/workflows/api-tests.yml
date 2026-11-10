@@ -30,7 +30,9 @@ env:
 jobs:
   api-tests:
     name: api-tests (${{ matrix.platform }})
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest now resolves to 26.04, which Playwright (1.60) does not
+    # support ("Playwright does not support chromium on ubuntu26.04-x64").
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
 
     env:
