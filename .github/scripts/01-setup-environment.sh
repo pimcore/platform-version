@@ -116,6 +116,8 @@ MERCURE_JWT_KEY=CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATI
 MERCURE_URL=http://localhost:${NGINX_PORT}/hub
 MERCURE_SERVER_URL=http://mercure/.well-known/mercure
 REDIS_DSN=redis://redis:6379
+# The skeleton's committed .env points REDIS_URL at a "valkey" host; this stack names the service "redis".
+REDIS_URL=redis://redis:6379
 GOTENBERG_DSN=http://gotenberg:3000
 MAILER_DSN=smtp://mailpit:1025
 ES_PREFIX_SIMPLE_REST=it_simple_rest_
