@@ -1,14 +1,14 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:8ca66d74-b3c2-42cb-87e6-30b21a023f0a",
+  "serialNumber": "urn:uuid:5302e8cd-1085-47ff-a366-f18a9d5f69fc",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-10T00:04:11Z",
+    "timestamp": "2026-11-11T00:04:20Z",
     "tools": [
       {
         "name": "composer",
-        "version": "2.11.1"
+        "version": "2.11.2"
       },
       {
         "vendor": "cyclonedx",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev f66fb47",
+      "version": "2026.3.x-dev 28ab210",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20f66fb47",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ab210",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
+          "value": "28ab210b95405ada7f368b6dd1bd923daa8b9de9"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
+          "value": "28ab210b95405ada7f368b6dd1bd923daa8b9de9"
         },
         {
           "name": "cdx:composer:package:type",
@@ -748,11 +748,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/dbal-4.5.0.0",
+      "bom-ref": "doctrine/dbal-4.5.1.0",
       "author": "Guilherme Blanco, Roman Borschel, Benjamin Eberlei, Jonathan Wage",
       "group": "doctrine",
       "name": "dbal",
-      "version": "4.5.0",
+      "version": "4.5.1",
       "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
       "licenses": [
         {
@@ -762,17 +762,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/dbal@4.5.0",
+      "purl": "pkg:composer/doctrine/dbal@4.5.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/dbal/zipball/c435cd7ea33e17d2a89288caf994cf3d4549b879",
+          "url": "https://api.github.com/repos/doctrine/dbal/zipball/b2815456989aa41964ee66d7ab47b7885264acf3",
           "type": "distribution",
-          "comment": "dist reference: c435cd7ea33e17d2a89288caf994cf3d4549b879"
+          "comment": "dist reference: b2815456989aa41964ee66d7ab47b7885264acf3"
         },
         {
           "url": "https://github.com/doctrine/dbal.git",
           "type": "vcs",
-          "comment": "source reference: c435cd7ea33e17d2a89288caf994cf3d4549b879"
+          "comment": "source reference: b2815456989aa41964ee66d7ab47b7885264acf3"
         },
         {
           "url": "https://www.doctrine-project.org/projects/dbal.html",
@@ -785,7 +785,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/dbal/tree/4.5.0",
+          "url": "https://github.com/doctrine/dbal/tree/4.5.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -793,11 +793,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c435cd7ea33e17d2a89288caf994cf3d4549b879"
+          "value": "b2815456989aa41964ee66d7ab47b7885264acf3"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c435cd7ea33e17d2a89288caf994cf3d4549b879"
+          "value": "b2815456989aa41964ee66d7ab47b7885264acf3"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev f66fb47",
+      "version": "2026.3.x-dev 28ab210",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20f66fb47",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2028ab210",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
+          "value": "28ab210b95405ada7f368b6dd1bd923daa8b9de9"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "f66fb47a904ba8c9f237561605b8cbcaf7cc5437"
+          "value": "28ab210b95405ada7f368b6dd1bd923daa8b9de9"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562471,7 +562471,7 @@
       ]
     },
     {
-      "ref": "doctrine/dbal-4.5.0.0",
+      "ref": "doctrine/dbal-4.5.1.0",
       "dependsOn": [
         "doctrine/deprecations-1.1.6.0",
         "psr/cache-3.0.0.0",
@@ -562484,7 +562484,7 @@
     {
       "ref": "doctrine/doctrine-bundle-2.19.3.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/deprecations-1.1.6.0",
         "doctrine/persistence-3.4.5.0",
         "doctrine/sql-formatter-1.5.4.0",
@@ -562499,7 +562499,7 @@
     {
       "ref": "doctrine/doctrine-migrations-bundle-3.7.1.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/migrations-3.9.8.0",
         "psr/log-3.0.2.0",
@@ -562526,7 +562526,7 @@
     {
       "ref": "doctrine/migrations-3.9.8.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/deprecations-1.1.6.0",
         "doctrine/event-manager-2.1.1.0",
         "psr/log-3.0.2.0",
@@ -562539,7 +562539,7 @@
       "ref": "doctrine/orm-3.7.6.0",
       "dependsOn": [
         "doctrine/collections-3.1.0.0",
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/deprecations-1.1.6.0",
         "doctrine/event-manager-2.1.1.0",
         "doctrine/inflector-2.1.1.0",
@@ -563025,7 +563025,7 @@
     {
       "ref": "pimcore/backend-power-tools-bundle-2026.3.4.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/orm-3.7.6.0",
         "nesbot/carbon-3.15.1.0",
         "phpoffice/phpspreadsheet-5.11.0.0",
@@ -563054,7 +563054,7 @@
     {
       "ref": "pimcore/customer-management-framework-bundle-2026.3.4.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/migrations-3.9.8.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "drewm/mailchimp-api-2.5.4.0",
@@ -563148,7 +563148,7 @@
     {
       "ref": "pimcore/data-importer-2026.3.4.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "league/flysystem-sftp-v3-3.36.0.0",
         "mtdowling/jmespath.php-2.9.2.0",
@@ -563229,7 +563229,7 @@
     {
       "ref": "pimcore/generic-data-index-bundle-2026.3.4.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/orm-3.7.6.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-local-3.35.3.0",
@@ -563309,7 +563309,7 @@
       "dependsOn": [
         "composer/ca-bundle-1.6.1.0",
         "defuse/php-encryption-2.4.0.0",
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "doctrine/doctrine-bundle-2.19.3.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/inflector-2.1.1.0",
@@ -563532,7 +563532,7 @@
     {
       "ref": "pimcore/web-to-print-bundle-2026.3.4.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "pimcore/pimcore-2026.3.4.0",
         "pimcore/studio-backend-bundle-2026.3.4.0",
         "pimcore/studio-ui-bundle-2026.3.4.0",
@@ -563632,7 +563632,7 @@
     {
       "ref": "ramsey/uuid-doctrine-2.1.0.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "ramsey/uuid-4.9.4.0"
       ]
     },
@@ -563803,7 +563803,7 @@
     {
       "ref": "symfony/doctrine-messenger-7.4.23.0",
       "dependsOn": [
-        "doctrine/dbal-4.5.0.0",
+        "doctrine/dbal-4.5.1.0",
         "symfony/messenger-7.4.23.0"
       ]
     },
