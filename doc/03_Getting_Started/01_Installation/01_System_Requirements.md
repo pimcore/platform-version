@@ -97,7 +97,10 @@ Pimcore Studio uses [Mercure](https://mercure.rocks/) for real-time updates
 (progress tracking, live notifications).
 A Mercure hub must be available and reachable by both the server and the browser.
 
-The recommended setup uses the official Docker image (`dunglas/mercure:latest`) with an Nginx reverse proxy.
+The recommended setup uses the official Docker image (`dunglas/mercure:v1`) with an Nginx reverse proxy.
+Pimcore Studio still speaks the Mercure 0.x protocol: on a Mercure 1.x hub (1.1.3 or later) add
+`protocol_version_compatibility 8` to the hub's `MERCURE_EXTRA_DIRECTIVES` environment variable. A Mercure 0.x hub
+(e.g. `dunglas/mercure:v0.24`) needs no such directive and refuses to start with it.
 See the [Installation guide](./README.md) for configuration details.
 
 ### Redis (Optional but Recommended for Caching)
