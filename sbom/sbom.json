@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:ab73b3bc-e8a9-41de-843b-22aa8a775724",
+  "serialNumber": "urn:uuid:30601ede-3f9f-44a8-97bc-9d7d1c65502e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T00:04:28Z",
+    "timestamp": "2026-11-13T00:04:18Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 9e5fc13",
+      "version": "2026.3.x-dev da730e1",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209e5fc13",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20da730e1",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9e5fc1349db195f698f5463de3fcf9fcd23fe1b2"
+          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9e5fc1349db195f698f5463de3fcf9fcd23fe1b2"
+          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
         },
         {
           "name": "cdx:composer:package:type",
@@ -865,11 +865,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/doctrine-bundle-2.19.3.0",
+      "bom-ref": "doctrine/doctrine-bundle-2.19.4.0",
       "author": "Fabien Potencier, Benjamin Eberlei, Symfony Community, Doctrine Project",
       "group": "doctrine",
       "name": "doctrine-bundle",
-      "version": "2.19.3",
+      "version": "2.19.4",
       "description": "Symfony DoctrineBundle",
       "licenses": [
         {
@@ -879,17 +879,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.3",
+      "purl": "pkg:composer/doctrine/doctrine-bundle@2.19.4",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/1038b1e17af048b31a4e444c5848b8cf20309e46",
+          "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/672ea4d2ad6e3514ae7c725074a5abda44e6226c",
           "type": "distribution",
-          "comment": "dist reference: 1038b1e17af048b31a4e444c5848b8cf20309e46"
+          "comment": "dist reference: 672ea4d2ad6e3514ae7c725074a5abda44e6226c"
         },
         {
           "url": "https://github.com/doctrine/DoctrineBundle.git",
           "type": "vcs",
-          "comment": "source reference: 1038b1e17af048b31a4e444c5848b8cf20309e46"
+          "comment": "source reference: 672ea4d2ad6e3514ae7c725074a5abda44e6226c"
         },
         {
           "url": "https://www.doctrine-project.org",
@@ -902,7 +902,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.3",
+          "url": "https://github.com/doctrine/DoctrineBundle/tree/2.19.4",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -910,11 +910,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "1038b1e17af048b31a4e444c5848b8cf20309e46"
+          "value": "672ea4d2ad6e3514ae7c725074a5abda44e6226c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "1038b1e17af048b31a4e444c5848b8cf20309e46"
+          "value": "672ea4d2ad6e3514ae7c725074a5abda44e6226c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2234,11 +2234,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "guzzlehttp/psr7-2.13.2.0",
+      "bom-ref": "guzzlehttp/psr7-2.13.3.0",
       "author": "Graham Campbell, Michael Dowling, George Mponos, Tobias Nyholm, M\u00E1rk S\u00E1gi-Kaz\u00E1r, Tobias Schultze, M\u00E1rk S\u00E1gi-Kaz\u00E1r",
       "group": "guzzlehttp",
       "name": "psr7",
-      "version": "2.13.2",
+      "version": "2.13.3",
       "description": "PSR-7 message implementation that also provides common utility methods",
       "licenses": [
         {
@@ -2248,17 +2248,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/guzzlehttp/psr7@2.13.2",
+      "purl": "pkg:composer/guzzlehttp/psr7@2.13.3",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
+          "url": "https://api.github.com/repos/guzzle/psr7/zipball/6d3cd8285a97eaa352956a4ada92fa03ecce1c4e",
           "type": "distribution",
-          "comment": "dist reference: adee536f95101929f262b8c59e8a61472f347d58"
+          "comment": "dist reference: 6d3cd8285a97eaa352956a4ada92fa03ecce1c4e"
         },
         {
           "url": "https://github.com/guzzle/psr7.git",
           "type": "vcs",
-          "comment": "source reference: adee536f95101929f262b8c59e8a61472f347d58"
+          "comment": "source reference: 6d3cd8285a97eaa352956a4ada92fa03ecce1c4e"
         },
         {
           "url": "https://github.com/guzzle/psr7/issues",
@@ -2266,7 +2266,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/guzzle/psr7/tree/2.13.2",
+          "url": "https://github.com/guzzle/psr7/tree/2.13.3",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2274,11 +2274,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "adee536f95101929f262b8c59e8a61472f347d58"
+          "value": "6d3cd8285a97eaa352956a4ada92fa03ecce1c4e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "adee536f95101929f262b8c59e8a61472f347d58"
+          "value": "6d3cd8285a97eaa352956a4ada92fa03ecce1c4e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 9e5fc13",
+      "version": "2026.3.x-dev da730e1",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209e5fc13",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20da730e1",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9e5fc1349db195f698f5463de3fcf9fcd23fe1b2"
+          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9e5fc1349db195f698f5463de3fcf9fcd23fe1b2"
+          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562482,7 +562482,7 @@
       "ref": "doctrine/deprecations-1.2.0.0"
     },
     {
-      "ref": "doctrine/doctrine-bundle-2.19.3.0",
+      "ref": "doctrine/doctrine-bundle-2.19.4.0",
       "dependsOn": [
         "doctrine/dbal-4.5.1.0",
         "doctrine/deprecations-1.2.0.0",
@@ -562500,7 +562500,7 @@
       "ref": "doctrine/doctrine-migrations-bundle-3.7.1.0",
       "dependsOn": [
         "doctrine/dbal-4.5.1.0",
-        "doctrine/doctrine-bundle-2.19.3.0",
+        "doctrine/doctrine-bundle-2.19.4.0",
         "doctrine/migrations-3.9.8.0",
         "psr/log-3.0.2.0",
         "symfony/config-7.4.23.0",
@@ -562636,7 +562636,7 @@
     {
       "ref": "gotenberg/gotenberg-php-2.27.0.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.2.0",
+        "guzzlehttp/psr7-2.13.3.0",
         "php-http/discovery-1.20.0.0",
         "psr/http-client-1.0.3.0",
         "psr/http-message-2.0.0.0"
@@ -562646,7 +562646,7 @@
       "ref": "guzzlehttp/guzzle-7.16.1.0",
       "dependsOn": [
         "guzzlehttp/promises-2.6.0.0",
-        "guzzlehttp/psr7-2.13.2.0",
+        "guzzlehttp/psr7-2.13.3.0",
         "psr/http-client-1.0.3.0",
         "symfony/polyfill-php80-1.43.0.0"
       ]
@@ -562655,7 +562655,7 @@
       "ref": "guzzlehttp/promises-2.6.0.0"
     },
     {
-      "ref": "guzzlehttp/psr7-2.13.2.0",
+      "ref": "guzzlehttp/psr7-2.13.3.0",
       "dependsOn": [
         "psr/http-factory-1.1.0.0",
         "psr/http-message-2.0.0.0",
@@ -562666,7 +562666,7 @@
     {
       "ref": "http-interop/http-factory-guzzle-1.2.1.0",
       "dependsOn": [
-        "guzzlehttp/psr7-2.13.2.0",
+        "guzzlehttp/psr7-2.13.3.0",
         "psr/http-factory-1.1.0.0"
       ]
     },
@@ -562745,7 +562745,7 @@
       "ref": "league/oauth2-client-2.9.1.0",
       "dependsOn": [
         "guzzlehttp/guzzle-7.16.1.0",
-        "guzzlehttp/psr7-2.13.2.0"
+        "guzzlehttp/psr7-2.13.3.0"
       ]
     },
     {
@@ -563310,7 +563310,7 @@
         "composer/ca-bundle-1.6.1.0",
         "defuse/php-encryption-2.4.0.0",
         "doctrine/dbal-4.5.1.0",
-        "doctrine/doctrine-bundle-2.19.3.0",
+        "doctrine/doctrine-bundle-2.19.4.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/inflector-2.1.1.0",
         "doctrine/orm-3.7.6.0",
@@ -563977,7 +563977,7 @@
     {
       "ref": "symfony/orm-pack-2.7.0.0",
       "dependsOn": [
-        "doctrine/doctrine-bundle-2.19.3.0",
+        "doctrine/doctrine-bundle-2.19.4.0",
         "doctrine/doctrine-migrations-bundle-3.7.1.0",
         "doctrine/orm-3.7.6.0"
       ]
