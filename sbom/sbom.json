@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:30601ede-3f9f-44a8-97bc-9d7d1c65502e",
+  "serialNumber": "urn:uuid:af5f1e5d-b075-48f5-b5a2-01c01852394b",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-13T00:04:18Z",
+    "timestamp": "2026-11-14T00:04:18Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev da730e1",
+      "version": "2026.3.x-dev 9699bad",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20da730e1",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209699bad",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
+          "value": "9699badb05e9d71b415435c47b399cc91ed1c691"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
+          "value": "9699badb05e9d71b415435c47b399cc91ed1c691"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev da730e1",
+      "version": "2026.3.x-dev 9699bad",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20da730e1",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%209699bad",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
+          "value": "9699badb05e9d71b415435c47b399cc91ed1c691"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "da730e1d4eec98f699a5114b221138accf15e6ea"
+          "value": "9699badb05e9d71b415435c47b399cc91ed1c691"
         },
         {
           "name": "cdx:composer:package:type",
