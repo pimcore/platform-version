@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:fd7dce67-249e-4469-826a-bad2c6df1d2a",
+  "serialNumber": "urn:uuid:74c842fe-7ca6-4b5b-84c9-b5dc8bb0bbd0",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-15T00:05:12Z",
+    "timestamp": "2026-11-16T00:05:31Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 155127b",
+      "version": "2026.3.x-dev a420930",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20155127b",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a420930",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "155127b3adab679aa725ba2c64a79d177501c3ac"
+          "value": "a4209306547c479d65d42cca14f6afc741722516"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "155127b3adab679aa725ba2c64a79d177501c3ac"
+          "value": "a4209306547c479d65d42cca14f6afc741722516"
         },
         {
           "name": "cdx:composer:package:type",
@@ -1101,11 +1101,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/instantiator-2.1.0.0",
+      "bom-ref": "doctrine/instantiator-2.2.0.0",
       "author": "Marco Pivetta",
       "group": "doctrine",
       "name": "instantiator",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
       "licenses": [
         {
@@ -1115,17 +1115,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/instantiator@2.1.0",
+      "purl": "pkg:composer/doctrine/instantiator@2.2.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/instantiator/zipball/23da848e1a2308728fe5fdddabf4be17ff9720c7",
+          "url": "https://api.github.com/repos/doctrine/instantiator/zipball/bf3870fbe25c1b5f4febaf281be76d1e2d86df30",
           "type": "distribution",
-          "comment": "dist reference: 23da848e1a2308728fe5fdddabf4be17ff9720c7"
+          "comment": "dist reference: bf3870fbe25c1b5f4febaf281be76d1e2d86df30"
         },
         {
           "url": "https://github.com/doctrine/instantiator.git",
           "type": "vcs",
-          "comment": "source reference: 23da848e1a2308728fe5fdddabf4be17ff9720c7"
+          "comment": "source reference: bf3870fbe25c1b5f4febaf281be76d1e2d86df30"
         },
         {
           "url": "https://www.doctrine-project.org/projects/instantiator.html",
@@ -1138,7 +1138,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/instantiator/tree/2.1.0",
+          "url": "https://github.com/doctrine/instantiator/tree/2.2.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -1146,11 +1146,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "23da848e1a2308728fe5fdddabf4be17ff9720c7"
+          "value": "bf3870fbe25c1b5f4febaf281be76d1e2d86df30"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "23da848e1a2308728fe5fdddabf4be17ff9720c7"
+          "value": "bf3870fbe25c1b5f4febaf281be76d1e2d86df30"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12313,11 +12313,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/polyfill-php85-1.43.0.0",
+      "bom-ref": "symfony/polyfill-php85-1.44.0.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "polyfill-php85",
-      "version": "v1.43.0",
+      "version": "v1.44.0",
       "description": "Symfony polyfill backporting some PHP 8.5\u002B features to lower PHP versions",
       "licenses": [
         {
@@ -12327,17 +12327,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/polyfill-php85@v1.43.0",
+      "purl": "pkg:composer/symfony/polyfill-php85@v1.44.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/polyfill-php85/zipball/86a42cbcc07adc331481a5ab310a4024bfc227f6",
+          "url": "https://api.github.com/repos/symfony/polyfill-php85/zipball/94c794cb5ba51784bc259f11e9f128593297d8dc",
           "type": "distribution",
-          "comment": "dist reference: 86a42cbcc07adc331481a5ab310a4024bfc227f6"
+          "comment": "dist reference: 94c794cb5ba51784bc259f11e9f128593297d8dc"
         },
         {
           "url": "https://github.com/symfony/polyfill-php85.git",
           "type": "vcs",
-          "comment": "source reference: 86a42cbcc07adc331481a5ab310a4024bfc227f6"
+          "comment": "source reference: 94c794cb5ba51784bc259f11e9f128593297d8dc"
         },
         {
           "url": "https://symfony.com",
@@ -12345,7 +12345,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/polyfill-php85/tree/v1.43.0",
+          "url": "https://github.com/symfony/polyfill-php85/tree/v1.44.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12353,11 +12353,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "86a42cbcc07adc331481a5ab310a4024bfc227f6"
+          "value": "94c794cb5ba51784bc259f11e9f128593297d8dc"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "86a42cbcc07adc331481a5ab310a4024bfc227f6"
+          "value": "94c794cb5ba51784bc259f11e9f128593297d8dc"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14594,11 +14594,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "webmozart/assert-2.5.0.0",
+      "bom-ref": "webmozart/assert-2.5.1.0",
       "author": "Bernhard Schussek, Woody Gilk",
       "group": "webmozart",
       "name": "assert",
-      "version": "2.5.0",
+      "version": "2.5.1",
       "description": "Assertions to validate method input/output with nice error messages.",
       "licenses": [
         {
@@ -14608,17 +14608,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/webmozart/assert@2.5.0",
+      "purl": "pkg:composer/webmozart/assert@2.5.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/webmozarts/assert/zipball/8a163706bbcac613733dba03f51e13b5eb1bb819",
+          "url": "https://api.github.com/repos/webmozarts/assert/zipball/e578132c01bd0c64108386ab20d8217cd175ddec",
           "type": "distribution",
-          "comment": "dist reference: 8a163706bbcac613733dba03f51e13b5eb1bb819"
+          "comment": "dist reference: e578132c01bd0c64108386ab20d8217cd175ddec"
         },
         {
           "url": "https://github.com/webmozarts/assert.git",
           "type": "vcs",
-          "comment": "source reference: 8a163706bbcac613733dba03f51e13b5eb1bb819"
+          "comment": "source reference: e578132c01bd0c64108386ab20d8217cd175ddec"
         },
         {
           "url": "https://github.com/webmozarts/assert/issues",
@@ -14626,7 +14626,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/webmozarts/assert/tree/2.5.0",
+          "url": "https://github.com/webmozarts/assert/tree/2.5.1",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14634,11 +14634,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "8a163706bbcac613733dba03f51e13b5eb1bb819"
+          "value": "e578132c01bd0c64108386ab20d8217cd175ddec"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "8a163706bbcac613733dba03f51e13b5eb1bb819"
+          "value": "e578132c01bd0c64108386ab20d8217cd175ddec"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 155127b",
+      "version": "2026.3.x-dev a420930",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20155127b",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a420930",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "155127b3adab679aa725ba2c64a79d177501c3ac"
+          "value": "a4209306547c479d65d42cca14f6afc741722516"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "155127b3adab679aa725ba2c64a79d177501c3ac"
+          "value": "a4209306547c479d65d42cca14f6afc741722516"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562518,7 +562518,7 @@
       "ref": "doctrine/inflector-2.1.1.0"
     },
     {
-      "ref": "doctrine/instantiator-2.1.0.0"
+      "ref": "doctrine/instantiator-2.2.0.0"
     },
     {
       "ref": "doctrine/lexer-3.0.3.0"
@@ -562543,7 +562543,7 @@
         "doctrine/deprecations-1.2.0.0",
         "doctrine/event-manager-2.1.1.0",
         "doctrine/inflector-2.1.1.0",
-        "doctrine/instantiator-2.1.0.0",
+        "doctrine/instantiator-2.2.0.0",
         "doctrine/lexer-3.0.3.0",
         "doctrine/persistence-3.4.5.0",
         "psr/cache-3.0.0.0",
@@ -562975,7 +562975,7 @@
         "phpdocumentor/reflection-common-2.2.1.0",
         "phpdocumentor/type-resolver-2.1.0.0",
         "phpstan/phpdoc-parser-2.4.1.0",
-        "webmozart/assert-2.5.0.0"
+        "webmozart/assert-2.5.1.0"
       ]
     },
     {
@@ -563819,7 +563819,7 @@
       "ref": "symfony/error-handler-7.4.22.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
-        "symfony/polyfill-php85-1.43.0.0",
+        "symfony/polyfill-php85-1.44.0.0",
         "symfony/var-dumper-7.4.22.0"
       ]
     },
@@ -563866,7 +563866,7 @@
         "symfony/http-foundation-7.4.23.0",
         "symfony/http-kernel-7.4.23.0",
         "symfony/polyfill-mbstring-1.43.3.0",
-        "symfony/polyfill-php85-1.43.0.0",
+        "symfony/polyfill-php85-1.44.0.0",
         "symfony/routing-7.4.23.0"
       ]
     },
@@ -564016,7 +564016,7 @@
       "ref": "symfony/polyfill-php84-1.43.0.0"
     },
     {
-      "ref": "symfony/polyfill-php85-1.43.0.0"
+      "ref": "symfony/polyfill-php85-1.44.0.0"
     },
     {
       "ref": "symfony/polyfill-php86-1.43.0.0"
@@ -564271,7 +564271,7 @@
       ]
     },
     {
-      "ref": "webmozart/assert-2.5.0.0"
+      "ref": "webmozart/assert-2.5.1.0"
     },
     {
       "ref": "webmozarts/console-parallelization-2.3.1.0",
@@ -564283,7 +564283,7 @@
         "symfony/dependency-injection-7.4.23.0",
         "symfony/process-7.4.22.0",
         "thecodingmachine/safe-3.4.0.0",
-        "webmozart/assert-2.5.0.0"
+        "webmozart/assert-2.5.1.0"
       ]
     },
     {
