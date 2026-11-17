@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:74c842fe-7ca6-4b5b-84c9-b5dc8bb0bbd0",
+  "serialNumber": "urn:uuid:fef0b754-618d-47e9-b042-16a9d83076dd",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-16T00:05:31Z",
+    "timestamp": "2026-11-17T00:04:40Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev a420930",
+      "version": "2026.3.x-dev 0d9e023",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a420930",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%200d9e023",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a4209306547c479d65d42cca14f6afc741722516"
+          "value": "0d9e023d57328259f60a60a37052dd397a801cb6"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a4209306547c479d65d42cca14f6afc741722516"
+          "value": "0d9e023d57328259f60a60a37052dd397a801cb6"
         },
         {
           "name": "cdx:composer:package:type",
@@ -4007,11 +4007,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "monolog/monolog-3.12.1.0",
+      "bom-ref": "monolog/monolog-3.13.0.0",
       "author": "Jordi Boggiano",
       "group": "monolog",
       "name": "monolog",
-      "version": "3.12.1",
+      "version": "3.13.0",
       "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
       "licenses": [
         {
@@ -4021,17 +4021,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/monolog/monolog@3.12.1",
+      "purl": "pkg:composer/monolog/monolog@3.13.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d7059e4c691d05ea1222b5124bed0f961be46e15",
+          "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac",
           "type": "distribution",
-          "comment": "dist reference: d7059e4c691d05ea1222b5124bed0f961be46e15"
+          "comment": "dist reference: 1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac"
         },
         {
           "url": "https://github.com/Seldaek/monolog.git",
           "type": "vcs",
-          "comment": "source reference: d7059e4c691d05ea1222b5124bed0f961be46e15"
+          "comment": "source reference: 1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac"
         },
         {
           "url": "https://github.com/Seldaek/monolog",
@@ -4044,7 +4044,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/Seldaek/monolog/tree/3.12.1",
+          "url": "https://github.com/Seldaek/monolog/tree/3.13.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -4052,11 +4052,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d7059e4c691d05ea1222b5124bed0f961be46e15"
+          "value": "1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d7059e4c691d05ea1222b5124bed0f961be46e15"
+          "value": "1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac"
         },
         {
           "name": "cdx:composer:package:type",
@@ -4125,11 +4125,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "mtdowling/jmespath.php-2.9.2.0",
+      "bom-ref": "mtdowling/jmespath.php-2.9.3.0",
       "author": "Graham Campbell, Michael Dowling",
       "group": "mtdowling",
       "name": "jmespath.php",
-      "version": "2.9.2",
+      "version": "2.9.3",
       "description": "Declaratively specify how to extract elements from a JSON document",
       "licenses": [
         {
@@ -4139,17 +4139,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/mtdowling/jmespath.php@2.9.2",
+      "purl": "pkg:composer/mtdowling/jmespath.php@2.9.3",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/2157c5e50e813ec6a96c1eed3be7f64a20fb32a8",
+          "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/05f56ceae00b30b6fe1064769aa5dee39a6f8b9b",
           "type": "distribution",
-          "comment": "dist reference: 2157c5e50e813ec6a96c1eed3be7f64a20fb32a8"
+          "comment": "dist reference: 05f56ceae00b30b6fe1064769aa5dee39a6f8b9b"
         },
         {
           "url": "https://github.com/jmespath/jmespath.php.git",
           "type": "vcs",
-          "comment": "source reference: 2157c5e50e813ec6a96c1eed3be7f64a20fb32a8"
+          "comment": "source reference: 05f56ceae00b30b6fe1064769aa5dee39a6f8b9b"
         },
         {
           "url": "https://github.com/jmespath/jmespath.php/issues",
@@ -4157,7 +4157,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/jmespath/jmespath.php/tree/2.9.2",
+          "url": "https://github.com/jmespath/jmespath.php/tree/2.9.3",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -4165,11 +4165,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2157c5e50e813ec6a96c1eed3be7f64a20fb32a8"
+          "value": "05f56ceae00b30b6fe1064769aa5dee39a6f8b9b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2157c5e50e813ec6a96c1eed3be7f64a20fb32a8"
+          "value": "05f56ceae00b30b6fe1064769aa5dee39a6f8b9b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev a420930",
+      "version": "2026.3.x-dev 0d9e023",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a420930",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%200d9e023",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a4209306547c479d65d42cca14f6afc741722516"
+          "value": "0d9e023d57328259f60a60a37052dd397a801cb6"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a4209306547c479d65d42cca14f6afc741722516"
+          "value": "0d9e023d57328259f60a60a37052dd397a801cb6"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562834,7 +562834,7 @@
       "ref": "mjaschen/phpgeo-6.0.4.0"
     },
     {
-      "ref": "monolog/monolog-3.12.1.0",
+      "ref": "monolog/monolog-3.13.0.0",
       "dependsOn": [
         "psr/log-3.0.2.0"
       ]
@@ -562843,7 +562843,7 @@
       "ref": "mpratt/embera-2.0.42.0"
     },
     {
-      "ref": "mtdowling/jmespath.php-2.9.2.0",
+      "ref": "mtdowling/jmespath.php-2.9.3.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.3.0"
       ]
@@ -563151,7 +563151,7 @@
         "doctrine/dbal-4.6.0.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "league/flysystem-sftp-v3-3.36.0.0",
-        "mtdowling/jmespath.php-2.9.2.0",
+        "mtdowling/jmespath.php-2.9.3.0",
         "nesbot/carbon-3.15.1.0",
         "phpoffice/phpspreadsheet-5.11.0.0",
         "pimcore/data-hub-2026.3.4.0",
@@ -563326,7 +563326,7 @@
         "league/flysystem-bundle-3.7.1.0",
         "league/html-to-markdown-5.2.3.0",
         "matthiasmullie/minify-1.3.76.0",
-        "monolog/monolog-3.12.1.0",
+        "monolog/monolog-3.13.0.0",
         "mpratt/embera-2.0.42.0",
         "myclabs/deep-copy-1.14.0.0",
         "neitanod/forceutf8-2.0.4.0",
@@ -563956,14 +563956,14 @@
     {
       "ref": "symfony/monolog-bridge-7.4.22.0",
       "dependsOn": [
-        "monolog/monolog-3.12.1.0",
+        "monolog/monolog-3.13.0.0",
         "symfony/http-kernel-7.4.23.0"
       ]
     },
     {
       "ref": "symfony/monolog-bundle-3.11.2.0",
       "dependsOn": [
-        "monolog/monolog-3.12.1.0",
+        "monolog/monolog-3.13.0.0",
         "symfony/config-7.4.23.0",
         "symfony/dependency-injection-7.4.23.0",
         "symfony/http-kernel-7.4.23.0",
