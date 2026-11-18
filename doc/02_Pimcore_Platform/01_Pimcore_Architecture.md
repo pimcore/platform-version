@@ -62,7 +62,7 @@ Search indexing uses OpenSearch or Elasticsearch via the Generic Data Index.
 |---|---|
 | Language | PHP 8.5+ |
 | Framework | Symfony 7 |
-| Database | MySQL 8.0+ / MariaDB 10.11+ |
+| Database | MySQL 8.4+ / MariaDB 10.11+ |
 | Templating | Twig |
 | Database Abstraction | Doctrine DBAL |
 | Async Processing | Symfony Messenger |
