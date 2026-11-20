@@ -47,11 +47,29 @@ Both **mod_php** and **FCGI (FPM)** are supported.
 - [mysqli](https://php.net/mysqli) (PDO is still required for parameter mappings)
 
 ### Database Server
-- MariaDB >= 10.3
-- MySQL >= 8.0
-- Percona Server (supported versions: see MySQL)
-- [AWS Aurora](https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-aurora-mysql-8-0/)
-  (supported versions: see MySQL)
+- MariaDB >= 10.11
+- MySQL >= 8.4
+- Percona Server for MySQL (supported versions: see MySQL)
+- [AWS Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Versions.html)
+  8.4 or later (Aurora MySQL 3 is MySQL 8.0 compatible and therefore not supported)
+
+Pimcore is tested against the following long-term-support (LTS) series:
+
+| Database | Tested versions |
+|---|---|
+| MariaDB | 10.11, 11.4, 11.8, 12.3 |
+| MySQL | 8.4, 9.7 |
+
+Only LTS series are supported. MySQL Innovation releases (e.g. 9.0 - 9.6 and the calendar-versioned 26.x releases)
+and MariaDB rolling releases (e.g. 12.0 - 12.2 and 13.x) are neither tested nor supported.
+
+> Version support follows the vendors' lifecycles: MySQL 8.0 and MariaDB 10.6 (and older) have reached end of life
+> and are no longer supported. `bin/console pimcore:system:requirements:check` reports a warning if the database
+> server is older than the minimum version above.
+
+> If you configure `serverVersion` for the database connection (for example in `DATABASE_URL`), keep it in sync
+> with your actual server: Doctrine DBAL uses it to select the SQL platform instead of asking the server
+> (e.g. `serverVersion=8.4` or `serverVersion=mariadb-10.11.0`).
 
 #### Features
 - InnoDB / XtraDB storage engine
