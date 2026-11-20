@@ -2,6 +2,15 @@ services:
     redis:
         image: redis:alpine
         command: [redis-server, --maxmemory, 128mb, --maxmemory-policy, volatile-lru, --save, '""']
+        # Upstream InstallBundle's RedisEnvVarDefinition now defaults the cache/session
+        # host to "valkey" (pimcore switched the default Redis service to Valkey). The
+        # non-interactive installer validates that default host, so expose this container
+        # under the "valkey" alias too — keeping the "redis" service name for REDIS_DSN
+        # and the reset script, which both reference it by name.
+        networks:
+            default:
+                aliases:
+                    - valkey
 
     rabbitmq:
         image: rabbitmq:alpine
