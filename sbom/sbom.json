@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:96a2231d-e770-42c0-96c4-16b3411ab926",
+  "serialNumber": "urn:uuid:2f76f58b-f0d7-4b7e-ab44-2ea31ec55702",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-22T00:05:10Z",
+    "timestamp": "2026-11-23T00:05:34Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 255a6e5",
+      "version": "2026.3.x-dev c8476cb",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20255a6e5",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c8476cb",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "255a6e57fc5d9a1bfbefd4c9bef5d1c79512f87a"
+          "value": "c8476cb740b934f6cad6404bfd3ad23e89ef366d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "255a6e57fc5d9a1bfbefd4c9bef5d1c79512f87a"
+          "value": "c8476cb740b934f6cad6404bfd3ad23e89ef366d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -1219,11 +1219,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "doctrine/migrations-3.9.8.0",
+      "bom-ref": "doctrine/migrations-3.9.9.0",
       "author": "Benjamin Eberlei, Jonathan Wage, Michael Simonson",
       "group": "doctrine",
       "name": "migrations",
-      "version": "3.9.8",
+      "version": "3.9.9",
       "description": "PHP Doctrine Migrations project offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and a powerful tool.",
       "licenses": [
         {
@@ -1233,17 +1233,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/doctrine/migrations@3.9.8",
+      "purl": "pkg:composer/doctrine/migrations@3.9.9",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/doctrine/migrations/zipball/eb0b9ce3f999d720fa73037bbd06977ea34b76a0",
+          "url": "https://api.github.com/repos/doctrine/migrations/zipball/5749e371aa864ce6578a8fa9167e5aa6e676ba6f",
           "type": "distribution",
-          "comment": "dist reference: eb0b9ce3f999d720fa73037bbd06977ea34b76a0"
+          "comment": "dist reference: 5749e371aa864ce6578a8fa9167e5aa6e676ba6f"
         },
         {
           "url": "https://github.com/doctrine/migrations.git",
           "type": "vcs",
-          "comment": "source reference: eb0b9ce3f999d720fa73037bbd06977ea34b76a0"
+          "comment": "source reference: 5749e371aa864ce6578a8fa9167e5aa6e676ba6f"
         },
         {
           "url": "https://www.doctrine-project.org/projects/migrations.html",
@@ -1256,7 +1256,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/doctrine/migrations/tree/3.9.8",
+          "url": "https://github.com/doctrine/migrations/tree/3.9.9",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -1264,11 +1264,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "eb0b9ce3f999d720fa73037bbd06977ea34b76a0"
+          "value": "5749e371aa864ce6578a8fa9167e5aa6e676ba6f"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "eb0b9ce3f999d720fa73037bbd06977ea34b76a0"
+          "value": "5749e371aa864ce6578a8fa9167e5aa6e676ba6f"
         },
         {
           "name": "cdx:composer:package:type",
@@ -1568,11 +1568,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "egulias/email-validator-4.0.4.0",
+      "bom-ref": "egulias/email-validator-4.0.5.0",
       "author": "Eduardo Gulias Davis",
       "group": "egulias",
       "name": "email-validator",
-      "version": "4.0.4",
+      "version": "4.0.5",
       "description": "A library for validating emails against several RFCs",
       "licenses": [
         {
@@ -1582,17 +1582,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/egulias/email-validator@4.0.4",
+      "purl": "pkg:composer/egulias/email-validator@4.0.5",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
+          "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/9bef884e12278a7b89b64adbfb9379c021d3c102",
           "type": "distribution",
-          "comment": "dist reference: d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
+          "comment": "dist reference: 9bef884e12278a7b89b64adbfb9379c021d3c102"
         },
         {
           "url": "https://github.com/egulias/EmailValidator.git",
           "type": "vcs",
-          "comment": "source reference: d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
+          "comment": "source reference: 9bef884e12278a7b89b64adbfb9379c021d3c102"
         },
         {
           "url": "https://github.com/egulias/EmailValidator",
@@ -1605,7 +1605,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/egulias/EmailValidator/tree/4.0.4",
+          "url": "https://github.com/egulias/EmailValidator/tree/4.0.5",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -1613,11 +1613,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
+          "value": "9bef884e12278a7b89b64adbfb9379c021d3c102"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
+          "value": "9bef884e12278a7b89b64adbfb9379c021d3c102"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2126,11 +2126,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "guzzlehttp/guzzle-7.16.5.0",
+      "bom-ref": "guzzlehttp/guzzle-7.17.0.0",
       "author": "Graham Campbell, Michael Dowling, Jeremy Lindblom, George Mponos, Tobias Nyholm, M\u00E1rk S\u00E1gi-Kaz\u00E1r, Tobias Schultze",
       "group": "guzzlehttp",
       "name": "guzzle",
-      "version": "7.16.5",
+      "version": "7.17.0",
       "description": "Guzzle is a PHP HTTP client library",
       "licenses": [
         {
@@ -2140,17 +2140,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/guzzlehttp/guzzle@7.16.5",
+      "purl": "pkg:composer/guzzlehttp/guzzle@7.17.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b0605f32e77a13cf98bc5e75b1d71877b6814e17",
+          "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f61ba5ea0a55032a55ddbb72cab7d307c1043654",
           "type": "distribution",
-          "comment": "dist reference: b0605f32e77a13cf98bc5e75b1d71877b6814e17"
+          "comment": "dist reference: f61ba5ea0a55032a55ddbb72cab7d307c1043654"
         },
         {
           "url": "https://github.com/guzzle/guzzle.git",
           "type": "vcs",
-          "comment": "source reference: b0605f32e77a13cf98bc5e75b1d71877b6814e17"
+          "comment": "source reference: f61ba5ea0a55032a55ddbb72cab7d307c1043654"
         },
         {
           "url": "https://github.com/guzzle/guzzle/issues",
@@ -2158,7 +2158,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/guzzle/guzzle/tree/7.16.5",
+          "url": "https://github.com/guzzle/guzzle/tree/7.17.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -2166,11 +2166,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b0605f32e77a13cf98bc5e75b1d71877b6814e17"
+          "value": "f61ba5ea0a55032a55ddbb72cab7d307c1043654"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b0605f32e77a13cf98bc5e75b1d71877b6814e17"
+          "value": "f61ba5ea0a55032a55ddbb72cab7d307c1043654"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2592,11 +2592,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "league/csv-9.29.0.0",
+      "bom-ref": "league/csv-9.29.1.0",
       "author": "Ignace Nyamagana Butera",
       "group": "league",
       "name": "csv",
-      "version": "9.29.0",
+      "version": "9.29.1",
       "description": "CSV data manipulation made easy in PHP",
       "licenses": [
         {
@@ -2606,17 +2606,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/league/csv@9.29.0",
+      "purl": "pkg:composer/league/csv@9.29.1",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/thephpleague/csv/zipball/13d5600d2c935c8785707e7d1d44ca1f2a22d6f4",
+          "url": "https://api.github.com/repos/thephpleague/csv/zipball/fb9ea14460001b62fcb54d8ac247cc501f60e6e0",
           "type": "distribution",
-          "comment": "dist reference: 13d5600d2c935c8785707e7d1d44ca1f2a22d6f4"
+          "comment": "dist reference: fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
         },
         {
           "url": "https://github.com/thephpleague/csv.git",
           "type": "vcs",
-          "comment": "source reference: 13d5600d2c935c8785707e7d1d44ca1f2a22d6f4"
+          "comment": "source reference: fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
         },
         {
           "url": "https://csv.thephpleague.com",
@@ -2647,11 +2647,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "13d5600d2c935c8785707e7d1d44ca1f2a22d6f4"
+          "value": "fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "13d5600d2c935c8785707e7d1d44ca1f2a22d6f4"
+          "value": "fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -5924,11 +5924,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "phpoffice/phpspreadsheet-5.11.0.0",
+      "bom-ref": "phpoffice/phpspreadsheet-5.12.0.0",
       "author": "Maarten Balliauw, Mark Baker, Franck Lefevre, Erik Tilt, Adrien Crivelli, Owen Leibman",
       "group": "phpoffice",
       "name": "phpspreadsheet",
-      "version": "5.11.0",
+      "version": "5.12.0",
       "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
       "licenses": [
         {
@@ -5938,17 +5938,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/phpoffice/phpspreadsheet@5.11.0",
+      "purl": "pkg:composer/phpoffice/phpspreadsheet@5.12.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3aa1f0d0f3c658b803c18050ac49244d07d96907",
+          "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/f03bcf6cbcae3a719b9b56c32077379b5cde2190",
           "type": "distribution",
-          "comment": "dist reference: 3aa1f0d0f3c658b803c18050ac49244d07d96907"
+          "comment": "dist reference: f03bcf6cbcae3a719b9b56c32077379b5cde2190"
         },
         {
           "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
           "type": "vcs",
-          "comment": "source reference: 3aa1f0d0f3c658b803c18050ac49244d07d96907"
+          "comment": "source reference: f03bcf6cbcae3a719b9b56c32077379b5cde2190"
         },
         {
           "url": "https://github.com/PHPOffice/PhpSpreadsheet",
@@ -5961,7 +5961,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.11.0",
+          "url": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.12.0",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -5969,11 +5969,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "3aa1f0d0f3c658b803c18050ac49244d07d96907"
+          "value": "f03bcf6cbcae3a719b9b56c32077379b5cde2190"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "3aa1f0d0f3c658b803c18050ac49244d07d96907"
+          "value": "f03bcf6cbcae3a719b9b56c32077379b5cde2190"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 255a6e5",
+      "version": "2026.3.x-dev c8476cb",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20255a6e5",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20c8476cb",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "255a6e57fc5d9a1bfbefd4c9bef5d1c79512f87a"
+          "value": "c8476cb740b934f6cad6404bfd3ad23e89ef366d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "255a6e57fc5d9a1bfbefd4c9bef5d1c79512f87a"
+          "value": "c8476cb740b934f6cad6404bfd3ad23e89ef366d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562534,7 +562534,7 @@
       "dependsOn": [
         "doctrine/dbal-4.6.0.0",
         "doctrine/doctrine-bundle-2.19.4.0",
-        "doctrine/migrations-3.9.8.0",
+        "doctrine/migrations-3.9.9.0",
         "psr/log-3.0.2.0",
         "symfony/config-7.4.23.0",
         "symfony/console-7.4.23.0",
@@ -562557,7 +562557,7 @@
       "ref": "doctrine/lexer-3.0.3.0"
     },
     {
-      "ref": "doctrine/migrations-3.9.8.0",
+      "ref": "doctrine/migrations-3.9.9.0",
       "dependsOn": [
         "doctrine/dbal-4.6.0.0",
         "doctrine/deprecations-1.2.0.0",
@@ -562602,7 +562602,7 @@
       "ref": "drewm/mailchimp-api-2.5.4.0"
     },
     {
-      "ref": "egulias/email-validator-4.0.4.0",
+      "ref": "egulias/email-validator-4.0.5.0",
       "dependsOn": [
         "doctrine/lexer-3.0.3.0",
         "symfony/polyfill-intl-idn-1.43.0.0"
@@ -562624,7 +562624,7 @@
       "ref": "elasticsearch/elasticsearch-8.19.0.0",
       "dependsOn": [
         "elastic/transport-8.11.1.0",
-        "guzzlehttp/guzzle-7.16.5.0",
+        "guzzlehttp/guzzle-7.17.0.0",
         "psr/http-client-1.0.3.0",
         "psr/http-message-2.0.0.0",
         "psr/log-3.0.2.0"
@@ -562676,7 +562676,7 @@
       ]
     },
     {
-      "ref": "guzzlehttp/guzzle-7.16.5.0",
+      "ref": "guzzlehttp/guzzle-7.17.0.0",
       "dependsOn": [
         "guzzlehttp/promises-2.6.2.0",
         "guzzlehttp/psr7-2.13.6.0",
@@ -562728,7 +562728,7 @@
       ]
     },
     {
-      "ref": "league/csv-9.29.0.0"
+      "ref": "league/csv-9.29.1.0"
     },
     {
       "ref": "league/event-3.0.3.0",
@@ -562777,7 +562777,7 @@
     {
       "ref": "league/oauth2-client-2.9.1.0",
       "dependsOn": [
-        "guzzlehttp/guzzle-7.16.5.0",
+        "guzzlehttp/guzzle-7.17.0.0",
         "guzzlehttp/psr7-2.13.6.0"
       ]
     },
@@ -563020,7 +563020,7 @@
       ]
     },
     {
-      "ref": "phpoffice/phpspreadsheet-5.11.0.0",
+      "ref": "phpoffice/phpspreadsheet-5.12.0.0",
       "dependsOn": [
         "composer/pcre-3.4.0.0",
         "maennchen/zipstream-php-3.2.2.0",
@@ -563061,7 +563061,7 @@
         "doctrine/dbal-4.6.0.0",
         "doctrine/orm-3.8.0.0",
         "nesbot/carbon-3.15.1.0",
-        "phpoffice/phpspreadsheet-5.11.0.0",
+        "phpoffice/phpspreadsheet-5.12.0.0",
         "pimcore/enterprise-subscription-tools-2026.3.6.0",
         "pimcore/generic-data-index-bundle-2026.3.6.0",
         "pimcore/object-merger-2026.3.6.0",
@@ -563088,10 +563088,10 @@
       "ref": "pimcore/customer-management-framework-bundle-2026.3.4.0",
       "dependsOn": [
         "doctrine/dbal-4.6.0.0",
-        "doctrine/migrations-3.9.8.0",
+        "doctrine/migrations-3.9.9.0",
         "dragonmantank/cron-expression-3.6.1.0",
         "drewm/mailchimp-api-2.5.4.0",
-        "guzzlehttp/guzzle-7.16.5.0",
+        "guzzlehttp/guzzle-7.17.0.0",
         "knplabs/knp-components-5.3.0.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
         "nesbot/carbon-3.15.1.0",
@@ -563186,7 +563186,7 @@
         "league/flysystem-sftp-v3-3.36.0.0",
         "mtdowling/jmespath.php-2.10.0.0",
         "nesbot/carbon-3.15.1.0",
-        "phpoffice/phpspreadsheet-5.11.0.0",
+        "phpoffice/phpspreadsheet-5.12.0.0",
         "pimcore/data-hub-2026.3.6.0",
         "pimcore/pimcore-2026.3.6.0",
         "pimcore/studio-backend-bundle-2026.3.6.0",
@@ -563348,13 +563348,13 @@
         "doctrine/inflector-2.1.1.0",
         "doctrine/orm-3.8.0.0",
         "doctrine/persistence-3.4.5.0",
-        "egulias/email-validator-4.0.4.0",
+        "egulias/email-validator-4.0.5.0",
         "friendsofsymfony/jsrouting-bundle-3.6.1.0",
         "gotenberg/gotenberg-php-2.27.0.0",
-        "guzzlehttp/guzzle-7.16.5.0",
+        "guzzlehttp/guzzle-7.17.0.0",
         "http-interop/http-factory-guzzle-1.2.1.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
-        "league/csv-9.29.0.0",
+        "league/csv-9.29.1.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-bundle-3.7.1.0",
         "league/html-to-markdown-5.2.3.0",
@@ -563501,12 +563501,12 @@
       "ref": "pimcore/studio-backend-bundle-2026.3.6.0",
       "dependsOn": [
         "lcobucci/jwt-5.7.0.0",
-        "league/csv-9.29.0.0",
+        "league/csv-9.29.1.0",
         "league/oauth2-server-9.5.0.0",
         "nesbot/carbon-3.15.1.0",
         "php-http/discovery-1.20.0.0",
         "phpdocumentor/reflection-docblock-6.0.3.0",
-        "phpoffice/phpspreadsheet-5.11.0.0",
+        "phpoffice/phpspreadsheet-5.12.0.0",
         "pimcore/generic-data-index-bundle-2026.3.6.0",
         "pimcore/pimcore-2026.3.6.0",
         "pimcore/static-resolver-bundle-2026.3.4.0",
@@ -563945,7 +563945,7 @@
     {
       "ref": "symfony/mailer-7.4.22.0",
       "dependsOn": [
-        "egulias/email-validator-4.0.4.0",
+        "egulias/email-validator-4.0.5.0",
         "psr/event-dispatcher-1.0.0.0",
         "psr/log-3.0.2.0",
         "symfony/event-dispatcher-7.4.17.0",
