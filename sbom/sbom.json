@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a1b4564c-fa6b-4c5f-9dfd-cacd8ca68ba3",
+  "serialNumber": "urn:uuid:befb7404-4a18-46c2-a72e-1dc14395a254",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-26T00:04:08Z",
+    "timestamp": "2026-11-27T00:04:02Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 25d8840",
+      "version": "2026.3.x-dev a240648",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2025d8840",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a240648",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "25d884025a699d5169601696d6fb11fabd97787b"
+          "value": "a240648f602b3c161d17ef8311c74747d7c0a1aa"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "25d884025a699d5169601696d6fb11fabd97787b"
+          "value": "a240648f602b3c161d17ef8311c74747d7c0a1aa"
         },
         {
           "name": "cdx:composer:package:type",
@@ -2592,11 +2592,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "league/csv-9.29.1.0",
+      "bom-ref": "league/csv-9.30.0.0",
       "author": "Ignace Nyamagana Butera",
       "group": "league",
       "name": "csv",
-      "version": "9.29.1",
+      "version": "9.30.0",
       "description": "CSV data manipulation made easy in PHP",
       "licenses": [
         {
@@ -2606,17 +2606,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/league/csv@9.29.1",
+      "purl": "pkg:composer/league/csv@9.30.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/thephpleague/csv/zipball/fb9ea14460001b62fcb54d8ac247cc501f60e6e0",
+          "url": "https://api.github.com/repos/thephpleague/csv/zipball/710d3c7db4a50691951b0465a10c552e08a56c07",
           "type": "distribution",
-          "comment": "dist reference: fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
+          "comment": "dist reference: 710d3c7db4a50691951b0465a10c552e08a56c07"
         },
         {
           "url": "https://github.com/thephpleague/csv.git",
           "type": "vcs",
-          "comment": "source reference: fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
+          "comment": "source reference: 710d3c7db4a50691951b0465a10c552e08a56c07"
         },
         {
           "url": "https://csv.thephpleague.com",
@@ -2647,11 +2647,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
+          "value": "710d3c7db4a50691951b0465a10c552e08a56c07"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "fb9ea14460001b62fcb54d8ac247cc501f60e6e0"
+          "value": "710d3c7db4a50691951b0465a10c552e08a56c07"
         },
         {
           "name": "cdx:composer:package:type",
@@ -4694,11 +4694,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "open-telemetry/api-1.12.0.0",
+      "bom-ref": "open-telemetry/api-1.13.0.0",
       "author": "opentelemetry-php contributors",
       "group": "open-telemetry",
       "name": "api",
-      "version": "1.12.0",
+      "version": "1.13.0",
       "description": "API for OpenTelemetry PHP.",
       "licenses": [
         {
@@ -4708,17 +4708,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/open-telemetry/api@1.12.0",
+      "purl": "pkg:composer/open-telemetry/api@1.13.0",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/b0884741f3f9d5dc60477784c8671bd2acef4ceb",
+          "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/2dace793114f43ce879c15cbbd34411add11272d",
           "type": "distribution",
-          "comment": "dist reference: b0884741f3f9d5dc60477784c8671bd2acef4ceb"
+          "comment": "dist reference: 2dace793114f43ce879c15cbbd34411add11272d"
         },
         {
           "url": "https://github.com/opentelemetry-php/api.git",
           "type": "vcs",
-          "comment": "source reference: b0884741f3f9d5dc60477784c8671bd2acef4ceb"
+          "comment": "source reference: 2dace793114f43ce879c15cbbd34411add11272d"
         },
         {
           "url": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
@@ -4744,11 +4744,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b0884741f3f9d5dc60477784c8671bd2acef4ceb"
+          "value": "2dace793114f43ce879c15cbbd34411add11272d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b0884741f3f9d5dc60477784c8671bd2acef4ceb"
+          "value": "2dace793114f43ce879c15cbbd34411add11272d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14876,7 +14876,7 @@
       "bom-ref": "pimcore/platform-version-2026.3.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.3.x-dev 25d8840",
+      "version": "2026.3.x-dev a240648",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14886,15 +14886,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%2025d8840",
+      "purl": "pkg:composer/pimcore/platform-version@2026.3.x-dev%20a240648",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "25d884025a699d5169601696d6fb11fabd97787b"
+          "value": "a240648f602b3c161d17ef8311c74747d7c0a1aa"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "25d884025a699d5169601696d6fb11fabd97787b"
+          "value": "a240648f602b3c161d17ef8311c74747d7c0a1aa"
         },
         {
           "name": "cdx:composer:package:type",
@@ -562611,7 +562611,7 @@
     {
       "ref": "elastic/transport-8.11.1.0",
       "dependsOn": [
-        "open-telemetry/api-1.12.0.0",
+        "open-telemetry/api-1.13.0.0",
         "php-http/discovery-1.20.0.0",
         "php-http/httplug-2.4.1.0",
         "psr/http-client-1.0.3.0",
@@ -562728,7 +562728,7 @@
       ]
     },
     {
-      "ref": "league/csv-9.29.1.0"
+      "ref": "league/csv-9.30.0.0"
     },
     {
       "ref": "league/event-3.0.3.0",
@@ -562917,7 +562917,7 @@
       "ref": "onnov/detect-encoding-2.0.0.0"
     },
     {
-      "ref": "open-telemetry/api-1.12.0.0",
+      "ref": "open-telemetry/api-1.13.0.0",
       "dependsOn": [
         "open-telemetry/context-1.6.0.0",
         "psr/log-3.0.2.0"
@@ -563354,7 +563354,7 @@
         "guzzlehttp/guzzle-7.17.0.0",
         "http-interop/http-factory-guzzle-1.2.1.0",
         "knplabs/knp-paginator-bundle-6.11.0.0",
-        "league/csv-9.29.1.0",
+        "league/csv-9.30.0.0",
         "league/flysystem-3.36.0.0",
         "league/flysystem-bundle-3.7.1.0",
         "league/html-to-markdown-5.2.3.0",
@@ -563501,7 +563501,7 @@
       "ref": "pimcore/studio-backend-bundle-2026.3.7.0",
       "dependsOn": [
         "lcobucci/jwt-5.7.0.0",
-        "league/csv-9.29.1.0",
+        "league/csv-9.30.0.0",
         "league/oauth2-server-9.5.0.0",
         "nesbot/carbon-3.15.1.0",
         "php-http/discovery-1.20.0.0",
