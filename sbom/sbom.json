@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:61aca580-1765-47c3-8dd3-107fe4d6705a",
+  "serialNumber": "urn:uuid:31dacaf0-6792-479c-814a-8f57bb40dff6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-27T00:04:20Z",
+    "timestamp": "2026-11-28T00:03:52Z",
     "tools": [
       {
         "name": "composer",
@@ -85,7 +85,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 53b8e93",
+      "version": "2026.x-dev 62bf6f7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -95,15 +95,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2053b8e93",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2062bf6f7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "53b8e93f09c2da0245dd112618b6a6533ff107d2"
+          "value": "62bf6f73b1b180580ece091b0a80bbeea872bfc0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "53b8e93f09c2da0245dd112618b6a6533ff107d2"
+          "value": "62bf6f73b1b180580ece091b0a80bbeea872bfc0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -3884,11 +3884,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "mjaschen/phpgeo-6.0.4.0",
+      "bom-ref": "mjaschen/phpgeo-6.0.5.0",
       "author": "Marcus Jaschen",
       "group": "mjaschen",
       "name": "phpgeo",
-      "version": "6.0.4",
+      "version": "6.0.5",
       "description": "Simple Yet Powerful Geo Library",
       "licenses": [
         {
@@ -3898,17 +3898,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/mjaschen/phpgeo@6.0.4",
+      "purl": "pkg:composer/mjaschen/phpgeo@6.0.5",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/b3ef05a4948d73f8a9f5e7e44899223850c8f49a",
+          "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/2ad586fdcecc33ab879268fc691f1802d8c1cb05",
           "type": "distribution",
-          "comment": "dist reference: b3ef05a4948d73f8a9f5e7e44899223850c8f49a"
+          "comment": "dist reference: 2ad586fdcecc33ab879268fc691f1802d8c1cb05"
         },
         {
           "url": "https://github.com/mjaschen/phpgeo.git",
           "type": "vcs",
-          "comment": "source reference: b3ef05a4948d73f8a9f5e7e44899223850c8f49a"
+          "comment": "source reference: 2ad586fdcecc33ab879268fc691f1802d8c1cb05"
         },
         {
           "url": "https://phpgeo.marcusjaschen.de/",
@@ -3931,7 +3931,7 @@
           "comment": "as detected from Composer manifest \u0027support.issues\u0027"
         },
         {
-          "url": "https://github.com/mjaschen/phpgeo/tree/6.0.4",
+          "url": "https://github.com/mjaschen/phpgeo/tree/6.0.5",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -3939,11 +3939,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b3ef05a4948d73f8a9f5e7e44899223850c8f49a"
+          "value": "2ad586fdcecc33ab879268fc691f1802d8c1cb05"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b3ef05a4948d73f8a9f5e7e44899223850c8f49a"
+          "value": "2ad586fdcecc33ab879268fc691f1802d8c1cb05"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6215,7 +6215,7 @@
       "bom-ref": "pimcore/backend-power-tools-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "backend-power-tools-bundle",
-      "version": "2026.x-dev 2090571",
+      "version": "2026.x-dev 0cfddb9",
       "description": "Pimcore Backend Power Tools",
       "licenses": [
         {
@@ -6225,17 +6225,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%202090571",
+      "purl": "pkg:composer/pimcore/backend-power-tools-bundle@2026.x-dev%200cfddb9",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/r2090571cd25c1233148ca95cd3b701685a01c6e7.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/backend-power-tools-bundle/2026.9999999.9999999.9999999-dev/r0cfddb93b20ff117d657235febf426f3a12adfd2.zip",
           "type": "distribution",
-          "comment": "dist reference: 2090571cd25c1233148ca95cd3b701685a01c6e7"
+          "comment": "dist reference: 0cfddb93b20ff117d657235febf426f3a12adfd2"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/2090571cd25c1233148ca95cd3b701685a01c6e7",
+          "url": "https://api.github.com/repos/pimcore/backend-power-tools-bundle/zipball/0cfddb93b20ff117d657235febf426f3a12adfd2",
           "type": "distribution",
-          "comment": "dist reference: 2090571cd25c1233148ca95cd3b701685a01c6e7"
+          "comment": "dist reference: 0cfddb93b20ff117d657235febf426f3a12adfd2"
         },
         {
           "url": "https://github.com/pimcore/backend-power-tools-bundle/tree/2026.x",
@@ -6251,11 +6251,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2090571cd25c1233148ca95cd3b701685a01c6e7"
+          "value": "0cfddb93b20ff117d657235febf426f3a12adfd2"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2090571cd25c1233148ca95cd3b701685a01c6e7"
+          "value": "0cfddb93b20ff117d657235febf426f3a12adfd2"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6373,7 +6373,7 @@
       "bom-ref": "pimcore/data-hub-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-hub",
-      "version": "2026.x-dev c974d33",
+      "version": "2026.x-dev c4463f7",
       "description": "Pimcore Datahub",
       "licenses": [
         {
@@ -6383,17 +6383,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-hub@2026.x-dev%20c974d33",
+      "purl": "pkg:composer/pimcore/data-hub@2026.x-dev%20c4463f7",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/data-hub/zipball/c974d3353a2a45268f69106fb1f6d1eaf4a89c72",
+          "url": "https://api.github.com/repos/pimcore/data-hub/zipball/c4463f73cf73e6fd60196faf99fe353364a6b40a",
           "type": "distribution",
-          "comment": "dist reference: c974d3353a2a45268f69106fb1f6d1eaf4a89c72"
+          "comment": "dist reference: c4463f73cf73e6fd60196faf99fe353364a6b40a"
         },
         {
           "url": "https://github.com/pimcore/data-hub.git",
           "type": "vcs",
-          "comment": "source reference: c974d3353a2a45268f69106fb1f6d1eaf4a89c72"
+          "comment": "source reference: c4463f73cf73e6fd60196faf99fe353364a6b40a"
         },
         {
           "url": "https://github.com/pimcore/data-hub/issues",
@@ -6409,11 +6409,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c974d3353a2a45268f69106fb1f6d1eaf4a89c72"
+          "value": "c4463f73cf73e6fd60196faf99fe353364a6b40a"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c974d3353a2a45268f69106fb1f6d1eaf4a89c72"
+          "value": "c4463f73cf73e6fd60196faf99fe353364a6b40a"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6426,7 +6426,7 @@
       "bom-ref": "pimcore/data-hub-file-export-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-hub-file-export",
-      "version": "2026.x-dev ef87aec",
+      "version": "2026.x-dev fabf5ae",
       "licenses": [
         {
           "license": {
@@ -6435,17 +6435,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-hub-file-export@2026.x-dev%20ef87aec",
+      "purl": "pkg:composer/pimcore/data-hub-file-export@2026.x-dev%20fabf5ae",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-file-export/2026.9999999.9999999.9999999-dev/ref87aec474817ef34b49e4a9375812d70f9d8437.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-file-export/2026.9999999.9999999.9999999-dev/rfabf5ae643888a95ebad19b8f4b48ccda2cf1ccd.zip",
           "type": "distribution",
-          "comment": "dist reference: ef87aec474817ef34b49e4a9375812d70f9d8437"
+          "comment": "dist reference: fabf5ae643888a95ebad19b8f4b48ccda2cf1ccd"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/data-hub-file-export/zipball/ef87aec474817ef34b49e4a9375812d70f9d8437",
+          "url": "https://api.github.com/repos/pimcore/data-hub-file-export/zipball/fabf5ae643888a95ebad19b8f4b48ccda2cf1ccd",
           "type": "distribution",
-          "comment": "dist reference: ef87aec474817ef34b49e4a9375812d70f9d8437"
+          "comment": "dist reference: fabf5ae643888a95ebad19b8f4b48ccda2cf1ccd"
         },
         {
           "url": "https://github.com/pimcore/data-hub-file-export/tree/2026.x",
@@ -6461,11 +6461,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ef87aec474817ef34b49e4a9375812d70f9d8437"
+          "value": "fabf5ae643888a95ebad19b8f4b48ccda2cf1ccd"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ef87aec474817ef34b49e4a9375812d70f9d8437"
+          "value": "fabf5ae643888a95ebad19b8f4b48ccda2cf1ccd"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6478,7 +6478,7 @@
       "bom-ref": "pimcore/data-hub-productsup-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-hub-productsup",
-      "version": "2026.x-dev 3dc13e3",
+      "version": "2026.x-dev 2553f94",
       "licenses": [
         {
           "license": {
@@ -6487,17 +6487,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-hub-productsup@2026.x-dev%203dc13e3",
+      "purl": "pkg:composer/pimcore/data-hub-productsup@2026.x-dev%202553f94",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-productsup/2026.9999999.9999999.9999999-dev/r3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-productsup/2026.9999999.9999999.9999999-dev/r2553f94929ea2f774b2783b262b3fbd70e9cd895.zip",
           "type": "distribution",
-          "comment": "dist reference: 3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9"
+          "comment": "dist reference: 2553f94929ea2f774b2783b262b3fbd70e9cd895"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/data-hub-productsup/zipball/3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9",
+          "url": "https://api.github.com/repos/pimcore/data-hub-productsup/zipball/2553f94929ea2f774b2783b262b3fbd70e9cd895",
           "type": "distribution",
-          "comment": "dist reference: 3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9"
+          "comment": "dist reference: 2553f94929ea2f774b2783b262b3fbd70e9cd895"
         },
         {
           "url": "https://github.com/pimcore/data-hub-productsup/tree/2026.x",
@@ -6513,11 +6513,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9"
+          "value": "2553f94929ea2f774b2783b262b3fbd70e9cd895"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "3dc13e3a75bdf588f5c6d4476e9dc55ee62997f9"
+          "value": "2553f94929ea2f774b2783b262b3fbd70e9cd895"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6530,7 +6530,7 @@
       "bom-ref": "pimcore/data-hub-simple-rest-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-hub-simple-rest",
-      "version": "2026.x-dev a7bccb9",
+      "version": "2026.x-dev 050123f",
       "licenses": [
         {
           "license": {
@@ -6539,17 +6539,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-hub-simple-rest@2026.x-dev%20a7bccb9",
+      "purl": "pkg:composer/pimcore/data-hub-simple-rest@2026.x-dev%20050123f",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-simple-rest/2026.9999999.9999999.9999999-dev/ra7bccb9cf13bc8f49502b07d1759561126670a38.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-simple-rest/2026.9999999.9999999.9999999-dev/r050123f66c31a2b961cdb3720c1cec4757088849.zip",
           "type": "distribution",
-          "comment": "dist reference: a7bccb9cf13bc8f49502b07d1759561126670a38"
+          "comment": "dist reference: 050123f66c31a2b961cdb3720c1cec4757088849"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/data-hub-simple-rest/zipball/a7bccb9cf13bc8f49502b07d1759561126670a38",
+          "url": "https://api.github.com/repos/pimcore/data-hub-simple-rest/zipball/050123f66c31a2b961cdb3720c1cec4757088849",
           "type": "distribution",
-          "comment": "dist reference: a7bccb9cf13bc8f49502b07d1759561126670a38"
+          "comment": "dist reference: 050123f66c31a2b961cdb3720c1cec4757088849"
         },
         {
           "url": "https://github.com/pimcore/data-hub-simple-rest/tree/2026.x",
@@ -6565,11 +6565,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "a7bccb9cf13bc8f49502b07d1759561126670a38"
+          "value": "050123f66c31a2b961cdb3720c1cec4757088849"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "a7bccb9cf13bc8f49502b07d1759561126670a38"
+          "value": "050123f66c31a2b961cdb3720c1cec4757088849"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6582,7 +6582,7 @@
       "bom-ref": "pimcore/data-hub-webhooks-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-hub-webhooks",
-      "version": "2026.x-dev 8cda0d4",
+      "version": "2026.x-dev f9400a1",
       "description": "Pimcore Data-Hub Webhooks",
       "licenses": [
         {
@@ -6592,17 +6592,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-hub-webhooks@2026.x-dev%208cda0d4",
+      "purl": "pkg:composer/pimcore/data-hub-webhooks@2026.x-dev%20f9400a1",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-webhooks/2026.9999999.9999999.9999999-dev/r8cda0d441656752eafa6196d064f5559559f0e20.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/data-hub-webhooks/2026.9999999.9999999.9999999-dev/rf9400a1bc482971e0d8972455bf91ec82d0cac12.zip",
           "type": "distribution",
-          "comment": "dist reference: 8cda0d441656752eafa6196d064f5559559f0e20"
+          "comment": "dist reference: f9400a1bc482971e0d8972455bf91ec82d0cac12"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/data-hub-webhooks/zipball/8cda0d441656752eafa6196d064f5559559f0e20",
+          "url": "https://api.github.com/repos/pimcore/data-hub-webhooks/zipball/f9400a1bc482971e0d8972455bf91ec82d0cac12",
           "type": "distribution",
-          "comment": "dist reference: 8cda0d441656752eafa6196d064f5559559f0e20"
+          "comment": "dist reference: f9400a1bc482971e0d8972455bf91ec82d0cac12"
         },
         {
           "url": "https://github.com/pimcore/data-hub-webhooks/tree/2026.x",
@@ -6618,11 +6618,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "8cda0d441656752eafa6196d064f5559559f0e20"
+          "value": "f9400a1bc482971e0d8972455bf91ec82d0cac12"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "8cda0d441656752eafa6196d064f5559559f0e20"
+          "value": "f9400a1bc482971e0d8972455bf91ec82d0cac12"
         },
         {
           "name": "cdx:composer:package:type",
@@ -6635,7 +6635,7 @@
       "bom-ref": "pimcore/data-importer-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "data-importer",
-      "version": "2026.x-dev ebb72ae",
+      "version": "2026.x-dev 24b12fd",
       "description": "Adds a comprehensive import functionality to Pimcore Datahub",
       "licenses": [
         {
@@ -6645,17 +6645,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%20ebb72ae",
+      "purl": "pkg:composer/pimcore/data-importer@2026.x-dev%2024b12fd",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/ebb72aef9807a24f6cb24c22146ae6fd07032ea2",
+          "url": "https://api.github.com/repos/pimcore/data-importer/zipball/24b12fd11536415adc25a802acf2ccf561a2f3e2",
           "type": "distribution",
-          "comment": "dist reference: ebb72aef9807a24f6cb24c22146ae6fd07032ea2"
+          "comment": "dist reference: 24b12fd11536415adc25a802acf2ccf561a2f3e2"
         },
         {
           "url": "https://github.com/pimcore/data-importer.git",
           "type": "vcs",
-          "comment": "source reference: ebb72aef9807a24f6cb24c22146ae6fd07032ea2"
+          "comment": "source reference: 24b12fd11536415adc25a802acf2ccf561a2f3e2"
         },
         {
           "url": "https://github.com/pimcore/data-importer/issues",
@@ -6671,11 +6671,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "ebb72aef9807a24f6cb24c22146ae6fd07032ea2"
+          "value": "24b12fd11536415adc25a802acf2ccf561a2f3e2"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "ebb72aef9807a24f6cb24c22146ae6fd07032ea2"
+          "value": "24b12fd11536415adc25a802acf2ccf561a2f3e2"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7056,7 +7056,7 @@
       "bom-ref": "pimcore/headless-documents-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "headless-documents",
-      "version": "2026.x-dev 6e43877",
+      "version": "2026.x-dev 1a7d2e2",
       "licenses": [
         {
           "license": {
@@ -7065,17 +7065,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/headless-documents@2026.x-dev%206e43877",
+      "purl": "pkg:composer/pimcore/headless-documents@2026.x-dev%201a7d2e2",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/headless-documents/2026.9999999.9999999.9999999-dev/r6e43877769ff48e68c5f323a619dc2f7477b49a8.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/headless-documents/2026.9999999.9999999.9999999-dev/r1a7d2e2c9760aea1d7afcd889e62fad73c1bc038.zip",
           "type": "distribution",
-          "comment": "dist reference: 6e43877769ff48e68c5f323a619dc2f7477b49a8"
+          "comment": "dist reference: 1a7d2e2c9760aea1d7afcd889e62fad73c1bc038"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/headless-documents/zipball/6e43877769ff48e68c5f323a619dc2f7477b49a8",
+          "url": "https://api.github.com/repos/pimcore/headless-documents/zipball/1a7d2e2c9760aea1d7afcd889e62fad73c1bc038",
           "type": "distribution",
-          "comment": "dist reference: 6e43877769ff48e68c5f323a619dc2f7477b49a8"
+          "comment": "dist reference: 1a7d2e2c9760aea1d7afcd889e62fad73c1bc038"
         },
         {
           "url": "https://github.com/pimcore/headless-documents/tree/2026.x",
@@ -7091,11 +7091,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "6e43877769ff48e68c5f323a619dc2f7477b49a8"
+          "value": "1a7d2e2c9760aea1d7afcd889e62fad73c1bc038"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "6e43877769ff48e68c5f323a619dc2f7477b49a8"
+          "value": "1a7d2e2c9760aea1d7afcd889e62fad73c1bc038"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7372,7 +7372,7 @@
       "author": "pimcore Team",
       "group": "pimcore",
       "name": "pimcore",
-      "version": "2026.x-dev b05b683",
+      "version": "2026.x-dev bac95ea",
       "description": "Content \u0026 Product Management Framework (CMS/PIM/E-Commerce)",
       "licenses": [
         {
@@ -7382,17 +7382,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%20b05b683",
+      "purl": "pkg:composer/pimcore/pimcore@2026.x-dev%20bac95ea",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/rb05b68321e5334baf0fe71432b4af3158a4b808c.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/pimcore/2026.9999999.9999999.9999999-dev/rbac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0.zip",
           "type": "distribution",
-          "comment": "dist reference: b05b68321e5334baf0fe71432b4af3158a4b808c"
+          "comment": "dist reference: bac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/b05b68321e5334baf0fe71432b4af3158a4b808c",
+          "url": "https://api.github.com/repos/pimcore/ee-pimcore/zipball/bac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0",
           "type": "distribution",
-          "comment": "dist reference: b05b68321e5334baf0fe71432b4af3158a4b808c"
+          "comment": "dist reference: bac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0"
         },
         {
           "url": "https://www.pimcore.com/",
@@ -7428,11 +7428,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "b05b68321e5334baf0fe71432b4af3158a4b808c"
+          "value": "bac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "b05b68321e5334baf0fe71432b4af3158a4b808c"
+          "value": "bac95ea0d77901ba1f05c9f3af42bd9ed7b3bad0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7445,7 +7445,7 @@
       "bom-ref": "pimcore/portal-engine-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "portal-engine",
-      "version": "2026.x-dev c141581",
+      "version": "2026.x-dev af0e72b",
       "description": "Pimcore Portal Engine",
       "licenses": [
         {
@@ -7455,17 +7455,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20c141581",
+      "purl": "pkg:composer/pimcore/portal-engine@2026.x-dev%20af0e72b",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/rc14158147c5008c6eb7a2db727e9742c9c3420bd.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/portal-engine/2026.9999999.9999999.9999999-dev/raf0e72b7d3d7ea882345b324f4fa100df826ac7b.zip",
           "type": "distribution",
-          "comment": "dist reference: c14158147c5008c6eb7a2db727e9742c9c3420bd"
+          "comment": "dist reference: af0e72b7d3d7ea882345b324f4fa100df826ac7b"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/c14158147c5008c6eb7a2db727e9742c9c3420bd",
+          "url": "https://api.github.com/repos/pimcore/portal-engine/zipball/af0e72b7d3d7ea882345b324f4fa100df826ac7b",
           "type": "distribution",
-          "comment": "dist reference: c14158147c5008c6eb7a2db727e9742c9c3420bd"
+          "comment": "dist reference: af0e72b7d3d7ea882345b324f4fa100df826ac7b"
         },
         {
           "url": "https://github.com/pimcore/portal-engine/tree/2026.x",
@@ -7481,11 +7481,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c14158147c5008c6eb7a2db727e9742c9c3420bd"
+          "value": "af0e72b7d3d7ea882345b324f4fa100df826ac7b"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c14158147c5008c6eb7a2db727e9742c9c3420bd"
+          "value": "af0e72b7d3d7ea882345b324f4fa100df826ac7b"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7762,7 +7762,7 @@
       "bom-ref": "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-backend-bundle",
-      "version": "2026.x-dev c76bf24",
+      "version": "2026.x-dev 2a6159f",
       "description": "Pimcore Studio Backend Bundle",
       "licenses": [
         {
@@ -7772,17 +7772,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%20c76bf24",
+      "purl": "pkg:composer/pimcore/studio-backend-bundle@2026.x-dev%202a6159f",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c76bf24a06727f5cc4d1528090701b468e16d0ac",
+          "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/2a6159f8a661527383ead8b837cb28b9cd208960",
           "type": "distribution",
-          "comment": "dist reference: c76bf24a06727f5cc4d1528090701b468e16d0ac"
+          "comment": "dist reference: 2a6159f8a661527383ead8b837cb28b9cd208960"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle.git",
           "type": "vcs",
-          "comment": "source reference: c76bf24a06727f5cc4d1528090701b468e16d0ac"
+          "comment": "source reference: 2a6159f8a661527383ead8b837cb28b9cd208960"
         },
         {
           "url": "https://github.com/pimcore/studio-backend-bundle/issues",
@@ -7798,11 +7798,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c76bf24a06727f5cc4d1528090701b468e16d0ac"
+          "value": "2a6159f8a661527383ead8b837cb28b9cd208960"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c76bf24a06727f5cc4d1528090701b468e16d0ac"
+          "value": "2a6159f8a661527383ead8b837cb28b9cd208960"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7815,7 +7815,7 @@
       "bom-ref": "pimcore/studio-dashboards-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-dashboards-bundle",
-      "version": "2026.x-dev 9a4923f",
+      "version": "2026.x-dev ee98fad",
       "description": "Pimcore Studio Dashboards Bundle",
       "licenses": [
         {
@@ -7825,17 +7825,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-dashboards-bundle@2026.x-dev%209a4923f",
+      "purl": "pkg:composer/pimcore/studio-dashboards-bundle@2026.x-dev%20ee98fad",
       "externalReferences": [
         {
-          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/studio-dashboards-bundle/2026.9999999.9999999.9999999-dev/r9a4923f8a199a807bc2de909e7c30f4ee2acb8a9.zip",
+          "url": "https://repo.pimcore.com/github-actions/dists/pimcore/studio-dashboards-bundle/2026.9999999.9999999.9999999-dev/ree98fad3b7a2f6320d03c4e10d2923010b689db2.zip",
           "type": "distribution",
-          "comment": "dist reference: 9a4923f8a199a807bc2de909e7c30f4ee2acb8a9"
+          "comment": "dist reference: ee98fad3b7a2f6320d03c4e10d2923010b689db2"
         },
         {
-          "url": "https://api.github.com/repos/pimcore/studio-dashboards-bundle/zipball/9a4923f8a199a807bc2de909e7c30f4ee2acb8a9",
+          "url": "https://api.github.com/repos/pimcore/studio-dashboards-bundle/zipball/ee98fad3b7a2f6320d03c4e10d2923010b689db2",
           "type": "distribution",
-          "comment": "dist reference: 9a4923f8a199a807bc2de909e7c30f4ee2acb8a9"
+          "comment": "dist reference: ee98fad3b7a2f6320d03c4e10d2923010b689db2"
         },
         {
           "url": "https://github.com/pimcore/studio-dashboards-bundle/tree/2026.x",
@@ -7851,11 +7851,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "9a4923f8a199a807bc2de909e7c30f4ee2acb8a9"
+          "value": "ee98fad3b7a2f6320d03c4e10d2923010b689db2"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "9a4923f8a199a807bc2de909e7c30f4ee2acb8a9"
+          "value": "ee98fad3b7a2f6320d03c4e10d2923010b689db2"
         },
         {
           "name": "cdx:composer:package:type",
@@ -7868,7 +7868,7 @@
       "bom-ref": "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "studio-ui-bundle",
-      "version": "2026.x-dev 7179b47",
+      "version": "2026.x-dev 4b7cf65",
       "description": "Pimcore Studio Ui Bundle",
       "licenses": [
         {
@@ -7878,17 +7878,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%207179b47",
+      "purl": "pkg:composer/pimcore/studio-ui-bundle@2026.x-dev%204b7cf65",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/7179b473753b8ac60c3cfd5799382e0268c24b5c",
+          "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/4b7cf6556061f2ef3d7927c7557d50e352af3c87",
           "type": "distribution",
-          "comment": "dist reference: 7179b473753b8ac60c3cfd5799382e0268c24b5c"
+          "comment": "dist reference: 4b7cf6556061f2ef3d7927c7557d50e352af3c87"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 7179b473753b8ac60c3cfd5799382e0268c24b5c"
+          "comment": "source reference: 4b7cf6556061f2ef3d7927c7557d50e352af3c87"
         },
         {
           "url": "https://github.com/pimcore/studio-ui-bundle/issues",
@@ -7904,11 +7904,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "7179b473753b8ac60c3cfd5799382e0268c24b5c"
+          "value": "4b7cf6556061f2ef3d7927c7557d50e352af3c87"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "7179b473753b8ac60c3cfd5799382e0268c24b5c"
+          "value": "4b7cf6556061f2ef3d7927c7557d50e352af3c87"
         },
         {
           "name": "cdx:composer:package:type",
@@ -9987,11 +9987,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/cache-7.4.24.0",
+      "bom-ref": "symfony/cache-7.4.25.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "cache",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides extended PSR-6, PSR-16 (and tags) implementations",
       "licenses": [
         {
@@ -10001,17 +10001,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/cache@v7.4.24",
+      "purl": "pkg:composer/symfony/cache@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/cache/zipball/e0776df8b1b15f473827f714efe11ff17a0c5b44",
+          "url": "https://api.github.com/repos/symfony/cache/zipball/c0e98fd4826f7edbcca311a28ccefa1fc833e6f2",
           "type": "distribution",
-          "comment": "dist reference: e0776df8b1b15f473827f714efe11ff17a0c5b44"
+          "comment": "dist reference: c0e98fd4826f7edbcca311a28ccefa1fc833e6f2"
         },
         {
           "url": "https://github.com/symfony/cache.git",
           "type": "vcs",
-          "comment": "source reference: e0776df8b1b15f473827f714efe11ff17a0c5b44"
+          "comment": "source reference: c0e98fd4826f7edbcca311a28ccefa1fc833e6f2"
         },
         {
           "url": "https://symfony.com",
@@ -10019,7 +10019,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/cache/tree/v7.4.24",
+          "url": "https://github.com/symfony/cache/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10027,11 +10027,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "e0776df8b1b15f473827f714efe11ff17a0c5b44"
+          "value": "c0e98fd4826f7edbcca311a28ccefa1fc833e6f2"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "e0776df8b1b15f473827f714efe11ff17a0c5b44"
+          "value": "c0e98fd4826f7edbcca311a28ccefa1fc833e6f2"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10311,11 +10311,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/debug-bundle-7.4.8.0",
+      "bom-ref": "symfony/debug-bundle-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "debug-bundle",
-      "version": "v7.4.8",
+      "version": "v7.4.25",
       "description": "Provides a tight integration of the Symfony VarDumper component and the ServerLogCommand from MonologBridge into the Symfony full-stack framework",
       "licenses": [
         {
@@ -10325,17 +10325,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/debug-bundle@v7.4.8",
+      "purl": "pkg:composer/symfony/debug-bundle@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/3eb18c1e6cd16da2cea1f1b5162e442af4afee44",
+          "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/5b514ad9ccf925b1e002183416a62c6c39232fcb",
           "type": "distribution",
-          "comment": "dist reference: 3eb18c1e6cd16da2cea1f1b5162e442af4afee44"
+          "comment": "dist reference: 5b514ad9ccf925b1e002183416a62c6c39232fcb"
         },
         {
           "url": "https://github.com/symfony/debug-bundle.git",
           "type": "vcs",
-          "comment": "source reference: 3eb18c1e6cd16da2cea1f1b5162e442af4afee44"
+          "comment": "source reference: 5b514ad9ccf925b1e002183416a62c6c39232fcb"
         },
         {
           "url": "https://symfony.com",
@@ -10343,7 +10343,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/debug-bundle/tree/v7.4.8",
+          "url": "https://github.com/symfony/debug-bundle/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10351,11 +10351,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "3eb18c1e6cd16da2cea1f1b5162e442af4afee44"
+          "value": "5b514ad9ccf925b1e002183416a62c6c39232fcb"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "3eb18c1e6cd16da2cea1f1b5162e442af4afee44"
+          "value": "5b514ad9ccf925b1e002183416a62c6c39232fcb"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10365,11 +10365,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/dependency-injection-7.4.24.0",
+      "bom-ref": "symfony/dependency-injection-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "dependency-injection",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Allows you to standardize and centralize the way objects are constructed in your application",
       "licenses": [
         {
@@ -10379,17 +10379,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/dependency-injection@v7.4.24",
+      "purl": "pkg:composer/symfony/dependency-injection@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/7c17eab5a24f825bfca21d2414def2636ce34d01",
+          "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/54c179c4f6c6571d5af6dd87b6cdb04a01d851eb",
           "type": "distribution",
-          "comment": "dist reference: 7c17eab5a24f825bfca21d2414def2636ce34d01"
+          "comment": "dist reference: 54c179c4f6c6571d5af6dd87b6cdb04a01d851eb"
         },
         {
           "url": "https://github.com/symfony/dependency-injection.git",
           "type": "vcs",
-          "comment": "source reference: 7c17eab5a24f825bfca21d2414def2636ce34d01"
+          "comment": "source reference: 54c179c4f6c6571d5af6dd87b6cdb04a01d851eb"
         },
         {
           "url": "https://symfony.com",
@@ -10397,7 +10397,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/dependency-injection/tree/v7.4.24",
+          "url": "https://github.com/symfony/dependency-injection/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10405,11 +10405,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "7c17eab5a24f825bfca21d2414def2636ce34d01"
+          "value": "54c179c4f6c6571d5af6dd87b6cdb04a01d851eb"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "7c17eab5a24f825bfca21d2414def2636ce34d01"
+          "value": "54c179c4f6c6571d5af6dd87b6cdb04a01d851eb"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10689,11 +10689,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/expression-language-7.4.24.0",
+      "bom-ref": "symfony/expression-language-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "expression-language",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides an engine that can compile and evaluate expressions",
       "licenses": [
         {
@@ -10703,17 +10703,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/expression-language@v7.4.24",
+      "purl": "pkg:composer/symfony/expression-language@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/expression-language/zipball/c9da27c4954ad88742d36c7ffbc18a3fdbe32e26",
+          "url": "https://api.github.com/repos/symfony/expression-language/zipball/2c23bc176afc46a0553561e55a91c0ed95338ac0",
           "type": "distribution",
-          "comment": "dist reference: c9da27c4954ad88742d36c7ffbc18a3fdbe32e26"
+          "comment": "dist reference: 2c23bc176afc46a0553561e55a91c0ed95338ac0"
         },
         {
           "url": "https://github.com/symfony/expression-language.git",
           "type": "vcs",
-          "comment": "source reference: c9da27c4954ad88742d36c7ffbc18a3fdbe32e26"
+          "comment": "source reference: 2c23bc176afc46a0553561e55a91c0ed95338ac0"
         },
         {
           "url": "https://symfony.com",
@@ -10721,7 +10721,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/expression-language/tree/v7.4.24",
+          "url": "https://github.com/symfony/expression-language/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10729,11 +10729,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c9da27c4954ad88742d36c7ffbc18a3fdbe32e26"
+          "value": "2c23bc176afc46a0553561e55a91c0ed95338ac0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c9da27c4954ad88742d36c7ffbc18a3fdbe32e26"
+          "value": "2c23bc176afc46a0553561e55a91c0ed95338ac0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10743,11 +10743,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/filesystem-7.4.24.0",
+      "bom-ref": "symfony/filesystem-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "filesystem",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides basic utilities for the filesystem",
       "licenses": [
         {
@@ -10757,17 +10757,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/filesystem@v7.4.24",
+      "purl": "pkg:composer/symfony/filesystem@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/filesystem/zipball/37a6b215cf82c881409e2ffaec61757964abd1f7",
+          "url": "https://api.github.com/repos/symfony/filesystem/zipball/c6adf2262feb9e08ba64632d2703987c24555e0d",
           "type": "distribution",
-          "comment": "dist reference: 37a6b215cf82c881409e2ffaec61757964abd1f7"
+          "comment": "dist reference: c6adf2262feb9e08ba64632d2703987c24555e0d"
         },
         {
           "url": "https://github.com/symfony/filesystem.git",
           "type": "vcs",
-          "comment": "source reference: 37a6b215cf82c881409e2ffaec61757964abd1f7"
+          "comment": "source reference: c6adf2262feb9e08ba64632d2703987c24555e0d"
         },
         {
           "url": "https://symfony.com",
@@ -10775,7 +10775,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/filesystem/tree/v7.4.24",
+          "url": "https://github.com/symfony/filesystem/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10783,11 +10783,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "37a6b215cf82c881409e2ffaec61757964abd1f7"
+          "value": "c6adf2262feb9e08ba64632d2703987c24555e0d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "37a6b215cf82c881409e2ffaec61757964abd1f7"
+          "value": "c6adf2262feb9e08ba64632d2703987c24555e0d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10797,11 +10797,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/finder-7.4.24.0",
+      "bom-ref": "symfony/finder-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "finder",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Finds files and directories via an intuitive fluent interface",
       "licenses": [
         {
@@ -10811,17 +10811,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/finder@v7.4.24",
+      "purl": "pkg:composer/symfony/finder@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/finder/zipball/d1a9510360de57f80a9f88e63364f6c547cab352",
+          "url": "https://api.github.com/repos/symfony/finder/zipball/9e170627d10f300da6854be9efbfe3040f17716e",
           "type": "distribution",
-          "comment": "dist reference: d1a9510360de57f80a9f88e63364f6c547cab352"
+          "comment": "dist reference: 9e170627d10f300da6854be9efbfe3040f17716e"
         },
         {
           "url": "https://github.com/symfony/finder.git",
           "type": "vcs",
-          "comment": "source reference: d1a9510360de57f80a9f88e63364f6c547cab352"
+          "comment": "source reference: 9e170627d10f300da6854be9efbfe3040f17716e"
         },
         {
           "url": "https://symfony.com",
@@ -10829,7 +10829,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/finder/tree/v7.4.24",
+          "url": "https://github.com/symfony/finder/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10837,11 +10837,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d1a9510360de57f80a9f88e63364f6c547cab352"
+          "value": "9e170627d10f300da6854be9efbfe3040f17716e"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d1a9510360de57f80a9f88e63364f6c547cab352"
+          "value": "9e170627d10f300da6854be9efbfe3040f17716e"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10851,11 +10851,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/form-7.4.24.0",
+      "bom-ref": "symfony/form-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "form",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Allows to easily create, process and reuse HTML forms",
       "licenses": [
         {
@@ -10865,17 +10865,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/form@v7.4.24",
+      "purl": "pkg:composer/symfony/form@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/form/zipball/96e3cb7626ee2d9a210c8b21bdbbebda96ce5fe0",
+          "url": "https://api.github.com/repos/symfony/form/zipball/ef896d2b22165f64b84e2912cc39d350ea97b910",
           "type": "distribution",
-          "comment": "dist reference: 96e3cb7626ee2d9a210c8b21bdbbebda96ce5fe0"
+          "comment": "dist reference: ef896d2b22165f64b84e2912cc39d350ea97b910"
         },
         {
           "url": "https://github.com/symfony/form.git",
           "type": "vcs",
-          "comment": "source reference: 96e3cb7626ee2d9a210c8b21bdbbebda96ce5fe0"
+          "comment": "source reference: ef896d2b22165f64b84e2912cc39d350ea97b910"
         },
         {
           "url": "https://symfony.com",
@@ -10883,7 +10883,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/form/tree/v7.4.24",
+          "url": "https://github.com/symfony/form/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10891,11 +10891,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "96e3cb7626ee2d9a210c8b21bdbbebda96ce5fe0"
+          "value": "ef896d2b22165f64b84e2912cc39d350ea97b910"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "96e3cb7626ee2d9a210c8b21bdbbebda96ce5fe0"
+          "value": "ef896d2b22165f64b84e2912cc39d350ea97b910"
         },
         {
           "name": "cdx:composer:package:type",
@@ -10959,11 +10959,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/html-sanitizer-7.4.24.0",
+      "bom-ref": "symfony/html-sanitizer-7.4.25.0",
       "author": "Titouan Galopin, Symfony Community",
       "group": "symfony",
       "name": "html-sanitizer",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides an object-oriented API to sanitize untrusted HTML input for safe insertion into a document\u0027s DOM.",
       "licenses": [
         {
@@ -10973,17 +10973,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/html-sanitizer@v7.4.24",
+      "purl": "pkg:composer/symfony/html-sanitizer@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/039fc79ded9961cc4d9dd8bc6f871ebb8402d68c",
+          "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/5335f0740415cac9a0d4c2bd1ae81c83b18ee4a2",
           "type": "distribution",
-          "comment": "dist reference: 039fc79ded9961cc4d9dd8bc6f871ebb8402d68c"
+          "comment": "dist reference: 5335f0740415cac9a0d4c2bd1ae81c83b18ee4a2"
         },
         {
           "url": "https://github.com/symfony/html-sanitizer.git",
           "type": "vcs",
-          "comment": "source reference: 039fc79ded9961cc4d9dd8bc6f871ebb8402d68c"
+          "comment": "source reference: 5335f0740415cac9a0d4c2bd1ae81c83b18ee4a2"
         },
         {
           "url": "https://symfony.com",
@@ -10991,7 +10991,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/html-sanitizer/tree/v7.4.24",
+          "url": "https://github.com/symfony/html-sanitizer/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -10999,11 +10999,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "039fc79ded9961cc4d9dd8bc6f871ebb8402d68c"
+          "value": "5335f0740415cac9a0d4c2bd1ae81c83b18ee4a2"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "039fc79ded9961cc4d9dd8bc6f871ebb8402d68c"
+          "value": "5335f0740415cac9a0d4c2bd1ae81c83b18ee4a2"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11013,11 +11013,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-client-7.4.24.0",
+      "bom-ref": "symfony/http-client-7.4.25.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "http-client",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
       "licenses": [
         {
@@ -11027,17 +11027,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-client@v7.4.24",
+      "purl": "pkg:composer/symfony/http-client@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-client/zipball/2d1df0389f6b38188b965168a937932974b2ce81",
+          "url": "https://api.github.com/repos/symfony/http-client/zipball/fe047cdc68aee54b315b2f142ab4c0e9c705cefc",
           "type": "distribution",
-          "comment": "dist reference: 2d1df0389f6b38188b965168a937932974b2ce81"
+          "comment": "dist reference: fe047cdc68aee54b315b2f142ab4c0e9c705cefc"
         },
         {
           "url": "https://github.com/symfony/http-client.git",
           "type": "vcs",
-          "comment": "source reference: 2d1df0389f6b38188b965168a937932974b2ce81"
+          "comment": "source reference: fe047cdc68aee54b315b2f142ab4c0e9c705cefc"
         },
         {
           "url": "https://symfony.com",
@@ -11045,7 +11045,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-client/tree/v7.4.24",
+          "url": "https://github.com/symfony/http-client/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11053,11 +11053,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "2d1df0389f6b38188b965168a937932974b2ce81"
+          "value": "fe047cdc68aee54b315b2f142ab4c0e9c705cefc"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "2d1df0389f6b38188b965168a937932974b2ce81"
+          "value": "fe047cdc68aee54b315b2f142ab4c0e9c705cefc"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11067,11 +11067,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-foundation-7.4.24.0",
+      "bom-ref": "symfony/http-foundation-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "http-foundation",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Defines an object-oriented layer for the HTTP specification",
       "licenses": [
         {
@@ -11081,17 +11081,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-foundation@v7.4.24",
+      "purl": "pkg:composer/symfony/http-foundation@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-foundation/zipball/3b6540d9640f5f717c0bac5192748925e81f4533",
+          "url": "https://api.github.com/repos/symfony/http-foundation/zipball/1ebfef402856383ce114ff009d4fc961bf290743",
           "type": "distribution",
-          "comment": "dist reference: 3b6540d9640f5f717c0bac5192748925e81f4533"
+          "comment": "dist reference: 1ebfef402856383ce114ff009d4fc961bf290743"
         },
         {
           "url": "https://github.com/symfony/http-foundation.git",
           "type": "vcs",
-          "comment": "source reference: 3b6540d9640f5f717c0bac5192748925e81f4533"
+          "comment": "source reference: 1ebfef402856383ce114ff009d4fc961bf290743"
         },
         {
           "url": "https://symfony.com",
@@ -11099,7 +11099,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-foundation/tree/v7.4.24",
+          "url": "https://github.com/symfony/http-foundation/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11107,11 +11107,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "3b6540d9640f5f717c0bac5192748925e81f4533"
+          "value": "1ebfef402856383ce114ff009d4fc961bf290743"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "3b6540d9640f5f717c0bac5192748925e81f4533"
+          "value": "1ebfef402856383ce114ff009d4fc961bf290743"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11121,11 +11121,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/http-kernel-7.4.24.0",
+      "bom-ref": "symfony/http-kernel-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "http-kernel",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides a structured process for converting a Request into a Response",
       "licenses": [
         {
@@ -11135,17 +11135,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/http-kernel@v7.4.24",
+      "purl": "pkg:composer/symfony/http-kernel@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/http-kernel/zipball/20d99a1a03c36fa1d16b47dd77dc148d2f9f8d82",
+          "url": "https://api.github.com/repos/symfony/http-kernel/zipball/b510604a58547c9c28a599a16ad7ab0d8df64076",
           "type": "distribution",
-          "comment": "dist reference: 20d99a1a03c36fa1d16b47dd77dc148d2f9f8d82"
+          "comment": "dist reference: b510604a58547c9c28a599a16ad7ab0d8df64076"
         },
         {
           "url": "https://github.com/symfony/http-kernel.git",
           "type": "vcs",
-          "comment": "source reference: 20d99a1a03c36fa1d16b47dd77dc148d2f9f8d82"
+          "comment": "source reference: b510604a58547c9c28a599a16ad7ab0d8df64076"
         },
         {
           "url": "https://symfony.com",
@@ -11153,7 +11153,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/http-kernel/tree/v7.4.24",
+          "url": "https://github.com/symfony/http-kernel/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11161,11 +11161,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "20d99a1a03c36fa1d16b47dd77dc148d2f9f8d82"
+          "value": "b510604a58547c9c28a599a16ad7ab0d8df64076"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "20d99a1a03c36fa1d16b47dd77dc148d2f9f8d82"
+          "value": "b510604a58547c9c28a599a16ad7ab0d8df64076"
         },
         {
           "name": "cdx:composer:package:type",
@@ -11783,11 +11783,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/password-hasher-7.4.8.0",
+      "bom-ref": "symfony/password-hasher-7.4.25.0",
       "author": "Robin Chalas, Symfony Community",
       "group": "symfony",
       "name": "password-hasher",
-      "version": "v7.4.8",
+      "version": "v7.4.25",
       "description": "Provides password hashing utilities",
       "licenses": [
         {
@@ -11797,17 +11797,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/password-hasher@v7.4.8",
+      "purl": "pkg:composer/symfony/password-hasher@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/password-hasher/zipball/18a7d92126c95962f7efbcc9e421ba710a366847",
+          "url": "https://api.github.com/repos/symfony/password-hasher/zipball/cc016602beb0b451dda4c9bc9ee688c0cdf47ace",
           "type": "distribution",
-          "comment": "dist reference: 18a7d92126c95962f7efbcc9e421ba710a366847"
+          "comment": "dist reference: cc016602beb0b451dda4c9bc9ee688c0cdf47ace"
         },
         {
           "url": "https://github.com/symfony/password-hasher.git",
           "type": "vcs",
-          "comment": "source reference: 18a7d92126c95962f7efbcc9e421ba710a366847"
+          "comment": "source reference: cc016602beb0b451dda4c9bc9ee688c0cdf47ace"
         },
         {
           "url": "https://symfony.com",
@@ -11815,7 +11815,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/password-hasher/tree/v7.4.8",
+          "url": "https://github.com/symfony/password-hasher/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -11823,11 +11823,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "18a7d92126c95962f7efbcc9e421ba710a366847"
+          "value": "cc016602beb0b451dda4c9bc9ee688c0cdf47ace"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "18a7d92126c95962f7efbcc9e421ba710a366847"
+          "value": "cc016602beb0b451dda4c9bc9ee688c0cdf47ace"
         },
         {
           "name": "cdx:composer:package:type",
@@ -12647,11 +12647,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/property-access-7.4.24.0",
+      "bom-ref": "symfony/property-access-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "property-access",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides functions to read and write from/to an object or array using a simple string notation",
       "licenses": [
         {
@@ -12661,17 +12661,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/property-access@v7.4.24",
+      "purl": "pkg:composer/symfony/property-access@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/property-access/zipball/c9ab9194e6a9436c618f0951d2b5589943cbcf7a",
+          "url": "https://api.github.com/repos/symfony/property-access/zipball/7796c84fd3103385b0ea9f6c6c0ced64ff60c0aa",
           "type": "distribution",
-          "comment": "dist reference: c9ab9194e6a9436c618f0951d2b5589943cbcf7a"
+          "comment": "dist reference: 7796c84fd3103385b0ea9f6c6c0ced64ff60c0aa"
         },
         {
           "url": "https://github.com/symfony/property-access.git",
           "type": "vcs",
-          "comment": "source reference: c9ab9194e6a9436c618f0951d2b5589943cbcf7a"
+          "comment": "source reference: 7796c84fd3103385b0ea9f6c6c0ced64ff60c0aa"
         },
         {
           "url": "https://symfony.com",
@@ -12679,7 +12679,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/property-access/tree/v7.4.24",
+          "url": "https://github.com/symfony/property-access/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -12687,11 +12687,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "c9ab9194e6a9436c618f0951d2b5589943cbcf7a"
+          "value": "7796c84fd3103385b0ea9f6c6c0ced64ff60c0aa"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "c9ab9194e6a9436c618f0951d2b5589943cbcf7a"
+          "value": "7796c84fd3103385b0ea9f6c6c0ced64ff60c0aa"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13025,11 +13025,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/security-core-7.4.24.0",
+      "bom-ref": "symfony/security-core-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "security-core",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Symfony Security Component - Core Library",
       "licenses": [
         {
@@ -13039,17 +13039,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/security-core@v7.4.24",
+      "purl": "pkg:composer/symfony/security-core@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/security-core/zipball/338e43e6c2077a3a3be3594b15141a8c42e9b399",
+          "url": "https://api.github.com/repos/symfony/security-core/zipball/a5878baccfd19063b7990985df30039230557164",
           "type": "distribution",
-          "comment": "dist reference: 338e43e6c2077a3a3be3594b15141a8c42e9b399"
+          "comment": "dist reference: a5878baccfd19063b7990985df30039230557164"
         },
         {
           "url": "https://github.com/symfony/security-core.git",
           "type": "vcs",
-          "comment": "source reference: 338e43e6c2077a3a3be3594b15141a8c42e9b399"
+          "comment": "source reference: a5878baccfd19063b7990985df30039230557164"
         },
         {
           "url": "https://symfony.com",
@@ -13057,7 +13057,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/security-core/tree/v7.4.24",
+          "url": "https://github.com/symfony/security-core/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13065,11 +13065,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "338e43e6c2077a3a3be3594b15141a8c42e9b399"
+          "value": "a5878baccfd19063b7990985df30039230557164"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "338e43e6c2077a3a3be3594b15141a8c42e9b399"
+          "value": "a5878baccfd19063b7990985df30039230557164"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13079,11 +13079,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/security-csrf-7.4.8.0",
+      "bom-ref": "symfony/security-csrf-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "security-csrf",
-      "version": "v7.4.8",
+      "version": "v7.4.25",
       "description": "Symfony Security Component - CSRF Library",
       "licenses": [
         {
@@ -13093,17 +13093,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/security-csrf@v7.4.8",
+      "purl": "pkg:composer/symfony/security-csrf@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/security-csrf/zipball/16b3aa2f67d02fb0dbd013a8759bbe90daaa9c5d",
+          "url": "https://api.github.com/repos/symfony/security-csrf/zipball/5f21eda04b2c50c6d2e63d0c93c519d8f837bd8f",
           "type": "distribution",
-          "comment": "dist reference: 16b3aa2f67d02fb0dbd013a8759bbe90daaa9c5d"
+          "comment": "dist reference: 5f21eda04b2c50c6d2e63d0c93c519d8f837bd8f"
         },
         {
           "url": "https://github.com/symfony/security-csrf.git",
           "type": "vcs",
-          "comment": "source reference: 16b3aa2f67d02fb0dbd013a8759bbe90daaa9c5d"
+          "comment": "source reference: 5f21eda04b2c50c6d2e63d0c93c519d8f837bd8f"
         },
         {
           "url": "https://symfony.com",
@@ -13111,7 +13111,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/security-csrf/tree/v7.4.8",
+          "url": "https://github.com/symfony/security-csrf/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13119,11 +13119,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "16b3aa2f67d02fb0dbd013a8759bbe90daaa9c5d"
+          "value": "5f21eda04b2c50c6d2e63d0c93c519d8f837bd8f"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "16b3aa2f67d02fb0dbd013a8759bbe90daaa9c5d"
+          "value": "5f21eda04b2c50c6d2e63d0c93c519d8f837bd8f"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13187,11 +13187,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/serializer-7.4.24.0",
+      "bom-ref": "symfony/serializer-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "serializer",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
       "licenses": [
         {
@@ -13201,17 +13201,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/serializer@v7.4.24",
+      "purl": "pkg:composer/symfony/serializer@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/serializer/zipball/799d852c9f522528576a8a8789f95f2c6ea4d738",
+          "url": "https://api.github.com/repos/symfony/serializer/zipball/95bea3dda2008f543f12087a31ad20281d6e1689",
           "type": "distribution",
-          "comment": "dist reference: 799d852c9f522528576a8a8789f95f2c6ea4d738"
+          "comment": "dist reference: 95bea3dda2008f543f12087a31ad20281d6e1689"
         },
         {
           "url": "https://github.com/symfony/serializer.git",
           "type": "vcs",
-          "comment": "source reference: 799d852c9f522528576a8a8789f95f2c6ea4d738"
+          "comment": "source reference: 95bea3dda2008f543f12087a31ad20281d6e1689"
         },
         {
           "url": "https://symfony.com",
@@ -13219,7 +13219,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/serializer/tree/v7.4.24",
+          "url": "https://github.com/symfony/serializer/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13227,11 +13227,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "799d852c9f522528576a8a8789f95f2c6ea4d738"
+          "value": "95bea3dda2008f543f12087a31ad20281d6e1689"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "799d852c9f522528576a8a8789f95f2c6ea4d738"
+          "value": "95bea3dda2008f543f12087a31ad20281d6e1689"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13241,11 +13241,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/stopwatch-7.4.24.0",
+      "bom-ref": "symfony/stopwatch-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "stopwatch",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides a way to profile code",
       "licenses": [
         {
@@ -13255,17 +13255,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/stopwatch@v7.4.24",
+      "purl": "pkg:composer/symfony/stopwatch@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/stopwatch/zipball/284f51ec9cebb3b1b04beb20349986c2b1d2dbc6",
+          "url": "https://api.github.com/repos/symfony/stopwatch/zipball/206e421a5e353b3bdf78b1b88b9225b3017f3f1c",
           "type": "distribution",
-          "comment": "dist reference: 284f51ec9cebb3b1b04beb20349986c2b1d2dbc6"
+          "comment": "dist reference: 206e421a5e353b3bdf78b1b88b9225b3017f3f1c"
         },
         {
           "url": "https://github.com/symfony/stopwatch.git",
           "type": "vcs",
-          "comment": "source reference: 284f51ec9cebb3b1b04beb20349986c2b1d2dbc6"
+          "comment": "source reference: 206e421a5e353b3bdf78b1b88b9225b3017f3f1c"
         },
         {
           "url": "https://symfony.com",
@@ -13273,7 +13273,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/stopwatch/tree/v7.4.24",
+          "url": "https://github.com/symfony/stopwatch/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13281,11 +13281,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "284f51ec9cebb3b1b04beb20349986c2b1d2dbc6"
+          "value": "206e421a5e353b3bdf78b1b88b9225b3017f3f1c"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "284f51ec9cebb3b1b04beb20349986c2b1d2dbc6"
+          "value": "206e421a5e353b3bdf78b1b88b9225b3017f3f1c"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13295,11 +13295,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/string-7.4.24.0",
+      "bom-ref": "symfony/string-7.4.25.0",
       "author": "Nicolas Grekas, Symfony Community",
       "group": "symfony",
       "name": "string",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
       "licenses": [
         {
@@ -13309,17 +13309,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/string@v7.4.24",
+      "purl": "pkg:composer/symfony/string@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/string/zipball/71cd5014e85d05d46796ce60dc4aed9104122b89",
+          "url": "https://api.github.com/repos/symfony/string/zipball/93c0ef02c1548d3b9498e8c4cc92f77106ca5d46",
           "type": "distribution",
-          "comment": "dist reference: 71cd5014e85d05d46796ce60dc4aed9104122b89"
+          "comment": "dist reference: 93c0ef02c1548d3b9498e8c4cc92f77106ca5d46"
         },
         {
           "url": "https://github.com/symfony/string.git",
           "type": "vcs",
-          "comment": "source reference: 71cd5014e85d05d46796ce60dc4aed9104122b89"
+          "comment": "source reference: 93c0ef02c1548d3b9498e8c4cc92f77106ca5d46"
         },
         {
           "url": "https://symfony.com",
@@ -13327,7 +13327,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/string/tree/v7.4.24",
+          "url": "https://github.com/symfony/string/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13335,11 +13335,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "71cd5014e85d05d46796ce60dc4aed9104122b89"
+          "value": "93c0ef02c1548d3b9498e8c4cc92f77106ca5d46"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "71cd5014e85d05d46796ce60dc4aed9104122b89"
+          "value": "93c0ef02c1548d3b9498e8c4cc92f77106ca5d46"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13673,11 +13673,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/validator-7.4.24.0",
+      "bom-ref": "symfony/validator-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "validator",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Provides tools to validate values",
       "licenses": [
         {
@@ -13687,17 +13687,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/validator@v7.4.24",
+      "purl": "pkg:composer/symfony/validator@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/validator/zipball/d0191f043a7d7f677eb4d016572924d40baab2d9",
+          "url": "https://api.github.com/repos/symfony/validator/zipball/166d6a34e66e89571022983d4c3e9485bd8f3c49",
           "type": "distribution",
-          "comment": "dist reference: d0191f043a7d7f677eb4d016572924d40baab2d9"
+          "comment": "dist reference: 166d6a34e66e89571022983d4c3e9485bd8f3c49"
         },
         {
           "url": "https://github.com/symfony/validator.git",
           "type": "vcs",
-          "comment": "source reference: d0191f043a7d7f677eb4d016572924d40baab2d9"
+          "comment": "source reference: 166d6a34e66e89571022983d4c3e9485bd8f3c49"
         },
         {
           "url": "https://symfony.com",
@@ -13705,7 +13705,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/validator/tree/v7.4.24",
+          "url": "https://github.com/symfony/validator/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13713,11 +13713,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "d0191f043a7d7f677eb4d016572924d40baab2d9"
+          "value": "166d6a34e66e89571022983d4c3e9485bd8f3c49"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "d0191f043a7d7f677eb4d016572924d40baab2d9"
+          "value": "166d6a34e66e89571022983d4c3e9485bd8f3c49"
         },
         {
           "name": "cdx:composer:package:type",
@@ -13835,11 +13835,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/web-link-7.4.8.0",
+      "bom-ref": "symfony/web-link-7.4.25.0",
       "author": "K\u00E9vin Dunglas, Symfony Community",
       "group": "symfony",
       "name": "web-link",
-      "version": "v7.4.8",
+      "version": "v7.4.25",
       "description": "Manages links between resources",
       "licenses": [
         {
@@ -13849,17 +13849,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/web-link@v7.4.8",
+      "purl": "pkg:composer/symfony/web-link@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/web-link/zipball/0711009963009e7d6d59149327f3ad633ee3fe25",
+          "url": "https://api.github.com/repos/symfony/web-link/zipball/5ff1f5e4cad3605863e3ebc7af974970dbd54b1d",
           "type": "distribution",
-          "comment": "dist reference: 0711009963009e7d6d59149327f3ad633ee3fe25"
+          "comment": "dist reference: 5ff1f5e4cad3605863e3ebc7af974970dbd54b1d"
         },
         {
           "url": "https://github.com/symfony/web-link.git",
           "type": "vcs",
-          "comment": "source reference: 0711009963009e7d6d59149327f3ad633ee3fe25"
+          "comment": "source reference: 5ff1f5e4cad3605863e3ebc7af974970dbd54b1d"
         },
         {
           "url": "https://symfony.com",
@@ -13867,7 +13867,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/web-link/tree/v7.4.8",
+          "url": "https://github.com/symfony/web-link/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -13875,11 +13875,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "0711009963009e7d6d59149327f3ad633ee3fe25"
+          "value": "5ff1f5e4cad3605863e3ebc7af974970dbd54b1d"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "0711009963009e7d6d59149327f3ad633ee3fe25"
+          "value": "5ff1f5e4cad3605863e3ebc7af974970dbd54b1d"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14051,11 +14051,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "symfony/yaml-7.4.24.0",
+      "bom-ref": "symfony/yaml-7.4.25.0",
       "author": "Fabien Potencier, Symfony Community",
       "group": "symfony",
       "name": "yaml",
-      "version": "v7.4.24",
+      "version": "v7.4.25",
       "description": "Loads and dumps YAML files",
       "licenses": [
         {
@@ -14065,17 +14065,17 @@
           }
         }
       ],
-      "purl": "pkg:composer/symfony/yaml@v7.4.24",
+      "purl": "pkg:composer/symfony/yaml@v7.4.25",
       "externalReferences": [
         {
-          "url": "https://api.github.com/repos/symfony/yaml/zipball/f97f59f67644c715788d1bde4d81186e48ee1dbf",
+          "url": "https://api.github.com/repos/symfony/yaml/zipball/539dd469c25466d7225d6cadac1795201c9cf454",
           "type": "distribution",
-          "comment": "dist reference: f97f59f67644c715788d1bde4d81186e48ee1dbf"
+          "comment": "dist reference: 539dd469c25466d7225d6cadac1795201c9cf454"
         },
         {
           "url": "https://github.com/symfony/yaml.git",
           "type": "vcs",
-          "comment": "source reference: f97f59f67644c715788d1bde4d81186e48ee1dbf"
+          "comment": "source reference: 539dd469c25466d7225d6cadac1795201c9cf454"
         },
         {
           "url": "https://symfony.com",
@@ -14083,7 +14083,7 @@
           "comment": "as detected from Composer manifest \u0027homepage\u0027"
         },
         {
-          "url": "https://github.com/symfony/yaml/tree/v7.4.24",
+          "url": "https://github.com/symfony/yaml/tree/v7.4.25",
           "type": "vcs",
           "comment": "as detected from Composer manifest \u0027support.source\u0027"
         }
@@ -14091,11 +14091,11 @@
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "f97f59f67644c715788d1bde4d81186e48ee1dbf"
+          "value": "539dd469c25466d7225d6cadac1795201c9cf454"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "f97f59f67644c715788d1bde4d81186e48ee1dbf"
+          "value": "539dd469c25466d7225d6cadac1795201c9cf454"
         },
         {
           "name": "cdx:composer:package:type",
@@ -14940,7 +14940,7 @@
       "bom-ref": "pimcore/platform-version-2026.9999999.9999999.9999999-dev",
       "group": "pimcore",
       "name": "platform-version",
-      "version": "2026.x-dev 53b8e93",
+      "version": "2026.x-dev 62bf6f7",
       "description": "Verified Pimcore Version",
       "licenses": [
         {
@@ -14950,15 +14950,15 @@
           }
         }
       ],
-      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2053b8e93",
+      "purl": "pkg:composer/pimcore/platform-version@2026.x-dev%2062bf6f7",
       "properties": [
         {
           "name": "cdx:composer:package:distReference",
-          "value": "53b8e93f09c2da0245dd112618b6a6533ff107d2"
+          "value": "62bf6f73b1b180580ece091b0a80bbeea872bfc0"
         },
         {
           "name": "cdx:composer:package:sourceReference",
-          "value": "53b8e93f09c2da0245dd112618b6a6533ff107d2"
+          "value": "62bf6f73b1b180580ece091b0a80bbeea872bfc0"
         },
         {
           "name": "cdx:composer:package:type",
@@ -319443,10 +319443,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261127-083512-ba67874",
       "group": "@pimcore",
       "name": "studio-ui-bundle",
-      "version": "2026.4.0-canary.20261009-064452-b144c15",
+      "version": "2026.4.0-canary.20261127-083512-ba67874",
       "licenses": [
         {
           "license": {
@@ -319455,16 +319455,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15",
+      "purl": "pkg:npm/%40pimcore/studio-ui-bundle@2026.4.0-canary.20261127-083512-ba67874",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@pimcore/studio-ui-bundle/-/studio-ui-bundle-2026.4.0-canary.20261009-064452-b144c15.tgz",
+          "url": "https://registry.npmjs.org/@pimcore/studio-ui-bundle/-/studio-ui-bundle-2026.4.0-canary.20261127-083512-ba67874.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "36692a088c94f23e9130c712b1e7a6af1ff8490a3485ec9c05b5aa251c32239400e3d0802fa7285b716b48931f4d7a4f16f683fbbfd32be80fff9d2c403d32a3"
+              "content": "2dbc147d326ab0388a909faa41c9313365454078689842e10d6b83282fb670424ed21268c39043ff4b086acfa6e9c7ed398812c0381ee29c9fa69bb8390a9c86"
             }
           ]
         }
@@ -319478,10 +319478,10 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0",
       "group": "@reduxjs",
       "name": "toolkit",
-      "version": "2.11.2",
+      "version": "2.15.0",
       "licenses": [
         {
           "license": {
@@ -319490,16 +319490,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40reduxjs/toolkit@2.11.2",
+      "purl": "pkg:npm/%40reduxjs/toolkit@2.15.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-2.11.2.tgz",
+          "url": "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-2.15.0.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "29dea40074c0ebf9d4a69f26c923ea8f77a7ddd9b4b5d30881bb6d9d0d7114c569b9fa23f800e2f295cb06c778c734d11d06bbb7f26ff16e549c2b96e24b9631"
+              "content": "b47ac5751fc001b8619cbd3f0f701bbbad2601ec91a8c01aab7a4c7882964455a9cd97a4f4b6c62a4f49d94f82978dc58b1cc40da60a937cd4a0aeec165f7c14"
             }
           ]
         }
@@ -320727,40 +320727,6 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7",
-      "name": "antd",
-      "version": "5.22.7",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/antd@5.22.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/antd/-/antd-5.22.7.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "9284f940c9620e05dcdb5c8d72ce14caeaba4de0790096f3199daa8cd131cc4ed38ebf326085fab09b107ee9ec115f34c02d66a45ee6f6574ab8d8fe3da7dc14"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
       "name": "classnames",
       "version": "2.5.1",
@@ -320795,25 +320761,59 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.4.11",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.23",
+      "name": "dayjs",
+      "version": "1.11.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/dayjs@1.11.23",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.23.tgz",
+          "type": "distribution",
+          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4034c25343343314778507e794325fc1e91089a6a79b5b9b383db7d6eef758172443f7ec6a6c112e2136181cfa0f76bfc45d4d81f8832c98d705ad6160e613b5"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/dayjs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.5.0",
       "name": "dompurify",
-      "version": "3.4.11",
+      "version": "3.5.0",
       "licenses": [
         {
           "expression": "(MPL-2.0 OR Apache-2.0)",
           "acknowledgement": "declared"
         }
       ],
-      "purl": "pkg:npm/dompurify@3.4.11",
+      "purl": "pkg:npm/dompurify@3.5.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/dompurify/-/dompurify-3.4.11.tgz",
+          "url": "https://registry.npmjs.org/dompurify/-/dompurify-3.5.0.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "ce1954575d86b1a47332c7fdab9336e78621038f95b85d1f1be405aaee9a629a0694ab73fb0f3ffe305c195601810911e461e352899e8d8f38015fbfb8f6d677"
+              "content": "2d80b466413c3f5578d89b11613c0c7667bfd844fc4a939ce4003678e1633ff21a76f45dd9fc224f84d5cf9be47f2d17531d76692d946919139df54f34ebfdbf"
             }
           ]
         }
@@ -320861,9 +320861,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@11.18.2",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@12.43.0",
       "name": "framer-motion",
-      "version": "11.18.2",
+      "version": "12.43.0",
       "licenses": [
         {
           "license": {
@@ -320872,16 +320872,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/framer-motion@11.18.2",
+      "purl": "pkg:npm/framer-motion@12.43.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/framer-motion/-/framer-motion-11.18.2.tgz",
+          "url": "https://registry.npmjs.org/framer-motion/-/framer-motion-12.43.0.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "e45e4e721ef0aefb4b544948a5c9434f4081ccc560ddd2f6d81eb8699c07b6c218f110789972022eb91a8cae06f51fa2792006720acb79a7b649e513836a6beb"
+              "content": "d5e68bdd1bd1fe40256c6ed461ca4ca6d132ccfa0434ed1ceb0ed99c1dff861daf480cffeae180167e9f768a93060b8db2d7f732c161247b03ff40c789c946fa"
             }
           ]
         }
@@ -320929,9 +320929,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.0",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.2",
       "name": "js-yaml",
-      "version": "4.3.0",
+      "version": "4.3.2",
       "licenses": [
         {
           "license": {
@@ -320940,16 +320940,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/js-yaml@4.3.0",
+      "purl": "pkg:npm/js-yaml@4.3.2",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.3.0.tgz",
+          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.3.2.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "d6d77bf3c6809e7679aaced5d90211975a308ed6296cab7be3d637c5abaa420c0820617fc575b3d70313101c793b72cade55cb56ea973dd3f18f6068147696f5"
+              "content": "48534ebd227e0e07fff409fdd38631f828129483c2908a5aa38aa8e7596979edb94c845e8dd1f7ae1478119306a0dc77fd33f73bec335ae893165e2ca9b96dcc"
             }
           ]
         }
@@ -321133,9 +321133,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.2.0",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.3.1",
       "name": "react-redux",
-      "version": "9.2.0",
+      "version": "9.3.1",
       "licenses": [
         {
           "license": {
@@ -321144,16 +321144,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/react-redux@9.2.0",
+      "purl": "pkg:npm/react-redux@9.3.1",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/react-redux/-/react-redux-9.2.0.tgz",
+          "url": "https://registry.npmjs.org/react-redux/-/react-redux-9.3.1.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "44e63d7ef1e1c0e0fdc927eb174c26beefff6ca090e8079966ad6724db5b0c2fa49390ee4ae357fe7e9859817f498cbb6d26dae03e054b3f0325e298fd2febfa"
+              "content": "bf130b4f495a9548db64f9284dea56c8a0196e320816cb0dc7f0842fd9537f040153a5e99064a608d75c088ae438152007af2e7ed64c9db5d56fa0f01a785129"
             }
           ]
         }
@@ -321201,9 +321201,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@6.30.4",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@7.18.7",
       "name": "react-router-dom",
-      "version": "6.30.4",
+      "version": "7.18.7",
       "licenses": [
         {
           "license": {
@@ -321212,16 +321212,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/react-router-dom@6.30.4",
+      "purl": "pkg:npm/react-router-dom@7.18.7",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.4.tgz",
+          "url": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.7.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "ab81ef365fa69837644b483e32a88164db5e4090ae8a65a83b21cccb84ff4502c09fd676f7e13dd505d16b13ae8de325d874f34524b42853ddee5c57dcf8d5d1"
+              "content": "101581295d538ef49c79b008be2768c0dd017e1f4183ba79e080c1455264157cf4c0129305b94334bc54bc27b0c7f19dcd3882ed5595fcc3a35aab0b58433280"
             }
           ]
         }
@@ -321269,9 +321269,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|uuid@10.0.0",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|uuid@11.1.1",
       "name": "uuid",
-      "version": "10.0.0",
+      "version": "11.1.1",
       "licenses": [
         {
           "license": {
@@ -321280,16 +321280,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/uuid@10.0.0",
+      "purl": "pkg:npm/uuid@11.1.1",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz",
+          "url": "https://registry.npmjs.org/uuid/-/uuid-11.1.1.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "f17900a6110bb039c41ab0f150e1c1dd11af5f3e937ae6121846413a3b53b4f9b69708460632e03b32c707adc85167c1a4db9c423343e9ddc03ae74ef87dd159"
+              "content": "bc8631ac1082fcdfcaf89b37a9237cf20a3b9087cd3ecb2bfe11c27ac28240d0239a0bd84b6a2aafaf6422e7c41be3b8f8f7decce1f811b21e1c27c5a2ff1981"
             }
           ]
         }
@@ -321297,7 +321297,7 @@
       "properties": [
         {
           "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/uuid"
+          "value": "node_modules/uuid"
         }
       ]
     },
@@ -321373,9 +321373,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2|immer@11.1.4",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0|immer@11.2.10",
       "name": "immer",
-      "version": "11.1.4",
+      "version": "11.2.10",
       "licenses": [
         {
           "license": {
@@ -321384,16 +321384,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/immer@11.1.4",
+      "purl": "pkg:npm/immer@11.2.10",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/immer/-/immer-11.1.4.tgz",
+          "url": "https://registry.npmjs.org/immer/-/immer-11.2.10.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "5d110508fa3a92cc55ccfe04d1e903e5a31d7fc58cc2674d6b3eafbafc60238d146848aeeaade9f17e76694e86772bcb6375d75fff11ec93935d2b73fe705b47"
+              "content": "a7300d063fb403dbbea6b761049d780d58b8e2f0af55443305af032ade88d00302a243c7b6def6d812bd217e5b142ef4c54494f539f32d12092d31aa2338c417"
             }
           ]
         }
@@ -322167,40 +322167,6 @@
         {
           "name": "cdx:npm:package:path",
           "value": "node_modules/copy-to-clipboard"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20",
-      "name": "dayjs",
-      "version": "1.11.20",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/dayjs@1.11.20",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.20.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "61bc30a91fee6297a83f8a6ed38deaf8b4c32c504b02950fe95c518a175f353aaee2e6ea3251832dde84ad784482ccaf6342ba9c2b3b9e0818ba600dfbdb84b9"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/dayjs"
         }
       ]
     },
@@ -325310,654 +325276,6 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@ctrl/tinycolor@3.6.1",
-      "group": "@ctrl",
-      "name": "tinycolor",
-      "version": "3.6.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40ctrl/tinycolor@3.6.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "4884d257a6885ecb95355ddfdced1fda7fdc8321035a84aab5931888099cb181f275c2ab3b3de053107f89777f41fd3cf88657e0aa6035bbd474c0665b3fa470"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@ctrl/tinycolor"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|@rc-component/qrcode@1.0.1",
-      "group": "@rc-component",
-      "name": "qrcode",
-      "version": "1.0.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40rc-component/qrcode@1.0.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@rc-component/qrcode/-/qrcode-1.0.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "83c79e79a332157565abc71951e6b108385f2188e96a8d25f5cbe6e60170297cbf566d720d657b876b231f98c763374579d955281a404c507554a32b1f3c1a59"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/@rc-component/qrcode"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-cascader@3.30.0",
-      "name": "rc-cascader",
-      "version": "3.30.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-cascader@3.30.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-cascader/-/rc-cascader-3.30.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "aebcd26e4d4176a6eefa90f088b08b1eeef6fa5c17f41676f3e24ace88b40d6678376f506057a2a7c19cb65df74157765e0dd17f5e03df200e1bbe84949c35eb"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-cascader"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-checkbox@3.3.0",
-      "name": "rc-checkbox",
-      "version": "3.3.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-checkbox@3.3.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-checkbox/-/rc-checkbox-3.3.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "221dd968072802214a26389fcf0b06893fdffeab889312689255b8c8a1a1a35e0e96e9709fc80dee1381bded3f5860e0e68fe5ff998bd30edf7fbfd81af79f57"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-checkbox"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-drawer@7.2.0",
-      "name": "rc-drawer",
-      "version": "7.2.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-drawer@7.2.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-drawer/-/rc-drawer-7.2.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "f65390ee405e904251744a52707bed984b579c0b32f8d1835e24567366550bb41701accd55b793e04ada40a63008c13c0492daf01c6ac6fb39b30c3239ea51c2"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-drawer"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-image@7.11.1",
-      "name": "rc-image",
-      "version": "7.11.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-image@7.11.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-image/-/rc-image-7.11.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "5eea16c782945e0ee1372e66453cb58bc73ca772bc6e85a0e946a36c7a435d2e4095156e70d7d38b96314ed3c14c1cde831019a6fb8b7e1dde99716deb26d474"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-image"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input-number@9.3.0",
-      "name": "rc-input-number",
-      "version": "9.3.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-input-number@9.3.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-input-number/-/rc-input-number-9.3.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "250dfadf2c2a472c70815c69836cf69236b709e853a5876a47b7a627feb226345d6efa3e46f7c4f377dca41088251ab7ccba7c49a926117abad2acd6c99ed4b3"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-input-number"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-      "name": "rc-input",
-      "version": "1.6.4",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-input@1.6.4",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-input/-/rc-input-1.6.4.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "9416617d10f83520145b4cce28b51e23a189b97931799622d21afc55c260269c9334ebc7c35cacaca5801dc10e0001e3ee0bb18265984a2eb15ab11d7eb480b0"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-input"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-mentions@2.17.0",
-      "name": "rc-mentions",
-      "version": "2.17.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-mentions@2.17.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-mentions/-/rc-mentions-2.17.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "b1f1f2faa2ef73ea7c8f1f0652cba36565c33889488a6a7a610cfb37938d43a6c7b1ada4c86f812dae64db0bb181e6c16c7f7b8acdf7c318b2ab95248974691c"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-mentions"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-pagination@5.0.0",
-      "name": "rc-pagination",
-      "version": "5.0.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-pagination@5.0.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-pagination/-/rc-pagination-5.0.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "423acfbdb010c29b3dde296ebc533ad801188251988565b6abf9e5890aa6be44e2e0f5cfe071e8874d220b549ae4b2d59ad5901e61bbddf062db1e87eaf14746"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-pagination"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-picker@4.8.3",
-      "name": "rc-picker",
-      "version": "4.8.3",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-picker@4.8.3",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-picker/-/rc-picker-4.8.3.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "849e39aa812ce267f15cf009769d67dec2b0003ba5f3be02774fc7c27b04384eb41feb6088950681b383eb602cdc41bfac554d4b901645f0420c925f991a8e55"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-picker"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-segmented@2.5.0",
-      "name": "rc-segmented",
-      "version": "2.5.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-segmented@2.5.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-segmented/-/rc-segmented-2.5.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "076f057b727d89414e8452444f74685c03c5276bb8ed0bcb498719582e2d1583463c48ee8392c0c446ac66503f3e903185d38fa865ac19b4a3edfb677ae9099f"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-segmented"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-table@7.49.0",
-      "name": "rc-table",
-      "version": "7.49.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-table@7.49.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-table/-/rc-table-7.49.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "fc5a0f2d7f789ae0103b15698b58e19e92a3388a946d3f357842d03c0cd25ce91ee24cb8a0259851739c5692f7d5908ef74c527305525d177b728aad82d07536"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-table"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tabs@15.4.0",
-      "name": "rc-tabs",
-      "version": "15.4.0",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-tabs@15.4.0",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-tabs/-/rc-tabs-15.4.0.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "9652aeca2015aa65e6db3eceae6857e5c35bdae79968bf19c80d8fe11fbaffbd8d61871b12039789bc07890085636462377b305e5e774880018b60ae9944b4da"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-tabs"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-textarea@1.8.2",
-      "name": "rc-textarea",
-      "version": "1.8.2",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-textarea@1.8.2",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-textarea/-/rc-textarea-1.8.2.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "50501ecc0aa5b72474d1af0b7f420f0324dddbd263f5e7bcc2df03a97c8331a97baff0a0fe70eddded4e3afdd38785ba98a6998a38e0c2e3d78407d535337cb3"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-textarea"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tooltip@6.2.1",
-      "name": "rc-tooltip",
-      "version": "6.2.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-tooltip@6.2.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-tooltip/-/rc-tooltip-6.2.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "af0b3476e0ffdec1c7b03f74e4d7b1ec5be8506cb650141185390ac5e12faf6141fabdb51ec3b1703248d13cf23bc347867000f082ebf297db481839263e4a06"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-tooltip"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree-select@5.24.5",
-      "name": "rc-tree-select",
-      "version": "5.24.5",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-tree-select@5.24.5",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-tree-select/-/rc-tree-select-5.24.5.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "3e7c91f0b64959a884170d121d1aa8e0c3505b2c99b3232cf1e366a3af2e5d95a3c5ced0a9e59c8cf3e838d374adcf747371d9a8617dcfe468cfe18bcd8e465c"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-tree-select"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree@5.10.1",
-      "name": "rc-tree",
-      "version": "5.10.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-tree@5.10.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-tree/-/rc-tree-5.10.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "14f5dbded4ffbb7f66823afa24d9476944d87c7915196e7a5da1836a10e91052c6b273f119c54b3538dcaa841bfc635b482c9c97bb43ec4bc8ca6c0e4cfd3e63"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-tree"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-upload@4.8.1",
-      "name": "rc-upload",
-      "version": "4.8.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/rc-upload@4.8.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/rc-upload/-/rc-upload-4.8.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "b681008709788632c0235bbcfc280a5addf4051d3aba53dae2219048cbd25e81f33bcf203c2b25c6a57f9a79f880953b3c3a25b46202f4487ec247ae76a807cb"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@pimcore/studio-ui-bundle/node_modules/antd/node_modules/rc-upload"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/trusted-types@2.0.7",
       "group": "@types",
       "name": "trusted-types",
@@ -326029,9 +325347,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@11.18.1",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@12.43.0",
       "name": "motion-dom",
-      "version": "11.18.1",
+      "version": "12.43.0",
       "licenses": [
         {
           "license": {
@@ -326040,16 +325358,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/motion-dom@11.18.1",
+      "purl": "pkg:npm/motion-dom@12.43.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/motion-dom/-/motion-dom-11.18.1.tgz",
+          "url": "https://registry.npmjs.org/motion-dom/-/motion-dom-12.43.0.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "83be8abc0d34d73f9ab637f1733751b70fd15ce33738c49d7757f80cbefba824c5ffe6afad12626b0486e320e26c4436d79b2bf64a629d2957da909327dcdb87"
+              "content": "6b328e37877d4bae4f1281548904cc4e03e17849b37f642781d45ce7400a7c9a7d43d9a6701570db673c78cabd93c9313851dd2fbf96658ecdff917f9708836a"
             }
           ]
         }
@@ -326063,9 +325381,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@11.18.1",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@12.39.0",
       "name": "motion-utils",
-      "version": "11.18.1",
+      "version": "12.39.0",
       "licenses": [
         {
           "license": {
@@ -326074,16 +325392,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/motion-utils@11.18.1",
+      "purl": "pkg:npm/motion-utils@12.39.0",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/motion-utils/-/motion-utils-11.18.1.tgz",
+          "url": "https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "e3d2adf872a3b5b24a2ed80efcb2a3f4b77eeafc3d0631f977db1ce3447f915c87f062c05e04f8d8cd8d9ee3dc24db80decf597d9054730220a6665618413e84"
+              "content": "f2769d2402634eda91926445dfa168253af2c0af679c59a73f09d2332c5a38253b1838cdf514cc248c71f437bc12b33ebe93e131c72bffa7e8e56722c902e731"
             }
           ]
         }
@@ -326302,44 +325620,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@remix-run/router@1.23.3",
-      "group": "@remix-run",
-      "name": "router",
-      "version": "1.23.3",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40remix-run/router@1.23.3",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.3.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "e009fbd6d773f57f3edec23842aa9dd8b59df6f4b7f49eeca9df4453849cc3b4c913fa81d74165bff52ea9b3d581f415f57a0af0da7a8cdaae662b6766ae62f9"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@remix-run/router"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@6.30.4",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@7.18.7",
       "name": "react-router",
-      "version": "6.30.4",
+      "version": "7.18.7",
       "licenses": [
         {
           "license": {
@@ -326348,16 +325631,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/react-router@6.30.4",
+      "purl": "pkg:npm/react-router@7.18.7",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/react-router/-/react-router-6.30.4.tgz",
+          "url": "https://registry.npmjs.org/react-router/-/react-router-7.18.7.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "49552c0def83c9b1ccfd6998288558859875a390dcb9fd7ac8ce968c6d3643d5d514c6482721d8870aebe9b1415d99153facfaf64364332042ba3b7c15a14b24"
+              "content": "9d797aef6145a1bca6558fd8c1ba340e795757ff955ce079a4eb2509eb95aa87a0c302fbb1abb6c8049dc86a161ef3d1c40a2a501ac08856517658b89d3ed6a3"
             }
           ]
         }
@@ -328841,6 +328124,74 @@
         {
           "name": "cdx:npm:package:path",
           "value": "node_modules/void-elements"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|cookie@1.1.1",
+      "name": "cookie",
+      "version": "1.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/cookie@1.1.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
+          "type": "distribution",
+          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "7a2f00a2cee36b4c1e469173267100f541c9ffb5d09aa8256d1c277f60138dc07d5aaf3be15287f647e38e2acce94854dbf1397c561a77297284595d72a4a275"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/cookie"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|set-cookie-parser@2.7.3",
+      "name": "set-cookie-parser",
+      "version": "2.7.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/set-cookie-parser@2.7.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.3.tgz",
+          "type": "distribution",
+          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8ab647b53aaeacb9dae7b2901bfb3e7f33b0bff27a5d21f872cf0cfefb2b637b82690dd2ebe40982e007d1674de3b497964f36be8319e276963107fc7dd12822"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/set-cookie-parser"
         }
       ]
     },
@@ -427911,9 +427262,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.5.16",
+      "bom-ref": "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.6.1",
       "name": "adm-zip",
-      "version": "0.5.16",
+      "version": "0.6.1",
       "licenses": [
         {
           "license": {
@@ -427922,16 +427273,16 @@
           }
         }
       ],
-      "purl": "pkg:npm/adm-zip@0.5.16",
+      "purl": "pkg:npm/adm-zip@0.6.1",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.5.16.tgz",
+          "url": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.6.1.tgz",
           "type": "distribution",
           "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "4c6c39c958b8b1a6a3b12120cf6e60ace6c61c451a0eb9e2c2f036ab0482d3ad0a7ea18f760961bcf300da53c8a31b373d0208b63da26a0df97ce35c42a81469"
+              "content": "5f0ae36bc9f1f5ee68d8dd66cb80ec28278aa5dae7002cabd70b5b3f1043806ccaccac84f6446d04503c99695d23e455943ec205935663fc10dbec9dc0e47a91"
             }
           ]
         }
@@ -433726,40 +433077,6 @@
         {
           "name": "cdx:npm:package:path",
           "value": "node_modules/@module-federation/third-party-dts-extractor"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "@pimcore/studio-ui-bundle@0.0.1|@module-federation/dts-plugin@2.9.3|adm-zip@0.6.1",
-      "name": "adm-zip",
-      "version": "0.6.1",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/adm-zip@0.6.1",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.6.1.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \u0022resolved\u0022 and property \u0022integrity\u0022",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "5f0ae36bc9f1f5ee68d8dd66cb80ec28278aa5dae7002cabd70b5b3f1043806ccaccac84f6446d04503c99695d23e455943ec205935663fc10dbec9dc0e47a91"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@module-federation/dts-plugin/node_modules/adm-zip"
         }
       ]
     },
@@ -541920,10 +541237,10 @@
         "doctrine/deprecations-1.2.0.0",
         "doctrine/persistence-4.2.1.0",
         "doctrine/sql-formatter-1.5.4.0",
-        "symfony/cache-7.4.24.0",
+        "symfony/cache-7.4.25.0",
         "symfony/config-7.4.24.0",
         "symfony/console-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/doctrine-bridge-7.4.24.0",
         "symfony/framework-bundle-7.4.24.0"
       ]
@@ -541937,10 +541254,10 @@
         "psr/log-3.0.2.0",
         "symfony/config-7.4.24.0",
         "symfony/console-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/framework-bundle-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0"
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0"
       ]
     },
     {
@@ -541963,7 +541280,7 @@
         "doctrine/event-manager-2.1.1.0",
         "psr/log-3.0.2.0",
         "symfony/console-7.4.24.0",
-        "symfony/stopwatch-7.4.24.0",
+        "symfony/stopwatch-7.4.25.0",
         "symfony/var-exporter-7.4.22.0"
       ]
     },
@@ -542047,7 +541364,7 @@
       "ref": "friendsofphp/proxy-manager-lts-1.0.19.0",
       "dependsOn": [
         "laminas/laminas-code-4.20.0.0",
-        "symfony/filesystem-7.4.24.0"
+        "symfony/filesystem-7.4.25.0"
       ]
     },
     {
@@ -542055,7 +541372,7 @@
       "dependsOn": [
         "symfony/console-7.4.24.0",
         "symfony/framework-bundle-7.4.24.0",
-        "symfony/serializer-7.4.24.0",
+        "symfony/serializer-7.4.25.0",
         "willdurand/jsonp-callback-validator-2.0.0.0"
       ]
     },
@@ -542106,10 +541423,10 @@
       "dependsOn": [
         "knplabs/knp-components-5.3.0.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/routing-7.4.24.0"
       ]
     },
@@ -542143,8 +541460,8 @@
       "dependsOn": [
         "league/flysystem-3.36.0.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/options-resolver-7.4.22.0"
       ]
     },
@@ -542259,7 +541576,7 @@
       ]
     },
     {
-      "ref": "mjaschen/phpgeo-6.0.4.0"
+      "ref": "mjaschen/phpgeo-6.0.5.0"
     },
     {
       "ref": "monolog/monolog-3.13.0.0",
@@ -542337,7 +541654,7 @@
         "psr/http-factory-1.1.0.0",
         "psr/http-message-2.0.0.0",
         "psr/log-3.0.2.0",
-        "symfony/yaml-7.4.24.0"
+        "symfony/yaml-7.4.25.0"
       ]
     },
     {
@@ -542511,7 +541828,7 @@
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
         "symfony/asset-7.4.24.0",
-        "symfony/stopwatch-7.4.24.0"
+        "symfony/stopwatch-7.4.25.0"
       ]
     },
     {
@@ -542581,7 +541898,7 @@
         "pimcore/static-resolver-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.24.0"
+        "symfony/http-client-7.4.25.0"
       ]
     },
     {
@@ -542622,7 +541939,7 @@
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
         "symfony/mercure-0.6.5.0",
         "symfony/orm-pack-2.7.0.0",
-        "symfony/security-csrf-7.4.8.0"
+        "symfony/security-csrf-7.4.25.0"
       ]
     },
     {
@@ -542636,7 +541953,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/form-7.4.24.0",
+        "symfony/form-7.4.25.0",
         "symfony/webpack-encore-bundle-2.4.3.0"
       ]
     },
@@ -542734,13 +542051,13 @@
         "geoip2/geoip2-3.5.0.0",
         "lcobucci/jwt-5.7.0.0",
         "matomo/device-detector-6.5.2.0",
-        "mjaschen/phpgeo-6.0.4.0",
+        "mjaschen/phpgeo-6.0.5.0",
         "pimcore/generic-data-index-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/form-7.4.24.0",
-        "symfony/stopwatch-7.4.24.0"
+        "symfony/form-7.4.25.0",
+        "symfony/stopwatch-7.4.25.0"
       ]
     },
     {
@@ -542779,53 +542096,53 @@
         "scheb/2fa-google-authenticator-8.8.1.0",
         "spatie/image-optimizer-1.10.1.0",
         "symfony-cmf/routing-bundle-3.2.0.0",
-        "symfony/cache-7.4.24.0",
+        "symfony/cache-7.4.25.0",
         "symfony/config-7.4.24.0",
         "symfony/console-7.4.24.0",
         "symfony/contracts-3.8.1.0",
-        "symfony/debug-bundle-7.4.8.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/debug-bundle-7.4.25.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/doctrine-bridge-7.4.24.0",
         "symfony/doctrine-messenger-7.4.24.0",
         "symfony/dom-crawler-7.4.22.0",
         "symfony/error-handler-7.4.22.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/expression-language-7.4.24.0",
-        "symfony/filesystem-7.4.24.0",
-        "symfony/finder-7.4.24.0",
+        "symfony/expression-language-7.4.25.0",
+        "symfony/filesystem-7.4.25.0",
+        "symfony/finder-7.4.25.0",
         "symfony/framework-bundle-7.4.24.0",
-        "symfony/html-sanitizer-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/html-sanitizer-7.4.25.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/lock-7.4.24.0",
         "symfony/mailer-7.4.24.0",
         "symfony/messenger-7.4.24.0",
         "symfony/mime-7.4.24.0",
         "symfony/monolog-bundle-3.11.2.0",
         "symfony/options-resolver-7.4.22.0",
-        "symfony/password-hasher-7.4.8.0",
+        "symfony/password-hasher-7.4.25.0",
         "symfony/process-7.4.24.0",
-        "symfony/property-access-7.4.24.0",
+        "symfony/property-access-7.4.25.0",
         "symfony/property-info-7.4.24.0",
         "symfony/rate-limiter-7.4.24.0",
         "symfony/routing-7.4.24.0",
         "symfony/security-bundle-7.4.24.0",
-        "symfony/security-core-7.4.24.0",
+        "symfony/security-core-7.4.25.0",
         "symfony/security-http-7.4.24.0",
-        "symfony/serializer-7.4.24.0",
-        "symfony/string-7.4.24.0",
+        "symfony/serializer-7.4.25.0",
+        "symfony/string-7.4.25.0",
         "symfony/templating-6.4.51.0",
         "symfony/translation-7.4.24.0",
         "symfony/twig-bridge-7.4.24.0",
         "symfony/twig-bundle-7.4.21.0",
         "symfony/uid-7.4.21.0",
-        "symfony/validator-7.4.24.0",
+        "symfony/validator-7.4.25.0",
         "symfony/var-dumper-7.4.24.0",
         "symfony/var-exporter-7.4.22.0",
         "symfony/web-profiler-bundle-7.4.24.0",
         "symfony/webpack-encore-bundle-2.4.3.0",
         "symfony/workflow-7.4.24.0",
-        "symfony/yaml-7.4.24.0",
+        "symfony/yaml-7.4.25.0",
         "tijsverkoyen/css-to-inline-styles-2.4.0.0",
         "twig/extra-bundle-3.31.0.0",
         "twig/string-extra-3.24.0.0",
@@ -542851,12 +542168,12 @@
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
         "symfony/asset-7.4.24.0",
-        "symfony/form-7.4.24.0",
+        "symfony/form-7.4.25.0",
         "symfony/intl-7.4.24.0",
         "symfony/lock-7.4.24.0",
         "symfony/rate-limiter-7.4.24.0",
         "symfony/security-bundle-7.4.24.0",
-        "symfony/validator-7.4.24.0",
+        "symfony/validator-7.4.25.0",
         "symfony/webpack-encore-bundle-2.4.3.0"
       ]
     },
@@ -542922,7 +542239,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/static-resolver-bundle-2026.9999999.9999999.9999999-dev",
         "psr/http-factory-1.1.0.0",
-        "symfony/http-client-7.4.24.0",
+        "symfony/http-client-7.4.25.0",
         "symfony/lock-7.4.24.0",
         "symfony/mercure-0.6.5.0",
         "symfony/mercure-bundle-0.3.9.0",
@@ -542969,7 +542286,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.24.0",
+        "symfony/http-client-7.4.25.0",
         "translations-com/globallink-connect-api-php-4.18.6.0"
       ]
     },
@@ -542980,7 +542297,7 @@
         "pimcore/pimcore-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-backend-bundle-2026.9999999.9999999.9999999-dev",
         "pimcore/studio-ui-bundle-2026.9999999.9999999.9999999-dev",
-        "symfony/http-client-7.4.24.0"
+        "symfony/http-client-7.4.25.0"
       ]
     },
     {
@@ -543127,12 +542444,12 @@
       "ref": "scheb/2fa-bundle-8.8.1.0",
       "dependsOn": [
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/event-dispatcher-7.4.17.0",
         "symfony/framework-bundle-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
-        "symfony/property-access-7.4.24.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
+        "symfony/property-access-7.4.25.0",
         "symfony/security-bundle-7.4.24.0",
         "symfony/twig-bundle-7.4.21.0"
       ]
@@ -543168,7 +542485,7 @@
       "ref": "symfony-cmf/routing-3.0.5.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/routing-7.4.24.0"
       ]
     },
@@ -543183,7 +542500,7 @@
       "ref": "symfony/asset-7.4.24.0"
     },
     {
-      "ref": "symfony/cache-7.4.24.0",
+      "ref": "symfony/cache-7.4.25.0",
       "dependsOn": [
         "psr/cache-3.0.0.0",
         "psr/log-3.0.2.0",
@@ -543200,7 +542517,7 @@
     {
       "ref": "symfony/config-7.4.24.0",
       "dependsOn": [
-        "symfony/filesystem-7.4.24.0",
+        "symfony/filesystem-7.4.25.0",
         "symfony/polyfill-ctype-1.37.0.0"
       ]
     },
@@ -543208,7 +542525,7 @@
       "ref": "symfony/console-7.4.24.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.3.0",
-        "symfony/string-7.4.24.0"
+        "symfony/string-7.4.25.0"
       ]
     },
     {
@@ -543223,17 +542540,17 @@
       "ref": "symfony/css-selector-8.1.10.0"
     },
     {
-      "ref": "symfony/debug-bundle-7.4.8.0",
+      "ref": "symfony/debug-bundle-7.4.25.0",
       "dependsOn": [
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/twig-bridge-7.4.24.0",
         "symfony/var-dumper-7.4.24.0"
       ]
     },
     {
-      "ref": "symfony/dependency-injection-7.4.24.0",
+      "ref": "symfony/dependency-injection-7.4.25.0",
       "dependsOn": [
         "psr/container-2.0.2.0",
         "symfony/var-exporter-7.4.22.0"
@@ -543275,76 +542592,76 @@
       "ref": "symfony/event-dispatcher-7.4.17.0"
     },
     {
-      "ref": "symfony/expression-language-7.4.24.0",
+      "ref": "symfony/expression-language-7.4.25.0",
       "dependsOn": [
-        "symfony/cache-7.4.24.0"
+        "symfony/cache-7.4.25.0"
       ]
     },
     {
-      "ref": "symfony/filesystem-7.4.24.0",
+      "ref": "symfony/filesystem-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-mbstring-1.43.3.0"
       ]
     },
     {
-      "ref": "symfony/finder-7.4.24.0"
+      "ref": "symfony/finder-7.4.25.0"
     },
     {
-      "ref": "symfony/form-7.4.24.0",
+      "ref": "symfony/form-7.4.25.0",
       "dependsOn": [
         "symfony/event-dispatcher-7.4.17.0",
         "symfony/options-resolver-7.4.22.0",
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-intl-icu-1.43.3.0",
         "symfony/polyfill-mbstring-1.43.3.0",
-        "symfony/property-access-7.4.24.0"
+        "symfony/property-access-7.4.25.0"
       ]
     },
     {
       "ref": "symfony/framework-bundle-7.4.24.0",
       "dependsOn": [
-        "symfony/cache-7.4.24.0",
+        "symfony/cache-7.4.25.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/error-handler-7.4.22.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/filesystem-7.4.24.0",
-        "symfony/finder-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/filesystem-7.4.25.0",
+        "symfony/finder-7.4.25.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/polyfill-mbstring-1.43.3.0",
         "symfony/polyfill-php85-1.44.0.0",
         "symfony/routing-7.4.24.0"
       ]
     },
     {
-      "ref": "symfony/html-sanitizer-7.4.24.0",
+      "ref": "symfony/html-sanitizer-7.4.25.0",
       "dependsOn": [
         "league/uri-7.10.0.0",
         "masterminds/html5-2.12.0.0"
       ]
     },
     {
-      "ref": "symfony/http-client-7.4.24.0",
+      "ref": "symfony/http-client-7.4.25.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
         "symfony/polyfill-php83-1.43.0.0"
       ]
     },
     {
-      "ref": "symfony/http-foundation-7.4.24.0",
+      "ref": "symfony/http-foundation-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-mbstring-1.43.3.0"
       ]
     },
     {
-      "ref": "symfony/http-kernel-7.4.24.0",
+      "ref": "symfony/http-kernel-7.4.25.0",
       "dependsOn": [
         "psr/log-3.0.2.0",
         "symfony/error-handler-7.4.22.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.24.0",
+        "symfony/http-foundation-7.4.25.0",
         "symfony/polyfill-ctype-1.37.0.0"
       ]
     },
@@ -543370,10 +542687,10 @@
     {
       "ref": "symfony/mercure-0.6.5.0",
       "dependsOn": [
-        "symfony/http-client-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
+        "symfony/http-client-7.4.25.0",
+        "symfony/http-foundation-7.4.25.0",
         "symfony/polyfill-php80-1.43.0.0",
-        "symfony/web-link-7.4.8.0"
+        "symfony/web-link-7.4.25.0"
       ]
     },
     {
@@ -543381,10 +542698,10 @@
       "dependsOn": [
         "lcobucci/jwt-5.7.0.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/mercure-0.6.5.0",
-        "symfony/web-link-7.4.8.0"
+        "symfony/web-link-7.4.25.0"
       ]
     },
     {
@@ -543405,7 +542722,7 @@
       "ref": "symfony/monolog-bridge-7.4.22.0",
       "dependsOn": [
         "monolog/monolog-3.13.0.0",
-        "symfony/http-kernel-7.4.24.0"
+        "symfony/http-kernel-7.4.25.0"
       ]
     },
     {
@@ -543413,8 +542730,8 @@
       "dependsOn": [
         "monolog/monolog-3.13.0.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/monolog-bridge-7.4.22.0",
         "symfony/polyfill-php84-1.43.0.0"
       ]
@@ -543431,7 +542748,7 @@
       ]
     },
     {
-      "ref": "symfony/password-hasher-7.4.8.0"
+      "ref": "symfony/password-hasher-7.4.25.0"
     },
     {
       "ref": "symfony/polyfill-ctype-1.37.0.0"
@@ -543482,7 +542799,7 @@
       "ref": "symfony/process-7.4.24.0"
     },
     {
-      "ref": "symfony/property-access-7.4.24.0",
+      "ref": "symfony/property-access-7.4.25.0",
       "dependsOn": [
         "symfony/property-info-7.4.24.0"
       ]
@@ -543490,7 +542807,7 @@
     {
       "ref": "symfony/property-info-7.4.24.0",
       "dependsOn": [
-        "symfony/string-7.4.24.0",
+        "symfony/string-7.4.25.0",
         "symfony/type-info-8.1.12.0"
       ]
     },
@@ -543498,7 +542815,7 @@
       "ref": "symfony/psr-http-message-bridge-7.4.24.0",
       "dependsOn": [
         "psr/http-message-2.0.0.0",
-        "symfony/http-foundation-7.4.24.0"
+        "symfony/http-foundation-7.4.25.0"
       ]
     },
     {
@@ -543521,51 +542838,51 @@
       "dependsOn": [
         "symfony/clock-7.4.21.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
-        "symfony/password-hasher-7.4.8.0",
-        "symfony/security-core-7.4.24.0",
-        "symfony/security-csrf-7.4.8.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
+        "symfony/password-hasher-7.4.25.0",
+        "symfony/security-core-7.4.25.0",
+        "symfony/security-csrf-7.4.25.0",
         "symfony/security-http-7.4.24.0"
       ]
     },
     {
-      "ref": "symfony/security-core-7.4.24.0",
+      "ref": "symfony/security-core-7.4.25.0",
       "dependsOn": [
-        "symfony/password-hasher-7.4.8.0"
+        "symfony/password-hasher-7.4.25.0"
       ]
     },
     {
-      "ref": "symfony/security-csrf-7.4.8.0",
+      "ref": "symfony/security-csrf-7.4.25.0",
       "dependsOn": [
-        "symfony/security-core-7.4.24.0"
+        "symfony/security-core-7.4.25.0"
       ]
     },
     {
       "ref": "symfony/security-http-7.4.24.0",
       "dependsOn": [
         "symfony/event-dispatcher-7.4.17.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/polyfill-mbstring-1.43.3.0",
-        "symfony/property-access-7.4.24.0",
-        "symfony/security-core-7.4.24.0"
+        "symfony/property-access-7.4.25.0",
+        "symfony/security-core-7.4.25.0"
       ]
     },
     {
-      "ref": "symfony/serializer-7.4.24.0",
+      "ref": "symfony/serializer-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-php84-1.43.0.0"
       ]
     },
     {
-      "ref": "symfony/stopwatch-7.4.24.0"
+      "ref": "symfony/stopwatch-7.4.25.0"
     },
     {
-      "ref": "symfony/string-7.4.24.0",
+      "ref": "symfony/string-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-intl-grapheme-1.43.3.0",
@@ -543595,9 +542912,9 @@
       "ref": "symfony/twig-bundle-7.4.21.0",
       "dependsOn": [
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-foundation-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-foundation-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/twig-bridge-7.4.24.0",
         "twig/twig-3.31.1.0"
       ]
@@ -543615,7 +542932,7 @@
       ]
     },
     {
-      "ref": "symfony/validator-7.4.24.0",
+      "ref": "symfony/validator-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0",
         "symfony/polyfill-mbstring-1.43.3.0",
@@ -543632,7 +542949,7 @@
       "ref": "symfony/var-exporter-7.4.22.0"
     },
     {
-      "ref": "symfony/web-link-7.4.8.0",
+      "ref": "symfony/web-link-7.4.25.0",
       "dependsOn": [
         "psr/link-2.0.1.0"
       ]
@@ -543642,7 +542959,7 @@
       "dependsOn": [
         "symfony/config-7.4.24.0",
         "symfony/framework-bundle-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0",
+        "symfony/http-kernel-7.4.25.0",
         "symfony/routing-7.4.24.0",
         "symfony/twig-bundle-7.4.21.0",
         "twig/twig-3.31.1.0"
@@ -543653,15 +542970,15 @@
       "dependsOn": [
         "symfony/asset-7.4.24.0",
         "symfony/config-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
-        "symfony/http-kernel-7.4.24.0"
+        "symfony/dependency-injection-7.4.25.0",
+        "symfony/http-kernel-7.4.25.0"
       ]
     },
     {
       "ref": "symfony/workflow-7.4.24.0"
     },
     {
-      "ref": "symfony/yaml-7.4.24.0",
+      "ref": "symfony/yaml-7.4.25.0",
       "dependsOn": [
         "symfony/polyfill-ctype-1.37.0.0"
       ]
@@ -543699,7 +543016,7 @@
     {
       "ref": "twig/string-extra-3.24.0.0",
       "dependsOn": [
-        "symfony/string-7.4.24.0",
+        "symfony/string-7.4.25.0",
         "twig/twig-3.31.1.0"
       ]
     },
@@ -543731,7 +543048,7 @@
         "nikic/iter-2.4.1.0",
         "psr/log-3.0.2.0",
         "symfony/console-7.4.24.0",
-        "symfony/dependency-injection-7.4.24.0",
+        "symfony/dependency-injection-7.4.25.0",
         "symfony/process-7.4.24.0",
         "thecodingmachine/safe-3.4.0.0",
         "webmozart/assert-2.5.1.0"
@@ -543751,8 +543068,8 @@
         "psr/log-3.0.2.0",
         "radebatz/type-info-extras-1.0.16.0",
         "symfony/console-7.4.24.0",
-        "symfony/finder-7.4.24.0",
-        "symfony/yaml-7.4.24.0"
+        "symfony/finder-7.4.25.0",
+        "symfony/yaml-7.4.25.0"
       ]
     },
     {
@@ -606605,8 +605922,8 @@
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1",
       "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261127-083512-ba67874",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@tanstack/react-table@8.21.3",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|antd-style@3.7.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|antd@5.29.3",
@@ -606621,7 +605938,7 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261127-083512-ba67874",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/charts@2.6.7",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/colors@7.2.1",
@@ -606637,7 +605954,7 @@
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@dnd-kit/modifiers@7.0.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@dnd-kit/sortable@8.0.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@module-federation/enhanced@2.9.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@rspack/plugin-react-refresh@1.6.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@tanstack/react-table@8.21.3",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@tanstack/react-virtual@3.13.23",
@@ -606650,15 +605967,16 @@
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@uiw/react-codemirror@4.25.9",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|adm-zip@0.5.16",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|antd-style@3.7.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|antd@5.29.3",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.4.11",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.23",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.5.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|flexlayout-react@0.7.15",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@11.18.2",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@12.43.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|i18next@23.16.8",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|immer@10.2.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|inversify@6.1.6",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.0",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.2",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|leaflet-draw@1.0.4",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|leaflet@1.9.4",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|lodash@4.18.1",
@@ -606666,22 +605984,23 @@
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-draggable@4.5.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-i18next@14.1.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.2.0",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-refresh@0.18.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@6.30.4",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@7.18.7",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|reflect-metadata@0.2.2",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|ts-patch@3.3.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|uuid@10.0.0"
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|uuid@11.1.1"
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@standard-schema/spec@1.1.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@standard-schema/utils@0.3.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2|immer@11.1.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.2.0",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/react@18.3.28",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0|immer@11.2.10",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|redux-thunk@3.1.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|redux@5.0.1",
@@ -606728,7 +606047,7 @@
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|copy-to-clipboard@3.3.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.23",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-cascader@3.34.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-checkbox@3.5.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-collapse@3.9.0",
@@ -606991,7 +606310,7 @@
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/dompurify@3.2.0",
       "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.4.11"
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.5.0"
       ]
     },
     {
@@ -607040,66 +606359,13 @@
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|adm-zip@0.5.16"
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/colors@7.2.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/cssinjs-utils@1.1.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/cssinjs@1.24.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/icons@5.6.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ant-design/react-slick@1.1.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@ctrl/tinycolor@3.6.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/color-picker@2.0.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/mutate-observer@1.1.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|@rc-component/qrcode@1.0.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/tour@1.15.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|copy-to-clipboard@3.3.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-cascader@3.30.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-checkbox@3.3.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-collapse@3.9.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-dialog@9.6.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-drawer@7.2.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-dropdown@4.2.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-field-form@2.7.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-image@7.11.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input-number@9.3.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-mentions@2.17.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-menu@9.16.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-notification@5.6.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-pagination@5.0.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-picker@4.8.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-progress@4.0.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-rate@2.13.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-segmented@2.5.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-select@14.16.8",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-slider@11.1.9",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-steps@6.0.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-switch@4.1.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-table@7.49.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tabs@15.4.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-textarea@1.8.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tooltip@6.2.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree-select@5.24.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree@5.10.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-upload@4.8.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|scroll-into-view-if-needed@3.1.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|throttle-debounce@5.0.2"
-      ]
-    },
-    {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1"
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.4.11",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.23"
+    },
+    {
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dompurify@3.5.0",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/trusted-types@2.0.7"
       ]
@@ -607112,11 +606378,11 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@11.18.2",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|framer-motion@12.43.0",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@emotion/is-prop-valid@1.4.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@11.18.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@11.18.1",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@12.43.0",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@12.39.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|tslib@2.8.1"
@@ -607126,7 +606392,7 @@
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|immer@10.2.0"
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.0",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|js-yaml@4.3.2",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|argparse@2.0.1"
       ]
@@ -607162,7 +606428,7 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.2.0",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-redux@9.3.1",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/react@18.3.28",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/use-sync-external-store@0.0.6",
@@ -607175,11 +606441,10 @@
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-refresh@0.18.0"
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@6.30.4",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router-dom@7.18.7",
       "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@remix-run/router@1.23.3",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@6.30.4",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@7.18.7",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
       ]
     },
@@ -607195,7 +606460,7 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|uuid@10.0.0"
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|uuid@11.1.1"
     },
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@standard-schema/spec@1.1.0"
@@ -607204,7 +606469,7 @@
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@standard-schema/utils@0.3.0"
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.11.2|immer@11.1.4"
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@reduxjs/toolkit@2.15.0|immer@11.2.10"
     },
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|redux-thunk@3.1.0",
@@ -607391,9 +606656,6 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20"
-    },
-    {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-cascader@3.34.0",
       "dependsOn": [
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
@@ -607570,7 +606832,7 @@
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.23",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-overflow@1.5.0",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
         "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
@@ -608148,219 +607410,6 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@ctrl/tinycolor@3.6.1"
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|@rc-component/qrcode@1.0.1",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-cascader@3.30.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-select@14.16.8",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree@5.10.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-checkbox@3.3.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-drawer@7.2.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/portal@1.1.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-image@7.11.1",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/portal@1.1.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-dialog@9.6.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input-number@9.3.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/mini-decimal@1.1.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-mentions@2.17.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-menu@9.16.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-textarea@1.8.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-pagination@5.0.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-picker@4.8.3",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|dayjs@1.11.20",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-overflow@1.5.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-segmented@2.5.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-table@7.49.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/context@1.4.0",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-virtual-list@3.19.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tabs@15.4.0",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-dropdown@4.2.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-menu@9.16.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-textarea@1.8.2",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-input@1.6.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-resize-observer@1.4.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tooltip@6.2.1",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@rc-component/trigger@2.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree-select@5.24.5",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-select@14.16.8",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree@5.10.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-tree@5.10.1",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-motion@2.9.5",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-virtual-list@3.19.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@pimcore/studio-ui-bundle@2026.4.0-canary.20261009-064452-b144c15|antd@5.22.7|rc-upload@4.8.1",
-      "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@babel/runtime@7.29.2",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|classnames@2.5.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|rc-util@5.44.4",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
-      ]
-    },
-    {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/trusted-types@2.0.7"
     },
     {
@@ -608370,13 +607419,13 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@11.18.1",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-dom@12.43.0",
       "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@11.18.1"
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@12.39.0"
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@11.18.1"
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|motion-utils@12.39.0"
     },
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|argparse@2.0.1"
@@ -608408,13 +607457,13 @@
       ]
     },
     {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|@remix-run/router@1.23.3"
-    },
-    {
-      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@6.30.4",
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|react-router@7.18.7",
       "dependsOn": [
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|@remix-run/router@1.23.3",
-        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1"
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|@types/react@18.3.28",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|cookie@1.1.1",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react-dom@18.3.1",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|react@18.3.1",
+        "pimcore-studio-backend-power-tools-bundle@0.0.1|set-cookie-parser@2.7.3"
       ]
     },
     {
@@ -608820,6 +607869,12 @@
     },
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|void-elements@3.1.0"
+    },
+    {
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|cookie@1.1.1"
+    },
+    {
+      "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|set-cookie-parser@2.7.3"
     },
     {
       "ref": "pimcore-studio-backend-power-tools-bundle@0.0.1|ansi-styles@4.3.0",
@@ -628392,7 +627447,7 @@
         "@pimcore/studio-ui-bundle@0.0.1|@types/react-dom@18.3.7",
         "@pimcore/studio-ui-bundle@0.0.1|@types/react@18.3.28",
         "@pimcore/studio-ui-bundle@0.0.1|@uiw/react-codemirror@4.25.8",
-        "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.5.16",
+        "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.6.1",
         "@pimcore/studio-ui-bundle@0.0.1|antd-style@3.7.1",
         "@pimcore/studio-ui-bundle@0.0.1|antd@5.29.3",
         "@pimcore/studio-ui-bundle@0.0.1|classnames@2.5.1",
@@ -628661,7 +627716,7 @@
       ]
     },
     {
-      "ref": "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.5.16"
+      "ref": "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.6.1"
     },
     {
       "ref": "@pimcore/studio-ui-bundle@0.0.1|antd-style@3.7.1",
@@ -629056,7 +628111,7 @@
         "@pimcore/studio-ui-bundle@0.0.1|@module-federation/managers@2.9.3",
         "@pimcore/studio-ui-bundle@0.0.1|@module-federation/sdk@2.9.3",
         "@pimcore/studio-ui-bundle@0.0.1|@module-federation/third-party-dts-extractor@2.9.3",
-        "@pimcore/studio-ui-bundle@0.0.1|@module-federation/dts-plugin@2.9.3|adm-zip@0.6.1",
+        "@pimcore/studio-ui-bundle@0.0.1|adm-zip@0.6.1",
         "@pimcore/studio-ui-bundle@0.0.1|isomorphic-ws@5.0.0",
         "@pimcore/studio-ui-bundle@0.0.1|typescript@5.9.3",
         "@pimcore/studio-ui-bundle@0.0.1|undici@7.30.1",
@@ -630031,9 +629086,6 @@
     },
     {
       "ref": "@pimcore/studio-ui-bundle@0.0.1|@module-federation/third-party-dts-extractor@2.9.3"
-    },
-    {
-      "ref": "@pimcore/studio-ui-bundle@0.0.1|@module-federation/dts-plugin@2.9.3|adm-zip@0.6.1"
     },
     {
       "ref": "@pimcore/studio-ui-bundle@0.0.1|isomorphic-ws@5.0.0",
